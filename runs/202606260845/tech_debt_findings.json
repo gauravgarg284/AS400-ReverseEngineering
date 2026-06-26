@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202606260845",
+  "generated_by": "AS400REVENG-Tool-Semantic-Analyzer",
+  "tech_debt_findings": [
+    {
+      "id": "TD-001",
+      "file": "XFXCNTR",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-002",
+      "file": "XFXCNTR",
+      "type": "TD-CABEQ",
+      "description": "Program uses 2 CABEQ/CABxx opcode(s) instead of IF.",
+      "impact": "LOW",
+      "effort_hours": 2
+    },
+    {
+      "id": "TD-003",
+      "file": "XFXCYMD",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-004",
+      "file": "XFXCYMD",
+      "type": "TD-CABEQ",
+      "description": "Program uses 6 CABEQ/CABxx opcode(s) instead of IF.",
+      "impact": "LOW",
+      "effort_hours": 6
+    },
+    {
+      "id": "TD-005",
+      "file": "XFXGETID",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-006",
+      "file": "XFXLDSC",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-007",
+      "file": "XFXLDSC",
+      "type": "TD-CABEQ",
+      "description": "Program uses 4 CABEQ/CABxx opcode(s) instead of IF.",
+      "impact": "LOW",
+      "effort_hours": 4
+    },
+    {
+      "id": "TD-008",
+      "file": "XFXLEAP",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-009",
+      "file": "XFXMRNROL",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-010",
+      "file": "XFXTABL",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 1
+    },
+    {
+      "id": "TD-011",
+      "file": "XFXTABL",
+      "type": "TD-CABEQ",
+      "description": "Program uses 8 CABEQ/CABxx opcode(s) instead of IF.",
+      "impact": "LOW",
+      "effort_hours": 8
+    },
+    {
+      "id": "TD-012",
+      "file": "HABADTE",
+      "type": "TD-FIXED-FORMAT",
+      "description": "Program uses fixed-format C-specs (pre-ILE style).",
+      "impact": "LOW",
+      "effort_hours": 7
+    },
+    {
+      "id": "TD-013",
+      "file": "HABADTE",
+      "type": "TD-CABEQ",
+      "description": "Program uses 10 CABEQ/CABxx opcode(s) instead of IF.",
+      "impact": "LOW",
+      "effort_hours": 10
+    }
+  ],
+  "summary": {
+    "total_findings": 13,
+    "total_remediation_hours": 44,
+    "findings_by_impact": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 13
+    },
+    "most_indebted_programs": [
+      "HABADTE",
+      "XFXTABL",
+      "XFXCYMD",
+      "XFXLDSC",
+      "XFXCNTR"
+    ]
+  }
+}
