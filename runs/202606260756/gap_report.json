@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "missing_nodes": [
+    {
+      "name": "CXXXMLC",
+      "type": "COPYBOOK",
+      "impact": "HIGH",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXLEAP'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "XFXCYMD"
+    },
+    {
+      "name": "'HXHAPPPRF'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "XFXMRNROL"
+    },
+    {
+      "name": "'HXXAPPPRF'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "XFXMRNROL"
+    },
+    {
+      "name": "'XFXMRNROL'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXCNTR'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXLDSC'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXCYMD'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXGETID'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "'XFXTABL'",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "TAPIRNK",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HAPIRNK"
+    },
+    {
+      "name": "TMPMAST",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HMLMAST5H"
+    },
+    {
+      "name": "TXPBNFIT",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HXPBNFIT"
+    },
+    {
+      "name": "TXPNSTN",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HXPNSTN"
+    },
+    {
+      "name": "****HXPXML",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "PRINTER",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    }
+  ],
+  "completeness_pct": 69.8,
+  "gaps_by_impact": {
+    "HIGH": 5,
+    "MEDIUM": 11,
+    "LOW": 0
+  },
+  "total_gaps": 16
+}
