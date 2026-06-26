@@ -1,0 +1,545 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202606260845",
+  "generated_by": "AS400REVENG-Tool-Semantic-Analyzer",
+  "business_rules": [
+    {
+      "id": "BR-001",
+      "source_program": "XFXCNTR",
+      "subroutine": null,
+      "line": 32,
+      "type": "validation",
+      "opcode": "CABEQ",
+      "rule": "When X equals zero, branch to 'EXIT'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-002",
+      "source_program": "XFXCNTR",
+      "subroutine": null,
+      "line": 35,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When X equals 40, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-003",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 68,
+      "type": "filter",
+      "opcode": "CABLT",
+      "rule": "When VYY is less than 1800, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-004",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 69,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When VYY is greater than 2100, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-005",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 70,
+      "type": "filter",
+      "opcode": "CABLT",
+      "rule": "When VMM is less than 01, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-006",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 71,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When VMM is greater than 12, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-007",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 72,
+      "type": "filter",
+      "opcode": "CABLT",
+      "rule": "When VDD is less than 01, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-008",
+      "source_program": "XFXCYMD",
+      "subroutine": null,
+      "line": 73,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When VDD is greater than DYS(VMM), branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-009",
+      "source_program": "XFXLDSC",
+      "subroutine": null,
+      "line": 75,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When LDAMAP is greater than 99, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-010",
+      "source_program": "XFXLDSC",
+      "subroutine": null,
+      "line": 84,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When LDAMAP is greater than 99, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-011",
+      "source_program": "XFXLDSC",
+      "subroutine": null,
+      "line": 93,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When LDAMAP is greater than 99, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-012",
+      "source_program": "XFXLDSC",
+      "subroutine": null,
+      "line": 102,
+      "type": "filter",
+      "opcode": "CABGT",
+      "rule": "When LDAMAP is greater than 9999, branch to 'EXIT'",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-013",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 99,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When *IN79 equals ON (active), branch to 'EXIT'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-014",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 103,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to EXIT, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-015",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 114,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When *IN79 equals ON (active), branch to 'EXIT'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-016",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 118,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to EXIT, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-017",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 129,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When *IN79 equals ON (active), branch to 'EXIT'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-018",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 133,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to EXIT, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-019",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 144,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When *IN79 equals ON (active), branch to 'EXIT'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-020",
+      "source_program": "XFXTABL",
+      "subroutine": null,
+      "line": 148,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to EXIT, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-021",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 113,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-022",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 118,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-023",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 123,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-024",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 128,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-025",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 133,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-026",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 138,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-027",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 143,
+      "type": "validation",
+      "opcode": "CABEQ",
+      "rule": "When MMPFIL equals zero, branch to 'SKIP'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-028",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 144,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When MMPFLG equals void/voided, branch to 'SKIP'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-029",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 145,
+      "type": "filter",
+      "opcode": "CABEQ",
+      "rule": "When MMIORO equals outpatient, branch to 'SKIP'",
+      "confidence": 0.85,
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "CABEQ_DIRECT"
+    },
+    {
+      "id": "BR-030",
+      "source_program": "HABADTE",
+      "subroutine": null,
+      "line": 152,
+      "type": "filter",
+      "opcode": "GOTO",
+      "rule": "When  compares to SKIP, branch to ''",
+      "confidence": 0.7,
+      "needs_sme_review": true,
+      "phi_sensitive": false,
+      "hitl_reason": "Low confidence \u2014 field name unclear",
+      "extraction_method": "CABEQ_DIRECT"
+    }
+  ],
+  "hitl_queue": [
+    {
+      "rule_id": "BR-002",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'X' in program XFXCNTR?"
+    },
+    {
+      "rule_id": "BR-003",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VYY' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-004",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VYY' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-005",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VMM' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-006",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VMM' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-007",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VDD' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-008",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'VDD' in program XFXCYMD?"
+    },
+    {
+      "rule_id": "BR-009",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'LDAMAP' in program XFXLDSC?"
+    },
+    {
+      "rule_id": "BR-010",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'LDAMAP' in program XFXLDSC?"
+    },
+    {
+      "rule_id": "BR-011",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'LDAMAP' in program XFXLDSC?"
+    },
+    {
+      "rule_id": "BR-012",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'LDAMAP' in program XFXLDSC?"
+    },
+    {
+      "rule_id": "BR-014",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program XFXTABL?"
+    },
+    {
+      "rule_id": "BR-016",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program XFXTABL?"
+    },
+    {
+      "rule_id": "BR-018",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program XFXTABL?"
+    },
+    {
+      "rule_id": "BR-020",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program XFXTABL?"
+    },
+    {
+      "rule_id": "BR-021",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-022",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-023",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-024",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-025",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-026",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    },
+    {
+      "rule_id": "BR-030",
+      "reason": "Low confidence \u2014 field name unclear",
+      "suggested_sme_question": "What is the business meaning of field 'compares' in program HABADTE?"
+    }
+  ],
+  "summary": {
+    "total_rules": 30,
+    "auto_accepted": 8,
+    "needs_review": 22,
+    "rejected_reextracted": 0
+  }
+}
