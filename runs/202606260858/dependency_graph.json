@@ -1,0 +1,658 @@
+{
+  "schema_version": "1.0",
+  "nodes": [
+    {
+      "id": "HAPIRNK",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HAPTRFR",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HMLMAST5H",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXLTABLD",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXLTABLP",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXLTABLS",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXPBNFIT",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXPDICT",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL1",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL2",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL3",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL4",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL5",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPLVL6",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPNSTN",
+      "type": "DDS_LF"
+    },
+    {
+      "id": "HXPTABLD",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPXMLD",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXPXMLR",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "OAPIRNK",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "OMPMAST",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "OXPBNFIT",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "OXPNSTN",
+      "type": "DDS_PF"
+    },
+    {
+      "id": "HXXAPPPRF",
+      "type": "SQLRPGLE"
+    },
+    {
+      "id": "XFXCNTR",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXCYMD",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXGETID",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXLDSC",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXLEAP",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXMRNROL",
+      "type": "RPGLE"
+    },
+    {
+      "id": "XFXTABL",
+      "type": "RPGLE"
+    },
+    {
+      "id": "CXXXMLP",
+      "type": "SQLRPGLE"
+    },
+    {
+      "id": "HXXAPPPRFP",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HXXCNTRL",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HXXLDA",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HXXLEVEL",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HXXXML",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HABADTE",
+      "type": "RPGLE"
+    },
+    {
+      "id": "HXHAPPPRF",
+      "type": "PROGRAM"
+    },
+    {
+      "id": "CXXXMLC",
+      "type": "COPYBOOK"
+    },
+    {
+      "id": "TAPIRNK",
+      "type": "FILE"
+    },
+    {
+      "id": "TMPMAST",
+      "type": "FILE"
+    },
+    {
+      "id": "TXPBNFIT",
+      "type": "FILE"
+    },
+    {
+      "id": "TXPNSTN",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFXMLR",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL1",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL2",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL3",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL4",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL5",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFLVL6",
+      "type": "FILE"
+    },
+    {
+      "id": "XFFTABLD",
+      "type": "FILE"
+    },
+    {
+      "id": "XFFTABL2",
+      "type": "FILE"
+    },
+    {
+      "id": "XFFTABL3",
+      "type": "FILE"
+    },
+    {
+      "id": "XFFTABL4",
+      "type": "FILE"
+    },
+    {
+      "id": "XFFNSTN",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFXMLH",
+      "type": "FILE"
+    },
+    {
+      "id": "HXFXMLD",
+      "type": "FILE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "XFXCYMD",
+      "to": "XFXLEAP",
+      "edge_type": "CALL",
+      "line": 58
+    },
+    {
+      "from": "XFXMRNROL",
+      "to": "HXHAPPPRF",
+      "edge_type": "CALL",
+      "line": 50
+    },
+    {
+      "from": "XFXMRNROL",
+      "to": "HXXAPPPRF",
+      "edge_type": "CALL",
+      "line": 59
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXMRNROL",
+      "edge_type": "CALL",
+      "line": 244
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXCNTR",
+      "edge_type": "CALL",
+      "line": 268
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXLDSC",
+      "edge_type": "CALL",
+      "line": 278
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXCNTR",
+      "edge_type": "CALL",
+      "line": 286
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXCNTR",
+      "edge_type": "CALL",
+      "line": 306
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXCYMD",
+      "edge_type": "CALL",
+      "line": 324
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXGETID",
+      "edge_type": "CALL",
+      "line": 713
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFXTABL",
+      "edge_type": "CALL",
+      "line": 735
+    },
+    {
+      "from": "HXXAPPPRF",
+      "to": "HXXCNTRL",
+      "edge_type": "COPY",
+      "line": 1
+    },
+    {
+      "from": "HXXAPPPRF",
+      "to": "HXXAPPPRFP",
+      "edge_type": "COPY",
+      "line": 32
+    },
+    {
+      "from": "XFXGETID",
+      "to": "HXXLDA",
+      "edge_type": "COPY",
+      "line": 29
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXXLDA",
+      "edge_type": "COPY",
+      "line": 92
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXXLEVEL",
+      "edge_type": "COPY",
+      "line": 93
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXXXML",
+      "edge_type": "COPY",
+      "line": 94
+    },
+    {
+      "from": "HABADTE",
+      "to": "CXXXMLP",
+      "edge_type": "COPY",
+      "line": 95
+    },
+    {
+      "from": "HABADTE",
+      "to": "CXXXMLC",
+      "edge_type": "COPY",
+      "line": 707
+    },
+    {
+      "from": "HAPIRNK",
+      "to": "TAPIRNK",
+      "edge_type": "PFILE_OF",
+      "line": 8
+    },
+    {
+      "from": "HMLMAST5H",
+      "to": "TMPMAST",
+      "edge_type": "PFILE_OF",
+      "line": 8
+    },
+    {
+      "from": "HXLTABLD",
+      "to": "HXPTABLD",
+      "edge_type": "PFILE_OF",
+      "line": 8
+    },
+    {
+      "from": "HXLTABLP",
+      "to": "HXPTABLD",
+      "edge_type": "PFILE_OF",
+      "line": 9
+    },
+    {
+      "from": "HXLTABLS",
+      "to": "HXPTABLD",
+      "edge_type": "PFILE_OF",
+      "line": 9
+    },
+    {
+      "from": "HXPBNFIT",
+      "to": "TXPBNFIT",
+      "edge_type": "PFILE_OF",
+      "line": 8
+    },
+    {
+      "from": "HXPNSTN",
+      "to": "TXPNSTN",
+      "edge_type": "PFILE_OF",
+      "line": 8
+    },
+    {
+      "from": "XFXGETID",
+      "to": "HXFXMLR",
+      "edge_type": "READ",
+      "line": 32
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL1",
+      "edge_type": "READ",
+      "line": 77
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL2",
+      "edge_type": "READ",
+      "line": 86
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL3",
+      "edge_type": "READ",
+      "line": 95
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL4",
+      "edge_type": "READ",
+      "line": 104
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL5",
+      "edge_type": "READ",
+      "line": 112
+    },
+    {
+      "from": "XFXLDSC",
+      "to": "HXFLVL6",
+      "edge_type": "READ",
+      "line": 120
+    },
+    {
+      "from": "XFXTABL",
+      "to": "XFFTABLD",
+      "edge_type": "READ",
+      "line": 98
+    },
+    {
+      "from": "XFXTABL",
+      "to": "XFFTABL2",
+      "edge_type": "READ",
+      "line": 113
+    },
+    {
+      "from": "XFXTABL",
+      "to": "XFFTABL3",
+      "edge_type": "READ",
+      "line": 128
+    },
+    {
+      "from": "XFXTABL",
+      "to": "XFFTABL4",
+      "edge_type": "READ",
+      "line": 143
+    },
+    {
+      "from": "HABADTE",
+      "to": "HAPTRFR",
+      "edge_type": "READ",
+      "line": 159
+    },
+    {
+      "from": "HABADTE",
+      "to": "XFFNSTN",
+      "edge_type": "READ",
+      "line": 178
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXFXMLH",
+      "edge_type": "READ",
+      "line": 225
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXFXMLH",
+      "edge_type": "UPDATE",
+      "line": 229
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXFXMLH",
+      "edge_type": "WRITE",
+      "line": 355
+    },
+    {
+      "from": "HABADTE",
+      "to": "HXFXMLD",
+      "edge_type": "WRITE",
+      "line": 726
+    }
+  ],
+  "hotspots": [
+    {
+      "name": "HABADTE",
+      "score": 38,
+      "fan_in": 0,
+      "fan_out": 13,
+      "file_ops": 6
+    },
+    {
+      "name": "XFXLDSC",
+      "score": 15,
+      "fan_in": 1,
+      "fan_out": 0,
+      "file_ops": 6
+    },
+    {
+      "name": "XFXTABL",
+      "score": 11,
+      "fan_in": 1,
+      "fan_out": 0,
+      "file_ops": 4
+    },
+    {
+      "name": "XFXCNTR",
+      "score": 9,
+      "fan_in": 3,
+      "fan_out": 0,
+      "file_ops": 0
+    },
+    {
+      "name": "XFXMRNROL",
+      "score": 7,
+      "fan_in": 1,
+      "fan_out": 2,
+      "file_ops": 0
+    },
+    {
+      "name": "XFXGETID",
+      "score": 7,
+      "fan_in": 1,
+      "fan_out": 1,
+      "file_ops": 1
+    },
+    {
+      "name": "HXXAPPPRF",
+      "score": 7,
+      "fan_in": 1,
+      "fan_out": 2,
+      "file_ops": 0
+    },
+    {
+      "name": "XFXCYMD",
+      "score": 5,
+      "fan_in": 1,
+      "fan_out": 1,
+      "file_ops": 0
+    },
+    {
+      "name": "XFXLEAP",
+      "score": 3,
+      "fan_in": 1,
+      "fan_out": 0,
+      "file_ops": 0
+    },
+    {
+      "name": "HXHAPPPRF",
+      "score": 3,
+      "fan_in": 1,
+      "fan_out": 0,
+      "file_ops": 0
+    },
+    {
+      "name": "HMLMAST5H",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HAPIRNK",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HXLTABLS",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HXPNSTN",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HXLTABLD",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HXPBNFIT",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    },
+    {
+      "name": "HXLTABLP",
+      "score": 2,
+      "fan_in": 0,
+      "fan_out": 0,
+      "file_ops": 1
+    }
+  ],
+  "isolated": [
+    "HXFLVL1",
+    "HXPDICT",
+    "HXPLVL6",
+    "XFFTABL4",
+    "HXPLVL2",
+    "OAPIRNK",
+    "XFFTABLD",
+    "HXPLVL3",
+    "HXFXMLR",
+    "HXFXMLD",
+    "OXPNSTN",
+    "HXFLVL4",
+    "CXXXMLC",
+    "TMPMAST",
+    "HXFLVL3",
+    "HXXLEVEL",
+    "CXXXMLP",
+    "XFFTABL2",
+    "HXXAPPPRFP",
+    "TAPIRNK",
+    "HXPLVL1",
+    "HXFLVL5",
+    "HXFXMLH",
+    "HXPTABLD",
+    "HXXCNTRL",
+    "HXXLDA",
+    "HXXXML",
+    "HXFLVL6",
+    "OXPBNFIT",
+    "HXPXMLR",
+    "TXPNSTN",
+    "HXPLVL4",
+    "TXPBNFIT",
+    "XFFNSTN",
+    "HAPTRFR",
+    "HXPXMLD",
+    "HXPLVL5",
+    "OMPMAST",
+    "XFFTABL3",
+    "HXFLVL2"
+  ],
+  "total_nodes": 57,
+  "total_edges": 43
+}
