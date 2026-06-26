@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202506260000",
+  "batch": 2,
+  "total_batches": 4,
+  "members_in_batch": [
+    "HXPLVL3",
+    "HXPLVL4",
+    "HXPLVL5",
+    "HXPLVL6",
+    "HXPNSTN",
+    "HXPTABLD",
+    "HXPXMLD",
+    "HXPXMLR",
+    "OAPIRNK",
+    "OMPMAST"
+  ],
+  "pso_corpus": {
+    "HXPLVL3": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPLVL4": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPLVL5": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPLVL6": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPNSTN": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPTABLD": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPXMLD": {
+      "parse_error": "'key_field_names'"
+    },
+    "HXPXMLR": {
+      "parse_error": "'key_field_names'"
+    },
+    "OAPIRNK": {
+      "parse_error": "'key_field_names'"
+    },
+    "OMPMAST": {
+      "parse_error": "'key_field_names'"
+    }
+  }
+}
