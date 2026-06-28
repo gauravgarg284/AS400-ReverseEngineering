@@ -1,0 +1,9 @@
+{
+  "run_id": "202606281052",
+  "project_name": "HABADTE",
+  "working_dir": "/tmp/as400reveng/202606281052",
+  "github_owner": "gauravgarg284",
+  "github_repo": "AS400-ReverseEngineering",
+  "github_branch": "main",
+  "batch_size": 10
+}
