@@ -1,0 +1,2944 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202606291535",
+  "batch": 4,
+  "total_batches": 4,
+  "members_in_batch": [
+    "CXXXMLP",
+    "HXXAPPPRFP",
+    "HXXCNTRL",
+    "HXXLDA",
+    "HXXLEVEL",
+    "HXXXML",
+    "HABADTE"
+  ],
+  "pso_corpus": {
+    "CXXXMLP": {
+      "member": "CXXXMLP",
+      "type": "SQLRPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "XFXXML",
+          "ds_type": "PR",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "extpgm('XFXXML')",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "USERID_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "OPTION_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "REPORTID_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JOBNAM_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JOBNUM_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "REPORTNAME_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "70",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "REPORTTYPE_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "REPORTLVL6_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "REPORTPGM_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "REPORTFILE_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "XMLSEQ_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "HXXRPTDFT",
+          "ds_type": "PR",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "extpgm('HXXRPTDFT')",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "RPTSEQ_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 16,
+          "name": "REQUSR_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 17,
+          "name": "REQSEQ_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "REQSQ2_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "HXXTBLDFT",
+          "ds_type": "PR",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "extpgm('HXXTBLDFT')",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "RPTSEQ_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "REQUSR_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "REQSEQ_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "REQSQ2_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HXXAPPPRFP": {
+      "member": "HXXAPPPRFP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "HXXAPPPRF",
+          "ds_type": "PR",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "extpgm('HXXAPPPRF')",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "REQAPPL_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "REQVAR_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "25",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "RTNDESC_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "100",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "REQUPPER_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "REQLVL6_",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "SCREEN",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 26,
+          "name": "FIELD",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 27,
+          "name": "TYPE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 28,
+          "name": "HIDE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 29,
+          "name": "REQUIRED",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 30,
+          "name": "LABEL",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "100",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "**** HXXAPPPRF",
+          "ds_type": "",
+          "from_pos": "pi",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "****  REQAPPL",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "1",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "****  REQVAR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "2",
+          "keywords": "const",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "****  RTNDESC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "10",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "****  REQUPPER",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "****  REQLVL6",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "0 const options(*nopass)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 41,
+          "name": "PREFDESC",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "100",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HXXCNTRL": {
+      "member": "HXXCNTRL",
+      "type": "RPGLE",
+      "h_specs": {
+        "option": "*NODEBUGIO : *SRCSTMT"
+      },
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HXXLDA": {
+      "member": "HXXLDA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 13,
+          "name": "LDADS",
+          "ds_type": "DS",
+          "from_pos": "",
+          "to_length": "1024",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "dtaara(*lda)",
+          "dtaara_ref": "*LDA",
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "LDADS",
+          "ds_type": "DS",
+          "from_pos": "",
+          "to_length": "1024",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 17,
+          "name": "LDATYP",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "LDADIV",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 19,
+          "name": "LDADVC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "overlay(ldadiv)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "LDAMAP",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "overlay(ldadvc)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "LDASOQ",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "LDAFOQ",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "LDASPR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "LDAFPR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "LDABCH",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 26,
+          "name": "LDAFF1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 27,
+          "name": "LDAUSR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 28,
+          "name": "LDACLD",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "50",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 29,
+          "name": "LDACPC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 30,
+          "name": "LDACRP",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "overlay(ldacpc)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 31,
+          "name": "LDALV1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "overlay(ldacpc)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "LDAINT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "LDAABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "LDAL6N",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "LDALV6",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "overlay(ldal6n)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "LDANST",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "overlay(ldal6n:7)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "LDAIDX",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "LDALV7",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "LDASTF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 40,
+          "name": "LDAAL6",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 41,
+          "name": "LDAACC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "12",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 42,
+          "name": "LDAWEB",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 43,
+          "name": "LDAWRP",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 44,
+          "name": "LDAVIS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 45,
+          "name": "LDAPDFDEV",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 46,
+          "name": "LDAEMLDEV",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 47,
+          "name": "LDAMDY",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 48,
+          "name": "LDAYMD",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 49,
+          "name": "LDAJOBMSG",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "LDAHPF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 51,
+          "name": "LDAAPLV6",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "LDACHKPSW",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 53,
+          "name": "LDAPROTOC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HXXLEVEL": {
+      "member": "HXXLEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "LEVEL",
+          "ds_type": "DS",
+          "from_pos": "",
+          "to_length": "297",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "LEVEL1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "LV1ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "LEVEL2",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "LV2ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "LEVEL3",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "LV3ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "LEVEL4",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "LV4ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 16,
+          "name": "LEVEL5",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 17,
+          "name": "LV5ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "LEVEL6",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 19,
+          "name": "LV6ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "CTGRY1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "CT1ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "CTGRY2",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "CT2ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "CTGRY3",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "30",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "CT3ABR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "3",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HXXXML": {
+      "member": "HXXXML",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ALLNINES",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "inz(9999999)",
+          "dtaara_ref": null,
+          "inz_value": "9999999"
+        },
+        {
+          "line": 2,
+          "name": "GETID",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "20",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "REPORTSEQ",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "XMLSEQ",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "7",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "XMLUSR",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "XMLOPT",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "XMLRPTNAME",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "70",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "XMLTYPE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "XMLLVL6",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "XMLPGM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "XMLFILE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HABADTE": {
+      "member": "HABADTE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 29,
+          "file_name": "HMLMAST5H",
+          "file_type": "I",
+          "designation": "P",
+          "mode": "IP",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 30,
+          "file_name": "HAPTRFR",
+          "file_type": "I",
+          "designation": "F",
+          "mode": "IF",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 31,
+          "file_name": "HXPBNFIT",
+          "file_type": "I",
+          "designation": "F",
+          "mode": "IF",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 32,
+          "file_name": "HAPIRNK",
+          "file_type": "I",
+          "designation": "F",
+          "mode": "IF",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 33,
+          "file_name": "HXPNSTN",
+          "file_type": "I",
+          "designation": "F",
+          "mode": "IF",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "****HXPXML",
+          "file_type": "H",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "HXPXMLD",
+          "file_type": "O",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": "PRINTER",
+          "file_type": "O",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "IND(*I",
+          "keyed": false,
+          "keywords": "nof)"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 39,
+          "name": "",
+          "ds_type": "DS",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 40,
+          "name": "PGMNAM",
+          "ds_type": "",
+          "from_pos": "*proc",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 41,
+          "name": "JOBNAM",
+          "ds_type": "",
+          "from_pos": "244",
+          "to_length": "253",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 42,
+          "name": "JOBNUM",
+          "ds_type": "",
+          "from_pos": "264",
+          "to_length": "269",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 46,
+          "name": "**** ALLNINES",
+          "ds_type": "",
+          "from_pos": "s",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "0 inz(9999999)",
+          "dtaara_ref": null,
+          "inz_value": "9999999"
+        },
+        {
+          "line": 47,
+          "name": "CURTAB",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 48,
+          "name": "FIRSTTIME",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "n",
+          "data_type": "",
+          "keywords": "inz(*off)",
+          "dtaara_ref": null,
+          "inz_value": "*off"
+        },
+        {
+          "line": 49,
+          "name": "**** REPORTSEQ",
+          "ds_type": "",
+          "from_pos": "s",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "0",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "**** XMLSEQ",
+          "ds_type": "",
+          "from_pos": "s",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "0",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 51,
+          "name": "**** GETID",
+          "ds_type": "",
+          "from_pos": "s",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "2",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "CHKNUM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 53,
+          "name": "DATES",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "40",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "DATEX",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "40",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 55,
+          "name": "DTLADMDT",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 56,
+          "name": "DTLADMTM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 57,
+          "name": "DTLNAME",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "22",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 58,
+          "name": "DTLNURSE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "26",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 59,
+          "name": "DTLRMN",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "DTLROOMCLASS",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "20",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 61,
+          "name": "ECODE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 62,
+          "name": "EDATE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 63,
+          "name": "HOSPNM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "40",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 64,
+          "name": "HMAP",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "10",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 65,
+          "name": "INSSEQ",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "4",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 66,
+          "name": "LDESC",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "50",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 67,
+          "name": "LEAVEACC",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "n",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "LVLDSC",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "40",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 69,
+          "name": "MDATE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 70,
+          "name": "MRNROLLUP",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 71,
+          "name": "NUMHEAD",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "9",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 72,
+          "name": "PRTNUM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "12",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 73,
+          "name": "REQCDE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 74,
+          "name": "REQLVL",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 75,
+          "name": "ROOMCLASS",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "2",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 76,
+          "name": "RPTHDG",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "40",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "REQDTE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "RUNDTE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 79,
+          "name": "RUNTME",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 80,
+          "name": "SDESC",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "20",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 81,
+          "name": "TCODE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "4",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 82,
+          "name": "TIND",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 83,
+          "name": "TOTAL",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 84,
+          "name": "TOTALLEAVE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 85,
+          "name": "TOTALACTIVE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "5",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 86,
+          "name": "YDATE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 87,
+          "name": "XMDDTE",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "8",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 88,
+          "name": "XMDTIM",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "6",
+          "decimal": "",
+          "data_type": "0",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [
+          {
+            "name": "*INZSR",
+            "implicit": true,
+            "line_start": 232,
+            "line_end": 318
+          },
+          {
+            "name": "SRCYMD",
+            "implicit": false,
+            "line_start": 322,
+            "line_end": 328
+          },
+          {
+            "name": "XMLHEADER",
+            "implicit": false,
+            "line_start": 332,
+            "line_end": 616
+          },
+          {
+            "name": "XMLDETAIL",
+            "implicit": false,
+            "line_start": 618,
+            "line_end": 668
+          },
+          {
+            "name": "XMLTOTAL",
+            "implicit": false,
+            "line_start": 670,
+            "line_end": 703
+          },
+          {
+            "name": "XMLCALL",
+            "implicit": false,
+            "line_start": 705,
+            "line_end": 709
+          },
+          {
+            "name": "GETIDSR",
+            "implicit": false,
+            "line_start": 711,
+            "line_end": 718
+          },
+          {
+            "name": "WRITEXMLD",
+            "implicit": false,
+            "line_start": 720,
+            "line_end": 728
+          },
+          {
+            "name": "ROOMCLASSDTL",
+            "implicit": false,
+            "line_start": 730,
+            "line_end": 750
+          }
+        ],
+        "cabeq_branches": [
+          {
+            "line": 113,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 118,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 123,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 128,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 133,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 138,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          },
+          {
+            "line": 143,
+            "opcode": "CABEQ",
+            "factor1": "MMPFIL",
+            "factor2": "0",
+            "target": "SKIP",
+            "rule_hint": "Branch when MMPFIL CABEQ 0, go to SKIP"
+          },
+          {
+            "line": 144,
+            "opcode": "CABEQ",
+            "factor1": "MMPFLG",
+            "factor2": "'V'",
+            "target": "SKIP",
+            "rule_hint": "Branch when MMPFLG CABEQ 'V', go to SKIP"
+          },
+          {
+            "line": 145,
+            "opcode": "CABEQ",
+            "factor1": "MMIORO",
+            "factor2": "'O'",
+            "target": "SKIP",
+            "rule_hint": "Branch when MMIORO CABEQ 'O', go to SKIP"
+          },
+          {
+            "line": 152,
+            "opcode": "GOTO",
+            "factor1": "",
+            "factor2": "SKIP",
+            "target": "",
+            "rule_hint": "Branch when  GOTO SKIP, go to "
+          }
+        ],
+        "goto_tags": [],
+        "callp_calls": [
+          {
+            "target": "XFXMRNROL",
+            "call_type": "CALL",
+            "line": 244
+          },
+          {
+            "target": "XFXCNTR",
+            "call_type": "CALL",
+            "line": 268
+          },
+          {
+            "target": "XFXLDSC",
+            "call_type": "CALL",
+            "line": 278
+          },
+          {
+            "target": "XFXCNTR",
+            "call_type": "CALL",
+            "line": 286
+          },
+          {
+            "target": "XFXCNTR",
+            "call_type": "CALL",
+            "line": 306
+          },
+          {
+            "target": "XFXCYMD",
+            "call_type": "CALL",
+            "line": 324
+          },
+          {
+            "target": "XFXGETID",
+            "call_type": "CALL",
+            "line": 713
+          },
+          {
+            "target": "XFXTABL",
+            "call_type": "CALL",
+            "line": 735
+          }
+        ],
+        "exsr_calls": [
+          {
+            "target": "ROOMCLASSDTL",
+            "line": 171
+          },
+          {
+            "target": "SRCYMD",
+            "line": 190
+          },
+          {
+            "target": "XMLDETAIL",
+            "line": 209
+          },
+          {
+            "target": "XMLTOTAL",
+            "line": 219
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 221
+          },
+          {
+            "target": "XMLCALL",
+            "line": 224
+          },
+          {
+            "target": "SRCYMD",
+            "line": 300
+          },
+          {
+            "target": "XMLHEADER",
+            "line": 316
+          },
+          {
+            "target": "XMLCALL",
+            "line": 339
+          },
+          {
+            "target": "GETIDSR",
+            "line": 363
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 364
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 367
+          },
+          {
+            "target": "GETIDSR",
+            "line": 370
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 371
+          },
+          {
+            "target": "GETIDSR",
+            "line": 374
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 375
+          },
+          {
+            "target": "GETIDSR",
+            "line": 377
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 378
+          },
+          {
+            "target": "GETIDSR",
+            "line": 380
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 381
+          },
+          {
+            "target": "GETIDSR",
+            "line": 383
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 384
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 388
+          },
+          {
+            "target": "GETIDSR",
+            "line": 390
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 391
+          },
+          {
+            "target": "GETIDSR",
+            "line": 393
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 394
+          },
+          {
+            "target": "GETIDSR",
+            "line": 396
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 397
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 401
+          },
+          {
+            "target": "GETIDSR",
+            "line": 403
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 404
+          },
+          {
+            "target": "GETIDSR",
+            "line": 406
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 407
+          },
+          {
+            "target": "GETIDSR",
+            "line": 409
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 410
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 414
+          },
+          {
+            "target": "GETIDSR",
+            "line": 416
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 417
+          },
+          {
+            "target": "GETIDSR",
+            "line": 419
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 420
+          },
+          {
+            "target": "GETIDSR",
+            "line": 422
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 423
+          },
+          {
+            "target": "SRCYMD",
+            "line": 428
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 434
+          },
+          {
+            "target": "GETIDSR",
+            "line": 436
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 437
+          },
+          {
+            "target": "GETIDSR",
+            "line": 439
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 440
+          },
+          {
+            "target": "GETIDSR",
+            "line": 442
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 443
+          },
+          {
+            "target": "GETIDSR",
+            "line": 446
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 447
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 450
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 453
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 456
+          },
+          {
+            "target": "GETIDSR",
+            "line": 459
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 460
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 463
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 465
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 467
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 469
+          },
+          {
+            "target": "GETIDSR",
+            "line": 472
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 473
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 476
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 478
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 480
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 482
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 485
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 487
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 491
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 494
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 496
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 498
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 500
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 502
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 504
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 506
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 508
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 510
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 512
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 514
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 516
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 518
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 520
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 523
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 527
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 529
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 531
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 533
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 535
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 537
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 539
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 542
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 544
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 547
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 550
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 553
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 556
+          },
+          {
+            "target": "GETIDSR",
+            "line": 559
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 560
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 562
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 565
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 567
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 569
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 571
+          },
+          {
+            "target": "GETIDSR",
+            "line": 574
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 575
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 578
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 580
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 582
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 584
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 587
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 589
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 592
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 595
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 597
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 599
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 601
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 604
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 607
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 609
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 612
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 614
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 622
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 628
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 634
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 639
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 644
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 649
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 653
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 659
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 665
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 674
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 679
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 682
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 686
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 689
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 693
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 697
+          },
+          {
+            "target": "WRITEXMLD",
+            "line": 701
+          }
+        ],
+        "klists": [
+          {
+            "klist_name": "MASTKEY",
+            "fields": [
+              "MMPLV6",
+              "MMACCT"
+            ]
+          },
+          {
+            "klist_name": "XMLKEY",
+            "fields": [
+              "LDAUSR",
+              "ALLNINES"
+            ]
+          },
+          {
+            "klist_name": "XMLKEY2",
+            "fields": [
+              "LDAUSR",
+              "XMHSEQ"
+            ]
+          },
+          {
+            "klist_name": "NSTKEY",
+            "fields": [
+              "MMPLV6",
+              "MMPNST"
+            ]
+          }
+        ],
+        "total_cspecs": 484
+      },
+      "copy_deps": [
+        {
+          "line": 92,
+          "copybook": "HXXLDA"
+        },
+        {
+          "line": 93,
+          "copybook": "HXXLEVEL"
+        },
+        {
+          "line": 94,
+          "copybook": "HXXXML"
+        },
+        {
+          "line": 95,
+          "copybook": "CXXXMLP"
+        },
+        {
+          "line": 707,
+          "copybook": "CXXXMLC"
+        }
+      ],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 11,
+      "parse_warnings": []
+    }
+  }
+}
