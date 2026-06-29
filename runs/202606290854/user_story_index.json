@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202606290854",
+  "generated_by": "AS400REVENG-Agent-3",
+  "summary": {
+    "total_stories": 3,
+    "total_epics": 1,
+    "phi_sensitive_stories": 0,
+    "needs_po_review": 0
+  },
+  "epics": [
+    {
+      "name": "Unclassified Business Logic",
+      "story_count": 3,
+      "stories": [
+        {
+          "id": "US-2026-001",
+          "title": "Business Logic Rule",
+          "epic": "Unclassified Business Logic",
+          "rule_id": "BR-017",
+          "source_program": "HABADTE",
+          "confidence": 0.87,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-002",
+          "title": "Business Logic Rule",
+          "epic": "Unclassified Business Logic",
+          "rule_id": "BR-018",
+          "source_program": "HABADTE",
+          "confidence": 0.95,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-003",
+          "title": "Business Logic Rule",
+          "epic": "Unclassified Business Logic",
+          "rule_id": "BR-019",
+          "source_program": "HABADTE",
+          "confidence": 0.95,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        }
+      ]
+    }
+  ]
+}
