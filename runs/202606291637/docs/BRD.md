@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-HABADTE AS400 inpatient/outpatient admission and transfer processing utilities and shared data maintenance services.. The analyzed scope includes 19 approved business rules across 2 domain(s), implemented in 5 program(s). This BRD documents approved rules and their traceable implementations.
+HABADTE mainframe application for data maintenance and patient management controls.. The analyzed scope includes 19 approved business rules across 2 domain(s), implemented in 5 program(s). This BRD documents approved rules and their traceable implementations.
 
 ## 2. Stakeholder Matrix
 
