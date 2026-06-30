@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AS400 Dependency Graph</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"
+        integrity="sha512-M6aFcNJHBNVCkn9P1q3XyYnJzasBiCNw8sJEeKwEY5QQzwuKHnIHiLSifMvCjGExP2JMD0sMCEpQN7UNLRMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #1e1e2e; color: #cdd6f4; height: 100vh; display: flex; flex-direction: column; }
+#header { background: #181825; padding: 10px 16px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #313244; flex-shrink: 0; }
+#header h1 { font-size: 15px; font-weight: 600; color: #cba6f7; }
+#header .stats { font-size: 12px; color: #a6adc8; }
+#search { padding: 5px 10px; border: 1px solid #45475a; border-radius: 4px; background: #313244; color: #cdd6f4; font-size: 12px; width: 180px; }
+#layout-btn, #physics-btn { padding: 5px 10px; border: 1px solid #45475a; border-radius: 4px; background: #313244; color: #cdd6f4; font-size: 11px; cursor: pointer; }
+#layout-btn:hover, #physics-btn:hover { background: #45475a; }
+#main { display: flex; flex: 1; overflow: hidden; }
+#network { flex: 1; background: #11111b; }
+#sidebar { width: 280px; background: #181825; border-left: 1px solid #313244; display: flex; flex-direction: column; overflow: hidden; flex-shrink: 0; }
+#legend { padding: 12px; border-bottom: 1px solid #313244; }
+#legend h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #a6adc8; margin-bottom: 8px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 11px; margin: 4px 0; }
+.legend-dot { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+#filters { padding: 12px; border-bottom: 1px solid #313244; }
+#filters h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #a6adc8; margin-bottom: 8px; }
+.filter-item { display: flex; align-items: center; gap: 6px; font-size: 11px; margin: 4px 0; cursor: pointer; }
+#detail { padding: 12px; flex: 1; overflow-y: auto; }
+#detail h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #a6adc8; margin-bottom: 8px; }
+#detail-content { font-size: 12px; line-height: 1.7; }
+#detail-content .name { font-size: 14px; font-weight: 600; color: #cba6f7; margin-bottom: 8px; word-break: break-all; }
+#detail-content .row { display: flex; justify-content: space-between; border-bottom: 1px solid #313244; padding: 4px 0; }
+#detail-content .key { color: #a6adc8; }
+#detail-content .val { color: #cdd6f4; font-weight: 500; }
+.phi-badge { display: inline-block; background: #b71c1c; color: #fff; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-left: 4px; }
+.miss-badge { display: inline-block; background: #e37400; color: #fff; font-size: 10px; padding: 1px 5px; border-radius: 3px; margin-left: 4px; }
+</style>
+</head>
+<body>
+<div id="header">
+  <h1>&#9670; AS400 Dependency Graph</h1>
+  <span class="stats" id="stats"></span>
+  <input id="search" type="text" placeholder="Search node...">
+  <button id="layout-btn" onclick="toggleLayout()">Hierarchical layout</button>
+  <button id="physics-btn" onclick="togglePhysics()">Freeze physics</button>
+</div>
+<div id="main">
+  <div id="network"></div>
+  <div id="sidebar">
+    <div id="legend"><h3>Node types</h3><div class="legend-item"><span class="legend-dot" style="background:#1a73e8"></span>PROGRAM</div></div>
+    <div id="filters">
+      <h3>Filter by type</h3>
+      <div id="filter-list"></div>
+    </div>
+    <div id="detail">
+      <h3>Node detail</h3>
+      <div id="detail-content"><span style="color:#585b70">Click a node to inspect it.</span></div>
+    </div>
+  </div>
+</div>
+<script>
+const ALL_NODES = [{"id": "HAPIRNK", "label": "HAPIRNK", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HAPIRNK</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HAPTRFR", "label": "HAPTRFR", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HAPTRFR</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HMLMAST5H", "label": "HMLMAST5H", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HMLMAST5H</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXLTABLD", "label": "HXLTABLD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXLTABLD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXLTABLP", "label": "HXLTABLP", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXLTABLP</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXLTABLS", "label": "HXLTABLS", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXLTABLS</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPBNFIT", "label": "HXPBNFIT", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPBNFIT</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPDICT", "label": "HXPDICT", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPDICT</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL1", "label": "HXPLVL1", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL1</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL2", "label": "HXPLVL2", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL2</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL3", "label": "HXPLVL3", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL3</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL4", "label": "HXPLVL4", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL4</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL5", "label": "HXPLVL5", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL5</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPLVL6", "label": "HXPLVL6", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPLVL6</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPNSTN", "label": "HXPNSTN", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPNSTN</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPTABLD", "label": "HXPTABLD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPTABLD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPXMLD", "label": "HXPXMLD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPXMLD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXPXMLR", "label": "HXPXMLR", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXPXMLR</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "OAPIRNK", "label": "OAPIRNK", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>OAPIRNK</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "OMPMAST", "label": "OMPMAST", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>OMPMAST</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "OXPBNFIT", "label": "OXPBNFIT", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>OXPBNFIT</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "OXPNSTN", "label": "OXPNSTN", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>OXPNSTN</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXAPPPRF", "label": "HXXAPPPRF", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXAPPPRF</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXCNTR", "label": "XFXCNTR", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXCNTR</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXCYMD", "label": "XFXCYMD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXCYMD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXGETID", "label": "XFXGETID", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXGETID</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXLDSC", "label": "XFXLDSC", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXLDSC</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXLEAP", "label": "XFXLEAP", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXLEAP</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXMRNROL", "label": "XFXMRNROL", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXMRNROL</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFXTABL", "label": "XFXTABL", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFXTABL</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "CXXXMLP", "label": "CXXXMLP", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>CXXXMLP</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXAPPPRFP", "label": "HXXAPPPRFP", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXAPPPRFP</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXCNTRL", "label": "HXXCNTRL", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXCNTRL</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXLDA", "label": "HXXLDA", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXLDA</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXLEVEL", "label": "HXXLEVEL", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXLEVEL</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXXXML", "label": "HXXXML", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXXXML</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HABADTE", "label": "HABADTE", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HABADTE</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXHAPPPRF", "label": "HXHAPPPRF", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXHAPPPRF</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "CXXXMLC", "label": "CXXXMLC", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>CXXXMLC</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "TAPIRNK", "label": "TAPIRNK", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>TAPIRNK</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "TMPMAST", "label": "TMPMAST", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>TMPMAST</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "TXPBNFIT", "label": "TXPBNFIT", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>TXPBNFIT</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "TXPNSTN", "label": "TXPNSTN", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>TXPNSTN</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFXMLR", "label": "HXFXMLR", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFXMLR</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL1", "label": "HXFLVL1", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL1</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL2", "label": "HXFLVL2", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL2</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL3", "label": "HXFLVL3", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL3</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL4", "label": "HXFLVL4", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL4</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL5", "label": "HXFLVL5", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL5</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFLVL6", "label": "HXFLVL6", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFLVL6</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFFTABLD", "label": "XFFTABLD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFFTABLD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFFTABL2", "label": "XFFTABL2", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFFTABL2</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFFTABL3", "label": "XFFTABL3", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFFTABL3</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFFTABL4", "label": "XFFTABL4", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFFTABL4</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "XFFNSTN", "label": "XFFNSTN", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>XFFNSTN</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFXMLH", "label": "HXFXMLH", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFXMLH</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}, {"id": "HXFXMLD", "label": "HXFXMLD", "shape": "box", "size": 18, "color": {"background": "#1a73e8", "border": "#ffffff", "highlight": {"background": "#ffeb3b", "border": "#f57f17"}}, "font": {"color": "#ffffff", "size": 12}, "title": "<b>HXFXMLD</b><br>Type: PROGRAM<br>Fan-in: 0 | Fan-out: 0<br>Hotspot: 0<br>", "_meta": {"type": "PROGRAM", "phi": false, "missing": false, "score": 0, "fan_in": 0, "fan_out": 0, "subsystem": ""}}];
+const ALL_EDGES = [];
+const NODE_COLORS = {"PROGRAM": "#1a73e8", "PHYSICAL_FILE": "#e37400", "LOGICAL_FILE": "#34a853", "COPYBOOK": "#9334e6", "DTAARA": "#00897b", "SPOOL": "#546e7a", "DISPLAY_FILE": "#795548", "MISSING_SOURCE": "#b71c1c"};
+
+let hierarchical = false;
+let physicsOn = true;
+let activeFilters = new Set(["PROGRAM"]);
+
+const nodesDS = new vis.DataSet(ALL_NODES);
+const edgesDS = new vis.DataSet(ALL_EDGES);
+
+const options = {
+  physics: {
+    stabilization: { iterations: 150 },
+    barnesHut: { gravitationalConstant: -4000, springLength: 120, damping: 0.25 }
+  },
+  interaction: { hover: true, tooltipDelay: 150, navigationButtons: true, keyboard: true },
+  edges: { smooth: { type: 'dynamic' }, width: 1.2 },
+  nodes: { borderWidth: 2 },
+};
+
+const container = document.getElementById('network');
+const network = new vis.Network(container, { nodes: nodesDS, edges: edgesDS }, options);
+
+document.getElementById('stats').textContent =
+  `${ALL_NODES.length} nodes · ${ALL_EDGES.length} edges`;
+
+// Build filter checkboxes
+const filterList = document.getElementById('filter-list');
+["PROGRAM"].forEach(t => {
+  const label = document.createElement('label');
+  label.className = 'filter-item';
+  const cb = document.createElement('input');
+  cb.type = 'checkbox'; cb.checked = true; cb.value = t;
+  cb.addEventListener('change', applyFilters);
+  const dot = document.createElement('span');
+  dot.className = 'legend-dot';
+  dot.style.background = NODE_COLORS[t] || '#607d8b';
+  label.append(cb, dot, document.createTextNode(' ' + t));
+  filterList.appendChild(label);
+});
+
+function applyFilters() {
+  activeFilters = new Set([...filterList.querySelectorAll('input:checked')].map(c => c.value));
+  const visible = ALL_NODES.filter(n => activeFilters.has(n._meta.type)).map(n => n.id);
+  const visSet = new Set(visible);
+  nodesDS.update(ALL_NODES.map(n => ({
+    id: n.id, hidden: !visSet.has(n.id)
+  })));
+  edgesDS.update(ALL_EDGES.map(e => ({
+    id: e.id, hidden: !(visSet.has(e.from) && visSet.has(e.to))
+  })));
+}
+
+// Search
+document.getElementById('search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  if (!q) { nodesDS.update(ALL_NODES.map(n => ({ id: n.id, opacity: 1 }))); return; }
+  nodesDS.update(ALL_NODES.map(n => ({
+    id: n.id,
+    opacity: n.label.toLowerCase().includes(q) ? 1 : 0.12
+  })));
+  const match = ALL_NODES.find(n => n.label.toLowerCase().includes(q));
+  if (match) network.focus(match.id, { scale: 1.2, animation: true });
+});
+
+// Node click → detail panel
+network.on('click', params => {
+  if (!params.nodes.length) return;
+  const n = ALL_NODES.find(x => x.id === params.nodes[0]);
+  if (!n) return;
+  const m = n._meta;
+  const phi  = m.phi   ? '<span class="phi-badge">PHI</span>'     : '';
+  const miss = m.missing ? '<span class="miss-badge">MISSING SRC</span>' : '';
+  document.getElementById('detail-content').innerHTML = `
+    <div class="name">${n.label}${phi}${miss}</div>
+    <div class="row"><span class="key">Type</span><span class="val">${m.type}</span></div>
+    <div class="row"><span class="key">Fan-in</span><span class="val">${m.fan_in}</span></div>
+    <div class="row"><span class="key">Fan-out</span><span class="val">${m.fan_out}</span></div>
+    <div class="row"><span class="key">Hotspot score</span><span class="val">${m.score}</span></div>
+    <div class="row"><span class="key">Subsystem</span><span class="val">${m.subsystem || '—'}</span></div>
+    <div class="row"><span class="key">Node ID</span><span class="val" style="font-size:10px">${n.id}</span></div>
+  `;
+});
+
+function toggleLayout() {
+  hierarchical = !hierarchical;
+  network.setOptions({
+    layout: hierarchical
+      ? { hierarchical: { direction: 'LR', sortMethod: 'directed', levelSeparation: 180 } }
+      : { hierarchical: false },
+    physics: { enabled: !hierarchical }
+  });
+  document.getElementById('layout-btn').textContent =
+    hierarchical ? 'Force-directed layout' : 'Hierarchical layout';
+}
+
+function togglePhysics() {
+  physicsOn = !physicsOn;
+  network.setOptions({ physics: { enabled: physicsOn } });
+  document.getElementById('physics-btn').textContent =
+    physicsOn ? 'Freeze physics' : 'Unfreeze physics';
+}
+</script>
+</body>
+</html>
