@@ -8,14 +8,14 @@ MVP Scope: PATIENT_MANAGEMENT / BILLING / SCHEDULING = Yes; others = Phase 2.
 
 | # | Epic | Domain | In MVP | Rationale |
 |---|------|--------|--------|-----------|
-| 1 | Data Maintenance Utilities | DATA_MAINTENANCE | Phase 2 | Pending domain classification |
-| 2 | Patient Management - Admission/Transfer Edits | PATIENT_MANAGEMENT | Yes | Core business domain |
+| 1 | Data Maintenance Controls | DATA_MAINTENANCE | Phase 2 | Pending domain classification |
+| 2 | Patient Management Controls | PATIENT_MANAGEMENT | Yes | Core business domain |
 
 Out of Scope: missing source nodes, dead code, low-confidence stories.
 
 ## 2. Epic Catalogue
 
-### E-001: Data Maintenance Utilities
+### E-001: Data Maintenance Controls
 
 - **Priority:** Medium
 - **Domain:** DATA_MAINTENANCE
@@ -26,14 +26,14 @@ Out of Scope: missing source nodes, dead code, low-confidence stories.
 
 Stories: US-2026-001, US-2026-002, US-2026-003, US-2026-004, US-2026-005, US-2026-006, US-2026-007, US-2026-008, US-2026-009, US-2026-010, US-2026-011, US-2026-012, US-2026-013, US-2026-014, US-2026-015, US-2026-016
 
-### E-002: Patient Management - Admission/Transfer Edits
+### E-002: Patient Management Controls
 
 - **Priority:** Medium
 - **Domain:** PATIENT_MANAGEMENT
 - **Programs:** HABADTE
 - **Story Count:** 3
 - **Points:** TBD
-- **PHI:** No
+- **PHI:** Yes
 
 Stories: US-2026-017, US-2026-018, US-2026-019
 
