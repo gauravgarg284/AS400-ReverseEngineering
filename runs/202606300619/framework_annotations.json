@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202606300619",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "annotations": {
+    "HAPIRNK": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HAPTRFR": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HMLMAST5H": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXLTABLD": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXLTABLP": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXLTABLS": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPBNFIT": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPDICT": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL1": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL2": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL3": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL4": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL5": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPLVL6": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPNSTN": {
+      "type": "DDS_LF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPTABLD": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPXMLD": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXPXMLR": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "OAPIRNK": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "OMPMAST": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "OXPBNFIT": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "OXPNSTN": {
+      "type": "DDS_PF",
+      "frameworks": [],
+      "skipped": true
+    },
+    "HXXAPPPRF": {
+      "type": "SQLRPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXCNTR": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 21,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXCYMD": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 24,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXGETID": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 23,
+      "subroutine_count": 1,
+      "skipped": false
+    },
+    "XFXLDSC": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 58,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXLEAP": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 21,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXMRNROL": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 20,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "XFXTABL": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 84,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "CXXXMLP": {
+      "type": "SQLRPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HXXAPPPRFP": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HXXCNTRL": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HXXLDA": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HXXLEVEL": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HXXXML": {
+      "type": "RPGLE",
+      "frameworks": [],
+      "total_cspecs": 0,
+      "subroutine_count": 0,
+      "skipped": false
+    },
+    "HABADTE": {
+      "type": "RPGLE",
+      "frameworks": [
+        {
+          "framework": "HCS_XML",
+          "occurrences": 111,
+          "annotation": "[FRAMEWORK: HCS_XML x111 WRITEXMLD calls]",
+          "suppressed_subroutines": [
+            "XMLHEADER",
+            "XMLDETAIL",
+            "XMLTOTAL",
+            "XMLCALL",
+            "GETIDSR",
+            "WRITEXMLD"
+          ],
+          "note": "XML rendering boilerplate."
+        }
+      ],
+      "total_cspecs": 484,
+      "subroutine_count": 9,
+      "skipped": false
+    }
+  }
+}
