@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-HABADTE mainframe application for data maintenance and patient management controls.. The analyzed scope includes 19 approved business rules across 2 domain(s), implemented in 5 program(s). This BRD documents approved rules and their traceable implementations.
+HABADTE mainframe application for patient management and related data maintenance utilities.. The analyzed scope includes 19 approved business rules across 2 domain(s), implemented in 5 program(s). This BRD documents approved rules and their traceable implementations.
 
 ## 2. Stakeholder Matrix
 
