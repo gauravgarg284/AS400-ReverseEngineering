@@ -7,11 +7,11 @@
 ---
 
 ### US-2026-001: When X equals zero branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When X equals zero, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When X equals zero, branch to 'EXIT'
@@ -32,11 +32,11 @@ WARNING: Low confidence rule (score 0.47) - Product Owner must verify this story
 ---
 
 ### US-2026-002: When X equals 40 branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When X equals 40, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When X equals 40, branch to 'EXIT'
@@ -57,11 +57,11 @@ WARNING: Low confidence rule (score 0.40) - Product Owner must verify this story
 ---
 
 ### US-2026-003: When VYY is less than 1800 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VYY is less than 1800, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VYY is less than 1800, branch to 'EXIT'
@@ -82,11 +82,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-004: When VYY is greater than 2100 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VYY is greater than 2100, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VYY is greater than 2100, branch to 'EXIT'
@@ -107,11 +107,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-005: When VMM is less than 01 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VMM is less than 01, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VMM is less than 01, branch to 'EXIT'
@@ -132,11 +132,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-006: When VMM is greater than 12 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VMM is greater than 12, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VMM is greater than 12, branch to 'EXIT'
@@ -157,11 +157,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-007: When VDD is less than 01 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VDD is less than 01, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VDD is less than 01, branch to 'EXIT'
@@ -182,11 +182,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-008: When VDD is greater than DYSVMM branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When VDD is greater than DYS(VMM), branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When VDD is greater than DYS(VMM), branch to 'EXIT'
@@ -207,11 +207,11 @@ WARNING: Low confidence rule (score 0.68) - Product Owner must verify this story
 ---
 
 ### US-2026-009: When LDAMAP is greater than 99 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When LDAMAP is greater than 99, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When LDAMAP is greater than 99, branch to 'EXIT'
@@ -232,11 +232,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-010: When LDAMAP is greater than 99 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When LDAMAP is greater than 99, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When LDAMAP is greater than 99, branch to 'EXIT'
@@ -257,11 +257,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-011: When LDAMAP is greater than 99 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When LDAMAP is greater than 99, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When LDAMAP is greater than 99, branch to 'EXIT'
@@ -282,11 +282,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-012: When LDAMAP is greater than 9999 branch to
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When LDAMAP is greater than 9999, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When LDAMAP is greater than 9999, branch to 'EXIT'
@@ -307,11 +307,11 @@ WARNING: Low confidence rule (score 0.56) - Product Owner must verify this story
 ---
 
 ### US-2026-013: When IN79 equals onactive branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When *IN79 equals on/active, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When *IN79 equals on/active, branch to 'EXIT'
@@ -331,11 +331,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-014: When IN79 equals onactive branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When *IN79 equals on/active, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When *IN79 equals on/active, branch to 'EXIT'
@@ -355,11 +355,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-015: When IN79 equals onactive branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When *IN79 equals on/active, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When *IN79 equals on/active, branch to 'EXIT'
@@ -379,11 +379,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-016: When IN79 equals onactive branch to EXIT
-**Epic:** DATA_MAINTENANCE
+**Epic:** Data Maintenance
 
 As a system administrator,  
 I want to When *IN79 equals on/active, branch to 'EXIT',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When *IN79 equals on/active, branch to 'EXIT'
@@ -403,11 +403,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-017: When FILE INDICATOR equals zero branch to SKIP
-**Epic:** PATIENT_MANAGEMENT
+**Epic:** Patient Management
 
 As a clinical staff member,  
 I want to When -FILE INDICATOR equals zero, branch to 'SKIP',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When -FILE INDICATOR equals zero, branch to 'SKIP'
@@ -427,11 +427,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-018: When FLAG INDICATOR equals voidvoided branch to SKIP
-**Epic:** PATIENT_MANAGEMENT
+**Epic:** Patient Management
 
 As a clinical staff member,  
 I want to When -FLAG INDICATOR equals void/voided, branch to 'SKIP',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When -FLAG INDICATOR equals void/voided, branch to 'SKIP'
@@ -451,11 +451,11 @@ So that support correct business operation.
 ---
 
 ### US-2026-019: When INPATIENTOUTPATIENT FLAG equals outpatient branch to SKIP
-**Epic:** PATIENT_MANAGEMENT
+**Epic:** Patient Management
 
 As a clinical staff member,  
 I want to When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP',  
-So that support correct business operation.
+So that correctly filter records based on business criteria.
 
 **Acceptance Criteria**
 - AC-01: The system correctly applies: When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'
