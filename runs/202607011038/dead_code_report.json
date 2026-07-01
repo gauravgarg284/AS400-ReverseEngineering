@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607011038",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "dead_code_report": {
+    "programs": {
+      "HXXAPPPRF": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXCNTR": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 3
+      },
+      "XFXCYMD": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXGETID": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXLDSC": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXLEAP": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXMRNROL": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "XFXTABL": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "CXXXMLP": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "HXXAPPPRFP": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "HXXCNTRL": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "HXXLDA": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 2
+      },
+      "HXXLEVEL": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "HXXXML": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 1
+      },
+      "HABADTE": {
+        "active_code_pct": 100.0,
+        "dead_comment_count": 0,
+        "unreachable_subrs": [],
+        "fan_in": 0
+      }
+    },
+    "orphan_programs": [
+      "HABADTE"
+    ],
+    "summary": {
+      "total_programs": 15,
+      "orphan_count": 1
+    }
+  }
+}
