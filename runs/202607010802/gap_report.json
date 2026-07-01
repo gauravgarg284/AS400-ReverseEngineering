@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "missing_nodes": [
+    {
+      "name": "CXXXMLC",
+      "type": "COPYBOOK",
+      "impact": "HIGH",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "HXHAPPPRF",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "XFXMRNROL"
+    },
+    {
+      "name": "TAPIRNK",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HAPIRNK"
+    },
+    {
+      "name": "TMPMAST",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HMLMAST5H"
+    },
+    {
+      "name": "TXPBNFIT",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HXPBNFIT"
+    },
+    {
+      "name": "TXPNSTN",
+      "type": "FILE",
+      "impact": "HIGH",
+      "referenced_by": "HXPNSTN"
+    },
+    {
+      "name": "****HXPXML",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "PRINTER",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    }
+  ],
+  "completeness_pct": 82.2,
+  "gaps_by_impact": {
+    "HIGH": 5,
+    "MEDIUM": 3,
+    "LOW": 0
+  },
+  "total_gaps": 8
+}
