@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607011142",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "tech_debt_findings": [],
+  "summary": {
+    "total_findings": 0,
+    "total_remediation_hours": 0.0,
+    "by_severity": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0
+    }
+  }
+}
