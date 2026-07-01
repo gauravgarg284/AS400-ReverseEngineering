@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "run_id": "202607011142",
+  "timestamp": "2026-07-01T11:42:54Z",
+  "total_members": 37,
+  "total_batches": 4,
+  "batch_size": 10,
+  "artifacts": [
+    "run_config.json",
+    "source_manifest.json",
+    "gap_report.json",
+    "phi_registry.json",
+    "data_dictionary.json",
+    "dependency_graph.json",
+    "file_access_matrix.json",
+    "dependency_graph.html",
+    "pso_corpus_batch_001.json",
+    "pso_corpus_batch_002.json",
+    "pso_corpus_batch_003.json",
+    "pso_corpus_batch_004.json"
+  ]
+}
