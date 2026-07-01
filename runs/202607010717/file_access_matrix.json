@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0",
+  "access_matrix": [
+    {
+      "program": "HAPIRNK",
+      "file": "TAPIRNK",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HMLMAST5H",
+      "file": "TMPMAST",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HXLTABLD",
+      "file": "HXPTABLD",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HXLTABLP",
+      "file": "HXPTABLD",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HXLTABLS",
+      "file": "HXPTABLD",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HXPBNFIT",
+      "file": "TXPBNFIT",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "HXPNSTN",
+      "file": "TXPNSTN",
+      "operations": [
+        "PFILE_OF"
+      ]
+    },
+    {
+      "program": "XFXGETID",
+      "file": "HXPXMLR",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXGETID",
+      "file": "HXFXMLR",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL1",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL2",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL3",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL4",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL5",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXPLVL6",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL1",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL2",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL3",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL4",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL5",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXLDSC",
+      "file": "HXFLVL6",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "HXPTABLD",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "HXLTABLD",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "HXLTABLP",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "HXLTABLS",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "XFFTABLD",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "XFFTABL2",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "XFFTABL3",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "XFXTABL",
+      "file": "XFFTABL4",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HMLMAST5H",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HAPTRFR",
+      "operations": [
+        "DECLARE",
+        "READ"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HXPBNFIT",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HAPIRNK",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HXPNSTN",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "****HXPXML",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HXPXMLD",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "PRINTER",
+      "operations": [
+        "DECLARE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "XFFNSTN",
+      "operations": [
+        "READ"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HXFXMLH",
+      "operations": [
+        "READ",
+        "UPDATE",
+        "WRITE"
+      ]
+    },
+    {
+      "program": "HABADTE",
+      "file": "HXFXMLD",
+      "operations": [
+        "WRITE"
+      ]
+    }
+  ],
+  "total_relationships": 40
+}
