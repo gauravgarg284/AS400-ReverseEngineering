@@ -1,0 +1,42 @@
+%%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
+%% DATA_MAINTENANCE Processing Sequence
+sequenceDiagram
+    participant User
+    participant XFXCNTR
+    User->>XFXCNTR: invoke XFXCNTR (RPGLE)
+    Note over XFXCNTR: When X equals zero, branch to 'EXIT'
+    Note over XFXCNTR: When X equals 40, branch to 'EXIT'
+    XFXCNTR-->>User: return
+    participant XFXCYMD
+    User->>XFXCYMD: invoke XFXCYMD (RPGLE)
+    Note over XFXCYMD: When VDD is greater than DYS(VMM), branch to 'EXIT'
+    Note over XFXCYMD: When VYY is less than 1800, branch to 'EXIT'
+    Note over XFXCYMD: When VYY is greater than 2100, branch to 'EXIT'
+    XFXCYMD-->>User: return
+    participant XFXLDSC
+    User->>XFXLDSC: invoke XFXLDSC (RPGLE)
+    Note over XFXLDSC: When LDAMAP is greater than 99, branch to 'EXIT'
+    Note over XFXLDSC: When LDAMAP is greater than 99, branch to 'EXIT'
+    Note over XFXLDSC: When LDAMAP is greater than 99, branch to 'EXIT'
+    XFXLDSC-->>User: return
+    participant XFXTABL
+    User->>XFXTABL: invoke XFXTABL (RPGLE)
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    XFXTABL-->>User: return
+    participant HXXAPPPRF
+    User->>HXXAPPPRF: invoke HXXAPPPRF (SQLRPGLE)
+    Note over HXXAPPPRF: SQL program accesses table 'HXPAPPPRF'
+    Note over HXXAPPPRF: SQL program accesses table 'HXPAPPL6'
+    Note over HXXAPPPRF: SQL program accesses table 'HXPAPPPRF'
+    HXXAPPPRF-->>User: return
+    participant XFXGETID
+    User->>XFXGETID: invoke XFXGETID (RPGLE)
+    XFXGETID-->>User: return
+    participant XFXLEAP
+    User->>XFXLEAP: invoke XFXLEAP (RPGLE)
+    XFXLEAP-->>User: return
+    participant XFXMRNROL
+    User->>XFXMRNROL: invoke XFXMRNROL (RPGLE)
+    XFXMRNROL-->>User: return
