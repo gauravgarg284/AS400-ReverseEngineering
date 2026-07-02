@@ -1,195 +1,312 @@
-# Business Rules Catalog – HABADTE Run 202607011209
+# Business Rules Catalog – HABADTE Project
 
-## Overview
-
-This catalog lists all approved business rules extracted from the AS400 HABADTE application and related utility programs. Rules are grouped by domain and annotated with business impact and testing guidance.
+This catalog lists all approved business rules identified in the legacy AS400 codebase, grouped by domain. Each entry includes technical origin and an inferred business impact for use in testing and migration.
 
 ---
 
-## Domain: DATA_MAINTENANCE
+## 1. DATA_MAINTENANCE Domain
 
-### BR-001
+### BR-001 – Counter Lower Bound
 
-- **Rule Text**: When X equals zero, branch to `EXIT`.
-- **Source Program**: XFXCNTR
-- **Confidence Score**: 0.47
-- **PHI in Path**: false
-- **Business Impact**: Prevents processing when a counter or control value is at zero, avoiding meaningless or duplicate operations.
-- **Test Requirement**: Yes (confidence < 0.7). Verify that X=0 causes immediate exit and X>0 continues processing.
+- **Rule Text:** When X equals zero, branch to 'EXIT'.
+- **Source Program:** XFXCNTR (RPGLE)
+- **Confidence Score:** 0.47
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
 
-### BR-002
+**Business Impact (Plain English):**  
+The counter X cannot be zero during normal processing. Zero is treated as a sentinel value meaning "stop processing" or "no iterations required". If this rule is removed or changed, loops may run unexpectedly or process records when they should terminate.
 
-- **Rule Text**: When X equals 40, branch to `EXIT`.
-- **Source Program**: XFXCNTR
-- **Confidence Score**: 0.40
-- **PHI in Path**: false
-- **Business Impact**: Establishes an upper boundary for the counter; likely used to limit the number of iterations or segments.
-- **Test Requirement**: Yes. Validate X=40 exits and X<40 continues; check behavior for X>40.
-
-### BR-003
-
-- **Rule Text**: When VYY is less than 1800, branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Rejects dates with years earlier than 1800, ensuring the system does not process implausible historical dates.
-- **Test Requirement**: Yes. Ensure years <1800 are rejected and years >=1800 are considered.
-
-### BR-004
-
-- **Rule Text**: When VYY is greater than 2100, branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Rejects dates beyond the year 2100, preventing future-date anomalies.
-- **Test Requirement**: Yes. Confirm that years >2100 are rejected while near-future dates are accepted.
-
-### BR-005
-
-- **Rule Text**: When VMM is less than 01, branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Ensures month values below 1 are treated as invalid.
-- **Test Requirement**: Yes. Validate behavior for VMM=0 and VMM=1.
-
-### BR-006
-
-- **Rule Text**: When VMM is greater than 12, branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Prevents months greater than 12, enforcing calendar validity.
-- **Test Requirement**: Yes. Ensure months 13+ are rejected.
-
-### BR-007
-
-- **Rule Text**: When VDD is less than 01, branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Validates that day-of-month is at least 1.
-- **Test Requirement**: Yes. Confirm VDD=0 rejects and VDD>=1 proceeds.
-
-### BR-008
-
-- **Rule Text**: When VDD is greater than DYS(VMM), branch to `EXIT`.
-- **Source Program**: XFXCYMD
-- **Confidence Score**: 0.68
-- **PHI in Path**: false
-- **Business Impact**: Rejects days beyond the maximum for the given month (accounting for month length and, likely, leap years).
-- **Test Requirement**: Yes. Test edge cases like 31 April and 29 February on non-leap years.
-
-### BR-009
-
-- **Rule Text**: When LDAMAP is greater than 99, branch to `EXIT`.
-- **Source Program**: XFXLDSC
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Prohibits level or mapping codes above 99, suggesting a constrained code set.
-- **Test Requirement**: Yes. Validate that LDAMAP>99 triggers exit and <=99 is accepted.
-
-### BR-010
-
-- **Rule Text**: When LDAMAP is greater than 99, branch to `EXIT`.
-- **Source Program**: XFXLDSC
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Reinforces the same upper bound; may apply to a different field or context within the same program.
-- **Test Requirement**: Yes. Confirm no scenarios bypass this check.
-
-### BR-011
-
-- **Rule Text**: When LDAMAP is greater than 99, branch to `EXIT`.
-- **Source Program**: XFXLDSC
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Similar to BR-009 and BR-010, ensuring mapping ranges stay within defined limits.
-- **Test Requirement**: Yes. Regression tests should cover all LDAMAP comparisons.
-
-### BR-012
-
-- **Rule Text**: When LDAMAP is greater than 9999, branch to `EXIT`.
-- **Source Program**: XFXLDSC
-- **Confidence Score**: 0.56
-- **PHI in Path**: false
-- **Business Impact**: Introduces a broader upper limit (9999), possibly for a different category of mappings.
-- **Test Requirement**: Yes. Verify that extreme values beyond 9999 are rejected.
-
-### BR-013
-
-- **Rule Text**: When *IN79 equals on/active, branch to `EXIT`.
-- **Source Program**: XFXTABL
-- **Confidence Score**: 0.90
-- **PHI in Path**: false
-- **Business Impact**: Uses indicator *IN79 to short-circuit table processing when a desired condition is met or an error occurs.
-- **Test Requirement**: No (confidence >= 0.7). Include indicator scenarios in integration tests.
-
-### BR-014
-
-- **Rule Text**: When *IN79 equals on/active, branch to `EXIT`.
-- **Source Program**: XFXTABL
-- **Confidence Score**: 0.90
-- **PHI in Path**: false
-- **Business Impact**: Likely mirrors BR-013 for a different loop or section in the same program.
-- **Test Requirement**: No. Covered if BR-013 paths are tested.
-
-### BR-015
-
-- **Rule Text**: When *IN79 equals on/active, branch to `EXIT`.
-- **Source Program**: XFXTABL
-- **Confidence Score**: 0.90
-- **PHI in Path**: false
-- **Business Impact**: Ensures that once a termination condition is reached, the program does not continue scanning table entries.
-- **Test Requirement**: No. Include as part of full-table processing tests.
-
-### BR-016
-
-- **Rule Text**: When *IN79 equals on/active, branch to `EXIT`.
-- **Source Program**: XFXTABL
-- **Confidence Score**: 0.90
-- **PHI in Path**: false
-- **Business Impact**: Consolidates indicator-based control for table-processing flows.
-- **Test Requirement**: No.
+**Test Requirement:** Yes (confidence < 0.7)
 
 ---
 
-## Domain: PATIENT_MANAGEMENT
+### BR-002 – Counter Upper Bound
 
-### BR-017
+- **Rule Text:** When X equals 40, branch to 'EXIT'.
+- **Source Program:** XFXCNTR (RPGLE)
+- **Confidence Score:** 0.4
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
 
-- **Rule Text**: When `-FILE INDICATOR` equals zero, branch to `SKIP`.
-- **Source Program**: HABADTE
-- **Confidence Score**: 0.92
-- **PHI in Path**: false
-- **Business Impact**: Ensures only valid, fully initialized records are processed. Records with missing or zero file indicator are skipped to avoid corrupt output.
-- **Test Requirement**: No (confidence >= 0.7). Functional tests must confirm that records with indicator=0 are omitted from XML and API results.
+**Business Impact:**  
+The counter X is capped at 39; when it reaches 40, processing exits. This protects the system from processing an unexpectedly large set of iterations or records. Incorrect implementation could lead to performance issues or unbounded loops.
 
-### BR-018
-
-- **Rule Text**: When `-FLAG INDICATOR` equals void/voided, branch to `SKIP`.
-- **Source Program**: HABADTE
-- **Confidence Score**: 0.99
-- **PHI in Path**: false
-- **Business Impact**: Prevents voided or reversed transactions from appearing in downstream reports and extracts, aligning with financial and clinical integrity requirements.
-- **Test Requirement**: No. Integration tests should validate that voided transfers never appear in output datasets.
-
-### BR-019
-
-- **Rule Text**: When `-INPATIENT/OUTPATIENT FLAG` equals outpatient, branch to `SKIP`.
-- **Source Program**: HABADTE
-- **Confidence Score**: 0.99
-- **PHI in Path**: false
-- **Business Impact**: Restricts the HABADTE flow to inpatient records only. Outpatient transactions are intentionally excluded from this pathway.
-- **Test Requirement**: No. Scenario tests should demonstrate that mixed inpatient/outpatient data sets produce only inpatient records.
+**Test Requirement:** Yes
 
 ---
 
-## Summary
+### BR-003 – Year Below Minimum
 
-- Total approved rules: 19
-- Domains covered: DATA_MAINTENANCE, PATIENT_MANAGEMENT
-- Rules with mandatory dedicated tests (confidence < 0.7): BR-001–BR-012
-- High-confidence rules suitable for reuse with regression coverage: BR-013–BR-019
+- **Rule Text:** When VYY is less than 1800, branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
 
-This catalog forms the basis for migration test cases, configuration validation, and audit documentation for the HABADTE modernization effort.
+**Business Impact:**  
+Any year before 1800 is considered invalid. This rule prevents malformed or default dates from entering date-sensitive logic. If mis-implemented, records with nonsense years may pass validation and distort reporting.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-004 – Year Above Maximum
+
+- **Rule Text:** When VYY is greater than 2100, branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Future years beyond 2100 are treated as invalid, preventing data entry errors and protecting long-range date calculations. If omitted, wildly future dates could corrupt schedules or projections.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-005 – Month Below Minimum
+
+- **Rule Text:** When VMM is less than 01, branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Months lower than 1 (January) are rejected as invalid. This rule blocks malformed dates and enforces calendar semantics.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-006 – Month Above Maximum
+
+- **Rule Text:** When VMM is greater than 12, branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Months above 12 are invalid. Allowing such values would break downstream month-based logic (billing cycles, reports).
+
+**Test Requirement:** Yes
+
+---
+
+### BR-007 – Day Below Minimum
+
+- **Rule Text:** When VDD is less than 01, branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Days lower than 1 are invalid, preventing malformed date entries.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-008 – Day Above Month Maximum
+
+- **Rule Text:** When VDD is greater than DYS(VMM), branch to 'EXIT'.
+- **Source Program:** XFXCYMD (RPGLE)
+- **Confidence Score:** 0.68
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+The day value cannot exceed the number of days in the given month (and implicitly year, via leap-year logic). This ensures dates like 31 February are rejected.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-009 – LDAMAP Upper Bound (99)
+
+- **Rule Text:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **Source Program:** XFXLDSC (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Map identifiers above 99 are treated as invalid or out-of-range. This reflects a design assumption that only 0–99 descriptor maps are supported. Violating this may send descriptors to undefined tables.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-010 – LDAMAP Upper Bound (99) – Variant 2
+
+- **Rule Text:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **Source Program:** XFXLDSC (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Reinforces the same constraint across a different code path or branch. Ensures consistency of LDAMAP validation.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-011 – LDAMAP Upper Bound (99) – Variant 3
+
+- **Rule Text:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **Source Program:** XFXLDSC (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Duplicate of BR-009/BR-010 in another branch; ensures no path bypasses the LDAMAP limit.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-012 – LDAMAP Upper Bound (9999)
+
+- **Rule Text:** When LDAMAP is greater than 9999, branch to 'EXIT'.
+- **Source Program:** XFXLDSC (RPGLE)
+- **Confidence Score:** 0.56
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Defines a hard upper bound at 9999 for descriptor maps, possibly for high-level configuration or extended maps. Protects the system from misconfigured map codes.
+
+**Test Requirement:** Yes
+
+---
+
+### BR-013 – Table Lookup Guard (Indicator On)
+
+- **Rule Text:** When *IN79 equals on/active, branch to 'EXIT'.
+- **Source Program:** XFXTABL (RPGLE)
+- **Confidence Score:** 0.9
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Indicator *IN79 acts as a global guard. When active, specific table lookup logic is disabled or short-circuited, preventing optional or risky lookups from running.
+
+**Test Requirement:** No (high confidence)
+
+---
+
+### BR-014 – Table Lookup Guard – Variant 2
+
+- **Rule Text:** When *IN79 equals on/active, branch to 'EXIT'.
+- **Source Program:** XFXTABL (RPGLE)
+- **Confidence Score:** 0.9
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Ensures that a second branch also respects the indicator guard; may correspond to a different table or subtype of lookup.
+
+**Test Requirement:** No
+
+---
+
+### BR-015 – Table Lookup Guard – Variant 3
+
+- **Rule Text:** When *IN79 equals on/active, branch to 'EXIT'.
+- **Source Program:** XFXTABL (RPGLE)
+- **Confidence Score:** 0.9
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Duplicate guard for another section of XFXTABL, maintaining a consistent disable mechanism.
+
+**Test Requirement:** No
+
+---
+
+### BR-016 – Table Lookup Guard – Variant 4
+
+- **Rule Text:** When *IN79 equals on/active, branch to 'EXIT'.
+- **Source Program:** XFXTABL (RPGLE)
+- **Confidence Score:** 0.9
+- **Domain:** DATA_MAINTENANCE
+- **PHI in Path:** false
+
+**Business Impact:**  
+Fourth variant ensuring that all table lookup phases honor the same global switch. Changing this behavior could unintentionally re-enable disabled lookups.
+
+**Test Requirement:** No
+
+---
+
+## 2. PATIENT_MANAGEMENT Domain
+
+### BR-017 – File Indicator Skip
+
+- **Rule Text:** When -FILE INDICATOR equals zero, branch to 'SKIP'.
+- **Source Program:** HABADTE (RPGLE)
+- **Confidence Score:** 0.92
+- **Domain:** PATIENT_MANAGEMENT
+- **PHI in Path:** false
+
+**Business Impact:**  
+Records marked with a file indicator of zero are treated as not ready or not applicable for reporting. This prevents incomplete or suppressed records from entering inpatient transfer outputs.
+
+**Test Requirement:** No
+
+---
+
+### BR-018 – Void/Void Flag Skip
+
+- **Rule Text:** When -FLAG INDICATOR equals void/voided, branch to 'SKIP'.
+- **Source Program:** HABADTE (RPGLE)
+- **Confidence Score:** 0.99
+- **Domain:** PATIENT_MANAGEMENT
+- **PHI in Path:** false
+
+**Business Impact:**  
+Voided transfer records are excluded from downstream outputs, ensuring that only active, non-reversed movements appear in patient tracking and integration feeds.
+
+**Test Requirement:** No
+
+---
+
+### BR-019 – Outpatient Flag Skip
+
+- **Rule Text:** When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'.
+- **Source Program:** HABADTE (RPGLE)
+- **Confidence Score:** 0.99
+- **Domain:** PATIENT_MANAGEMENT
+- **PHI in Path:** false
+
+**Business Impact:**  
+Outpatient records are not included in the inpatient transfer batch. This maintains a clear separation between inpatient bed movements and outpatient encounters, avoiding mixed-domain reporting.
+
+**Test Requirement:** No
+
+---
+
+## 3. Cross-Domain Testing Guidance
+
+For modernization, the following cross-cutting scenarios should be explicitly tested:
+
+1. **Date Validation** (BR-003–BR-008)  
+   - Verify that invalid dates (year < 1800 or > 2100, month < 1 or > 12, day outside valid range) are rejected consistently across all services.
+
+2. **Descriptor Map Integrity** (BR-009–BR-012)  
+   - Ensure that LDAMAP values outside allowed ranges cause safe termination of descriptor logic without corrupting outputs.
+
+3. **Table Lookup Guard Behavior** (BR-013–BR-016)  
+   - Confirm that indicator-based guards correctly disable or enable lookups, and that toggling *IN79 changes behavior in a controlled manner.
+
+4. **Inpatient Transfer Filtering** (BR-017–BR-019)  
+   - Validate that file, void, and inpatient/outpatient flags produce expected inclusion/exclusion behavior and accurate summary counts.
+
+This catalog should be used as a baseline for automated tests and acceptance criteria in the Java/Spring Boot modernization.
