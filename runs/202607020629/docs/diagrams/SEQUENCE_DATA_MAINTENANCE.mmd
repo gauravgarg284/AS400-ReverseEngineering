@@ -1,0 +1,7 @@
+%% DATA_MAINTENANCE Processing Sequence
+sequenceDiagram
+    participant MainLoop
+    MainLoop->>XFXCNTR: Apply BR-001 (X = 0) and BR-002 (X = 40)
+    MainLoop->>XFXCYMD: Apply BR-003 to BR-008 for date validation
+    MainLoop->>XFXLDSC: Apply BR-009 to BR-012 for LDAMAP mapping limits
+    MainLoop->>XFXTABL: Apply BR-013 to BR-016 for indicator based table exit
