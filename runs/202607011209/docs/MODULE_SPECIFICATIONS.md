@@ -1,222 +1,205 @@
-# Module Specifications – HABADTE AS400 Application
+# Module Specifications – HABADTE Project
 
-## Section 1 – Component Inventory
+## 1. Component Inventory
 
-| Program       | Type     | Subsystem | Lines | CC  | Risk Band | Orphan |
-|--------------|---------|-----------|-------|-----|-----------|--------|
-| HAPIRNK      | DDS_LF  | HAP       | 13    | N/A | N/A       | No     |
-| HAPTRFR      | DDS_PF  | HAP       | 72    | N/A | N/A       | No     |
-| HMLMAST5H    | DDS_LF  | UNGROUPED | 12    | N/A | N/A       | No     |
-| HXLTABLD     | DDS_LF  | HXLT      | 11    | N/A | N/A       | No     |
-| HXLTABLP     | DDS_LF  | HXLT      | 12    | N/A | N/A       | No     |
-| HXLTABLS     | DDS_LF  | HXLT      | 12    | N/A | N/A       | No     |
-| HXPBNFIT     | DDS_LF  | HXP       | 12    | N/A | N/A       | No     |
-| HXPDICT      | DDS_PF  | HXP       | 6130  | N/A | N/A       | No     |
-| HXPLVL1      | DDS_PF  | HXPL      | 49    | N/A | N/A       | No     |
-| HXPLVL2      | DDS_PF  | HXPL      | 52    | N/A | N/A       | No     |
-| HXPLVL3      | DDS_PF  | HXPL      | 52    | N/A | N/A       | No     |
-| HXPLVL4      | DDS_PF  | HXPL      | 52    | N/A | N/A       | No     |
-| HXPLVL5      | DDS_PF  | HXPL      | 55    | N/A | N/A       | No     |
-| HXPLVL6      | DDS_PF  | HXPL      | 321   | N/A | N/A       | No     |
-| HXPNSTN      | DDS_LF  | HXP       | 12    | N/A | N/A       | No     |
-| HXPTABLD     | DDS_PF  | HXP       | 19    | N/A | N/A       | No     |
-| HXPXMLD      | DDS_PF  | HXPX      | 19    | N/A | N/A       | No     |
-| HXPXMLR      | DDS_PF  | HXPX      | 19    | N/A | N/A       | No     |
-| OAPIRNK      | DDS_PF  | UNGROUPED | 80    | N/A | N/A       | No     |
-| OMPMAST      | DDS_PF  | UNGROUPED | 310   | N/A | N/A       | No     |
-| OXPBNFIT     | DDS_PF  | OXP       | 48    | N/A | N/A       | No     |
-| OXPNSTN      | DDS_PF  | OXP       | 65    | N/A | N/A       | No     |
-| HXXAPPPRF    | SQLRPGLE| HXXA      | 123   | 1   | LOW       | Yes    |
-| XFXCNTR      | RPGLE   | XFXC      | 49    | 3   | LOW       | Yes    |
-| XFXCYMD      | RPGLE   | XFXC      | 83    | 7   | LOW       | Yes    |
-| XFXGETID     | RPGLE   | XFX       | 61    | 1   | LOW       | Yes    |
-| XFXLDSC      | RPGLE   | XFXL      | 135   | 5   | LOW       | No     |
-| XFXLEAP      | RPGLE   | XFXL      | 61    | 1   | LOW       | Yes    |
-| XFXMRNROL    | RPGLE   | XFX       | 65    | 1   | LOW       | Yes    |
-| XFXTABL      | RPGLE   | XFX       | 164   | 9   | LOW       | Yes    |
-| CXXXMLP      | SQLRPGLE| UNGROUPED | 25    | 1   | LOW       | Yes    |
-| HXXAPPPRFP   | RPGLE   | HXXA      | 42    | 1   | LOW       | Yes    |
-| HXXCNTRL     | RPGLE   | HXX       | 8     | 1   | LOW       | Yes    |
-| HXXLDA       | RPGLE   | HXXL      | 53    | 1   | LOW       | Yes    |
-| HXXLEVEL     | RPGLE   | HXXL      | 25    | 1   | LOW       | Yes    |
-| HXXXML       | RPGLE   | HXX       | 11    | 1   | LOW       | Yes    |
-| HABADTE      | RPGLE   | HA        | 821   | 152 | HIGH      | Yes    |
+The table below lists all harvested source members with structural and risk metadata derived from the aggregated context.
 
-_Total members: 37; total lines: 9,153; completeness: 82.2%; gaps: 8._
+| Program | Type | Subsystem | Lines | CC | Risk Band | Orphan |
+|--------|------|-----------|-------|----|-----------|--------|
+| HAPIRNK | DDS_LF | HAP | 13 | N/A | N/A | yes |
+| HAPTRFR | DDS_PF | HAP | 72 | N/A | N/A | no |
+| HMLMAST5H | DDS_LF | UNGROUPED | 12 | N/A | N/A | yes |
+| HXLTABLD | DDS_LF | HXLT | 11 | N/A | N/A | yes |
+| HXLTABLP | DDS_LF | HXLT | 12 | N/A | N/A | yes |
+| HXLTABLS | DDS_LF | HXLT | 12 | N/A | N/A | yes |
+| HXPBNFIT | DDS_LF | HXP | 12 | N/A | N/A | yes |
+| HXPDICT | DDS_PF | HXP | 6130 | N/A | N/A | no |
+| HXPLVL1 | DDS_PF | HXPL | 49 | N/A | N/A | no |
+| HXPLVL2 | DDS_PF | HXPL | 52 | N/A | N/A | no |
+| HXPLVL3 | DDS_PF | HXPL | 52 | N/A | N/A | no |
+| HXPLVL4 | DDS_PF | HXPL | 52 | N/A | N/A | no |
+| HXPLVL5 | DDS_PF | HXPL | 55 | N/A | N/A | no |
+| HXPLVL6 | DDS_PF | HXPL | 321 | N/A | N/A | no |
+| HXPNSTN | DDS_LF | HXP | 12 | N/A | N/A | yes |
+| HXPTABLD | DDS_PF | HXP | 19 | N/A | N/A | no |
+| HXPXMLD | DDS_PF | HXPX | 19 | N/A | N/A | no |
+| HXPXMLR | DDS_PF | HXPX | 19 | N/A | N/A | no |
+| OAPIRNK | DDS_PF | UNGROUPED | 80 | N/A | N/A | no |
+| OMPMAST | DDS_PF | UNGROUPED | 310 | N/A | N/A | no |
+| OXPBNFIT | DDS_PF | OXP | 48 | N/A | N/A | no |
+| OXPNSTN | DDS_PF | OXP | 65 | N/A | N/A | no |
+| HXXAPPPRF | SQLRPGLE | HXXA | 123 | 1 | LOW | yes |
+| XFXCNTR | RPGLE | XFXC | 49 | 3 | LOW | yes |
+| XFXCYMD | RPGLE | XFXC | 83 | 7 | LOW | yes |
+| XFXGETID | RPGLE | XFX | 61 | 1 | LOW | yes |
+| XFXLDSC | RPGLE | XFXL | 135 | 5 | LOW | yes |
+| XFXLEAP | RPGLE | XFXL | 61 | 1 | LOW | yes |
+| XFXMRNROL | RPGLE | XFX | 65 | 1 | LOW | yes |
+| XFXTABL | RPGLE | XFX | 164 | 9 | LOW | yes |
+| CXXXMLP | SQLRPGLE | UNGROUPED | 25 | 1 | LOW | no |
+| HXXAPPPRFP | RPGLE | HXXA | 42 | 1 | LOW | no |
+| HXXCNTRL | RPGLE | HXX | 8 | 1 | LOW | no |
+| HXXLDA | RPGLE | HXXL | 53 | 1 | LOW | no |
+| HXXLEVEL | RPGLE | HXXL | 25 | 1 | LOW | no |
+| HXXXML | RPGLE | HXX | 11 | 1 | LOW | no |
+| HABADTE | RPGLE | HA | 821 | 152 | HIGH | yes |
 
-## Section 2 – Dependency Hotspots
+Notes:
+- "Orphan" is marked "yes" where the program appears in the orphan_programs list.
+- Cyclomatic complexity (CC) and risk band are included only for executable programs.
 
-Programs with highest combined call fan-out and file activity.
+## 2. Dependency Hotspots
 
-| Program   | Score | Fan-In | Fan-Out | File Ops |
-|-----------|-------|--------|---------|----------|
-| HABADTE   | 38    | 0      | 13      | 6        |
-| XFXLDSC   | 15    | 1      | 0       | 6        |
-| XFXTABL   | 11    | 1      | 0       | 4        |
-| XFXCNTR   | 9     | 3      | 0       | 0        |
-| XFXMRNROL | 7     | 1      | 2       | 0        |
-| XFXGETID  | 7     | 1      | 1       | 1        |
-| HXXAPPPRF | 7     | 1      | 2       | 0        |
-| XFXCYMD   | 5     | 1      | 1       | 0        |
-| HXHAPPPRF | 3     | 1      | 0       | 0        |
-| XFXLEAP   | 3     | 1      | 0       | 0        |
-| HXLTABLS  | 2     | 0      | 0       | 1        |
-| HMLMAST5H | 2     | 0      | 0       | 1        |
-| HXPNSTN   | 2     | 0      | 0       | 1        |
-| HAPIRNK   | 2     | 0      | 0       | 1        |
-| HXLTABLD  | 2     | 0      | 0       | 1        |
-| HXPBNFIT  | 2     | 0      | 0       | 1        |
-| HXLTABLP  | 2     | 0      | 0       | 1        |
+Programs with the highest structural complexity and dependency fan-out.
 
-HABADTE is the central orchestrator for patient management and XML output, with many downstream calls and file operations. XFXLDSC and XFXTABL are key lookup and level-discovery utilities.
+| Program | Score | Fan-In | Fan-Out | File Ops |
+|---------|-------|--------|---------|----------|
+| HABADTE | 38 | 0 | 13 | 6 |
+| XFXLDSC | 15 | 1 | 0 | 6 |
+| XFXTABL | 11 | 1 | 0 | 4 |
+| XFXCNTR | 9 | 3 | 0 | 0 |
+| XFXMRNROL | 7 | 1 | 2 | 0 |
+| XFXGETID | 7 | 1 | 1 | 1 |
+| HXXAPPPRF | 7 | 1 | 2 | 0 |
+| XFXCYMD | 5 | 1 | 1 | 0 |
+| HXHAPPPRF | 3 | 1 | 0 | 0 |
+| XFXLEAP | 3 | 1 | 0 | 0 |
+| HXLTABLS | 2 | 0 | 0 | 1 |
+| HMLMAST5H | 2 | 0 | 0 | 1 |
+| HXPNSTN | 2 | 0 | 0 | 1 |
+| HAPIRNK | 2 | 0 | 0 | 1 |
+| HXLTABLD | 2 | 0 | 0 | 1 |
+| HXPBNFIT | 2 | 0 | 0 | 1 |
+| HXLTABLP | 2 | 0 | 0 | 1 |
 
-## Section 3 – Call Graph Summary
+HABADTE is the dominant hotspot and should be treated as the primary batch/integration module during modernization.
 
-Call, copy, file and logical relationships inferred from the dependency edges.
+## 3. Call Graph Summary
 
-### Program-to-Program Calls
+The following table summarizes direct dependencies between members.
 
-| Caller     | Callee      | Type  |
-|------------|-------------|-------|
-| XFXCYMD    | XFXLEAP     | CALL  |
-| XFXMRNROL  | HXHAPPPRF   | CALL  |
-| XFXMRNROL  | HXXAPPPRF   | CALL  |
-| HABADTE    | XFXMRNROL   | CALL  |
-| HABADTE    | XFXCNTR     | CALL  |
-| HABADTE    | XFXLDSC     | CALL  |
-| HABADTE    | XFXCNTR     | CALL  |
-| HABADTE    | XFXCNTR     | CALL  |
-| HABADTE    | XFXCYMD     | CALL  |
-| HABADTE    | XFXGETID    | CALL  |
-| HABADTE    | XFXTABL     | CALL  |
+| Caller (f) | Callee/File (t) | Dependency Type |
+|------------|-----------------|-----------------|
+| XFXCYMD | XFXLEAP | CALL |
+| XFXMRNROL | HXHAPPPRF | CALL |
+| XFXMRNROL | HXXAPPPRF | CALL |
+| HABADTE | XFXMRNROL | CALL |
+| HABADTE | XFXCNTR | CALL |
+| HABADTE | XFXLDSC | CALL |
+| HABADTE | XFXCNTR | CALL |
+| HABADTE | XFXCNTR | CALL |
+| HABADTE | XFXCYMD | CALL |
+| HABADTE | XFXGETID | CALL |
+| HABADTE | XFXTABL | CALL |
+| HXXAPPPRF | HXXCNTRL | COPY |
+| HXXAPPPRF | HXXAPPPRFP | COPY |
+| XFXGETID | HXXLDA | COPY |
+| HABADTE | HXXLDA | COPY |
+| HABADTE | HXXLEVEL | COPY |
+| HABADTE | HXXXML | COPY |
+| HABADTE | CXXXMLP | COPY |
+| HABADTE | CXXXMLC | COPY |
+| HAPIRNK | TAPIRNK | PFILE_OF |
+| HMLMAST5H | TMPMAST | PFILE_OF |
+| HXLTABLD | HXPTABLD | PFILE_OF |
+| HXLTABLP | HXPTABLD | PFILE_OF |
+| HXLTABLS | HXPTABLD | PFILE_OF |
+| HXPBNFIT | TXPBNFIT | PFILE_OF |
+| HXPNSTN | TXPNSTN | PFILE_OF |
+| XFXGETID | HXFXMLR | READ |
+| XFXLDSC | HXFLVL1 | READ |
+| XFXLDSC | HXFLVL2 | READ |
+| XFXLDSC | HXFLVL3 | READ |
+| XFXLDSC | HXFLVL4 | READ |
+| XFXLDSC | HXFLVL5 | READ |
+| XFXLDSC | HXFLVL6 | READ |
+| XFXTABL | XFFTABLD | READ |
+| XFXTABL | XFFTABL2 | READ |
+| XFXTABL | XFFTABL3 | READ |
+| XFXTABL | XFFTABL4 | READ |
+| HABADTE | HAPTRFR | READ |
+| HABADTE | XFFNSTN | READ |
+| HABADTE | HXFXMLH | READ |
+| HABADTE | HXFXMLH | UPDATE |
+| HABADTE | HXFXMLH | WRITE |
+| HABADTE | HXFXMLD | WRITE |
 
-HABADTE calls multiple XFX* utility programs for counter logic, date validation, ID retrieval and table lookup. XFXMRNROL further delegates to profile programs HXHAPPPRF and HXXAPPPRF.
+These edges drive the sequencing of batch processing, table lookups, and XML creation.
 
-### Copy Relationships
+## 4. Business Rules by Program
 
-| Source Program | Copied Member | Type  |
-|----------------|---------------|-------|
-| HXXAPPPRF      | HXXCNTRL      | COPY  |
-| HXXAPPPRF      | HXXAPPPRFP    | COPY  |
-| XFXGETID       | HXXLDA        | COPY  |
-| HABADTE        | HXXLDA        | COPY  |
-| HABADTE        | HXXLEVEL      | COPY  |
-| HABADTE        | HXXXML        | COPY  |
-| HABADTE        | CXXXMLP       | COPY  |
-| HABADTE        | CXXXMLC       | COPY  |
+Business rules extracted from approved_rules, grouped by source program.
 
-These copies indicate HABADTE and XFXGETID share data area and XML control structures defined in HXX* and CXX* members.
+### Program: XFXCNTR
 
-### Logical-to-Physical File Relationships
+- BR-001 – When X equals zero, branch to 'EXIT'.
+- BR-002 – When X equals 40, branch to 'EXIT'.
 
-| Logical File | Physical File | Type      |
-|--------------|---------------|-----------|
-| HAPIRNK      | TAPIRNK       | PFILE_OF  |
-| HMLMAST5H    | TMPMAST       | PFILE_OF  |
-| HXLTABLD     | HXPTABLD      | PFILE_OF  |
-| HXLTABLP     | HXPTABLD      | PFILE_OF  |
-| HXLTABLS     | HXPTABLD      | PFILE_OF  |
-| HXPBNFIT     | TXPBNFIT      | PFILE_OF  |
-| HXPNSTN      | TXPNSTN       | PFILE_OF  |
+These rules define boundary conditions for a numeric counter; values outside the range (1–39) terminate processing.
 
-### File Access Operations
+### Program: XFXCYMD
 
-| Program   | File/Object | Operation |
-|-----------|------------|-----------|
-| XFXGETID  | HXFXMLR    | READ      |
-| XFXLDSC   | HXFLVL1    | READ      |
-| XFXLDSC   | HXFLVL2    | READ      |
-| XFXLDSC   | HXFLVL3    | READ      |
-| XFXLDSC   | HXFLVL4    | READ      |
-| XFXLDSC   | HXFLVL5    | READ      |
-| XFXLDSC   | HXFLVL6    | READ      |
-| XFXTABL   | XFFTABLD   | READ      |
-| XFXTABL   | XFFTABL2   | READ      |
-| XFXTABL   | XFFTABL3   | READ      |
-| XFXTABL   | XFFTABL4   | READ      |
-| HABADTE   | HAPTRFR    | READ      |
-| HABADTE   | XFFNSTN    | READ      |
-| HABADTE   | HXFXMLH    | READ      |
-| HABADTE   | HXFXMLH    | UPDATE    |
-| HABADTE   | HXFXMLH    | WRITE     |
-| HABADTE   | HXFXMLD    | WRITE     |
+- BR-003 – When VYY is less than 1800, branch to 'EXIT'.
+- BR-004 – When VYY is greater than 2100, branch to 'EXIT'.
+- BR-005 – When VMM is less than 01, branch to 'EXIT'.
+- BR-006 – When VMM is greater than 12, branch to 'EXIT'.
+- BR-007 – When VDD is less than 01, branch to 'EXIT'.
+- BR-008 – When VDD is greater than DYS(VMM), branch to 'EXIT'.
 
-HABADTE is responsible for reading transactional transfer data, performing status lookups, and producing XML structures.
+XFXCYMD enforces calendar validity on year, month, and day components before downstream batch logic executes.
 
-## Section 4 – Business Rules by Program
+### Program: XFXLDSC
 
-Business rules extracted from RPG logic and grouped by source program.
+- BR-009 – When LDAMAP is greater than 99, branch to 'EXIT'.
+- BR-010 – When LDAMAP is greater than 99, branch to 'EXIT'.
+- BR-011 – When LDAMAP is greater than 99, branch to 'EXIT'.
+- BR-012 – When LDAMAP is greater than 9999, branch to 'EXIT'.
 
-### Program XFXCNTR (Domain: DATA_MAINTENANCE)
+These rules prevent processing of descriptor maps outside allowed numeric ranges, ensuring table lookups remain within configured limits.
 
-- BR-001: When X equals zero, branch to `EXIT`.
-- BR-002: When X equals 40, branch to `EXIT`.
+### Program: XFXTABL
 
-These rules govern boundary conditions for a counter or numeric control field. If the counter is at zero or at a specific terminal value (40), processing exits early.
+- BR-013 – When *IN79 equals on/active, branch to 'EXIT'.
+- BR-014 – When *IN79 equals on/active, branch to 'EXIT'.
+- BR-015 – When *IN79 equals on/active, branch to 'EXIT'.
+- BR-016 – When *IN79 equals on/active, branch to 'EXIT'.
 
-### Program XFXCYMD (Domain: DATA_MAINTENANCE)
+XFXTABL uses indicator *IN79 to guard execution segments. When the indicator is on, certain branches terminate early, effectively disabling specific table lookup paths.
 
-- BR-003: When VYY is less than 1800, branch to `EXIT`.
-- BR-004: When VYY is greater than 2100, branch to `EXIT`.
-- BR-005: When VMM is less than 01, branch to `EXIT`.
-- BR-006: When VMM is greater than 12, branch to `EXIT`.
-- BR-007: When VDD is less than 01, branch to `EXIT`.
-- BR-008: When VDD is greater than `DYS(VMM)`, branch to `EXIT`.
+### Program: HABADTE
 
-These rules collectively validate Gregorian calendar dates, ensuring year, month and day are all within valid ranges before further processing.
+- BR-017 – When -FILE INDICATOR equals zero, branch to 'SKIP'.
+- BR-018 – When -FLAG INDICATOR equals void/voided, branch to 'SKIP'.
+- BR-019 – When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'.
 
-### Program XFXLDSC (Domain: DATA_MAINTENANCE)
+HABADTE skips records that are file-suppressed, voided, or flagged as outpatient, ensuring that only active inpatient transfer records are included in the batch run.
 
-- BR-009: When LDAMAP is greater than 99, branch to `EXIT`.
-- BR-010: When LDAMAP is greater than 99, branch to `EXIT`.
-- BR-011: When LDAMAP is greater than 99, branch to `EXIT`.
-- BR-012: When LDAMAP is greater than 9999, branch to `EXIT`.
+## 5. Missing Dependencies
 
-LDAMAP appears to be a level or mapping code. These rules enforce upper bounds on mapping identifiers to avoid invalid lookups.
+Missing components identified as high or medium impact gaps.
 
-### Program XFXTABL (Domain: DATA_MAINTENANCE)
+| Name | Type | Impact | Referenced By |
+|------|------|--------|---------------|
+| CXXXMLC | COPYBOOK | HIGH | HABADTE |
+| HXHAPPPRF | PROGRAM | MEDIUM | XFXMRNROL |
+| TAPIRNK | FILE | HIGH | HAPIRNK |
+| TMPMAST | FILE | HIGH | HMLMAST5H |
+| TXPBNFIT | FILE | HIGH | HXPBNFIT |
+| TXPNSTN | FILE | HIGH | HXPNSTN |
+| ****HXPXML | FILE | MEDIUM | HABADTE |
+| PRINTER | FILE | MEDIUM | HABADTE |
 
-- BR-013: When *IN79 equals on/active, branch to `EXIT`.
-- BR-014: When *IN79 equals on/active, branch to `EXIT`.
-- BR-015: When *IN79 equals on/active, branch to `EXIT`.
-- BR-016: When *IN79 equals on/active, branch to `EXIT`.
+These gaps must be addressed before a fully faithful behavioral reconstruction can be achieved. In migration, they will drive interface and feed design.
 
-These rules use the indicator *IN79 to control early exit from table processing; when a particular condition flag is active, subsequent table rows are not processed.
+## 6. Tech Debt Summary
 
-### Program HABADTE (Domain: PATIENT_MANAGEMENT)
-
-- BR-017: When `-FILE INDICATOR` equals zero, branch to `SKIP`.
-- BR-018: When `-FLAG INDICATOR` equals void/voided, branch to `SKIP`.
-- BR-019: When `-INPATIENT/OUTPATIENT FLAG` equals outpatient, branch to `SKIP`.
-
-HABADTE applies these rules to skip records that are missing required file indicators, voided, or flagged as outpatient when only inpatient records are in scope.
-
-## Section 5 – Missing Dependencies
-
-High and medium-impact components referenced by the code but not present in the harvested source.
-
-| Name       | Type      | Impact | Referenced By |
-|------------|-----------|--------|---------------|
-| CXXXMLC    | COPYBOOK  | HIGH   | HABADTE       |
-| HXHAPPPRF  | PROGRAM   | MEDIUM | XFXMRNROL     |
-| TAPIRNK    | FILE      | HIGH   | HAPIRNK       |
-| TMPMAST    | FILE      | HIGH   | HMLMAST5H     |
-| TXPBNFIT   | FILE      | HIGH   | HXPBNFIT      |
-| TXPNSTN    | FILE      | HIGH   | HXPNSTN       |
-| ****HXPXML | FILE      | MEDIUM | HABADTE       |
-| PRINTER    | FILE      | MEDIUM | HABADTE       |
-
-These gaps affect completeness of printing, XML formatting, and some logical file definitions but do not prevent understanding of the core patient filtering logic.
-
-## Section 6 – Tech Debt Summary
-
-Global tech debt indicators from the semantic analysis.
+From the aggregated tech_debt_summary:
 
 - Total findings: 0
-- Estimated remediation hours: 0.0
+- Total remediation hours: 0.0
 - Findings by severity:
   - HIGH: 0
   - MEDIUM: 0
   - LOW: 0
 
-The automated tech-debt profiler did not flag structural issues in this code subset. Risk is instead concentrated in business logic complexity (HABADTE has CC=152) and missing external dependencies.
+Although no automated findings were raised, structural complexity in HABADTE and missing core files/copybooks represent implicit technical debt and modernization risk.
