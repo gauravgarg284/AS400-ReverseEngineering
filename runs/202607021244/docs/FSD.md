@@ -6,133 +6,200 @@
 
 **Purpose:** Authoritative migration specification for the forward engineering team.
 
-The HABADTE system generates an "Active Accounts by Admit Date and Time" inpatient census, producing both printer output and XML payloads. It filters out voided and outpatient records, enriches data with nursing station names, room class configuration, and transfer history, and calculates facility-level totals for active inpatients and leave accounts. The modern implementation will expose this logic via a REST API, backed by SQL Server, while preserving all inclusion/exclusion and enrichment rules.
+The HABADTE program implements a patient transfer and XML export workflow that reads transfer records, applies inclusion/exclusion filters, enriches records from configuration tables, and writes XML header and detail records used by downstream systems. This FSD distils the essential business behaviour and API contract required to reproduce the AS400 process in a modern Java / Spring Boot / SQL Server stack.
 
 ## 1. Functional Scope
 
-IN SCOPE business rules (record filters):
-- **BR-017** – When file indicator equals zero, skip the record from census.
-- **BR-018** – When flag indicator equals void/voided, skip the record from census.
-- **BR-019** – When inpatient/outpatient flag indicates outpatient, skip the record from census.
+The following filter rules are IN SCOPE for this migration:
 
-These three rules define the primary inclusion/exclusion criteria for the inpatient census.
+- **BR-017** – Skip records where file indicator = 0.
+- **BR-018** – Skip records where flag indicator denotes void/voided status.
+- **BR-019** – Skip records where inpatient/outpatient flag indicates outpatient.
+
+These rules together define the eligible subset of patient transfer records that the service will process and export.
 
 ## 2. API Contract
 
-### Inputs (API Request Parameters)
+### 2.1 Inputs (API Request Parameters)
 
-| Parameter Name      | AS400 Field / Concept | Type      | Description |
-|---------------------|-----------------------|-----------|------------|
-| facilityLevel6      | MMPLV6 / AFLVL6       | string    | Corporate level-6 code identifying the facility or hospital for which the census is generated. |
-| censusDate          | AFTRDT / MMADDT       | date      | Census date (CCYYMMDD) representing the desired admit date snapshot. |
-| censusTime          | AFTRTM / MMADTM       | time      | Census time (HHMM) representing the cutoff time within the census date. |
-| nursingStationCode  | XFNSST / MMPNST       | string    | Optional nursing station filter; when provided, limits the census to a specific station. |
-| includeLeave        | indicator             | boolean   | Flag indicating whether patients on hospital/therapeutic leave should be included in counts. |
-| mrnRollupMode       | profile flag          | string    | Mode returned by MRN roll-up profile (e.g., "BY_MRN" vs "BY_ACCOUNT"); controls grouping and header labels. |
-| roomClassCode       | XFDTCD                | string    | Optional room class code filter used by table lookup for descriptions. |
-| requestUserId       | LDAUSR/XMDUSR/XMRUSR | string    | Current user identity taken from LDA and propagated into XML records and audit trails. |
+From Business_Processing_Rules_HABADTE.md section (2):
 
-Notes:
-- Current user identity is sourced from the LDA (HXXLDA) and written into HXPXMLD/HXPXMLR via fields XMDUSR/XMRUSR.
-- Spring Boot security must enforce OAuth2/JWT with RBAC for patient-management roles.
+| Parameter                    | AS400 Field / Source | Type        | Description |
+|-----------------------------|-----------------------|------------|-------------|
+| runDate                     | VYY/VMM/VDD (XFXCYMD) | string (YYYY-MM-DD) | Processing date used to validate transfer date fields before querying. |
+| inpatientOnly               | -INPATIENT/OUTPATIENT FLAG (HABADTE) | boolean     | When true, include only inpatient transfers; enforced by BR-019. |
+| includeVoided               | -FLAG INDICATOR (HABADTE)           | boolean     | When false, skip records marked void/voided; enforced by BR-018. |
+| requireActiveFileIndicator  | -FILE INDICATOR (HABADTE)           | boolean     | When true, skip records with file indicator = 0; enforced by BR-017. |
+| levelMapCode                | LDAMAP (XFXLDSC)                    | integer     | Optional mapping code constraint; values above configured thresholds cause exits (BR-009–BR-012). |
+| tableIndicator79            | *IN79 (XFXTABL)                     | boolean     | Internal flag reflecting table-driven conditions; when active, triggers exits (BR-013–BR-016). |
 
-### Spring Boot API Design
+Security mapping notes:
+- Use OAuth2/OIDC with RBAC scopes (`patient.transfer.read`, `patient.transfer.export`).
+- Log all PHI access for AFACCT, AFMRNO, MMACCT, MRN fields.
 
-- **Method:** `GET`
-- **Path:** `/api/census/active-accounts`
+### 2.2 Spring Boot API Design
+
+From Business_Processing_Rules_HABADTE.md section (14):
+
+- HTTP method: `GET`
+- Path: `/api/patient-transfers/export`
 
 Parameters:
 
-| Name              | Type    | Required | Validation |
-|-------------------|---------|----------|-----------|
-| facilityLevel6    | string  | yes      | Must match known HXPLVL6 code. |
-| censusDate        | string  | yes      | ISO date; converted to DECIMAL(8,0) with XFXCYMD rules. |
-| censusTime        | string  | yes      | HH:mm; must be valid time. |
-| nursingStationCode| string  | no       | If present, must exist in NursingStation table. |
-| includeLeave      | boolean | no       | Default false. |
+| Name            | Type    | Required | Validation                   |
+|----------------|--------|---------|------------------------------|
+| runDate        | String | Yes     | ISO-8601 date, not in future.|
+| inpatientOnly  | Boolean| No      | Default `true`.              |
+| includeVoided  | Boolean| No      | Default `false`.             |
+| levelMapCode   | Integer| No      | Must be >=0 and <=9999.      |
 
 Layer structure:
-- Controller: `CensusController`
-- Service: `CensusService`
-- Repositories: `PatientMasterRepository`, `TransferHistoryRepository`, `NursingStationRepository`, `ConfigTableRepository`, `BenefitPlanRepository`
+- Controller: `PatientTransferExportController`
+- Service: `PatientTransferExportService`
+- Repositories: `HaptrfrRepository`, `LevelConfigRepository`, `TableMappingRepository`, `XmlRepository`
 
 Response JSON shape:
 
 ```json
 {
-  "facility": "General Hospital",
-  "censusDate": "2024-03-31",
-  "censusTime": "06:00",
-  "mrnRollupMode": "BY_ACCOUNT",
-  "totals": {
-    "active": 125,
-    "leave": 7,
-    "beds": 125
-  },
-  "records": [
+  "runDate": "2026-07-02",
+  "processedCount": 120,
+  "skippedCount": 15,
+  "errorCount": 3,
+  "transfers": [
     {
-      "accountNumber": "123456789012",
-      "mrn": "MRN00000001",
-      "patientName": "DOE, JANE",
-      "nursingStation": "3EAST",
-      "stationName": "3 East Medical",
-      "roomNumber": "301A",
-      "admitDate": "2024-03-29",
-      "admitTime": "14:32",
-      "roomClass": "SEMIPRIV",
-      "roomClassDescription": "Semi-Private",
-      "onLeave": false
+      "transferKey": {
+        "level6": 6,
+        "account": "A12345",
+        "date": "2026-07-01",
+        "time": "14:30",
+        "type": "ADMIT"
+      },
+      "patientMrn": "MRN0001",
+      "inpatient": true,
+      "voided": false,
+      "levelDesc": "L1-L2-L3-L4-L5-L6",
+      "mappingDesc": "BedTransfer",
+      "xmlDetailId": "XMLD-000001"
     }
   ]
 }
 ```
 
+Java entity/DTO sketch:
+
+```java
+public record TransferKey(
+    int level6,
+    String account,
+    LocalDate date,
+    LocalTime time,
+    String type
+) {}
+
+public record PatientTransferDto(
+    TransferKey transferKey,
+    String patientMrn,
+    boolean inpatient,
+    boolean voided,
+    String levelDesc,
+    String mappingDesc,
+    String xmlDetailId
+) {}
+
+public record PatientTransferExportResponse(
+    LocalDate runDate,
+    int processedCount,
+    int skippedCount,
+    int errorCount,
+    List<PatientTransferDto> transfers
+) {}
+```
+
 ## 3. Business Rules (Summary)
+
+From Business_Processing_Rules_HABADTE.md section (16):
 
 | Rule ID | Description |
 |---------|-------------|
-| BR-017  | When file indicator equals zero, skip the record from census. |
-| BR-018  | When flag indicator equals void/voided, skip the record from census. |
-| BR-019  | When inpatient/outpatient flag indicates outpatient, skip the record from census. |
-| BR-003  | Validate year: when VYY < 1800, exit date conversion. |
-| BR-004  | Validate year: when VYY > 2100, exit date conversion. |
-| BR-005  | Validate month: when VMM < 01, exit date conversion. |
-| BR-006  | Validate month: when VMM > 12, exit date conversion. |
-| BR-007  | Validate day: when VDD < 01, exit date conversion. |
-| BR-008  | Validate day: when VDD > DYS(VMM), exit date conversion. |
-| BR-009–BR-012 | Validate level mapping (LDAMAP) ranges for facility descriptions. |
-| BR-013–BR-016 | When *IN79 indicator is on/active, exit table lookup processing. |
-| BR-020 | SQL program HXXAPPPRF accesses table HXPAPPPRF for profile configuration. |
+| BR-017  | Skip records where file indicator = 0. |
+| BR-018  | Skip records where flag indicator denotes void/voided status. |
+| BR-019  | Skip records where inpatient/outpatient flag indicates outpatient. |
+| BR-001  | Exit control routine when X = 0. |
+| BR-002  | Exit control routine when X = 40. |
+| BR-003  | Exit date validation when year < 1800. |
+| BR-004  | Exit date validation when year > 2100. |
+| BR-005  | Exit date validation when month < 1. |
+| BR-006  | Exit date validation when month > 12. |
+| BR-007  | Exit date validation when day < 1. |
+| BR-008  | Exit date validation when day exceeds days-in-month. |
+| BR-009  | Exit level description when LDAMAP > 99. |
+| BR-010  | Exit level description when LDAMAP > 99. |
+| BR-011  | Exit level description when LDAMAP > 99. |
+| BR-012  | Exit level description when LDAMAP > 9999. |
+| BR-013  | Exit table routine when indicator *IN79 is ON. |
+| BR-014  | Exit table routine when indicator *IN79 is ON. |
+| BR-015  | Exit table routine when indicator *IN79 is ON. |
+| BR-016  | Exit table routine when indicator *IN79 is ON. |
+| BR-020  | SQL profile program accesses table HXPAPPPRF. |
 
 ## 4. Data Model
 
-### SQL Server Table Mapping
+From Business_Processing_Rules_HABADTE.md section (13):
 
-| AS400 Object | SQL Server Table      | Purpose |
-|-------------|-----------------------|---------|
-| TMPMAST/OMPMAST | dbo.PatientMaster  | Core patient account and demographic data. |
-| HAPTRFR      | dbo.TransferHistory   | Room and bed transfer events per account. |
-| HXPLVL1–6    | dbo.CorporateLevels   | Corporate hierarchy (levels 1–6). |
-| HXPTABLD     | dbo.ConfigTable       | Generic configuration table for codes and descriptions. |
-| HXLTABLD/P/S | dbo.ConfigTableViews  | Alternate keys and projections over configuration data. |
-| OXPBNFIT     | dbo.BenefitPlans      | Benefit plan definitions and contact phone numbers. |
-| OXPNSTN      | dbo.NursingStation    | Station definitions per facility. |
-| HXPXMLD      | dbo.XmlDetail         | XML detail payload per user/run. |
-| HXPXMLR      | dbo.XmlHeader         | XML header and id sequences. |
+| AS400 Object | SQL Server Table | Purpose |
+|-------------|------------------|---------|
+| HAPTRFR     | dbo.HAPTRFR      | Patient transfer records (primary entity). |
+| HXPDICT     | dbo.HXPDICT      | Patient dictionary/master data with PHI fields. |
+| HXPLVL1–6   | dbo.HXPLVL1–6    | Level configuration hierarchy. |
+| HXPTABLD    | dbo.HXPTABLD     | Code/description mapping table. |
+| HXPXMLD     | dbo.HXPXMLD      | XML detail control table. |
+| HXPXMLR     | dbo.HXPXMLR      | XML sequence/identity table. |
+| OAPIRNK     | dbo.OAPIRNK      | Inquiry records with MRN. |
+| OMPMAST     | dbo.OMPMAST      | Patient master with MRN, account, name, SSN. |
+| OXPBNFIT    | dbo.OXPBNFIT     | Benefit master records. |
+| OXPNSTN     | dbo.OXPNSTN      | Station/status records. |
+
+Suggested SQL Server indexes:
+
+```sql
+CREATE INDEX IX_HAPTRFR_RunDate
+ON dbo.HAPTRFR (AFTRDT, AFTRTM, AFLVL6, AFACCT, AFTYPE);
+
+CREATE INDEX IX_HXPLVL1_Key ON dbo.HXPLVL1 (HX1NUM);
+CREATE INDEX IX_HXPLVL2_Key ON dbo.HXPLVL2 (HX2NUM);
+CREATE INDEX IX_HXPLVL3_Key ON dbo.HXPLVL3 (HX3NUM);
+CREATE INDEX IX_HXPLVL4_Key ON dbo.HXPLVL4 (HX4NUM);
+CREATE INDEX IX_HXPLVL5_Key ON dbo.HXPLVL5 (HX5NUM);
+CREATE INDEX IX_HXPLVL6_Key ON dbo.HXPLVL6 (HX6NUM);
+
+CREATE INDEX IX_HXPTABLD_Code
+ON dbo.HXPTABLD (XFDTCD, XFDECD);
+
+CREATE INDEX IX_HXPXMLR_UserSeq
+ON dbo.HXPXMLR (XMRUSR, XMRSEQ);
+
+CREATE INDEX IX_OMPMAST_Account
+ON dbo.OMPMAST (MMACCT);
+
+CREATE INDEX IX_OMPMAST_MRN
+ON dbo.OMPMAST (MMMRNO, MMMMRN);
+```
 
 ## 5. Acceptance Criteria
 
-| Scenario                              | Expected Behavior |
-|---------------------------------------|-------------------|
-| Null/zero census date                 | Reject request; return validation error; no data processed. |
-| Invalid date (month/day/year out of range) | Use XFXCYMD-equivalent validation; return error or skip record depending on context. |
-| Null/zero census time                 | Treat as 00:00 or reject based on configuration; document decision. |
-| Not-found nursing station lookup      | Print station code; log configuration gap; do not fail request. |
-| Not-found room class mapping          | Use generic description; set leave_flag false; log gap. |
-| Transfer record not found             | Use room from master record; still count record as active. |
-| Delete/void flags on master record    | Apply BR-018; skip from census. |
-| Outpatient flag on record             | Apply BR-019; skip from census. |
-| Empty result set                      | Return response with totals = 0 and no records; report header still printed. |
-| Preferences not configured (missing profile records) | Default mrnRollupMode to BY_ACCOUNT; mark response with warning; still produce census.
+From Business_Processing_Rules_HABADTE.md section (17):
+
+| Scenario                                | Expected Behavior |
+|----------------------------------------|-------------------|
+| AFTRDT = 0 or AFTRTM = 0               | Treat as null; exclude record from main report or flag as error. |
+| Date components invalid (XFXCYMD rules)| Do not process transfer; increment errorCount. |
+| LDAMAP > 99 or > 9999                  | Skip level enrichment; proceed with transfer flagged as `mappingInvalid`. |
+| Missing level records in HXPLVL*       | Use partial levelDesc; log warning. |
+| *IN79 = ON in table logic              | Skip table enrichment for that record; possibly skip record depending on business decision. |
+| No XML ID found in HXPXMLR/HXFXMLR     | Initialise new XML sequence; create header record before details. |
+| Failed write to HXFXMLD/HXFXMLH        | Increment errorCount; log error; do not retry automatically. |
+| No transfers match inclusion filters   | Return empty `transfers` array with processedCount = 0; HTTP 200 response. |
+| Preferences not configured (missing mapping) | Mark records as `requiresManualReview`; do not block processing. |
 
 > Full detail: see Business_Processing_Rules_HABADTE.md
