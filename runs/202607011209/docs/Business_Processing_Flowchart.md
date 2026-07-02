@@ -1,234 +1,263 @@
-# Business Processing Flowchart – HABADTE Run 202607011209
+# Business Processing Flowcharts – HABADTE Project
+
+This document provides visual flowcharts for the main business processing paths identified in the HABADTE project, using narratives and rules from the interpreted AS400 RPG programs.
 
 ## 1. Top-Level Processing Flow
 
 ```mermaid
 flowchart TD
-    START([Start]) --> RCV_INP[Receive input and load transfer records]
-    RCV_INP --> CNT_INIT[Initialize counters]
-    CNT_INIT --> PREF_LOAD[Load application preferences and profile data]
-    PREF_LOAD --> HDR_RESOLVE[Resolve patient header and context via HABADTE]
-    HDR_RESOLVE --> MAIN_LOOP[Main transfer query loop]
-    MAIN_LOOP --> CNT_ACCUM[Accumulate counters and apply validations]
-    CNT_ACCUM --> RESP_ASM[Assemble XML response structures]
-    RESP_ASM --> END([End])
+    START([Batch Start])
+    INPUT([Input Receipt])
+    CNTRINIT([Counter Init])
+    PREFLOAD([Preference Loads])
+    HDRRES([Header Resolution])
+    MAINLOOP([Main Query Loop])
+    CNTACC([Counter Accumulation])
+    RESPASM([Response Assembly])
+    END([Batch End])
+
+    START --> INPUT
+    INPUT --> CNTRINIT
+    CNTRINIT --> PREFLOAD
+    PREFLOAD --> HDRRES
+    HDRRES --> MAINLOOP
+    MAINLOOP --> CNTACC
+    CNTACC --> RESPASM
+    RESPASM --> END
 ```
 
 ## 2. Record Filter Gate
 
+Record-level filters are driven by rules where `type = "filter"` in `business_rules.json`.
+
 ```mermaid
 flowchart TD
-    START([Start filtering]) --> BR002{BR-002: X equals 40}
-    BR002 -->|EXCLUDE| EXIT1[Exit processing]
-    BR002 -->|INCLUDE| BR003{BR-003: VYY < 1800}
+    RECIN([Record In])
 
-    BR003 -->|EXCLUDE| EXIT2[Exit processing]
-    BR003 -->|INCLUDE| BR004{BR-004: VYY > 2100}
+    subgraph "Filter Gate"
+        BR002{BR-002 X equals 40}
+        BR003{BR-003 VYY less than 1800}
+        BR004{BR-004 VYY greater than 2100}
+        BR005{BR-005 VMM less than 01}
+        BR006{BR-006 VMM greater than 12}
+        BR007{BR-007 VDD less than 01}
+        BR008{BR-008 VDD greater than DYS(VMM)}
+        BR009{BR-009 LDAMAP greater than 99}
+        BR010{BR-010 LDAMAP greater than 99}
+        BR011{BR-011 LDAMAP greater than 99}
+        BR012{BR-012 LDAMAP greater than 9999}
+        BR013{BR-013 IN79 on}
+        BR014{BR-014 IN79 on}
+        BR015{BR-015 IN79 on}
+        BR016{BR-016 IN79 on}
+        BR018{BR-018 Flag equals void}
+        BR019{BR-019 Flag equals outpatient}
+    end
 
-    BR004 -->|EXCLUDE| EXIT3[Exit processing]
-    BR004 -->|INCLUDE| BR005{BR-005: VMM < 01}
+    RECIN --> BR002
+    BR002 -->|Exclude| EXC002([Exclude BR-002])
+    BR002 -->|Include| BR003
 
-    BR005 -->|EXCLUDE| EXIT4[Exit processing]
-    BR005 -->|INCLUDE| BR006{BR-006: VMM > 12}
+    BR003 -->|Exclude| EXC003([Exclude BR-003])
+    BR003 -->|Include| BR004
 
-    BR006 -->|EXCLUDE| EXIT5[Exit processing]
-    BR006 -->|INCLUDE| BR007{BR-007: VDD < 01}
+    BR004 -->|Exclude| EXC004([Exclude BR-004])
+    BR004 -->|Include| BR005
 
-    BR007 -->|EXCLUDE| EXIT6[Exit processing]
-    BR007 -->|INCLUDE| BR008{BR-008: VDD > DYS(VMM)}
+    BR005 -->|Exclude| EXC005([Exclude BR-005])
+    BR005 -->|Include| BR006
 
-    BR008 -->|EXCLUDE| EXIT7[Exit processing]
-    BR008 -->|INCLUDE| BR018{BR-018: Flag indicator is void}
+    BR006 -->|Exclude| EXC006([Exclude BR-006])
+    BR006 -->|Include| BR007
 
-    BR018 -->|EXCLUDE| EXIT8[Skip voided record]
-    BR018 -->|INCLUDE| BR019{BR-019: Inpatient outpatient flag is outpatient}
+    BR007 -->|Exclude| EXC007([Exclude BR-007])
+    BR007 -->|Include| BR008
 
-    BR019 -->|EXCLUDE| EXIT9[Skip outpatient record]
-    BR019 -->|INCLUDE| BR017{BR-017: File indicator equals zero}
+    BR008 -->|Exclude| EXC008([Exclude BR-008])
+    BR008 -->|Include| BR009
 
-    BR017 -->|EXCLUDE| EXIT10[Skip missing file indicator]
-    BR017 -->|INCLUDE| PASS[Record passes all filters]
+    BR009 -->|Exclude| EXC009([Exclude BR-009])
+    BR009 -->|Include| BR010
+
+    BR010 -->|Exclude| EXC010([Exclude BR-010])
+    BR010 -->|Include| BR011
+
+    BR011 -->|Exclude| EXC011([Exclude BR-011])
+    BR011 -->|Include| BR012
+
+    BR012 -->|Exclude| EXC012([Exclude BR-012])
+    BR012 -->|Include| BR013
+
+    BR013 -->|Exclude| EXC013([Exclude BR-013])
+    BR013 -->|Include| BR014
+
+    BR014 -->|Exclude| EXC014([Exclude BR-014])
+    BR014 -->|Include| BR015
+
+    BR015 -->|Exclude| EXC015([Exclude BR-015])
+    BR015 -->|Include| BR016
+
+    BR016 -->|Exclude| EXC016([Exclude BR-016])
+    BR016 -->|Include| BR018
+
+    BR018 -->|Exclude| EXC018([Exclude BR-018])
+    BR018 -->|Include| BR019
+
+    BR019 -->|Exclude| EXC019([Exclude BR-019])
+    BR019 -->|Include| RECOK([Record Included])
 ```
 
 ## 3. Data Enrichment Flow
 
+Data enrichment uses key rules per program domain to perform secondary lookups.
+
 ```mermaid
 flowchart TD
-    subgraph "Transfer Record Context"
-        RCV[Receive transfer record from HAPTRFR]
-        RCV --> MRN_MAP[Resolve MRN mapping via XFXMRNROL]
+    RECOK([Record Included])
+
+    subgraph "Calendar Enrichment"
+        CALCHK([XFXCYMD Date Validation])
     end
 
-    subgraph "Level Hierarchy Lookup"
-        LVL_DECL[Declare HXPLVL1 to HXPLVL6]
-        LVL_DECL --> LVL_READ[Read HXFLVL1 to HXFLVL6 in XFXLDSC]
-        LVL_READ --> LVL_DESC[Derive level descriptions]
+    subgraph "Level Descriptor Enrichment"
+        LDMAP([XFXLDSC Level Map Validation])
+        LVLREAD([Read HXPLVL1 to HXPLVL6])
     end
 
-    subgraph "Table Dictionary Lookup"
-        TBL_DECL[Declare HXPTABLD and HXLTABL*]
-        TBL_DECL --> TBL_READ[Read XFFTABL* tables in XFXTABL]
-        TBL_READ --> TBL_DESC[Resolve code descriptions]
+    subgraph "Table Lookup Enrichment"
+        TBLGUARD([XFXTABL Indicator Guard])
+        TBLREAD([Read HXPTABLD and variants])
     end
 
-    subgraph "XML Id and Header Context"
-        XML_REF[Declare HXPXMLR and HXFXMLR in XFXGETID]
-        XML_REF --> XML_READ[Read reference rows]
-        XML_READ --> XML_IDS[Derive XML document identifiers]
+    subgraph "Transfer Batch Enrichment"
+        HABPROC([HABADTE Inpatient Transfer Processing])
     end
 
-    RCV --> LVL_DECL
-    RCV --> TBL_DECL
-    RCV --> XML_REF
-    LVL_DESC --> ENRICHED_REC[Enriched record with level data]
-    TBL_DESC --> ENRICHED_REC
-    XML_IDS --> ENRICHED_REC
-    ENRICHED_REC --> XML_DETAIL[Write XML detail via HABADTE]
+    RECOK --> CALCHK
+    CALCHK --> LDMAP
+    LDMAP --> LVLREAD
+    LVLREAD --> TBLGUARD
+    TBLGUARD --> TBLREAD
+    TBLREAD --> HABPROC
 ```
 
 ## 4. Counter and Aggregation Logic
 
+Counters and validations control loop termination and aggregation.
+
 ```mermaid
 flowchart TD
-    CNT_START([Start counters]) --> CNT_TOTAL[Initialize totalRecordsRead]
-    CNT_TOTAL --> CNT_SKIP_FILE[Initialize totalRecordsSkippedFile]
-    CNT_SKIP_FILE --> CNT_SKIP_VOID[Initialize totalRecordsSkippedVoid]
-    CNT_SKIP_VOID --> CNT_SKIP_OUTPT[Initialize totalRecordsSkippedOutpt]
-    CNT_SKIP_OUTPT --> CNT_INCLUDED[Initialize totalRecordsIncluded]
+    CNTSTART([Counter Start])
+    XCHK0{BR-001 X equals 0}
+    XCHK40{BR-002 X equals 40}
 
-    CNT_INCLUDED --> LOOP_REC[For each transfer record]
+    CNTSTART --> XCHK0
+    XCHK0 -->|Exit loop| CNTEXIT0([Exit on zero])
+    XCHK0 -->|Continue| XCHK40
 
-    LOOP_REC --> CHK_X_ZERO[BR-001: X equals zero]
-    CHK_X_ZERO -->|TRUE| INC_SKIP_FILE[Increment totalRecordsSkippedFile]
-    CHK_X_ZERO -->|FALSE| CHK_X_40[BR-002: X equals 40]
+    XCHK40 -->|Exit loop| CNTEXIT40([Exit on forty])
+    XCHK40 -->|Continue| CNTNEXT([Process next record])
 
-    CHK_X_40 -->|TRUE| INC_SKIP_FILE2[Increment totalRecordsSkippedFile]
-    CHK_X_40 -->|FALSE| CHK_DATE_Y_LOW[BR-003: VYY < 1800]
-
-    CHK_DATE_Y_LOW -->|TRUE| INC_SKIP_VOID[Increment totalRecordsSkippedVoid]
-    CHK_DATE_Y_LOW -->|FALSE| CHK_DATE_Y_HIGH[BR-004: VYY > 2100]
-
-    CHK_DATE_Y_HIGH -->|TRUE| INC_SKIP_VOID2[Increment totalRecordsSkippedVoid]
-    CHK_DATE_Y_HIGH -->|FALSE| CHK_DATE_M_LOW[BR-005: VMM < 01]
-
-    CHK_DATE_M_LOW -->|TRUE| INC_SKIP_OUTPT[Increment totalRecordsSkippedOutpt]
-    CHK_DATE_M_LOW -->|FALSE| CHK_DATE_M_HIGH[BR-006: VMM > 12]
-
-    CHK_DATE_M_HIGH -->|TRUE| INC_SKIP_OUTPT2[Increment totalRecordsSkippedOutpt]
-    CHK_DATE_M_HIGH -->|FALSE| CHK_DATE_D_LOW[BR-007: VDD < 01]
-
-    CHK_DATE_D_LOW -->|TRUE| INC_SKIP_OUTPT3[Increment totalRecordsSkippedOutpt]
-    CHK_DATE_D_LOW -->|FALSE| CHK_DATE_D_HIGH[BR-008: VDD > DYS(VMM)]
-
-    CHK_DATE_D_HIGH -->|TRUE| INC_SKIP_OUTPT4[Increment totalRecordsSkippedOutpt]
-    CHK_DATE_D_HIGH -->|FALSE| CHK_FLAG_VOID[BR-018: Flag indicator is void]
-
-    CHK_FLAG_VOID -->|TRUE| INC_SKIP_VOID3[Increment totalRecordsSkippedVoid]
-    CHK_FLAG_VOID -->|FALSE| CHK_FLAG_OUTPT[BR-019: Inpatient outpatient flag is outpatient]
-
-    CHK_FLAG_OUTPT -->|TRUE| INC_SKIP_OUTPT5[Increment totalRecordsSkippedOutpt]
-    CHK_FLAG_OUTPT -->|FALSE| CHK_FILE_IND[BR-017: File indicator equals zero]
-
-    CHK_FILE_IND -->|TRUE| INC_SKIP_FILE3[Increment totalRecordsSkippedFile]
-    CHK_FILE_IND -->|FALSE| INC_INCLUDED[Increment totalRecordsIncluded]
-
-    INC_INCLUDED --> LOOP_REC
+    CNTNEXT --> CNTACC([Accumulate counters])
+    CNTACC --> CNTSTART
 ```
 
 ## 5. Application Preference Lookup Flow
 
+Application preferences and configuration are inferred from XFXTABL and related narratives.
+
 ```mermaid
 flowchart TD
-    START_PREF([Start preference lookup]) --> LOAD_PROFILE[Load application profile via HXXAPPPRF]
-    LOAD_PROFILE --> READ_CNTRL[Copy HXXCNTRL control blocks]
-    READ_CNTRL --> READ_APPPRFP[Copy HXXAPPPRFP profile procedures]
-    READ_APPPRFP --> APPLY_PREF[Apply profile preferences in HABADTE]
+    PREFREQ([Preference Query Request])
+    PREFREAD([Read Dictionary Table HXPTABLD])
+    PREFFOUND{Preference found}
+    PREFFOUND([Apply preference values])
+    PREFMISS([Apply default preferences])
 
-    APPLY_PREF --> PREF_QRY[Execute preference query]
-    PREF_QRY --> PREF_FOUND{Preference record found}
-
-    PREF_FOUND -->|YES| PREF_USE[Apply preference values]
-    PREF_FOUND -->|NO| PREF_DEFAULT[Fall back to default configuration]
-
-    PREF_USE --> PREF_DONE[Preference resolution complete]
-    PREF_DEFAULT --> PREF_DONE
+    PREFREQ --> PREFREAD
+    PREFREAD --> PREFFOUND
+    PREFFOUND -->|Yes| PREFFOUND
+    PREFFOUND -->|No| PREFMISS
 ```
 
 ## 6. Org and Hierarchy Level Lookup Flow
 
+Organizational hierarchy uses multiple level files HXPLVL1 to HXPLVL6.
+
 ```mermaid
 flowchart TD
-    START_LVL([Start hierarchy lookup]) --> LVL1[Lookup level 1 in HXPLVL1]
-    LVL1 --> LVL2[Lookup level 2 in HXPLVL2]
-    LVL2 --> LVL3[Lookup level 3 in HXPLVL3]
-    LVL3 --> LVL4[Lookup level 4 in HXPLVL4]
-    LVL4 --> LVL5[Lookup level 5 in HXPLVL5]
-    LVL5 --> LVL6[Lookup level 6 in HXPLVL6]
+    ORGREQ([Hierarchy Lookup Request])
 
-    LVL1 --> LVL_DESC1[Map level 1 description]
-    LVL2 --> LVL_DESC2[Map level 2 description]
-    LVL3 --> LVL_DESC3[Map level 3 description]
-    LVL4 --> LVL_DESC4[Map level 4 description]
-    LVL5 --> LVL_DESC5[Map level 5 description]
-    LVL6 --> LVL_DESC6[Map level 6 description]
+    subgraph "Level 1"
+        L1READ([Read HXPLVL1])
+    end
 
-    LVL_DESC1 --> LVL_DONE[Hierarchy resolution complete]
-    LVL_DESC2 --> LVL_DONE
-    LVL_DESC3 --> LVL_DONE
-    LVL_DESC4 --> LVL_DONE
-    LVL_DESC5 --> LVL_DONE
-    LVL_DESC6 --> LVL_DONE
+    subgraph "Level 2"
+        L2READ([Read HXPLVL2])
+    end
+
+    subgraph "Level 3"
+        L3READ([Read HXPLVL3])
+    end
+
+    subgraph "Level 4"
+        L4READ([Read HXPLVL4])
+    end
+
+    subgraph "Level 5"
+        L5READ([Read HXPLVL5])
+    end
+
+    subgraph "Level 6"
+        L6READ([Read HXPLVL6])
+    end
+
+    ORGREQ --> L1READ
+    L1READ --> L2READ
+    L2READ --> L3READ
+    L3READ --> L4READ
+    L4READ --> L5READ
+    L5READ --> L6READ
+
+    L6READ --> ORGRES([Return hierarchy descriptors])
 ```
 
-## 7. End to End Summary Flow
+## 7. End-to-End Summary Flow
 
 ```mermaid
 flowchart LR
+
     subgraph "Input"
-        INP_LOAD[Load transfer and master records]
+        INREC([Input Receipt])
     end
 
     subgraph "Setup Phase"
-        SET_PREF[Load preferences and profiles]
-        SET_INIT[Initialize counters and context]
+        SETCNT([Initialize counters])
+        SETPREF([Load preferences and dictionaries])
     end
 
     subgraph "Data Query"
-        QRY_HAPTRFR[Query HAPTRFR for eligible transfers]
-        QRY_JOIN[Join with OMPMAST and benefit status tables]
+        QRYTRN([Query transfer records from HAPTRFR])
     end
 
-    subgraph "Per Record Enrichment Loop"
-        ENR_DATE[Validate date via XFXCYMD]
-        ENR_CNTR[Apply counter limits via XFXCNTR]
-        ENR_LVL[Lookup hierarchy via XFXLDSC]
-        ENR_TBL[Resolve table codes via XFXTABL]
-        ENR_XMLID[Resolve XML identifiers via XFXGETID]
+    subgraph "Per-Record Enrichment Loop"
+        ENRICHREC([Enrich record with dates, levels, tables])
     end
 
     subgraph "Counting"
-        CNT_UPDATE[Update per rule counters]
-        CNT_SUMMARY[Compute final counter summary]
+        COUNTSUM([Update counters and summaries])
     end
 
     subgraph "Response"
-        XML_HDR[Write XML header via HXFXMLH]
-        XML_DET[Write XML detail via HXFXMLD]
-        RESP_OUT[Return XML or API response]
+        XMLHDR([Write XML header HXFXMLH])
+        XMLDET([Write XML detail HXFXMLD])
     end
 
-    INP_LOAD --> SET_PREF
-    SET_PREF --> SET_INIT
-    SET_INIT --> QRY_HAPTRFR
-    QRY_HAPTRFR --> QRY_JOIN
-    QRY_JOIN --> ENR_DATE
-    ENR_DATE --> ENR_CNTR
-    ENR_CNTR --> ENR_LVL
-    ENR_LVL --> ENR_TBL
-    ENR_TBL --> ENR_XMLID
-    ENR_XMLID --> CNT_UPDATE
-    CNT_UPDATE --> CNT_SUMMARY
-    CNT_SUMMARY --> XML_HDR
-    XML_HDR --> XML_DET
-    XML_DET --> RESP_OUT
+    INREC --> SETCNT
+    SETCNT --> SETPREF
+    SETPREF --> QRYTRN
+    QRYTRN --> ENRICHREC
+    ENRICHREC --> COUNTSUM
+    COUNTSUM --> XMLHDR
+    XMLHDR --> XMLDET
 ```
