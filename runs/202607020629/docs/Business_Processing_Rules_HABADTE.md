@@ -1,6 +1,6 @@
 # Business Processing Rules & Functional Specification
 
-## HABADTE Transfer Activity Detail Extract (HABADTE)
+## HABADTE Patient Transfer Detail Extract (HABADTE)
 
 ### For Java / Spring Boot / SQL Server Migration
 
@@ -8,588 +8,509 @@
 
 **Document Purpose:** Complete business rules sufficient to re-implement in Java + Spring Boot + SQL Server
 
-(1) Business Purpose
+---
 
-The HABADTE program produces a detailed extract of patient transfer activity for inpatient stays. It is used by patient accounting and clinical operations teams to understand movement between service locations and to feed downstream reporting and billing processes.
+## (1) Business Purpose
 
-> Core business question: "For a given patient account and level, what inpatient transfer events should be considered valid and included in the activity extract?"
+The HABADTE program produces a detailed extract of inpatient transfer activity for a single patient account and level, suitable for downstream reporting or integration. Operational staff and clinical informatics users rely on this output to understand how a patient's location and status have changed over time.
 
-The report produces a row per qualifying transfer, along with summary totals of valid transfers, skipped/voided records (file indicator, void flag, outpatient flag), and counts by inpatient/outpatient status.
+> Core business question: "For a given inpatient account at a specific hierarchy level, what eligible transfer records exist, and how should they be represented in the patient transfer detail extract?"
 
-(2) Inputs (API Request Parameters)
+Summary outputs produced include:
+- A sequence of transfer detail rows keyed by level (AFLVL6), account (AFACCT), transfer date (AFTRDT), transfer time (AFTRTM), and type (AFTYPE) from HAPTRFR.
+- Enriched fields for benefit plan (from HXPBNFIT/OXPBNFIT) and patient status (from HXPNSTN/OXPNSTN).
+- Optional linkage to broader patient master (OMPMAST) and risk information (HAPIRNK/OAPIRNK) when consumed by downstream processes.
 
-The Java/Spring Boot API that replaces HABADTE should accept the following request parameters. These are derived from the transfer and level keys used in the DDS and narratives for HABADTE and related files.
+## (2) Inputs (API Request Parameters)
 
-| Parameter            | AS400 Field | Type        | Description |
-|----------------------|------------|------------|-------------|
-| accountNumber        | AFACCT     | String(12) | Patient account number at level 6 used to select transfer records from HAPTRFR. |
-| level6Identifier     | AFLVL6     | String(6)  | Level-6 organizational or patient grouping key used in HAPTRFR and related files. |
-| transferFromDate     | AFTRDT     | LocalDate  | Inclusive start date for transfer selection; maps to transfer date field AFTRDT (DECIMAL 8,0). |
-| transferToDate       | AFTRDT     | LocalDate  | Inclusive end date for transfer selection; maps to AFTRDT; applied as between condition. |
-| inpatientOnly        | AFTYPE / INOUT flag | Boolean | When true, restricts output to inpatient transfers using -INPATIENT/OUTPATIENT FLAG rule. |
-| includeVoided        | FLAG indicator | Boolean | When false, skip records with void/voided flag based on BR-018. |
-| fileIndicatorFilter  | FILE indicator | Integer   | Optional explicit filter for file indicator; default logic uses BR-017 to skip zero. |
+When migrated to Spring Boot, HABADTE will be exposed as a REST API that accepts request parameters corresponding to the original selection criteria. Based on the transfer file keys and the presence of hierarchical level and account fields, the core request parameters are:
 
-The current AS400 implementation also implicitly uses the current user identity and security context (job user profile) to derive printer destination and XML header values. In the Spring Boot implementation, this should be mapped to OAuth2 authentication with RBAC roles (e.g. ROLE_BILLING_ANALYST, ROLE_CLINICAL_ANALYST) and PHI audit logging so that each extract request is tied to a user principal and purpose-of-use.
+| Parameter        | AS400 Field | Type       | Description                                     |
+|------------------|-------------|-----------|-------------------------------------------------|
+| level6           | AFLVL6      | string(6) | Hierarchy level code for the patient/account.   |
+| accountNumber    | AFACCT      | string(10)| Patient account identifier.                      |
+| fromDate         | AFTRDT      | date      | Inclusive start date for transfer activity.     |
+| toDate           | AFTRDT      | date      | Inclusive end date for transfer activity.       |
+| includeOutpatient| flag        | boolean   | Whether to include outpatient transfers.        |
+| flagsFilter      | -FLAG IND   | string    | Optional filter on void/voided indicators.      |
 
-(3) Organizational Hierarchy
+Additional implicit input:
+- **Current user identity** is obtained from the security context (e.g., JWT token) and mapped to RBAC roles; it is not a direct parameter but is required for PHI access checks.
 
-HABADTE operates on level-based patient identifiers that are part of an organizational/payer hierarchy, using level-6 and plan/station keys.
+Security mapping note for migration:
+- The API must be protected using OAuth2 (e.g., Spring Security with JWT) and RBAC roles such as `ROLE_CLINICAL`, `ROLE_BILLING`, and `ROLE_ANALYTICS`.
+- All access to PHI-bearing fields (AFACCT, AFMRNO from HAPTRFR; MMACCT, MMMRNO, MMNAME, MMPSSN, MMMMRN from OMPMAST; BRKMRN from OAPIRNK; phone and name fields from HXPDICT/OXPBNFIT) must be logged with an audit trail (who accessed, when, purpose).
 
-| Level Number | Name           | Key Size (digits) | AS400 Table |
-|-------------|----------------|-------------------|-------------|
-| 1           | Enterprise     | HX1NUM            | HXPLVL1     |
-| 2           | Network        | HX2NUM            | HXPLVL2     |
-| 3           | Region         | HX3NUM            | HXPLVL3     |
-| 4           | Facility Group | HX4NUM            | HXPLVL4     |
-| 5           | Facility       | HX5NUM            | HXPLVL5     |
-| 6           | Patient Level  | HX6NUM / AFLVL6   | HXPLVL6 / HAPTRFR |
+## (3) Organizational Hierarchy
 
-Business rule note: HABADTE uses the level-6 key (AFLVL6) to select transfers within the patient account hierarchy. The report header should display the organization name at level 6 (patient-level grouping) and may optionally show higher levels when resolved via the HXPLVLn tables.
+The data dictionary indicates a multi-level hierarchy (HXPLVL1–HXPLVL6 physical files) and a patient status file (HXPNSTN/OXPNSTN) keyed by hierarchy level and status code. For HABADTE, the key field AFLVL6 in HAPTRFR corresponds to the level-6 hierarchy for patient accounts.
 
-(4) Patient Transfer Data Source
+| Level Number | Name                  | Key Size Digits | AS400 Table |
+|--------------|-----------------------|-----------------|-------------|
+| 6            | Patient Level 6 Code  | variable        | HXPLVL6     |
 
-#### 4.1 Data Access Pattern
+BR Note on report header:
+- Transfer detail extracts should display the level-6 description (from HXPLVL6 via XFXLDSC) in the header to orient users to the organizational unit (e.g., "Facility → Service Line → Unit").
 
-The primary data source for HABADTE is the HAPTRFR physical file, which contains one record per transfer event for a patient account at a given level.
+## (4) Patient Transfer Data Source
 
-- Primary file: HAPTRFR (record format HAFTRFR)
-- Access pattern: keyed read by AFLVL6 (level 6) and AFACCT (account), with additional filtering by AFTRDT (date) and AFTYPE (inpatient/outpatient).
-- Sort order: AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE — this ensures chronological ordering within account and separates transfer types.
+### 4.1 Data Access Pattern
 
-Equivalent SQL Server SELECT:
+The primary data source for HABADTE is the physical file **HAPTRFR**:
+- Record format: HAFTRFR
+- Key fields: `AFLVL6`, `AFACCT`, `AFTRDT`, `AFTRTM`, `AFTYPE`
+- PHI fields: `AFACCT` (AccountNumber), `AFMRNO` (MRN)
+
+The AS400 program declares HAPTRFR and reads transfer records keyed by level and account, iterating in chronological order:
+- Access pattern: keyed read by `(AFLVL6, AFACCT)` with range selection on `AFTRDT` and `AFTRTM`.
+- Sort order: primarily by transfer date/time ascending, then transfer type.
+
+SQL Server equivalent:
 
 ```sql
-SELECT
-  AFLVL6,
-  AFACCT,
-  AFTRDT,
-  AFTRTM,
-  AFTYPE,
-  AFMRNO
+SELECT AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE, AFMRNO, /* other transfer fields */
 FROM dbo.HAPTRFR
-WHERE AFLVL6 = :level6Identifier
+WHERE AFLVL6 = :level6
   AND AFACCT = :accountNumber
-  AND AFTRDT BETWEEN :transferFromDate AND :transferToDate
-ORDER BY AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE;
+  AND AFTRDT BETWEEN :fromDate AND :toDate
+ORDER BY AFTRDT ASC, AFTRTM ASC, AFTYPE ASC;
 ```
 
-#### 4.2 Key Fields
+### 4.2 Key Fields
 
-| SQL Column | AS400 Field | Type        | Description |
-|-----------|-------------|------------|-------------|
-| AFLVL6    | AFLVL6      | CHAR(6)    | Level-6 key defining the patient or contract grouping for transfers; part of primary key and organizational hierarchy. |
-| AFACCT    | AFACCT      | CHAR(12)   | Patient account number; PHI-bearing account identifier used as part of the primary key. |
-| AFTRDT    | AFTRDT      | DECIMAL(8,0) | Transfer date in YYYYMMDD numeric format. |
-| AFTRTM    | AFTRTM      | DECIMAL(4,0) | Transfer time in HHMM numeric format. |
-| AFTYPE    | AFTYPE      | CHAR(1)    | Inpatient/outpatient indicator or transfer type code used to apply BR-019. |
-| AFMRNO    | AFMRNO      | CHAR(10)   | Medical record number (MRN) of the patient; PHI field included in output for traceability. |
+Key fields for the HAPTRFR table in SQL Server:
 
-(5) Inclusion and Exclusion Rules
+| SQL Column | AS400 Field | Type        | Description                                       |
+|-----------|-------------|------------|---------------------------------------------------|
+| level6    | AFLVL6      | CHAR(6)    | Organizational level for patient account.         |
+| account   | AFACCT      | CHAR(10)   | Patient account identifier (PHI).                 |
+| transferDate | AFTRDT   | DECIMAL(8) | Date of transfer (YYYYMMDD format).               |
+| transferTime | AFTRTM   | DECIMAL(4) | Time of transfer (HHMM format).                   |
+| transferType | AFTYPE   | CHAR(2)    | Transfer type code (admission, discharge, etc.).  |
 
-HABADTE applies three primary business rules to determine whether a transfer record is included in the output. These rules are captured as BR-017, BR-018, and BR-019 and are reinforced in the program narrative.
+## (5) Inclusion and Exclusion Rules
 
-##### BR-017 – File Indicator Zero → Skip
+HABADTE contains three core inclusion/exclusion rules identified as BR-017, BR-018, and BR-019.
 
-Description: If the internal file indicator field for a transfer record equals zero (meaning the record is marked as unavailable or logically deleted), the record is skipped and not included in the extract.
+### BR-017 — File Indicator Skip
 
-Pseudocode:
+**Description**: Records where the file indicator equals zero are skipped and not included in the transfer detail output.
 
-```pseudo
-IF FileIndicator = 0 THEN
-  SKIP_RECORD;
-ELSE
-  PROCESS_RECORD;
-ENDIF;
-```
-
-SQL WHERE clause fragment:
-
-```sql
--- BR-017: Skip records with file indicator = 0
-WHERE FileIndicator <> 0
-```
-
-##### BR-018 – Voided Flag → Skip
-
-Description: If the record's flag indicator denotes a voided or cancelled transfer (void/voided), the record is excluded from the extract. This ensures that only active transfers are reported.
-
-Pseudocode:
-
-```pseudo
-IF FlagIndicator IN ('VOID', 'VO') THEN
-  SKIP_RECORD;
-ELSE
-  PROCESS_RECORD;
-ENDIF;
+```pseudocode
+for each record in HAPTRFR keyed by (AFLVL6, AFACCT):
+    if FILE_INDICATOR = 0:
+        goto SKIP_RECORD
+    else:
+        process_record()
 ```
 
 SQL WHERE clause fragment:
 
 ```sql
--- BR-018: Exclude voided transfers
-AND FlagIndicator NOT IN ('VOID', 'VO')
+-- BR-017: skip records where FILE_INDICATOR = 0
+WHERE fileIndicator <> 0
 ```
 
-##### BR-019 – Outpatient Records → Skip
+### BR-018 — Voided Flag Skip
 
-Description: If the inpatient/outpatient flag indicates outpatient status, the record is skipped. HABADTE focuses on inpatient transfer activity; outpatient movements are not reported in this extract.
+**Description**: Records with a flag indicator marked as void/voided are skipped to prevent inclusion of cancelled or logically deleted transfers.
 
-Pseudocode:
-
-```pseudo
-IF InOutFlag = 'O' /* outpatient */ THEN
-  SKIP_RECORD;
-ELSE
-  PROCESS_RECORD; -- inpatient and any other qualifying types
-ENDIF;
+```pseudocode
+if FLAG_INDICATOR in ('VOID', 'VOIDED'):
+    goto SKIP_RECORD
 ```
 
 SQL WHERE clause fragment:
 
 ```sql
--- BR-019: Include only inpatient transfers
-AND InOutFlag <> 'O'
+-- BR-018: skip voided transfers
+AND flagIndicator NOT IN ('VOID', 'VOIDED')
 ```
 
-##### Summary SQL WHERE Clause
+### BR-019 — Outpatient Flag Skip
+
+**Description**: Records flagged as outpatient are excluded, focusing the extract on inpatient activity only.
+
+```pseudocode
+if INPATIENT_OUTPATIENT_FLAG = 'O':
+    goto SKIP_RECORD
+```
+
+SQL WHERE clause fragment:
 
 ```sql
-WHERE AFLVL6 = :level6Identifier
-  AND AFACCT = :accountNumber
-  AND AFTRDT BETWEEN :transferFromDate AND :transferToDate
-  -- BR-017: skip records with file indicator = 0
-  AND FileIndicator <> 0
-  -- BR-018: exclude voided transfers
-  AND FlagIndicator NOT IN ('VOID', 'VO')
-  -- BR-019: include only inpatient transfers
-  AND InOutFlag <> 'O'
-ORDER BY AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE;
+-- BR-019: skip outpatient transfers
+AND inpatientOutpatientFlag <> 'O'
 ```
 
-(6) Benefit Plan Enrichment – Coverage and Contact Details
+### Summary SQL WHERE Clause
 
-HABADTE enriches each transfer record with benefit plan information using the HXPBNFIT logical file over TXPBNFIT and the OXPBNFIT physical file.
+Combining all three rules for HABADTE:
 
-- Business concept: Patient Benefit Plan and Contact Details
-- Primary objects: HXPBNFIT (LF) over TXPBNFIT (PF), OXPBNFIT (PF)
-- Key fields: XFBUBN (benefit number), XFBPLN (plan code), XFBTEL (contact phone number)
+```sql
+WHERE fileIndicator <> 0              -- BR-017
+  AND flagIndicator NOT IN ('VOID', 'VOIDED')  -- BR-018
+  AND inpatientOutpatientFlag <> 'O'  -- BR-019
+ORDER BY AFTRDT ASC, AFTRTM ASC, AFTYPE ASC;
+```
 
-BR reference: derived enrichment rule (implicit) – for each transfer, lookup the active benefit plan to obtain coverage attributes and a contact telephone number (XFBTEL).
+## (6) Benefit Plan Lookup (Coverage Enrichment)
 
-Algorithm steps:
+HABADTE declares the logical file **HXPBNFIT** (pfile TXPBNFIT) and the physical file **OXPBNFIT** as part of enrichment.
 
-1. Derive benefit plan key (benefit number and plan code) from the patient account and level.
-2. Read HXPBNFIT using key (XFBUBN, XFBPLN).
-3. If multiple benefit records exist, select the current/primary plan based on internal status or effective dates.
-4. Populate enrichment fields: plan description, coverage flags, contact telephone (XFBTEL).
-5. Attach the enriched benefit data to the transfer output row.
+### BR and Algorithm Steps
+
+Enrichment goal: for each qualifying transfer record, attach benefit plan information based on plan codes and level-6 hierarchy.
+
+Steps:
+1. Extract benefit plan identifiers from the transfer record or associated account context (e.g., plan number and plan code).
+2. Perform a keyed lookup into HXPBNFIT/OXPBNFIT using `XFBUBN` (benefit number) and `XFBPLN` (plan code).
+3. If a matching row is found, attach phone contact information `XFBTEL` and other coverage attributes.
+4. If no match is found, flag the record as having unknown coverage but do not fail the extract.
 
 SQL SELECT equivalent:
 
 ```sql
-SELECT
-  b.XFBUBN,
-  b.XFBPLN,
-  b.XFBTEL,
-  b.PlanDesc,
-  b.CoverageCode
-FROM dbo.HAPTRFR t
-JOIN dbo.HXPBNFIT b
-  ON b.AccountNumber = t.AFACCT
- AND b.Level6 = t.AFLVL6
-WHERE t.AFLVL6 = :level6Identifier
-  AND t.AFACCT = :accountNumber;
+SELECT b.XFBUBN, b.XFBPLN, b.XFBTEL, /* other benefit fields */
+FROM dbo.OXPBNFIT AS b
+WHERE b.XFBUBN = :benefitNumber
+  AND b.XFBPLN = :planCode;
 ```
 
 Edge cases:
+- **Not found**: When no benefit row exists, set coverage fields to null and mark `coverageStatus = 'UNKNOWN'`.
+- **Delete flag logic**: If the benefit row contains a logical delete flag, treat it as not found.
+- **Derived flags**: Use benefit data to derive convenience flags such as `hasPhoneContact` based on `XFBTEL` presence.
 
-- Not found: if no benefit plan is found, default coverage indicators to "UNKNOWN" and leave contact phone blank; log a warning for data quality monitoring.
-- Delete flag: if the benefit record is marked deleted or inactive, treat as not-found for the purposes of enrichment.
-- Derived flags: compute boolean flags such as `hasActiveCoverage` and `isPrimaryPlan` in the service layer based on native codes.
+## (7) Patient Status Lookup (Status Enrichment)
 
-(7) Level Hierarchy Enrichment – Organizational Labels
+HABADTE uses the logical file **HXPNSTN** (pfile TXPNSTN) and physical file **OXPNSTN** to enrich transfer records with patient status descriptions.
 
-HABADTE uses level hierarchy files (HXPLVL1–HXPLVL6 and their DDS record formats) through XFXLDSC to enrich records with human-readable level descriptions.
+### BR and Algorithm Steps
 
-- Business concept: Organizational Level Descriptions
-- Primary objects: HXPLVL1–HXPLVL6 physical files, HXFLVL1–HXFLVL6 record formats.
-
-Algorithm steps:
-
-1. For each transfer, obtain level keys (HX1NUM…HX6NUM) from account context.
-2. For each level file HXPLVLn, read the record by its key to obtain a name/description (e.g. enterprise, network, facility).
-3. Attach these descriptions as part of the header or row-level metadata.
+1. For each transfer record from HAPTRFR, determine the level-6 code `AFLVL6` and status code field (e.g., AFSTATUS).
+2. Look up HXPNSTN/OXPNSTN with key fields `XFNLV6` (level-6) and `XFNSST` (status).
+3. Attach status description and classification (e.g., observation, ICU, step-down) to the output.
 
 SQL SELECT equivalent:
 
 ```sql
-SELECT
-  l1.HX1NUM, l1.Name AS Level1Name,
-  l2.HX2NUM, l2.Name AS Level2Name,
-  l3.HX3NUM, l3.Name AS Level3Name,
-  l4.HX4NUM, l4.Name AS Level4Name,
-  l5.HX5NUM, l5.Name AS Level5Name,
-  l6.HX6NUM, l6.Name AS Level6Name
-FROM dbo.LevelContext c
-LEFT JOIN dbo.HXPLVL1 l1 ON l1.HX1NUM = c.HX1NUM
-LEFT JOIN dbo.HXPLVL2 l2 ON l2.HX2NUM = c.HX2NUM
-LEFT JOIN dbo.HXPLVL3 l3 ON l3.HX3NUM = c.HX3NUM
-LEFT JOIN dbo.HXPLVL4 l4 ON l4.HX4NUM = c.HX4NUM
-LEFT JOIN dbo.HXPLVL5 l5 ON l5.HX5NUM = c.HX5NUM
-LEFT JOIN dbo.HXPLVL6 l6 ON l6.HX6NUM = c.HX6NUM
-WHERE c.AFACCT = :accountNumber
-  AND c.AFLVL6 = :level6Identifier;
+SELECT s.XFNLV6, s.XFNSST, /* status description */
+FROM dbo.OXPNSTN AS s
+WHERE s.XFNLV6 = :level6
+  AND s.XFNSST = :statusCode;
 ```
 
 Edge cases:
+- **Not found**: Use a default status description such as `"UNKNOWN STATUS"` and log a warning.
+- **Delete flag**: Skip rows marked as deleted and continue search if alternate mappings exist.
 
-- Missing level record: if a specific level description is not found, fall back to displaying the numeric key only and flag the missing description in logs.
-- Partial hierarchy: some accounts may have only higher-level keys; ensure the UI is resilient to missing lower levels.
+## (8) Transfer Risk and Master Linkage (Context Enrichment)
 
-(8) Station Enrichment – Nursing Station and Location
+Although HABADTE primarily reads HAPTRFR, the data lineage shows flow paths from TMPMAST/HMLMAST5H and TAPIRNK/HAPIRNK as upstream sources that may contribute context when the extract is consumed downstream.
 
-HABADTE reads station information from the HXPNSTN logical file over TXPNSTN and the OXPNSTN physical file using the XFNLV6 and XFNSST keys.
+Combined enrichment:
+- Use **HMLMAST5H/TMPMAST** (patient master by level and admit date/time) to attach patient demographics and master account context.
+- Use **HAPIRNK/TAPIRNK/OAPIRNK** to attach risk or ranking attributes via `BRKLV6`, `BRKACC`, and `BRKSEQ`, including `BRKMRN`.
 
-- Business concept: Nursing Station / Patient Location
-- Primary objects: HXPNSTN (LF) over TXPNSTN (PF), OXPNSTN (PF).
+In HABADTE's migration, implement optional joins to OMPMAST and OAPIRNK keyed by level and account.
 
-Algorithm steps:
+## (9) Counting Rules
 
-1. For each transfer, derive station key (level6, station code) from context.
-2. Lookup station record in HXPNSTN / OXPNSTN to obtain station name, type, and any capacity attributes.
-3. Attach station description to the transfer row to indicate where the patient moved from/to.
+HABADTE's interpretation summary mentions three rules (BR-017–BR-019) with high confidence, which drive count logic for eligible records.
 
-SQL SELECT equivalent:
-
-```sql
-SELECT
-  s.XFNLV6,
-  s.XFNSST,
-  s.StationName,
-  s.StationType
-FROM dbo.HAPTRFR t
-JOIN dbo.HXPNSTN s
-  ON s.XFNLV6 = t.AFLVL6
- AND s.XFNSST = t.StationCode
-WHERE t.AFLVL6 = :level6Identifier
-  AND t.AFACCT = :accountNumber;
-```
-
-Edge cases:
-
-- Not-found station: fall back to displaying the raw station code; mark the record for data cleanup.
-- Obsolete stations: apply logic to ignore stations marked closed/obsolete in the station master.
-
-(9) Counting Rules
-
-HABADTE maintains several counters based on the three key rules BR-017, BR-018, and BR-019.
-
-| Counter Name             | Incremented When                            | Description |
-|--------------------------|---------------------------------------------|-------------|
-| totalRecordsRead         | For every record read from HAPTRFR.         | Tracks total volume of transfer records scanned. |
-| totalValidTransfers      | When a record passes BR-017, BR-018, BR-019.| Number of inpatient transfer records included in the extract. |
-| skippedFileIndicatorZero | When FileIndicator = 0 (BR-017).            | Measures records excluded because the underlying file indicates invalid/removed state. |
-| skippedVoided            | When FlagIndicator denotes voided (BR-018). | Measures cancelled/voided transfers not present in output. |
-| skippedOutpatient        | When InOutFlag = 'O' (BR-019).              | Measures outpatient movements filtered out. |
+| Counter Name         | Incremented When                                      | Description                                         |
+|----------------------|-------------------------------------------------------|-----------------------------------------------------|
+| totalRecordsRead     | Each record read from HAPTRFR                         | Raw volume of transfer records encountered.        |
+| totalRecordsSkipped  | Any of BR-017, BR-018, or BR-019 conditions are true  | Number of transfers excluded from output.          |
+| totalRecordsIncluded | None of BR-017–BR-019 conditions are true             | Number of transfers included in the extract.       |
 
 Relationship and business meaning:
+- `totalRecordsRead = totalRecordsSkipped + totalRecordsIncluded`.
+- Skipped records represent voided, outpatient, or structurally invalid transfers that should not appear in inpatient analytics.
 
-- `totalValidTransfers` + `skippedFileIndicatorZero` + `skippedVoided` + `skippedOutpatient` should equal `totalRecordsRead`, ensuring accounting completeness.
-- High `skippedVoided` counts may indicate workflow or data-entry issues causing frequent cancellations.
+## (10) Output Data Structure
 
-(10) Output Data Structure
+Based on HAPTRFR and enrichment files, the output is a header-detail-footer structure.
 
-HABADTE writes an extract structure, conceptually equivalent to a header/detail/footer layout.
+### 10.1 Header Fields
 
-#### 10.1 Header Fields
+| Field              | Source      | Description                                      |
+|--------------------|------------|--------------------------------------------------|
+| level6Description  | HXPLVL6    | Text description of AFLVL6 hierarchy level.      |
+| accountNumber      | HAPTRFR    | Patient account identifier (AFACCT).             |
+| patientMRN         | HAPTRFR    | Medical record number (AFMRNO).                  |
+| extractFromDate    | Request    | FromDate parameter.                              |
+| extractToDate      | Request    | ToDate parameter.                                |
 
-| Field            | Source              | Description |
-|------------------|---------------------|-------------|
-| reportRunDate    | System date         | Date the extract was generated. |
-| accountNumber    | HAPTRFR.AFACCT      | Patient account identifier. |
-| level6Identifier | HAPTRFR.AFLVL6      | Level-6 key for the patient/account. |
-| facilityName     | HXPLVL5.Name        | Facility description from level hierarchy enrichment. |
-| patientName      | OMPMAST.MMNAME      | Patient name from master file (when joined). |
+### 10.2 Detail Row Fields
 
-#### 10.2 Detail Row Fields
+| Field               | Source      | Description                                      |
+|---------------------|------------|--------------------------------------------------|
+| transferDate        | HAPTRFR    | AFTRDT (date of transfer).                      |
+| transferTime        | HAPTRFR    | AFTRTM (time of transfer).                      |
+| transferType        | HAPTRFR    | AFTYPE code.                                    |
+| statusCode          | HXPNSTN    | XFNSST status code.                             |
+| statusDescription   | HXPNSTN    | Descriptive text for status.                    |
+| benefitNumber       | OXPBNFIT   | XFBUBN benefit number.                          |
+| benefitPlan         | OXPBNFIT   | XFBPLN plan code.                               |
+| benefitPhone        | OXPBNFIT   | XFBTEL contact phone (PHI).                     |
 
-| Field           | Source         | Description |
-|-----------------|----------------|-------------|
-| transferDate    | HAPTRFR.AFTRDT | Date of transfer event (YYYYMMDD). |
-| transferTime    | HAPTRFR.AFTRTM | Time of transfer (HHMM). |
-| transferType    | HAPTRFR.AFTYPE | Indicates inpatient/outpatient and type of movement. |
-| mrn             | HAPTRFR.AFMRNO | Medical record number (MRN) for the patient. |
-| stationCode     | Station key    | Nursing station or location code from HXPNSTN/OXPNSTN. |
-| stationName     | HXPNSTN.Name   | Human-readable station description. |
-| benefitPlan     | HXPBNFIT.PlanDesc | Benefit plan description. |
-| benefitPhone    | HXPBNFIT.XFBTEL | Contact phone number for benefit plan (PHI). |
+### 10.3 Footer/Summary Fields
 
-#### 10.3 Footer/Summary Fields
+| Field               | Source           | Description                                         |
+|---------------------|-----------------|-----------------------------------------------------|
+| totalRecordsRead     | Derived          | Count of all transfer records scanned.             |
+| totalRecordsSkipped  | Derived          | Count of skipped records per BR-017–019.           |
+| totalRecordsIncluded | Derived          | Count of included records.                         |
 
-| Field                   | Source        | Description |
-|-------------------------|---------------|-------------|
-| totalRecordsRead        | Counter       | Total records read from HAPTRFR. |
-| totalValidTransfers     | Counter       | Records included in output after applying BR-017–BR-019. |
-| skippedFileIndicatorZero| Counter       | Records excluded due to file indicator zero. |
-| skippedVoided           | Counter       | Records excluded due to void flag. |
-| skippedOutpatient       | Counter       | Records excluded due to outpatient flag. |
+### 10.4 Sort Order
 
-#### 10.4 Sort Order
+The output is sorted chronologically by transfer date and time:
 
-Primary sort order is by `transferDate`, `transferTime`, and `transferType`, grouped by `accountNumber` and `level6Identifier`. This matches the keyed sequence of AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE on HAPTRFR.
-
-(11) Complete Processing Flow (Step-by-Step)
-
-```pseudo
-STEP 1: Init
-  - Load runtime parameters: accountNumber, level6Identifier, date range, flags.
-  - Initialise counters: totalRecordsRead, totalValidTransfers, skipped*.
-  - Resolve organizational hierarchy using HXPLVL1–HXPLVL6 for level keys.
-
-STEP 2: Preferences/Lookup
-  - Resolve benefit plan mappings via HXPBNFIT/OXPBNFIT.
-  - Resolve station mappings via HXPNSTN/OXPNSTN.
-  - Load any XML layout or printer preferences via HXPXMLD and PRINTER.
-
-STEP 3: Context
-  - Build execution context containing user identity, facility and level descriptions, plan details.
-
-STEP 4: Query
-  - Perform primary query against HAPTRFR as described in Section 4.
-  - SQL example:
-
-    SELECT *
-    FROM dbo.HAPTRFR
-    WHERE AFLVL6 = :level6Identifier
-      AND AFACCT = :accountNumber
-      AND AFTRDT BETWEEN :fromDate AND :toDate
-    ORDER BY AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE;
-
-STEP 5: Per-Record Enrichment
-  5a. Apply inclusion/exclusion rules (BR-017–BR-019):
-      - If FileIndicator = 0 → increment skippedFileIndicatorZero, continue.
-      - If FlagIndicator in ('VOID','VO') → increment skippedVoided, continue.
-      - If InOutFlag = 'O' → increment skippedOutpatient, continue.
-  5b. Benefit enrichment via HXPBNFIT/OXPBNFIT (Section 6).
-  5c. Level hierarchy enrichment via HXPLVLn (Section 7).
-  5d. Station enrichment via HXPNSTN/OXPNSTN (Section 8).
-
-STEP 6: Assemble Response
-  - Map enriched record fields to output DTO.
-  - Aggregate counters into footer summary.
-  - Write extract rows to XML/print format or REST response payload.
+```sql
+ORDER BY transferDate ASC, transferTime ASC, transferType ASC;
 ```
 
-(12) Data Type Conversions
+## (11) Complete Processing Flow (Step-by-Step)
 
-#### 12.1 Date Fields
+```text
+STEP 1: Init
+  - Read input parameters: level6, accountNumber, fromDate, toDate.
+  - Initialize counters: totalRecordsRead, totalRecordsSkipped, totalRecordsIncluded.
+  - Establish database connections and security context for PHI access.
 
-- AS400 representation: DECIMAL(8,0) in YYYYMMDD.
-- Java: `java.time.LocalDate`.
-- Conversion: parse integer to string, then `LocalDate.parse` with `DateTimeFormatter.BASIC_ISO_DATE`.
-- Special rule: value 0 represents null/blank date and should be mapped to `null`.
+STEP 2: Preferences/Lookup
+  - Optionally read configuration from XFXTABL (data maintenance tables).
+  - Load any preferences controlling inclusion of outpatient, voided, or special flags.
 
-#### 12.2 Time Fields
+STEP 3: Context
+  - Derive organizational context via HXPLVL6 (if available) for AFLVL6.
+  - Determine whether additional context from HMLMAST5H/TMPMAST or HAPIRNK/TAPIRNK is required.
 
-- AS400 representation: DECIMAL(4,0) as HHMM.
-- Java: `java.time.LocalTime`.
-- Conversion: split into hours and minutes, e.g. 930 → 09:30.
+STEP 4: Query (primary transfer selection)
+  - Build primary SQL query over HAPTRFR keyed by AFLVL6 and AFACCT.
+  - Apply date range and BR-017–BR-019 filters:
+    SELECT ... FROM dbo.HAPTRFR
+    WHERE AFLVL6 = :level6
+      AND AFACCT = :accountNumber
+      AND AFTRDT BETWEEN :fromDate AND :toDate
+      AND fileIndicator <> 0              -- BR-017
+      AND flagIndicator NOT IN ('VOID','VOIDED') -- BR-018
+      AND inpatientOutpatientFlag <> 'O' -- BR-019
+    ORDER BY AFTRDT ASC, AFTRTM ASC, AFTYPE ASC;
 
-#### 12.3 Packed Decimal Keys
+STEP 5: Per-Record Enrichment
+  5a: Benefit plan lookup (Section 6)
+    - For each record, look up OXPBNFIT by benefitNumber/planCode.
+    - Attach benefitPhone and coverage attributes.
 
-- Key fields such as AFLVL6, AFACCT may be stored as packed or zoned decimals.
-- Java: map to `Long` or `String` depending on leading zeros requirements.
-- Conversion: use BigDecimal to read and then convert to `long` or formatted string preserving leading zeros.
+  5b: Patient status lookup (Section 7)
+    - For each record, look up OXPNSTN by level6/statusCode.
+    - Attach statusDescription and classification.
 
-#### 12.4 String Trimming
+  5c: Optional master/risk context (Section 8)
+    - If configured, join to OMPMAST and OAPIRNK for additional context.
 
-- Fixed-length CHAR fields are right-padded with spaces.
-- In Java, trim on both ends for display fields; preserve significant internal spaces for names.
+STEP 6: Assemble Response
+  - Map enriched fields into the header/detail/footer output structure.
+  - Serialize to JSON for API response.
+  - Return the assembled transfer detail extract to the client.
+```
 
-(13) SQL Server Table Mapping
+## (12) Data Type Conversions
 
-| AS400 Object | SQL Server Table | Purpose |
-|--------------|------------------|---------|
-| HAPTRFR      | dbo.HAPTRFR      | Primary transfer activity table capturing patient account movements. |
-| HXPBNFIT     | dbo.HXPBNFIT     | Benefit plan and contact lookup for enrichment. |
-| HXPNSTN      | dbo.HXPNSTN      | Nursing station and location master for station enrichment. |
-| HXPLVL1      | dbo.HXPLVL1      | Level 1 organizational hierarchy. |
-| HXPLVL2      | dbo.HXPLVL2      | Level 2 organizational hierarchy. |
-| HXPLVL3      | dbo.HXPLVL3      | Level 3 organizational hierarchy. |
-| HXPLVL4      | dbo.HXPLVL4      | Level 4 organizational hierarchy. |
-| HXPLVL5      | dbo.HXPLVL5      | Level 5 organizational hierarchy. |
-| HXPLVL6      | dbo.HXPLVL6      | Level 6 patient/account hierarchy. |
-| OXPBNFIT     | dbo.OXPBNFIT     | Physical benefit plan storage (if separate from HXPBNFIT). |
-| OXPNSTN      | dbo.OXPNSTN      | Physical station master (if separate from HXPNSTN). |
+### 12.1 Date Fields
+
+AS400 date fields such as `AFTRDT` and admit dates in TMPMAST are stored as DECIMAL(8,0) in `YYYYMMDD` format.
+- Conversion to Java `LocalDate`:
+  - If value is 0, treat as `null`.
+  - Otherwise, parse using `DateTimeFormatter.BASIC_ISO_DATE`.
+
+### 12.2 Time Fields
+
+Time fields such as `AFTRTM` are stored as DECIMAL(4,0) in `HHMM` format.
+- Conversion to Java `LocalTime`:
+  - Parse hours as `value / 100`, minutes as `value % 100`.
+
+### 12.3 Packed Decimal Keys
+
+Key fields like account numbers and sequence numbers are DECIMAL with zero scale.
+- Map to Java `Long` or `Integer` depending on precision.
+
+### 12.4 String Trimming
+
+Fixed-length character fields (right-padded with spaces) must be trimmed.
+- Apply `String.trim()` or `StringUtils.trim()` in Java before exposing values in JSON to avoid trailing spaces.
+
+## (13) SQL Server Table Mapping
+
+| AS400 Object | SQL Server Table | Purpose                                           |
+|--------------|------------------|---------------------------------------------------|
+| HAPTRFR      | dbo.HAPTRFR      | Primary transfer detail source.                   |
+| HAPIRNK      | dbo.HAPIRNK      | Transfer risk/ ranking logical view.             |
+| TAPIRNK      | dbo.TAPIRNK      | Underlying transfer risk physical file.          |
+| HMLMAST5H    | dbo.HMLMAST5H    | Logical view over patient master by level/date.  |
+| TMPMAST      | dbo.TMPMAST      | Patient master physical file.                    |
+| HXPBNFIT     | dbo.HXPBNFIT     | Logical benefit plan lookup.                     |
+| TXPBNFIT     | dbo.TXPBNFIT     | Physical benefit plan file.                      |
+| HXPNSTN      | dbo.HXPNSTN      | Logical patient status lookup.                   |
+| TXPNSTN      | dbo.TXPNSTN      | Physical patient status file.                    |
+| OXPBNFIT     | dbo.OXPBNFIT     | Alternate benefit plan storage.                  |
+| OMPMAST      | dbo.OMPMAST      | Patient master with PHI (MRN, name, SSN).        |
+| OAPIRNK      | dbo.OAPIRNK      | Risk ranking physical file with MRN.             |
 
 ### Suggested SQL Server Indexes
 
 ```sql
--- Primary query index on HAPTRFR
-CREATE INDEX IX_HAPTRFR_AccountLevelDate
+-- Primary query index for HAPTRFR
+CREATE INDEX IX_HAPTRFR_AccountLevelDateTime
 ON dbo.HAPTRFR (AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE);
 
--- Benefit lookup index
-CREATE INDEX IX_HXPBNFIT_AccountLevel
-ON dbo.HXPBNFIT (AccountNumber, Level6);
+-- Benefit plan lookup
+CREATE INDEX IX_OXPBNFIT_BenefitPlan
+ON dbo.OXPBNFIT (XFBUBN, XFBPLN);
 
--- Station lookup index
-CREATE INDEX IX_HXPNSTN_LevelStation
-ON dbo.HXPNSTN (XFNLV6, XFNSST);
+-- Patient status lookup
+CREATE INDEX IX_OXPNSTN_LevelStatus
+ON dbo.OXPNSTN (XFNLV6, XFNSST);
 
--- Hierarchy lookup indexes
-CREATE INDEX IX_HXPLVL1_Key ON dbo.HXPLVL1 (HX1NUM);
-CREATE INDEX IX_HXPLVL2_Key ON dbo.HXPLVL2 (HX2NUM);
-CREATE INDEX IX_HXPLVL3_Key ON dbo.HXPLVL3 (HX3NUM);
-CREATE INDEX IX_HXPLVL4_Key ON dbo.HXPLVL4 (HX4NUM);
-CREATE INDEX IX_HXPLVL5_Key ON dbo.HXPLVL5 (HX5NUM);
-CREATE INDEX IX_HXPLVL6_Key ON dbo.HXPLVL6 (HX6NUM);
+-- Patient master
+CREATE INDEX IX_OMPMAST_LevelAccount
+ON dbo.OMPMAST (MMPLV6, MMACCT);
+
+-- Risk ranking
+CREATE INDEX IX_OAPIRNK_LevelAccountSeq
+ON dbo.OAPIRNK (BRKLV6, BRKACC, BRKSEQ);
 ```
 
-(14) Spring Boot API Design
+## (14) Spring Boot API Design
 
-#### 14.1 Recommended REST Endpoint
+### 14.1 Recommended REST Endpoint
 
-- Method: GET
-- Path: `/api/patient-transfers`
+Endpoint pattern:
+- `GET /api/patient-transfers`
 
 Parameters:
 
-| Name               | Type        | Required | Validation |
-|--------------------|------------|----------|-----------|
-| accountNumber      | String      | Yes      | Non-empty, matches account format. |
-| level6Identifier   | String      | Yes      | Non-empty, length 6. |
-| transferFromDate   | LocalDate   | Yes      | Valid date, not after transferToDate. |
-| transferToDate     | LocalDate   | Yes      | Valid date, not before transferFromDate. |
-| inpatientOnly      | Boolean     | No       | Defaults to true. |
-| includeVoided      | Boolean     | No       | Defaults to false. |
+| Name             | Type      | Required | Validation                                  |
+|------------------|----------|----------|----------------------------------------------|
+| level6           | string   | yes      | Non-empty, matches known hierarchy codes.    |
+| accountNumber    | string   | yes      | Non-empty, digits only or configured format. |
+| fromDate         | date     | yes      | Valid date, <= toDate.                       |
+| toDate           | date     | yes      | Valid date, >= fromDate.                     |
+| includeOutpatient| boolean  | no       | Defaults to false.                           |
 
-#### 14.2 Layer Structure
+### 14.2 Layer Structure
 
-- Controller: `TransferActivityController` – exposes REST endpoint, handles request/response mapping.
-- Service: `TransferActivityService` – implements business rules BR-017–BR-019 and enrichment logic.
-- Repository: `HaptrfrRepository`, `BenefitPlanRepository`, `StationRepository`, `HierarchyRepository` – encapsulate SQL queries.
+- **Controller**: `PatientTransferController` (exposes REST endpoint, validates inputs).
+- **Service**: `PatientTransferService` (implements BR-017–BR-019 logic and enrichment steps).
+- **Repository**: `HaptrfrRepository`, `BenefitPlanRepository`, `PatientStatusRepository`, `PatientMasterRepository`, `RiskRankingRepository` using Spring Data JPA or JDBC.
 
-#### 14.3 Response JSON Shape
+### 14.3 Response JSON Shape
 
 ```json
 {
-  "accountNumber": "123456789012",
-  "level6Identifier": "LVL006",
+  "level6": "001234",
+  "accountNumber": "0009876543",
+  "fromDate": "2026-01-01",
+  "toDate": "2026-01-31",
   "transfers": [
     {
-      "transferDate": "2024-06-01",
-      "transferTime": "09:30",
-      "transferType": "I",
-      "mrn": "MRN123456",
-      "stationCode": "STN01",
-      "stationName": "Med-Surg East",
-      "benefitPlan": "PLAN-A",
+      "transferDate": "2026-01-05",
+      "transferTime": "13:45",
+      "transferType": "AD",
+      "statusCode": "INP",
+      "statusDescription": "Inpatient",
+      "benefitNumber": "BN123",
+      "benefitPlan": "PL01",
       "benefitPhone": "555-123-4567"
     }
   ],
   "summary": {
-    "totalRecordsRead": 120,
-    "totalValidTransfers": 80,
-    "skippedFileIndicatorZero": 5,
-    "skippedVoided": 10,
-    "skippedOutpatient": 25
+    "totalRecordsRead": 42,
+    "totalRecordsSkipped": 12,
+    "totalRecordsIncluded": 30
   }
 }
 ```
 
-#### 14.4 Java Entity/DTO Sketch
+### 14.4 Java Entity/DTO Sketch
 
 ```java
-public record TransferActivityRequest(
+public record PatientTransferRequest(
+    String level6,
     String accountNumber,
-    String level6Identifier,
-    LocalDate transferFromDate,
-    LocalDate transferToDate,
-    boolean inpatientOnly,
-    boolean includeVoided
+    LocalDate fromDate,
+    LocalDate toDate,
+    boolean includeOutpatient
 ) {}
 
-public record TransferActivityRow(
+public record PatientTransferDetail(
     LocalDate transferDate,
     LocalTime transferTime,
     String transferType,
-    String mrn,
-    String stationCode,
-    String stationName,
+    String statusCode,
+    String statusDescription,
+    String benefitNumber,
     String benefitPlan,
     String benefitPhone
 ) {}
 
-public record TransferActivityResponse(
+public record PatientTransferResponse(
+    String level6,
     String accountNumber,
-    String level6Identifier,
-    List<TransferActivityRow> transfers,
-    SummaryCounters summary
-) {}
-
-public record SummaryCounters(
-    long totalRecordsRead,
-    long totalValidTransfers,
-    long skippedFileIndicatorZero,
-    long skippedVoided,
-    long skippedOutpatient
+    LocalDate fromDate,
+    LocalDate toDate,
+    List<PatientTransferDetail> transfers,
+    int totalRecordsRead,
+    int totalRecordsSkipped,
+    int totalRecordsIncluded
 ) {}
 ```
 
-(15) Performance Considerations
+## (15) Performance Considerations
 
-The per-record enrichment pattern (benefit plan, hierarchy, station) introduces classic N+1 query risk if implemented naïvely. To avoid this:
+The per-record enrichment pattern (benefit plan lookup and status lookup per transfer) introduces N+1 query risk if implemented with naive row-by-row calls.
 
-- Use set-based queries to prefetch benefit plans, stations, and hierarchy records for all accounts/levels involved in the primary query.
-- Cache lookups in memory during request processing using maps keyed by account/level and station code.
-
-Example JOIN-based SQL:
+Recommended approach:
+- Use a single query joining HAPTRFR to OXPBNFIT and OXPNSTN:
 
 ```sql
-SELECT
-  t.AFLVL6,
-  t.AFACCT,
-  t.AFTRDT,
-  t.AFTRTM,
-  t.AFTYPE,
-  t.AFMRNO,
-  s.StationName,
-  b.PlanDesc,
-  b.XFBTEL
-FROM dbo.HAPTRFR t
-LEFT JOIN dbo.HXPNSTN s
+SELECT t.*, b.XFBUBN, b.XFBPLN, b.XFBTEL, s.XFNSST, /* status description */
+FROM dbo.HAPTRFR AS t
+LEFT JOIN dbo.OXPBNFIT AS b
+  ON b.XFBUBN = t.benefitNumber
+ AND b.XFBPLN = t.planCode
+LEFT JOIN dbo.OXPNSTN AS s
   ON s.XFNLV6 = t.AFLVL6
- AND s.XFNSST = t.StationCode
-LEFT JOIN dbo.HXPBNFIT b
-  ON b.AccountNumber = t.AFACCT
- AND b.Level6 = t.AFLVL6
-WHERE t.AFLVL6 = :level6Identifier
+ AND s.XFNSST = t.statusCode
+WHERE t.AFLVL6 = :level6
   AND t.AFACCT = :accountNumber
   AND t.AFTRDT BETWEEN :fromDate AND :toDate
-  AND FileIndicator <> 0
-  AND FlagIndicator NOT IN ('VOID','VO')
-  AND InOutFlag <> 'O';
+  AND t.fileIndicator <> 0
+  AND t.flagIndicator NOT IN ('VOID','VOIDED')
+  AND t.inpatientOutpatientFlag <> 'O';
 ```
 
-(16) Business Rules Reference Summary
+This reduces the number of database round-trips and ensures consistent application of inclusion/exclusion rules.
 
-| Rule ID | Description |
-|---------|-------------|
-| BR-017  | When -FILE INDICATOR equals zero, branch to 'SKIP'. |
-| BR-018  | When -FLAG INDICATOR equals void/voided, branch to 'SKIP'. |
-| BR-019  | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'. |
+## (16) Business Rules Reference Summary
 
-(17) Edge Cases to Implement
+| Rule ID | Description                                                           |
+|---------|-----------------------------------------------------------------------|
+| BR-017  | When -FILE INDICATOR equals zero, branch to `SKIP`.                   |
+| BR-018  | When -FLAG INDICATOR equals void/voided, branch to `SKIP`.           |
+| BR-019  | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to `SKIP`. |
 
-| Scenario                                 | Expected Behavior |
-|------------------------------------------|-------------------|
-| File indicator equals zero               | Exclude record from output; increment `skippedFileIndicatorZero`. |
-| Flag indicator marks record as voided    | Exclude record; increment `skippedVoided`. |
-| Inpatient/outpatient flag indicates 'O'  | Exclude record; increment `skippedOutpatient`. |
-| Null or zero date fields (AFTRDT = 0)    | Treat as null; either exclude record or route to error handling depending on business policy. |
-| Benefit plan not found for account/level | Include transfer, but leave benefit fields blank and flag in logs. |
-| Station record not found                 | Include transfer, using raw station code and flag in logs. |
-| Printer or XML preferences missing       | Use system defaults for output layout and destination. |
-| Empty result set                         | Return empty `transfers` array with summary counters = 0. |
+## (17) Edge Cases to Implement
+
+| Scenario                          | Expected Behavior                                                  |
+|-----------------------------------|--------------------------------------------------------------------|
+| Date field value is 0             | Treat as null; exclude from date range checks where appropriate.  |
+| Time field value is 0             | Treat as midnight (00:00) or null based on business guidance.     |
+| Benefit plan lookup not found     | Set benefit fields to null; mark coverageStatus = 'UNKNOWN'.      |
+| Status lookup not found           | Use default statusDescription = 'UNKNOWN STATUS'; log a warning.  |
+| Logical delete flag on lookup row | Treat row as not found; do not attach deleted data.              |
+| All records skipped               | Return empty transfers array with summary counts indicating zero included. |
+| Preferences not configured        | Apply HABADTE default behavior (inpatient only, skip voided).     |
