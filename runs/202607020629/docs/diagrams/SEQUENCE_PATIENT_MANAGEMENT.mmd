@@ -1,0 +1,16 @@
+%% PATIENT_MANAGEMENT Processing Sequence
+sequenceDiagram
+    participant HABADTE
+    participant Filters
+    participant Counters
+
+    HABADTE->>Filters: Apply BR 017 file indicator zero
+    Filters-->>Counters: Increment skippedFileIndicatorZero
+
+    HABADTE->>Filters: Apply BR 018 flag void voided
+    Filters-->>Counters: Increment skippedVoided
+
+    HABADTE->>Filters: Apply BR 019 inpatient outpatient flag outpatient
+    Filters-->>Counters: Increment skippedOutpatient
+
+    HABADTE->>Counters: Increment totalRecordsRead and totalValidTransfers
