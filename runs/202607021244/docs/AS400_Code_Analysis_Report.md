@@ -1,171 +1,190 @@
-# AS400 Code Analysis Report - HABADTE Project
+# AS400 Code Analysis Report – HABADTE Run 202607021244
 
 ## 1. Component Inventory
 
-The HABADTE project consists of 37 source members spanning database description specifications (DDS), traditional RPGLE programs, and SQLRPGLE components. The inventory reflects a typical clinical reporting application on IBM i, with patient master files, transfer history, benefit tables, dictionary structures, and a focused reporting driver.
+### 1.1 Member Overview
 
-### 1.1 Member Inventory Table
+The HABADTE application landscape comprises 37 source members with a total of 9,153 lines of code. The members span RPGLE, SQLRPGLE, and DDS physical/logical files, structured into several subsystems that reflect functional domains such as patient management (HA/HAP/HXP), cross‑functional data maintenance (XFX* and HXX*), and table/level configuration (HXPL*, HXPTABLD, HXLT*).
 
-| Name       | Type    | Subsystem   | Lines |
-|-----------|---------|------------|-------|
-| HAPIRNK   | DDS_LF  | HAP        | 13    |
-| HAPTRFR   | DDS_PF  | HAP        | 72    |
-| HMLMAST5H | DDS_LF  | UNGROUPED  | 12    |
-| HXLTABLD  | DDS_LF  | HXLT       | 11    |
-| HXLTABLP  | DDS_LF  | HXLT       | 12    |
-| HXLTABLS  | DDS_LF  | HXLT       | 12    |
-| HXPBNFIT  | DDS_LF  | HXP        | 12    |
-| HXPDICT   | DDS_PF  | HXP        | 6130  |
-| HXPLVL1   | DDS_PF  | HXPL       | 49    |
-| HXPLVL2   | DDS_PF  | HXPL       | 52    |
-| HXPLVL3   | DDS_PF  | HXPL       | 52    |
-| HXPLVL4   | DDS_PF  | HXPL       | 52    |
-| HXPLVL5   | DDS_PF  | HXPL       | 55    |
-| HXPLVL6   | DDS_PF  | HXPL       | 321   |
-| HXPNSTN   | DDS_LF  | HXP        | 12    |
-| HXPTABLD  | DDS_PF  | HXP        | 19    |
-| HXPXMLD   | DDS_PF  | HXPX       | 19    |
-| HXPXMLR   | DDS_PF  | HXPX       | 19    |
-| OAPIRNK   | DDS_PF  | UNGROUPED  | 80    |
-| OMPMAST   | DDS_PF  | UNGROUPED  | 310   |
-| OXPBNFIT  | DDS_PF  | OXP        | 48    |
-| OXPNSTN   | DDS_PF  | OXP        | 65    |
-| HXXAPPPRF | SQLRPGLE| HXXA       | 123   |
-| XFXCNTR   | RPGLE   | XFXC       | 49    |
-| XFXCYMD   | RPGLE   | XFXC       | 83    |
-| XFXGETID  | RPGLE   | XFX        | 61    |
-| XFXLDSC   | RPGLE   | XFXL       | 135   |
-| XFXLEAP   | RPGLE   | XFXL       | 61    |
-| XFXMRNROL | RPGLE   | XFX        | 65    |
-| XFXTABL   | RPGLE   | XFX        | 164   |
-| CXXXMLP   | SQLRPGLE| UNGROUPED  | 25    |
-| HXXAPPPRFP| RPGLE   | HXXA       | 42    |
-| HXXCNTRL  | RPGLE   | HXX        | 8     |
-| HXXLDA    | RPGLE   | HXXL       | 53    |
-| HXXLEVEL  | RPGLE   | HXXL       | 25    |
-| HXXXML    | RPGLE   | HXX        | 11    |
-| HABADTE   | RPGLE   | HA         | 821   |
+**Members by type and subsystem**
 
-### 1.2 Members by Type
+| Member      | Type    | Subsystem  | Lines |
+|------------|---------|-----------|------|
+| HAPIRNK    | DDS_LF  | HAP       | 13   |
+| HAPTRFR    | DDS_PF  | HAP       | 72   |
+| HMLMAST5H  | DDS_LF  | UNGROUPED | 12   |
+| HXLTABLD   | DDS_LF  | HXLT      | 11   |
+| HXLTABLP   | DDS_LF  | HXLT      | 12   |
+| HXLTABLS   | DDS_LF  | HXLT      | 12   |
+| HXPBNFIT   | DDS_LF  | HXP       | 12   |
+| HXPDICT    | DDS_PF  | HXP       | 6130 |
+| HXPLVL1    | DDS_PF  | HXPL      | 49   |
+| HXPLVL2    | DDS_PF  | HXPL      | 52   |
+| HXPLVL3    | DDS_PF  | HXPL      | 52   |
+| HXPLVL4    | DDS_PF  | HXPL      | 52   |
+| HXPLVL5    | DDS_PF  | HXPL      | 55   |
+| HXPLVL6    | DDS_PF  | HXPL      | 321  |
+| HXPNSTN    | DDS_LF  | HXP       | 12   |
+| HXPTABLD   | DDS_PF  | HXP       | 19   |
+| HXPXMLD    | DDS_PF  | HXPX      | 19   |
+| HXPXMLR    | DDS_PF  | HXPX      | 19   |
+| OAPIRNK    | DDS_PF  | UNGROUPED | 80   |
+| OMPMAST    | DDS_PF  | UNGROUPED | 310  |
+| OXPBNFIT   | DDS_PF  | OXP       | 48   |
+| OXPNSTN    | DDS_PF  | OXP       | 65   |
+| HXXAPPPRF  | SQLRPGLE| HXXA      | 123  |
+| XFXCNTR    | RPGLE   | XFXC      | 49   |
+| XFXCYMD    | RPGLE   | XFXC      | 83   |
+| XFXGETID   | RPGLE   | XFX       | 61   |
+| XFXLDSC    | RPGLE   | XFXL      | 135  |
+| XFXLEAP    | RPGLE   | XFXL      | 61   |
+| XFXMRNROL  | RPGLE   | XFX       | 65   |
+| XFXTABL    | RPGLE   | XFX       | 164  |
+| CXXXMLP    | SQLRPGLE| UNGROUPED | 25   |
+| HXXAPPPRFP | RPGLE   | HXXA      | 42   |
+| HXXCNTRL   | RPGLE   | HXX       | 8    |
+| HXXLDA     | RPGLE   | HXXL      | 53   |
+| HXXLEVEL   | RPGLE   | HXXL      | 25   |
+| HXXXML     | RPGLE   | HXX       | 11   |
+| HABADTE    | RPGLE   | HA        | 821  |
 
-From the aggregated statistics:
+### 1.2 Type Totals
 
-- DDS_LF: 7
-- DDS_PF: 15
-- SQLRPGLE: 2
-- RPGLE: 13
+From the aggregated metrics:
 
-This mix shows a database-heavy application with a small number of executable programs orchestrating complex patient reporting logic. The HABADTE program itself is relatively large (821 lines) and high in cyclomatic complexity (152, band HIGH), which positions it as the primary orchestration component.
+- **DDS logical files (DDS_LF):** 7
+- **DDS physical files (DDS_PF):** 15
+- **RPGLE programs:** 13
+- **SQLRPGLE programs:** 2
+
+This mix confirms a classic AS400 application: data persisted through DDS‑defined files, accessed and orchestrated primarily by RPGLE programs, with a small number of SQLRPGLE routines for profile and XML‑related operations.
 
 ## 2. Missing Components
 
-Several referenced artefacts are missing from the scanned codebase. These represent unresolved COPY members, physical files, and device descriptions that the runtime expects.
+The gap inventory surfaces eight missing or unresolved components referenced by the code base.
 
-### 2.1 Gap Table by Impact
+### 2.1 High‑Impact Gaps
 
-| Name      | Type      | Impact | Referenced By |
-|----------|-----------|--------|---------------|
-| CXXXMLC  | COPYBOOK  | HIGH   | HABAD         |
-| TAPIRNK  | FILE      | HIGH   | HAPIR         |
-| TMPMAST  | FILE      | HIGH   | HMLMA         |
-| TXPBNFIT | FILE      | HIGH   | HXPBN         |
-| TXPNSTN  | FILE      | HIGH   | HXPNS        |
-| HXHAPPPRF| PROGRAM   | MEDIUM | XFXMR        |
-| ****HXPXML| FILE     | MEDIUM | HABAD        |
-| PRINTER  | FILE      | MEDIUM | HABAD        |
+| Name     | Type      | Referenced By | Impact |
+|----------|-----------|--------------|--------|
+| TAPIRNK  | FILE      | HAPIRNK      | HIGH   |
+| TMPMAST  | FILE      | HMLMA        | HIGH   |
+| TXPBNFIT | FILE      | HXPBN        | HIGH   |
+| TXPNSTN  | FILE      | HXPNS        | HIGH   |
+| CXXXMLC  | COPYBOOK  | HABAD        | HIGH   |
 
-High-impact gaps correspond mostly to missing physical files (TAPIRNK, TMPMAST, TXPBNFIT, TXPNSTN) and an XML copybook (CXXXMLC). Without these components, key logical files (HAPIRNK, HMLMAST5H, HXPBNFIT, HXPNSTN) cannot resolve their base physical files, and HABADTE cannot fully generate XML output. Medium-impact gaps relate to optional XML infrastructure and a control program (HXHAPPPRF) used by MRN rollup logic.
+High‑impact gaps primarily involve base physical files for logical files (TAPIRNK, TMPMAST, TXPBNFIT, TXPNSTN) and a central XML copybook (CXXXMLC). Their absence means:
 
-Operationally, these gaps indicate that the local reverse-engineering snapshot is incomplete relative to the production library. Any modernization or testing must either reconstruct these artefacts from other environments or create stubs to mimic their behaviour.
+- **Logical file chains are incomplete.** For example, HAPIRNK depends on TAPIRNK via a PFILE relationship; without TAPIRNK, full record structures and indexes cannot be validated.
+- **Master patient/plan datasets are partially opaque.** TMPMAST and TXPBNFIT/ TXPNSTN likely hold core patient master and benefits/plan information referenced through logical views; reverse engineering cannot fully trace those paths.
+- **XML configuration is partially documented.** CXXXMLC is copy‑included by HABADTE, suggesting shared XML layout definitions; its absence leaves portions of HABADTE’s XML handling inferred rather than explicit.
+
+### 2.2 Medium‑Impact Gaps
+
+| Name      | Type    | Referenced By | Impact |
+|-----------|---------|--------------|--------|
+| HXHAPPPRF | PROGRAM | XFXMR        | MEDIUM |
+| ****HXPXML| FILE    | HABAD        | MEDIUM |
+| PRINTER   | FILE    | HABAD        | MEDIUM |
+
+The medium‑impact gaps concern a missing application profile program (HXHAPPPRF) and XML/printing files referenced by HABADTE. These affect:
+
+- **Profile‑driven behavior in XFXMRNROL.** The program calls HXHAPPPRF and HXXAPPPRF; missing HXHAPPPRF means only part of the profile logic is visible.
+- **XML processing completeness.** ****HXPXML and PRINTER references imply external configuration or output that cannot be fully inspected.
+
+### 2.3 Low‑Impact Gaps
+
+No explicitly low‑impact gaps are listed; all identified gaps are either HIGH or MEDIUM. This suggests that unresolved nodes generally touch key integration points rather than peripheral utilities.
 
 ## 3. Duplicate and Reused Components
 
-The dependency graph shows several forms of reuse:
+### 3.1 Reused Programs via CALL
 
-1. **Programs called multiple times:**
-   - `XFXCNTR` is called three times from `HABADTE`. This program centers headings and text by manipulating spacing, and repeated calls signal its use as a generic presentation helper.
-   - `XFXLDSC`, `XFXCYMD`, `XFXTABL`, and `XFXGETID` are each called from HABADTE as shared services for date conversion, table lookups, and XML identifier generation.
+Analysis of CALL edges highlights several programs reused by multiple callers or invoked multiple times within the same caller:
 
-2. **Logical files referencing common physical files:**
-   - `HXLTABLD`, `HXLTABLP`, and `HXLTABLS` all reference physical file `HXPTABLD` as PFILE_OF edges, exposing different views (detail, page-level, and status slices) over the same dictionary structure.
-   - `HXPBNFIT` references `TXPBNFIT`, and `HXPNSTN` references `TXPNSTN`. These logical files present filtered and keyed views for benefits and nursing station definitions.
-   - `HAPIRNK` references `TAPIRNK`, and `HMLMAST5H` references `TMPMAST`, making them specialized projection files for transfer and master patient data, respectively.
+- **XFXLEAP** is called by **XFXCYMD**, centralising leap‑year or date boundary logic. This is a positive reuse pattern: date validation delegated to a specialised helper.
+- **XFXCNTR** is called three times by **HABADTE**, indicating that counter or control logic is reused within different processing branches of the HABADTE workflow.
+- **XFXMRNROL** is called from HABADTE and in turn calls **HXHAPPPRF** and **HXXAPPPRF**, acting as a mediator between patient management logic and application profile routines.
 
-The reuse patterns are appropriate for AS/400 environments, but the absence of the underlying physical files in this snapshot means that data access is conceptually defined but not fully resolvable. The multiple CALL edges to `XFXCNTR` highlight this component as a shared presentation utility rather than a true duplicate; the same compiled object is reused rather than having separate clones.
+The repeated CALLs from HABADTE to XFXCNTR within the same program show intra‑program reuse rather than duplication of logic blocks. From a structural perspective, this is a controlled duplication of invocation, not of logic implementation.
+
+### 3.2 Logical Files Sharing the Same PF
+
+Several logical files share common physical files, effectively behaving as multiple views over the same underlying table:
+
+- **HAPIRNK → TAPIRNK**
+- **HMLMAST5H → TMPMAST**
+- **HXLTABLD / HXLTABLP / HXLTABLS → HXPTABLD**
+- **HXPBNFIT → TXPBNFIT**
+- **HXPNSTN → TXPNSTN**
+
+Within the available schema, HXLTABLD, HXLTABLP, and HXLTABLS all reference **HXPTABLD**. These patterns are functionally appropriate in DDS‑based systems but introduce complexity when modernising, because identical record layouts are exposed with different key structures and select/omit criteria. They should be rationalised into fewer, more explicit views in a modern relational design.
 
 ## 4. Dependency Analysis
 
-### 4.1 Program Call Chain
+### 4.1 Call, Copy, and File Relationships
 
-Key CALL relationships from the dependency edges include:
+The dependency graph shows a tightly coupled set of programs around **HABADTE**:
 
-- `HABADTE` → `XFXMRNROL` (MRN roll-up logic determining whether to report by Medical Record Number or account).
-- `HABADTE` → `XFXCNTR` (centered report headings and labels).
-- `HABADTE` → `XFXLDSC` (corporate structure description lookup for hospital levels).
-- `HABADTE` → `XFXCYMD` (date format conversion between CCYYMMDD and presentation formats).
-- `HABADTE` → `XFXGETID` (retrieval of XML token fragments used in report layout).
-- `HABADTE` → `XFXTABL` (table-based lookup for room class descriptions and hospital/therapeutic leave mapping).
-- `XFXCYMD` → `XFXLEAP` (leap-year calculations supporting date validation).
-- `XFXMRNROL` → `HXHAPPPRF` and `HXXAPPPRF` (application profile programs controlling MRN roll-up behaviour).
+- **Inbound calls into helpers**
+  - XFXCYMD → XFXLEAP (CALL)
+  - XFXMRNROL → HXHAPPPRF, HXXAPPPRF (CALL)
+- **HABADTE orchestrates patient management:**
+  - Calls: XFXMRNROL, XFXCNTR (multiple), XFXLDSC, XFXCYMD, XFXGETID, XFXTABL
+  - Copy‑includes: HXXLDA, HXXLEVEL, HXXXML, CXXXMLP, CXXXMLC
+  - File operations: READ HAPTRFR, READ/UPDATE/WRITE HXFXMLH, WRITE HXFXMLD, READ XFFNSTN
 
-COPY relationships emphasise shared definitions:
+HABADTE clearly acts as the central dispatcher, combining multiple helper programs and copybooks to implement patient admission/date processing, XML file handling, and outcome forwarding.
 
-- `HABADTE` copies `HXXLDA`, `HXXLEVEL`, `HXXXML`, `CXXXMLP`, and missing `CXXXMLC` to obtain LDA layout, level mapping, XML scaffolding, and shared constants.
-- `XFXGETID` copies `HXXLDA` to access LDA-based user and sequence information.
-- `HXXAPPPRF` copies `HXXCNTRL` and `HXXAPPPRFP` for control data and profile parameters.
+### 4.2 File Access Patterns
 
-File access relationships show HABADTE as the principal data consumer:
+Key file operations include:
 
-- READ `HAPTRFR` to obtain room transfers and admit information.
-- READ `XFFNSTN` via the `HXPNSTN` logical file to resolve nursing station descriptions.
-- READ/UPDATE/WRITE `HXFXMLH` and WRITE `HXFXMLD` to drive XML report header and detail generation.
+- **XFXGETID** reads HXFXMLR and declares/uses HXPXMLR, providing an ID lookup or mapping based on XML records.
+- **XFXLDSC** declares and reads the level files HXPLVL1‑6 and HXFLVL1‑6, suggesting multi‑level configuration hierarchies (e.g., plan levels or benefit tiers).
+- **XFXTABL** reads XFFTABLD and related table variants, encapsulating table‑driven decision logic.
+- Logical files such as HAPIRNK, HMLMAST5H, HXLTABLD/P/S, HXPBNFIT, and HXPNSTN act as filtered access paths for physical files TAPIRNK, TMPMAST, HXPTABLD, TXPBNFIT, and TXPNSTN.
 
-### 4.2 Hotspot Summary
+This pattern is consistent with a design where core patient/plan entities are stored centrally and accessed through domain‑specific logical views.
 
-The `dep_hotspots` metrics rank programs by combined fan-in/fan-out and file operations:
+### 4.3 Hotspot Summary
 
-- **HABADTE** – score 38, fan_out 13, file_ops 6. This is the central batch/report driver, orchestrating calls to utility programs and performing multiple file reads and XML writes.
-- **XFXLDSC** – score 15, fan_in 1, file_ops 6. Acts as a level-description service over the HXPLVL* files.
-- **XFXTABL** – score 11, fan_in 1, file_ops 4. Serves as a general table-driven lookup engine for codes such as room class.
-- **XFXCNTR** – score 9, fan_in 3. A frequently reused text-centering helper.
-- **XFXMRNROL** and **HXXAPPPRF** – scores 7, each acting as configuration and profile drivers for MRN roll-up.
+The hotspot analysis ranks programs by a composite score combining fan‑in, fan‑out, and file operations:
 
-This hotspot profile confirms that modernization efforts should focus first on HABADTE and its XML/reporting infrastructure, then on XFXLDSC and XFXTABL as reusable services that would benefit from refactoring and service extraction.
+- **HABADTE (score 38, fan_out 13, file_ops 6, cc 152 – HIGH)**: Primary control program driving patient management workflows and XML persistence. Its high complexity and broad integrations make it the top candidate for refactoring and encapsulation.
+- **XFXLDSC (score 15)**: Level description handler with multiple file declarations and reads. It is the main gateway into the HXPLVL* level structures.
+- **XFXTABL (score 11)**: Table‑driven decision service; moderate hotspot due to multiple table reads.
+- **XFXCNTR (score 9, fan_in 3)**: Counter/control utility reused by HABADTE; fan‑in indicates that other components may rely on its control logic.
+- **XFXMRNROL / HXXAPPPRF / XFXGETID (scores 7 each)**: Integration layer programs, bridging patient management, profiles, and XML IDs.
+
+Hotspots lower in the list (HXLTABLD/P/S, HXPBNFIT, HXPNSTN, HMLMAST5H, HAPIRNK) mainly represent logical file views with limited code, but they are structurally important because they sit on top of missing PFs.
 
 ## 5. Summary of Key Findings
 
-### 5.1 Critical Issues from High/Medium Gaps
+### 5.1 Critical Structural Issues
 
-The filtered high/medium gaps include:
+Based on the high/medium gaps and orphan program list:
 
-| Name      | Type      | Impact | Referenced By |
-|----------|-----------|--------|---------------|
-| CXXXMLC  | COPYBOOK  | HIGH   | HABADTE       |
-| HXHAPPPRF| PROGRAM   | MEDIUM | XFXMRNROL     |
-| TAPIRNK  | FILE      | HIGH   | HAPIRNK       |
-
-Key structural risks:
-
-- **XML Copybook Missing (CXXXMLC):** HABADTE relies on CXXXMLC for XML constants or layout definitions, but the copybook is absent. While some XML scaffolding is visible in HABADTE’s own logic, missing shared definitions increase the risk of inconsistent XML across reports or runtime failures when compiling in a production-like environment.
-- **External Profile Program (HXHAPPPRF):** XFXMRNROL calls HXHAPPPRF to decide MRN roll-up behaviour. Without this program, MRN-rollup behaviour may default or fail, potentially affecting how accounts are grouped in HABADTE’s report (MED REC # versus ACCOUNT # headings).
-- **Base Files for Logical Views (TAPIRNK and other high-impact files):** Logical file HAPIRNK expects TAPIRNK, and similar patterns exist for TMPMAST, TXPBNFIT, and TXPNSTN. Their absence breaks the physical/logical file relationship necessary for the OS/400 database engine, making it impossible to test report behaviour involving transfer history, master accounts, benefits, and nursing stations.
+- **Unresolved external dependencies:** Several PFs (TAPIRNK, TMPMAST, TXPBNFIT, TXPNSTN) and the CXXXMLC copybook are missing. These are central to benefits, patient master data, and XML configuration, reducing confidence in end‑to‑end lineage reconstruction.
+- **Profile program asymmetry:** XFXMRNROL calls both HXHAPPPRF (missing) and HXXAPPPRF (present). Downstream behaviour depends on profiles that cannot be fully inspected, complicating privilege or behaviour audits.
+- **XML and print integration gaps:** References to ****HXPXML and PRINTER in HABADTE indicate external XML and printing interfaces not fully captured in the source inventory.
 
 ### 5.2 Orphan Programs and Architectural Observations
 
-Orphan programs identified:
+Orphan programs (no callers in the dependency graph) include:
 
-- `HXXAPPPRF` (SQLRPGLE)
-- `XFXCNTR` (RPGLE)
-- `XFXCYMD` (RPGLE)
-- `XFXGETID` (RPGLE)
-- `XFXLDSC` (RPGLE)
+- HXXAPPPRF (SQLRPGLE)
+- XFXCNTR
+- XFXCYMD
+- XFXGETID
+- XFXLDSC
 
-In the aggregated context, these are labelled as having no callers; however, HABADTE does call several of them. This discrepancy suggests that the orphan list is computed across the wider library, but the HABADTE project view may be partial. Architecturally, these programs function as shared utilities and would be good candidates for extraction into reusable services in a refactored architecture (e.g., date-service, text-format-service, XML-token-service).
+For XFX* members, “orphan” status simply means they are not called by other programs in the current snapshot except HABADTE and the relationships captured; some may be entry points or utilities invoked via menu commands, command objects, or batch job definitions not represented in the code graph. HXXAPPPRF may be called through SQL triggers, stored procedures, or job control definitions.
 
-Overall, the HABADTE codebase presents:
+Architecturally, the code base exhibits:
 
-- A high-complexity reporting driver (HABADTE) tightly coupled to XML generation and multiple DDS files.
-- A set of small, low-complexity utility programs encapsulating cross-cutting concerns like centering text, date transformations, table-driven translations, and MRN roll-up.
-- Data structures focused on patient master information, transfer history, benefits, and nursing stations, with clear PHI sensitivity concentrated in OMPMAST, HXPDICT, HAPTRFR, OAPIRNK, and OXPBNFIT.
+- **Central orchestration** by HABADTE, tightly coupling patient management, date validation, profile lookup, and XML persistence.
+- **Heavy reliance on DDS logical files** for alternative keys and domain‑specific views, which must be mapped carefully when migrating to relational schemas.
+- **Delegated data maintenance utilities** (XFXCNTR, XFXCYMD, XFXLDSC, XFXTABL) that can be carved out as services or micro‑modules in a modern architecture.
 
-These findings should guide modernization to prioritize decoupling HABADTE’s logic into smaller services, reconstructing missing base files and copybooks, and hardening PHI-related structures before migration.
+Collectively, these observations indicate that modernisation should begin with stabilising the missing PFs/copybooks, reducing HABADTE’s cyclomatic complexity by extracting well‑bounded services, and documenting how external entry points (menus, commands, batch jobs) invoke the XFX* and HXX* modules.
