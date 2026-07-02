@@ -1,0 +1,16 @@
+%% PATIENT_MANAGEMENT Processing Sequence
+sequenceDiagram
+    participant MainLoop
+    participant HABADTE
+
+    MainLoop->>HABADTE: load transfer record
+    HABADTE-->>MainLoop: record loaded
+
+    MainLoop->>HABADTE: BR 017 file indicator zero
+    HABADTE-->>MainLoop: skip or continue
+
+    MainLoop->>HABADTE: BR 018 flag void
+    HABADTE-->>MainLoop: skip or continue
+
+    MainLoop->>HABADTE: BR 019 io flag outpatient
+    HABADTE-->>MainLoop: skip or include
