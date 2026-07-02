@@ -1,0 +1,88 @@
+%% Database Entity Relationship Diagram
+erDiagram
+    HAPTRFR {
+        AFLVL6 char
+        AFACCT char
+        AFTRDT decimal
+        AFTRTM decimal
+        AFTYPE char
+        AFMRNO char
+    }
+    HXPDICT {
+        CCMRNO char
+        XFBTEL char
+        XCNAME char
+        HXRMNO char
+        XFRMNO char
+        HVACCT char
+        IMGMRN char
+        HXGMRN char
+        IHMRNO char
+        IHACCT char
+        WBDATE decimal
+        XMDMRN char
+        ENNAME char
+    }
+    HXPLVL1 {
+        HX1NUM char
+    }
+    HXPLVL2 {
+        HX2NUM char
+    }
+    HXPLVL3 {
+        HX3NUM char
+    }
+    HXPLVL4 {
+        HX4NUM char
+    }
+    HXPLVL5 {
+        HX5NUM char
+    }
+    HXPLVL6 {
+        HX6NUM char
+    }
+    HXPTABLD {
+        XFDTCD char
+        XFDECD char
+    }
+    HXPXMLD {
+        XMDUSR char
+        XMDSEQ decimal
+        XMDSQ2 decimal
+    }
+    HXPXMLR {
+        XMRUSR char
+        XMRSEQ decimal
+        XMRID char
+    }
+    OAPIRNK {
+        BRKLV6 char
+        BRKACC char
+        BRKSEQ decimal
+        BRKMRN char
+    }
+    OMPMAST {
+        MMPLV6 char
+        MMACCT char
+        MMMRNO char
+        MMNAME char
+        MMPSSN char
+        MMMMRN char
+    }
+    OXPBNFIT {
+        XFBUBN char
+        XFBPLN char
+        XFBTEL char
+    }
+    OXPNSTN {
+        XFNLV6 char
+        XFNSST char
+    }
+
+    TAPIRNK ||--o{ HAPIRNK : "logical view"
+    TMPMAST ||--o{ HMLMAST5H : "logical view"
+    HXPTABLD ||--o{ HXLTABLD : "logical view"
+    HXPTABLD ||--o{ HXLTABLP : "logical view"
+    HXPTABLD ||--o{ HXLTABLS : "logical view"
+    TXPBNFIT ||--o{ HXPBNFIT : "logical view"
+    TXPNSTN ||--o{ HXPNSTN : "logical view"
