@@ -1,71 +1,70 @@
-# Business Rules Catalog - HABADTE Project
+# BUSINESS RULES CATALOG – HABADTE Run 202607021244
 
-This catalog lists all approved business rules extracted from the HABADTE codebase and related utility programs. Rules are grouped by domain and annotated with business impact and testing requirements.
+This catalog lists all approved business rules extracted from the AS400 HABADTE application landscape. Rules are grouped by business domain and include their origin program, confidence, PHI path flags, inferred business impact, and testing requirements.
 
-## 1. Data Maintenance Domain
+---
 
-### 1.1 Centering and Position Control (XFXCNTR)
+## DATA_MAINTENANCE Domain
 
-| BR-ID  | Rule Text                                      | Source Program | Confidence | Domain           | PHI In Path | Business Impact                                                | Test Required |
-|--------|-------------------------------------------------|----------------|------------|------------------|-------------|----------------------------------------------------------------|--------------|
-| BR-001 | When X equals zero, branch to 'EXIT'.          | XFXCNTR        | 0.47       | DATA_MAINTENANCE | false       | Prevents centering logic from running when starting position is invalid or uninitialized; avoids misaligned headings. | Yes          |
-| BR-002 | When X equals 40, branch to 'EXIT'.            | XFXCNTR        | 0.40       | DATA_MAINTENANCE | false       | Exits centering when position reaches boundary (column 40), ensuring text does not overflow layout.                   | Yes          |
+### Program: XFXCNTR (Counter Control)
 
-### 1.2 Date Validation (XFXCYMD)
+| Rule ID | Rule Text                                   | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|---------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-001  | When X equals zero, branch to 'EXIT'       | XFXCNTR        | 0.47      | false      | Prevents processing when control counter indicates "no items" or initial state; ensures downstream routines do not run on empty sets. | Yes |
+| BR-002  | When X equals 40, branch to 'EXIT'         | XFXCNTR        | 0.40      | false      | Enforces an upper limit of 40 units/iterations, avoiding runaway loops or exceeding report/record limits. | Yes |
 
-| BR-ID  | Rule Text                                                      | Source Program | Confidence | Domain           | PHI In Path | Business Impact                                                                                  | Test Required |
-|--------|-----------------------------------------------------------------|----------------|------------|------------------|-------------|--------------------------------------------------------------------------------------------------|--------------|
-| BR-003 | When VYY is less than 1800, branch to 'EXIT'.                  | XFXCYMD        | 0.56       | DATA_MAINTENANCE | false       | Prevents processing of years before 1800, guarding against malformed or default year values.    | Yes          |
-| BR-004 | When VYY is greater than 2100, branch to 'EXIT'.               | XFXCYMD        | 0.56       | DATA_MAINTENANCE | false       | Prevents dates far in the future; protects reporting logic from unrealistic future dates.        | Yes          |
-| BR-005 | When VMM is less than 01, branch to 'EXIT'.                    | XFXCYMD        | 0.56       | DATA_MAINTENANCE | false       | Enforces month lower bound; stops processing when month is below January.                        | Yes          |
-| BR-006 | When VMM is greater than 12, branch to 'EXIT'.                 | XFXCYMD        | 0.56       | DATA_MAINTENANCE | false       | Enforces month upper bound; stops processing when month is beyond December.                      | Yes          |
-| BR-007 | When VDD is less than 01, branch to 'EXIT'.                    | XFXCYMD        | 0.56       | DATA_MAINTENANCE | false       | Prevents days below 1; avoids invalid date-of-month values.                                      | Yes          |
-| BR-008 | When VDD is greater than DYS(VMM), branch to 'EXIT'.           | XFXCYMD        | 0.68       | DATA_MAINTENANCE | false       | Ensures day does not exceed days-in-month (including leap-year logic via XFXLEAP).               | Yes          |
+### Program: XFXCYMD (Date Validation)
 
-### 1.3 Level Mapping Validation (XFXLDSC)
+| Rule ID | Rule Text                                                          | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|--------------------------------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-003  | When VYY is less than 1800, branch to 'EXIT'                      | XFXCYMD        | 0.56      | false      | Protects against obviously invalid historical years, preventing incorrect date calculations and data corruption. | Yes |
+| BR-004  | When VYY is greater than 2100, branch to 'EXIT'                   | XFXCYMD        | 0.56      | false      | Prevents future dates far beyond system horizon, maintaining data quality for reports and ageing logic. | Yes |
+| BR-005  | When VMM is less than 01, branch to 'EXIT'                        | XFXCYMD        | 0.56      | false      | Ensures month values are within 1–12, avoiding invalid date construction. | Yes |
+| BR-006  | When VMM is greater than 12, branch to 'EXIT'                     | XFXCYMD        | 0.56      | false      | Blocks invalid month values greater than 12, maintaining calendar integrity. | Yes |
+| BR-007  | When VDD is less than 01, branch to 'EXIT'                        | XFXCYMD        | 0.56      | false      | Ensures day values are positive, preventing malformed dates. | Yes |
+| BR-008  | When VDD is greater than DYS(VMM), branch to 'EXIT'               | XFXCYMD        | 0.68      | false      | Validates day-of-month against actual month length (including leap year logic), preventing impossible dates like 31 February. | Yes |
 
-| BR-ID  | Rule Text                                                      | Source Program | Confidence | Domain           | PHI In Path | Business Impact                                                                                  | Test Required |
-|--------|-----------------------------------------------------------------|----------------|------------|------------------|-------------|--------------------------------------------------------------------------------------------------|--------------|
-| BR-009 | When LDAMAP is greater than 99, branch to 'EXIT'.              | XFXLDSC        | 0.56       | DATA_MAINTENANCE | false       | Stops level description lookup when mapping code exceeds allowed two-digit range; avoids mislabelled facilities. | Yes          |
-| BR-010 | When LDAMAP is greater than 99, branch to 'EXIT'.              | XFXLDSC        | 0.56       | DATA_MAINTENANCE | false       | Duplicate condition ensuring mapping range enforcement across multiple branches.                 | Yes          |
-| BR-011 | When LDAMAP is greater than 99, branch to 'EXIT'.              | XFXLDSC        | 0.56       | DATA_MAINTENANCE | false       | Additional enforcement in different code path; collectively ensure consistent mapping validation. | Yes          |
-| BR-012 | When LDAMAP is greater than 9999, branch to 'EXIT'.            | XFXLDSC        | 0.56       | DATA_MAINTENANCE | false       | Guards against four-digit overflow in mapping codes; protects from invalid level combinations.    | Yes          |
+### Program: XFXLDSC (Level Description Mapping)
 
-### 1.4 Table-Driven Configuration Control (XFXTABL)
+| Rule ID | Rule Text                                       | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|-------------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-009  | When LDAMAP is greater than 99, branch to 'EXIT'   | XFXLDSC        | 0.56      | false      | Enforces upper bounds on mapping codes, ensuring only supported level mappings are processed. | Yes |
+| BR-010  | When LDAMAP is greater than 99, branch to 'EXIT'   | XFXLDSC        | 0.56      | false      | Duplicate variant of BR-009, reinforcing the same constraint across branches. | Yes |
+| BR-011  | When LDAMAP is greater than 99, branch to 'EXIT'   | XFXLDSC        | 0.56      | false      | Additional branch enforcing mapping code limit, preventing out-of-range configuration usage. | Yes |
+| BR-012  | When LDAMAP is greater than 9999, branch to 'EXIT' | XFXLDSC        | 0.56      | false      | Guards against very large mapping codes, likely representing invalid or unconfigured levels. | Yes |
 
-| BR-ID  | Rule Text                                                      | Source Program | Confidence | Domain           | PHI In Path | Business Impact                                                                                  | Test Required |
-|--------|-----------------------------------------------------------------|----------------|------------|------------------|-------------|--------------------------------------------------------------------------------------------------|--------------|
-| BR-013 | When *IN79 equals on/active, branch to 'EXIT'.                 | XFXTABL        | 0.90       | DATA_MAINTENANCE | false       | Terminates table lookup when control indicator is active; prevents redundant or conflicting mappings. | No           |
-| BR-014 | When *IN79 equals on/active, branch to 'EXIT'.                 | XFXTABL        | 0.90       | DATA_MAINTENANCE | false       | Same behaviour in an alternate branch; ensures consistent exit when indicator is on.            | No           |
-| BR-015 | When *IN79 equals on/active, branch to 'EXIT'.                 | XFXTABL        | 0.90       | DATA_MAINTENANCE | false       | Further duplicate to cover additional mapping routines; keeps configuration reads bounded.      | No           |
-| BR-016 | When *IN79 equals on/active, branch to 'EXIT'.                 | XFXTABL        | 0.90       | DATA_MAINTENANCE | false       | Ensures table processing stops when flagged as complete or disabled.                            | No           |
+### Program: XFXTABL (Table-Driven Control)
 
-### 1.5 Application Profile Access (HXXAPPPRF)
+| Rule ID | Rule Text                                            | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|------------------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-013  | When *IN79 equals on/active, branch to 'EXIT'       | XFXTABL        | 0.90      | false      | Uses configuration indicator *IN79 to short-circuit processing based on table-driven conditions, protecting from unsupported states. | No |
+| BR-014  | When *IN79 equals on/active, branch to 'EXIT'       | XFXTABL        | 0.90      | false      | Variant of BR-013 applied to a different branch; ensures consistent behaviour when indicator is active. | No |
+| BR-015  | When *IN79 equals on/active, branch to 'EXIT'       | XFXTABL        | 0.90      | false      | Reinforces global exit behaviour when *IN79 is ON across multiple table routines. | No |
+| BR-016  | When *IN79 equals on/active, branch to 'EXIT'       | XFXTABL        | 0.90      | false      | Final branch implementing table-driven exit, preventing invalid or unwanted transitions. | No |
 
-| BR-ID  | Rule Text                                      | Source Program | Confidence | Domain           | PHI In Path | Business Impact                                                | Test Required |
-|--------|-------------------------------------------------|----------------|------------|------------------|-------------|----------------------------------------------------------------|--------------|
-| BR-020 | SQL program accesses table 'HXPAPPPRF'.        | HXXAPPPRF      | 0.65       | DATA_MAINTENANCE | false       | Reads application profile settings that drive MRN roll-up, report modes, and facility-level configuration. | Yes          |
+### Program: HXXAPPPRF (SQL Profile Access)
 
-(Interpretations detail also references BR-021 and BR-022 as profile-access rules; they follow the same pattern and will be documented in extended profile specs.)
+| Rule ID | Rule Text                                   | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|---------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-020  | SQL program accesses table 'HXPAPPPRF'     | HXXAPPPRF      | 0.65      | false      | Establishes dependency on application profile table HXPAPPPRF, influencing how user/application preferences affect data maintenance behaviour. | Yes |
 
-## 2. Patient Management Domain
+---
 
-### 2.1 Census Record Inclusion/Exclusion (HABADTE)
+## PATIENT_MANAGEMENT Domain
 
-| BR-ID  | Rule Text                                                      | Source Program | Confidence | Domain             | PHI In Path | Business Impact                                                                                  | Test Required |
-|--------|-----------------------------------------------------------------|----------------|------------|--------------------|-------------|--------------------------------------------------------------------------------------------------|--------------|
-| BR-017 | When -FILE INDICATOR equals zero, branch to 'SKIP'.            | HABADTE        | 0.92       | PATIENT_MANAGEMENT | false       | Excludes records with no active file indicator; ensures only valid accounts are counted in census. | No           |
-| BR-018 | When -FLAG INDICATOR equals void/voided, branch to 'SKIP'.     | HABADTE        | 0.99       | PATIENT_MANAGEMENT | false       | Prevents voided accounts from appearing in census; protects against counting cancelled or corrected encounters. | No           |
-| BR-019 | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'. | HABADTE  | 0.99       | PATIENT_MANAGEMENT | false       | Ensures outpatient records are excluded from inpatient census; maintains clinical and reporting integrity. | No           |
+### Program: HABADTE (Patient Transfer Controller)
 
-These rules act collectively to restrict the census to active inpatient accounts only.
+| Rule ID | Rule Text                                                        | Source Program | Confidence | PHI In Path | Business Impact | Test Required |
+|---------|------------------------------------------------------------------|----------------|-----------|------------|-----------------|--------------|
+| BR-017  | When -FILE INDICATOR equals zero, branch to 'SKIP'              | HABADTE        | 0.92      | false      | Ensures only active file records are processed, reducing the risk of exporting stale or inactive transfers. | No |
+| BR-018  | When -FLAG INDICATOR equals void/voided, branch to 'SKIP'       | HABADTE        | 0.99      | false      | Excludes voided transfers from reporting and XML export, aligning system outputs with financial and clinical reality. | No |
+| BR-019  | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP' | HABADTE    | 0.99      | false      | Restricts processing to inpatient movements when required, ensuring reports and integrations reflect inpatient activity only. | No |
 
-## 3. Cross-Program Rule Relationships
+---
 
-- **Date validation rules (BR-003–BR-008)** underpin any logic that uses admit or transfer dates, including HABADTE’s selection of census snapshots.
-- **Level mapping rules (BR-009–BR-012)** enforce correct facility and corporate hierarchy descriptions used in report headers.
-- **Table configuration rules (BR-013–BR-016)** safeguard room class and benefit lookups executed both inside HABADTE and shared utility functions.
-- **Profile access rule (BR-020)** feeds MRN roll-up decisions consumed by XFXMRNROL and ultimately HABADTE.
-- **Census inclusion rules (BR-017–BR-019)** are central to patient management and must be mirrored exactly in any migrated implementation.
+## Testing Guidance Summary
 
-Each rule listed above must be preserved in the modernization effort. Rules marked "Test Required: Yes" require explicit unit and integration test cases, while high-confidence rules (>= 0.7) still require regression coverage but are less likely to be misinterpreted.
+- Rules with **confidence < 0.7** (e.g., BR-001–BR-012, BR-020) require targeted unit and integration tests to confirm thresholds and branches match SME expectations.
+- High-confidence rules (BR-013–BR-019) should still be regression-tested but are less likely to change.
+
+This catalog serves as the authoritative list of business rules for HABADTE-related components in the modernisation effort.
