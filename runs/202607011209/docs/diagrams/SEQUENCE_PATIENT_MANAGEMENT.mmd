@@ -1,0 +1,16 @@
+%% PATIENT_MANAGEMENT Processing Sequence
+sequenceDiagram
+    participant Caller
+    participant HABADTE
+
+    Caller->>HABADTE: Start inpatient transfer export
+    HABADTE->>HABADTE: BR-017 FILE INDICATOR equals 0 branch to SKIP
+    HABADTE-->>Caller: Skip account file when indicator is 0
+
+    HABADTE->>HABADTE: BR-018 FLAG INDICATOR void or voided branch to SKIP
+    HABADTE-->>HABADTE: Increment skippedVoided counter
+
+    HABADTE->>HABADTE: BR-019 INPATIENT OUTPATIENT FLAG outpatient branch to SKIP
+    HABADTE-->>HABADTE: Increment skippedOutpatient counter
+
+    HABADTE-->>Caller: Return eligible inpatient transfers
