@@ -1,207 +1,174 @@
 # Process Narratives – HABADTE Project
 
-This document describes program-level narratives derived from semantic interpretations and approved business rules.
+This document provides program-level narratives synthesised from the semantic interpretations and approved business rules for run `202607011209`.
 
 ---
 
-## XFXCNTR
+## Program: XFXCNTR
+
+**Domain:** DATA_MAINTENANCE  
+**Type:** RPGLE
 
 ### Overview
 
-XFXCNTR is an RPGLE utility program in the DATA_MAINTENANCE domain. It implements simple counter-based logic used to control loop execution and iteration limits. The interpretation shows it contains two primary rules with relatively low confidence, indicating straightforward but important guard conditions.
-
-### Domain and Program Type
-
-- **Domain:** DATA_MAINTENANCE
-- **Program Type:** RPGLE
+XFXCNTR is a small utility program in the Data Maintenance domain that manages a numeric counter or loop index. The interpretation summary describes it as "RPGLE program in domain 'Data Maintenance'. Contains 2 rule(s) with avg confidence 43%." Its primary role is to control iteration through records or configuration entries, terminating processing when the counter reaches boundary values.
 
 ### Business Rules Applied
 
-From `interpretations_detail` for XFXCNTR:
+Key rules (from interpretations_detail and approved_rules):
 
-- BR-001 – "When X equals zero, branch to 'EXIT'" (confidence 0.47).
-- BR-002 – "When X equals 40, branch to 'EXIT'" (confidence 0.4).
+- **BR-001:** When X equals zero, branch to 'EXIT' (confidence 0.47).
+- **BR-002:** When X equals 40, branch to 'EXIT' (confidence 0.40).
 
-These rules bound the internal counter `X` and determine when loops should terminate.
+These rules ensure that counter-driven loops start and stop at defined boundaries, typically from 1 to 39.
 
-### Related Approved Rules
+### Related Approved Rules (DATA_MAINTENANCE)
 
-Within the DATA_MAINTENANCE domain, XFXCNTR is related to a wider set of validation rules:
-
-- Date validation rules from XFXCYMD (BR-003–BR-008).
-- Map validation rules from XFXLDSC (BR-009–BR-012).
-- Indicator-based guards from XFXTABL (BR-013–BR-016).
-
-Together, these rules ensure that utility routines enforce strict boundaries on data and control flow.
+Within the Data Maintenance domain, XFXCNTR works alongside rules from date and mapping utilities (XFXCYMD, XFXLDSC, XFXTABL), although it does not directly manipulate PHI. Its behaviour impacts higher-level programs like HABADTE, which invoke counter logic for iteration.
 
 ### Data Touched
 
-XFXCNTR does not directly access PHI-tagged files in the aggregated lineage; its logic is internal to the program and acts as a control mechanism rather than a data access layer. As such, it should be implemented as a stateless utility service in modernization, with no direct PHI exposure.
+XFXCNTR does not declare PF/LF files in the compact schema; its data is largely internal numeric variables. It is called by HABADTE (as shown in dep_edges), indicating its values contribute to control flow in patient-management processing but not directly to persisted data.
 
 ---
 
-## XFXCYMD
+## Program: XFXCYMD
+
+**Domain:** DATA_MAINTENANCE  
+**Type:** RPGLE
 
 ### Overview
 
-XFXCYMD is an RPGLE program in the DATA_MAINTENANCE domain that validates calendar dates. It enforces acceptable ranges for year, month, and day values before downstream logic operates on them. With six rules and an average confidence of 58%, it provides robust but slightly inferred behavior.
-
-### Domain and Program Type
-
-- **Domain:** DATA_MAINTENANCE
-- **Program Type:** RPGLE
+XFXCYMD is a calendar validation utility. The narrative states: "RPGLE program in domain 'Data Maintenance'. Contains 6 rule(s) with avg confidence 58%." It validates year (`VYY`), month (`VMM`), and day (`VDD`) components to ensure dates fall within a supported range and are structurally valid.
 
 ### Business Rules Applied
 
-Key rules from `interpretations_detail`:
+Key rules:
 
-- BR-008 – "When VDD is greater than DYS(VMM), branch to 'EXIT'" (confidence 0.68).
-- BR-003 – "When VYY is less than 1800, branch to 'EXIT'" (confidence 0.56).
-- BR-004 – "When VYY is greater than 2100, branch to 'EXIT'" (confidence 0.56).
-- BR-005 – "When VMM is less than 01, branch to 'EXIT'" (confidence 0.56).
-- BR-006 – "When VMM is greater than 12, branch to 'EXIT'" (confidence 0.56).
+- **BR-003:** When VYY is less than 1800, branch to 'EXIT'.
+- **BR-004:** When VYY is greater than 2100, branch to 'EXIT'.
+- **BR-005:** When VMM is less than 01, branch to 'EXIT'.
+- **BR-006:** When VMM is greater than 12, branch to 'EXIT'.
+- **BR-007:** When VDD is less than 01, branch to 'EXIT'.
+- **BR-008:** When VDD is greater than DYS(VMM), branch to 'EXIT'.
 
-These rules ensure that only valid Gregorian dates are passed to caller programs.
+Together, these rules enforce a closed range of valid dates and ensure the day-of-month fits the month (including leap-year handling via the `DYS(VMM)` function).
 
-### Related Approved Rules
+### Related Approved Rules (DATA_MAINTENANCE)
 
-All XFXCYMD rules are part of the DATA_MAINTENANCE domain and are conceptually linked to XFXLEAP (for leap-year support) and HABADTE’s date-dependent logic. HABADTE relies on these validations to avoid processing transfers with invalid dates.
+XFXCYMD complements XFXCNTR and XFXLDSC by providing temporal validation, which is critical for programs like HABADTE that work with transfer dates (`AFTRDT`) and XML logging timestamps. Any invalid date encountered will be rejected or sanitized before use in downstream queries.
 
 ### Data Touched
 
-XFXCYMD primarily manipulates in-memory date components and does not read or write database files directly. Its effects are indirect: by rejecting invalid dates, it prevents invalid AFTRDT/AFTRTM combinations from influencing transfer processing.
+XFXCYMD operates on in-memory date components and does not directly read or write PF/LF files. However, its logic is applied wherever DECIMAL(8,0) date fields (such as those in `HAPTRFR` and `OMPMAST`) are interpreted.
 
 ---
 
-## XFXLDSC
+## Program: XFXLDSC
+
+**Domain:** DATA_MAINTENANCE  
+**Type:** RPGLE
 
 ### Overview
 
-XFXLDSC is an RPGLE program in the DATA_MAINTENANCE domain that builds level descriptors using multi-level configuration tables. It has four rules controlling an LDAMAP value, with an average confidence of 56%. The program participates in enriching records with hierarchical descriptors.
-
-### Domain and Program Type
-
-- **Domain:** DATA_MAINTENANCE
-- **Program Type:** RPGLE
+XFXLDSC is a level-description utility. Its narrative: "RPGLE program in domain 'Data Maintenance'. Contains 4 rule(s) with avg confidence 56%." It validates and maps level codes used to navigate hierarchical station files (HXPLVL1–HXPLVL6) for hospital facilities.
 
 ### Business Rules Applied
 
-From `interpretations_detail`:
+Key rules:
 
-- BR-009 – "When LDAMAP is greater than 99, branch to 'EXIT'".
-- BR-010 – "When LDAMAP is greater than 99, branch to 'EXIT'".
-- BR-011 – "When LDAMAP is greater than 99, branch to 'EXIT'".
-- BR-012 – "When LDAMAP is greater than 9999, branch to 'EXIT'".
+- **BR-009:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **BR-010:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **BR-011:** When LDAMAP is greater than 99, branch to 'EXIT'.
+- **BR-012:** When LDAMAP is greater than 9999, branch to 'EXIT'.
 
-These rules bound mapping identifiers and prevent the program from working with undefined descriptor maps.
+These rules restrict mapping codes to configured ranges (two-digit and four-digit bands), preventing invalid level mappings from driving file reads.
 
-### Related Approved Rules
+### Related Approved Rules (DATA_MAINTENANCE)
 
-XFXLDSC’s rules interact conceptually with XFXTABL (table lookups) and HABADTE’s enrichment logic:
-
-- Map limits ensure that enrichment uses valid configuration records from HXPLVL1–HXPLVL6.
-- In HABADTE, invalid LDAMAP values result in skipped descriptor enrichment or whole-record skips.
+XFXLDSC is closely associated with station-level PFs (`HXPLVL1–6`) accessed by HABADTE via XFXLDSC and related dependencies. Correct enforcement of LDAMAP thresholds ensures that hospital hierarchy lookups remain within configured boundaries, reducing risk of retrieving incorrect facility/unit data.
 
 ### Data Touched
 
-Derived from `data_dict_schema` and `data_lineage`:
-
-- HXPLVL1–HXPLVL6 physical files provide hierarchical configuration data.
-- HXFLVL1–HXFLVL6 record formats are read by XFXLDSC.
-
-None of these level configuration files contain PHI-tagged fields, so XFXLDSC operates exclusively on non-sensitive configuration data.
+According to `dep_edges`, XFXLDSC reads from `HXFLVL1`–`HXFLVL6`, which are physical files representing level data. These are not explicitly listed in `data_dict_schema.physical_files` but are clearly part of the hierarchy. No PHI fields are associated with these level files; they carry structural metadata like facility and unit codes.
 
 ---
 
-## XFXTABL
+## Program: XFXTABL
+
+**Domain:** DATA_MAINTENANCE  
+**Type:** RPGLE
 
 ### Overview
 
-XFXTABL is an RPGLE program in the DATA_MAINTENANCE domain that performs generic table lookups against dictionary files. It has four high-confidence rules related to indicator *IN79, acting as a global guard for lookup behavior.
-
-### Domain and Program Type
-
-- **Domain:** DATA_MAINTENANCE
-- **Program Type:** RPGLE
+XFXTABL is a table-driven configuration utility. The narrative: "RPGLE program in domain 'Data Maintenance'. Contains 4 rule(s) with avg confidence 90%." It reads configuration from `HXPTABLD` and related logical files, applying a panel indicator (`*IN79`) to determine whether table logic should run.
 
 ### Business Rules Applied
 
-Key rules from `interpretations_detail`:
+Key rules:
 
-- BR-013 – "When *IN79 equals on/active, branch to 'EXIT'".
-- BR-014 – "When *IN79 equals on/active, branch to 'EXIT'".
-- BR-015 – "When *IN79 equals on/active, branch to 'EXIT'".
-- BR-016 – "When *IN79 equals on/active, branch to 'EXIT'".
+- **BR-013:** When *IN79 equals on/active, branch to 'EXIT'.
+- **BR-014:** When *IN79 equals on/active, branch to 'EXIT'.
+- **BR-015:** When *IN79 equals on/active, branch to 'EXIT'.
+- **BR-016:** When *IN79 equals on/active, branch to 'EXIT'.
 
-These rules ensure that when the global indicator is on, certain lookup paths are disabled.
+These repeated rules indicate that multiple code paths rely on the same indicator to suppress table processing when a certain user-interface or configuration state is active.
 
-### Related Approved Rules
+### Related Approved Rules (DATA_MAINTENANCE)
 
-The XFXTABL guards complement threshold checks in XFXLDSC and date validations in XFXCYMD. Collectively, they protect the system against misconfigurations in code tables and date ranges.
+XFXTABL interacts with `HXPTABLD` and its logical views (`HXLTABLD`, `HXLTABLP`, `HXLTABLS`) as shown in `dep_edges`. Its indicator-driven branching influences both Data Maintenance tools and HABADTE, which calls XFXTABL for table-based lookups.
 
 ### Data Touched
 
-From `data_dict_schema` and `data_lineage`:
+From `data_dict_schema.physical_files` and logical files:
 
-- HXPTABLD (PF) with record format XFFTABLD, and its logical projections HXLTABLD, HXLTABLP, HXLTABLS.
-- XFXTABL reads XFFTABLD, XFFTABL2, XFFTABL3, XFFTABL4.
+- `HXPTABLD` (PF): key fields `XFDTCD`, `XFDECD`; no PHI fields.
+- `HXLTABLD`, `HXLTABLP`, `HXLTABLS` (LF): logical views used to segment table definitions.
 
-These dictionary tables are non-PHI and store reference codes and descriptions. In modernization, XFXTABL’s behavior maps to service-based dictionary lookups.
+These tables control mappings like descriptions, status codes, or layout parameters without directly exposing PHI.
 
 ---
 
-## HABADTE
+## Program: HABADTE
+
+**Domain:** PATIENT_MANAGEMENT  
+**Type:** RPGLE
 
 ### Overview
 
-HABADTE is a high-complexity RPGLE program in the PATIENT_MANAGEMENT domain. It acts as the central batch driver for inpatient transfer processing. The interpretation reports three high-confidence rules and a narrative indicating that it coordinates multiple utility programs and file operations.
-
-### Domain and Program Type
-
-- **Domain:** PATIENT_MANAGEMENT
-- **Program Type:** RPGLE
+HABADTE is the central patient-management program in this run. Its narrative: "RPGLE program in domain 'Patient Management'. Contains 3 rule(s) with avg confidence 97%." It orchestrates inpatient transfer selection, enrichment, and XML export. HABADTE has cyclomatic complexity 152 (HIGH band) and is a dependency hotspot with a score of 38, fan-out of 13 program calls, and multiple file operations.
 
 ### Business Rules Applied
 
-From `interpretations_detail`:
+Key rules:
 
-- BR-018 – "When -FLAG INDICATOR equals void/voided, branch to 'SKIP'" (confidence 0.99).
-- BR-019 – "When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'" (confidence 0.99).
-- BR-017 – "When -FILE INDICATOR equals zero, branch to 'SKIP'" (confidence 0.92).
+- **BR-018:** When -FLAG INDICATOR equals void/voided, branch to 'SKIP' (confidence 0.99).
+- **BR-019:** When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP' (confidence 0.99).
+- **BR-017:** When -FILE INDICATOR equals zero, branch to 'SKIP' (confidence 0.92).
 
-These rules shape the core inclusion/exclusion criteria for the batch.
+These rules govern whether transfer records and entire accounts are eligible for inclusion in inpatient XML exports and printed reports.
 
-### Related Approved Rules
+### Related Approved Rules (DATA_MAINTENANCE and PATIENT_MANAGEMENT)
 
-HABADTE also depends on rules from utility programs:
+HABADTE relies on Data Maintenance utilities for validation and enrichment:
 
-- Date validation rules in XFXCYMD (BR-003–BR-008) to ensure valid transfer dates.
-- Descriptor map rules in XFXLDSC (BR-009–BR-012) for level configuration.
-- Table guard rules in XFXTABL (BR-013–BR-016) controlling dictionary lookups.
-- Counter rules in XFXCNTR (BR-001–BR-002) for loop termination.
+- Date rules from XFXCYMD (BR-003–BR-008) ensure transfer dates and XML timestamps are valid.
+- Counter rules from XFXCNTR (BR-001–BR-002) may drive iteration logic for transfer lists.
+- Mapping rules from XFXLDSC and XFXTABL (BR-009–BR-016) control station hierarchy and table-based configuration.
 
-Together, these programs form a rule network that controls data quality, configuration integrity, and batch flow.
+Within PATIENT_MANAGEMENT, HABADTE is the sole program with explicit approved rules, making it the anchor for inpatient transfer business semantics.
 
 ### Data Touched
 
-From `data_dict_schema` and PHI registry:
+From `data_dict_schema` and PHI flags:
 
-- **HAPTRFR** – transfer records (AFACCT, AFMRNO flagged as AccountNumber and MRN). PHI-sensitive.
-- **OXPNSTN/HXPNSTN lineage** – institution/station data, non-PHI.
-- **HXPBNFIT/OXPBNFIT lineage** – benefit data (XFBTEL flagged as PhoneNumber; PHI).
-- **OMPMAST** – member master (MMMRNO, MMACCT, MMNAME, MMPSSN, MMMMRN; PHI).
-- **HXPDICT** – large dictionary/mapping file with multiple PHI fields.
-- **HXPXMLH/HXPXMLD** – XML header and detail records (carry PHI fields from transfers and masters).
+- **Primary PF:** `HAPTRFR` (transfer records) – PHI fields: `AFACCT` (AccountNumber), `AFMRNO` (MRN).
+- **Dictionary PF:** `HXPDICT` – PHI fields including MRN, phone (`XFBTEL`), patient names (`XCNAME`, `ENNAME`), room numbers (`HXRMNO`, `XFRMNO`), account numbers (`HVACCT`, `IHACCT`), and DOB (`WBDATE`).
+- **Rank PF:** `OAPIRNK` – PHI field `BRKMRN` (MRN).
+- **Patient Master PF:** `OMPMAST` – PHI fields `MMMRNO`, `MMACCT`, `MMNAME`, `MMPSSN`, `MMMMRN`.
+- **Benefit PF:** `OXPBNFIT` – PHI field `XFBTEL` (PhoneNumber).
+- **Logical files:** `HAPIRNK`, `HMLMAST5H`, `HXPBNFIT`, `HXPNSTN` – used for rank, master, benefit, and station enrichment.
 
-HABADTE orchestrates reading of PHI-bearing files and writing of PHI-bearing XML outputs. This makes it a focal point for security and compliance in modernization. Access to HABADTE’s modern equivalents must be strictly controlled and audited.
+HABADTE interacts with these structures via declared files and dependencies (`dep_edges` and `data_lineage`), making it a focal point for PHI handling and compliance.
 
----
-
-# Summary
-
-The narratives above show a clear separation of concerns:
-
-- Utility programs in DATA_MAINTENANCE (XFXCNTR, XFXCYMD, XFXLDSC, XFXTABL) enforce validation and configuration rules without directly handling PHI.
-- HABADTE, in PATIENT_MANAGEMENT, applies these utility rules to PHI-bearing transfer and master data, deciding which records become part of inpatient integration feeds.
-
-In modernization, these programs should be re-expressed as discrete services and modules, preserving rule semantics while introducing stronger security and observability around HABADTE’s PHI processing.
+PHI-bearing files from `phi_flagged_files` relevant to HABADTE include: `OXPBNFIT`, `OMPMAST`, `HAPTRFR`, `HXPDICT`, and `OAPIRNK`. Any migration must enforce strict access controls and auditing around HABADTE’s endpoints.
