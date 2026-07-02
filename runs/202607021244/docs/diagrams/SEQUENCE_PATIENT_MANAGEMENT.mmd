@@ -1,0 +1,10 @@
+%%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
+%% PATIENT_MANAGEMENT Processing Sequence
+sequenceDiagram
+    participant User
+    participant HABADTE
+    User->>HABADTE: invoke HABADTE (RPGLE)
+    Note over HABADTE: When -FLAG INDICATOR equals void/voided, branch to 'SKIP'
+    Note over HABADTE: When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'
+    Note over HABADTE: When -FILE INDICATOR equals zero, branch to 'SKIP'
+    HABADTE-->>User: return
