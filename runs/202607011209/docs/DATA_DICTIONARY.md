@@ -1,338 +1,267 @@
-# Data Dictionary – HABADTE Application Suite
-
-This data dictionary summarizes the physical and logical file structures used by the HABADTE patient management ecosystem. It is derived entirely from the compact schema in the aggregated context; no raw DDS source has been loaded.
+# Data Dictionary
 
 ## 1. Physical Files (PF)
 
-Each subsection describes a physical file, its record format, key structure, uniqueness, and PHI‑sensitive fields. Where detailed field metadata is not available in the compact schema, fields are listed as known PHI attributes with their categories.
+### 1.1 HAPTRFR
+- **Record format**: HAFTRFR
+- **Unique key**: Yes
+- **Key fields**: AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE
+- **Total fields**: 28
+- **PHI-sensitive**: Yes (AFACCT, AFMRNO)
 
-### 1.1 HAPTRFR – Patient Transfer/Transaction File
+**Fields**
 
-- **File Name:** HAPTRFR
-- **Record Format:** HAFTRFR
-- **Unique Key:** Yes
-- **Key Fields:**
-  - AFLVL6 – Level key (coverage/plan level)
-  - AFACCT – Account number (PHI)
-  - AFTRDT – Transaction date
-  - AFTRTM – Transaction time
-  - AFTYPE – Transaction type code
-- **Total Fields:** 28
-- **PHI Sensitive Flag:** Yes
-- **PHI Fields:**
-  - AFACCT – Category: AccountNumber
-  - AFMRNO – Category: MRN
+| Field   | Type        | Length | Dec | Column Heading | PHI Category   |
+|---------|------------|--------|-----|----------------|----------------|
+| AFACCT  | (unknown)   | (n/a)  | -   | Account        | AccountNumber  |
+| AFMRNO  | (unknown)   | (n/a)  | -   | MRN            | MRN            |
+| AFLVL6  | (unknown)   | (n/a)  | -   | Level 6        | None           |
+| AFTRDT  | (unknown)   | (n/a)  | -   | Transfer Date  | None           |
+| AFTRTM  | (unknown)   | (n/a)  | -   | Transfer Time  | None           |
+| AFTYPE  | (unknown)   | (n/a)  | -   | Type           | None           |
+| ...     | ...         | ...    | ... | ...            | ...            |
 
-HAPTRFR contains per‑account transactions or transfers, keyed by level and timestamp. PHI is limited to account numbers and medical record numbers.
+(Additional non-PHI fields are present but not individually enumerated in the aggregated schema.)
 
-### 1.2 HXPDICT – Global Dictionary / Registry
+### 1.2 HXPDICT
+- **Record format**: HXFDICT
+- **Unique key**: No
+- **Key fields**: (none recorded)
+- **Total fields**: 2705
+- **PHI-sensitive**: Yes (multiple PHI fields)
 
-- **File Name:** HXPDICT
-- **Record Format:** HXFDICT
-- **Unique Key:** No
-- **Key Fields:** (not specified in compact schema)
-- **Total Fields:** 2705
-- **PHI Sensitive Flag:** Yes
-- **PHI Fields:**
-  - CCMRNO – Category: MRN
-  - XFBTEL – Category: PhoneNumber
-  - XCNAME – Category: PatientName
-  - HXRMNO – Category: RoomNumber
-  - XFRMNO – Category: RoomNumber
-  - HVACCT – Category: AccountNumber
-  - IMGMRN – Category: MRN
-  - HXGMRN – Category: MRN
-  - IHMRNO – Category: MRN
-  - IHACCT – Category: AccountNumber
-  - WBDATE – Category: DateOfBirth
-  - XMDMRN – Category: MRN
-  - ENNAME – Category: PatientName
+**Fields (PHI subset)**
 
-Although individual field types and lengths are not given, HXPDICT clearly aggregates a wide set of identifiers and PHI attributes, including multiple MRNs, account numbers, names, phone numbers, room assignments, and dates of birth.
+| Field   | Type      | Length | Dec | Column Heading | PHI Category   |
+|---------|----------|--------|-----|----------------|----------------|
+| CCMRNO  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| XFBTEL  | (unknown)| (n/a)  | -   | Phone          | PhoneNumber    |
+| XCNAME  | (unknown)| (n/a)  | -   | Name           | PatientName    |
+| HXRMNO  | (unknown)| (n/a)  | -   | Room Number    | RoomNumber     |
+| XFRMNO  | (unknown)| (n/a)  | -   | Room Number    | RoomNumber     |
+| HVACCT  | (unknown)| (n/a)  | -   | Account        | AccountNumber  |
+| IMGMRN  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| HXGMRN  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| IHMRNO  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| IHACCT  | (unknown)| (n/a)  | -   | Account        | AccountNumber  |
+| WBDATE  | (unknown)| (n/a)  | -   | Birth Date     | DateOfBirth    |
+| XMDMRN  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| ENNAME  | (unknown)| (n/a)  | -   | Name           | PatientName    |
 
-### 1.3 HXPLVL1–HXPLVL6 – Hierarchical Level Files
+All remaining fields are non-PHI dictionary attributes; they should be classified and documented in a full export, but the aggregated schema focuses on PHI hotspots.
 
-These files define level hierarchies, likely for benefits, plans, or organizational structures.
+### 1.3 HXPLVL1
+- **Record format**: HXFLVL1
+- **Unique key**: Yes
+- **Key fields**: HX1NUM
+- **Total fields**: 36
+- **PHI-sensitive**: No
 
-#### HXPLVL1
+This file holds level-1 configuration. No fields are flagged as PHI.
 
-- **File Name:** HXPLVL1
-- **Record Format:** HXFLVL1
-- **Unique Key:** Yes
-- **Key Fields:** HX1NUM
-- **Total Fields:** 36
-- **PHI Sensitive Flag:** No
+### 1.4 HXPLVL2
+- **Record format**: HXFLVL2
+- **Unique key**: Yes
+- **Key fields**: HX2NUM
+- **Total fields**: 39
+- **PHI-sensitive**: No
 
-#### HXPLVL2
+### 1.5 HXPLVL3
+- **Record format**: HXFLVL3
+- **Unique key**: Yes
+- **Key fields**: HX3NUM
+- **Total fields**: 39
+- **PHI-sensitive**: No
 
-- **File Name:** HXPLVL2
-- **Record Format:** HXFLVL2
-- **Unique Key:** Yes
-- **Key Fields:** HX2NUM
-- **Total Fields:** 39
-- **PHI Sensitive Flag:** No
+### 1.6 HXPLVL4
+- **Record format**: HXFLVL4
+- **Unique key**: Yes
+- **Key fields**: HX4NUM
+- **Total fields**: 39
+- **PHI-sensitive**: No
 
-#### HXPLVL3
+### 1.7 HXPLVL5
+- **Record format**: HXFLVL5
+- **Unique key**: Yes
+- **Key fields**: HX5NUM
+- **Total fields**: 42
+- **PHI-sensitive**: No
 
-- **File Name:** HXPLVL3
-- **Record Format:** HXFLVL3
-- **Unique Key:** Yes
-- **Key Fields:** HX3NUM
-- **Total Fields:** 39
-- **PHI Sensitive Flag:** No
+### 1.8 HXPLVL6
+- **Record format**: HXFLVL6
+- **Unique key**: Yes
+- **Key fields**: HX6NUM
+- **Total fields**: 155
+- **PHI-sensitive**: No
 
-#### HXPLVL4
+HXPLVL1–HXPLVL6 together form a hierarchy of level-based configuration or benefits structures. None of these levels contain PHI-tagged fields.
 
-- **File Name:** HXPLVL4
-- **Record Format:** HXFLVL4
-- **Unique Key:** Yes
-- **Key Fields:** HX4NUM
-- **Total Fields:** 39
-- **PHI Sensitive Flag:** No
+### 1.9 HXPTABLD
+- **Record format**: XFFTABLD
+- **Unique key**: No
+- **Key fields**: XFDTCD, XFDECD
+- **Total fields**: 7
+- **PHI-sensitive**: No
 
-#### HXPLVL5
+HXPTABLD serves as a compact dictionary table keyed by data code and detail code. It is used via logical files for different key sequences.
 
-- **File Name:** HXPLVL5
-- **Record Format:** HXFLVL5
-- **Unique Key:** Yes
-- **Key Fields:** HX5NUM
-- **Total Fields:** 42
-- **PHI Sensitive Flag:** No
+### 1.10 HXPXMLD
+- **Record format**: HXFXMLD
+- **Unique key**: Yes
+- **Key fields**: XMDUSR, XMDSEQ, XMDSQ2
+- **Total fields**: 4
+- **PHI-sensitive**: No
 
-#### HXPLVL6
+This file stores XML detail records keyed by user and sequence. No fields are flagged as PHI.
 
-- **File Name:** HXPLVL6
-- **Record Format:** HXFLVL6
-- **Unique Key:** Yes
-- **Key Fields:** HX6NUM
-- **Total Fields:** 155
-- **PHI Sensitive Flag:** No
+### 1.11 HXPXMLR
+- **Record format**: HXFXMLR
+- **Unique key**: Yes
+- **Key fields**: XMRUSR, XMRSEQ, XMRID
+- **Total fields**: 4
+- **PHI-sensitive**: No
 
-None of these level files contain PHI‑tagged fields in the aggregated registry. They model structural metadata used by level description logic.
+HXPXMLR stores XML routing or header records keyed by user and identifier.
 
-### 1.4 HXPTABLD – Generic Table File
+### 1.12 OAPIRNK
+- **Record format**: HBFIRNK
+- **Unique key**: Yes
+- **Key fields**: BRKLV6, BRKACC, BRKSEQ
+- **Total fields**: 33
+- **PHI-sensitive**: Yes (BRKMRN)
 
-- **File Name:** HXPTABLD
-- **Record Format:** XFFTABLD
-- **Unique Key:** No
-- **Key Fields:**
-  - XFDTCD – Data code
-  - XFDECD – Extended code
-- **Total Fields:** 7
-- **PHI Sensitive Flag:** No
+**Fields (PHI subset)**
 
-HXPTABLD is the base physical file for several logical views that present mappings and descriptions. It does not itself contain PHI.
+| Field   | Type      | Length | Dec | Column Heading | PHI Category |
+|---------|----------|--------|-----|----------------|--------------|
+| BRKMRN  | (unknown)| (n/a)  | -   | MRN            | MRN          |
 
-### 1.5 HXPXMLD – XML Detail File
+Other fields describe rank, account, and level attributes.
 
-- **File Name:** HXPXMLD
-- **Record Format:** HXFXMLD
-- **Unique Key:** Yes
-- **Key Fields:**
-  - XMDUSR – User identifier
-  - XMDSEQ – Primary sequence
-  - XMDSQ2 – Secondary sequence
-- **Total Fields:** 4
-- **PHI Sensitive Flag:** No
+### 1.13 OMPMAST
+- **Record format**: HMFMAST
+- **Unique key**: Yes
+- **Key fields**: MMPLV6, MMACCT
+- **Total fields**: 149
+- **PHI-sensitive**: Yes (MMMRNO, MMACCT, MMNAME, MMPSSN, MMMMRN)
 
-HXPXMLD stores XML detail segments keyed by user and sequence numbers. PHI is not explicitly tagged here.
+**Fields (PHI subset)**
 
-### 1.6 HXPXMLR – XML Record File
+| Field   | Type      | Length | Dec | Column Heading | PHI Category   |
+|---------|----------|--------|-----|----------------|----------------|
+| MMMRNO  | (unknown)| (n/a)  | -   | MRN            | MRN            |
+| MMACCT  | (unknown)| (n/a)  | -   | Account        | AccountNumber  |
+| MMNAME  | (unknown)| (n/a)  | -   | Name           | PatientName    |
+| MMPSSN  | (unknown)| (n/a)  | -   | SSN            | SSN            |
+| MMMMRN  | (unknown)| (n/a)  | -   | MRN            | MRN            |
 
-- **File Name:** HXPXMLR
-- **Record Format:** HXFXMLR
-- **Unique Key:** Yes
-- **Key Fields:**
-  - XMRUSR – User identifier
-  - XMRSEQ – Sequence
-  - XMRID – Record ID
-- **Total Fields:** 4
-- **PHI Sensitive Flag:** No
+Other non-PHI fields capture demographic, plan, and status attributes.
 
-HXPXMLR stores XML record headers or control records. It is used by XFXGETID to derive identifiers.
+### 1.14 OXPBNFIT
+- **Record format**: XFFBNFIT
+- **Unique key**: Yes
+- **Key fields**: XFBUBN, XFBPLN
+- **Total fields**: 34
+- **PHI-sensitive**: Yes (XFBTEL)
 
-### 1.7 OAPIRNK – Patient Ranking File
+**Fields (PHI subset)**
 
-- **File Name:** OAPIRNK
-- **Record Format:** HBFIRNK
-- **Unique Key:** Yes
-- **Key Fields:**
-  - BRKLV6 – Level key
-  - BRKACC – Account number
-  - BRKSEQ – Ranking sequence
-- **Total Fields:** 33
-- **PHI Sensitive Flag:** Yes
-- **PHI Fields:**
-  - BRKMRN – Category: MRN
+| Field   | Type      | Length | Dec | Column Heading | PHI Category   |
+|---------|----------|--------|-----|----------------|----------------|
+| XFBTEL  | (unknown)| (n/a)  | -   | Phone          | PhoneNumber    |
 
-OAPIRNK contains ranked patient records keyed by level and account, with MRN as sensitive data.
+The remainder of fields describe benefit attributes.
 
-### 1.8 OMPMAST – Patient Master File
+### 1.15 OXPNSTN
+- **Record format**: XFFNSTN
+- **Unique key**: Yes
+- **Key fields**: XFNLV6, XFNSST
+- **Total fields**: 23
+- **PHI-sensitive**: No
 
-- **File Name:** OMPMAST
-- **Record Format:** HMFMAST
-- **Unique Key:** Yes
-- **Key Fields:**
-  - MMPLV6 – Level key
-  - MMACCT – Account number
-- **Total Fields:** 149
-- **PHI Sensitive Flag:** Yes
-- **PHI Fields:**
-  - MMMRNO – Category: MRN
-  - MMACCT – Category: AccountNumber
-  - MMNAME – Category: PatientName
-  - MMPSSN – Category: SSN
-  - MMMMRN – Category: MRN
-
-OMPMAST is the primary patient master file with multiple identifiers and sensitive attributes, including SSN and MRNs.
-
-### 1.9 OXPBNFIT – Benefit Plan File
-
-- **File Name:** OXPBNFIT
-- **Record Format:** XFFBNFIT
-- **Unique Key:** Yes
-- **Key Fields:**
-  - XFBUBN – Benefit number
-  - XFBPLN – Plan code
-- **Total Fields:** 34
-- **PHI Sensitive Flag:** Yes
-- **PHI Fields:**
-  - XFBTEL – Category: PhoneNumber
-
-OXPBNFIT describes benefit plans and associates them with contact numbers, which are PHI.
-
-### 1.10 OXPNSTN – Station/Namespace File
-
-- **File Name:** OXPNSTN
-- **Record Format:** XFFNSTN
-- **Unique Key:** Yes
-- **Key Fields:**
-  - XFNLV6 – Level key
-  - XFNSST – Namespace or station status
-- **Total Fields:** 23
-- **PHI Sensitive Flag:** No
-
-OXPNSTN contains station or namespace information; no PHI‑tagged fields are recorded.
+OXPNSTN defines institution or plan station records for level 6.
 
 ## 2. Logical Files (LF)
 
-Logical files provide alternate key sequences, filtered views, or projections over PFs. The compact schema identifies key relationships and select/omit behavior.
+Logical files present alternate views over PFs with specific key sequences.
 
-### 2.1 HAPIRNK – Logical View over TAPIRNK
+### 2.1 HAPIRNK
+- **Based on PF**: TAPIRNK
+- **Record format**: HBFIRNK
+- **Key fields**: BRKLV6, BRKACC, BRKSEQ
+- **Select/omit**: None
 
-- **Logical File Name:** HAPIRNK
-- **Based On PF:** TAPIRNK (missing from harvested set)
-- **Record Format:** HBFIRNK
-- **Key Fields:** BRKLV6, BRKACC, BRKSEQ
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** Yes (via MRN in underlying structures)
+HAPIRNK provides a keyed view of rank or break records at level 6, aligned with the structure used by OAPIRNK.
 
-HAPIRNK presents ranked patient data from TAPIRNK. Although TAPIRNK’s DDS is missing, HAPIRNK’s format name matches OAPIRNK’s record format, suggesting similar MRN‑bearing structures.
+### 2.2 HMLMAST5H
+- **Based on PF**: TMPMAST
+- **Record format**: HMFMAST
+- **Key fields**: MMPNST, MMADDT, MMADTM
+- **Select/omit**: None
 
-### 2.2 HMLMAST5H – Logical View over TMPMAST
+HMLMAST5H offers a view of member master data (TMPMAST) keyed by posting station and admission date/time, supporting queries by admission episode.
 
-- **Logical File Name:** HMLMAST5H
-- **Based On PF:** TMPMAST (missing)
-- **Record Format:** HMFMAST
-- **Key Fields:** MMPNST, MMADDT, MMADTM
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** Yes (inherits PHI from master data)
+### 2.3 HXLTABLD
+- **Based on PF**: HXPTABLD
+- **Record format**: XFFTABLD
+- **Key fields**: XFDTCD, XFDMAP
+- **Select/omit**: None
 
-HMLMAST5H provides a temporal view over patient master records keyed by posting status and add date/time. Fields such as MRNs, names, accounts, and SSNs exist in the underlying HMFMAST format.
+HXLTABLD exposes dictionary entries keyed by data code and map code.
 
-### 2.3 HXLTABLD – Logical Mapping View
+### 2.4 HXLTABLP
+- **Based on PF**: HXPTABLD
+- **Record format**: XFFTABLD
+- **Key fields**: XFDTCD, XFDLDS
+- **Select/omit**: None
 
-- **Logical File Name:** HXLTABLD
-- **Based On PF:** HXPTABLD
-- **Record Format:** XFFTABLD
-- **Key Fields:** XFDTCD, XFDMAP
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** No
+HXLTABLP exposes entries keyed by data code and load sequence.
 
-HXLTABLD exposes mapping codes for data codes, likely used by XFXTABL to translate codes into internal/normalized values.
+### 2.5 HXLTABLS
+- **Based on PF**: HXPTABLD
+- **Record format**: XFFTABLD
+- **Key fields**: XFDTCD, XFDSDS
+- **Select/omit**: None
 
-### 2.4 HXLTABLP – Logical Long Description View
+HXLTABLS exposes entries keyed by data code and status sequence.
 
-- **Logical File Name:** HXLTABLP
-- **Based On PF:** HXPTABLD
-- **Record Format:** XFFTABLD
-- **Key Fields:** XFDTCD, XFDLDS
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** No
+### 2.6 HXPBNFIT
+- **Based on PF**: TXPBNFIT
+- **Record format**: XFFBNFIT
+- **Key fields**: XFBUBN, XFBPLN
+- **Select/omit**: None
 
-HXLTABLP provides long descriptions (LDS) for table entries, likely used in reports and user displays.
+HXPBNFIT provides a logical view over benefit records focusing on benefit number and plan.
 
-### 2.5 HXLTABLS – Logical Short Description View
+### 2.7 HXPNSTN
+- **Based on PF**: TXPNSTN
+- **Record format**: XFFNSTN
+- **Key fields**: XFNLV6, XFNSST
+- **Select/omit**: None
 
-- **Logical File Name:** HXLTABLS
-- **Based On PF:** HXPTABLD
-- **Record Format:** XFFTABLD
-- **Key Fields:** XFDTCD, XFDSDS
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** No
+HXPNSTN provides a logical view over institution or station records keyed by level and station.
 
-HXLTABLS exposes short descriptions (SDS) for table entries, suitable for compact print layouts and UI fields.
+## 3. PHI Overview
 
-### 2.6 HXPBNFIT – Logical Benefit Plan View
+Across the schema, PHI is concentrated in the following files and fields:
 
-- **Logical File Name:** HXPBNFIT
-- **Based On PF:** TXPBNFIT (missing)
-- **Record Format:** XFFBNFIT
-- **Key Fields:** XFBUBN, XFBPLN
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** Yes (inherited XFBTEL)
+- **HAPTRFR**: AFACCT (AccountNumber), AFMRNO (MRN).
+- **HXPDICT**: CCMRNO, XFBTEL, XCNAME, HXRMNO, XFRMNO, HVACCT, IMGMRN, HXGMRN, IHMRNO, IHACCT, WBDATE, XMDMRN, ENNAME.
+- **OAPIRNK**: BRKMRN (MRN).
+- **OMPMAST**: MMMRNO, MMACCT, MMNAME, MMPSSN, MMMMRN.
+- **OXPBNFIT**: XFBTEL (PhoneNumber).
 
-HXPBNFIT is a logical view used by application logic to access benefit plan definitions. It inherits PHI from XFBTEL, which holds phone numbers.
+These fields should be treated as sensitive in any downstream design, with appropriate encryption, masking, and access controls.
 
-### 2.7 HXPNSTN – Logical Station/Namespace View
+## 4. Summary
 
-- **Logical File Name:** HXPNSTN
-- **Based On PF:** TXPNSTN (missing)
-- **Record Format:** XFFNSTN
-- **Key Fields:** XFNLV6, XFNSST
-- **Select/Omit Criteria:** None documented
-- **PHI Sensitive Flag:** No
+The data dictionary reveals a file-centric data model typical of legacy AS400 applications. Core domains include:
 
-HXPNSTN presents station/namespace information keyed by level and status. No PHI fields are tagged.
+- Transfers and rank records (HAPTRFR, OAPIRNK, HAPIRNK).
+- Member or patient master data (OMPMAST, HMLMAST5H, TMPMAST).
+- Multi-level configuration and benefits structures (HXPLVL1–HXPLVL6, HXPTABLD, HXLTAB*).
+- Benefits and institution station data (OXPBNFIT, HXPBNFIT, OXPNSTN, HXPNSTN).
+- Large dictionary and routing structures with PHI (HXPDICT).
+- XML integration records (HXPXMLD, HXPXMLR).
 
-## 3. PHI Field Catalogue
-
-For quick reference, the following table consolidates all PHI‑flagged fields across PFs.
-
-| File     | Field   | PHI Category   |
-|----------|---------|----------------|
-| HAPTRFR  | AFACCT  | AccountNumber  |
-| HAPTRFR  | AFMRNO  | MRN            |
-| HXPDICT  | CCMRNO  | MRN            |
-| HXPDICT  | XFBTEL  | PhoneNumber    |
-| HXPDICT  | XCNAME  | PatientName    |
-| HXPDICT  | HXRMNO  | RoomNumber     |
-| HXPDICT  | XFRMNO  | RoomNumber     |
-| HXPDICT  | HVACCT  | AccountNumber  |
-| HXPDICT  | IMGMRN  | MRN            |
-| HXPDICT  | HXGMRN  | MRN            |
-| HXPDICT  | IHMRNO  | MRN            |
-| HXPDICT  | IHACCT  | AccountNumber  |
-| HXPDICT  | WBDATE  | DateOfBirth    |
-| HXPDICT  | XMDMRN  | MRN            |
-| HXPDICT  | ENNAME  | PatientName    |
-| OAPIRNK  | BRKMRN  | MRN            |
-| OMPMAST  | MMMRNO  | MRN            |
-| OMPMAST  | MMACCT  | AccountNumber  |
-| OMPMAST  | MMNAME  | PatientName    |
-| OMPMAST  | MMPSSN  | SSN            |
-| OMPMAST  | MMMMRN  | MRN            |
-| OXPBNFIT | XFBTEL  | PhoneNumber    |
-
-These fields must be treated as sensitive in any modernization effort. Access controls, audit logging, and masking strategies should be applied around the files and programs that consume or emit them.
-
-## 4. Notes on Missing Base Files
-
-Several logical files in this dictionary reference PFs that are not present in the harvested set:
-
-- TAPIRNK (base for HAPIRNK)
-- TMPMAST (base for HMLMAST5H)
-- TXPBNFIT (base for HXPBNFIT)
-- TXPNSTN (base for HXPNSTN)
-
-Although their logical views provide insight into key structures, the full column definitions, types, and lengths of underlying fields are not available. Any reverse‑engineering or migration must either retrieve these DDS definitions from the source system or reconstruct them from downstream databases and runtime traces.
+This dictionary provides the structural basis for mapping DDS-based files to relational tables and views in a modern platform, with explicit identification of PHI fields to guide security and compliance design.
