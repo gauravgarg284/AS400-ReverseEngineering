@@ -1,0 +1,41 @@
+%% DATA_MAINTENANCE Processing Sequence
+sequenceDiagram
+    participant MainLoop
+    participant XFXCNTR
+    participant XFXCYMD
+    participant XFXLDSC
+    participant XFXTABL
+
+    MainLoop->>XFXCNTR: BR 001 X equals zero check
+    XFXCNTR-->>MainLoop: exit or continue
+    MainLoop->>XFXCNTR: BR 002 X equals 40 check
+    XFXCNTR-->>MainLoop: exit or continue
+
+    MainLoop->>XFXCYMD: BR 003 year lower bound
+    XFXCYMD-->>MainLoop: year valid or exit
+    MainLoop->>XFXCYMD: BR 004 year upper bound
+    XFXCYMD-->>MainLoop: year valid or exit
+    MainLoop->>XFXCYMD: BR 005 month lower bound
+    XFXCYMD-->>MainLoop: month valid or exit
+    MainLoop->>XFXCYMD: BR 006 month upper bound
+    XFXCYMD-->>MainLoop: month valid or exit
+    MainLoop->>XFXCYMD: BR 008 day max per month
+    XFXCYMD-->>MainLoop: day valid or exit
+
+    MainLoop->>XFXLDSC: BR 009 map gt 99
+    XFXLDSC-->>MainLoop: mapping ok or exit
+    MainLoop->>XFXLDSC: BR 010 map gt 99
+    XFXLDSC-->>MainLoop: mapping ok or exit
+    MainLoop->>XFXLDSC: BR 011 map gt 99
+    XFXLDSC-->>MainLoop: mapping ok or exit
+    MainLoop->>XFXLDSC: BR 012 map gt 9999
+    XFXLDSC-->>MainLoop: mapping ok or exit
+
+    MainLoop->>XFXTABL: BR 013 IN79 on
+    XFXTABL-->>MainLoop: exit when active
+    MainLoop->>XFXTABL: BR 014 IN79 on
+    XFXTABL-->>MainLoop: exit when active
+    MainLoop->>XFXTABL: BR 015 IN79 on
+    XFXTABL-->>MainLoop: exit when active
+    MainLoop->>XFXTABL: BR 016 IN79 on
+    XFXTABL-->>MainLoop: exit when active
