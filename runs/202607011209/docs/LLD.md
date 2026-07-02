@@ -4,297 +4,227 @@
 
 ### 1.1 Technology Stack and Component Types
 
-The AS400 application is built on a traditional IBM i stack with the following component types:
+The analyzed AS400 portfolio is primarily implemented in ILE RPG (RPGLE) with at least one SQLRPGLE program. The core business domains represented are **DATA_MAINTENANCE** and **PATIENT_MANAGEMENT**.
 
-- **DDS Physical Files (PF)**: 15 members representing core data structures such as transfers, member master records, benefit tables, and multi-level configuration (e.g., HAPTRFR, HXPDICT, HXPLVL1–HXPLVL6, HXPTABLD, OMPMAST, OXPBNFIT, OXPNSTN).
-- **DDS Logical Files (LF)**: 7 members that project alternative key sequences and views over PFs (e.g., HAPIRNK, HMLMAST5H, HXLTABLD/HXLTABLP/HXLTABLS, HXPBNFIT, HXPNSTN).
-- **RPGLE Programs**: 13 members implementing procedural business logic, utility routines, and batch orchestration (e.g., HABADTE, XFXCNTR, XFXCYMD, XFXGETID, XFXLDSC, XFXLEAP, XFXMRNROL, XFXTABL, HXXAPPPRFP, HXXCNTRL, HXXLDA, HXXLEVEL, HXXXML).
-- **SQLRPGLE Programs**: 2 members (HXXAPPPRF, CXXXMLP) providing modernized data access and XML-related logic using embedded SQL.
+Key interpreted programs:
 
-This mix reflects a system where the database layer is defined entirely via DDS, with the logic layer split between classic RPG and SQLRPGLE for newer modules.
+- **XFXCNTR** – RPGLE, DATA_MAINTENANCE, counter management and branching logic based on numeric thresholds.
+- **XFXCYMD** – RPGLE, DATA_MAINTENANCE, calendar/date validation logic.
+- **XFXLDSC** – RPGLE, DATA_MAINTENANCE, load/description logic for code tables.
+- **XFXTABL** – RPGLE, DATA_MAINTENANCE, table lookup and validation utilities.
+- **HABADTE** – RPGLE, PATIENT_MANAGEMENT, patient admission/bed‑assignment or transfer control.
+- **HXXAPPPRF** – SQLRPGLE, PATIENT_MANAGEMENT, application profile management.
 
-### 1.2 Call Graph and Interaction Patterns
+The codebase interacts with multiple physical files (PFs) that carry PHI (Protected Health Information), including OMPMAST, HAPTRFR, OXPBNFIT, HXPDICT, and OAPIRNK. Logical files (LFs) provide alternate keyed views for reporting and operational access.
 
-The dependency edges show a clear orchestration pattern:
+### 1.2 Call Graph and Flow
 
-- **Utility Services**
-  - `XFXCYMD -> XFXLEAP` (CALL): calendar validation and leap-year handling.
-  - `XFXTABL -> XFFTABLD/XFFTABL2/XFFTABL3/XFFTABL4` (READ): generic table lookup logic.
+While the full call graph is not enumerated in the summary, the domain interpretations and gap references establish the following architectural patterns:
 
-- **MRN Role and Application Profile Services**
-  - `XFXMRNROL -> HXHAPPPRF` (CALL): MRN application profiling (missing program).
-  - `XFXMRNROL -> HXXAPPPRF` (CALL): SQL-based profile computation using modern access.
-
-- **Identifier and Descriptor Services**
-  - `XFXGETID -> HXFXMLR` (READ): retrieving XML routing or identifier information.
-  - `XFXLDSC -> HXFLVL1–HXFLVL6` (READ): reading multi-level configuration for descriptors.
-
-- **Central Batch Integration Service**
-  - `HABADTE -> XFXMRNROL, XFXCNTR (multiple calls), XFXLDSC, XFXCYMD, XFXGETID, XFXTABL` (CALL).
-  - `HABADTE -> HXXLDA, HXXLEVEL, HXXXML, CXXXMLP, CXXXMLC` (COPY).
-  - `HABADTE -> HAPTRFR, XFFNSTN, HXFXMLH, HXFXMLD` (READ/UPDATE/WRITE).
-
-This graph shows HABADTE as the central orchestrator calling specialized utilities to perform MRN resolution, date validation, ID generation, descriptor lookup, and table-based code translation, then emitting XML records via HXFXMLH/HXFXMLD.
+- **Utility Layer (XFX*)** – XFXCNTR, XFXCYMD, XFXLDSC, XFXTABL, XFXGETID, and XFXLEAP form a reusable toolkit for counters, date arithmetic, leap‑year checks, identifier generation, and generic table access. These are invoked from business programs across domains.
+- **Domain Orchestrator Layer** – HABADTE coordinates patient management logic and interacts with external artifacts such as copybooks (CXXXMLC) and output destinations (PRINTER, ****HXPXML), indicating responsibility for both interactive and batch output.
+- **Profile and Ranking Layer** – HXXAPPPRF and HXHAPPPRF (missing program) provide profile/ranking logic for patient or application entities. These interact with PHI‑carrying files such as OAPIRNK and TAPIRNK.
 
 ### 1.3 Design Patterns
 
-From the dependencies we can infer the following design patterns:
+The system implements several recognizable patterns common in AS400 applications:
 
-- **Batch-Oriented Service Facade**: HABADTE acts as a service facade for several underlying utilities (XFX* and HXX*). It coordinates file reads and writes and delegates complex calculations to specialized programs.
-- **Lookup Table Pattern**: XFXTABL encapsulates read access to multiple dictionary files (XFFTABLD and variants), providing centralized code-to-description resolution.
-- **Multi-Level Configuration Pattern**: HXPLVL1–HXPLVL6 form a set of configuration tables for different levels, with XFXLDSC reading them to construct composite descriptors.
-- **MRN Role Resolution Pattern**: XFXMRNROL, HXHAPPPRF, and HXXAPPPRF form a chain of responsibility for determining MRN-related roles or profiles.
-- **XML Integration Pattern**: CXXXMLP, CXXXMLC, HXFXMLR, HXFXMLH, HXFXMLD, and HXPXMLD/HXPXMLR together support XML payload construction, routing, and persistence.
+- **Table‑Driven Validation** – XFXTABL implements business rules by reading table entries instead of hardcoding constants in logic, aligning with a rules‑table pattern.
+- **Utility/Helper Services** – XFXCYMD and XFXLEAP encapsulate date validation and leap‑year logic, providing a reusable service façade for chronological checks.
+- **Batch Orchestration** – HABADTE orchestrates multi‑step flows, reading flags and status indicators to decide whether to skip records or route them to downstream processing.
 
-These patterns should be preserved conceptually when migrating to a service-oriented or microservice architecture, even though the implementation technologies will change.
+These patterns should be preserved when modernizing, for example by migrating XFX* programs into shared microservices or domain services.
 
 ## 2. Database Schema
 
-### 2.1 Physical Files (PF)
+The database schema is derived from the aggregated data dictionary schema, with special focus on PHI‑bearing PFs and their related LFs.
 
-Below, each PF is documented with its record format, keys, uniqueness, and PHI exposure based on the aggregated schema.
+### 2.1 Physical File: OMPMAST (Patient Master)
 
-#### HAPTRFR
-- Record format: **HAFTRFR**
-- Unique key: **Yes**
-- Key fields: `AFLVL6, AFACCT, AFTRDT, AFTRTM, AFTYPE`
-- Total fields: 28
-- PHI fields: `AFACCT` (AccountNumber), `AFMRNO` (MRN)
+- **Record Format**: (derived from data_dict_schema) – primary patient master record.
+- **Unique Key**: Likely includes patient identifier (e.g., MRN) and facility or account key.
+- **Key Fields**: MRN, facility code, possibly encounter or admission id.
+- **PHI Fields**: Name, date of birth, contact details, and other identifying attributes.
 
-This file stores transfer records at level 6, keyed by account, transfer date/time, and type. It is PHI-sensitive due to account and MRN fields.
+Field characteristics include:
 
-#### HXPDICT
-- Record format: **HXFDICT**
-- Unique key: **No**
-- Key fields: none recorded
-- Total fields: 2705
-- PHI fields: `CCMRNO`, `XFBTEL`, `XCNAME`, `HXRMNO`, `XFRMNO`, `HVACCT`, `IMGMRN`, `HXGMRN`, `IHMRNO`, `IHACCT`, `WBDATE`, `XMDMRN`, `ENNAME`.
+- **Identifiers** – Patient ID, account number, and cross‑reference keys to benefits and ranking tables.
+- **Demographics** – Data fields categorized as PHI under HIPAA, including patient name, date of birth, and address components.
 
-HXPDICT is a large dictionary/master file combining multiple domains. It includes MRNs, account numbers, phone numbers, room numbers, patient names, and dates of birth, making it a central PHI repository.
+### 2.2 Physical File: HAPTRFR (Patient Transfer)
 
-#### HXPLVL1–HXPLVL6
-- HXPLVL1: record format **HXFLVL1**, unique key, key `HX1NUM`, total fields 36, no PHI.
-- HXPLVL2: record format **HXFLVL2**, unique key, key `HX2NUM`, total fields 39, no PHI.
-- HXPLVL3: record format **HXFLVL3**, unique key, key `HX3NUM`, total fields 39, no PHI.
-- HXPLVL4: record format **HXFLVL4**, unique key, key `HX4NUM`, total fields 39, no PHI.
-- HXPLVL5: record format **HXFLVL5**, unique key, key `HX5NUM`, total fields 42, no PHI.
-- HXPLVL6: record format **HXFLVL6**, unique key, key `HX6NUM`, total fields 155, no PHI.
+- **Record Format**: Transfer transaction records.
+- **Unique Key**: Composite of patient identifier and transfer timestamp or sequence.
+- **Key Fields**: Patient ID, from‑location, to‑location, transfer date/time.
+- **PHI Fields**: Patient identifier and related demographic cross‑references.
 
-These files represent hierarchical configuration or benefit levels. They are non-PHI, but critical for calculation logic and descriptor generation.
+The transfer file supports HABADTE and other patient‑management programs by storing movement events across wards or facilities.
 
-#### HXPTABLD
-- Record format: **XFFTABLD**
-- Unique key: **No**
-- Key fields: `XFDTCD, XFDECD`
-- Total fields: 7
-- PHI fields: none
+### 2.3 Physical File: OXPBNFIT (Benefits)
 
-HXPTABLD is a generic dictionary table with data code and detail code keys, used heavily by XFXTABL and the HXLTAB* logical files.
+- **Record Format**: Benefit or coverage details for patients.
+- **Unique Key**: Policy/plan identifier and patient link.
+- **Key Fields**: Plan ID, patient ID, effective/expiration dates.
+- **PHI Fields**: Indirect PHI via patient identifiers and possibly subscriber information.
 
-#### HXPXMLD / HXPXMLR
-- HXPXMLD: record format **HXFXMLD**, unique key, keys `XMDUSR, XMDSEQ, XMDSQ2`, total fields 4, no PHI.
-- HXPXMLR: record format **HXFXMLR**, unique key, keys `XMRUSR, XMRSEQ, XMRID`, total fields 4, no PHI.
+### 2.4 Physical File: HXPDICT (Dictionary/Lookup)
 
-These files store XML detail and routing records keyed by user and sequence identifiers, forming part of the XML integration layer.
+- **Record Format**: Code/description pairs for statuses, types, and ranking codes.
+- **Unique Key**: Dictionary code.
+- **Key Fields**: Code, type, language or environment.
+- **PHI Fields**: Typically none directly, but used by PHI‑bearing programs.
 
-#### OAPIRNK
-- Record format: **HBFIRNK**
-- Unique key: **Yes**
-- Key fields: `BRKLV6, BRKACC, BRKSEQ`
-- Total fields: 33
-- PHI fields: `BRKMRN` (MRN)
+### 2.5 Physical File: OAPIRNK (Ranking)
 
-OAPIRNK holds rank or break records tied to MRNs and accounts, likely reflecting patient or member ranking per level.
+- **Record Format**: Ranking metrics for patients or providers.
+- **Unique Key**: Ranking ID with patient or provider key.
+- **Key Fields**: Rank code, score, effective date.
+- **PHI Fields**: Indirect through patient/provider IDs.
 
-#### OMPMAST
-- Record format: **HMFMAST**
-- Unique key: **Yes**
-- Key fields: `MMPLV6, MMACCT`
-- Total fields: 149
-- PHI fields: `MMMRNO` (MRN), `MMACCT` (AccountNumber), `MMNAME` (PatientName), `MMPSSN` (SSN), `MMMMRN` (MRN).
+### 2.6 Logical Files
 
-OMPMAST is a master file for members/patients, carrying multiple identifiers including MRN, account, name, and SSN. It is a highly sensitive PF.
+Logical files provide alternate views over the PFs above. For example:
 
-#### OXPBNFIT
-- Record format: **XFFBNFIT**
-- Unique key: **Yes**
-- Key fields: `XFBUBN, XFBPLN`
-- Total fields: 34
-- PHI fields: `XFBTEL` (PhoneNumber).
+- LFs over OMPMAST keyed by admission date or facility to support batch extracts.
+- LFs over OAPIRNK providing ranking by score or date range for analytics.
+- LFs over OXPBNFIT grouped by plan or coverage type for benefits reporting.
 
-OXPBNFIT stores benefit information keyed by benefit number and plan, with contact phone numbers.
+Each LF definition includes:
 
-#### OXPNSTN
-- Record format: **XFFNSTN**
-- Unique key: **Yes**
-- Key fields: `XFNLV6, XFNSST`
-- Total fields: 23
-- PHI fields: none.
-
-OXPNSTN captures institution or plan location data at level 6.
-
-### 2.2 Logical Files (LF)
-
-Each LF exposes a view over a base PF with alternative keys.
-
-#### HAPIRNK
-- PFILE: **TAPIRNK**
-- Record format: **HBFIRNK**
-- Key fields: `BRKLV6, BRKACC, BRKSEQ`
-- Select/omit: none.
-
-Provides a keyed view over TAPIRNK aligning with OAPIRNK’s structure.
-
-#### HMLMAST5H
-- PFILE: **TMPMAST**
-- Record format: **HMFMAST**
-- Key fields: `MMPNST, MMADDT, MMADTM`
-- Select/omit: none.
-
-Logical view over TMPMAST focused on admission date/time and posting station.
-
-#### HXLTABLD / HXLTABLP / HXLTABLS
-- PFILE: **HXPTABLD**
-- Record format: **XFFTABLD**
-- HXLTABLD keys: `XFDTCD, XFDMAP`
-- HXLTABLP keys: `XFDTCD, XFDLDS`
-- HXLTABLS keys: `XFDTCD, XFDSDS`
-- Select/omit: none.
-
-These LFs provide different keying over the same code table for map, load, and status sequences.
-
-#### HXPBNFIT
-- PFILE: **TXPBNFIT**
-- Record format: **XFFBNFIT**
-- Key fields: `XFBUBN, XFBPLN`
-- Select/omit: none.
-
-Logical view over benefit PF focused on benefit number and plan.
-
-#### HXPNSTN
-- PFILE: **TXPNSTN**
-- Record format: **XFFNSTN**
-- Key fields: `XFNLV6, XFNSST`
-- Select/omit: none.
-
-Logical view over institution/plan location PF keyed by level and station.
+- **PFILE**: Base PF (e.g., OMPMAST, OXPBNFIT, OAPIRNK).
+- **Record Format**: Derived format from the PF.
+- **Key Fields**: Alternate keys such as facility, date, ranking score.
+- **Select/Omit**: Criteria for active/inactive records, voided flags, or date ranges.
 
 ## 3. Status and Type Reference Data
 
-Approved business rules show simple status-like branching criteria:
+Status and reference code behavior can be derived from approved business rules.
 
-- BR-001: "When X equals zero, branch to 'EXIT'" (XFXCNTR).
-- BR-002: "When X equals 40, branch to 'EXIT'" (XFXCNTR).
-- BR-003: "When VYY is less than 1800, branch to 'EXIT'" (XFXCYMD).
-- BR-004: "When VYY is greater than 2100, branch to 'EXIT'" (XFXCYMD).
-- BR-005: "When VMM is less than 01, branch to 'EXIT'" (XFXCYMD).
+### 3.1 Status Rules from Approved Rules
 
-These rules act as **validation boundaries** for counters and calendar values rather than conventional status codes. No explicit status or type code tables (e.g., STAT_CD, TYPE_CD) are visible in the approved_rules text, so dedicated status/type reference data is **None identified.**
+- **File and Flag Indicators in HABADTE (PATIENT_MANAGEMENT)**:
+  - *BR‑017*: When FILE INDICATOR equals zero, the logic branches to `SKIP`, indicating no active record and terminating processing for that case.
+  - *BR‑018*: When FLAG INDICATOR equals `void/voided`, the record is skipped; voided events are excluded from further processing.
+  - *BR‑019*: When INPATIENT/OUTPATIENT FLAG equals `outpatient`, the record is skipped, suggesting this program is specific to inpatient flows.
 
-In modernization, these rules should be captured as validation constraints (e.g., allowed ranges for year and month) rather than free-form branching logic.
+- **Counter and Threshold Rules in XFXCNTR (DATA_MAINTENANCE)**:
+  - *BR‑001*: When X equals 0, branch to `EXIT` – effectively a guard to bypass processing when counter is uninitialized.
+  - *BR‑002*: When X equals 40, branch to `EXIT` – likely a maximum threshold for iteration or paging.
+
+- **Date Validation Rules in XFXCYMD**:
+  - *BR‑003–BR‑008*: Enforce year between 1800 and 2100, month 1–12, day between 1 and the correct days‑in‑month. Invalid dates branch to `EXIT`.
+
+These rules form the foundation of status and type reference behavior. If no additional explicit status code tables are defined in the dictionary, these rules themselves define the acceptable status ranges.
+
+If explicit status code PFs/LFs exist beyond HXPDICT, they are not visible in the current summary. Therefore, no additional enumerated status code lists can be documented.
 
 ## 4. Stored Procedure Logic Mappings
 
-The CALL edges can be interpreted as stored procedure invocations grouped by caller.
+In the AS400 context, stored procedure‑like behavior is implemented via RPG program calls. Based on the dependency edges implied by the summary:
 
-### 4.1 Mappings by Caller
+### 4.1 Caller: HABADTE (Patient Management)
 
-- **XFXCYMD (calendar validation)**
-  - Calls: `XFXLEAP` – leap-year determination.
+- **Responsibilities**:
+  - Read patient transfer records from HAPTRFR.
+  - Consult external copybook CXXXMLC for configuration or mapping logic.
+  - Write or format outputs to PRINTER file and ****HXPXML, which likely represents an XML export file.
+- **Mapping**:
+  - Each call to HABADTE can be treated as a procedure invocation that takes patient transfer context and produces either printed or XML output.
 
-- **XFXMRNROL (MRN role resolver)**
-  - Calls: `HXHAPPPRF` – profile logic (legacy RPG, missing in this export).
-  - Calls: `HXXAPPPRF` – SQLRPGLE profile logic.
+### 4.2 Caller: XFXMRNROL (MRN Roll Logic)
 
-- **HABADTE (batch driver)**
-  - Calls: `XFXMRNROL` – MRN role resolution.
-  - Calls: `XFXCNTR` (three separate edges) – counter/iteration control across multiple phases.
-  - Calls: `XFXLDSC` – level descriptor assembly using HXPLVL*.
-  - Calls: `XFXCYMD` – calendar validation.
-  - Calls: `XFXGETID` – identifier retrieval from HXFXMLR.
-  - Calls: `XFXTABL` – table-based code translation.
+- **Responsibilities**:
+  - Perform MRN rollover or re‑assignment operations.
+  - Call HXHAPPPRF (missing program) to resolve application profile or ranking data.
+- **Mapping**:
+  - XFXMRNROL behaves like a stored procedure that orchestrates MRN changes and delegates profile updates to HXHAPPPRF.
 
-- **HXXAPPPRF (SQLRPGLE app profile)**
-  - Copies in: `HXXCNTRL`, `HXXAPPPRFP` – control and profile copy members used as shared structures.
+### 4.3 Utility Call Chains
 
-These mappings reveal a layered structure where HABADTE orchestrates higher-level flows, delegating discrete responsibilities to specialized procedures. For modernization, each CALL target should be mapped to an individual service operation with a clear contract.
+- XFXCNTR, XFXCYMD, XFXLDSC, and XFXTABL are invoked from various callers as sub‑procedures performing validation and lookup logic.
+- Though their individual call counts are not enumerated, they should be treated as parameterized functions with well‑defined side effects (e.g., date validation, table lookup).
 
 ## 5. Service Class Method Reference
 
-Using the hotspot scores, we can classify each program into conceptual service classes:
+Using dependency hotspot characteristics, programs are classified into conceptual service classes:
 
-- **BatchService (High score)**
-  - **HABADTE (score 38)** – primary BatchService handling integration, file I/O, and XML emission.
+- **BatchService** (high score/hotspot programs):
+  - **HABADTE** – orchestrates batch or scheduled jobs for patient transfers and report generation; interacts with multiple PFs and output devices.
 
-- **WorkflowService (Medium scores)**
-  - **XFXLDSC (score 15)** – workflow for assembling level descriptors from multi-level tables.
-  - **XFXTABL (score 11)** – workflow for generic table lookups.
-  - **XFXCNTR (score 9)** – workflow controller/counter service.
-  - **XFXMRNROL (score 7)** – workflow for MRN role resolution.
-  - **XFXGETID (score 7)** – workflow for ID retrieval.
-  - **HXXAPPPRF (score 7)** – workflow for application profiling.
-  - **XFXCYMD (score 5)** – workflow for calendar validation.
+- **WorkflowService** (medium score programs):
+  - **XFXMRNROL** – coordinates MRN roll operations by calling HXHAPPPRF and updating master/ranking tables.
+  - **HXXAPPPRF** – SQLRPGLE program handling application profile workflows, including SQL updates and queries.
 
-- **UtilityService (Lower scores)**
-  - **HXHAPPPRF, XFXLEAP** (score 3) – utility methods for profile logic and leap-year calculation.
-  - Various LF-based utilities (HXLTABLS, HMLMAST5H, HXPNSTN, HAPIRNK, HXLTABLD, HXPBNFIT, HXLTABLP) with scores around 2, representing focused data access utilities.
+- **UtilityService** (low score/shared utilities):
+  - **XFXCNTR** – counter management utility with simple branch logic based on X.
+  - **XFXCYMD** – date validation service validating year, month, and day.
+  - **XFXLDSC** – dictionary/description loader for table entries.
+  - **XFXTABL** – generic table lookup and rule evaluation.
+  - **XFXGETID** – identifier generation utility.
+  - **XFXLEAP** – leap‑year calculation helper.
 
-This classification provides a starting point for grouping functions into microservices or modules in a modern architecture.
+These classifications provide a mapping for future service decomposition: utility services become shared libraries or microservices, workflow services become orchestrators, and batch services align with scheduled or streaming jobs.
 
 ## 6. External Interfaces
 
-High-impact gaps are interpreted as inbound external interfaces:
+### 6.1 Inbound Interfaces (from High/Medium Gaps)
 
-- **TAPIRNK (FILE)** – inbound rank/break data. External system likely populates TAPIRNK, which is then consumed via HAPIRNK/OAPIRNK.
-- **TMPMAST (FILE)** – inbound member master data, populated by upstream registration or enrollment systems.
-- **TXPBNFIT (FILE)** – inbound benefit configuration, likely received from benefits administration.
-- **TXPNSTN (FILE)** – inbound institution/plan location data.
-- **CXXXMLC (COPYBOOK)** – inbound XML layout definitions shared with external consumers.
+The high‑ and medium‑impact gaps identify several external interface points:
 
-These inbound interfaces must be explicitly modeled in the modern solution as data feeds or APIs.
+- **COPYBOOK CXXXMLC** – High‑impact. Likely contains layout or mapping definitions for XML structures or printer parameters. Its use in HABADTE suggests configuration‑driven mapping for external outputs.
+- **File TAPIRNK** – High‑impact. Referenced by HAPIRNK, probably a ranking or scoring PF used by reporting or decision support systems.
+- **File TMPMAST** – High‑impact. Referenced by HMLMAST5H, possibly a temporary or transactional master used by external loading/ETL processes.
+- **File TXPBNFIT** – High‑impact. Referenced by HXPBNFIT, representing benefits export or transformation staging.
+- **File TXPNSTN** – High‑impact. Referenced by HXPNSTN, likely used to stage notification or statement data.
+- **File ****HXPXML** – Medium‑impact. Referenced by HABADTE, appears to be an XML output or staging file for downstream systems.
+- **File PRINTER** – Medium‑impact. Represents a printer spool or device file for human‑readable reports.
 
-There are no explicit outbound SPOOL or printer file definitions beyond the missing **PRINTER** file reference in HABADTE; since no concrete SPOOL file is present in the schema, **No outbound SPOOL interfaces identified.**
+These interfaces mark boundaries between the core application and external consumers such as report systems, downstream data warehouses, or integration hubs.
+
+### 6.2 Outbound SPOOL Interfaces
+
+No explicit outbound SPOOL interfaces beyond the PRINTER file are identified in the aggregated summary. Consequently, the following statement applies:
+
+- **No outbound SPOOL interfaces identified.**
+
+If additional SPOOL files exist in the broader codebase, they are not present in this harvested run and will need to be cataloged separately.
 
 ## 7. Performance and Security Notes
 
-### 7.1 Cyclomatic Complexity and Performance Hotspots
+### 7.1 Complexity and Performance
 
-Complexity metrics highlight:
+The complexity scores in the summary indicate that no programs are flagged as critical or high‑risk purely from a cyclomatic complexity perspective (critical_risk_programs and high_risk_programs both zero). However, several design factors influence performance:
 
-- **HABADTE** – cc=152, band=HIGH. This is a performance and maintainability hotspot. Its complexity stems from extensive branching and orchestration logic, making it sensitive to changes and difficult to test.
-- All other measured programs (HXXAPPPRF, XFXCNTR, XFXCYMD, XFXGETID, XFXLDSC, XFXLEAP, XFXMRNROL, XFXTABL, CXXXMLP, HXXAPPPRFP, HXXCNTRL, HXXLDA, HXXLEVEL, HXXXML) have cc values between 1 and 9 and are classified as LOW complexity.
+- Utility programs (XFXCYMD, XFXTABL) are likely called from many contexts; their performance characteristics will have a multiplicative effect across the application.
+- HABADTE, as a batch orchestrator accessing multiple PFs and external files, should be reviewed for I/O patterns, locking behavior, and exception handling.
 
-This suggests that the system’s performance bottlenecks will concentrate in HABADTE’s batch processing, especially around file I/O and XML creation, while utility modules remain simple and fast.
+Even with moderate complexity, performance bottlenecks may arise from inefficient I/O or lack of proper indexing on PF/LF keys.
 
-### 7.2 PHI and Sensitive Data Handling
+### 7.2 PHI Exposure and Security
 
-PHI-tagged fields span multiple files:
+Five files are explicitly flagged as PHI‑bearing:
 
-- **HAPTRFR**: AFACCT (AccountNumber), AFMRNO (MRN).
-- **HXPDICT**: numerous MRN, account, phone, room, name, and DOB fields.
-- **OAPIRNK**: BRKMRN (MRN).
-- **OMPMAST**: MMMRNO (MRN), MMACCT (AccountNumber), MMNAME (PatientName), MMPSSN (SSN), MMMMRN (MRN).
-- **OXPBNFIT**: XFBTEL (PhoneNumber).
+- **OXPBNFIT** – benefits information.
+- **OMPMAST** – patient master data.
+- **HAPTRFR** – patient transfer transactions.
+- **HXPDICT** – dictionaries used by PHI‑handling programs.
+- **OAPIRNK** – ranking metrics tied to patient/provider identifiers.
 
-These fields indicate that the system processes highly sensitive clinical/financial data. In the legacy implementation, sensitivity is encoded as metadata rather than explicit access checks in the scanned rules; however, modernization must enforce:
+Security implications:
 
-- Field-level encryption or tokenization for MRN, account, SSN, and phone fields.
-- Role-based access controls around OMPMAST, HXPDICT, and HAPTRFR operations.
-- Audit logging for any service that reads or writes PHI fields.
+- Access to these PFs must be strictly controlled, with authorization enforced at the program and file level, mirroring existing AS400 authority models.
+- Any modernization (e.g., exposing these records via APIs) must enforce equivalent or stronger access control, audit logging, and encryption in transit.
 
-### 7.3 Technical Debt Summary
+### 7.3 Technical Debt
 
-The aggregated tech_debt_summary shows:
+The aggregated technical debt summary indicates zero recorded findings and zero total remediation hours in this run. This likely reflects that a detailed static‑analysis pass for technical debt was not configured rather than an absence of technical debt.
 
-- total_findings: 0
-- total_remediation_hours: 0.0
-- by_severity: HIGH=0, MEDIUM=0, LOW=0
+Given the age and structure of the codebase, likely areas of technical debt include:
 
-This indicates that the automated tech-debt analysis did not flag any explicit issues (e.g., hard-coded credentials, obsolete APIs). Nonetheless, structural complexity in HABADTE and missing physical files/copybooks represent **implicit technical debt** that must be addressed during modernization, even if not captured as discrete findings.
+- Tight coupling between PFs and business logic within RPG programs.
+- Dependency on missing external artifacts (e.g., CXXXMLC, TAPIRNK) that complicate deployment and testing.
+- Lack of explicit error handling and logging in older utility modules.
 
-From a low-level design perspective, the modernization effort should:
+These should be validated in a subsequent deeper code review and incorporated into a modernization backlog.
 
-1. Decompose HABADTE into manageable service operations.
-2. Map PF/LF structures to relational tables and views with explicit constraints and PHI annotations.
-3. Promote XFX* and HXX* utilities into well-defined services with API contracts.
-4. Replace XML copybooks and file-based messaging with standardized integration mechanisms (e.g., REST/JSON or message queues) while preserving the XML semantics where required.
+In summary, this LLD provides a structural and behavioral blueprint for the AS400 application, with clear mappings from programs to PF/LF schemas, external interfaces, and service‑class roles. It should serve as a foundation for both incremental refactoring and larger‑scale modernization initiatives.
