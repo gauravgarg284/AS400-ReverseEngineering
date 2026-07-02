@@ -1,7 +1,0 @@
-%% DATA_MAINTENANCE Processing Sequence
-sequenceDiagram
-    participant MainLoop
-    MainLoop->>XFXCNTR: Apply BR-001 and BR-002 on counter X
-    MainLoop->>XFXCYMD: Apply BR-003..BR-008 on VYY, VMM, VDD
-    MainLoop->>XFXLDSC: Apply BR-009..BR-012 on LDAMAP and levels
-    MainLoop->>XFXTABL: Apply BR-013..BR-016 on indicator 79 and table lookups
