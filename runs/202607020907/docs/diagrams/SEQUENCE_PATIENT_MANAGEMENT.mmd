@@ -1,0 +1,6 @@
+%% PATIENT_MANAGEMENT Processing Sequence
+sequenceDiagram
+    participant MainLoop
+    MainLoop->>HABADTE: Apply BR-017 file indicator check
+    MainLoop->>HABADTE: Apply BR-018 flag indicator void check
+    MainLoop->>HABADTE: Apply BR-019 inpatient outpatient flag check
