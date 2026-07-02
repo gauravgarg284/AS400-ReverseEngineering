@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HABADTE - Dependency Graph (run 202607021710)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f3f4f6;color:#111827;display:flex;height:100vh;overflow:hidden;}
+#cy-wrap{flex:1;position:relative;}
+#cy{width:100%;height:100%;background:#f9fafb;}
+#sidebar{width:300px;background:#ffffff;border-left:1px solid #e5e7eb;display:flex;flex-direction:column;box-shadow:-2px 0 8px rgba(0,0,0,.06);}
+#sidebar-head{padding:14px 16px;background:#f9fafb;border-bottom:1px solid #e5e7eb;}
+#sidebar-head h2{font-size:12px;color:#1d4ed8;letter-spacing:.06em;text-transform:uppercase;font-weight:700;}
+#sidebar-head p{font-size:11px;color:#9ca3af;margin-top:3px;}
+#detail{flex:1;overflow-y:auto;padding:14px;}
+.placeholder{color:#9ca3af;font-size:13px;text-align:center;margin-top:48px;line-height:1.8;}
+.d-title{font-size:17px;font-weight:700;color:#111827;margin-bottom:3px;}
+.d-badge{display:inline-block;padding:2px 9px;border-radius:99px;font-size:10px;font-weight:700;letter-spacing:.05em;margin-bottom:12px;color:#fff;}
+.d-row{display:flex;gap:8px;margin-bottom:7px;padding-bottom:7px;border-bottom:1px solid #f3f4f6;}
+.d-key{color:#1d4ed8;font-size:11px;min-width:100px;flex-shrink:0;padding-top:1px;}
+.d-val{color:#374151;font-size:11px;word-break:break-word;line-height:1.5;}
+.ok{color:#16a34a;}.err{color:#dc2626;}.warn{color:#d97706;}
+#legend{padding:12px 16px;border-top:1px solid #e5e7eb;background:#f9fafb;}
+#legend h3{font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;}
+.li{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.ld{width:13px;height:13px;border-radius:50%;flex-shrink:0;}
+.lt{font-size:11px;color:#374151;}
+#controls{position:absolute;top:12px;left:12px;display:flex;flex-direction:column;gap:4px;z-index:10;}
+.btn{width:34px;height:34px;background:#ffffff;border:1px solid #d1d5db;border-radius:7px;color:#1d4ed8;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,.1);}
+.btn:hover{background:#eff6ff;border-color:#93c5fd;}
+#title-box{position:absolute;top:12px;left:56px;background:rgba(255,255,255,.95);border:1px solid #d1d5db;border-radius:7px;padding:7px 13px;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+#title-box h1{font-size:13px;color:#111827;font-weight:700;}
+#title-box p{font-size:11px;color:#6b7280;}
+#stats{position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.95);border:1px solid #d1d5db;border-radius:7px;padding:7px 14px;display:flex;gap:18px;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.sn{font-size:16px;font-weight:700;color:#1d4ed8;text-align:center;}
+.sl{font-size:10px;color:#9ca3af;text-align:center;}
+</style>
+</head>
+<body>
+<div id="cy-wrap">
+  <div id="controls">
+    <button class="btn" onclick="cy.zoom(cy.zoom()*1.3)" title="Zoom in">+</button>
+    <button class="btn" onclick="cy.zoom(cy.zoom()*0.75)" title="Zoom out">-</button>
+    <button class="btn" style="font-size:11px" onclick="cy.fit(60)" title="Fit all">FIT</button>
+    <button class="btn" style="font-size:11px" onclick="reset()" title="Reset">RST</button>
+  </div>
+  <div id="title-box">
+    <h1>HABADTE &mdash; Dependency Graph</h1>
+    <p>Run 202607021710 &nbsp;&bull;&nbsp; 57 nodes &nbsp;&bull;&nbsp; 41 edges</p>
+  </div>
+  <div id="cy"></div>
+  <div id="stats">
+    <div><div class="sn">57</div><div class="sl">Nodes</div></div>
+    <div><div class="sn">17</div><div class="sl">Active</div></div>
+    <div><div class="sn">41</div><div class="sl">Edges</div></div>
+    <div><div class="sn" style="color:#d97706">10</div><div class="sl">Hotspots</div></div>
+    <div><div class="sn" style="color:#dc2626">0</div><div class="sl">Missing</div></div>
+  </div>
+</div>
+<div id="sidebar">
+  <div id="sidebar-head">
+    <h2>Properties</h2>
+    <p>Click any node or edge to inspect</p>
+  </div>
+  <div id="detail">
+    <p class="placeholder">Click a node or edge<br>to see its properties here</p>
+  </div>
+  <div id="legend">
+    <h3>Node Types</h3>
+    <div class="li"><div class="ld" style="background:#1d4ed8"></div><span class="lt">RPGLE Program</span></div>
+    <div class="li"><div class="ld" style="background:#7e22ce"></div><span class="lt">CL Program</span></div>
+    <div class="li"><div class="ld" style="background:#92400e"></div><span class="lt">Physical File (PF)</span></div>
+    <div class="li"><div class="ld" style="background:#166534"></div><span class="lt">Logical File (LF)</span></div>
+    <div class="li"><div class="ld" style="background:#0e7490"></div><span class="lt">Display File (DSPF)</span></div>
+    <div class="li"><div class="ld" style="background:#374151"></div><span class="lt">External / Printer</span></div>
+    <div class="li"><div class="ld" style="background:#1d4ed8;border:3px solid #f59e0b"></div><span class="lt">Hotspot node</span></div>
+    <div class="li"><div class="ld" style="background:#b91c1c;border:2px dashed #fca5a5"></div><span class="lt">Missing Source</span></div>
+  </div>
+</div>
+<script>
+const elements=[{"data":{"id":"HAPIRNK","label":"HAPIRNK","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HAPTRFR","label":"HAPTRFR","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HMLMAST5H","label":"HMLMAST5H","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXLTABLD","label":"HXLTABLD","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXLTABLP","label":"HXLTABLP","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXLTABLS","label":"HXLTABLS","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXPBNFIT","label":"HXPBNFIT","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXPDICT","label":"HXPDICT","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL1","label":"HXPLVL1","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL2","label":"HXPLVL2","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL3","label":"HXPLVL3","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL4","label":"HXPLVL4","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL5","label":"HXPLVL5","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPLVL6","label":"HXPLVL6","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPNSTN","label":"HXPNSTN","ntype":"DDS_LF","bg":"#166534","border":"#6ee7b7","bw":2,"sz":50,"shape":"round-rectangle","lines":0,"missing":false,"hotspot":false,"score":2,"isolated":false}},{"data":{"id":"HXPTABLD","label":"HXPTABLD","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPXMLD","label":"HXPXMLD","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXPXMLR","label":"HXPXMLR","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"OAPIRNK","label":"OAPIRNK","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"OMPMAST","label":"OMPMAST","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"OXPBNFIT","label":"OXPBNFIT","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"OXPNSTN","label":"OXPNSTN","ntype":"DDS_PF","bg":"#92400e","border":"#fde68a","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXAPPPRF","label":"HXXAPPPRF","ntype":"SQLRPGLE","bg":"#1e40af","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":7,"isolated":false}},{"data":{"id":"XFXCNTR","label":"XFXCNTR","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":9,"isolated":false}},{"data":{"id":"XFXCYMD","label":"XFXCYMD","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":5,"isolated":false}},{"data":{"id":"XFXGETID","label":"XFXGETID","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":7,"isolated":false}},{"data":{"id":"XFXLDSC","label":"XFXLDSC","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":15,"isolated":false}},{"data":{"id":"XFXLEAP","label":"XFXLEAP","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":3,"isolated":false}},{"data":{"id":"XFXMRNROL","label":"XFXMRNROL","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":7,"isolated":false}},{"data":{"id":"XFXTABL","label":"XFXTABL","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":11,"isolated":false}},{"data":{"id":"CXXXMLP","label":"CXXXMLP","ntype":"SQLRPGLE","bg":"#1e40af","border":"#bfdbfe","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXAPPPRFP","label":"HXXAPPPRFP","ntype":"RPGLE","bg":"#1d4ed8","border":"#93c5fd","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXCNTRL","label":"HXXCNTRL","ntype":"RPGLE","bg":"#1d4ed8","border":"#93c5fd","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXLDA","label":"HXXLDA","ntype":"RPGLE","bg":"#1d4ed8","border":"#93c5fd","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXLEVEL","label":"HXXLEVEL","ntype":"RPGLE","bg":"#1d4ed8","border":"#93c5fd","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXXXML","label":"HXXXML","ntype":"RPGLE","bg":"#1d4ed8","border":"#93c5fd","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HABADTE","label":"HABADTE","ntype":"RPGLE","bg":"#1d4ed8","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":38,"isolated":false}},{"data":{"id":"HXHAPPPRF","label":"HXHAPPPRF","ntype":"PROGRAM","bg":"#374151","border":"#f59e0b","bw":4,"sz":74,"shape":"ellipse","lines":0,"missing":false,"hotspot":true,"score":3,"isolated":false}},{"data":{"id":"CXXXMLC","label":"CXXXMLC","ntype":"COPYBOOK","bg":"#374151","border":"#9ca3af","bw":2,"sz":34,"shape":"ellipse","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"TAPIRNK","label":"TAPIRNK","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"TMPMAST","label":"TMPMAST","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"TXPBNFIT","label":"TXPBNFIT","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"TXPNSTN","label":"TXPNSTN","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFXMLR","label":"HXFXMLR","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL1","label":"HXFLVL1","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL2","label":"HXFLVL2","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL3","label":"HXFLVL3","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL4","label":"HXFLVL4","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL5","label":"HXFLVL5","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFLVL6","label":"HXFLVL6","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"XFFTABLD","label":"XFFTABLD","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"XFFTABL2","label":"XFFTABL2","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"XFFTABL3","label":"XFFTABL3","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"XFFTABL4","label":"XFFTABL4","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"XFFNSTN","label":"XFFNSTN","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFXMLH","label":"HXFXMLH","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"HXFXMLD","label":"HXFXMLD","ntype":"FILE","bg":"#78350f","border":"#d97706","bw":2,"sz":34,"shape":"rectangle","lines":0,"missing":false,"hotspot":false,"score":0,"isolated":true}},{"data":{"id":"E0000","source":"XFXCYMD","target":"XFXLEAP","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0001","source":"XFXMRNROL","target":"HXHAPPPRF","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0002","source":"XFXMRNROL","target":"HXXAPPPRF","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0003","source":"HABADTE","target":"XFXMRNROL","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0004","source":"HABADTE","target":"XFXCNTR","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0005","source":"HABADTE","target":"XFXLDSC","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0008","source":"HABADTE","target":"XFXCYMD","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0009","source":"HABADTE","target":"XFXGETID","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0010","source":"HABADTE","target":"XFXTABL","rel":"CALL","color":"#f59e0b","line":0}},{"data":{"id":"E0011","source":"HXXAPPPRF","target":"HXXCNTRL","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0012","source":"HXXAPPPRF","target":"HXXAPPPRFP","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0013","source":"XFXGETID","target":"HXXLDA","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0014","source":"HABADTE","target":"HXXLDA","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0015","source":"HABADTE","target":"HXXLEVEL","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0016","source":"HABADTE","target":"HXXXML","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0017","source":"HABADTE","target":"CXXXMLP","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0018","source":"HABADTE","target":"CXXXMLC","rel":"COPY","color":"#a855f7","line":0}},{"data":{"id":"E0019","source":"HAPIRNK","target":"TAPIRNK","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0020","source":"HMLMAST5H","target":"TMPMAST","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0021","source":"HXLTABLD","target":"HXPTABLD","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0022","source":"HXLTABLP","target":"HXPTABLD","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0023","source":"HXLTABLS","target":"HXPTABLD","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0024","source":"HXPBNFIT","target":"TXPBNFIT","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0025","source":"HXPNSTN","target":"TXPNSTN","rel":"PFILE_OF","color":"#8b5cf6","line":0}},{"data":{"id":"E0026","source":"XFXGETID","target":"HXFXMLR","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0027","source":"XFXLDSC","target":"HXFLVL1","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0028","source":"XFXLDSC","target":"HXFLVL2","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0029","source":"XFXLDSC","target":"HXFLVL3","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0030","source":"XFXLDSC","target":"HXFLVL4","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0031","source":"XFXLDSC","target":"HXFLVL5","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0032","source":"XFXLDSC","target":"HXFLVL6","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0033","source":"XFXTABL","target":"XFFTABLD","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0034","source":"XFXTABL","target":"XFFTABL2","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0035","source":"XFXTABL","target":"XFFTABL3","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0036","source":"XFXTABL","target":"XFFTABL4","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0037","source":"HABADTE","target":"HAPTRFR","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0038","source":"HABADTE","target":"XFFNSTN","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0039","source":"HABADTE","target":"HXFXMLH","rel":"READ","color":"#3b82f6","line":0}},{"data":{"id":"E0040","source":"HABADTE","target":"HXFXMLH","rel":"UPDATE","color":"#16a34a","line":0}},{"data":{"id":"E0041","source":"HABADTE","target":"HXFXMLH","rel":"WRITE","color":"#16a34a","line":0}},{"data":{"id":"E0042","source":"HABADTE","target":"HXFXMLD","rel":"WRITE","color":"#16a34a","line":0}}];
+const cy=cytoscape({
+  container:document.getElementById('cy'),
+  elements,
+  style:[
+    {selector:'node',style:{
+      'background-color':'data(bg)',
+      'border-color':'data(border)',
+      'border-width':'data(bw)',
+      'width':'data(sz)','height':'data(sz)',
+      'label':'data(label)',
+      'color':'#ffffff',
+      'font-size':'9px','font-weight':'700',
+      'text-valign':'center','text-halign':'center',
+      'text-wrap':'wrap','text-max-width':'65px',
+      'text-outline-width':2,'text-outline-color':'rgba(0,0,0,.5)',
+      'shape':'data(shape)',
+    }},
+    {selector:'node[?missing]',style:{'border-style':'dashed'}},
+    {selector:'edge',style:{
+      'width':1.8,
+      'line-color':'data(color)',
+      'target-arrow-color':'data(color)',
+      'target-arrow-shape':'triangle',
+      'curve-style':'bezier',
+      'label':'data(rel)',
+      'font-size':'7px','color':'#374151',
+      'text-outline-width':2,'text-outline-color':'#f9fafb',
+      'text-background-color':'#f9fafb',
+      'text-background-opacity':0.85,
+      'text-background-padding':'2px',
+    }},
+    {selector:':selected',style:{'border-width':4,'border-color':'#f59e0b','line-color':'#f59e0b','target-arrow-color':'#f59e0b'}},
+    {selector:'.faded',style:{opacity:0.1}},
+    {selector:'.hi',style:{opacity:1}},
+  ],
+  layout:{
+    name:'cose',
+    idealEdgeLength:130,nodeOverlap:25,refresh:20,
+    fit:true,padding:70,randomize:false,
+    componentSpacing:100,nodeRepulsion:500000,
+    edgeElasticity:120,nestingFactor:5,
+    gravity:60,numIter:1200,
+    initialTemp:200,coolingFactor:0.95,minTemp:1,
+  },
+});
+function row(k,v){return '<div class="d-row"><span class="d-key">'+k+'</span><span class="d-val">'+v+'</span></div>';}
+function nbadge(t){const c={'RPGLE':'#1d4ed8','SQLRPGLE':'#1e40af','CLP':'#7e22ce','CLLE':'#7e22ce','DDS_PF':'#92400e','DDS_LF':'#166534','DDS_DSPF':'#0e7490','DDS_PRTF':'#374151','PROGRAM':'#374151','FILE':'#78350f'};return c[t]||'#374151';}
+function showNode(d){
+  let h='<div class="d-title">'+d.label+'</div>';
+  h+='<span class="d-badge" style="background:'+nbadge(d.ntype)+'">'+d.ntype+'</span>';
+  h+=row('Status',d.missing?'<span class="err">MISSING SOURCE</span>':'<span class="ok">FOUND</span>');
+  if(d.lines)h+=row('Lines',d.lines);
+  if(d.hotspot)h+=row('Hotspot','<span class="warn">Yes — score: '+d.score+'</span>');
+  if(d.isolated)h+=row('Isolated','<span style="color:#9ca3af">Yes (no connections)</span>');
+  document.getElementById('detail').innerHTML=h;
+}
+function showEdge(d){
+  const ec={'CALL':'#f59e0b','CLP_CALL':'#f59e0b','CALLP':'#f59e0b','CALLB':'#f59e0b','COPY':'#a855f7','READ':'#3b82f6','WRITE':'#16a34a','UPDATE':'#16a34a','DELETE':'#ef4444','PFILE_OF':'#8b5cf6'};
+  let h='<div class="d-title">'+d.rel+'</div>';
+  h+='<span class="d-badge" style="background:'+(ec[d.rel]||'#374151')+'">RELATIONSHIP</span>';
+  h+=row('from',d.source);
+  h+=row('to',d.target);
+  if(d.line)h+=row('source line',d.line);
+  document.getElementById('detail').innerHTML=h;
+}
+function reset(){
+  cy.elements().removeClass('faded hi');
+  document.getElementById('detail').innerHTML='<p class="placeholder">Click a node or edge<br>to see its properties here</p>';
+}
+cy.on('tap','node',e=>{
+  showNode(e.target.data());
+  cy.elements().addClass('faded');
+  const n=e.target;
+  n.removeClass('faded').addClass('hi');
+  n.connectedEdges().removeClass('faded').addClass('hi');
+  n.neighborhood().nodes().removeClass('faded').addClass('hi');
+});
+cy.on('tap','edge',e=>{
+  showEdge(e.target.data());
+  cy.elements().addClass('faded');
+  const ed=e.target;
+  ed.removeClass('faded').addClass('hi');
+  ed.source().removeClass('faded').addClass('hi');
+  ed.target().removeClass('faded').addClass('hi');
+});
+cy.on('tap',e=>{if(e.target===cy)reset();});
+</script>
+</body>
+</html>
