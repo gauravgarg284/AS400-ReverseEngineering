@@ -1,627 +1,600 @@
 # Business Processing Rules and Functional Specification
 
-## HABADTE Patient Management (HABADTE)
-
+## HABADTE Patient Management Engine (HABADTE) /
 ### For Java / Spring Boot / SQL Server Migration
 
 ---
 
-## (1) Business Purpose
+## 1. Business Purpose
 
-The HABADTE program orchestrates patient-account level processing for inpatient and outpatient encounters. It reads transfer, master, benefit, and status records to determine whether each encounter should be included in downstream XML output and reporting. The logic primarily serves hospital billing and patient management teams, and it is executed in batch mode for a set of patient accounts and admission episodes.
-
----
-
-## (2) Inputs / API Request Parameters
-
-In a modern Java / Spring Boot implementation, the HABADTE batch logic would be exposed as a REST API or scheduled job. Key request parameters map to AS400 file keys and indicators.
-
-| Parameter Name                 | AS400 Field / Concept     | Type        | Description |
-|--------------------------------|---------------------------|------------|-------------|
-| accountLevel6                  | AFLVL6 / MMPLV6 / XFNLV6 | String(6)  | Level-6 account key used across transfer, master, and status files. |
-| accountNumber                  | AFACCT / MMACCT          | String(10) | Core financial account number used for billing and patient master lookup. |
-| inpatientOutpatientFlag        | -INPATIENT/OUTPATIENT     | String(1)  | Flag indicating whether the encounter is inpatient (`I`) or outpatient (`O`). |
-| fileIndicator                  | -FILE INDICATOR           | Integer    | Numeric flag indicating whether the current record/file is active and should be processed. |
-| voidFlag                       | -FLAG INDICATOR           | String(1)  | Flag indicating if the record has been voided or canceled. |
-| benefitPlanCode                | XFBPLN                    | String     | Benefit plan identifier used in benefit lookup (OXPBNFIT/HXPBNFIT). |
-| benefitBundleNumber           | XFBUBN                    | String     | Benefit bundle or grouping key. |
-| printerDestination            | PRINTER                   | String     | Logical printer or output destination for any generated reports. |
-| xmlUserId                     | XMDUSR / XMRUSR           | String     | User context for XML header/detail records (HXPXMLD/HXPXMLR). |
-
-Spring Boot security mapping:
-
-- All endpoints handling PHI-bearing fields (`AFMRNO`, `HVACCT`, `MMMRNO`, `MMACCT`, `MMNAME`, `MMPSSN`, etc.) must be protected by Spring Security with role-based access (e.g., `ROLE_BILLING`, `ROLE_PATIENT_ADMIN`).
-- Request parameters containing MRN, account, or SSN values must be validated and logged using audit trails without storing raw values in logs.
+The HABADTE patient management engine processes inpatient encounter records and related benefit and account data to prepare them for downstream billing and reporting.
+It evaluates control indicators, void flags, and inpatient/outpatient status to determine which records are eligible for further processing.
+Execution is typically triggered as part of nightly or batch workflows that consolidate transactional data into patient-level structures.
 
 ---
 
-## (3) Organizational Hierarchy
+## 2. Inputs / API Request Parameters
 
-The HABADTE program operates at the level of patient accounts and encounters rather than organizational hierarchy.
+For the migrated service, HABADTE behavior will be exposed as a Spring Boot API that receives a combination of patient, account, and encounter identifiers.
+Key inputs are derived from the AS400 physical and logical files.
 
-Organizational hierarchy is therefore not explicitly modeled in the source and is **not applicable** as a separate dimension in this specification. Any organizational reporting (e.g., by facility or department) would be derived from master data in other systems.
+### Request Parameters
+
+| Parameter Name              | AS400 Field / Source     | Type        | Description |
+|----------------------------|--------------------------|------------|-------------|
+| patientMrn                 | OMPMAST.MMMRNO           | STRING(MRN) | Master medical record number used to locate the patient master row. |
+| accountNumber              | HAPTRFR.AFACCT           | STRING      | Financial account identifier linked to transfer records. |
+| encounterAccount           | OMPMAST.MMACCT           | STRING      | Encounter-level account number, often shared across stay segments. |
+| benefitPlanCode            | OXPBNFIT.XFBPLN          | STRING      | Benefit plan identifier from benefit table. |
+| benefitBundleNumber        | OXPBNFIT.XFBUBN          | STRING      | Benefit bundle number grouping plan options. |
+| level6Location             | OXPBNFIT.XFBTEL          | STRING      | Telephone/contact or location attribute for benefits. |
+| inpatientLevel6Key         | HXPLVL6.HX6NUM           | STRING      | Level-6 hierarchy key representing highest-level grouping of flows. |
+| inpatientStatusCode        | HXPNSTN.XFNSST           | STRING      | Inpatient status code used to classify hospital stay state. |
+| controlIndicator           | Request-derived flag      | STRING      | Control flag mapped from HABADTE `-FILE INDICATOR` semantics. |
+| voidFlag                   | Request-derived flag      | STRING      | Void indicator mapped from HABADTE `-FLAG INDICATOR`. |
+| inpatientOutpatientFlag    | Request-derived flag      | STRING      | Encounter type mapped from HABADTE `-INPATIENT/OUTPATIENT FLAG`. |
+
+The API must enforce Spring Security (e.g., OAuth2/JWT) and link the caller’s identity to permitted MRNs and account ranges.
+Authorization checks should execute before any data access, especially for PHI-bearing sources such as OMPMAST, HAPTRFR, HXPDICT, and OAPIRNK.
 
 ---
 
-## (4) Primary Data Source
+## 3. Organizational Hierarchy
 
-The primary data sources for HABADTE’s processing are the following physical files:
+The source system primarily encodes technical hierarchies (levels 1–6 in HXPLVL1–HXPLVL6) rather than organizational departments.
+These level files represent nested structures such as facility → service line → product, but concrete business department names are not visible in the summarized metadata.
 
-1. **HAPTRFR (HAFTRFR)** – Transfer records with account and MRN PHI.
-   - Key fields: `AFLVL6`, `AFACCT`, `AFTRDT`, `AFTRTM`, `AFTYPE`
-   - PHI fields: `AFACCT` (AccountNumber), `AFMRNO` (MRN)
+For the purposes of migration, organizational hierarchy can be treated as **not explicitly encoded** and derived externally from master data.
 
-2. **OMPMAST (HMFMAST)** – Patient master records.
-   - Key fields: `MMPLV6`, `MMACCT`
-   - PHI fields: `MMMRNO`, `MMACCT`, `MMNAME`, `MMPSSN`, `MMMMRN`
+| Level | Name / Concept          | Key Size | Backing Table |
+|-------|-------------------------|---------|---------------|
+| 1     | Hierarchy Level 1      | HX1NUM  | HXPLVL1       |
+| 2     | Hierarchy Level 2      | HX2NUM  | HXPLVL2       |
+| 3     | Hierarchy Level 3      | HX3NUM  | HXPLVL3       |
+| 4     | Hierarchy Level 4      | HX4NUM  | HXPLVL4       |
+| 5     | Hierarchy Level 5      | HX5NUM  | HXPLVL5       |
+| 6     | Hierarchy Level 6      | HX6NUM  | HXPLVL6       |
 
-3. **OXPBNFIT (XFFBNFIT)** – Benefit configuration.
-   - Key fields: `XFBUBN`, `XFBPLN`
-   - PHI fields: `XFBTEL` (PhoneNumber)
+---
 
-4. **HXPNSTN (XFFNSTN)** – Level-6 status/notation records.
-   - Key fields: `XFNLV6`, `XFNSST`
+## 4. Primary Data Source
 
-### Access Pattern
+The HABADTE engine is centered on inpatient patient-management data.
+Two physical files are especially important:
 
-The HABADTE orchestration reads and declares these files via RPGLE:
+- **OMPMAST (HMFMAST format)** – patient master / encounter master, with PHI (MMMRNO, MMNAME, MMACCT, MMPSSN, MMMMRN).
+- **HAPTRFR (HAFTRFR format)** – transfer records across levels, keyed by account and transfer date/time.
 
-- Declare cursors or record formats for each PF and related LF.
-- For each eligible account or encounter, read `HAPTRFR`, `OMPMAST`, `OXPBNFIT`, and `HXPNSTN` records to determine inclusion or exclusion.
+### Primary SQL Server Table
 
-### Example SQL Server SELECT Pattern
+For migration, OMPMAST should become a primary SQL Server table:
+
+- Table name: `PatientEncounterMaster`
+- Access pattern: keyed lookup by MRN and account, with secondary indexes on encounter dates.
+
+#### Key Fields
+
+| Column Name   | Source Field | Type      | Notes |
+|---------------|-------------|-----------|-------|
+| mrn           | MMMRNO      | VARCHAR   | Primary patient MRN. |
+| accountNumber | MMACCT      | VARCHAR   | Financial account number. |
+| patientName   | MMNAME      | VARCHAR   | Patient name, used for display only (never as a join key). |
+| ssn           | MMPSSN      | VARCHAR   | Social security number (PHI). |
+| encounterMrn  | MMMMRN      | VARCHAR   | Alternate MRN variant, if present. |
+
+#### Example SQL Server SELECT
 
 ```sql
-SELECT  t.AFLVL6,
-        t.AFACCT,
-        t.AFTRDT,
-        t.AFTRTM,
-        t.AFTYPE,
-        m.MMMRNO,
-        m.MMNAME,
-        m.MMPSSN,
-        b.XFBUBN,
-        b.XFBPLN,
-        s.XFNSST
-FROM    dbo.HAPTRFR t
-JOIN    dbo.OMPMAST m
-        ON m.MMPLV6 = t.AFLVL6
-       AND m.MMACCT = t.AFACCT
-LEFT JOIN dbo.OXPBNFIT b
-        ON b.XFBUBN = t.AFLVL6
-       AND b.XFBPLN = m.MMPLN
-LEFT JOIN dbo.OXPNSTN s
-        ON s.XFNLV6 = t.AFLVL6
-ORDER BY t.AFLVL6, t.AFACCT, t.AFTRDT, t.AFTRTM;
+SELECT
+    mrn,
+    accountNumber,
+    patientName,
+    ssn,
+    encounterMrn
+FROM PatientEncounterMaster
+WHERE mrn = @mrn
+  AND accountNumber = @accountNumber
+ORDER BY encounterMrn ASC;
 ```
 
-### Key Fields Table
+For HABADTE, transfer data in HAPTRFR can be modeled as `PatientTransfer` with composite key:
 
-| SQL Server Table | Key Fields                          |
-|------------------|-------------------------------------|
-| HAPTRFR          | AFLVL6, AFACCT, AFTRDT, AFTRTM     |
-| OMPMAST          | MMPLV6, MMACCT                     |
-| OXPBNFIT         | XFBUBN, XFBPLN                     |
-| OXPNSTN          | XFNLV6, XFNSST                     |
+| Column       | Source Field | Type      |
+|-------------|-------------|-----------|
+| level6Key   | AFLVL6      | VARCHAR   |
+| account     | AFACCT      | VARCHAR   |
+| transferDate| AFTRDT      | DATE      |
+| transferTime| AFTRTM      | TIME      |
+| transferType| AFTYPE      | VARCHAR   |
 
 ---
 
-## (5) Inclusion and Exclusion Rules
+## 5. Inclusion and Exclusion Rules
 
-Business rules controlling whether a record is processed or skipped are derived directly from HABADTE and its supporting utility programs.
+Rules are derived from the approved business rule catalog.
+Each rule is represented with its BR-ID, description, pseudocode, and SQL translation.
 
-### BR-017 – Skip when file indicator is zero
+### 5.1 File Indicator-Based Exclusion (BR-017)
 
-**Description:** Records with a zero file indicator are considered inactive and must be skipped.
+- **BR-ID:** BR-017
+- **Source Program:** HABADTE
+- **Description:** When `-FILE INDICATOR` equals zero, branch to `SKIP`.
 
-**Pseudocode (IF):**
+**Pseudocode:**
 
 ```pseudo
 IF fileIndicator = 0
-    GOTO SKIP_RECORD
-ENDIF
+    SKIP current record
+END IF
 ```
 
 **SQL WHERE fragment:**
 
 ```sql
-WHERE fileIndicator <> 0
+AND fileIndicator <> 0
 ```
 
-### BR-018 – Skip when flag indicates voided record
+### 5.2 Void Flag Exclusion (BR-018)
 
-**Description:** Records marked as void or voided are excluded from XML output and downstream processing.
+- **BR-ID:** BR-018
+- **Source Program:** HABADTE
+- **Description:** When `-FLAG INDICATOR` equals void/voided, branch to `SKIP`.
 
-**Pseudocode (IF):**
+**Pseudocode:**
 
 ```pseudo
-IF voidFlag IN ('V', 'VOID')
-    GOTO SKIP_RECORD
-ENDIF
+IF flagIndicator IN ('VOID', 'VOIDED')
+    SKIP current record
+END IF
 ```
 
 **SQL WHERE fragment:**
 
 ```sql
-WHERE voidFlag NOT IN ('V', 'VOID')
+AND flagIndicator NOT IN ('VOID', 'VOIDED')
 ```
 
-### BR-019 – Skip outpatient encounters for this flow
+### 5.3 Outpatient Exclusion (BR-019)
 
-**Description:** When the inpatient/outpatient flag indicates outpatient, the record is skipped for this specific flow (which focuses on inpatient admission discharge and transfer).
+- **BR-ID:** BR-019
+- **Source Program:** HABADTE
+- **Description:** When `-INPATIENT/OUTPATIENT FLAG` equals outpatient, branch to `SKIP`.
 
-**Pseudocode (IF):**
+**Pseudocode:**
 
 ```pseudo
-IF inOutFlag = 'O'
-    GOTO SKIP_RECORD
-ENDIF
+IF inpatientOutpatientFlag = 'OUTPATIENT'
+    SKIP current record
+END IF
 ```
 
 **SQL WHERE fragment:**
 
 ```sql
-WHERE inOutFlag <> 'O'
+AND inpatientOutpatientFlag <> 'OUTPATIENT'
 ```
 
-### Date validation utility rules (XFXCYMD)
+### 5.4 Counter-Based Exit Logic (BR-001, BR-002)
 
-These rules ensure that date components are within valid ranges before the HABADTE orchestration uses them.
+- **BR-001:** When `X` equals 0, branch to `EXIT`.
+- **BR-002:** When `X` equals 40, branch to `EXIT`.
 
-- **BR-003 / BR-004 – Year bounds**
+These rules in XFXCNTR gate iteration based on a numeric counter and are used by HABADTE during batch loops.
 
-  ```pseudo
-  IF VYY < 1800 OR VYY > 2100
-      GOTO EXIT_INVALID_DATE
-  ENDIF
-  ```
+**Pseudocode:**
 
-  ```sql
-  WHERE VYY BETWEEN 1800 AND 2100
-  ```
+```pseudo
+IF counterX = 0 OR counterX = 40
+    EXIT loop
+END IF
+```
 
-- **BR-005 / BR-006 – Month bounds**
-
-  ```pseudo
-  IF VMM < 1 OR VMM > 12
-      GOTO EXIT_INVALID_DATE
-  ENDIF
-  ```
-
-  ```sql
-  WHERE VMM BETWEEN 1 AND 12
-  ```
-
-- **BR-007 / BR-008 – Day bounds**
-
-  ```pseudo
-  IF VDD < 1 OR VDD > DYS(VMM)
-      GOTO EXIT_INVALID_DATE
-  ENDIF
-  ```
-
-  ```sql
-  WHERE VDD BETWEEN 1 AND DYS(VMM)
-  ```
-
-### Counter and control rules (XFXCNTR, XFXLDSC, XFXTABL)
-
-- **BR-001 / BR-002 – Counter exit thresholds**
-
-  ```pseudo
-  IF X = 0 OR X = 40
-      GOTO EXIT_COUNTER_PROCESS
-  ENDIF
-  ```
-
-- **BR-009–BR-012 – LDAMAP bounds**
-
-  ```pseudo
-  IF LDAMAP > 9999
-      GOTO EXIT_MAP_PROCESS
-  ELSEIF LDAMAP > 99
-      GOTO EXIT_MAP_PROCESS
-  ENDIF
-  ```
-
-- **BR-013–BR-016 – Table indicator exit**
-
-  ```pseudo
-  IF *IN79 = *ON
-      GOTO EXIT_TABLE_PROCESS
-  ENDIF
-  ```
-
-These utility rules protect the HABADTE orchestration from invalid control values and mapping configurations.
-
-### Summary WHERE Clause
-
-Combining the HABADTE-specific inclusion/exclusion rules into a single SQL WHERE:
+**SQL WHERE fragment (for limiting iteration-bound result sets):**
 
 ```sql
-WHERE fileIndicator <> 0          -- BR-017: require active file
-  AND voidFlag NOT IN ('V','VOID') -- BR-018: exclude voided records
-  AND inOutFlag <> 'O'            -- BR-019: restrict to inpatient
+AND counterX NOT IN (0, 40)
+```
+
+### 5.5 Date Validity Exits (BR-003 – BR-008)
+
+XFXCYMD validates date fields before HABADTE consumes them.
+
+- BR-003/004: Year range [1800, 2100]
+- BR-005/006: Month range [01, 12]
+- BR-007/008: Day range [01, DYS(month)]
+
+**Pseudocode:**
+
+```pseudo
+IF year < 1800 OR year > 2100
+    EXIT
+END IF
+IF month < 1 OR month > 12
+    EXIT
+END IF
+IF day < 1 OR day > daysInMonth(month)
+    EXIT
+END IF
+```
+
+**SQL WHERE fragment:**
+
+```sql
+AND year BETWEEN 1800 AND 2100
+AND month BETWEEN 1 AND 12
+AND day BETWEEN 1 AND daysInMonth(month)
+```
+
+### 5.6 Mapping Constraints (BR-009 – BR-012)
+
+XFXLDSC restricts `LDAMAP` values, controlling valid mapping codes.
+
+**Pseudocode:**
+
+```pseudo
+IF ldamap > 9999
+    EXIT
+ELSE IF ldamap > 99
+    EXIT
+END IF
+```
+
+**SQL WHERE fragment:**
+
+```sql
+AND ldamap <= 9999
+AND ldamap <= 99
+```
+
+### 5.7 Indicator-Driven Table Exit (BR-013 – BR-016)
+
+XFXTABL uses `*IN79` to switch off table processing.
+
+**Pseudocode:**
+
+```pseudo
+IF in79 = 'ON'
+    EXIT table maintenance
+END IF
+```
+
+**SQL WHERE fragment:**
+
+```sql
+AND in79 <> 'ON'
+```
+
+### 5.8 Combined Summary WHERE Clause
+
+Aggregating the inclusion criteria for HABADTE’s patient-selection logic:
+
+```sql
+WHERE fileIndicator <> 0                        -- BR-017
+  AND flagIndicator NOT IN ('VOID', 'VOIDED')   -- BR-018
+  AND inpatientOutpatientFlag <> 'OUTPATIENT'   -- BR-019
+  AND year BETWEEN 1800 AND 2100                -- BR-003, BR-004
+  AND month BETWEEN 1 AND 12                    -- BR-005, BR-006
+  AND day BETWEEN 1 AND daysInMonth(month)      -- BR-007, BR-008
+  AND ldamap <= 9999                            -- BR-012
+  AND in79 <> 'ON';                             -- BR-013–BR-016
 ```
 
 ---
 
-## (6) Data Enrichment Steps
+## 6. Data Enrichment Steps
 
-Data enrichment involves secondary lookups and XML-related processing described in `data_lineage.json`.
+Data enrichment is primarily driven by lookups across HXPLVL* hierarchy tables and benefit/status tables as captured in data lineage.
 
-### Benefit enrichment via OXPBNFIT / HXPBNFIT
+### 6.1 Level Hierarchy Enrichment
 
-- **Purpose:** Resolve patient benefit details (plan and bundle) for each account.
-- **Key fields:** `XFBUBN`, `XFBPLN`
+- **Source:** XFXLDSC
+- **Purpose:** Load level descriptors from HXPLVL1–HXPLVL6 based on a mapping code (`LDAMAP`).
+- **Key Fields:** HX1NUM, HX2NUM, HX3NUM, HX4NUM, HX5NUM, HX6NUM.
 
-**Example SELECT:**
+**Sample SELECT:**
 
 ```sql
-SELECT  XFBUBN,
-        XFBPLN,
-        XFBTEL
-FROM    dbo.OXPBNFIT
-WHERE   XFBUBN = @accountLevel6
-  AND   XFBPLN = @benefitPlanCode
-  AND   deleteFlag = 0;
+SELECT
+    l1.levelCode, l2.levelCode, l3.levelCode,
+    l4.levelCode, l5.levelCode, l6.levelCode
+FROM Level1 l1
+JOIN Level2 l2 ON l2.parentLevel1Id = l1.id
+JOIN Level3 l3 ON l3.parentLevel2Id = l2.id
+JOIN Level4 l4 ON l4.parentLevel3Id = l3.id
+JOIN Level5 l5 ON l5.parentLevel4Id = l4.id
+JOIN Level6 l6 ON l6.parentLevel5Id = l5.id
+WHERE l6.levelKey = @hx6num
+  AND l6.deletedFlag = 0;
+```
+
+Derived flags can identify incomplete hierarchies (e.g., missing level segments) and set a `hierarchyIncompleteFlag` indicator.
+
+### 6.2 Benefit Plan Enrichment
+
+- **Source:** OXPBNFIT / HXPBNFIT
+- **Purpose:** Attach benefit details to patient encounters based on `XFBUBN` and `XFBPLN`.
+
+**Sample SELECT:**
+
+```sql
+SELECT
+    benefitBundleNumber,
+    benefitPlanCode,
+    contactTelephone,
+    deletedFlag
+FROM BenefitPlan
+WHERE benefitBundleNumber = @bundle
+  AND benefitPlanCode      = @plan
+  AND deletedFlag = 0;
 ```
 
 Derived flags:
 
-- `hasBenefit = (row found)`
-- `contactPhone = XFBTEL`
+- `hasActiveBenefits` – true if a non-deleted row exists.
+- `missingBenefits` – true if no matching plan can be found.
 
-### Status enrichment via OXPNSTN / HXPNSTN
+### 6.3 Status Enrichment
 
-- **Purpose:** Determine current status of the level-6 account (e.g., active, discharged).
-- **Key fields:** `XFNLV6`, `XFNSST`
+- **Source:** HXPNSTN
+- **Purpose:** Translate status codes (e.g., `XFNSST`) into human-readable statuses.
 
-**Example SELECT:**
+**Sample SELECT:**
 
 ```sql
-SELECT  XFNLV6,
-        XFNSST
-FROM    dbo.OXPNSTN
-WHERE   XFNLV6 = @accountLevel6
-  AND   deleteFlag = 0;
+SELECT statusCode, statusDescription
+FROM InpatientStatus
+WHERE level6Key   = @level6Key
+  AND statusCode  = @statusCode
+  AND deletedFlag = 0;
 ```
 
 Derived flags:
 
-- `isActive = (XFNSST = 'A')`
-
-### XML header and detail enrichment via HXPXMLD / HXPXMLR
-
-According to data_lineage, HABADTE declares and writes `HXFXMLD` (detail) and reads `HXFXMLH`/`HXPXMLD`/`HXPXMLR` for XML orchestration.
-
-**Key fields:**
-
-- Header: `XMRUSR`, `XMRSEQ`, `XMRID`
-- Detail: `XMDUSR`, `XMDSEQ`, `XMDSQ2`
-
-**Example SELECT/INSERT:**
-
-```sql
--- Read existing header
-SELECT XMRUSR, XMRSEQ, XMRID
-FROM   dbo.HXPXMLR
-WHERE  XMRUSR = @xmlUserId
-  AND  XMRSEQ = @xmlSeq;
-
--- Insert new detail
-INSERT INTO dbo.HXPXMLD (XMDUSR, XMDSEQ, XMDSQ2, payload)
-VALUES (@xmlUserId, @xmlSeq, @detailSeq, @jsonPayload);
-```
-
-Delete-flag logic (general pattern):
-
-- Each PF/LF should have a `deleteFlag` or equivalent indicator mapped to a boolean column in SQL Server.
-- Enrichment queries must include `WHERE deleteFlag = 0` to avoid processing retired records.
+- `isDischarged`
+- `isAdmitted`
+- `isPending` based on status description.
 
 ---
 
-## (7) Counting and Aggregation Rules
+## 7. Counting and Aggregation Rules
 
-Counting logic is inferred from the key rules in utility programs:
+From the interpretations detail, HABADTE’s key rules aggregate record-level filters into batch-level metrics.
+Typical counters include:
 
-- **Encounter counters (XFXCNTR)**
-  - Counter `X` is incremented per processed record.
-  - If `X = 0` or `X = 40`, processing branches to `EXIT`, representing thresholds for minimum/maximum iterations.
+| Counter Name          | Based On Rule(s)              | Description |
+|----------------------|------------------------------|-------------|
+| totalRecordsRead     | All records before filters    | Count of all rows read from primary tables. |
+| totalRecordsSkipped  | BR-017, BR-018, BR-019        | Number of records skipped due to file indicator, void flag, or outpatient status. |
+| totalInpatientKept   | Opposite of BR-019            | Number of inpatient encounters retained. |
+| totalInvalidDates    | BR-003–BR-008                 | Count of rows failing date-validity checks. |
+| totalInvalidMappings | BR-009–BR-012                 | Count of rows with out-of-range mapping codes. |
 
-- **Valid date counts (XFXCYMD)**
-  - Only dates that pass year, month, and day bounds contribute to aggregates such as "valid encounter days".
-
-- **Mapping counts (XFXLDSC)**
-  - `LDAMAP` ranges control whether mappings are counted as valid or out-of-range.
-
-Sample aggregation in SQL:
-
-```sql
-SELECT  COUNT(*) AS totalProcessed,
-        SUM(CASE WHEN inOutFlag = 'I' THEN 1 ELSE 0 END) AS inpatientCount,
-        SUM(CASE WHEN inOutFlag = 'O' THEN 1 ELSE 0 END) AS outpatientSkipped,
-        SUM(CASE WHEN voidFlag IN ('V','VOID') THEN 1 ELSE 0 END) AS voidedCount
-FROM    dbo.HabAccountFlow
-WHERE   fileIndicator <> 0;
-```
+These aggregations are surfaced as summary fields in the migrated service, enabling operational monitoring.
 
 ---
 
-## (8) Output Data Structure
+## 8. Output Data Structure
 
-The target output is a combination of XML records and a JSON/REST response representing patient account flows.
+The HABADTE processing flow produces structured outputs that combine patient-level, account-level, and benefit/status enrichment results.
 
-### Header Fields
+### Header Fields (Encounter-Level)
 
-- `xmlUserId` (XMRUSR/XMDUSR)
-- `xmlSequence` (XMRSEQ/XMDSEQ)
-- `xmlDetailSeq` (XMDSQ2)
+Derived from OMPMAST and hierarchy tables:
 
-### Detail Fields (per account/encounter)
+| Field              | Source           | Type    |
+|--------------------|------------------|---------|
+| headerMrn          | OMPMAST.MMMRNO   | STRING  |
+| headerAccount      | OMPMAST.MMACCT   | STRING  |
+| headerPatientName  | OMPMAST.MMNAME   | STRING  |
+| headerEncounterMrn | OMPMAST.MMMMRN   | STRING  |
+| headerLevel6Key    | HXPLVL6.HX6NUM   | STRING  |
 
-Derived from `HAPTRFR`, `OMPMAST`, `OXPBNFIT`, and `OXPNSTN`:
+### Detail Fields (Transfer and Status Rows)
 
-- `accountLevel6` (AFLVL6/MMPLV6/XFNLV6)
-- `accountNumber` (AFACCT/MMACCT)
-- `mrn` (AFMRNO/MMMRNO/MMMRN)
-- `patientName` (MMNAME)
-- `ssn` (MMPSSN)
-- `transferDate` (AFTRDT)
-- `transferTime` (AFTRTM)
-- `transferType` (AFTYPE)
-- `benefitPlanCode` (XFBPLN)
-- `benefitBundleNumber` (XFBUBN)
-- `statusCode` (XFNSST)
+| Field                | Source                        | Type   |
+|----------------------|-------------------------------|--------|
+| detailTransferDate   | HAPTRFR.AFTRDT                | DATE   |
+| detailTransferTime   | HAPTRFR.AFTRTM                | TIME   |
+| detailTransferType   | HAPTRFR.AFTYPE                | STRING |
+| detailInpatientStatus| HXPNSTN.XFNSST                | STRING |
+| detailBenefitPlan    | OXPBNFIT.XFBPLN               | STRING |
+| detailBenefitBundle  | OXPBNFIT.XFBUBN               | STRING |
 
-### Summary Fields
+### Summary Fields (Aggregations)
 
-Aggregated counts per run:
+| Field                 | Derived From       |
+|-----------------------|--------------------|
+| totalRecordsRead      | Counting rules     |
+| totalRecordsSkipped   | BR-017–BR-019      |
+| totalInpatientKept    | BR-019 inverse     |
+| totalInvalidDates     | BR-003–BR-008      |
+| totalInvalidMappings  | BR-009–BR-012      |
 
-- `totalProcessed`
-- `totalSkippedFileIndicator`
-- `totalSkippedVoid`
-- `totalSkippedOutpatient`
-
-Sort order:
-
-- Primary: `accountLevel6`
-- Secondary: `accountNumber`
-- Tertiary: `transferDate`, `transferTime`
+Output collections should be sorted by `headerMrn, headerAccount, detailTransferDate, detailTransferTime` to reproduce predictable batch ordering.
 
 ---
 
-## (9) Complete Processing Flow
+## 9. Complete Processing Flow (Mapped to Spring Boot Layers)
 
-Using narratives from `interpretations_detail`, the HABADTE flow can be mapped to Spring Boot layers.
+The HABADTE engine can be conceptualized as a layered Spring Boot service.
 
-1. **STEP 1 – Init (Controller/Batch Launcher)**
-   - Spring Boot batch job or REST controller validates request parameters (account range, run options).
-   - HABADTE-equivalent service initializes counters (XFXCNTR) and mappings (XFXLDSC).
+1. **STEP 1 – Init (Controller Layer)**
+   - Validate inbound request payload.
+   - Enforce authentication and authorization.
+   - Map request parameters to internal MRN/account structures.
 
-2. **STEP 2 – Preferences (Configuration Load)**
-   - Load mapping tables and control flags using `XFXTABL` and related DDS files (`HXPTABLD`, `HXLTABLD`, `HXLTABLP`, `HXLTABLS`).
-   - Configuration is cached at application startup.
+2. **STEP 2 – Preferences (Service Layer)**
+   - Load configuration flags equivalent to `*IN79` and other control indicators.
+   - Evaluate active/disabled states using XFXTABL logic (BR-013–BR-016).
 
-3. **STEP 3 – Context (Patient and Account Context)**
-   - For each account, read patient master (`OMPMAST`) and transfer (`HAPTRFR`) records.
-   - Validate dates via `XFXCYMD` to ensure only valid encounter windows are processed.
+3. **STEP 3 – Context (Service Layer)**
+   - Pull patient header from `PatientEncounterMaster` (OMPMAST).
+   - Pull related transfer and status context from `PatientTransfer` and `InpatientStatus`.
+   - Compute derived metadata such as level hierarchy keys from HXPLVL*.
 
-4. **STEP 4 – Query (Benefit and Status Lookup)**
-   - Perform lookups to `OXPBNFIT`/`OXPNSTN` using the benefit and status keys.
-   - Apply inclusion/exclusion rules BR-017–BR-019 to filter records.
+4. **STEP 4 – Query (Repository Layer)**
+   - Execute filtered queries incorporating BR-003–BR-008 (date validity) and BR-009–BR-012 (mapping limits).
+   - Apply `fileIndicator`, `flagIndicator`, and `inpatientOutpatientFlag` filters (BR-017–BR-019).
 
-5. **STEP 5 – Per-Record Enrichment (XML and Derived Fields)**
-   - Build XML header/detail using `HXPXMLD`/`HXPXMLR` and write via `HXFXMLD`/`HXFXMLH` equivalents.
-   - Enrich responses with PHI fields where permitted, masked or tokenized per compliance requirements.
+5. **STEP 5 – Per-Record Enrichment (Service Layer)**
+   - For each retained record, join benefit plans (OXPBNFIT/HXPBNFIT) and status descriptors (HXPNSTN).
+   - Set derived flags such as `hasActiveBenefits` and `isDischarged`.
 
-6. **STEP 6 – Assemble Response (Return or Persist)**
-   - Aggregate results into response JSON or persist to SQL Server tables.
-   - Return summary statistics and detailed records to the caller.
-
----
-
-## (10) Data Type Conversions
-
-Typical AS400-to-Java/SQL conversions in this system:
-
-- **Dates (numeric YYYYMMDD)**
-  - RPG fields like `AFTRDT` or `WBDATE` may be stored as numeric or zoned decimals.
-  - Java type: `LocalDate`
-  - SQL type: `DATE`
-
-- **Times (HHMM or HHMMSS)**
-  - RPG fields like `AFTRTM` may be numeric.
-  - Java type: `LocalTime`
-  - SQL type: `TIME(0)` or `TIME(0)` with appropriate precision.
-
-- **Level-6 account keys (AFLVL6/MMPLV6/XFNLV6)**
-  - Stored as character or packed numeric in AS400.
-  - Java type: `String`
-  - SQL type: `VARCHAR(6)`.
-
-- **Account numbers (AFACCT/MMACCT/HVACCT/IHACCT)**
-  - Java type: `String`
-  - SQL type: `VARCHAR(10)`.
-
-- **MRN fields (AFMRNO/CCMRNO/HXGMRN/IMGMRN/MMMRNO/MMMRN/XMDMRN)**
-  - Java type: `String`
-  - SQL type: `VARCHAR(15)` with masking rules.
-
-- **Telephone numbers (XFBTEL)**
-  - Java type: `String`
-  - SQL type: `VARCHAR(20)`.
-
-- **SSN (MMPSSN)**
-  - Java type: `String`
-  - SQL type: `CHAR(9)` with strict encryption.
+6. **STEP 6 – Assemble Response (Controller/Service Layer)**
+   - Aggregate detail rows into a response DTO with header, detail, and summary sections.
+   - Populate aggregation counters and any warning indicators (e.g., `missingBenefits`).
+   - Serialize to JSON and return to the caller.
 
 ---
 
-## (11) SQL Server Table Mapping
+## 10. Data Type Conversions
 
-AS400 objects and their proposed SQL Server tables:
+Key AS400 data representations must be converted to Java/Spring Boot friendly types:
 
-| AS400 Object | Type    | SQL Server Table | Notes |
-|-------------|---------|------------------|-------|
-| HAPTRFR     | PF      | dbo.HAPTRFR      | Transfer records keyed by AFLVL6+AFACCT+AFTRDT+AFTRTM. |
-| OMPMAST     | PF      | dbo.OMPMAST      | Patient master keyed by MMPLV6+MMACCT. |
-| OXPBNFIT    | PF      | dbo.OXPBNFIT     | Benefit configuration keyed by XFBUBN+XFBPLN. |
-| OXPNSTN     | PF      | dbo.OXPNSTN      | Status/notation keyed by XFNLV6+XFNSST. |
-| HXPXMLD     | PF      | dbo.HXPXMLD      | XML detail records keyed by XMDUSR+XMDSEQ+XMDSQ2. |
-| HXPXMLR     | PF      | dbo.HXPXMLR      | XML header records keyed by XMRUSR+XMRSEQ+XMRID. |
+- `DECIMAL(8,0)` representing YYYYMMDD → `LocalDate` via string parsing.
+- Year (`VYY`), month (`VMM`), day (`VDD`) separate numeric fields → composed `LocalDate` after validation.
+- Time fields (e.g., `AFTRTM` HHMM or HHMMSS) → `LocalTime`.
+- Packed decimals for account numbers → `BigDecimal` or `String` depending on usage.
+- Single-character indicators (e.g., `*IN79`, void flags) → `boolean` or small `Enum` in Java.
+
+All PHI fields (MRN, SSN, names, phone numbers) must be handled via explicit encryption or tokenization policies where required by organizational standards.
+
+---
+
+## 11. SQL Server Table Mapping
+
+The AS400 objects are mapped to SQL Server tables as follows:
+
+| AS400 Object | Category   | SQL Server Table         | Notes |
+|-------------|-----------|-------------------------|-------|
+| OMPMAST     | DDS_PF    | PatientEncounterMaster  | Core patient/encounter header. |
+| HAPTRFR     | DDS_PF    | PatientTransfer         | Transfer events between levels. |
+| OXPBNFIT    | DDS_PF    | BenefitPlan             | Benefit plan catalog. |
+| HXPLVL1–6   | DDS_PF    | Level1–Level6           | Hierarchy tables. |
+| HXPNSTN     | DDS_LF    | InpatientStatus         | Status mapping per level. |
+| OAPIRNK     | DDS_PF    | BreakRank               | Ranking metrics per level/account. |
 
 ### Suggested Covering Indexes
 
-- On `dbo.HAPTRFR`:
+- `IX_PatientEncounterMaster_MrnAccount` on `(mrn, accountNumber)`.
+- `IX_PatientTransfer_AccountDateTime` on `(account, transferDate, transferTime)`.
+- `IX_BenefitPlan_BundlePlan` on `(benefitBundleNumber, benefitPlanCode)`.
+- `IX_InpatientStatus_LevelStatus` on `(level6Key, statusCode)`.
 
-  ```sql
-  CREATE INDEX IX_HAPTRFR_AccountDateTime
-  ON dbo.HAPTRFR (AFLVL6, AFACCT, AFTRDT, AFTRTM);
-  ```
-
-- On `dbo.OMPMAST`:
-
-  ```sql
-  CREATE INDEX IX_OMPMAST_AccountLevel
-  ON dbo.OMPMAST (MMPLV6, MMACCT);
-  ```
-
-- On `dbo.OXPBNFIT`:
-
-  ```sql
-  CREATE INDEX IX_OXPBNFIT_BundlePlan
-  ON dbo.OXPBNFIT (XFBUBN, XFBPLN);
-  ```
+These indexes support the main lookups observed in the dependency and lineage data.
 
 ---
 
-## (12) Spring Boot API Design
+## 12. Spring Boot API Design
 
 ### REST Endpoint
 
-```http
-POST /api/habadte/process
-Content-Type: application/json
-Authorization: Bearer <token>
-```
-
-Request JSON sample:
+- **Method:** `POST`
+- **Path:** `/api/habadte/patient-encounters`
+- **Request Body (JSON):**
 
 ```json
 {
-  "accountLevel6": "123456",
-  "accountNumber": "0001234567",
-  "inpatientOutpatientFlag": "I",
-  "fileIndicator": 1,
-  "voidFlag": " ",
-  "benefitPlanCode": "PLN1",
-  "benefitBundleNumber": "BN1",
-  "xmlUserId": "HABUSER1"
+  "patientMrn": "123456",
+  "accountNumber": "A0001",
+  "benefitPlanCode": "PLN01",
+  "benefitBundleNumber": "B001",
+  "inpatientOutpatientFlag": "INPATIENT",
+  "voidFlag": "ACTIVE",
+  "fileIndicator": 1
 }
 ```
 
-### Layered Design
+### Controller / Service / Repository Layers
 
-- **Controller:** `HabadteController` – validates input, triggers service.
-- **Service:** `HabadteService` – encapsulates business rules BR-017–BR-019 and orchestrates enrichment.
-- **Repository:** `HaptrfrRepository`, `OmpmastRepository`, `OxpbnfitRepository`, `OxpnstnRepository` – Spring Data JPA repositories mapping to SQL Server tables.
+- **Controller:** validates input, performs security checks, invokes service.
+- **Service:** orchestrates rules BR-017–BR-019 and calls repositories for header, detail, and enrichment.
+- **Repositories:** encapsulate SQL Server queries against the mapped tables.
 
-Entity sketch (JPA):
+### Response JSON Sample
 
-```java
-@Entity
-@Table(name = "HAPTRFR")
-public class TransferRecord {
-    @Id
-    private Long id; // synthetic key
-
-    private String aflvl6;
-    private String afacct;
-    private LocalDate aftrdt;
-    private LocalTime aftrtm;
-    private String aftype;
+```json
+{
+  "header": {
+    "mrn": "123456",
+    "accountNumber": "A0001",
+    "patientName": "Sample Patient",
+    "level6Key": "L6-001"
+  },
+  "details": [
+    {
+      "transferDate": "2024-06-01",
+      "transferTime": "10:30:00",
+      "transferType": "ADMIT",
+      "statusCode": "INPATIENT",
+      "benefitPlanCode": "PLN01",
+      "benefitBundleNumber": "B001"
+    }
+  ],
+  "summary": {
+    "totalRecordsRead": 25,
+    "totalRecordsSkipped": 3,
+    "totalInpatientKept": 22,
+    "totalInvalidDates": 0,
+    "totalInvalidMappings": 0
+  }
 }
 ```
 
-DTO sketch:
-
-```java
-public class HabadteResponseItem {
-    private String accountLevel6;
-    private String accountNumber;
-    private String mrn;
-    private String patientName;
-    private String statusCode;
-    private String benefitPlanCode;
-    private boolean included;
-}
-```
+Entity and DTO classes should align with SQL Server table schemas described earlier.
 
 ---
 
-## (13) Performance Considerations
+## 13. Performance Considerations
 
-- **N+1 query risk:**
-  - The legacy code reads benefit and status records per account, which can become multiple queries per row in a naïve JPA implementation.
-  - Mitigation: Use bulk joins (as shown in the SELECT pattern) or batch fetch with appropriate `JOIN` strategies.
+The original HABADTE flow collaborates with helper programs like XFXCYMD, XFXCNTR, XFXLDSC, and XFXTABL.
+These dependencies suggest per-record date validation, mapping checks, and indicator evaluation, which can introduce N+1 query patterns if naively ported.
 
-- **Large dictionary file (HXPDICT):**
-  - Although HABADTE does not directly iterate over the 2705-field `HXPDICT`, downstream services may.
-  - Mitigation: Only load required columns via projections; avoid `SELECT *`.
+Recommendations:
 
-- **High complexity hotspot (HABADTE):**
-  - Cyclomatic complexity 152 indicates many branches. Care should be taken to refactor into smaller service methods instead of a monolithic method.
-
----
-
-## (14) Business Rules Reference Summary
-
-| Rule ID | Description |
-|--------|-------------|
-| BR-001 | When X equals zero, branch to 'EXIT'. |
-| BR-002 | When X equals 40, branch to 'EXIT'. |
-| BR-003 | When VYY is less than 1800, branch to 'EXIT'. |
-| BR-004 | When VYY is greater than 2100, branch to 'EXIT'. |
-| BR-005 | When VMM is less than 01, branch to 'EXIT'. |
-| BR-006 | When VMM is greater than 12, branch to 'EXIT'. |
-| BR-007 | When VDD is less than 01, branch to 'EXIT'. |
-| BR-008 | When VDD is greater than DYS(VMM), branch to 'EXIT'. |
-| BR-009 | When LDAMAP is greater than 99, branch to 'EXIT'. |
-| BR-010 | When LDAMAP is greater than 99, branch to 'EXIT'. |
-| BR-011 | When LDAMAP is greater than 99, branch to 'EXIT'. |
-| BR-012 | When LDAMAP is greater than 9999, branch to 'EXIT'. |
-| BR-013 | When *IN79 equals on/active, branch to 'EXIT'. |
-| BR-014 | When *IN79 equals on/active, branch to 'EXIT'. |
-| BR-015 | When *IN79 equals on/active, branch to 'EXIT'. |
-| BR-016 | When *IN79 equals on/active, branch to 'EXIT'. |
-| BR-017 | When -FILE INDICATOR equals zero, branch to 'SKIP'. |
-| BR-018 | When -FLAG INDICATOR equals void/voided, branch to 'SKIP'. |
-| BR-019 | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'. |
+- Consolidate validations into single SQL predicates executed within set-based queries.
+- Use joins to bring in benefit and status enrichment in one pass (e.g., joining `PatientEncounterMaster` with `BenefitPlan` and `InpatientStatus`).
+- Cache reference data (e.g., mapping codes and status descriptions) in-memory or via Redis to avoid repeated lookups.
+- Batch process large inputs using streaming and pagination.
 
 ---
 
-## (15) Edge Cases
+## 14. Business Rules Reference Summary
 
-Edge cases are inferred from the rule set and data structures:
+| Rule ID | Domain             | Source Program | Description |
+|---------|--------------------|----------------|-------------|
+| BR-001  | DATA_MAINTENANCE   | XFXCNTR        | When X equals zero, branch to EXIT. |
+| BR-002  | DATA_MAINTENANCE   | XFXCNTR        | When X equals 40, branch to EXIT. |
+| BR-003  | DATA_MAINTENANCE   | XFXCYMD        | When VYY is less than 1800, branch to EXIT. |
+| BR-004  | DATA_MAINTENANCE   | XFXCYMD        | When VYY is greater than 2100, branch to EXIT. |
+| BR-005  | DATA_MAINTENANCE   | XFXCYMD        | When VMM is less than 01, branch to EXIT. |
+| BR-006  | DATA_MAINTENANCE   | XFXCYMD        | When VMM is greater than 12, branch to EXIT. |
+| BR-007  | DATA_MAINTENANCE   | XFXCYMD        | When VDD is less than 01, branch to EXIT. |
+| BR-008  | DATA_MAINTENANCE   | XFXCYMD        | When VDD is greater than DYS(VMM), branch to EXIT. |
+| BR-009  | DATA_MAINTENANCE   | XFXLDSC        | When LDAMAP is greater than 99, branch to EXIT. |
+| BR-010  | DATA_MAINTENANCE   | XFXLDSC        | When LDAMAP is greater than 99, branch to EXIT. |
+| BR-011  | DATA_MAINTENANCE   | XFXLDSC        | When LDAMAP is greater than 99, branch to EXIT. |
+| BR-012  | DATA_MAINTENANCE   | XFXLDSC        | When LDAMAP is greater than 9999, branch to EXIT. |
+| BR-013  | DATA_MAINTENANCE   | XFXTABL        | When *IN79 equals on/active, branch to EXIT. |
+| BR-014  | DATA_MAINTENANCE   | XFXTABL        | When *IN79 equals on/active, branch to EXIT. |
+| BR-015  | DATA_MAINTENANCE   | XFXTABL        | When *IN79 equals on/active, branch to EXIT. |
+| BR-016  | DATA_MAINTENANCE   | XFXTABL        | When *IN79 equals on/active, branch to EXIT. |
+| BR-017  | PATIENT_MANAGEMENT | HABADTE        | When -FILE INDICATOR equals zero, branch to SKIP. |
+| BR-018  | PATIENT_MANAGEMENT | HABADTE        | When -FLAG INDICATOR equals void/voided, branch to SKIP. |
+| BR-019  | PATIENT_MANAGEMENT | HABADTE        | When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to SKIP. |
 
-- **Null or zero indicators:**
-  - `fileIndicator = 0` leads to skipping the record (BR-017).
-  - Missing or null flags should be treated as non-void and non-outpatient, but logged for data quality review.
+---
 
-- **Outpatient records:**
-  - Outpatient encounters are skipped in this flow (BR-019) but may require alternative processing; ensure they are not silently dropped in the migrated system.
+## 15. Edge Cases
 
-- **Voided records:**
-  - Records marked voided are excluded (BR-018); implement a separate audit trail for these to support reconciliation.
+Edge cases inferred from key rules and data structures:
 
-- **Invalid dates:**
-  - Years outside 1800–2100, months outside 1–12, and days outside 1–`DYS(VMM)` cause exit from date routines.
-  - In Java, these should raise validation errors rather than corrupt date objects.
+- **Null or Zero File Indicator (BR-017):** Records with indicator `0` must not be processed; in the API, treat missing or null indicators as invalid and return a validation error.
+- **Void or Voided Records (BR-018):** Records marked as void should be excluded; the service should log these occurrences for audit.
+- **Outpatient Encounters (BR-019):** If outpatient records are not supported by HABADTE, respond with an explicit message indicating that only inpatient encounters are handled.
+- **Invalid Date Combinations (BR-003–BR-008):** If year, month, or day values fail validation, the record should be tagged as `invalidDate` and omitted from the core response while counted in summary metrics.
+- **Out-of-Range Mapping Codes (BR-009–BR-012):** If `ldamap` exceeds allowable thresholds, treat mapping as unknown and skip hierarchy enrichment for that record.
+- **Missing Benefit/Status Rows:** If benefit or status lookups return no rows, set derived flags (`missingBenefits`, `statusUnknown`) and continue processing without failing the entire batch.
+- **Empty Result Sets:** When filters remove all records, return an empty `details` array with summary counts all zero and a 200 OK status, rather than an error.
 
-- **Missing enrichment records:**
-  - If benefit or status records are not found, the system should default `hasBenefit = false` and `isActive = null` and continue processing, while logging warnings.
-
-- **Empty result sets:**
-  - When no records satisfy the WHERE clause, the API should return an empty list with `totalProcessed = 0` rather than an error.
-
+These behaviors should be codified in unit and integration tests to preserve legacy semantics in the migrated solution.
