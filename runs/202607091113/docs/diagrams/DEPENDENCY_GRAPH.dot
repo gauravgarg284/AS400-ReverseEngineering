@@ -1,0 +1,119 @@
+// AS400 Dependency Graph - Graphviz DOT
+digraph AS400Dependencies {
+    rankdir=LR;
+    graph [fontname="Arial" bgcolor="#1e1e2e" fontcolor="#cdd6f4"];
+    node  [fontname="Arial" fontsize=10 style=filled fontcolor="white"];
+    edge  [fontname="Arial" fontsize=8 color="#90a4ae" fontcolor="#546e7a"];
+
+    // LOGICAL_FILE
+    HAPIRNK [label="HAPIRNK" fillcolor="#34a853" shape=diamond];
+    HMLMAST5H [label="HMLMAST5H" fillcolor="#34a853" shape=diamond];
+    HXLTABLD [label="HXLTABLD" fillcolor="#34a853" shape=diamond];
+    HXLTABLP [label="HXLTABLP" fillcolor="#34a853" shape=diamond];
+    HXLTABLS [label="HXLTABLS" fillcolor="#34a853" shape=diamond];
+    HXPBNFIT [label="HXPBNFIT" fillcolor="#34a853" shape=diamond];
+    HXPNSTN [label="HXPNSTN" fillcolor="#34a853" shape=diamond];
+
+    // PHYSICAL_FILE
+    HAPTRFR [label="HAPTRFR" fillcolor="#e37400" shape=cylinder];
+    HXPDICT [label="HXPDICT" fillcolor="#e37400" shape=cylinder];
+    HXPLVL1 [label="HXPLVL1" fillcolor="#e37400" shape=cylinder];
+    HXPLVL2 [label="HXPLVL2" fillcolor="#e37400" shape=cylinder];
+    HXPLVL3 [label="HXPLVL3" fillcolor="#e37400" shape=cylinder];
+    HXPLVL4 [label="HXPLVL4" fillcolor="#e37400" shape=cylinder];
+    HXPLVL5 [label="HXPLVL5" fillcolor="#e37400" shape=cylinder];
+    HXPLVL6 [label="HXPLVL6" fillcolor="#e37400" shape=cylinder];
+    HXPTABLD [label="HXPTABLD" fillcolor="#e37400" shape=cylinder];
+    HXPXMLD [label="HXPXMLD" fillcolor="#e37400" shape=cylinder];
+    HXPXMLR [label="HXPXMLR" fillcolor="#e37400" shape=cylinder];
+    OAPIRNK [label="OAPIRNK" fillcolor="#e37400" shape=cylinder];
+    OMPMAST [label="OMPMAST" fillcolor="#e37400" shape=cylinder];
+    OXPBNFIT [label="OXPBNFIT" fillcolor="#e37400" shape=cylinder];
+    OXPNSTN [label="OXPNSTN" fillcolor="#e37400" shape=cylinder];
+    TAPIRNK [label="TAPIRNK" fillcolor="#e37400" shape=cylinder];
+    TMPMAST [label="TMPMAST" fillcolor="#e37400" shape=cylinder];
+    TXPBNFIT [label="TXPBNFIT" fillcolor="#e37400" shape=cylinder];
+    TXPNSTN [label="TXPNSTN" fillcolor="#e37400" shape=cylinder];
+
+    // PROGRAM
+    HXXAPPPRF [label="HXXAPPPRF" fillcolor="#1a73e8" shape=box];
+    XFXCNTR [label="XFXCNTR" fillcolor="#1a73e8" shape=box];
+    XFXCYMD [label="XFXCYMD" fillcolor="#1a73e8" shape=box];
+    XFXGETID [label="XFXGETID" fillcolor="#1a73e8" shape=box];
+    XFXLDSC [label="XFXLDSC" fillcolor="#1a73e8" shape=box];
+    XFXLEAP [label="XFXLEAP" fillcolor="#1a73e8" shape=box];
+    XFXMRNROL [label="XFXMRNROL" fillcolor="#1a73e8" shape=box];
+    XFXTABL [label="XFXTABL" fillcolor="#1a73e8" shape=box];
+    CXXXMLP [label="CXXXMLP" fillcolor="#1a73e8" shape=box];
+    HXXAPPPRFP [label="HXXAPPPRFP" fillcolor="#1a73e8" shape=box];
+    HXXCNTRL [label="HXXCNTRL" fillcolor="#1a73e8" shape=box];
+    HXXLDA [label="HXXLDA" fillcolor="#1a73e8" shape=box];
+    HXXLEVEL [label="HXXLEVEL" fillcolor="#1a73e8" shape=box];
+    HXXXML [label="HXXXML" fillcolor="#1a73e8" shape=box];
+    HABADTE [label="HABADTE" fillcolor="#1a73e8" shape=box];
+    HXHAPPPRF [label="HXHAPPPRF" fillcolor="#1a73e8" shape=box];
+
+    // COPYBOOK
+    CXXXMLC [label="CXXXMLC" fillcolor="#9334e6" shape=hexagon];
+
+    // FILE
+    HXFXMLR [label="HXFXMLR" fillcolor="#607d8b" shape=box];
+    HXFLVL1 [label="HXFLVL1" fillcolor="#607d8b" shape=box];
+    HXFLVL2 [label="HXFLVL2" fillcolor="#607d8b" shape=box];
+    HXFLVL3 [label="HXFLVL3" fillcolor="#607d8b" shape=box];
+    HXFLVL4 [label="HXFLVL4" fillcolor="#607d8b" shape=box];
+    HXFLVL5 [label="HXFLVL5" fillcolor="#607d8b" shape=box];
+    HXFLVL6 [label="HXFLVL6" fillcolor="#607d8b" shape=box];
+    XFFTABLD [label="XFFTABLD" fillcolor="#607d8b" shape=box];
+    XFFTABL2 [label="XFFTABL2" fillcolor="#607d8b" shape=box];
+    XFFTABL3 [label="XFFTABL3" fillcolor="#607d8b" shape=box];
+    XFFTABL4 [label="XFFTABL4" fillcolor="#607d8b" shape=box];
+    XFFNSTN [label="XFFNSTN" fillcolor="#607d8b" shape=box];
+    HXFXMLH [label="HXFXMLH" fillcolor="#607d8b" shape=box];
+    HXFXMLD [label="HXFXMLD" fillcolor="#607d8b" shape=box];
+
+    // Edges
+    XFXCYMD -> XFXLEAP [label="CALL"];
+    XFXMRNROL -> HXHAPPPRF [label="CALL"];
+    XFXMRNROL -> HXXAPPPRF [label="CALL"];
+    HABADTE -> XFXMRNROL [label="CALL"];
+    HABADTE -> XFXCNTR [label="CALL"];
+    HABADTE -> XFXLDSC [label="CALL"];
+    HABADTE -> XFXCNTR [label="CALL"];
+    HABADTE -> XFXCNTR [label="CALL"];
+    HABADTE -> XFXCYMD [label="CALL"];
+    HABADTE -> XFXGETID [label="CALL"];
+    HABADTE -> XFXTABL [label="CALL"];
+    HXXAPPPRF -> HXXCNTRL [label="COPY"];
+    HXXAPPPRF -> HXXAPPPRFP [label="COPY"];
+    XFXGETID -> HXXLDA [label="COPY"];
+    HABADTE -> HXXLDA [label="COPY"];
+    HABADTE -> HXXLEVEL [label="COPY"];
+    HABADTE -> HXXXML [label="COPY"];
+    HABADTE -> CXXXMLP [label="COPY"];
+    HABADTE -> CXXXMLC [label="COPY"];
+    HAPIRNK -> TAPIRNK [label="PFILE_OF"];
+    HMLMAST5H -> TMPMAST [label="PFILE_OF"];
+    HXLTABLD -> HXPTABLD [label="PFILE_OF"];
+    HXLTABLP -> HXPTABLD [label="PFILE_OF"];
+    HXLTABLS -> HXPTABLD [label="PFILE_OF"];
+    HXPBNFIT -> TXPBNFIT [label="PFILE_OF"];
+    HXPNSTN -> TXPNSTN [label="PFILE_OF"];
+    XFXGETID -> HXFXMLR [label="READ"];
+    XFXLDSC -> HXFLVL1 [label="READ"];
+    XFXLDSC -> HXFLVL2 [label="READ"];
+    XFXLDSC -> HXFLVL3 [label="READ"];
+    XFXLDSC -> HXFLVL4 [label="READ"];
+    XFXLDSC -> HXFLVL5 [label="READ"];
+    XFXLDSC -> HXFLVL6 [label="READ"];
+    XFXTABL -> XFFTABLD [label="READ"];
+    XFXTABL -> XFFTABL2 [label="READ"];
+    XFXTABL -> XFFTABL3 [label="READ"];
+    XFXTABL -> XFFTABL4 [label="READ"];
+    HABADTE -> HAPTRFR [label="READ"];
+    HABADTE -> XFFNSTN [label="READ"];
+    HABADTE -> HXFXMLH [label="READ"];
+    HABADTE -> HXFXMLH [label="UPDATE"];
+    HABADTE -> HXFXMLH [label="WRITE"];
+    HABADTE -> HXFXMLD [label="WRITE"];
+}
