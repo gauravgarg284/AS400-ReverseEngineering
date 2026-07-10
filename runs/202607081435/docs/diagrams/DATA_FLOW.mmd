@@ -6,8 +6,6 @@ title: AS400 Data Flow Diagram
 %% Traces field-level data movement: source file -> program -> target file,
 %% built from data_lineage.json. Red-outlined nodes carry PHI-tagged data.
 flowchart TD
-    DESC["📌 Data Flow: each path shows a field read from a source file, passed through a program, and written to a target file. Red outline = PHI in that path."]
-    style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
     TAPIRNK[("TAPIRNK")]
     HAPIRNK["HAPIRNK"]
     TAPIRNK -->|reads| HAPIRNK
@@ -89,14 +87,19 @@ flowchart TD
     HXFXMLH -->|reads| HABADTE
     HXFXMLD[("HXFXMLD")]
     HXFXMLD -->|reads| HABADTE
+    DESC["📌 Data Flow: each path shows a field read from a source file, passed through a program, and written to a target file. Red outline = PHI in that path."]
+    HABADTE ~~~ DESC
+    style DESC fill:transparent,stroke:none
     subgraph Legend ["Legend"]
         direction TB
-        LG_FILE["File (source/target)"]
-        LG_PROG["Program (transform step)"]
+        LG_FILE["📁 File (source/target)"]
+        LG_PROG["⚙ Program (transform step)"]
         LG_FILE ~~~ LG_PROG
-        LG_PHI["PHI-tagged data path"]
+        LG_PHI["🔺 PHI-tagged data path"]
         LG_PROG ~~~ LG_PHI
     end
-    HABADTE ~~~ LG_FILE
-    style LG_PHI stroke:#b71c1c,stroke-width:3px
+    DESC ~~~ LG_FILE
+    style LG_FILE fill:transparent,stroke:none
+    style LG_PROG fill:transparent,stroke:none
+    style LG_PHI fill:transparent,stroke:none
     style HAPTRFR stroke:#b71c1c,stroke-width:3px

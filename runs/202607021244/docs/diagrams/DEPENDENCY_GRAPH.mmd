@@ -7,8 +7,6 @@ title: Complete Dependency Graph
 %% and its static CALL/COPY/READ/WRITE relationships. Shape = member type,
 %% color = member type or status (see legend). Max 100 nodes / 60 edges shown.
 flowchart LR
-    DESC["📌 Dependency Graph: static CALL/COPY/READ/WRITE relationships across all analysed source members. Node shape/color = member type (see legend below)."]
-    style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
     HAPIRNK[/"HAPIRNK"/]
     HAPTRFR[("HAPTRFR")]
     HMLMAST5H[/"HMLMAST5H"/]
@@ -109,33 +107,36 @@ flowchart LR
     HABADTE -->|UPDATE| HXFXMLH
     HABADTE -->|WRITE| HXFXMLH
     HABADTE -->|WRITE| HXFXMLD
+    DESC["📌 Dependency Graph: static CALL/COPY/READ/WRITE relationships across all analysed source members. Node shape/color = member type (see legend below)."]
+    HXFXMLD ~~~ DESC
+    style DESC fill:transparent,stroke:none
     subgraph Legend ["Legend"]
         direction TB
-        LG_PROGRAM["Program"]
-        LG_PF["Physical File"]
+        LG_PROGRAM["🟦 Program"]
+        LG_PF["🟧 Physical File"]
         LG_PROGRAM ~~~ LG_PF
-        LG_LF["Logical File"]
+        LG_LF["🟩 Logical File"]
         LG_PF ~~~ LG_LF
-        LG_COPY["Copybook"]
+        LG_COPY["🟪 Copybook"]
         LG_LF ~~~ LG_COPY
-        LG_DTAARA["Data Area"]
+        LG_DTAARA["🟫 Data Area"]
         LG_COPY ~~~ LG_DTAARA
-        LG_SPOOL["Spool File"]
+        LG_SPOOL["⬛ Spool File"]
         LG_DTAARA ~~~ LG_SPOOL
-        LG_MISSING["Missing Source"]
+        LG_MISSING["🟥 Missing Source"]
         LG_SPOOL ~~~ LG_MISSING
-        LG_PHI["PHI-Tagged"]
+        LG_PHI["🔺 PHI-Tagged"]
         LG_MISSING ~~~ LG_PHI
     end
-    HXFXMLD ~~~ LG_PROGRAM
-    style LG_PROGRAM fill:#1a73e8,color:#fff
-    style LG_PF fill:#e37400,color:#fff
-    style LG_LF fill:#34a853,color:#fff
-    style LG_COPY fill:#9334e6,color:#fff
-    style LG_DTAARA fill:#00897b,color:#fff
-    style LG_SPOOL fill:#546e7a,color:#fff
-    style LG_MISSING fill:#b71c1c,color:#fff,stroke-dasharray:5 5
-    style LG_PHI stroke:#b71c1c,stroke-width:3px
+    DESC ~~~ LG_PROGRAM
+    style LG_PROGRAM fill:transparent,stroke:none
+    style LG_PF fill:transparent,stroke:none
+    style LG_LF fill:transparent,stroke:none
+    style LG_COPY fill:transparent,stroke:none
+    style LG_DTAARA fill:transparent,stroke:none
+    style LG_SPOOL fill:transparent,stroke:none
+    style LG_MISSING fill:transparent,stroke:none
+    style LG_PHI fill:transparent,stroke:none
     style HAPIRNK fill:#34a853,color:#fff
     style HAPTRFR fill:#e37400,color:#fff
     style HMLMAST5H fill:#34a853,color:#fff
