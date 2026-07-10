@@ -8,12 +8,6 @@ title: AS400 Data Flow Diagram
 flowchart TD
     DESC["📌 Data Flow: each path shows a field read from a source file, passed through a program, and written to a target file. Red outline = PHI in that path."]
     style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
-    subgraph Legend ["Legend"]
-        LG_FILE["File (source/target)"]
-        LG_PROG["Program (transform step)"]
-        LG_PHI["PHI-tagged data path"]
-    end
-    style LG_PHI stroke:#b71c1c,stroke-width:3px
     TAPIRNK[("TAPIRNK")]
     HAPIRNK["HAPIRNK"]
     TAPIRNK -->|reads| HAPIRNK
@@ -95,4 +89,14 @@ flowchart TD
     HXFXMLH -->|reads| HABADTE
     HXFXMLD[("HXFXMLD")]
     HXFXMLD -->|reads| HABADTE
+    subgraph Legend ["Legend"]
+        direction TB
+        LG_FILE["File (source/target)"]
+        LG_PROG["Program (transform step)"]
+        LG_FILE ~~~ LG_PROG
+        LG_PHI["PHI-tagged data path"]
+        LG_PROG ~~~ LG_PHI
+    end
+    HABADTE ~~~ LG_FILE
+    style LG_PHI stroke:#b71c1c,stroke-width:3px
     style HAPTRFR stroke:#b71c1c,stroke-width:3px

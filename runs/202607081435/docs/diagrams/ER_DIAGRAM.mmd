@@ -8,10 +8,6 @@ title: Database Entity-Relationship Diagram
 %% explicit PF<->LF associations (DDS PFILE() keyword), NOT inferred
 %% foreign keys -- this pipeline does not derive cross-file FK relationships.
 erDiagram
-    LEGEND {
-        string PK "Primary key field, from this file's own DDS key spec"
-        string field "Regular / PHI-flagged field (no key)"
-    }
     HAPTRFR {
         varchar AFLVL6 PK
         varchar AFACCT PK
@@ -94,3 +90,7 @@ erDiagram
     HXPTABLD ||--o{ HXLTABLS : "logical view"
     TXPBNFIT ||--o{ HXPBNFIT : "logical view"
     TXPNSTN ||--o{ HXPNSTN : "logical view"
+    LEGEND {
+        string PK "Primary key field, from this file's own DDS key spec"
+        string field "Regular / PHI-flagged field (no key)"
+    }

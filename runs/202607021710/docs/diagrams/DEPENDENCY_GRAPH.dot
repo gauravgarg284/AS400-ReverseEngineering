@@ -8,17 +8,6 @@ digraph AS400Dependencies {
     node  [fontname="Arial" fontsize=10 style=filled fontcolor="white"];
     edge  [fontname="Arial" fontsize=8 color="#90a4ae" fontcolor="#546e7a"];
 
-    subgraph cluster_legend {
-        label="Legend"; fontname="Arial"; fontcolor="#cdd6f4"; color="#546e7a"; style=dashed;
-        legend_program [label="PROGRAM" fillcolor="#1a73e8" shape=box];
-        legend_physical_file [label="PHYSICAL_FILE" fillcolor="#e37400" shape=cylinder];
-        legend_logical_file [label="LOGICAL_FILE" fillcolor="#34a853" shape=diamond];
-        legend_copybook [label="COPYBOOK" fillcolor="#9334e6" shape=hexagon];
-        legend_dtaara [label="DTAARA" fillcolor="#00897b" shape=ellipse];
-        legend_spool [label="SPOOL" fillcolor="#546e7a" shape=triangle];
-        legend_missing_source [label="MISSING_SOURCE" fillcolor="#b71c1c" shape=box];
-    }
-
     // LOGICAL_FILE
     HAPIRNK [label="HAPIRNK" fillcolor="#34a853" shape=diamond];
     HMLMAST5H [label="HMLMAST5H" fillcolor="#34a853" shape=diamond];
@@ -130,4 +119,21 @@ digraph AS400Dependencies {
     HABADTE -> HXFXMLH [label="UPDATE"];
     HABADTE -> HXFXMLH [label="WRITE"];
     HABADTE -> HXFXMLD [label="WRITE"];
+
+    subgraph cluster_legend {
+        label="Legend"; fontname="Arial"; fontcolor="#cdd6f4"; color="#546e7a"; style=dashed; rank=sink;
+        legend_program [label="PROGRAM" fillcolor="#1a73e8" shape=box];
+        legend_physical_file [label="PHYSICAL_FILE" fillcolor="#e37400" shape=cylinder];
+        legend_logical_file [label="LOGICAL_FILE" fillcolor="#34a853" shape=diamond];
+        legend_copybook [label="COPYBOOK" fillcolor="#9334e6" shape=hexagon];
+        legend_dtaara [label="DTAARA" fillcolor="#00897b" shape=ellipse];
+        legend_spool [label="SPOOL" fillcolor="#546e7a" shape=triangle];
+        legend_missing_source [label="MISSING_SOURCE" fillcolor="#b71c1c" shape=box];
+        legend_program -> legend_physical_file [style=invis];
+        legend_physical_file -> legend_logical_file [style=invis];
+        legend_logical_file -> legend_copybook [style=invis];
+        legend_copybook -> legend_dtaara [style=invis];
+        legend_dtaara -> legend_spool [style=invis];
+        legend_spool -> legend_missing_source [style=invis];
+    }
 }
