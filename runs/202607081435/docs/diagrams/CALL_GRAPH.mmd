@@ -1,0 +1,51 @@
+---
+title: Program Call Hierarchy
+---
+%%{init: {"flowchart": {"nodeSpacing": 25, "rankSpacing": 70, "padding": 6}}}%%
+%% Program Call Hierarchy
+%% Shows CALL/CALLP relationships between AS400 programs, extracted via
+%% static dependency-graph analysis of RPG source. A --> B means A calls B.
+flowchart LR
+    XFXCYMD -->|CALL| XFXLEAP
+    XFXMRNROL -->|CALL| HXHAPPPRF
+    XFXMRNROL -->|CALL| HXXAPPPRF
+    HABADTE -->|CALL| XFXMRNROL
+    HABADTE -->|CALL| XFXCNTR
+    HABADTE -->|CALL| XFXLDSC
+    HABADTE -->|CALL| XFXCNTR
+    HABADTE -->|CALL| XFXCNTR
+    HABADTE -->|CALL| XFXCYMD
+    HABADTE -->|CALL| XFXGETID
+    HABADTE -->|CALL| XFXTABL
+    HXXAPPPRF -->|COPY| HXXCNTRL
+    HXXAPPPRF -->|COPY| HXXAPPPRFP
+    XFXGETID -->|COPY| HXXLDA
+    HABADTE -->|COPY| HXXLDA
+    HABADTE -->|COPY| HXXLEVEL
+    HABADTE -->|COPY| HXXXML
+    HABADTE -->|COPY| CXXXMLP
+    HABADTE -->|COPY| CXXXMLC
+    HAPIRNK -->|PFILE_OF| TAPIRNK
+    HMLMAST5H -->|PFILE_OF| TMPMAST
+    HXLTABLD -->|PFILE_OF| HXPTABLD
+    HXLTABLP -->|PFILE_OF| HXPTABLD
+    HXLTABLS -->|PFILE_OF| HXPTABLD
+    HXPBNFIT -->|PFILE_OF| TXPBNFIT
+    HXPNSTN -->|PFILE_OF| TXPNSTN
+    XFXGETID -->|READ| HXFXMLR
+    XFXLDSC -->|READ| HXFLVL1
+    XFXLDSC -->|READ| HXFLVL2
+    XFXLDSC -->|READ| HXFLVL3
+    XFXLDSC -->|READ| HXFLVL4
+    XFXLDSC -->|READ| HXFLVL5
+    XFXLDSC -->|READ| HXFLVL6
+    XFXTABL -->|READ| XFFTABLD
+    XFXTABL -->|READ| XFFTABL2
+    XFXTABL -->|READ| XFFTABL3
+    XFXTABL -->|READ| XFFTABL4
+    HABADTE -->|READ| HAPTRFR
+    HABADTE -->|READ| XFFNSTN
+    HABADTE -->|READ| HXFXMLH
+    DESC["📌 Program Call Hierarchy: each arrow means the source program calls the target program (CALL/CALLP), derived from static source-code analysis only, no runtime tracing. Edge label (when present) is the call type."]
+    HXFXMLH ~~~ DESC
+    style DESC fill:transparent,stroke:none
