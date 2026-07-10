@@ -1,6 +1,23 @@
+---
+title: Cyclomatic Complexity Heatmap
+---
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 %% Complexity Heatmap
+%% Programs grouped by cyclomatic-complexity risk band (CC = cyclomatic
+%% complexity score, from complexity_scores.json). Color = risk level.
 flowchart TD
+    DESC["📌 Complexity Heatmap: each box is one program, labeled with its cyclomatic complexity (CC) score and risk band. Higher CC = harder to test/maintain."]
+    style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
+    subgraph Legend ["Legend"]
+        LG_CRIT["CRITICAL risk"]
+        LG_HIGH["HIGH risk"]
+        LG_MED["MEDIUM risk"]
+        LG_LOW["LOW risk"]
+    end
+    style LG_CRIT fill:#cc0000,color:#fff
+    style LG_HIGH fill:#ff8c00,color:#fff
+    style LG_MED fill:#ffd700,color:#000
+    style LG_LOW fill:#228b22,color:#fff
     N0["HXXAPPPRF\nCC=1\nLOW"]
     N1["XFXCNTR\nCC=3\nLOW"]
     N2["XFXCYMD\nCC=7\nLOW"]

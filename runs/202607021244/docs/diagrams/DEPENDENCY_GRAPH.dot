@@ -1,9 +1,23 @@
 // AS400 Dependency Graph - Graphviz DOT
+// Every analysed source member and its static CALL/COPY/READ/WRITE edges.
+// Node color/shape = member type (see Legend cluster). [PHI] = PHI-tagged,
+// [MISSING] = source file not found. Rendered top label shows this summary.
 digraph AS400Dependencies {
     rankdir=LR;
-    graph [fontname="Arial" bgcolor="#1e1e2e" fontcolor="#cdd6f4"];
+    graph [fontname="Arial" bgcolor="#1e1e2e" fontcolor="#cdd6f4" label="AS400 Dependency Graph\nStatic CALL / COPY / READ / WRITE relationships across all analysed source members" labelloc=t fontsize=16];
     node  [fontname="Arial" fontsize=10 style=filled fontcolor="white"];
     edge  [fontname="Arial" fontsize=8 color="#90a4ae" fontcolor="#546e7a"];
+
+    subgraph cluster_legend {
+        label="Legend"; fontname="Arial"; fontcolor="#cdd6f4"; color="#546e7a"; style=dashed;
+        legend_program [label="PROGRAM" fillcolor="#1a73e8" shape=box];
+        legend_physical_file [label="PHYSICAL_FILE" fillcolor="#e37400" shape=cylinder];
+        legend_logical_file [label="LOGICAL_FILE" fillcolor="#34a853" shape=diamond];
+        legend_copybook [label="COPYBOOK" fillcolor="#9334e6" shape=hexagon];
+        legend_dtaara [label="DTAARA" fillcolor="#00897b" shape=ellipse];
+        legend_spool [label="SPOOL" fillcolor="#546e7a" shape=triangle];
+        legend_missing_source [label="MISSING_SOURCE" fillcolor="#b71c1c" shape=box];
+    }
 
     // LOGICAL_FILE
     HAPIRNK [label="HAPIRNK" fillcolor="#34a853" shape=diamond];

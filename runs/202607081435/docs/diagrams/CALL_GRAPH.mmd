@@ -1,6 +1,13 @@
+---
+title: Program Call Hierarchy
+---
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 %% Program Call Hierarchy
+%% Shows CALL/CALLP relationships between AS400 programs, extracted via
+%% static dependency-graph analysis of RPG source. A --> B means A calls B.
 flowchart LR
+    DESC["📌 Program Call Hierarchy: each arrow means the source program calls the target program (CALL/CALLP), derived from static source-code analysis only, no runtime tracing. Edge label (when present) is the call type."]
+    style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
     XFXCYMD -->|CALL| XFXLEAP
     XFXMRNROL -->|CALL| HXHAPPPRF
     XFXMRNROL -->|CALL| HXXAPPPRF

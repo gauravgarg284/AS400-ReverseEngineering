@@ -4,6 +4,8 @@ Auto-generated from pipeline artifacts. Covers all 7 processing phases.
 
 ## 1. Top-Level Processing Flow
 
+End-to-end order of program execution, derived from Agent-2's program narratives (interpretations.json). Shows the overall request-to-response path.
+
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 flowchart TD
@@ -32,6 +34,8 @@ flowchart TD
 
 ## 2. Record Filter Gate
 
+Extracted CABEQ/CAB decision rules that decide whether a record is included or excluded from processing, in evaluation order.
+
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 flowchart TD
@@ -48,6 +52,8 @@ flowchart TD
 ```
 
 ## 3. Data Enrichment Flow
+
+Per-program key business rules that enrich a record after it passes the filter gate, grouped by the program that applies them.
 
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
@@ -93,6 +99,8 @@ flowchart TD
 
 ## 4. Counter and Aggregation Logic
 
+Business rules that increment, sum, or tally values during processing (counters, totals, running sums), in the order they're applied.
+
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 flowchart TD
@@ -105,6 +113,8 @@ flowchart TD
 ```
 
 ## 5. Application Preference Lookup Flow
+
+How a configurable setting is resolved at runtime: look up the preference table first, fall back to a system default if no entry is found.
 
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
@@ -123,6 +133,8 @@ flowchart TD
 
 ## 6. Org and Hierarchy Level Lookup Flow
 
+How a record is resolved to its organizational level (facility, department, region, etc.) — one branch per level the program checks.
+
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 flowchart TD
@@ -134,6 +146,8 @@ flowchart TD
 ```
 
 ## 7. End-to-End Summary Flow
+
+One-page rollup of sections 1-6: input, setup (preferences + org lookup), query, per-record enrichment loop, and response assembly.
 
 ```mermaid
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%

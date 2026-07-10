@@ -1,6 +1,19 @@
+---
+title: AS400 Data Flow Diagram
+---
 %%{init: {"flowchart": {"nodeSpacing": 60, "rankSpacing": 70}}}%%
 %% AS400 Data Flow Diagram
+%% Traces field-level data movement: source file -> program -> target file,
+%% built from data_lineage.json. Red-outlined nodes carry PHI-tagged data.
 flowchart TD
+    DESC["📌 Data Flow: each path shows a field read from a source file, passed through a program, and written to a target file. Red outline = PHI in that path."]
+    style DESC fill:#fff8dc,stroke:#b8860b,color:#000,stroke-width:1px
+    subgraph Legend ["Legend"]
+        LG_FILE["File (source/target)"]
+        LG_PROG["Program (transform step)"]
+        LG_PHI["PHI-tagged data path"]
+    end
+    style LG_PHI stroke:#b71c1c,stroke-width:3px
     TAPIRNK[("TAPIRNK")]
     HAPIRNK["HAPIRNK"]
     TAPIRNK -->|reads| HAPIRNK
