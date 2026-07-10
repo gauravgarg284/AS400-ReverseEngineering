@@ -1,12 +1,5 @@
----
-title: Database Entity-Relationship Diagram
----
-%%{init: {"er": {"diagramPadding": 40, "layoutDirection": "TB", "minEntityWidth": 140, "minEntityHeight": 90, "entityPadding": 20}}}%%
+%%{init: {"er": {"diagramPadding": 40}}}%%
 %% Database Entity-Relationship Diagram
-%% Physical/logical AS400 files and their key fields, from DDS source.
-%% PK fields come from each file's own K-spec; relationship lines are
-%% explicit PF<->LF associations (DDS PFILE() keyword), NOT inferred
-%% foreign keys -- this pipeline does not derive cross-file FK relationships.
 erDiagram
     HAPTRFR {
         varchar AFLVL6 PK
@@ -78,7 +71,3 @@ erDiagram
     HXPTABLD ||--o{ HXLTABLD : "logical view"
     HXPTABLD ||--o{ HXLTABLP : "logical view"
     HXPTABLD ||--o{ HXLTABLS : "logical view"
-    LEGEND {
-        string PK "Primary key field, from this file's own DDS key spec"
-        string field "Regular / PHI-flagged field (no key)"
-    }

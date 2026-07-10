@@ -1,13 +1,7 @@
----
-title: DATA_MAINTENANCE Processing Sequence
----
 %%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
 %% DATA_MAINTENANCE Processing Sequence
-%% Program invocation order for this domain, generated from Agent-2
-%% semantic interpretations. Notes list key extracted business rules.
 sequenceDiagram
     participant User
-    Note over User: 📌 DATA_MAINTENANCE domain: programs invoked in order, with key business rules noted under each. Not a runtime trace -- order reflects program interpretation grouping.
     participant XFXCNTR
     User->>XFXCNTR: invoke XFXCNTR (RPGLE)
     Note over XFXCNTR: Field formatting: exit if all blank (40 chars)
