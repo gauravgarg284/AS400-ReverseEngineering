@@ -1,0 +1,16 @@
+---
+title: PATIENT_MANAGEMENT Processing Sequence
+---
+%%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
+%% PATIENT_MANAGEMENT Processing Sequence
+%% Program invocation order for this domain, generated from Agent-2
+%% semantic interpretations. Notes list key extracted business rules.
+sequenceDiagram
+    participant User
+    Note over User: 📌 PATIENT_MANAGEMENT domain: programs invoked in order, with key business rules noted under each. Not a runtime trace -- order reflects program interpretation grouping.
+    participant HABADTE
+    User->>HABADTE: invoke HABADTE (RPGLE)
+    Note over HABADTE: When -FLAG INDICATOR equals void/voided, branch to 'SKIP'
+    Note over HABADTE: When -INPATIENT/OUTPATIENT FLAG equals outpatient, branch to 'SKIP'
+    Note over HABADTE: When -FILE INDICATOR equals zero, branch to 'SKIP'
+    HABADTE-->>User: return
