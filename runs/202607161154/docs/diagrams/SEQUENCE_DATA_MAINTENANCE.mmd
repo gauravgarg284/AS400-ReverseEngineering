@@ -1,0 +1,48 @@
+---
+title: DATA_MAINTENANCE Processing Sequence
+---
+%%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
+%% DATA_MAINTENANCE Processing Sequence
+%% Program invocation order for this domain, generated from Agent-2
+%% semantic interpretations. Notes list key extracted business rules.
+sequenceDiagram
+    participant User
+    Note over User: 📌 DATA_MAINTENANCE domain: programs invoked in order, with key business rules noted under each. Not a runtime trace -- order reflects program interpretation grouping.
+    participant XFXCNTR
+    User->>XFXCNTR: invoke XFXCNTR (RPGLE)
+    Note over XFXCNTR: Text centering  skip processing if the entire input field is blank (nothing to c
+    Note over XFXCNTR: Text centering  skip processing if the text already starts at the first position
+    XFXCNTR-->>User: return
+    participant XFXCYMD
+    User->>XFXCYMD: invoke XFXCYMD (RPGLE)
+    Note over XFXCYMD: When VDD is greater than DYS(VMM), branch to 'EXIT'
+    Note over XFXCYMD: Date validation  reject dates before 1800: the system does not support historica
+    Note over XFXCYMD: Date validation  reject dates beyond 2100: the system does not support forecast 
+    XFXCYMD-->>User: return
+    participant XFXLDSC
+    User->>XFXLDSC: invoke XFXLDSC (RPGLE)
+    Note over XFXLDSC: Organizational level lookup  the level code is out of the valid range; return no
+    Note over XFXLDSC: Organizational level lookup  the level code is out of the valid range; return no
+    Note over XFXLDSC: Organizational level lookup  the level code is out of the valid range; return no
+    XFXLDSC-->>User: return
+    participant XFXTABL
+    User->>XFXTABL: invoke XFXTABL (RPGLE)
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    Note over XFXTABL: When *IN79 equals on/active, branch to 'EXIT'
+    XFXTABL-->>User: return
+    participant HXXAPPPRF
+    User->>HXXAPPPRF: invoke HXXAPPPRF (SQLRPGLE)
+    Note over HXXAPPPRF: Database table access  HXXAPPPRF reads from the 'HXPAPPPRF' table to retrieve co
+    Note over HXXAPPPRF: Database table access  HXXAPPPRF reads from the 'HXPAPPL6' table to retrieve con
+    Note over HXXAPPPRF: Database table access  HXXAPPPRF reads from the 'HXPAPPPRF' table to retrieve co
+    HXXAPPPRF-->>User: return
+    participant XFXGETID
+    User->>XFXGETID: invoke XFXGETID (RPGLE)
+    XFXGETID-->>User: return
+    participant XFXLEAP
+    User->>XFXLEAP: invoke XFXLEAP (RPGLE)
+    XFXLEAP-->>User: return
+    participant XFXMRNROL
+    User->>XFXMRNROL: invoke XFXMRNROL (RPGLE)
+    XFXMRNROL-->>User: return
