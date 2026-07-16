@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607161444",
+  "generated_by": "AS400REVENG-Agent-3",
+  "summary": {
+    "total_stories": 26,
+    "total_epics": 2,
+    "phi_sensitive_stories": 0,
+    "needs_po_review": 20
+  },
+  "epics": [
+    {
+      "name": "Data Maintenance",
+      "story_count": 13,
+      "stories": [
+        {
+          "id": "US-2026-001",
+          "title": "Text Centering Blank String Optimization UI Reporting Workflows",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-001",
+          "source_program": "XFXCNTR",
+          "confidence": 0.47,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-002",
+          "title": "Text Centering Full String Optimization UI Reporting Workflows",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-002",
+          "source_program": "XFXCNTR",
+          "confidence": 0.4,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-003",
+          "title": "Date validation reject year 1800 historical minimum",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-003",
+          "source_program": "XFXCYMD",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-004",
+          "title": "Date validation reject year 2100 forecast maximum",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-004",
+          "source_program": "XFXCYMD",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-005",
+          "title": "Date validation reject month 01 calendar constraint",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-005",
+          "source_program": "XFXCYMD",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-006",
+          "title": "Date validation reject month 12 calendar constraint",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-006",
+          "source_program": "XFXCYMD",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-007",
+          "title": "Date validation reject day 01 calendar constraint",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-007",
+          "source_program": "XFXCYMD",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-008",
+          "title": "When VDD is greater than DYSVMM branch to",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-008",
+          "source_program": "XFXCYMD",
+          "confidence": 0.68,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-009",
+          "title": "Level lookup reject if level code exceeds valid",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-009",
+          "source_program": "XFXLDSC",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-010",
+          "title": "Level lookup reject if level code exceeds valid",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-012",
+          "source_program": "XFXLDSC",
+          "confidence": 0.56,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-011",
+          "title": "When IN79 equals onactive branch to EXIT",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-013",
+          "source_program": "XFXTABL",
+          "confidence": 0.9,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-012",
+          "title": "Database table access HXXAPPPRF reads from the HXPAPPPRF",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-030",
+          "source_program": "HXXAPPPRF",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-013",
+          "title": "Database table access HXXAPPPRF reads from the HXPAPPL6",
+          "epic": "Data Maintenance",
+          "rule_id": "BR-031",
+          "source_program": "HXXAPPPRF",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        }
+      ]
+    },
+    {
+      "name": "Patient Management",
+      "story_count": 13,
+      "stories": [
+        {
+          "id": "US-2026-014",
+          "title": "Exclude PreAdmitted Patients A patient with file indicator",
+          "epic": "Patient Management",
+          "rule_id": "BR-017",
+          "source_program": "HABADTE",
+          "confidence": 0.92,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-015",
+          "title": "Exclude Voided Accounts Accounts marked as Voided flag",
+          "epic": "Patient Management",
+          "rule_id": "BR-018",
+          "source_program": "HABADTE",
+          "confidence": 0.99,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-016",
+          "title": "Exclude Outpatients Only inpatients appear on this census",
+          "epic": "Patient Management",
+          "rule_id": "BR-019",
+          "source_program": "HABADTE",
+          "confidence": 0.99,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-017",
+          "title": "Organisational Level Filter Each patient record must belong",
+          "epic": "Patient Management",
+          "rule_id": "BR-020",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-018",
+          "title": "Census Date Admission Date Check A patient admitted",
+          "epic": "Patient Management",
+          "rule_id": "BR-021",
+          "source_program": "HABADTE",
+          "confidence": 0.85,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-019",
+          "title": "Census Date Discharge Date Check A patient who",
+          "epic": "Patient Management",
+          "rule_id": "BR-022",
+          "source_program": "HABADTE",
+          "confidence": 0.85,
+          "phi_sensitive": false,
+          "needs_po_review": false
+        },
+        {
+          "id": "US-2026-020",
+          "title": "Room Number Retrieval from Transfer History The patients",
+          "epic": "Patient Management",
+          "rule_id": "BR-023",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-021",
+          "title": "Room Class Description Lookup The 2character room class",
+          "epic": "Patient Management",
+          "rule_id": "BR-024",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-022",
+          "title": "Hospital Therapeutic Leave Flag When the room class",
+          "epic": "Patient Management",
+          "rule_id": "BR-025",
+          "source_program": "HABADTE",
+          "confidence": 0.57,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-023",
+          "title": "Nursing Station Name Resolution For each qualifying patient",
+          "epic": "Patient Management",
+          "rule_id": "BR-026",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-024",
+          "title": "Patient Identifier Display MRN vs Account Number The",
+          "epic": "Patient Management",
+          "rule_id": "BR-027",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-025",
+          "title": "Application Preference Lookup with Facility Override System preferences",
+          "epic": "Patient Management",
+          "rule_id": "BR-028",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        },
+        {
+          "id": "US-2026-026",
+          "title": "Patient Counting Three Running Totals As each qualifying",
+          "epic": "Patient Management",
+          "rule_id": "BR-029",
+          "source_program": "HABADTE",
+          "confidence": 0.65,
+          "phi_sensitive": false,
+          "needs_po_review": true
+        }
+      ]
+    }
+  ]
+}
