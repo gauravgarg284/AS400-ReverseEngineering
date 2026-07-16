@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607161154",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "interpretations": {
+    "XFXCNTR": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Contains 2 rule(s) with avg confidence 43%.",
+      "rule_count": 2,
+      "average_confidence": 0.43,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-001",
+        "BR-002"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-001",
+          "rule": "Text centering \u2014 skip processing if the entire input field is blank (nothing to center).",
+          "confidence": 0.47
+        },
+        {
+          "id": "BR-002",
+          "rule": "Text centering \u2014 skip processing if the text already starts at the first position (already left-aligned).",
+          "confidence": 0.4
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "XFXCYMD": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Contains 6 rule(s) with avg confidence 58%.",
+      "rule_count": 6,
+      "average_confidence": 0.58,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-003",
+        "BR-004",
+        "BR-005",
+        "BR-006",
+        "BR-007",
+        "BR-008"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-008",
+          "rule": "When VDD is greater than DYS(VMM), branch to 'EXIT'",
+          "confidence": 0.68
+        },
+        {
+          "id": "BR-003",
+          "rule": "Date validation \u2014 reject dates before 1800: the system does not support historical records predating 1800.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-004",
+          "rule": "Date validation \u2014 reject dates beyond 2100: the system does not support forecast dates past the year 2100.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-005",
+          "rule": "Date validation \u2014 month must be January (01) or later: a month value below 01 is not a valid calendar month.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-006",
+          "rule": "Date validation \u2014 month must be December (12) or earlier: a month value above 12 is not a valid calendar month.",
+          "confidence": 0.56
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "XFXLDSC": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Contains 4 rule(s) with avg confidence 56%.",
+      "rule_count": 4,
+      "average_confidence": 0.56,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-009",
+        "BR-010",
+        "BR-011",
+        "BR-012"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-009",
+          "rule": "Organizational level lookup \u2014 the level code is out of the valid range; return no description.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-010",
+          "rule": "Organizational level lookup \u2014 the level code is out of the valid range; return no description.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-011",
+          "rule": "Organizational level lookup \u2014 the level code is out of the valid range; return no description.",
+          "confidence": 0.56
+        },
+        {
+          "id": "BR-012",
+          "rule": "Organizational level lookup \u2014 the level code is out of the valid range; return no description.",
+          "confidence": 0.56
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "XFXTABL": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Contains 4 rule(s) with avg confidence 90%.",
+      "rule_count": 4,
+      "average_confidence": 0.9,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 4,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-013",
+        "BR-014",
+        "BR-015",
+        "BR-016"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-013",
+          "rule": "When *IN79 equals on/active, branch to 'EXIT'",
+          "confidence": 0.9
+        },
+        {
+          "id": "BR-014",
+          "rule": "When *IN79 equals on/active, branch to 'EXIT'",
+          "confidence": 0.9
+        },
+        {
+          "id": "BR-015",
+          "rule": "When *IN79 equals on/active, branch to 'EXIT'",
+          "confidence": 0.9
+        },
+        {
+          "id": "BR-016",
+          "rule": "When *IN79 equals on/active, branch to 'EXIT'",
+          "confidence": 0.9
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "HABADTE": {
+      "domain": "PATIENT_MANAGEMENT",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Patient Management'. Contains 13 rule(s) with avg confidence 75%.",
+      "rule_count": 13,
+      "average_confidence": 0.75,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 5,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-017",
+        "BR-018",
+        "BR-019",
+        "BR-020",
+        "BR-021",
+        "BR-022",
+        "BR-023",
+        "BR-024",
+        "BR-025",
+        "BR-026",
+        "BR-027",
+        "BR-028",
+        "BR-029"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-018",
+          "rule": "Exclude Voided Accounts: Accounts marked as Voided (flag = 'V') are cancelled records and must never appear on the active census.",
+          "confidence": 0.99
+        },
+        {
+          "id": "BR-019",
+          "rule": "Exclude Outpatients: Only inpatients appear on this census. Accounts with I/O indicator = 'O' (Outpatient) are excluded.",
+          "confidence": 0.99
+        },
+        {
+          "id": "BR-017",
+          "rule": "Exclude Pre-Admitted Patients: A patient with file indicator = 0 is a pre-admission \u2014 not yet formally admitted. These must be excluded from the active census.",
+          "confidence": 0.92
+        },
+        {
+          "id": "BR-021",
+          "rule": "Census Date \u2014 Admission Date Check: A patient admitted after the census date is not yet active on that date. If the patient's admission date is later than the requested census date, the patient is excluded from the report.",
+          "confidence": 0.85
+        },
+        {
+          "id": "BR-022",
+          "rule": "Census Date \u2014 Discharge Date Check: A patient who has already been discharged on or before the census date is no longer active. If discharge date is set (non-zero) and is on or before the census date, the patient is excluded. A discharge date of zero means the patient has not been discharged and is always considered active (subject to other filters).",
+          "confidence": 0.85
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "HXXAPPPRF": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "SQLRPGLE",
+      "narrative": "SQLRPGLE program in domain 'Data Maintenance'. Contains 3 rule(s) with avg confidence 65%.",
+      "rule_count": 3,
+      "average_confidence": 0.65,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [
+        "BR-030",
+        "BR-031",
+        "BR-032"
+      ],
+      "key_rules": [
+        {
+          "id": "BR-030",
+          "rule": "Database table access \u2014 HXXAPPPRF reads from the 'HXPAPPPRF' table to retrieve configuration or reference data needed during processing.",
+          "confidence": 0.65
+        },
+        {
+          "id": "BR-031",
+          "rule": "Database table access \u2014 HXXAPPPRF reads from the 'HXPAPPL6' table to retrieve configuration or reference data needed during processing.",
+          "confidence": 0.65
+        },
+        {
+          "id": "BR-032",
+          "rule": "Database table access \u2014 HXXAPPPRF reads from the 'HXPAPPPRF' table to retrieve configuration or reference data needed during processing.",
+          "confidence": 0.65
+        }
+      ],
+      "hitl_needed": 0
+    },
+    "XFXGETID": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Cyclomatic complexity: 1.",
+      "rule_count": 0,
+      "average_confidence": 0.0,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [],
+      "key_rules": [],
+      "hitl_needed": 0
+    },
+    "XFXLEAP": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Cyclomatic complexity: 1.",
+      "rule_count": 0,
+      "average_confidence": 0.0,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [],
+      "key_rules": [],
+      "hitl_needed": 0
+    },
+    "XFXMRNROL": {
+      "domain": "DATA_MAINTENANCE",
+      "program_type": "RPGLE",
+      "narrative": "RPGLE program in domain 'Data Maintenance'. Calls programs: HXHAPPPRF, HXXAPPPRF. Cyclomatic complexity: 1.",
+      "rule_count": 0,
+      "average_confidence": 0.0,
+      "phi_sensitive_rules": 0,
+      "high_confidence_rules": 0,
+      "subroutines_with_rules": {},
+      "top_level_rules": [],
+      "key_rules": [],
+      "hitl_needed": 0
+    }
+  },
+  "summary": {
+    "total_programs_interpreted": 9,
+    "domains_found": [
+      "DATA_MAINTENANCE",
+      "PATIENT_MANAGEMENT"
+    ]
+  }
+}
