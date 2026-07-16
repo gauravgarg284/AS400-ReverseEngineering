@@ -1,0 +1,16 @@
+---
+title: PATIENT_MANAGEMENT Processing Sequence
+---
+%%{init: {"sequence": {"actorMargin": 80, "messageMargin": 35}}}%%
+%% PATIENT_MANAGEMENT Processing Sequence
+%% Program invocation order for this domain, generated from Agent-2
+%% semantic interpretations. Notes list key extracted business rules.
+sequenceDiagram
+    participant User
+    Note over User: 📌 PATIENT_MANAGEMENT domain: programs invoked in order, with key business rules noted under each. Not a runtime trace -- order reflects program interpretation grouping.
+    participant HABADTE
+    User->>HABADTE: invoke HABADTE (RPGLE)
+    Note over HABADTE: Exclude Voided Accounts: Accounts marked as Voided (flag = 'V') are cancelled re
+    Note over HABADTE: Exclude Outpatients: Only inpatients appear on this census. Accounts with I/O in
+    Note over HABADTE: Exclude Pre-Admitted Patients: A patient with file indicator = 0 is a pre-admiss
+    HABADTE-->>User: return
