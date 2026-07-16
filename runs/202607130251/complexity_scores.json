@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607130251",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "complexity_scores": {
+    "HXXAPPPRF": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 2,
+      "complexity_band": "LOW"
+    },
+    "XFXCNTR": {
+      "cyclomatic_complexity": 3,
+      "subroutine_count": 0,
+      "branch_count": 2,
+      "fan_in": 3,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "XFXCYMD": {
+      "cyclomatic_complexity": 7,
+      "subroutine_count": 0,
+      "branch_count": 6,
+      "fan_in": 1,
+      "fan_out": 1,
+      "complexity_band": "LOW"
+    },
+    "XFXGETID": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 1,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 2,
+      "complexity_band": "LOW"
+    },
+    "XFXLDSC": {
+      "cyclomatic_complexity": 5,
+      "subroutine_count": 0,
+      "branch_count": 4,
+      "fan_in": 1,
+      "fan_out": 6,
+      "complexity_band": "LOW"
+    },
+    "XFXLEAP": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "XFXMRNROL": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 2,
+      "complexity_band": "LOW"
+    },
+    "XFXTABL": {
+      "cyclomatic_complexity": 9,
+      "subroutine_count": 0,
+      "branch_count": 8,
+      "fan_in": 1,
+      "fan_out": 4,
+      "complexity_band": "LOW"
+    },
+    "CXXXMLP": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HXXAPPPRFP": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HXXCNTRL": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HXXLDA": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 2,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HXXLEVEL": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HXXXML": {
+      "cyclomatic_complexity": 1,
+      "subroutine_count": 0,
+      "branch_count": 0,
+      "fan_in": 1,
+      "fan_out": 0,
+      "complexity_band": "LOW"
+    },
+    "HABADTE": {
+      "cyclomatic_complexity": 152,
+      "subroutine_count": 9,
+      "branch_count": 10,
+      "fan_in": 0,
+      "fan_out": 19,
+      "complexity_band": "HIGH"
+    }
+  }
+}
