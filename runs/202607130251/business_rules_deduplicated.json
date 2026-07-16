@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202607130251",
+  "generated_by": "AS400REVENGToolSemanticAnalyzer",
+  "business_rules": [
+    {
+      "id": "BR-001",
+      "source_program": "XFXCNTR",
+      "domain": "DATA_MAINTENANCE",
+      "subroutine": null,
+      "line": 32,
+      "type": "formatting",
+      "opcode": "CABEQ",
+      "rule": "Field formatting: exit if all blank (40 chars)",
+      "factor1": "X",
+      "factor2": "0",
+      "business_intent": "Field formatting utility - centers text",
+      "confidence": 0.47,
+      "confidence_score": 0.47,
+      "hitl_status": "AUTO_ACCEPTED",
+      "needs_sme_review": false,
+      "phi_sensitive": false,
+      "hitl_reason": null,
+      "extraction_method": "BUSINESS_INTENT_HEURISTIC"
+    }
+  ],
+  "hitl_queue": [],
+  "summary": {
+    "total_rules": 22,
+    "auto_accepted": 22,
+    "needs_review": 0,
+    "rejected_reextracted": 0,
+    "score_distribution": {
+      "0.90+": 7,
+      "0.80-0.89": 0,
+      "0.70-0.79": 0,
+      "<0.70": 15
+    },
+    "domains_found": [
+      "DATA_MAINTENANCE",
+      "PATIENT_MANAGEMENT"
+    ]
+  },
+  "deduplication": {
+    "original": 22,
+    "after": 1,
+    "duplicates_merged": 21,
+    "noise_filtered": 0
+  }
+}
