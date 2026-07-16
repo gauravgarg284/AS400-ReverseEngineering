@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "missing_nodes": [
+    {
+      "name": "CXXXMLC",
+      "type": "COPYBOOK",
+      "impact": "HIGH",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "HXHAPPPRF",
+      "type": "PROGRAM",
+      "impact": "MEDIUM",
+      "referenced_by": "XFXMRNROL"
+    },
+    {
+      "name": "****HXPXML",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    },
+    {
+      "name": "PRINTER",
+      "type": "FILE",
+      "impact": "MEDIUM",
+      "referenced_by": "HABADTE"
+    }
+  ],
+  "completeness_pct": 91.1,
+  "gaps_by_impact": {
+    "HIGH": 1,
+    "MEDIUM": 3,
+    "LOW": 0
+  },
+  "total_gaps": 4
+}
