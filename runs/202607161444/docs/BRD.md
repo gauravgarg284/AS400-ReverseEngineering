@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-HABADTE - Hospital benefit and patient master processing on AS400. The analyzed scope includes 26 approved business rules across 2 domain(s), implemented in 6 program(s). This BRD documents approved rules and their traceable implementations.
+HABADTE main program and supporting utilities for account, MRN, level, and table maintenance. The analyzed scope includes 26 approved business rules across 2 domain(s), implemented in 6 program(s). This BRD documents approved rules and their traceable implementations.
 
 ## 2. Stakeholder Matrix
 
