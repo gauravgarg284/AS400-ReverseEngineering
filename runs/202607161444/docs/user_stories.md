@@ -1,6 +1,6 @@
 # User Stories
 
-**System:** HABADTE - Hospital benefit and patient master processing on AS400
+**System:** HABADTE main program and supporting utilities for account, MRN, level, and table maintenance
 
 **Run:** 2026 | **Total Stories:** 26 | **PHI Sensitive:** 0 | **PO Review Needed:** 20
 
