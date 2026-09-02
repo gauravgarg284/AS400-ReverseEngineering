@@ -1,0 +1,669 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 69,
+  "total_batches": 477,
+  "members_in_batch": [
+    "POLICY",
+    "RESOURCE_POLICY_MEMBER",
+    "HTTP_REQUEST",
+    "LOG_SEVERITY",
+    "OPERATIONS_PROTO",
+    "WEBAUTHN_TYPES",
+    "CODE",
+    "ATTRIBUTE_CONTEXT",
+    "AUDIT_CONTEXT",
+    "ERROR_DETAILS"
+  ],
+  "pso_corpus": {
+    "POLICY": {
+      "member": "POLICY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 163,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "L",
+          "device": "R`, OR",
+          "keyed": false,
+          "keywords": "`roles/owner`."
+        },
+        {
+          "line": 280,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "O",
+          "device": "LOUDSQ",
+          "keyed": false,
+          "keywords": "l.googleapis.com`."
+        },
+        {
+          "line": 329,
+          "file_name": "OLLOWS THE",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 363,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "L",
+          "device": "R`, OR",
+          "keyed": false,
+          "keywords": "`roles/owner`."
+        },
+        {
+          "line": 368,
+          "file_name": "OLLOWS THE",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "S.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 396,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "O",
+          "device": "LOUDSQ",
+          "keyed": false,
+          "keywords": "l.googleapis.com`."
+        },
+        {
+          "line": 403,
+          "file_name": "OLLOWS THE",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "S.",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 127,
+          "name": "OCUMENTATION](H",
+          "ds_type": "PS",
+          "from_pos": "://clou",
+          "to_length": "d.googl",
+          "decimal": "e",
+          "data_type": ".C",
+          "keywords": "m/iam/help/conditions/resource-polici",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 137,
+          "name": "IFFERENT ROLES",
+          "ds_type": "`",
+          "from_pos": "user:al",
+          "to_length": "ice@exa",
+          "decimal": "m",
+          "data_type": "PL",
+          "keywords": ".com`, and not to any other",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 223,
+          "name": "OCUMENTATION](H",
+          "ds_type": "PS",
+          "from_pos": "://clou",
+          "to_length": "d.googl",
+          "decimal": "e",
+          "data_type": ".C",
+          "keywords": "m/iam/help/conditions/resource-polici",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 235,
+          "name": "ITLOGCONFIG ARE",
+          "ds_type": "XE",
+          "from_pos": "mpted.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 315,
+          "name": "MIN_READ = 1;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 352,
+          "name": "D = 1;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 385,
+          "name": "D = 1;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RESOURCE_POLICY_MEMBER": {
+      "member": "RESOURCE_POLICY_MEMBER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HTTP_REQUEST": {
+      "member": "HTTP_REQUEST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 30,
+          "file_name": "INED BY TH",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "P",
+          "device": "SPECIF",
+          "keyed": false,
+          "keywords": "ic logging"
+        },
+        {
+          "line": 31,
+          "file_name": "ORMATION M",
+          "file_type": "U",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "ESSAGE",
+          "keyed": false,
+          "keywords": "."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 70,
+          "name": "EFINITIONS](HTT",
+          "ds_type": ":/",
+          "from_pos": "/datatr",
+          "to_length": "acker.i",
+          "decimal": "e",
+          "data_type": "TF",
+          "keywords": "org/doc/html/rfc2616#section-14.36).",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LOG_SEVERITY": {
+      "member": "LOG_SEVERITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 35,
+          "name": "`WARNING`:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "OPERATIONS_PROTO": {
+      "member": "OPERATIONS_PROTO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 36,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "ME",
+          "from_pos": "thodOpt",
+          "to_length": "ions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "ELETES A LONG-R",
+          "ds_type": "NI",
+          "from_pos": "ng oper",
+          "to_length": "ation.",
+          "decimal": "T",
+          "data_type": "HI",
+          "keywords": "method indicates that the client is",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WEBAUTHN_TYPES": {
+      "member": "WEBAUTHN_TYPES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 19,
+          "name": ": STR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 116,
+          "name": ": STR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CODE": {
+      "member": "CODE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 53,
+          "file_name": "ROM `FAILE",
+          "file_type": "D",
+          "designation": "_",
+          "mode": "",
+          "format": "C",
+          "device": "UMENT`",
+          "keyed": false,
+          "keywords": "indicates arguments"
+        },
+        {
+          "line": 147,
+          "file_name": "ILE SIZE.",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 166,
+          "file_name": "OR SERIOUS",
+          "file_type": "",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 67,
+          "name": "LINE_EXCEEDED =",
+          "ds_type": ";",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ATTRIBUTE_CONTEXT": {
+      "member": "ATTRIBUTE_CONTEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AUDIT_CONTEXT": {
+      "member": "AUDIT_CONTEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ERROR_DETAILS": {
+      "member": "ERROR_DETAILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 324,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "JECT:<",
+          "keyed": false,
+          "keywords": "Google developer project"
+        },
+        {
+          "line": 329,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "A",
+          "device": "REQUI",
+          "keyed": false,
+          "keywords": "re the `writer` permission"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 54,
+          "name": "OMAIN OF ERRORS",
+          "ds_type": "TH",
+          "from_pos": "is shou",
+          "to_length": "ld be a",
+          "decimal": "t",
+          "data_type": "M",
+          "keywords": "st 63 characters and match a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 119,
+          "name": "AILY QUOTA OR A",
+          "ds_type": "US",
+          "from_pos": "tom quo",
+          "to_length": "ta that",
+          "decimal": "",
+          "data_type": "WA",
+          "keywords": "exceeded.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 201,
+          "name": "ESCRIBES ALL QU",
+          "ds_type": "A",
+          "from_pos": "violati",
+          "to_length": "ons.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 230,
+          "name": "ESCRIBES ALL PR",
+          "ds_type": "ON",
+          "from_pos": "dition",
+          "to_length": "violati",
+          "decimal": "o",
+          "data_type": "NS",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 294,
+          "name": "ESCRIBES ALL VI",
+          "ds_type": "AT",
+          "from_pos": "ions in",
+          "to_length": "a clie",
+          "decimal": "n",
+          "data_type": "T",
+          "keywords": "equest.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 328,
+          "name": "ESCRIBES WHAT E",
+          "ds_type": "OR",
+          "from_pos": "is enc",
+          "to_length": "ountere",
+          "decimal": "d",
+          "data_type": "W",
+          "keywords": "en accessing this resource.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 340,
+          "name": "ESCRIBES A URL",
+          "ds_type": "NK",
+          "from_pos": ".",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
