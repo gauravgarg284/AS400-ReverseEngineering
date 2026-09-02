@@ -1,0 +1,434 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 17,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_HTMLPARSER",
+    "_LXML",
+    "EXCEPTIONS",
+    "ENTRY_POINTS",
+    "FUNC",
+    "KEYS",
+    "RECORD",
+    "LICENSE",
+    "TOP_LEVEL",
+    "ENTRY_POINTS"
+  ],
+  "pso_corpus": {
+    "_HTMLPARSER": {
+      "member": "_HTMLPARSER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "ATA,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_LXML": {
+      "member": "_LXML",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 103,
+          "name": "EFAULT_PARSER:",
+          "ds_type": "TI",
+          "from_pos": "onal[et",
+          "to_length": "ree.XML",
+          "decimal": "P",
+          "data_type": "AR",
+          "keywords": "er]",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXCEPTIONS": {
+      "member": "EXCEPTIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FUNC": {
+      "member": "FUNC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "U_CACHE(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "U_CACHE(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KEYS": {
+      "member": "KEYS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "HHM4Q4",
+          "keyed": false,
+          "keywords": "mYTT9z6QB6PGpUAW81PGNFrYrdXM"
+        },
+        {
+          "line": 2,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "RXY4-7",
+          "keyed": false,
+          "keywords": "I2dqw8V3ffz8LNnDSP5Bcu1bo9J3"
+        },
+        {
+          "line": 3,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "7DEQPJ",
+          "keyed": false,
+          "keywords": "8HBSa-_TImW-5JCeuQeRkm5NMpJW"
+        },
+        {
+          "line": 5,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "YZNZXS",
+          "keyed": false,
+          "keywords": "JYBQGqmI8VTxEdiZYNvDZwW9cBh9"
+        },
+        {
+          "line": 6,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "HA256=",
+          "keyed": false,
+          "keywords": "6TcW2mucDVpKHfYP5pWzcPBpVgPS"
+        },
+        {
+          "line": 7,
+          "file_name": "I-2026.7.2",
+          "file_type": "2",
+          "designation": ".",
+          "mode": "",
+          "format": "T",
+          "device": "56=KMU",
+          "keyed": false,
+          "keywords": "4vUCfsjLrkPbSNdgdekS-pVJzBAJ"
+        },
+        {
+          "line": 8,
+          "file_name": "I/__INIT__",
+          "file_type": ".",
+          "designation": "P",
+          "mode": "",
+          "format": "H",
+          "device": "-P2G30",
+          "keyed": false,
+          "keywords": "ZzCMHALyuGp2R0UhsE,94"
+        },
+        {
+          "line": 9,
+          "file_name": "I/__MAIN__",
+          "file_type": ".",
+          "designation": "P",
+          "mode": "",
+          "format": "H",
+          "device": "F7OI6E",
+          "keyed": false,
+          "keywords": "-3dMP4cEoG9OyMs11g,243"
+        },
+        {
+          "line": 10,
+          "file_name": "I/CACERT.P",
+          "file_type": "E",
+          "designation": "M",
+          "mode": "",
+          "format": "A",
+          "device": "9TIXXY",
+          "keyed": false,
+          "keywords": "Z84Cmpa84VpV39cw8,240216"
+        },
+        {
+          "line": 11,
+          "file_name": "I/CORE.PY,",
+          "file_type": "S",
+          "designation": "H",
+          "mode": "",
+          "format": "6",
+          "device": "UDAFSY",
+          "keyed": false,
+          "keywords": "hkVMbO4BAPWHa0,3394"
+        },
+        {
+          "line": 12,
+          "file_name": "I/PY.TYPED",
+          "file_type": ",",
+          "designation": "S",
+          "mode": "",
+          "format": "5",
+          "device": "EUQERK",
+          "keyed": false,
+          "keywords": "m5NMpJWZG3hSuFU,0"
+        },
+        {
+          "line": 13,
+          "file_name": "I/TESTS/__",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "_",
+          "device": "_TIMW-",
+          "keyed": false,
+          "keywords": "5JCeuQeRkm5NMpJWZG3hSuFU,0"
+        },
+        {
+          "line": 14,
+          "file_name": "I/TESTS/TE",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "R",
+          "device": "-KSSTN",
+          "keyed": false,
+          "keywords": "mNzX7RsYzjV0OX4kV0Rw7wofSJ7g"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LICENSE": {
+      "member": "LICENSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "I",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
