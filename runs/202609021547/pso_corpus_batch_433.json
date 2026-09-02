@@ -1,0 +1,1237 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 433,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_QUANTILE",
+    "TEST_SAG",
+    "_BARNES_HUT_TSNE",
+    "_ISOMAP",
+    "_LOCALLY_LINEAR",
+    "_T_SNE",
+    "__INIT__",
+    "__INIT__",
+    "_ARGKMIN_CLASSMODE.PYX",
+    "_BASE.PXD"
+  ],
+  "pso_corpus": {
+    "TEST_QUANTILE": {
+      "member": "TEST_QUANTILE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 66,
+          "file_name": "COEF IS N",
+          "file_type": "O",
+          "designation": "T",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 68,
+          "file_name": "ALPHA < 1",
+          "file_type": "0",
+          "designation": "0",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 82,
+          "file_name": "FIT_INTER",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 265,
+          "file_name": "FIT_INTER",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_SAG": {
+      "member": "TEST_SAG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 32,
+          "file_name": "Z > 18.0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "Z < -18.0",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 138,
+          "file_name": "STEP_SIZE",
+          "file_type": "",
+          "designation": "*",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 158,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 243,
+          "file_name": "CLASSIFIC",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_BARNES_HUT_TSNE": {
+      "member": "_BARNES_HUT_TSNE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 26,
+          "file_name": "LOAT FLOAT",
+          "file_type": "3",
+          "designation": "2",
+          "mode": "",
+          "format": "N",
+          "device": ".TINY",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 28,
+          "file_name": "UL TO VOID",
+          "file_type": "",
+          "designation": "D",
+          "mode": "",
+          "format": "S",
+          "device": "E TO +",
+          "keyed": false,
+          "keywords": "inf."
+        },
+        {
+          "line": 29,
+          "file_name": "LOAT FLOAT",
+          "file_type": "6",
+          "designation": "4",
+          "mode": "",
+          "format": "S",
+          "device": "EPS",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 37,
+          "file_name": "LOAT COMPU",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 60,
+          "file_name": "QT.VERBOS",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 66,
+          "file_name": "TAKE_TIMI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 70,
+          "file_name": "TAKE_TIMI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 74,
+          "file_name": "TAKE_TIMI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 79,
+          "file_name": "TAKE_TIMI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 94,
+          "file_name": "LOAT COMPU",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "VAL_P,",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 123,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 155,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 236,
+          "file_name": "TAKE_TIMI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 270,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 273,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 276,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 286,
+          "file_name": "VERBOSE >",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 293,
+          "file_name": "NOT COMPU",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 50,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 63,
+          "name": "EF FLOAT* NEG_F",
+          "ds_type": "<",
+          "from_pos": "float*>",
+          "to_length": "malloc",
+          "decimal": "(",
+          "data_type": "SI",
+          "keywords": "eof(float) * n_samples * n_dimensions",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 64,
+          "name": "EF FLOAT* POS_F",
+          "ds_type": "<",
+          "from_pos": "float*>",
+          "to_length": "malloc",
+          "decimal": "(",
+          "data_type": "SI",
+          "keywords": "eof(float) * n_samples * n_dimensions",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 111,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 162,
+          "name": "OUBLE COMPUTE_G",
+          "ds_type": "DI",
+          "from_pos": "ent_neg",
+          "to_length": "ative(f",
+          "decimal": "l",
+          "data_type": "OA",
+          "keywords": "[:, :] pos_reference,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 169,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 260,
+          "name": "EF FLOAT C",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 261,
+          "name": "EF INT N",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 272,
+          "name": "EF _QUADTREE QT",
+          "ds_type": "_",
+          "from_pos": "QuadTre",
+          "to_length": "e(pos_o",
+          "decimal": "u",
+          "data_type": "TP",
+          "keywords": "t.shape[1], verbose)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ISOMAP": {
+      "member": "_ISOMAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "IT_CONTEXT",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 144,
+          "name": "S : MANIFOLD LE",
+          "ds_type": "NI",
+          "from_pos": "ng usin",
+          "to_length": "g multi",
+          "decimal": "d",
+          "data_type": "IM",
+          "keywords": "nsional scaling.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_LOCALLY_LINEAR": {
+      "member": "_LOCALLY_LINEAR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "IT_CONTEXT",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 165,
+          "file_name": "EIGEN_SOL",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 171,
+          "file_name": "EIGEN_SOL",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 220,
+          "file_name": "N_COMPONE",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 224,
+          "file_name": "N_NEIGHBO",
+          "file_type": "R",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 233,
+          "file_name": "METHOD ==",
+          "file_type": "",
+          "designation": "\"",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 433,
+          "file_name": "M_SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 447,
+          "name": "ATE_PARAMS(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_T_SNE": {
+      "member": "_T_SNE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "IT_CONTEXT",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "VERBOSE >",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 138,
+          "file_name": "P_IJS AND",
+          "file_type": "",
+          "designation": "Q",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 187,
+          "file_name": "COMPUTE_E",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 382,
+          "file_name": "ARGS IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 384,
+          "file_name": "KWARGS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 525,
+          "file_name": "N_NEIGHBO",
+          "file_type": "R",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 531,
+          "file_name": "METRIC ==",
+          "file_type": "",
+          "designation": "\"",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 573,
+          "file_name": "THE NUMBE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "IS WIL",
+          "keyed": false,
+          "keywords": "l suppress some"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 447,
+          "name": "ATE_PARAMS(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 737,
+          "name": "S : MANIFOLD LE",
+          "ds_type": "NI",
+          "from_pos": "ng usin",
+          "to_length": "g multi",
+          "decimal": "d",
+          "data_type": "IM",
+          "keywords": "nsional scaling.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "OR COMPUTA",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "L",
+          "device": "ARE PE",
+          "keyed": false,
+          "keywords": "rformed on the fly on chunks"
+        },
+        {
+          "line": 27,
+          "file_name": "INALLY, TH",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "T",
+          "device": "RALLEL",
+          "keyed": false,
+          "keywords": "ization template to process"
+        },
+        {
+          "line": 80,
+          "file_name": "OR INSTANC",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "A",
+          "device": "TO:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 112,
+          "file_name": ": NOQA: E5",
+          "file_type": "0",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 35,
+          "name": "ISPATCHERS ARE",
+          "ds_type": "AN",
+          "from_pos": "t to be",
+          "to_length": "used i",
+          "decimal": "n",
+          "data_type": "T",
+          "keywords": "e Python code. Under the hood, a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "ISPATCHER MUST",
+          "ds_type": "LY",
+          "from_pos": "define",
+          "to_length": "the lo",
+          "decimal": "g",
+          "data_type": "IC",
+          "keywords": "to choose at runtime to the correct",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "TYPE-SPECIALIZE",
+          "ds_type": ":C",
+          "from_pos": "lass:`B",
+          "to_length": "aseDist",
+          "decimal": "a",
+          "data_type": "NC",
+          "keywords": "sReductionDispatcher` implementation",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ARGKMIN_CLASSMODE.PYX": {
+      "member": "_ARGKMIN_CLASSMODE.PYX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 182,
+          "file_name": "OR}}",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 21,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 116,
+          "name": "EF INLINE VOID",
+          "ds_type": "IG",
+          "from_pos": "hted_hi",
+          "to_length": "stogram",
+          "decimal": "_",
+          "data_type": "MO",
+          "keywords": "e(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 143,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_pra",
+          "to_length": "nge_ite",
+          "decimal": "r",
+          "data_type": "_F",
+          "keywords": "nalize(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 162,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_fin",
+          "to_length": "alize(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_BASE.PXD": {
+      "member": "_BASE.PXD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 51,
+          "file_name": "INAL",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 54,
+          "file_name": "INAL",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 135,
+          "file_name": "OR}}",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 25,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X(sel",
+          "to_length": "f) noex",
+          "decimal": "c",
+          "data_type": "EP",
+          "keywords": "nogil",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 55,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y(sel",
+          "to_length": "f) noex",
+          "decimal": "c",
+          "data_type": "EP",
+          "keywords": "nogil",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 59,
+          "name": "EF VOID _COMPUT",
+          "ds_type": "AN",
+          "from_pos": "d_reduc",
+          "to_length": "e_dista",
+          "decimal": "n",
+          "data_type": "CE",
+          "keywords": "_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 71,
+          "name": "EF VOID COMPUTE",
+          "ds_type": "XA",
+          "from_pos": "ct_dist",
+          "to_length": "ances(s",
+          "decimal": "e",
+          "data_type": "LF",
+          "keywords": "noexcept nogil",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 73,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_par",
+          "to_length": "allel_i",
+          "decimal": "n",
+          "data_type": "IT",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_ini",
+          "to_length": "t_chunk",
+          "decimal": "(",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 85,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_pre",
+          "to_length": "_comput",
+          "decimal": "e",
+          "data_type": "_A",
+          "keywords": "d_reduce_distances_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 94,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_pra",
+          "to_length": "nge_ite",
+          "decimal": "r",
+          "data_type": "_F",
+          "keywords": "nalize(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 101,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_par",
+          "to_length": "allel_f",
+          "decimal": "i",
+          "data_type": "NA",
+          "keywords": "ize(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 106,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_ini",
+          "to_length": "t(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 110,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_par",
+          "to_length": "allel_i",
+          "decimal": "n",
+          "data_type": "IT",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 117,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_pre",
+          "to_length": "_comput",
+          "decimal": "e",
+          "data_type": "_A",
+          "keywords": "d_reduce_distances_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 126,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_syn",
+          "to_length": "chroniz",
+          "decimal": "e",
+          "data_type": "(",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 132,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_fin",
+          "to_length": "alize(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
