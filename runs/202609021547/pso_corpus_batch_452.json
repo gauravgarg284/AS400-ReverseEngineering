@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 452,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "ALGEBRAICFIELD",
+    "CHARACTERISTICZERO",
+    "COMPLEXFIELD",
+    "COMPOSITEDOMAIN",
+    "DOMAIN",
+    "EXPRESSIONDOMAIN",
+    "EXPRESSIONRAWDOMAIN",
+    "FIELD",
+    "FINITEFIELD"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 56,
+          "file_name": "F_PYTHON',",
+          "file_type": "",
+          "designation": "'",
+          "mode": "",
+          "format": "G",
+          "device": "MPY',",
+          "keyed": false,
+          "keywords": "'QQ_python', 'QQ_gmpy',"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "OMAIN', 'FINITE",
+          "ds_type": "EL",
+          "from_pos": "d', 'In",
+          "to_length": "tegerRi",
+          "decimal": "n",
+          "data_type": "G'",
+          "keywords": "'RationalField', 'RealField',",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ALGEBRAICFIELD": {
+      "member": "ALGEBRAICFIELD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 189,
+          "file_name": ":PY:CLASS",
+          "file_type": ":",
+          "designation": "`",
+          "mode": "",
+          "format": "X",
+          "device": "BRAICN",
+          "keyed": false,
+          "keywords": "umber` by passing a ``fmt``"
+        },
+        {
+          "line": 210,
+          "file_name": ":PY:CLASS",
+          "file_type": ":",
+          "designation": "`",
+          "mode": "",
+          "format": "M",
+          "device": "IMES.P",
+          "keyed": false,
+          "keywords": "rimeIdeal` instances."
+        },
+        {
+          "line": 584,
+          "file_name": "NOT EXT.I",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHARACTERISTICZERO": {
+      "member": "CHARACTERISTICZERO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPLEXFIELD": {
+      "member": "COMPLEXFIELD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "EFAULT_PRECISIO",
+          "ds_type": "=",
+          "from_pos": "53",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPOSITEDOMAIN": {
+      "member": "COMPOSITEDOMAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOMAIN": {
+      "member": "DOMAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 161,
+          "file_name": "A DOMAIN",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": ":",
+          "device": "S MIGH",
+          "keyed": false,
+          "keywords": "t have an associated"
+        },
+        {
+          "line": 210,
+          "file_name": "_TYPE",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 225,
+          "file_name": "_TYPE",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 241,
+          "file_name": "_TYPE",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 11
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXPRESSIONDOMAIN": {
+      "member": "EXPRESSIONDOMAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXPRESSIONRAWDOMAIN": {
+      "member": "EXPRESSIONRAWDOMAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FIELD": {
+      "member": "FIELD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FINITEFIELD": {
+      "member": "FINITEFIELD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 28,
+          "file_name": "(INT(_MAJ",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "FLINT IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 99,
+          "file_name": "CTX IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 132,
+          "file_name": "(2)",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 167,
+          "file_name": "(5)",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
