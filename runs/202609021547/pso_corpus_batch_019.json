@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 19,
+  "total_batches": 477,
+  "members_in_batch": [
+    "OPERATOR",
+    "PLAN",
+    "LOG_CONFIG",
+    "00001-EMBEDDINGS.SQLITE",
+    "00002-EMBEDDINGS-QUEUE-CONFIG.SQLITE",
+    "00001-EMBEDDING-METADATA.SQLITE",
+    "00003-FULL-TEXT-TOKENIZE.SQLITE",
+    "00001-COLLECTIONS.SQLITE",
+    "00002-SEGMENTS.SQLITE",
+    "00004-TENANTS-DATABASES.SQLITE"
+  ],
+  "pso_corpus": {
+    "OPERATOR": {
+      "member": "OPERATOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 522,
+          "file_name": "FSET: INT",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, fiel",
+          "decimal": "d",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "S,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 432,
+          "name": ": \"KEY\"",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 497,
+          "name": "= KEY(\"#ID\")",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 38
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PLAN": {
+      "member": "PLAN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, fiel",
+          "decimal": "d",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LOG_CONFIG": {
+      "member": "LOG_CONFIG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "00001-EMBEDDINGS.SQLITE": {
+      "member": "00001-EMBEDDINGS.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 5,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "00002-EMBEDDINGS-QUEUE-CONFIG.SQLITE": {
+      "member": "00002-EMBEDDINGS-QUEUE-CONFIG.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "IMARY KEY,",
+          "line": 2
+        }
+      ],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "TR TEXT",
+          "line": 3,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "00001-EMBEDDING-METADATA.SQLITE": {
+      "member": "00001-EMBEDDING-METADATA.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "IMARY KEY,",
+          "line": 2
+        },
+        {
+          "name": "EAL,",
+          "line": 15
+        }
+      ],
+      "fields": [
+        {
+          "name": "TEXT NOT N",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 4,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 12,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 13,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE EMBEDD",
+          "from_pos": "ng_f",
+          "to_pos": "llte",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 24,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 4,
+      "key_field_names": []
+    },
+    "00003-FULL-TEXT-TOKENIZE.SQLITE": {
+      "member": "00003-FULL-TEXT-TOKENIZE.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "BLE EMBEDD",
+          "from_pos": "ng_f",
+          "to_pos": "llte",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 1,
+      "key_field_names": []
+    },
+    "00001-COLLECTIONS.SQLITE": {
+      "member": "00001-COLLECTIONS.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "EAL,",
+          "line": 13
+        }
+      ],
+      "fields": [
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 2,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 10,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 4,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 2,
+      "key_field_names": []
+    },
+    "00002-SEGMENTS.SQLITE": {
+      "member": "00002-SEGMENTS.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "EAL,",
+          "line": 14
+        }
+      ],
+      "fields": [
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 2,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 11,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 4,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 2,
+      "key_field_names": []
+    },
+    "00004-TENANTS-DATABASES.SQLITE": {
+      "member": "00004-TENANTS-DATABASES.SQLITE",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 2,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 7,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 14,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ME, TOPIC,",
+          "from_pos": "dime",
+          "to_pos": "sion",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 27,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 16,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 4,
+      "key_field_names": []
+    }
+  }
+}
