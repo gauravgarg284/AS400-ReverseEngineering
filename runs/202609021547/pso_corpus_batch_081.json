@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 81,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TESTING",
+    "UTILS",
+    "__INIT__",
+    "MEMCACHED",
+    "__INIT__",
+    "LOCKS",
+    "STORAGE",
+    "CONSOLE",
+    "DUMMY",
+    "FILEBASED"
+  ],
+  "pso_corpus": {
+    "TESTING": {
+      "member": "TESTING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.TEST IMPO",
+          "ds_type": "L",
+          "from_pos": "iveServ",
+          "to_length": "erTestC",
+          "decimal": "a",
+          "data_type": "SE",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "ST",
+          "from_pos": "orage i",
+          "to_length": "mport F",
+          "decimal": "i",
+          "data_type": "LE",
+          "keywords": "ystemStorage",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "BA",
+          "from_pos": "se impo",
+          "to_length": "rt File",
+          "decimal": "",
+          "data_type": "AS",
+          "keywords": "File",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MEMCACHED": {
+      "member": "MEMCACHED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.CORE.CACH",
+          "ds_type": "BA",
+          "from_pos": "ckends.",
+          "to_length": "base im",
+          "decimal": "p",
+          "data_type": "OR",
+          "keywords": "BaseCache",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LOCKS": {
+      "member": "LOCKS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "STORAGE": {
+      "member": "STORAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "BA",
+          "from_pos": "se impo",
+          "to_length": "rt File",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.UTILS.FUN",
+          "ds_type": "IO",
+          "from_pos": "nal imp",
+          "to_length": "ort Laz",
+          "decimal": "y",
+          "data_type": "OB",
+          "keywords": "ect",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSOLE": {
+      "member": "CONSOLE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.CORE.MAIL",
+          "ds_type": "AC",
+          "from_pos": "kends.b",
+          "to_length": "ase imp",
+          "decimal": "o",
+          "data_type": "RT",
+          "keywords": "BaseEmailBackend",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DUMMY": {
+      "member": "DUMMY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.CORE.MAIL",
+          "ds_type": "AC",
+          "from_pos": "kends.b",
+          "to_length": "ase imp",
+          "decimal": "o",
+          "data_type": "RT",
+          "keywords": "BaseEmailBackend",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FILEBASED": {
+      "member": "FILEBASED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.CORE.MAIL",
+          "ds_type": "AC",
+          "from_pos": "kends.b",
+          "to_length": "ase imp",
+          "decimal": "o",
+          "data_type": "RT",
+          "keywords": "BaseEmailBackend",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
