@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 71,
+  "total_batches": 477,
+  "members_in_batch": [
+    "INTERVAL",
+    "LATLNG",
+    "LOCALIZED_TEXT",
+    "MONEY",
+    "MONTH",
+    "PHONE_NUMBER",
+    "POSTAL_ADDRESS",
+    "QUATERNION",
+    "TIMEOFDAY",
+    "SWITCH_CSKY_GCC"
+  ],
+  "pso_corpus": {
+    "INTERVAL": {
+      "member": "INTERVAL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LATLNG": {
+      "member": "LATLNG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LOCALIZED_TEXT": {
+      "member": "LOCALIZED_TEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 33,
+          "file_name": "OR MORE IN",
+          "file_type": "F",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MONEY": {
+      "member": "MONEY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "OR EXAMPLE",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "C",
+          "device": "THEN",
+          "keyed": false,
+          "keywords": "1 unit is one US dollar."
+        },
+        {
+          "line": 39,
+          "file_name": "OR EXAMPLE",
+          "file_type": "",
+          "designation": "$",
+          "mode": "",
+          "format": "7",
+          "device": "TS`=-1",
+          "keyed": false,
+          "keywords": "and `nanos`=-750,000,000."
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MONTH": {
+      "member": "MONTH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PHONE_NUMBER": {
+      "member": "PHONE_NUMBER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 114,
+          "file_name": "IELD IS NO",
+          "file_type": "R",
+          "designation": "M",
+          "mode": "",
+          "format": "Y",
+          "device": "WITH",
+          "keyed": false,
+          "keywords": "an E.164 number. It is held"
+        },
+        {
+          "line": 116,
+          "file_name": "UTURE.",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 59,
+          "name": "IALABLE, WHICH",
+          "ds_type": "AN",
+          "from_pos": "s the s",
+          "to_length": "ame sho",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "ode can exist in different regions,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "POSTAL_ADDRESS": {
+      "member": "POSTAL_ADDRESS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 53,
+          "file_name": "OR DETAILS",
+          "file_type": ".",
+          "designation": "",
+          "mode": "",
+          "format": "M",
+          "device": "D.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 85,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "NCE, A",
+          "keyed": false,
+          "keywords": "n oblast, or a prefecture."
+        },
+        {
+          "line": 86,
+          "file_name": "OR SPAIN,",
+          "file_type": "T",
+          "designation": "H",
+          "mode": "",
+          "format": "I",
+          "device": "HE AUT",
+          "keyed": false,
+          "keywords": "onomous"
+        },
+        {
+          "line": 99,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "BOROUG",
+          "keyed": false,
+          "keywords": "h, or district."
+        },
+        {
+          "line": 129,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "M",
+          "device": "NFORMA",
+          "keyed": false,
+          "keywords": "tion."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 26,
+          "name": "RESSES. WITH A",
+          "ds_type": "ST",
+          "from_pos": "al addr",
+          "to_length": "ess, a",
+          "decimal": "p",
+          "data_type": "OS",
+          "keywords": "al service can deliver items to a",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "QUATERNION": {
+      "member": "QUATERNION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 52,
+          "file_name": "FER BELOW",
+          "file_type": "*",
+          "designation": "M",
+          "mode": "",
+          "format": "*",
+          "device": "VENTIO",
+          "keyed": false,
+          "keywords": "n, which defines `ij = k`"
+        },
+        {
+          "line": 63,
+          "file_name": "INITIONS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TIMEOFDAY": {
+      "member": "TIMEOFDAY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 44,
+          "file_name": "RACTIONS O",
+          "file_type": "F",
+          "designation": "",
+          "mode": "",
+          "format": "O",
+          "device": "T BE G",
+          "keyed": false,
+          "keywords": "reater than or equal to 0"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SWITCH_CSKY_GCC": {
+      "member": "SWITCH_CSKY_GCC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "SLP_EVAL",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4,
+          "file_name": "__CSKYABI",
+          "file_type": "V",
+          "designation": "2",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 14,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 17,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 21,
+          "file_name": "__GNUC__",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 23,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 48,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
