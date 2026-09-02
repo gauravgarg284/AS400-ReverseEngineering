@@ -1,0 +1,595 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 245,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_SETOPS",
+    "TEST_CONSTRUCTORS",
+    "TEST_INTERVAL_RANGE",
+    "TEST_CONSTRUCTORS",
+    "TEST_COPY",
+    "TEST_INDEXING",
+    "TEST_LEXSORT",
+    "TEST_RESHAPE",
+    "TEST_SETOPS",
+    "TEST_INDEXING"
+  ],
+  "pso_corpus": {
+    "TEST_SETOPS": {
+      "member": "TEST_SETOPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_CONSTRUCTORS": {
+      "member": "TEST_CONSTRUCTORS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 432,
+          "file_name": "IRST, SECO",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "[",
+          "device": ", \"BAZ",
+          "keyed": false,
+          "keywords": "\"], []), ([], [\"a\", \"b\", \"c\""
+        },
+        {
+          "line": 639,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 653,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 689,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 720,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 737,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 100,
+          "name": "X.COPY().SET_CO",
+          "ds_type": "S(",
+          "from_pos": "codes=[",
+          "to_length": "[0, 0,",
+          "decimal": "0",
+          "data_type": ",",
+          "keywords": "], [0, 0]], verify_integrity=False)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 229,
+          "name": "X1 = DATE_RANGE",
+          "ds_type": "20",
+          "from_pos": "15-01-0",
+          "to_length": "1 10:00",
+          "decimal": "\"",
+          "data_type": ",",
+          "keywords": "req=\"D\", periods=3, tz=\"US/Eastern\")",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 230,
+          "name": "X2 = DATE_RANGE",
+          "ds_type": "20",
+          "from_pos": "15-01-0",
+          "to_length": "1 10:00",
+          "decimal": "\"",
+          "data_type": ",",
+          "keywords": "req=\"h\", periods=3)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 231,
+          "name": "X3 = PD.TIMEDEL",
+          "ds_type": "_R",
+          "from_pos": "ange(\"1",
+          "to_length": "days\",",
+          "decimal": "",
+          "data_type": "FR",
+          "keywords": "q=\"D\", periods=3)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 232,
+          "name": "X4 = PD.PERIOD_",
+          "ds_type": "NG",
+          "from_pos": "e(\"2011",
+          "to_length": "-01-01\"",
+          "decimal": ",",
+          "data_type": "F",
+          "keywords": "eq=\"D\", periods=3)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 253,
+          "name": "X1 = PD.CATEGOR",
+          "ds_type": "AL",
+          "from_pos": "Index(l",
+          "to_length": "ist(\"ab",
+          "decimal": "c",
+          "data_type": "AA",
+          "keywords": "\"), categories=list(\"bac\"), ordered=F",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 254,
+          "name": "X2 = PD.CATEGOR",
+          "ds_type": "AL",
+          "from_pos": "Index(l",
+          "to_length": "ist(\"ab",
+          "decimal": "c",
+          "data_type": "AA",
+          "keywords": "\"), categories=list(\"bac\"), ordered=T",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 409,
+          "name": "X = MULTIINDEX.",
+          "ds_type": "OM",
+          "from_pos": "_tuples",
+          "to_length": "([(2, 1",
+          "decimal": ")",
+          "data_type": ",",
+          "keywords": "4, (1, 2))], names=(\"a\", \"b\"))",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 488,
+          "name": "X = PD.CATEGORI",
+          "ds_type": "LI",
+          "from_pos": "ndex(li",
+          "to_length": "st(\"abc",
+          "decimal": "a",
+          "data_type": "AB",
+          "keywords": "), categories=list(\"bac\"), ordered=or",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 775,
+          "name": "X1 = PD.DATETIM",
+          "ds_type": "ND",
+          "from_pos": "ex(",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 778,
+          "name": "X2 = DATE_RANGE",
+          "ds_type": "20",
+          "from_pos": "10/01/0",
+          "to_length": "1\", per",
+          "decimal": "i",
+          "data_type": "OD",
+          "keywords": "=6, freq=\"ME\", tz=\"US/Eastern\")",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 779,
+          "name": "X = MULTIINDEX.",
+          "ds_type": "OM",
+          "from_pos": "_arrays",
+          "to_length": "([idx1,",
+          "decimal": "",
+          "data_type": "ID",
+          "keywords": "2])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 834,
+          "name": "X = INDEX(ARR)",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_INTERVAL_RANGE": {
+      "member": "TEST_INTERVAL_RANGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_COPY": {
+      "member": "TEST_COPY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 48,
+          "name": "X = MULTIINDEX(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 53,
+          "name": "X_COPY = FUNC(I",
+          "ds_type": ")",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "X = MULTIINDEX(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 65,
+          "name": "X_COPY = IDX.CO",
+          "ds_type": "(D",
+          "from_pos": "eep=dee",
+          "to_length": "p)",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "X = MULTIINDEX(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 83,
+          "name": "X_COPY = IDX.CO",
+          "ds_type": "(*",
+          "from_pos": "*{kwarg",
+          "to_length": ": value",
+          "decimal": ",",
+          "data_type": "\"",
+          "keywords": "eep\": deep})",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 89,
+          "name": "X = MULTIINDEX(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_INDEXING": {
+      "member": "TEST_INDEXING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ECIMAL IMPORT D",
+          "ds_type": "IM",
+          "from_pos": "al",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_LEXSORT": {
+      "member": "TEST_LEXSORT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_RESHAPE": {
+      "member": "TEST_RESHAPE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "X = (",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 107,
+          "name": "X1 = INDEX([1.1",
+          "ds_type": "1.",
+          "from_pos": "2, 1.3]",
+          "to_length": ")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 108,
+          "name": "X2 = PD.DATE_RA",
+          "ds_type": "E(",
+          "from_pos": "\"2011-0",
+          "to_length": "1-01\",",
+          "decimal": "f",
+          "data_type": "RE",
+          "keywords": "=\"D\", periods=3, tz=\"Asia/Tokyo\")",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 109,
+          "name": "X3 = INDEX([\"A\"",
+          "ds_type": "\"B",
+          "from_pos": "\", \"C\"]",
+          "to_length": ")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
