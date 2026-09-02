@@ -1,0 +1,833 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 65,
+  "total_batches": 477,
+  "members_in_batch": [
+    "BACKEND",
+    "BILLING",
+    "CLIENT",
+    "CONFIG_CHANGE",
+    "CONSUMER",
+    "CONTEXT",
+    "CONTROL",
+    "DISTRIBUTION",
+    "DOCUMENTATION",
+    "ENDPOINT"
+  ],
+  "pso_corpus": {
+    "BACKEND": {
+      "member": "BACKEND",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 116,
+          "file_name": "OR HTTP BA",
+          "file_type": "C",
+          "designation": "K",
+          "mode": "",
+          "format": "S",
+          "device": "API.BA",
+          "keyed": false,
+          "keywords": "ckendRule.protocol]"
+        },
+        {
+          "line": 143,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "C",
+          "device": "PLIES",
+          "keyed": false,
+          "keywords": "that the backend expects"
+        },
+        {
+          "line": 176,
+          "file_name": "OR SECURE",
+          "file_type": "H",
+          "designation": "T",
+          "mode": "",
+          "format": "B",
+          "device": "SUPPOR",
+          "keyed": false,
+          "keywords": "t HTTP/2, set this field"
+        },
+        {
+          "line": 184,
+          "file_name": "OR MORE DE",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 40,
+          "name": "O NOT ACCEPT RE",
+          "ds_type": "ES",
+          "from_pos": "ts over",
+          "to_length": "HTTP/H",
+          "decimal": "T",
+          "data_type": "TP",
+          "keywords": "should leave `path_translation`",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 95,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 124,
+          "name": "EPRECATED, DO N",
+          "ds_type": "U",
+          "from_pos": "se.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 141,
+          "name": "ETAILS SHOULD M",
+          "ds_type": "CH",
+          "from_pos": "the au",
+          "to_length": "thentic",
+          "decimal": "a",
+          "data_type": "TI",
+          "keywords": "n behavior used by the backend.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 192,
+          "name": "EFINED AS AN AR",
+          "ds_type": "TR",
+          "from_pos": "ary str",
+          "to_length": "ing to",
+          "decimal": "a",
+          "data_type": "CC",
+          "keywords": "mondate custom load balancing",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BILLING": {
+      "member": "BILLING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT": {
+      "member": "CLIENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 42,
+          "file_name": "OR EXAMPLE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 109,
+          "file_name": "UNCTIONALI",
+          "file_type": "T",
+          "designation": "Y",
+          "mode": "",
+          "format": "D",
+          "device": "FOR AL",
+          "keyed": false,
+          "keywords": "l services."
+        },
+        {
+          "line": 205,
+          "file_name": "OR WHOM TH",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "ISHED.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 330,
+          "file_name": "ULLY-QUALI",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 335,
+          "file_name": "OR THE RES",
+          "file_type": "O",
+          "designation": "U",
+          "mode": "",
+          "format": ".",
+          "device": "WISE R",
+          "keyed": false,
+          "keywords": "esource"
+        },
+        {
+          "line": 463,
+          "file_name": "ECTS THE U",
+          "file_type": "R",
+          "designation": "L",
+          "mode": "",
+          "format": "E",
+          "device": "BLISHE",
+          "keyed": false,
+          "keywords": "d, etc."
+        },
+        {
+          "line": 567,
+          "file_name": "LOWCONTROL",
+          "file_type": "L",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 29,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "ME",
+          "from_pos": "thodOpt",
+          "to_length": "ions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "SE",
+          "from_pos": "rviceOp",
+          "to_length": "tions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 202,
+          "name": "OCUMENTATION.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 384,
+          "name": "ESCRIBES SETTIN",
+          "ds_type": "T",
+          "from_pos": "o use w",
+          "to_length": "hen gen",
+          "decimal": "e",
+          "data_type": "RA",
+          "keywords": "ing API methods that use the",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 419,
+          "name": "ESCRIBES SETTIN",
+          "ds_type": "T",
+          "from_pos": "o use f",
+          "to_length": "or long",
+          "decimal": "-",
+          "data_type": "RU",
+          "keywords": "ning operations when generating",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 568,
+          "name": "EFAULT BEHAVIOR",
+          "ds_type": "SY",
+          "from_pos": "stem-de",
+          "to_length": "fined.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 17
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONFIG_CHANGE": {
+      "member": "CONFIG_CHANGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 60,
+          "file_name": "ORMATION A",
+          "file_type": "B",
+          "designation": "O",
+          "mode": "",
+          "format": "H",
+          "device": "THE EX",
+          "keyed": false,
+          "keywords": "isting service."
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSUMER": {
+      "member": "CONSUMER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 45,
+          "file_name": "INES PROJE",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "INES PROPE",
+          "file_type": "R",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "ACHE P",
+          "keyed": false,
+          "keywords": "eriod, or whether to embed a"
+        },
+        {
+          "line": 54,
+          "file_name": "INE AND SE",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 24,
+          "name": "ESCRIPTOR FOR D",
+          "ds_type": "IN",
+          "from_pos": "ing pro",
+          "to_length": "ject pr",
+          "decimal": "o",
+          "data_type": "PE",
+          "keywords": "ties for a service. One service may",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 49,
+          "name": "ITIONAL CALLS O",
+          "ds_type": "MA",
+          "from_pos": "intain",
+          "to_length": "additio",
+          "decimal": "n",
+          "data_type": "AL",
+          "keywords": "storage. For example, Maps API",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONTEXT": {
+      "member": "CONTEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 74,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONTROL": {
+      "member": "CONTROL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 35,
+          "file_name": "EATURES (L",
+          "file_type": "I",
+          "designation": "K",
+          "mode": "",
+          "format": "U",
+          "device": "ENABL",
+          "keyed": false,
+          "keywords": "ed. The recommended value"
+        },
+        {
+          "line": 36,
+          "file_name": "OR MOST SE",
+          "file_type": "R",
+          "designation": "V",
+          "mode": "",
+          "format": "S",
+          "device": "EAPIS.",
+          "keyed": false,
+          "keywords": "com."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 39,
+          "name": "EFINES POLICIES",
+          "ds_type": "PP",
+          "from_pos": "lying t",
+          "to_length": "o the A",
+          "decimal": "P",
+          "data_type": "I",
+          "keywords": "ethods of the service.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DISTRIBUTION": {
+      "member": "DISTRIBUTION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 53,
+          "file_name": "OR THE DIS",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "IN A L",
+          "keyed": false,
+          "keywords": "inear sequence, an"
+        },
+        {
+          "line": 61,
+          "file_name": "INITE BUCK",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "N",
+          "device": "ND AN",
+          "keyed": false,
+          "keywords": "overflow bucket (number N -"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 37,
+          "name": "THS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "ISTRIBUTION CON",
+          "ds_type": "ST",
+          "from_pos": "s of an",
+          "to_length": "underf",
+          "decimal": "l",
+          "data_type": "OW",
+          "keywords": "bucket (number 0), zero or more",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 140,
+          "name": "ISTRIBUTION VAL",
+          "ds_type": "S.",
+          "from_pos": "They a",
+          "to_length": "re meta",
+          "decimal": "d",
+          "data_type": "AT",
+          "keywords": "that gives information about a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 181,
+          "name": "ESCRIBES WELFOR",
+          "ds_type": "S",
+          "from_pos": "method",
+          "to_length": "for acc",
+          "decimal": "u",
+          "data_type": "MU",
+          "keywords": "ating this sum in one pass.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 190,
+          "name": "EFINES THE HIST",
+          "ds_type": "RA",
+          "from_pos": "m bucke",
+          "to_length": "t bound",
+          "decimal": "a",
+          "data_type": "RI",
+          "keywords": "s. If the distribution does not",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 198,
+          "name": "ISTRIBUTION.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOCUMENTATION": {
+      "member": "DOCUMENTATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 69,
+          "file_name": "EW DIRECTI",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "TION.",
+          "keyed": false,
+          "keywords": "Note that"
+        },
+        {
+          "line": 99,
+          "file_name": "ROM THE YA",
+          "file_type": "M",
+          "designation": "L",
+          "mode": "",
+          "format": "L",
+          "device": "CAN B",
+          "keyed": false,
+          "keywords": "e seen in any fully"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 50,
+          "name": "E BLOCKS ARE SU",
+          "ds_type": "OR",
+          "from_pos": "ted. Se",
+          "to_length": "ction h",
+          "decimal": "e",
+          "data_type": "AD",
+          "keywords": "rs can be provided and are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "OCUMENTATION FR",
+          "ds_type": "ME",
+          "from_pos": "nt is e",
+          "to_length": "mbedded",
+          "decimal": ".",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 79,
+          "name": "IS DOCUMENTED",
+          "ds_type": "GE",
+          "from_pos": "ther wi",
+          "to_length": "th serv",
+          "decimal": "i",
+          "data_type": "CE",
+          "keywords": "config validation.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 104,
+          "name": "ECLARES A SINGL",
+          "ds_type": "OV",
+          "from_pos": "erview",
+          "to_length": "page. F",
+          "decimal": "o",
+          "data_type": "R",
+          "keywords": "xample:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "OCUMENTATION RU",
+          "ds_type": "P",
+          "from_pos": "rovides",
+          "to_length": "inform",
+          "decimal": "a",
+          "data_type": "TI",
+          "keywords": "n about individual API elements.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 131,
+          "name": "ESCRIPTION OF T",
+          "ds_type": "S",
+          "from_pos": "elected",
+          "to_length": "proto",
+          "decimal": "e",
+          "data_type": "LE",
+          "keywords": "ent (e.g. a message, a method, a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 136,
+          "name": "EPRECATION DESC",
+          "ds_type": "PT",
+          "from_pos": "ion of",
+          "to_length": "the sel",
+          "decimal": "e",
+          "data_type": "CT",
+          "keywords": "d element(s). It can be provided if",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 148,
+          "name": "OCUMENTATION. F",
+          "ds_type": "E",
+          "from_pos": "xample:",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENDPOINT": {
+      "member": "ENDPOINT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
