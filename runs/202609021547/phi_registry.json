@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "flagged_fields": [
+    {
+      "file": "__INIT__",
+      "field": "TELY, USE",
+      "phi_category": "PhoneNumber"
+    }
+  ],
+  "flagged_files": [
+    "__INIT__"
+  ],
+  "total_phi_fields": 1,
+  "compliance_note": "Files listed contain PHI fields. Apply data masking before sharing outside secure environment."
+}
