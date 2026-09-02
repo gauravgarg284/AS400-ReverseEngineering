@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 27,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CUSTOM_TOOL",
+    "CONTENT_CREW",
+    ".GITIGNORE",
+    "README",
+    "TOOL",
+    "UTILS",
+    "CONTEXT",
+    "__INIT__",
+    "__INIT__",
+    "BASE_EVENTS"
+  ],
+  "pso_corpus": {
+    "CUSTOM_TOOL": {
+      "member": "CUSTOM_TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONTENT_CREW": {
+      "member": "CONTENT_CREW",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    ".GITIGNORE": {
+      "member": ".GITIGNORE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "README": {
+      "member": "README",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ER_NAME}} IS A",
+          "ds_type": "EW",
+          "from_pos": "AI Tool",
+          "to_length": ". This",
+          "decimal": "t",
+          "data_type": "EM",
+          "keywords": "late is designed to help you create",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOOL": {
+      "member": "TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 3,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 57,
+          "file_name": "SYS.VERSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "REQUIRE A",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 209,
+          "file_name": "ENV_FILE_",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 247,
+          "file_name": "API_KEY_V",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 360,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 374,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 382,
+          "file_name": "CREW_INST",
+          "file_type": "A",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "LE_ATT",
+          "keyed": false,
+          "keywords": "r):"
+        },
+        {
+          "line": 385,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "U",
+          "device": "CLASS(",
+          "keyed": false,
+          "keywords": "module_attr, Flow):"
+        },
+        {
+          "line": 404,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 500,
+          "file_name": "ISCLASS(O",
+          "file_type": "B",
+          "designation": "J",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 590,
+          "file_name": "MODULE_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 596,
+          "file_name": "NOT SPEC",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 775,
+          "file_name": "RESULT.GE",
+          "file_type": "T",
+          "designation": "(",
+          "mode": "",
+          "format": "P",
+          "device": "\"SCHE",
+          "keyed": false,
+          "keywords": "ma\" in result:"
+        },
+        {
+          "line": 786,
+          "file_name": "NOT FIELD",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 817,
+          "file_name": "NOT ARGS_",
+          "file_type": "S",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 821,
+          "file_name": "NOT (",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 879,
+          "file_name": "NOT ENV_V",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 884,
+          "file_name": "DEFAULT I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 892,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 220,
+          "name": "ICT[STR, ANY] |",
+          "ds_type": "ON",
+          "from_pos": "e:",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 425,
+          "name": "EFAULT ``MAIN.P",
+          "ds_type": "`)",
+          "from_pos": ", loads",
+          "to_length": "each m",
+          "decimal": "o",
+          "data_type": "DU",
+          "keywords": "e, and extracts Flow subclass",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 541,
+          "name": "ICT[STR, ANY]:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 811,
+          "name": "ICT[STR, ANY]:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 9
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONTEXT": {
+      "member": "CONTEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 25,
+          "file_name": "ORM_INTEGR",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "_",
+          "device": "XTVAR[",
+          "keyed": false,
+          "keywords": "str | None] = ("
+        },
+        {
+          "line": 46,
+          "file_name": "TOKEN IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BASE_EVENTS": {
+      "member": "BASE_EVENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time, t",
+          "to_length": "imezone",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
