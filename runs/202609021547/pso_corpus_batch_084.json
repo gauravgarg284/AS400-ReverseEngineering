@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 84,
+  "total_batches": 477,
+  "members_in_batch": [
+    "EXPRESSIONS",
+    "FILES",
+    "RELATED_LOOKUPS",
+    "MATH",
+    "LOOKUPS",
+    "QUERY_UTILS",
+    "COMPILER",
+    "DATASTRUCTURES",
+    "WHERE",
+    "TRANSACTION"
+  ],
+  "pso_corpus": {
+    "EXPRESSIONS": {
+      "member": "EXPRESSIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time, t",
+          "to_length": "imedelt",
+          "decimal": "a",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "OO",
+          "from_pos": "kups im",
+          "to_length": "port Lo",
+          "decimal": "o",
+          "data_type": "KU",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".compil",
+          "to_length": "er impo",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "QLCompiler",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "MP",
+          "from_pos": "ort Q,",
+          "to_length": "QuerySe",
+          "decimal": "t",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort Fie",
+          "decimal": "l",
+          "data_type": "D",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "UE",
+          "from_pos": "ry impo",
+          "to_length": "rt _Bas",
+          "decimal": "e",
+          "data_type": "QU",
+          "keywords": "rySet",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 19,
+          "name": "D: STR = ...",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FILES": {
+      "member": "FILES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "BA",
+          "from_pos": "se impo",
+          "to_length": "rt File",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "IM",
+          "from_pos": "ages im",
+          "to_length": "port Im",
+          "decimal": "a",
+          "data_type": "GE",
+          "keywords": "ile",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.CORE.FILE",
+          "ds_type": "ST",
+          "from_pos": "orage i",
+          "to_length": "mport F",
+          "decimal": "i",
+          "data_type": "LE",
+          "keywords": "ystemStorage, Storage",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "AS",
+          "from_pos": "e impor",
+          "to_length": "t Model",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort Fie",
+          "decimal": "l",
+          "data_type": "D,",
+          "keywords": "_FieldChoices, _ValidatorCallable, _E",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RELATED_LOOKUPS": {
+      "member": "RELATED_LOOKUPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "XP",
+          "from_pos": "ression",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "E",
+          "keywords": "pression",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "OO",
+          "from_pos": "kups im",
+          "to_length": "port (",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 16,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort Fie",
+          "decimal": "l",
+          "data_type": "D",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MATH": {
+      "member": "MATH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "XP",
+          "from_pos": "ression",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "F",
+          "keywords": "nc",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "UN",
+          "from_pos": "ctions.",
+          "to_length": "mixins",
+          "decimal": "i",
+          "data_type": "MP",
+          "keywords": "rt FixDecimalInputMixin, NumericOutpu",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "OO",
+          "from_pos": "kups im",
+          "to_length": "port Tr",
+          "decimal": "a",
+          "data_type": "NS",
+          "keywords": "orm",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LOOKUPS": {
+      "member": "LOOKUPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "JANGO.DB.BACKEN",
+          "ds_type": ".S",
+          "from_pos": "qlite3.",
+          "to_length": "base im",
+          "decimal": "p",
+          "data_type": "OR",
+          "keywords": "DatabaseWrapper",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "XP",
+          "from_pos": "ression",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "E",
+          "keywords": "pression, Func",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "UE",
+          "from_pos": "ry_util",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "R",
+          "keywords": "gisterLookupMixin",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".compil",
+          "to_length": "er impo",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "QLCompiler",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "JANGO.UTILS.DAT",
+          "ds_type": "TR",
+          "from_pos": "uctures",
+          "to_length": "import",
+          "decimal": "",
+          "data_type": "OR",
+          "keywords": "eredSet",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "JANGO.UTILS.SAF",
+          "ds_type": "TR",
+          "from_pos": "ing imp",
+          "to_length": "ort Saf",
+          "decimal": "e",
+          "data_type": "TE",
+          "keywords": "t",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort Tex",
+          "decimal": "t",
+          "data_type": "FI",
+          "keywords": "ld, related_lookups",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "QUERY_UTILS": {
+      "member": "QUERY_UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "AS",
+          "from_pos": "e impor",
+          "to_length": "t Model",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds.mix",
+          "to_length": "ins imp",
+          "decimal": "o",
+          "data_type": "RT",
+          "keywords": "FieldCacheMixin",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".compil",
+          "to_length": "er impo",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "QLCompiler",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".query",
+          "to_length": "import",
+          "decimal": "Q",
+          "data_type": "UE",
+          "keywords": "y",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".where",
+          "to_length": "import",
+          "decimal": "W",
+          "data_type": "HE",
+          "keywords": "eNode",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort Fie",
+          "decimal": "l",
+          "data_type": "D",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "JANGO.UTILS IMP",
+          "ds_type": "T",
+          "from_pos": "tree",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPILER": {
+      "member": "COMPILER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": ", datet",
+          "to_length": "ime",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "ECIMAL IMPORT D",
+          "ds_type": "IM",
+          "from_pos": "al",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "AS",
+          "from_pos": "e impor",
+          "to_length": "t Model",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "XP",
+          "from_pos": "ression",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "B",
+          "keywords": "seExpression, Expression",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".query",
+          "to_length": "import",
+          "decimal": "Q",
+          "data_type": "UE",
+          "keywords": "y, RawQuery",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DATASTRUCTURES": {
+      "member": "DATASTRUCTURES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds.mix",
+          "to_length": "ins imp",
+          "decimal": "o",
+          "data_type": "RT",
+          "keywords": "FieldCacheMixin",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "UE",
+          "from_pos": "ry_util",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "F",
+          "keywords": "lteredRelation, PathInfo",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".compil",
+          "to_length": "er impo",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "QLCompiler",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WHERE": {
+      "member": "WHERE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "XP",
+          "from_pos": "ression",
+          "to_length": "s impor",
+          "decimal": "t",
+          "data_type": "E",
+          "keywords": "pression",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".compil",
+          "to_length": "er impo",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "QLCompiler",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "QL",
+          "from_pos": ".query",
+          "to_length": "import",
+          "decimal": "Q",
+          "data_type": "UE",
+          "keywords": "y",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO.UTILS IMP",
+          "ds_type": "T",
+          "from_pos": "tree",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRANSACTION": {
+      "member": "TRANSACTION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB IMPORT",
+          "ds_type": "RO",
+          "from_pos": "grammin",
+          "to_length": "gError",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
