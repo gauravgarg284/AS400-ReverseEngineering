@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 151,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "__INIT__",
+    "ACTIVATIONS",
+    "CALLBACKS",
+    "CONSTRAINTS",
+    "INITIALIZERS",
+    "__INIT__",
+    "REGULARIZERS",
+    "MATH",
+    "NN"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ACTIVATIONS": {
+      "member": "ACTIVATIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CALLBACKS": {
+      "member": "CALLBACKS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSTRAINTS": {
+      "member": "CONSTRAINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INITIALIZERS": {
+      "member": "INITIALIZERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REGULARIZERS": {
+      "member": "REGULARIZERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MATH": {
+      "member": "MATH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 78,
+          "name": "D(X: TENSORCOMP",
+          "ds_type": "IB",
+          "from_pos": "le, y:",
+          "to_length": "TensorC",
+          "decimal": "o",
+          "data_type": "MP",
+          "keywords": "tible, name: str | None = None) -> Te",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 80,
+          "name": "D(X: RAGGEDTENS",
+          "ds_type": ",",
+          "from_pos": "y: Ragg",
+          "to_length": "edTenso",
+          "decimal": "r",
+          "data_type": ",",
+          "keywords": "ame: str | None = None) -> RaggedTens",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 82,
+          "name": "D_N(INPUTS: ITE",
+          "ds_type": "BL",
+          "from_pos": "e[Tenso",
+          "to_length": "rCompat",
+          "decimal": "i",
+          "data_type": "BL",
+          "keywords": "| IndexedSlices], name: str | None =",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 84,
+          "name": "D_N(INPUTS: ITE",
+          "ds_type": "BL",
+          "from_pos": "e[Ragge",
+          "to_length": "dTensor",
+          "decimal": "]",
+          "data_type": ",",
+          "keywords": "ame: str | None = None) -> RaggedTens",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NN": {
+      "member": "NN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
