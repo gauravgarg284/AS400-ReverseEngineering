@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 475,
+  "total_batches": 477,
+  "members_in_batch": [
+    "PROMPTS",
+    "PROMPTS",
+    "SCHEMAS",
+    "PROMPTS",
+    "PROMPTS",
+    "ERROR_CLASSIFIER",
+    "EVENT_MAP",
+    "__INIT__",
+    "COMPACTOR",
+    "CHANGELOG"
+  ],
+  "pso_corpus": {
+    "PROMPTS": {
+      "member": "PROMPTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SCHEMAS": {
+      "member": "SCHEMAS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ANTIC MODELS FO",
+          "ds_type": "BM",
+          "from_pos": "25Searc",
+          "to_length": "h resul",
+          "decimal": "t",
+          "data_type": "S",
+          "keywords": "eturned to the Retriever agent.\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ERROR_CLASSIFIER": {
+      "member": "ERROR_CLASSIFIER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "ASYNCIO.T",
+          "file_type": "I",
+          "designation": "M",
+          "mode": "",
+          "format": "T",
+          "device": "R:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 111,
+          "file_name": "_PYDANTIC",
+          "file_type": "_",
+          "designation": "V",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 113,
+          "file_name": "_ASYNCIO_",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 117,
+          "file_name": "_HTTPX_EX",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 354,
+          "file_name": "EVENT_TYP",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "_EVENT",
+          "keyed": false,
+          "keywords": "_TYPE_SHORTCUTS:"
+        },
+        {
+          "line": 357,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 454,
+          "file_name": "NOT ERROR",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EVENT_MAP": {
+      "member": "EVENT_MAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPACTOR": {
+      "member": "COMPACTOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 41,
+          "file_name": "LEN(CONVE",
+          "file_type": "R",
+          "designation": "S",
+          "mode": "",
+          "format": "O",
+          "device": "ENGTH:",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 28,
+          "name": "O NOT INCLUDE R",
+          "ds_type": "J",
+          "from_pos": "SON dat",
+          "to_length": "a. Focu",
+          "decimal": "s",
+          "data_type": "O",
+          "keywords": "intent and outcomes.\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHANGELOG": {
+      "member": "CHANGELOG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 99,
+          "file_name": "ENSIVE GAT",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "C",
+          "device": "E-OPEN",
+          "keyed": false,
+          "keywords": "ed the gate every turn a"
+        },
+        {
+          "line": 137,
+          "file_name": "ERRED TO A",
+          "file_type": "",
+          "designation": "F",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 163,
+          "file_name": "ACTKEY`, `",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "`",
+          "device": "K BEFO",
+          "keyed": false,
+          "keywords": "re returning. The frontend"
+        },
+        {
+          "line": 214,
+          "file_name": "ACES (`BAT",
+          "file_type": "C",
+          "designation": "H",
+          "mode": "",
+          "format": "Y",
+          "device": "OAD`),",
+          "keyed": false,
+          "keywords": "switch cases, and `on*`"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 9,
+          "name": "S ON THE LLM CO",
+          "ds_type": "LY",
+          "from_pos": "ing, pl",
+          "to_length": "us a mi",
+          "decimal": "s",
+          "data_type": "SE",
+          "keywords": "step config fix.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 27,
+          "name": "OUBLE APPROVAL",
+          "ds_type": "RS",
+          "from_pos": "isted e",
+          "to_length": "ven on",
+          "decimal": "r",
+          "data_type": "EV",
+          "keywords": "ew steps (e.g. HMW).** The earlier",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "THE FLAG IS CL",
+          "ds_type": "RE",
+          "from_pos": "d whene",
+          "to_length": "ver a s",
+          "decimal": "u",
+          "data_type": "B-",
+          "keywords": "gent regenerates the step's artifact",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 104,
+          "name": "IT REQUESTS) ST",
+          "ds_type": "L",
+          "from_pos": "flows b",
+          "to_length": "ack to",
+          "decimal": "t",
+          "data_type": "HE",
+          "keywords": "agent unchanged.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 165,
+          "name": ": TRUE }` IN TH",
+          "ds_type": "CO",
+          "from_pos": "rrect s",
+          "to_length": "lice (w",
+          "decimal": "i",
+          "data_type": "RE",
+          "keywords": "rame_gen\u2192wireframes,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 209,
+          "name": "S, TOOLNAME, ST",
+          "ds_type": "ID",
+          "from_pos": "}`; ite",
+          "to_length": "m.compl",
+          "decimal": "e",
+          "data_type": "TE",
+          "keywords": "\u2192 `{itemId, itemName, index, total,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 253,
+          "name": "WEIGHT ON THE",
+          "ds_type": "RE",
+          "from_pos": ".",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 382,
+          "name": "BACK LOOPS: JOU",
+          "ds_type": "EY",
+          "from_pos": "\u2194person",
+          "to_length": "as, IA\u2194",
+          "decimal": "j",
+          "data_type": "OU",
+          "keywords": "ney, wireframes\u2194IA",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 425,
+          "name": "BACK LOOPS, STE",
+          "ds_type": "NA",
+          "from_pos": "vigatio",
+          "to_length": "n, save",
+          "decimal": "/",
+          "data_type": "RE",
+          "keywords": "tore persistence",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 492,
+          "name": "LER VALIDATES:",
+          "ds_type": "RR",
+          "from_pos": "ent ste",
+          "to_length": "p must",
+          "decimal": "d",
+          "data_type": "EC",
+          "keywords": "are `feeds_back_to` target, target mu",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 581,
+          "name": "LES NESTED BRAC",
+          "ds_type": ",",
+          "from_pos": "quoted",
+          "to_length": "strings",
+          "decimal": ",",
+          "data_type": "E",
+          "keywords": "caped characters",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 805,
+          "name": "ANTIC` \u2014 REQUES",
+          "ds_type": "RE",
+          "from_pos": "sponse",
+          "to_length": "models",
+          "decimal": "(",
+          "data_type": "AL",
+          "keywords": "eady in requirements)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 30
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
