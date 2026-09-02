@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 346,
+  "total_batches": 477,
+  "members_in_batch": [
+    "METADATA",
+    "TOKENIZER",
+    "METADATA",
+    "CLICK_DEFAULT_GROUP",
+    "METADATA",
+    "METADATA",
+    "METADATA",
+    "INDEX",
+    "METADATA",
+    "INITIALISE"
+  ],
+  "pso_corpus": {
+    "METADATA": {
+      "member": "METADATA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOKENIZER": {
+      "member": "TOKENIZER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLICK_DEFAULT_GROUP": {
+      "member": "CLICK_DEFAULT_GROUP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 55,
+          "name": "EPRECATED(\"USE",
+          "ds_type": "FA",
+          "from_pos": "ult par",
+          "to_length": "am of `",
+          "decimal": "D",
+          "data_type": "EF",
+          "keywords": "ultGroup` or `set_default_command()`",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 70,
+          "name": "EPRECATED(\"USE",
+          "ds_type": "FA",
+          "from_pos": "ult par",
+          "to_length": "am of `",
+          "decimal": "D",
+          "data_type": "EF",
+          "keywords": "ultGroup` or `set_default_command()`",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INDEX": {
+      "member": "INDEX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INITIALISE": {
+      "member": "INITIALISE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
