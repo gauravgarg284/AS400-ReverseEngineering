@@ -1,0 +1,1604 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 97,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CHARSET",
+    "ER",
+    "TIMES",
+    "__INIT__",
+    "CONSTRUCTOR",
+    "DUMPER",
+    "EMITTER",
+    "FILTER",
+    "JAVASCRIPT",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "CHARSET": {
+      "member": "CHARSET",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ER": {
+      "member": "ER",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T FINAL",
+          "line": 1
+        },
+        {
+          "name": "OR: FINAL",
+          "line": 49
+        },
+        {
+          "name": ": FINAL =",
+          "line": 51
+        },
+        {
+          "name": ": FINAL =",
+          "line": 90
+        },
+        {
+          "name": ": FINAL =",
+          "line": 99
+        },
+        {
+          "name": "_SET: FINA",
+          "line": 119
+        },
+        {
+          "name": "Y: FINAL =",
+          "line": 131
+        },
+        {
+          "name": "_TABLE: FI",
+          "line": 148
+        },
+        {
+          "name": "OM_PIPE: F",
+          "line": 158
+        },
+        {
+          "name": "ROR: FINAL",
+          "line": 161
+        },
+        {
+          "name": "ANSACTION:",
+          "line": 196
+        },
+        {
+          "name": ": FINAL =",
+          "line": 199
+        },
+        {
+          "name": ": FINAL =",
+          "line": 222
+        },
+        {
+          "name": ": FINAL =",
+          "line": 263
+        },
+        {
+          "name": "MSG: FINAL",
+          "line": 301
+        },
+        {
+          "name": "_STRING: F",
+          "line": 304
+        },
+        {
+          "name": "GS: FINAL",
+          "line": 322
+        },
+        {
+          "name": ": FINAL =",
+          "line": 331
+        },
+        {
+          "name": "OW: FINAL",
+          "line": 366
+        },
+        {
+          "name": "_TYPE: FIN",
+          "line": 371
+        },
+        {
+          "name": "EAK_BINLOG",
+          "line": 421
+        },
+        {
+          "name": "CE_DOESNT_",
+          "line": 435
+        },
+        {
+          "name": "ATED_TABLE",
+          "line": 438
+        },
+        {
+          "name": ": FINAL =",
+          "line": 450
+        },
+        {
+          "name": "RUPT: FINA",
+          "line": 461
+        }
+      ],
+      "fields": [
+        {
+          "name": "L = 1000",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 3,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "1000",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 4,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1014",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 18,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1015",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 19,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1019",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 23,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1020",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 24,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1021",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 25,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "1022",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 26,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 29,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1027",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 31,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1030",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 34,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1034",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 38,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1035",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 39,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1037",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 41,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 44,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T FINAL",
+          "line": 47,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1046",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OR: FINAL",
+          "line": 50,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 55,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 57,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 58,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1061",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 65,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1062",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 66,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1064",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 68,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1065",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 69,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 71,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 10",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 81,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1087",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 91,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1092",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 96,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1097",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 101,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: FINA",
+          "line": 120,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: FINA",
+          "line": 121,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: FINA",
+          "line": 122,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "Y: FINAL =",
+          "line": 133,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1134",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "Y: FINAL =",
+          "line": 138,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "D: FINAL =",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "Y: FINAL =",
+          "line": 139,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ND: FINAL",
+          "from_pos": "114",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TABLE: FI",
+          "line": 152,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGE: FINAL",
+          "from_pos": "= 11",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TABLE: FI",
+          "line": 157,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OM_PIPE: F",
+          "line": 159,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: FINAL",
+          "line": 166,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE_LOCKED",
+          "from_pos": "Fin",
+          "to_pos": "l =",
+          "decimal_pos": "1",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: FINAL",
+          "line": 169,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: FINAL",
+          "line": 172,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: FINAL",
+          "line": 193,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RIABLE: FI",
+          "from_pos": "al =",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION:",
+          "line": 197,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 11",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 202,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1200",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 204,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1201",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 205,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 210,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 214,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 223,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1221",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 225,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 233,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "R: FINAL =",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 236,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TCH_TABLE_",
+          "from_pos": "EF:",
+          "to_pos": "inal",
+          "decimal_pos": "=",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 244,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 245,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 12",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 248,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1268",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 272,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TALOG: FIN",
+          "from_pos": "l =",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 285,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RATIONS: F",
+          "from_pos": "nal",
+          "to_pos": "130",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: F",
+          "line": 306,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: F",
+          "line": 311,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: F",
+          "line": 318,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1320",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: FINAL",
+          "line": 324,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1332",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 336,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1333",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 337,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 349,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE: FINAL",
+          "from_pos": "= 13",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 355,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE: FINAL",
+          "from_pos": "= 13",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 356,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 357,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 358,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L_ERR: FIN",
+          "from_pos": "l =",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 381,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 386,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1383",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 387,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 390,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 13",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 392,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1389",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 393,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1396",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 400,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= 1397",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 401,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L = 1399",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 403,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 411,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "1408",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: FIN",
+          "line": 412,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAK_BINLOG",
+          "line": 428,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAK_BINLOG",
+          "line": 431,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TE: FINAL",
+          "from_pos": "144",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ATED_TABLE",
+          "line": 447,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ATED_TABLE",
+          "line": 448,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 452,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGE: FINAL",
+          "from_pos": "= 14",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 454,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": FINAL =",
+          "line": 459,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DE: FINAL",
+          "from_pos": "145",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "RUPT: FINA",
+          "line": 463,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FINAL = 14",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "RUPT: FINA",
+          "line": 464,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "ET_OVERFLO",
+          "line": 305
+        },
+        {
+          "field": ": FINAL =",
+          "line": 372
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "R: FINAL =",
+          "line": 54,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R_KEY: FIN",
+          "line": 95,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "WED: FINAL",
+          "line": 136,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "F_ORDER: F",
+          "line": 160,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "H_LOGS: FI",
+          "line": 186,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R_READING_",
+          "line": 240,
+          "keyword": "= 1236"
+        },
+        {
+          "type": "OMIT",
+          "field": "RDS: FINAL",
+          "line": 265,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TRUCT: FIN",
+          "line": 276,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "YNTAX: FIN",
+          "line": 291,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TATEMENT:",
+          "line": 294,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": FINAL =",
+          "line": 308,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MMENT: FIN",
+          "line": 346,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "E: FINAL =",
+          "line": 354,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "T: FINAL =",
+          "line": 364,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "IZE_ROWS_T",
+          "line": 413,
+          "keyword": "1409"
+        },
+        {
+          "type": "SELECT",
+          "field": "TEM_TABLE:",
+          "line": 432,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 88,
+      "key_field_names": [
+        "ET_OVERFLO",
+        ": FINAL ="
+      ]
+    },
+    "TIMES": {
+      "member": "TIMES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": ", datet",
+          "to_length": "ime, ti",
+          "decimal": "m",
+          "data_type": "E,",
+          "keywords": "timedelta",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSTRUCTOR": {
+      "member": "CONSTRUCTOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DUMPER": {
+      "member": "DUMPER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EMITTER": {
+      "member": "EMITTER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FILTER": {
+      "member": "FILTER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "JAVASCRIPT": {
+      "member": "JAVASCRIPT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 11,
+          "name": "ARTLEXER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
