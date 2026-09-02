@@ -1,0 +1,298 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 123,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_GENERIC",
+    "ADDMEMBERSTOGROUPS",
+    "MODIFYPASSWORD",
+    "REMOVEMEMBERSFROMGROUPS",
+    "UNLOCKACCOUNT",
+    "ADDMEMBERSTOGROUPS",
+    "CHECKGROUPSMEMBERSHIPS",
+    "REMOVEMEMBERSFROMGROUPS",
+    "ADD",
+    "COMPARE"
+  ],
+  "pso_corpus": {
+    "_GENERIC": {
+      "member": "_GENERIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ADDMEMBERSTOGROUPS": {
+      "member": "ADDMEMBERSTOGROUPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "IR_ADD_MEMBERS_",
+          "ds_type": "_G",
+          "from_pos": "roups(c",
+          "to_length": "onnecti",
+          "decimal": "o",
+          "data_type": "N,",
+          "keywords": "members_dn, groups_dn, fix, transacti",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MODIFYPASSWORD": {
+      "member": "MODIFYPASSWORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "_MODIFY_PASSWOR",
+          "ds_type": "CO",
+          "from_pos": "nnectio",
+          "to_length": "n, user",
+          "decimal": "_",
+          "data_type": "DN",
+          "keywords": "new_password, old_password, controls",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REMOVEMEMBERSFROMGROUPS": {
+      "member": "REMOVEMEMBERSFROMGROUPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "IR_REMOVE_MEMBE",
+          "ds_type": "_F",
+          "from_pos": "rom_gro",
+          "to_length": "ups(con",
+          "decimal": "n",
+          "data_type": "EC",
+          "keywords": "ion, members_dn, groups_dn, fix, tran",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UNLOCKACCOUNT": {
+      "member": "UNLOCKACCOUNT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "_UNLOCK_ACCOUNT",
+          "ds_type": "ON",
+          "from_pos": "nection",
+          "to_length": ", user_",
+          "decimal": "d",
+          "data_type": "N,",
+          "keywords": "controls=None): ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHECKGROUPSMEMBERSHIPS": {
+      "member": "CHECKGROUPSMEMBERSHIPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "IR_CHECK_GROUPS",
+          "ds_type": "EM",
+          "from_pos": "bership",
+          "to_length": "s(conne",
+          "decimal": "c",
+          "data_type": "TI",
+          "keywords": "n, members_dn, groups_dn, fix, transa",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ADD": {
+      "member": "ADD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "D_OPERATION(DN,",
+          "ds_type": "TT",
+          "from_pos": "ributes",
+          "to_length": ", auto_",
+          "decimal": "e",
+          "data_type": "NC",
+          "keywords": "de, schema=None, validator=None, chec",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "D_REQUEST_TO_DI",
+          "ds_type": "(R",
+          "from_pos": "equest)",
+          "to_length": ": ...",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "D_RESPONSE_TO_D",
+          "ds_type": "T(",
+          "from_pos": "respons",
+          "to_length": "e): ...",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPARE": {
+      "member": "COMPARE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
