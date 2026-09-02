@@ -1,0 +1,1701 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 456,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_FACTORTOOLS",
+    "TEST_HYPOTHESIS",
+    "LLVMJITCODE",
+    "__INIT__",
+    "TREE",
+    "FANCYSETS",
+    "_CSE_DIFF",
+    "CSE_MAIN",
+    "CSE_OPTS",
+    "EPATHTOOLS"
+  ],
+  "pso_corpus": {
+    "TEST_FACTORTOOLS": {
+      "member": "TEST_FACTORTOOLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 18,
+          "file_name": "_1, F_2, F",
+          "file_type": "_",
+          "designation": "3",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_HYPOTHESIS": {
+      "member": "TEST_HYPOTHESIS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 11,
+          "file_name": "NONZERO:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LLVMJITCODE": {
+      "member": "LLVMJITCODE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": ".INDEXED I",
+          "line": 12
+        },
+        {
+          "name": "N SELF.BUI",
+          "line": 62
+        },
+        {
+          "name": "N SELF.BUI",
+          "line": 69
+        },
+        {
+          "name": "N SELF.BUI",
+          "line": 71
+        },
+        {
+          "name": "= SELF.BU",
+          "line": 121
+        },
+        {
+          "name": "N VAL",
+          "line": 129
+        },
+        {
+          "name": "RAY:",
+          "line": 132
+        },
+        {
+          "name": "= SELF.BU",
+          "line": 134
+        },
+        {
+          "name": "N LL.INTTY",
+          "line": 163
+        },
+        {
+          "name": "N SELF.FP_",
+          "line": 165
+        },
+        {
+          "name": "N LL.POINT",
+          "line": 167
+        },
+        {
+          "name": "N LL.POINT",
+          "line": 169
+        },
+        {
+          "name": "N LL.POINT",
+          "line": 171
+        },
+        {
+          "name": "ETURN A TU",
+          "line": 214
+        },
+        {
+          "name": "N VALS[0]",
+          "line": 218
+        },
+        {
+          "name": "MOD)",
+          "line": 354
+        },
+        {
+          "name": "INTEGRATI",
+          "line": 401
+        },
+        {
+          "name": "OUTINE, AN",
+          "line": 420
+        }
+      ],
+      "fields": [
+        {
+          "name": "L:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ".INDEXED I",
+          "line": 52,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ".INDEXED I",
+          "line": 55,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ".INDEXED I",
+          "line": 57,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SELF.EXT_F",
+          "from_pos": ".get",
+          "to_pos": "\"sqr",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 64,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL.FUNCTIO",
+          "from_pos": "(sel",
+          "to_pos": ".mod",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 77,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN NODES[1",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 84,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN NODES[1",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 91,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL.FUNCTIO",
+          "from_pos": "(sel",
+          "to_pos": ".mod",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 103,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "% T",
+          "from_pos": "pe(e",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 109,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT(EXPR.I",
+          "from_pos": "dice",
+          "to_pos": "[0].",
+          "decimal_pos": "v",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.BUI",
+          "line": 120,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LUE",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "= SELF.BU",
+          "line": 124,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LUE",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "= SELF.BU",
+          "line": 138,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "M_DICT = {",
+          "from_pos": "#",
+          "to_pos": "ap s",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "= SELF.BU",
+          "line": 158,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "== CTYPES.",
+          "from_pos": "_int",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "= SELF.BU",
+          "line": 162,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "== CTYPES.",
+          "from_pos": "_dou",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.INTTY",
+          "line": 164,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "== CTYPES.",
+          "from_pos": "OINT",
+          "to_pos": "R(ct",
+          "decimal_pos": "p",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N SELF.FP_",
+          "line": 166,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "== CTYPES.",
+          "from_pos": "_voi",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 168,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "== CTYPES.",
+          "from_pos": "y_ob",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 170,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS(SELF,",
+          "from_pos": "unc_",
+          "to_pos": "rgs)",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 175,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN ENUMERA",
+          "from_pos": "e(fu",
+          "to_pos": "c_ar",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 194,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= SELF.FN.",
+          "from_pos": "ppen",
+          "to_pos": "_bas",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 200,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "STR(SELF.M",
+          "from_pos": "dule",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 209,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "A SINGLE D",
+          "from_pos": "uble",
+          "to_pos": "if t",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N LL.POINT",
+          "line": 213,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= LL.POINT",
+          "from_pos": "rTyp",
+          "to_pos": "(ll.",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 221,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "A WRAPPED",
+          "from_pos": "oubl",
+          "to_pos": ": Py",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 223,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LS) == 1:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 228,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RAISE N",
+          "from_pos": "tImp",
+          "to_pos": "emen",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 254,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "VAL = L",
+          "from_pos": "._pr",
+          "to_pos": "nt(e",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 256,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LJ._ADD",
+          "from_pos": "tmp_",
+          "to_pos": "ar(n",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 257,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 263,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "GER = LLVM",
+          "from_pos": "crea",
+          "to_pos": "e_mo",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 270,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "GER.RUN(LL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 273,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CHINE = \\",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 275,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN ENUMERA",
+          "from_pos": "e(fu",
+          "to_pos": "c_ar",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 295,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= SELF.FN.",
+          "from_pos": "ppen",
+          "to_pos": "_bas",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 305,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "STR(SELF.M",
+          "from_pos": "dule",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 324,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGUMENT AR",
+          "from_pos": "ay e",
+          "to_pos": "emen",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 333,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS(ARGS)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N VALS[0]",
+          "line": 348,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RE EVALUAT",
+          "from_pos": "d us",
+          "to_pos": "ng d",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "MOD)",
+          "line": 363,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGUMENT MA",
+          "from_pos": "h fu",
+          "to_pos": "ctio",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "MOD)",
+          "line": 364,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "PRECISION",
+          "from_pos": "cala",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "MOD)",
+          "line": 373,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OR (REPLAC",
+          "from_pos": "ment",
+          "to_pos": ", Ex",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "MOD)",
+          "line": 374,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "# EVALUATE",
+          "from_pos": "usin",
+          "to_pos": "JIT",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "MOD)",
+          "line": 397,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "0.0, 2.0)[",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "INTEGRATI",
+          "line": 411,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "USING CTYP",
+          "from_pos": "s va",
+          "to_pos": "iabl",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 422,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LUE FROM T",
+          "from_pos": "e cs",
+          "to_pos": "mod",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 425,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RE GIVEN T",
+          "from_pos": "cse",
+          "to_pos": "the",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 427,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "+ Y*Y",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 434,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "[]",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 449,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ARGS:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 451,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTYPE",
+          "from_pos": ".POI",
+          "to_pos": "TER(",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 461,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTYPE",
+          "from_pos": ".c_v",
+          "to_pos": "id_p",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 462,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTYPE",
+          "from_pos": ".c_i",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 463,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTYPE",
+          "from_pos": ".POI",
+          "to_pos": "TER(",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 464,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "]",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 465,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "HOLDS THE",
+          "from_pos": "IL w",
+          "to_pos": "ich",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 479,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONVERSION",
+          "from_pos": "from",
+          "to_pos": "doub",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 483,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= CTYPES.P",
+          "from_pos": "FUNC",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 485,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= CTYPES.C",
+          "from_pos": "UNCT",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OUTINE, AN",
+          "line": 487,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "_NAME = ''",
+          "line": 159
+        },
+        {
+          "field": "_NAME = DE",
+          "line": 186
+        },
+        {
+          "field": "AGE ( HTTP",
+          "line": 415
+        },
+        {
+          "field": "_TYPE IN (",
+          "line": 454
+        },
+        {
+          "field": "_TYPE == '",
+          "line": 459
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "INGLETON I",
+          "line": 11,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "K UP PARAM",
+          "line": 53,
+          "keyword": "s"
+        },
+        {
+          "type": "OMIT",
+          "field": "W(SELF, EX",
+          "line": 59,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF._PRINT",
+          "line": 60,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T FN:",
+          "line": 65,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.EXT_FN",
+          "line": 68,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "[0]",
+          "line": 83,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.BUILDE",
+          "line": 85,
+          "keyword": ")"
+        },
+        {
+          "type": "SELECT",
+          "field": "[0]",
+          "line": 90,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.BUILDE",
+          "line": 92,
+          "keyword": ")"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.BUILDE",
+          "line": 123,
+          "keyword": "y_ptr)"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.BUILDE",
+          "line": 137,
+          "keyword": "y_ptr)"
+        },
+        {
+          "type": "OMIT",
+          "field": "R GENERATE",
+          "line": 145,
+          "keyword": "e unique"
+        },
+        {
+          "type": "SELECT",
+          "field": "IGNATURE.R",
+          "line": 217,
+          "keyword": "pes.c_double:"
+        },
+        {
+          "type": "SELECT",
+          "field": "INSTANCE(A",
+          "line": 296,
+          "keyword": ":"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.PARAM_",
+          "line": 297,
+          "keyword": "f.fn.args[i], i)"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.FN.ARG",
+          "line": 298,
+          "keyword": "r(a)"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF.PARAM_",
+          "line": 300,
+          "keyword": "f.fn.args[self.signature.input_arg],"
+        },
+        {
+          "type": "SELECT",
+          "field": "IGNATURE.R",
+          "line": 313,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "UTPUT_ARRA",
+          "line": 318,
+          "keyword": "r.gep(output_fp_ptr, [index])"
+        },
+        {
+          "type": "OMIT",
+          "field": "F SYMBOL",
+          "line": 370,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TO THE GE",
+          "line": 371,
+          "keyword": "on.  Usually the free symbols in"
+        },
+        {
+          "type": "OMIT",
+          "field": "N TO COMPI",
+          "line": 375,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "SIGNATURE",
+          "line": 418,
+          "keyword": "y integration callbacks."
+        },
+        {
+          "type": "SELECT",
+          "field": "CIPY.INTEG",
+          "line": 419,
+          "keyword": "function to be passed to the"
+        },
+        {
+          "type": "OMIT",
+          "field": "UBLE WHEN",
+          "line": 481,
+          "keyword": "oat rather than using ctypes.py_object"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 59,
+      "key_field_names": [
+        "_NAME = ''",
+        "_NAME = DE",
+        "AGE ( HTTP",
+        "_TYPE IN (",
+        "_TYPE == '"
+      ]
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TREE": {
+      "member": "TREE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 27,
+          "file_name": "NOT SUBTR",
+          "file_type": "E",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "ASSUMPTIO",
+          "file_type": "N",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 55,
+          "file_name": "D:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FANCYSETS": {
+      "member": "FANCYSETS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 328,
+          "file_name": "YOU WANT",
+          "file_type": "T",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "ETC. (",
+          "keyed": false,
+          "keywords": "Please check whether the"
+        },
+        {
+          "line": 1065,
+          "file_name": "THETA.IS_",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_CSE_DIFF": {
+      "member": "_CSE_DIFF",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 69,
+          "file_name": "ORWARD_JAC",
+          "file_type": "O",
+          "designation": "B",
+          "mode": "",
+          "format": "_",
+          "device": "D_EXPR",
+          "keyed": false,
+          "keywords": ", wrt):"
+        },
+        {
+          "line": 113,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "ASE):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 116,
+          "file_name": "NOT (REDU",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "X",
+          "device": "EDUCED",
+          "keyed": false,
+          "keywords": "_expr[0].shape[1] == 1):"
+        },
+        {
+          "line": 119,
+          "file_name": "NOT ITERA",
+          "file_type": "B",
+          "designation": "L",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 125,
+          "file_name": "NOT (WRT.",
+          "file_type": "S",
+          "designation": "H",
+          "mode": "",
+          "format": "[",
+          "device": "== 1):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 130,
+          "file_name": "REPLACEME",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 146,
+          "file_name": "NOT REPLA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 188,
+          "file_name": "ORWARD_JAC",
+          "file_type": "O",
+          "designation": "B",
+          "mode": "",
+          "format": "_",
+          "device": "T):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 232,
+          "file_name": "ORWARD_JAC",
+          "file_type": "O",
+          "designation": "B",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 277,
+          "file_name": "REPLACEME",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 284,
+          "file_name": "NOT REPLA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE FOR DIFFERE",
+          "ds_type": "IA",
+          "from_pos": "tion us",
+          "to_length": "ing CSE",
+          "decimal": ".",
+          "data_type": "\"\"",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CSE_MAIN": {
+      "member": "CSE_MAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 45,
+          "file_name": "K2 IS IN",
+          "file_type": "V",
+          "designation": "1",
+          "mode": "",
+          "format": "F",
+          "device": "ITEMS",
+          "keyed": false,
+          "keywords": "in the"
+        },
+        {
+          "line": 132,
+          "file_name": "NOT R:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 602,
+          "file_name": "OPT_SUBS",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 808,
+          "file_name": "NOT LIST:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 813,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 817,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 832,
+          "file_name": "OPTIMIZAT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 840,
+          "file_name": "SYMBOLS I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 875,
+          "file_name": "POSTPROCE",
+          "file_type": "S",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 927,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 931,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 934,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 490,
+          "name": "DS = ORDEREDSET",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 554,
+          "name": "GES = [(S, S.AR",
+          "ds_type": "[0",
+          "from_pos": "]) for",
+          "to_length": "s in co",
+          "decimal": "l",
+          "data_type": "LA",
+          "keywords": "sible_subexp",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 9
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CSE_OPTS": {
+      "member": "CSE_OPTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 28,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "DS = [A FOR A I",
+          "ds_type": "E.",
+          "from_pos": "atoms(A",
+          "to_length": "dd) if",
+          "decimal": "a",
+          "data_type": ".C",
+          "keywords": "uld_extract_minus_sign()]",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EPATHTOOLS": {
+      "member": "EPATHTOOLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 288,
+          "file_name": "``FUNC``",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "RIEVES",
+          "keyed": false,
+          "keywords": "elements selected by"
+        },
+        {
+          "line": 347,
+          "file_name": "EXPR IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 349,
+          "file_name": "FUNC IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
