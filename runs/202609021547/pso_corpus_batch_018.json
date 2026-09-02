@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 18,
+  "total_batches": 477,
+  "members_in_batch": [
+    "ENTRY_POINTS",
+    "105-4BC220FCBF235939",
+    "FRAMEWORK-73B8966A3C579AB0",
+    "MAIN-6260D066CF2CD7B1",
+    "_APP-FE4220F7110F9C0D",
+    "INDEX-A45704F8DBAE891C",
+    "POLYFILLS-C67A75D1B6F99DC8",
+    "RUST",
+    "SERVER",
+    "EMBEDDINGS_QUEUE"
+  ],
+  "pso_corpus": {
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "105-4BC220FCBF235939": {
+      "member": "105-4BC220FCBF235939",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "ED BY APPL",
+          "line": 27
+        }
+      ],
+      "fields": [
+        {
+          "name": "N OBJECT I",
+          "from_pos": "a B",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 2,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IS A TOOL",
+          "from_pos": "or w",
+          "to_pos": "itin",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 14,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IS A TOOL",
+          "from_pos": "or w",
+          "to_pos": "itin",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 15,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTIES OR C",
+          "from_pos": "NDIT",
+          "to_pos": "ONS",
+          "decimal_pos": "F",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ED BY APPL",
+          "line": 29,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ED BY APPL",
+          "line": 41,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "SS ABOUKHA",
+          "line": 4,
+          "keyword": "/feross.org>"
+        },
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 43,
+          "keyword": "MIT license found in the"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 5,
+      "key_field_names": []
+    },
+    "FRAMEWORK-73B8966A3C579AB0": {
+      "member": "FRAMEWORK-73B8966A3C579AB0",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 5,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 13,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 21,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 29,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 7,
+          "keyword": "MIT license found in the"
+        },
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 15,
+          "keyword": "MIT license found in the"
+        },
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 23,
+          "keyword": "MIT license found in the"
+        },
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 31,
+          "keyword": "MIT license found in the"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 4,
+      "key_field_names": []
+    },
+    "MAIN-6260D066CF2CD7B1": {
+      "member": "MAIN-6260D066CF2CD7B1",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "_APP-FE4220F7110F9C0D": {
+      "member": "_APP-FE4220F7110F9C0D",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "FACEBOOK,",
+          "from_pos": "nc.",
+          "to_pos": "nd i",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 4,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "DE IS LICE",
+          "line": 6,
+          "keyword": "MIT license found in the"
+        },
+        {
+          "type": "OMIT",
+          "field": "N\"==TYPEOF",
+          "line": 8,
+          "keyword": "l.for,r=n?Symbol.for(\"react.element\"):60103,o=n?Symbol.for(\"react.portal\"):60106,i=n?Symbol.for(\"react.fragment\"):60107,a=n?Symbol.for(\"react.strict_mode\"):60108,s=n?Symbol.for(\"react.profiler\"):60114,c=n?Symbol.for(\"react.provider\"):60109,u=n?Symbol.for(\"react.context\"):60110,l=n?Symbol.for(\"react.async_mode\"):60111,f=n?Symbol.for(\"react.concurrent_mode\"):60111,p=n?Symbol.for(\"react.forward_ref\"):60112,g=n?Symbol.for(\"react.suspense\"):60113,d=n?Symbol.for(\"react.suspense_list\"):60120,h=n?Symbol.for(\"react.memo\"):60115,y=n?Symbol.for(\"react.lazy\"):60116,v=n?Symbol.for(\"react.block\"):60121,m=n?Symbol.for(\"react.fundamental\"):60117,b=n?Symbol.for(\"react.responder\"):60118,O=n?Symbol.for(\"react.scope\"):60119;function k(e){if(\"object\"==typeof e&&null!==e){var t=e.$$typeof;switch(t){case r:switch(e=e.type){case l:case f:case i:case s:case a:case g:return e;default:switch(e=e&&e.$$typeof){case u:case p:case y:case h:case c:return e;default:return t}}case o:return t}}}function S(e){return k(e)===f}t.AsyncMode=l,t.ConcurrentMode=f,t.ContextConsumer=u,t.ContextProvider=c,t.Element=r,t.ForwardRef=p,t.Fragment=i,t.Lazy=y,t.Memo=h,t.Portal=o,t.Profiler=s,t.StrictMode=a,t.Suspense=g,t.isAsyncMode=function(e){return S(e)||k(e)===l},t.isConcurrentMode=S,t.isContextConsumer=function(e){return k(e)===u},t.isContextProvider=function(e){return k(e)===c},t.isElement=function(e){return\"object\"==typeof e&&null!==e&&e.$$typeof===r},t.isForwardRef=function(e){return k(e)===p},t.isFragment=function(e){return k(e)===i},t.isLazy=function(e){return k(e)===y},t.isMemo=function(e){return k(e)===h},t.isPortal=function(e){return k(e)===o},t.isProfiler=function(e){return k(e)===s},t.isStrictMode=function(e){return k(e)===a},t.isSuspense=function(e){return k(e)===g},t.isValidElementType=function(e){return\"string\"==typeof e||\"function\"==typeof e||e===i||e===f||e===s||e===a||e===g||e===d||\"object\"==typeof e&&null!==e&&(e.$$typeof===y||e.$$typeof===h||e.$$typeof===c||e.$$typeof===u||e.$$typeof===p||e.$$typeof===m||e.$$typeof===b||e.$$typeof===O||e.$$typeof===v)},t.typeOf=k},59864:function(e,t,n){\"use strict\";e.exports=n(69921)},71739:function(e){e.exports={area:!0,base:!0,br:!0,col:!0,embed:!0,hr:!0,img:!0,input:!0,link:!0,meta:!0,param:!0,source:!0,track:!0,wbr:!0}},30907:function(e,t,n){\"use strict\";function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=Array(t);n<t;n++)r[n]=e[n];return r}n.d(t,{Z:function(){return r}})},83878:function(e,t,n){\"use strict\";function r(e){if(Array.isArray(e))return e}n.d(t,{Z:function(){return r}})},15671:function(e,t,n){\"use strict\";function r(e,t){if(!(e instanceof t))throw TypeError(\"Cannot call a class as a function\")}n.d(t,{Z:function(){return r}})},43144:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return i}});var r=n(83997);function o(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,\"value\"in o&&(o.writable=!0),Object.defineProperty(e,(0,r.Z)(o.key),o)}}function i(e,t,n){return t&&o(e.prototype,t),n&&o(e,n),Object.defineProperty(e,\"prototype\",{writable:!1}),e}},4942:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return o}});var r=n(83997);function o(e,t,n){return(t=(0,r.Z)(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}},87462:function(e,t,n){\"use strict\";function r(){return(r=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}n.d(t,{Z:function(){return r}})},59199:function(e,t,n){\"use strict\";function r(e){if(\"undefined\"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e[\"@@iterator\"])return Array.from(e)}n.d(t,{Z:function(){return r}})},25267:function(e,t,n){\"use strict\";function r(){throw TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}n.d(t,{Z:function(){return r}})},91:function(e,t,n){\"use strict\";function r(e,t){if(null==e)return{};var n,r,o=function(e,t){if(null==e)return{};var n,r,o={},i=Object.keys(e);for(r=0;r<i.length;r++)n=i[r],t.indexOf(n)>=0||(o[n]=e[n]);return o}(e,t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(e);for(r=0;r<i.length;r++)n=i[r],!(t.indexOf(n)>=0)&&Object.prototype.propertyIsEnumerable.call(e,n)&&(o[n]=e[n])}return o}n.d(t,{Z:function(){return r}})},97685:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return a}});var r=n(83878),o=n(40181),i=n(25267);function a(e,t){return(0,r.Z)(e)||function(e,t){var n=null==e?null:\"undefined\"!=typeof Symbol&&e[Symbol.iterator]||e[\"@@iterator\"];if(null!=n){var r,o,i,a,s=[],c=!0,u=!1;try{if(i=(n=n.call(e)).next,0===t){if(Object(n)!==n)return;c=!1}else for(;!(c=(r=i.call(n)).done)&&(s.push(r.value),s.length!==t);c=!0);}catch(e){u=!0,o=e}finally{try{if(!c&&null!=n.return&&(a=n.return(),Object(a)!==a))return}finally{if(u)throw o}}return s}}(e,t)||(0,o.Z)(e,t)||(0,i.Z)()}},74902:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return a}});var r=n(30907),o=n(59199),i=n(40181);function a(e){return function(e){if(Array.isArray(e))return(0,r.Z)(e)}(e)||(0,o.Z)(e)||(0,i.Z)(e)||function(){throw TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}()}},83997:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return o}});var r=n(71002);function o(e){var t=function(e,t){if(\"object\"!==(0,r.Z)(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var o=n.call(e,t||\"default\");if(\"object\"!==(0,r.Z)(o))return o;throw TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"===(0,r.Z)(t)?t:String(t)}},71002:function(e,t,n){\"use strict\";function r(e){return(r=\"function\"==typeof Symbol&&\"symbol\"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&\"function\"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?\"symbol\":typeof e})(e)}n.d(t,{Z:function(){return r}})},40181:function(e,t,n){\"use strict\";n.d(t,{Z:function(){return o}});var r=n(30907);function o(e,t){if(e){if(\"string\"==typeof e)return(0,r.Z)(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);if(\"Object\"===n&&e.constructor&&(n=e.constructor.name),\"Map\"===n||\"Set\"===n)return Array.from(e);if(\"Arguments\"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return(0,r.Z)(e,t)}}},67421:function(e,t,n){\"use strict\";n.d(t,{a3:function(){return w},$G:function(){return x}});var r,o=n(67294);function i(){if(console&&console.warn){for(var e,t=arguments.length,n=Array(t),r=0;r<t;r++)n[r]=arguments[r];\"string\"==typeof n[0]&&(n[0]=\"react-i18next:: \".concat(n[0])),(e=console).warn.apply(e,n)}}n(71739),Object.create(null);var a={};function s(){for(var e=arguments.length,t=Array(e),n=0;n<e;n++)t[n]=arguments[n];\"string\"==typeof t[0]&&a[t[0]]||(\"string\"==typeof t[0]&&(a[t[0]]=new Date),i.apply(void 0,t))}function c(e,t,n){e.loadNamespaces(t,function(){e.isInitialized?n():e.on(\"initialized\",function t(){setTimeout(function(){e.off(\"initialized\",t)},0),n()})})}var u=n(4942),l=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34|nbsp|#160|copy|#169|reg|#174|hellip|#8230|#x2F|#47);/g,f={\"&amp;\":\"&\",\"&#38;\":\"&\",\"&lt;\":\"<\",\"&#60;\":\"<\",\"&gt;\":\">\",\"&#62;\":\">\",\"&apos;\":\"'\",\"&#39;\":\"'\",\"&quot;\":'\"',\"&#34;\":'\"',\"&nbsp;\":\" \",\"&#160;\":\" \",\"&copy;\":\"\\xa9\",\"&#169;\":\"\\xa9\",\"&reg;\":\"\\xae\",\"&#174;\":\"\\xae\",\"&hellip;\":\"\u2026\",\"&#8230;\":\"\u2026\",\"&#x2F;\":\"/\",\"&#47;\":\"/\"},p=function(e){return f[e]},g={bindI18n:\"languageChanged\",bindI18nStore:\"\",transEmptyNodeValue:\"\",transSupportBasicHtmlNodes:!0,transWrapTextNodes:\"\",transKeepBasicHtmlNodesFor:[\"br\",\"strong\",\"i\",\"p\"],useSuspense:!0,unescape:function(e){return e.replace(l,p)}},d=n(15671),h=n(43144),y=(0,o.createContext)(),v=function(){function e(){(0,d.Z)(this,e),this.usedNamespaces={}}return(0,h.Z)(e,[{key:\"addUsedNamespaces\",value:function(e){var t=this;e.forEach(function(e){t.usedNamespaces[e]||(t.usedNamespaces[e]=!0)})}},{key:\"getUsedNamespaces\",value:function(){return Object.keys(this.usedNamespaces)}}]),e}(),m=n(97685),b=n(71002);function O(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function k(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?O(Object(n),!0).forEach(function(t){(0,u.Z)(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):O(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}var S=function(e,t){var n=(0,o.useRef)();return(0,o.useEffect)(function(){n.current=t?n.current:e},[e,t]),n.current};function x(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=t.i18n,i=(0,o.useContext)(y)||{},a=i.i18n,u=i.defaultNS,l=n||a||r;if(l&&!l.reportNamespaces&&(l.reportNamespaces=new v),!l){s(\"You will need to pass in an i18next instance by using initReactI18next\");var f=function(e,t){return\"string\"==typeof t?t:t&&\"object\"===(0,b.Z)(t)&&\"string\"==typeof t.defaultValue?t.defaultValue:Array.isArray(e)?e[e.length-1]:e},p=[f,{},!1];return p.t=f,p.i18n={},p.ready=!1,p}l.options.react&&void 0!==l.options.react.wait&&s(\"It seems you are still using the old wait option, you may migrate to the new useSuspense behaviour.\");var d=k(k(k({},g),l.options.react),t),h=d.useSuspense,O=d.keyPrefix,x=e||u||l.options&&l.options.defaultNS;x=\"string\"==typeof x?[x]:x||[\"translation\"],l.reportNamespaces.addUsedNamespaces&&l.reportNamespaces.addUsedNamespaces(x);var w=(l.isInitialized||l.initializedStoreOnce)&&x.every(function(e){return function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};return t.languages&&t.languages.length?void 0!==t.options.ignoreJSONStructure?t.hasLoadedNamespace(e,{precheck:function(t,r){if(n.bindI18n&&n.bindI18n.indexOf(\"languageChanging\")>-1&&t.services.backendConnector.backend&&t.isLanguageChangingTo&&!r(t.isLanguageChangingTo,e))return!1}}):function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},r=t.languages[0],o=!!t.options&&t.options.fallbackLng,i=t.languages[t.languages.length-1];if(\"cimode\"===r.toLowerCase())return!0;var a=function(e,n){var r=t.services.backendConnector.state[\"\".concat(e,\"|\").concat(n)];return -1===r||2===r};return(!(n.bindI18n&&n.bindI18n.indexOf(\"languageChanging\")>-1)||!t.services.backendConnector.backend||!t.isLanguageChangingTo||!!a(t.isLanguageChangingTo,e))&&!!(t.hasResourceBundle(r,e)||!t.services.backendConnector.backend||t.options.resources&&!t.options.partialBundledLanguages||a(r,e)&&(!o||a(i,e)))}(e,t,n):(s(\"i18n.languages were undefined or empty\",t.languages),!0)}(e,l,d)});function j(){return l.getFixedT(null,\"fallback\"===d.nsMode?x:x[0],O)}var P=(0,o.useState)(j),L=(0,m.Z)(P,2),N=L[0],R=L[1],C=x.join(),E=S(C),D=(0,o.useRef)(!0);(0,o.useEffect)(function(){var e=d.bindI18n,t=d.bindI18nStore;function n(){D.current&&R(j)}return D.current=!0,w||h||c(l,x,function(){D.current&&R(j)}),w&&E&&E!==C&&D.current&&R(j),e&&l&&l.on(e,n),t&&l&&l.store.on(t,n),function(){D.current=!1,e&&l&&e.split(\" \").forEach(function(e){return l.off(e,n)}),t&&l&&t.split(\" \").forEach(function(e){return l.store.off(e,n)})}},[l,C]);var I=(0,o.useRef)(!0);(0,o.useEffect)(function(){D.current&&!I.current&&R(j),I.current=!1},[l,O]);var Z=[N,l,w];if(Z.t=N,Z.i18n=l,Z.ready=w,w||!w&&!h)return Z;throw new Promise(function(e){c(l,x,function(){e()})})}function w(e){var t=e.i18n,n=e.defaultNS,r=e.children,i=(0,o.useMemo)(function(){return{i18n:t,defaultNS:n}},[t,n]);return(0,o.createElement)(y.Provider,{value:i},r)}}},function(e){var t=function(t){return e(e.s=t)};e.O(0,[774,179],function(){return t(6840),t(96885)}),_N_E=e.O()}]);"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 1,
+      "key_field_names": []
+    },
+    "INDEX-A45704F8DBAE891C": {
+      "member": "INDEX-A45704F8DBAE891C",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "POLYFILLS-C67A75D1B6F99DC8": {
+      "member": "POLYFILLS-C67A75D1B6F99DC8",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "ME!==T})},",
+          "from_pos": "u=yn",
+          "to_pos": "star",
+          "decimal_pos": ",",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 3,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 1,
+      "key_field_names": []
+    },
+    "RUST": {
+      "member": "RUST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 5,
+          "name": "S,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 10
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SERVER": {
+      "member": "SERVER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 52,
+          "name": "D_SYSDBSERVICER",
+          "ds_type": "O_",
+          "from_pos": "server,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EMBEDDINGS_QUEUE": {
+      "member": "EMBEDDINGS_QUEUE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 11
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
