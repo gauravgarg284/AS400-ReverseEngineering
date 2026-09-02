@@ -1,0 +1,621 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 374,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CUTS",
+    "CYCLES",
+    "DISTANCE_MEASURES",
+    "DOMINATING",
+    "UNARY",
+    "ASTAR",
+    "GENERIC",
+    "WEIGHTED",
+    "THRESHOLD",
+    "COREVIEWS"
+  ],
+  "pso_corpus": {
+    "CUTS": {
+      "member": "CUTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 26,
+          "name": "GE_EXPANSION(G:",
+          "ds_type": "RA",
+          "from_pos": "ph[_Nod",
+          "to_length": "e], S:",
+          "decimal": "I",
+          "data_type": "TE",
+          "keywords": "able[_Node], T: Iterable[_Node] | Non",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CYCLES": {
+      "member": "CYCLES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "IND_CYCLE\"",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DISTANCE_MEASURES": {
+      "member": "DISTANCE_MEASURES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 36,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 59,
+          "file_name": "LOAT | DIC",
+          "file_type": "T",
+          "designation": "[",
+          "mode": "",
+          "format": "D",
+          "device": "OVERLO",
+          "keyed": false,
+          "keywords": "ad on the nodes: float if bo"
+        },
+        {
+          "line": 61,
+          "file_name": "FECTIVE_GR",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "E",
+          "device": ", WEIG",
+          "keyed": false,
+          "keywords": "ht: str | None = None, inver"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 11,
+          "name": "IAMETER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOMINATING": {
+      "member": "DOMINATING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UNARY": {
+      "member": "UNARY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ASTAR": {
+      "member": "ASTAR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 28,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GENERIC": {
+      "member": "GENERIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 85,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 133,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 41,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 63,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 96,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 107,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 118,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WEIGHTED": {
+      "member": "WEIGHTED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "IND_NEGATI",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 48,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 112,
+          "file_name": "LOAT: ...",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 9,
+          "name": "IJKSTRA_PATH\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "IJKSTRA_PATH_LE",
+          "ds_type": "TH",
+          "from_pos": "\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "IJKSTRA_PREDECE",
+          "ds_type": "OR",
+          "from_pos": "_and_di",
+          "to_length": "stance\"",
+          "decimal": ",",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 56,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 72,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 116,
+          "name": "ICT[_NODE, LIST",
+          "ds_type": "NO",
+          "from_pos": "de]]: .",
+          "to_length": "..",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "ICT[_NODE, FLOA",
+          "ds_type": ":",
+          "from_pos": "...",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "THRESHOLD": {
+      "member": "THRESHOLD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COREVIEWS": {
+      "member": "COREVIEWS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "ILTERATLAS",
+          "file_type": "\"",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 18,
+          "file_name": "ILTERADJAC",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 19,
+          "file_name": "ILTERMULTI",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 20,
+          "file_name": "ILTERMULTI",
+          "file_type": "A",
+          "designation": "D",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 61,
+          "name": "GE_OK: CALLABLE",
+          "ds_type": "_T",
+          "from_pos": ", _T],",
+          "to_length": "bool]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
