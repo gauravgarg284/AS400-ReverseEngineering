@@ -1,0 +1,890 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 435,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_ROC_CURVE_DISPLAY",
+    "_BICLUSTER",
+    "_EXPECTED_MUTUAL_INFO_FAST",
+    "TEST_COMMON",
+    "TEST_BAYESIAN_MIXTURE",
+    "TEST_GAUSSIAN_MIXTURE",
+    "TEST_MIXTURE",
+    "__INIT__",
+    "_CLASSIFICATION_THRESHOLD",
+    "_PLOT"
+  ],
+  "pso_corpus": {
+    "TEST_ROC_CURVE_DISPLAY": {
+      "member": "TEST_ROC_CURVE_DISPLAY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 78,
+          "file_name": "WITH_STRI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 82,
+          "file_name": "WITH_SAMP",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 94,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 192,
+          "file_name": "ERR_MSG:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 311,
+          "file_name": "CURVE_KWA",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 391,
+          "file_name": "WITH_STRI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 395,
+          "file_name": "WITH_SAMP",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 446,
+          "file_name": "WITH_SAMP",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 472,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "ISINST",
+          "keyed": false,
+          "keywords": "ance(name, list):"
+        },
+        {
+          "line": 534,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "ISINST",
+          "keyed": false,
+          "keywords": "ance(name, list):"
+        },
+        {
+          "line": 611,
+          "file_name": "PLOT_CHAN",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 619,
+          "file_name": "PLOT_CHAN",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "V",
+          "device": "S NONE",
+          "keyed": false,
+          "keywords": ":"
+        },
+        {
+          "line": 667,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 695,
+          "file_name": "PLOT_CHAN",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "V",
+          "device": "S NOT",
+          "keyed": false,
+          "keywords": "None:"
+        },
+        {
+          "line": 746,
+          "file_name": "CURVE_KWA",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 757,
+          "file_name": "PLOT_CHAN",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "V",
+          "device": "S NOT",
+          "keyed": false,
+          "keywords": "None:"
+        },
+        {
+          "line": 781,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 787,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 829,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 880,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 907,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 977,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 987,
+          "file_name": "DESPINE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 846,
+          "name": "X_POSITIVE = NP",
+          "ds_type": "LA",
+          "from_pos": "tnonzer",
+          "to_length": "o(y ==",
+          "decimal": "1",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 847,
+          "name": "X_NEGATIVE = NP",
+          "ds_type": "LA",
+          "from_pos": "tnonzer",
+          "to_length": "o(y ==",
+          "decimal": "0",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 848,
+          "name": "X_SELECTED = NP",
+          "ds_type": "ST",
+          "from_pos": "ack([id",
+          "to_length": "x_negat",
+          "decimal": "i",
+          "data_type": "VE",
+          "keywords": "idx_positive[:25]])",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 22
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_BICLUSTER": {
+      "member": "_BICLUSTER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 108,
+          "file_name": "SIMILARIT",
+          "file_type": "Y",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 52,
+          "name": "ATE_PARAMS(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_EXPECTED_MUTUAL_INFO_FAST": {
+      "member": "_EXPECTED_MUTUAL_INFO_FAST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 32,
+          "file_name": "A.SIZE ==",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_COMMON": {
+      "member": "TEST_COMMON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 49,
+          "file_name": "OWLKES_MAL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "S",
+          "device": "CORE,",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 75,
+          "file_name": "OWLKES_MAL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "OWLKES_MAL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 145,
+          "file_name": "METRIC_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 177,
+          "file_name": "METRIC_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 205,
+          "file_name": "METRIC_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 231,
+          "file_name": "NAME IN S",
+          "file_type": "U",
+          "designation": "P",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "JUSTED_MUTUAL_I",
+          "ds_type": "O_",
+          "from_pos": "score,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "JUSTED_RAND_SCO",
+          "ds_type": ",",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 56,
+          "name": "AVIES_BOULDIN_S",
+          "ds_type": "RE",
+          "from_pos": "\": davi",
+          "to_length": "es_boul",
+          "decimal": "d",
+          "data_type": "IN",
+          "keywords": "score,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 275,
+          "name": "S=_GET_NAMESPAC",
+          "ds_type": "DE",
+          "from_pos": "vice_dt",
+          "to_length": "ype_ids",
+          "decimal": ",",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_BAYESIAN_MIXTURE": {
+      "member": "TEST_BAYESIAN_MIXTURE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_GAUSSIAN_MIXTURE": {
+      "member": "TEST_GAUSSIAN_MIXTURE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 59,
+          "file_name": "COVARIANC",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 66,
+          "file_name": "COVARIANC",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 73,
+          "file_name": "COVARIANC",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 80,
+          "file_name": "COVARIANC",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1098,
+          "file_name": "COVAR_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1326,
+          "file_name": "THE INITI",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "MBER O",
+          "keyed": false,
+          "keywords": "f iterations will increase."
+        },
+        {
+          "line": 1510,
+          "file_name": "USE_GMM_A",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1491,
+          "name": "S=_GET_NAMESPAC",
+          "ds_type": "DE",
+          "from_pos": "vice_dt",
+          "to_length": "ype_ids",
+          "decimal": ",",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1622,
+          "name": "S=_GET_NAMESPAC",
+          "ds_type": "DE",
+          "from_pos": "vice_dt",
+          "to_length": "ype_ids",
+          "decimal": ",",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 14
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_MIXTURE": {
+      "member": "TEST_MIXTURE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 24,
+          "file_name": "OLD,",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 61,
+          "file_name": "IXEDTHRESH",
+          "file_type": "O",
+          "designation": "L",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 99,
+          "file_name": "NAME IN {",
+          "file_type": "\"",
+          "designation": "H",
+          "mode": "",
+          "format": "I",
+          "device": "GRANDO",
+          "keyed": false,
+          "keywords": "mSearchCV\"}:"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_CLASSIFICATION_THRESHOLD": {
+      "member": "_CLASSIFICATION_THRESHOLD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 13,
+          "file_name": "IT_CONTEXT",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 402,
+          "file_name": "IT_AND_SCO",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 458,
+          "file_name": "TRAIN_IDX",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_PLOT": {
+      "member": "_PLOT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
