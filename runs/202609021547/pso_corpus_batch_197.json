@@ -1,0 +1,558 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 197,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_DOCSTRING",
+    "_PATH",
+    "_PYLAB_HELPERS",
+    "_VERSION",
+    "ARTIST",
+    "_BASE",
+    "AXIS",
+    "BACKEND_GTK3CAIRO",
+    "BACKEND_GTK4CAIRO",
+    "NBAGG_MPL"
+  ],
+  "pso_corpus": {
+    "_DOCSTRING": {
+      "member": "_DOCSTRING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_PATH": {
+      "member": "_PATH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "FINE_TRANS",
+          "file_type": "F",
+          "designation": "O",
+          "mode": "",
+          "format": "P",
+          "device": ": NP.N",
+          "keyed": false,
+          "keywords": "darray) -> np.ndarray: ..."
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_PYLAB_HELPERS": {
+      "member": "_PYLAB_HELPERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 12
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_VERSION": {
+      "member": "_VERSION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ARTIST": {
+      "member": "ARTIST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 3,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 87,
+          "file_name": "INALIZE_RA",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "Z",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 103,
+          "file_name": "SELF.AXES",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1481,
+          "file_name": "OR_LAYOUT_",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "TO US",
+          "keyed": false,
+          "keywords": "e the kwarg but skips it"
+        },
+        {
+          "line": 1820,
+          "file_name": "PROPERTY",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1890,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1895,
+          "file_name": "NOT OBJS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1900,
+          "file_name": "NOT KWARG",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1907,
+          "file_name": "LEN(ARGS)",
+          "file_type": "",
+          "designation": "%",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 181,
+          "name": "ITION TO THE FU",
+          "ds_type": "P",
+          "from_pos": "roperty",
+          "to_length": "names,",
+          "decimal": "",
+          "data_type": "AL",
+          "keywords": "ases are also supported, e.g.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1936,
+          "name": "EFER THIS TO TH",
+          "ds_type": "EN",
+          "from_pos": "d of th",
+          "to_length": "em modu",
+          "decimal": "l",
+          "data_type": "E,",
+          "keywords": "because it needs ArtistInspector",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_BASE": {
+      "member": "_BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 40,
+          "file_name": "TER ::",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 152,
+          "file_name": "FMT NOT I",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 195,
+          "file_name": "LINESTYLE",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 197,
+          "file_name": "LINESTYLE",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 199,
+          "file_name": "MARKER IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3810,
+          "file_name": "XAXIS_INV",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4078,
+          "file_name": "YAXIS_INV",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 5079,
+          "name": "RAW_RASTERIZED(",
+          "ds_type": "GU",
+          "from_pos": "re, art",
+          "to_length": "ists, r",
+          "decimal": "e",
+          "data_type": "ND",
+          "keywords": "rer):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AXIS": {
+      "member": "AXIS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 91,
+          "file_name": "ORMATTER.S",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 102,
+          "file_name": "FSETTEXTPA",
+          "file_type": "D",
+          "designation": ":",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 109,
+          "file_name": "FSETTEXT:",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BACKEND_GTK3CAIRO": {
+      "member": "BACKEND_GTK3CAIRO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BACKEND_GTK4CAIRO": {
+      "member": "BACKEND_GTK4CAIRO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NBAGG_MPL": {
+      "member": "NBAGG_MPL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 66,
+          "file_name": "(!FIG.CEL",
+          "file_type": "L",
+          "designation": "_",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 172,
+          "file_name": "(BUTTONGR",
+          "file_type": "O",
+          "designation": "U",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 204,
+          "file_name": "(EVENT.TA",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "!",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 222,
+          "file_name": "(IPYTHON.",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 232,
+          "file_name": "(EVENT.SH",
+          "file_type": "I",
+          "designation": "F",
+          "mode": "IF",
+          "format": "Y",
+          "device": "{",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
