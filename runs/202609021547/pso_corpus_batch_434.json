@@ -1,0 +1,1030 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 434,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_BASE.PYX",
+    "_DISPATCHER",
+    "_PAIRWISE_FAST",
+    "__INIT__",
+    "CONFUSION_MATRIX",
+    "DET_CURVE",
+    "PRECISION_RECALL_CURVE",
+    "REGRESSION",
+    "ROC_CURVE",
+    "TEST_PRECISION_RECALL_DISPLAY"
+  ],
+  "pso_corpus": {
+    "_BASE.PYX": {
+      "member": "_BASE.PYX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "LOAT64_T[:",
+          "file_type": ":",
+          "designation": "1",
+          "mode": "",
+          "format": "S",
+          "device": "ENSE(",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "LOAT64_T[:",
+          "file_type": ":",
+          "designation": "1",
+          "mode": "",
+          "format": "S",
+          "device": "ENSE(",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 87,
+          "file_name": "LOAT64_T[:",
+          "file_type": ":",
+          "designation": "1",
+          "mode": "",
+          "format": "S",
+          "device": "PARSE(",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 113,
+          "file_name": "ISSPARSE(",
+          "file_type": "X",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 207,
+          "file_name": "INAL",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 274,
+          "file_name": "INAL",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 505,
+          "file_name": "OR}}",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 29,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 92,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 208,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X(sel",
+          "to_length": "f) noex",
+          "decimal": "c",
+          "data_type": "EP",
+          "keywords": "nogil:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 275,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y(sel",
+          "to_length": "f) noex",
+          "decimal": "c",
+          "data_type": "EP",
+          "keywords": "nogil:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 345,
+          "name": "EF VOID _COMPUT",
+          "ds_type": "AN",
+          "from_pos": "d_reduc",
+          "to_length": "e_dista",
+          "decimal": "n",
+          "data_type": "CE",
+          "keywords": "_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 370,
+          "name": "EF VOID COMPUTE",
+          "ds_type": "XA",
+          "from_pos": "ct_dist",
+          "to_length": "ances(s",
+          "decimal": "e",
+          "data_type": "LF",
+          "keywords": "noexcept nogil:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 374,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_par",
+          "to_length": "allel_i",
+          "decimal": "n",
+          "data_type": "IT",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 381,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_ini",
+          "to_length": "t_chunk",
+          "decimal": "(",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 402,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_pre",
+          "to_length": "_comput",
+          "decimal": "e",
+          "data_type": "_A",
+          "keywords": "d_reduce_distances_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 425,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_pra",
+          "to_length": "nge_ite",
+          "decimal": "r",
+          "data_type": "_F",
+          "keywords": "nalize(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 434,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_X_par",
+          "to_length": "allel_f",
+          "decimal": "i",
+          "data_type": "NA",
+          "keywords": "ize(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 441,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_ini",
+          "to_length": "t(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 447,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_par",
+          "to_length": "allel_i",
+          "decimal": "n",
+          "data_type": "IT",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 468,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_pre",
+          "to_length": "_comput",
+          "decimal": "e",
+          "data_type": "_A",
+          "keywords": "d_reduce_distances_on_chunks(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 491,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_syn",
+          "to_length": "chroniz",
+          "decimal": "e",
+          "data_type": "(",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 499,
+          "name": "EF VOID _PARALL",
+          "ds_type": "_O",
+          "from_pos": "n_Y_fin",
+          "to_length": "alize(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_DISPATCHER": {
+      "member": "_DISPATCHER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 47,
+          "file_name": "X.DTYPE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 49,
+          "file_name": "X.DTYPE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 9
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_PAIRWISE_FAST": {
+      "member": "_PAIRWISE_FAST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "EF INTP_T I, J,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 17,
+          "name": "EF INTP_T N_SAM",
+          "ds_type": "ES",
+          "from_pos": "_X = X.",
+          "to_length": "shape[0",
+          "decimal": "]",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "EF INTP_T N_SAM",
+          "ds_type": "ES",
+          "from_pos": "_Y = Y.",
+          "to_length": "shape[0",
+          "decimal": "]",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 19,
+          "name": "EF INTP_T N_FEA",
+          "ds_type": "RE",
+          "from_pos": "s = X.s",
+          "to_length": "hape[1]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "EF DOUBLE RES,",
+          "ds_type": "M,",
+          "from_pos": "denom",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 51,
+          "name": "EF INTP_T PX, P",
+          "ds_type": "I",
+          "from_pos": ", j, ix",
+          "to_length": ", iy",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "EF DOUBLE D = 0",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "EF INT M = D.SH",
+          "ds_type": "E[",
+          "from_pos": "0]",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 55,
+          "name": "EF INT N = D.SH",
+          "ds_type": "E[",
+          "from_pos": "1]",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 57,
+          "name": "EF INT X_INDPTR",
+          "ds_type": "ND",
+          "from_pos": "= 0",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 58,
+          "name": "EF INT Y_INDPTR",
+          "ds_type": "ND",
+          "from_pos": "= 0",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "EF INT NUM_THRE",
+          "ds_type": "S",
+          "from_pos": "= _open",
+          "to_length": "mp_effe",
+          "decimal": "c",
+          "data_type": "TI",
+          "keywords": "e_n_threads()",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONFUSION_MATRIX": {
+      "member": "CONFUSION_MATRIX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 19,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_estimator` or"
+        },
+        {
+          "line": 20,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_predictions` to"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DET_CURVE": {
+      "member": "DET_CURVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 10,
+          "name": "EPRECATE_Y_PRED",
+          "ds_type": "AR",
+          "from_pos": "ameter,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PRECISION_RECALL_CURVE": {
+      "member": "PRECISION_RECALL_CURVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 20,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_estimator` or"
+        },
+        {
+          "line": 21,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_predictions` to create"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 9,
+          "name": "EPRECATE_ESTIMA",
+          "ds_type": "R_",
+          "from_pos": "name,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "EPRECATE_Y_PRED",
+          "ds_type": "AR",
+          "from_pos": "ameter,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "ESPINE,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 100,
+          "name": "RAWSTYLE=\"DEFAU",
+          "ds_type": "\"`",
+          "from_pos": "in :me",
+          "to_length": "th:`plo",
+          "decimal": "t",
+          "data_type": "`,",
+          "keywords": ":meth:`from_estimator`, or",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REGRESSION": {
+      "member": "REGRESSION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_estimator` or"
+        },
+        {
+          "line": 22,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "PLAY.F",
+          "keyed": false,
+          "keywords": "rom_predictions` to"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ROC_CURVE": {
+      "member": "ROC_CURVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 25,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "OM_EST",
+          "keyed": false,
+          "keywords": "imator` or"
+        },
+        {
+          "line": 26,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "OM_PRE",
+          "keyed": false,
+          "keywords": "dictions` or"
+        },
+        {
+          "line": 27,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "OM_CV_",
+          "keyed": false,
+          "keywords": "results` to create"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 13,
+          "name": "EPRECATE_ESTIMA",
+          "ds_type": "R_",
+          "from_pos": "name,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "EPRECATE_Y_PRED",
+          "ds_type": "AR",
+          "from_pos": "ameter,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "ESPINE,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_PRECISION_RECALL_DISPLAY": {
+      "member": "TEST_PRECISION_RECALL_DISPLAY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 41,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 99,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "CHANCE_LE",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 148,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 270,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 290,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 319,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 372,
+          "file_name": "CONSTRUCT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 380,
+          "file_name": "DESPINE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 242,
+          "name": "X_POSITIVE = NP",
+          "ds_type": "LA",
+          "from_pos": "tnonzer",
+          "to_length": "o(y ==",
+          "decimal": "1",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 243,
+          "name": "X_NEGATIVE = NP",
+          "ds_type": "LA",
+          "from_pos": "tnonzer",
+          "to_length": "o(y ==",
+          "decimal": "0",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 244,
+          "name": "X_SELECTED = NP",
+          "ds_type": "ST",
+          "from_pos": "ack([id",
+          "to_length": "x_negat",
+          "decimal": "i",
+          "data_type": "VE",
+          "keywords": "idx_positive[:25]])",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
