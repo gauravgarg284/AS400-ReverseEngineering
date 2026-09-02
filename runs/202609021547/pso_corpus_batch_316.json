@@ -1,0 +1,1513 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 316,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_MAPPING",
+    "ENTRY_POINTS",
+    "ARCHIVE",
+    "BAND-WRITER",
+    "BARCODE",
+    "BITMAP",
+    "BUFFER",
+    "COLOR",
+    "COMPRESS",
+    "COMPRESSED-BUFFER"
+  ],
+  "pso_corpus": {
+    "_MAPPING": {
+      "member": "_MAPPING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "RIENDLYGRA",
+          "file_type": "Y",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "S.FRIE",
+          "keyed": false,
+          "keywords": "ndly_grayscale', 'friendly_g"
+        },
+        {
+          "line": 18,
+          "file_name": "RIENDLYSTY",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "(",
+          "device": "Y', 'F",
+          "keyed": false,
+          "keywords": "riendly', ()),"
+        },
+        {
+          "line": 19,
+          "file_name": "RUITYSTYLE",
+          "file_type": "'",
+          "designation": ":",
+          "mode": "",
+          "format": "P",
+          "device": "'FRUIT",
+          "keyed": false,
+          "keywords": "y', ()),"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "EFAULTSTYLE': (",
+          "ds_type": "YG",
+          "from_pos": "ments.s",
+          "to_length": "tyles.d",
+          "decimal": "e",
+          "data_type": "FA",
+          "keywords": "lt', 'default', ()),",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "RACULASTYLE': (",
+          "ds_type": "YG",
+          "from_pos": "ments.s",
+          "to_length": "tyles.d",
+          "decimal": "r",
+          "data_type": "AC",
+          "keywords": "la', 'dracula', ()),",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ARCHIVE": {
+      "member": "ARCHIVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 103,
+          "file_name": "Z_DROP_ARC",
+          "file_type": "H",
+          "designation": "I",
+          "mode": "",
+          "format": "F",
+          "device": "VE *AR",
+          "keyed": false,
+          "keywords": "ch);"
+        },
+        {
+          "line": 181,
+          "file_name": "FER *FZ_RE",
+          "file_type": "A",
+          "designation": "D",
+          "mode": "",
+          "format": "C",
+          "device": "TX, FZ",
+          "keyed": false,
+          "keywords": "_archive *arch, const char *"
+        },
+        {
+          "line": 193,
+          "file_name": "FER *FZ_TR",
+          "file_type": "Y",
+          "designation": "_",
+          "mode": "",
+          "format": "D",
+          "device": "T *CTX",
+          "keyed": false,
+          "keywords": ", fz_archive *arch, const ch"
+        },
+        {
+          "line": 347,
+          "file_name": "Z_WRITE_ZI",
+          "file_type": "P",
+          "designation": "_",
+          "mode": "",
+          "format": "R",
+          "device": "P_WRIT",
+          "keyed": false,
+          "keywords": "er *zip, const char *name, f"
+        },
+        {
+          "line": 355,
+          "file_name": "Z_CLOSE_ZI",
+          "file_type": "P",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "IP_WRI",
+          "keyed": false,
+          "keywords": "ter *zip);"
+        },
+        {
+          "line": 363,
+          "file_name": "Z_DROP_ZIP",
+          "file_type": "_",
+          "designation": "W",
+          "mode": "",
+          "format": "E",
+          "device": "P_WRIT",
+          "keyed": false,
+          "keywords": "er *zip);"
+        },
+        {
+          "line": 379,
+          "file_name": "Z_TREE_ARC",
+          "file_type": "H",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "X, FZ_",
+          "keyed": false,
+          "keywords": "archive *arch_, const char *"
+        },
+        {
+          "line": 385,
+          "file_name": "REE IT AS",
+          "file_type": "S",
+          "designation": "O",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 387,
+          "file_name": "Z_TREE_ARC",
+          "file_type": "H",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "FZ_AR",
+          "keyed": false,
+          "keywords": "chive *arch_, const char *na"
+        },
+        {
+          "line": 402,
+          "file_name": "Z_MOUNT_MU",
+          "file_type": "L",
+          "designation": "T",
+          "mode": "",
+          "format": "R",
+          "device": "Z_ARCH",
+          "keyed": false,
+          "keywords": "ive *arch_, fz_archive *sub,"
+        },
+        {
+          "line": 416,
+          "file_name": "Z_REGISTER",
+          "file_type": "_",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "TX, CO",
+          "keyed": false,
+          "keywords": "nst fz_archive_handler *hand"
+        },
+        {
+          "line": 444,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 384,
+          "name": "ATA WILL BE COP",
+          "ds_type": "D",
+          "from_pos": "into a",
+          "to_length": "buffer,",
+          "decimal": "",
+          "data_type": "AN",
+          "keywords": "so the caller",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 26
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BAND-WRITER": {
+      "member": "BAND-WRITER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 55,
+          "file_name": "Z_WRITE_HE",
+          "file_type": "A",
+          "designation": "D",
+          "mode": "",
+          "format": "F",
+          "device": "WRITER",
+          "keyed": false,
+          "keywords": "*writer, int w, int h, int"
+        },
+        {
+          "line": 69,
+          "file_name": "Z_WRITE_BA",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "_",
+          "device": "ITER *",
+          "keyed": false,
+          "keywords": "writer, int stride, int band"
+        },
+        {
+          "line": 75,
+          "file_name": "Z_CLOSE_BA",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "I",
+          "device": "BAND_W",
+          "keyed": false,
+          "keywords": "riter *writer);"
+        },
+        {
+          "line": 83,
+          "file_name": "Z_DROP_BAN",
+          "file_type": "D",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "AND_WR",
+          "keyed": false,
+          "keywords": "iter *writer);"
+        },
+        {
+          "line": 117,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 61,
+          "name": "E: THE BYTE OFF",
+          "ds_type": "T",
+          "from_pos": "from th",
+          "to_length": "e first",
+          "decimal": "",
+          "data_type": "BY",
+          "keywords": "e of the data",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BARCODE": {
+      "member": "BARCODE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 138,
+          "file_name": "/* MUPDF_",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 103,
+          "name": "E A BARCODE FRO",
+          "ds_type": "A",
+          "from_pos": "page.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 115,
+          "name": "E A BARCODE FRO",
+          "ds_type": "A",
+          "from_pos": "pixmap.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 127,
+          "name": "E A BARCODE FRO",
+          "ds_type": "A",
+          "from_pos": "display",
+          "to_length": "list.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BITMAP": {
+      "member": "BITMAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 61,
+          "file_name": "Z_DROP_BIT",
+          "file_type": "M",
+          "designation": "A",
+          "mode": "",
+          "format": "Z",
+          "device": "*BIT)",
+          "keyed": false,
+          "keywords": ";"
+        },
+        {
+          "line": 68,
+          "file_name": "Z_INVERT_B",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "(",
+          "device": "AP *BM",
+          "keyed": false,
+          "keywords": "p);"
+        },
+        {
+          "line": 151,
+          "file_name": "Z_BITMAP_D",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "S",
+          "device": "*W, IN",
+          "keyed": false,
+          "keywords": "t *h, int *n, int *stride);"
+        },
+        {
+          "line": 158,
+          "file_name": "Z_CLEAR_BI",
+          "file_type": "T",
+          "designation": "M",
+          "mode": "",
+          "format": "F",
+          "device": "P *BIT",
+          "keyed": false,
+          "keywords": ");"
+        },
+        {
+          "line": 186,
+          "file_name": "Z_DROP_HAL",
+          "file_type": "F",
+          "designation": "T",
+          "mode": "",
+          "format": "(",
+          "device": "TONE *",
+          "keyed": false,
+          "keywords": "ht);"
+        },
+        {
+          "line": 188,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 149,
+          "name": "E: POINTER TO S",
+          "ds_type": "RA",
+          "from_pos": "ge to r",
+          "to_length": "etrieve",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "map stride (or NULL).",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BUFFER": {
+      "member": "BUFFER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 55,
+          "file_name": "FER *FZ_KE",
+          "file_type": "E",
+          "designation": "P",
+          "mode": "",
+          "format": "F",
+          "device": "BUFFER",
+          "keyed": false,
+          "keywords": "*buf);"
+        },
+        {
+          "line": 63,
+          "file_name": "Z_DROP_BUF",
+          "file_type": "F",
+          "designation": "E",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF)",
+          "keyed": false,
+          "keywords": ";"
+        },
+        {
+          "line": 80,
+          "file_name": "FER *FZ_NE",
+          "file_type": "W",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "_T CAP",
+          "keyed": false,
+          "keywords": "acity);"
+        },
+        {
+          "line": 95,
+          "file_name": "FER *FZ_NE",
+          "file_type": "W",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "*CTX,",
+          "keyed": false,
+          "keywords": "unsigned char *data, size_t"
+        },
+        {
+          "line": 100,
+          "file_name": "FER *FZ_NE",
+          "file_type": "W",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "ONTEXT",
+          "keyed": false,
+          "keywords": "*ctx, const unsigned char *"
+        },
+        {
+          "line": 105,
+          "file_name": "FER *FZ_NE",
+          "file_type": "W",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "ONTEXT",
+          "keyed": false,
+          "keywords": "*ctx, const unsigned char *"
+        },
+        {
+          "line": 111,
+          "file_name": "FER *FZ_CL",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "U",
+          "device": "_BUFFE",
+          "keyed": false,
+          "keywords": "r *buf);"
+        },
+        {
+          "line": 116,
+          "file_name": "FER *FZ_NE",
+          "file_type": "W",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "T *CTX",
+          "keyed": false,
+          "keywords": ", const char *data, size_t s"
+        },
+        {
+          "line": 126,
+          "file_name": "Z_RESIZE_B",
+          "file_type": "U",
+          "designation": "F",
+          "mode": "",
+          "format": "(",
+          "device": "ER *BU",
+          "keyed": false,
+          "keywords": "f, size_t capacity);"
+        },
+        {
+          "line": 132,
+          "file_name": "Z_GROW_BUF",
+          "file_type": "F",
+          "designation": "E",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF)",
+          "keyed": false,
+          "keywords": ";"
+        },
+        {
+          "line": 137,
+          "file_name": "Z_TRIM_BUF",
+          "file_type": "F",
+          "designation": "E",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF)",
+          "keyed": false,
+          "keywords": ";"
+        },
+        {
+          "line": 145,
+          "file_name": "Z_CLEAR_BU",
+          "file_type": "F",
+          "designation": "F",
+          "mode": "",
+          "format": "F",
+          "device": "R *BUF",
+          "keyed": false,
+          "keywords": ");"
+        },
+        {
+          "line": 155,
+          "file_name": "FER *FZ_SL",
+          "file_type": "I",
+          "designation": "C",
+          "mode": "",
+          "format": "U",
+          "device": "_BUFFE",
+          "keyed": false,
+          "keywords": "r *buf, int64_t start, int64"
+        },
+        {
+          "line": 163,
+          "file_name": "Z_APPEND_B",
+          "file_type": "U",
+          "designation": "F",
+          "mode": "",
+          "format": "(",
+          "device": "ER *DE",
+          "keyed": false,
+          "keywords": "stination, fz_buffer *source"
+        },
+        {
+          "line": 168,
+          "file_name": "Z_APPEND_B",
+          "file_type": "A",
+          "designation": "S",
+          "mode": "",
+          "format": "(",
+          "device": "ER *OU",
+          "keyed": false,
+          "keywords": "t, const unsigned char *data"
+        },
+        {
+          "line": 173,
+          "file_name": "Z_APPEND_B",
+          "file_type": "A",
+          "designation": "S",
+          "mode": "",
+          "format": "_",
+          "device": "FZ_BUF",
+          "keyed": false,
+          "keywords": "fer *out, fz_buffer *data, i"
+        },
+        {
+          "line": 180,
+          "file_name": "Z_APPEND_D",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF,",
+          "keyed": false,
+          "keywords": "const void *data, size_t le"
+        },
+        {
+          "line": 181,
+          "file_name": "Z_APPEND_S",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "ER *BU",
+          "keyed": false,
+          "keywords": "f, const char *data);"
+        },
+        {
+          "line": 182,
+          "file_name": "Z_APPEND_B",
+          "file_type": "Y",
+          "designation": "T",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF,",
+          "keyed": false,
+          "keywords": "int c);"
+        },
+        {
+          "line": 183,
+          "file_name": "Z_APPEND_R",
+          "file_type": "U",
+          "designation": "N",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF,",
+          "keyed": false,
+          "keywords": "int c);"
+        },
+        {
+          "line": 184,
+          "file_name": "Z_APPEND_I",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "L",
+          "device": "FFER *",
+          "keyed": false,
+          "keywords": "buf, int x);"
+        },
+        {
+          "line": 185,
+          "file_name": "Z_APPEND_I",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "L",
+          "device": "FFER *",
+          "keyed": false,
+          "keywords": "buf, int x);"
+        },
+        {
+          "line": 186,
+          "file_name": "Z_APPEND_I",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "B",
+          "device": "FFER *",
+          "keyed": false,
+          "keywords": "buf, int x);"
+        },
+        {
+          "line": 187,
+          "file_name": "Z_APPEND_I",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "B",
+          "device": "FFER *",
+          "keyed": false,
+          "keywords": "buf, int x);"
+        },
+        {
+          "line": 188,
+          "file_name": "Z_APPEND_B",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF,",
+          "keyed": false,
+          "keywords": "int value, int count);"
+        },
+        {
+          "line": 189,
+          "file_name": "Z_APPEND_B",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "A",
+          "device": "FFER *",
+          "keyed": false,
+          "keywords": "buf);"
+        },
+        {
+          "line": 197,
+          "file_name": "Z_APPEND_P",
+          "file_type": "D",
+          "designation": "F",
+          "mode": "",
+          "format": "R",
+          "device": "BUFFER",
+          "keyed": false,
+          "keywords": "*buffer, const char *text);"
+        },
+        {
+          "line": 205,
+          "file_name": "Z_APPEND_P",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "(",
+          "device": "ER *BU",
+          "keyed": false,
+          "keywords": "ffer, const char *fmt, ...);"
+        },
+        {
+          "line": 211,
+          "file_name": "Z_APPEND_V",
+          "file_type": "P",
+          "designation": "R",
+          "mode": "",
+          "format": "F",
+          "device": "FER *B",
+          "keyed": false,
+          "keywords": "uffer, const char *fmt, va_l"
+        },
+        {
+          "line": 225,
+          "file_name": "Z_TERMINAT",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "F",
+          "device": "UFFER",
+          "keyed": false,
+          "keywords": "*buf);"
+        },
+        {
+          "line": 232,
+          "file_name": "Z_MD5_BUFF",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "_",
+          "device": "*BUFFE",
+          "keyed": false,
+          "keywords": "r, unsigned char digest[16])"
+        },
+        {
+          "line": 250,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 89,
+          "name": "ATA WHEN THE BU",
+          "ds_type": "ER",
+          "from_pos": "is dea",
+          "to_length": "llocate",
+          "decimal": "d",
+          "data_type": ".",
+          "keywords": "o not use 'data' after",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 238,
+          "name": "ATA BUFFER RETU",
+          "ds_type": "S",
+          "from_pos": "with th",
+          "to_length": "is call",
+          "decimal": ".",
+          "data_type": "T",
+          "keywords": "e buffer is left",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COLOR": {
+      "member": "COLOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 35,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 74,
+          "file_name": "ROM (CASE",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "RING T",
+          "keyed": false,
+          "keywords": "o enumeration"
+        },
+        {
+          "line": 80,
+          "file_name": "ROM ENUMER",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "R",
+          "device": "G.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 96,
+          "file_name": "Z_COLORSPA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 144,
+          "file_name": "Z_DROP_COL",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "C",
+          "device": "LORSPA",
+          "keyed": false,
+          "keywords": "ce *colorspace);"
+        },
+        {
+          "line": 206,
+          "file_name": "Z_COLORSPA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "CONTEX",
+          "keyed": false,
+          "keywords": "t *ctx, fz_colorspace *cs);"
+        },
+        {
+          "line": 255,
+          "file_name": "Z_COLORSPA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "G",
+          "device": "COLORS",
+          "keyed": false,
+          "keywords": "pace *cs, unsigned char dige"
+        },
+        {
+          "line": 294,
+          "file_name": "Z_COLORSPA",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "M",
+          "device": "TX, FZ",
+          "keyed": false,
+          "keywords": "_colorspace *cs, int n, cons"
+        },
+        {
+          "line": 309,
+          "file_name": "Z_CLAMP_CO",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "Z",
+          "device": "PACE *",
+          "keyed": false,
+          "keywords": "cs, const float *in, float *"
+        },
+        {
+          "line": 316,
+          "file_name": "Z_CONVERT_",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": "(",
+          "device": "RSPACE",
+          "keyed": false,
+          "keywords": "*ss, const float *sv, fz_co"
+        },
+        {
+          "line": 318,
+          "file_name": "AULT (FALL",
+          "file_type": "B",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 343,
+          "file_name": "AULT_COLOR",
+          "file_type": "S",
+          "designation": "P",
+          "mode": "",
+          "format": "S",
+          "device": "ACES(F",
+          "keyed": false,
+          "keywords": "z_context *ctx);"
+        },
+        {
+          "line": 351,
+          "file_name": "AULT_COLOR",
+          "file_type": "S",
+          "designation": "P",
+          "mode": "",
+          "format": "S",
+          "device": "PACES(",
+          "keyed": false,
+          "keywords": "fz_context *ctx, fz_default_"
+        },
+        {
+          "line": 361,
+          "file_name": "Z_DROP_DEF",
+          "file_type": "A",
+          "designation": "U",
+          "mode": "",
+          "format": "C",
+          "device": "TX, FZ",
+          "keyed": false,
+          "keywords": "_default_colorspaces *defaul"
+        },
+        {
+          "line": 370,
+          "file_name": "AULT_COLOR",
+          "file_type": "S",
+          "designation": "P",
+          "mode": "",
+          "format": "S",
+          "device": "SPACES",
+          "keyed": false,
+          "keywords": "(fz_context *ctx, fz_default"
+        },
+        {
+          "line": 394,
+          "file_name": "Z_SET_DEFA",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "R",
+          "device": "EFAULT",
+          "keyed": false,
+          "keywords": "_colorspaces *default_cs, fz"
+        },
+        {
+          "line": 395,
+          "file_name": "Z_SET_DEFA",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "G",
+          "device": "FAULT_",
+          "keyed": false,
+          "keywords": "colorspaces *default_cs, fz_"
+        },
+        {
+          "line": 396,
+          "file_name": "Z_SET_DEFA",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "M",
+          "device": "EFAULT",
+          "keyed": false,
+          "keywords": "_colorspaces *default_cs, fz"
+        },
+        {
+          "line": 397,
+          "file_name": "Z_SET_DEFA",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "CTX, F",
+          "keyed": false,
+          "keywords": "z_default_colorspaces *defau"
+        },
+        {
+          "line": 405,
+          "file_name": "LAGS;",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 415,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 431,
+          "file_name": "Z_DROP_COL",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "C",
+          "device": "Z_STOR",
+          "keyed": false,
+          "keywords": "able *cs_);"
+        },
+        {
+          "line": 433,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 172,
+          "name": "DITIONAL REFERE",
+          "ds_type": "E",
+          "from_pos": "is take",
+          "to_length": "n to bu",
+          "decimal": "f",
+          "data_type": ",",
+          "keywords": "hich will be dropped",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 267,
+          "name": "ES INTO. FOR AL",
+          "ds_type": "OT",
+          "from_pos": "her col",
+          "to_length": "orspace",
+          "decimal": "s",
+          "data_type": ",",
+          "keywords": "t is the colorspace",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPRESS": {
+      "member": "COMPRESS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 50,
+          "file_name": "Z_DEFLATE(",
+          "file_type": "F",
+          "designation": "Z",
+          "mode": "",
+          "format": "N",
+          "device": "*DEST",
+          "keyed": false,
+          "keywords": ", size_t *compressed_length,"
+        },
+        {
+          "line": 94,
+          "file_name": "Z_COMPRESS",
+          "file_type": "_",
+          "designation": "B",
+          "mode": "",
+          "format": "L",
+          "device": "NED CH",
+          "keyed": false,
+          "keywords": "ar *dest, size_t *compressed"
+        },
+        {
+          "line": 123,
+          "file_name": "FER *FZ_CO",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "S",
+          "device": "*CTX,",
+          "keyed": false,
+          "keywords": "const unsigned char *data,"
+        },
+        {
+          "line": 130,
+          "file_name": "FER *FZ_CO",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "S",
+          "device": "*CTX,",
+          "keyed": false,
+          "keywords": "const unsigned char *data,"
+        },
+        {
+          "line": 132,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 36,
+          "name": "EFLATE_LEVEL;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMPRESSED-BUFFER": {
+      "member": "COMPRESSED-BUFFER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 142,
+          "file_name": "ROM FZ_IMA",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 149,
+          "file_name": "ROM (CASE",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "O FZ_I",
+          "keyed": false,
+          "keywords": "MAGE_*"
+        },
+        {
+          "line": 183,
+          "file_name": "REES ANY S",
+          "file_type": "T",
+          "designation": "O",
+          "mode": "",
+          "format": "E",
+          "device": "Y IT.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 187,
+          "file_name": "Z_DROP_COM",
+          "file_type": "P",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": ", FZ_C",
+          "keyed": false,
+          "keywords": "ompressed_buffer *buf);"
+        },
+        {
+          "line": 194,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
