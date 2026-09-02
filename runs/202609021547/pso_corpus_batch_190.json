@@ -1,0 +1,967 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 190,
+  "total_batches": 477,
+  "members_in_batch": [
+    "MAX_BUDGET_LIMITER",
+    "COMMON_DAILY_ACTIVITY",
+    "USER_INVITATION",
+    "COMMON_UTILS",
+    "POST_CALL_RULES",
+    "PROXY_CLI",
+    "ENDPOINTS",
+    "SCHEMA",
+    "SWAGGER-UI-BUNDLE",
+    "PROXY_SETTING_ENDPOINTS"
+  ],
+  "pso_corpus": {
+    "MAX_BUDGET_LIMITER": {
+      "member": "MAX_BUDGET_LIMITER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMMON_DAILY_ACTIVITY": {
+      "member": "COMMON_DAILY_ACTIVITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 4,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "RECORD.MO",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "EAKDOW",
+          "keyed": false,
+          "keywords": "n.models:"
+        },
+        {
+          "line": 54,
+          "file_name": "RECORD.MO",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 84,
+          "file_name": "RECORD.MO",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "UP NOT",
+          "keyed": false,
+          "keywords": "in breakdown.model_groups:"
+        },
+        {
+          "line": 89,
+          "file_name": "RECORD.MO",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 121,
+          "file_name": "RECORD.MC",
+          "file_type": "P",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 163,
+          "file_name": "PROVIDER",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 175,
+          "file_name": "RECORD.AP",
+          "file_type": "I",
+          "designation": "_",
+          "mode": "",
+          "format": "",
+          "device": "RS[PRO",
+          "keyed": false,
+          "keywords": "vider].api_key_breakdown:"
+        },
+        {
+          "line": 197,
+          "file_name": "RECORD.AP",
+          "file_type": "I",
+          "designation": "_",
+          "mode": "",
+          "format": "",
+          "device": "S:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 212,
+          "file_name": "ENTITY_ID",
+          "file_type": "_",
+          "designation": "F",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 286,
+          "file_name": "PRISMA_CL",
+          "file_type": "I",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 292,
+          "file_name": "START_DAT",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 260,
+          "name": "ICT[STR, DICT[S",
+          "ds_type": ",",
+          "from_pos": "Any]]:",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "USER_INVITATION": {
+      "member": "USER_INVITATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 3,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 18,
+          "file_name": "PRISMA_CL",
+          "file_type": "I",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMMON_UTILS": {
+      "member": "COMMON_UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 14,
+          "file_name": "LITELLM_A",
+          "file_type": "P",
+          "designation": "I",
+          "mode": "",
+          "format": "Y",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "POST_CALL_RULES": {
+      "member": "POST_CALL_RULES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 3,
+          "file_name": "LEN(INPUT",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "0",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROXY_CLI": {
+      "member": "PROXY_CLI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": ": NOQA: T2",
+          "file_type": "0",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 527,
+          "file_name": "LOCAL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 558,
+          "file_name": "VERSION I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 561,
+          "file_name": "MODEL AND",
+          "file_type": "",
+          "designation": "\"",
+          "mode": "",
+          "format": "A",
+          "device": "E IS N",
+          "keyed": false,
+          "keywords": "one:"
+        },
+        {
+          "line": 563,
+          "file_name": "HEALTH IS",
+          "file_type": "",
+          "designation": "T",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 566,
+          "file_name": "TEST IS T",
+          "file_type": "R",
+          "designation": "U",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "OTENV IMPORT LO",
+          "ds_type": "_D",
+          "from_pos": "otenv",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 494,
+          "name": "D_KEY,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 503,
+          "name": "D_FUNCTION_TO_P",
+          "ds_type": "MP",
+          "from_pos": "t,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENDPOINTS": {
+      "member": "ENDPOINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "T, RES",
+          "keyed": false,
+          "keywords": "ponse"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 32,
+          "name": "'{",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SCHEMA": {
+      "member": "SCHEMA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 469,
+          "file_name": "IED_FILE_I",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "I",
+          "device": "ENCOD",
+          "keyed": false,
+          "keywords": "ed unified file ID"
+        },
+        {
+          "line": 483,
+          "file_name": "IED_OBJECT",
+          "file_type": "_",
+          "designation": "I",
+          "mode": "",
+          "format": "T",
+          "device": "64 ENC",
+          "keyed": false,
+          "keywords": "oded unified file ID"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 10,
+          "name": "GET / RATE LIMI",
+          "ds_type": "F",
+          "from_pos": "or an o",
+          "to_length": "rg",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "ELS ON PROXY",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "ENTIAL_ID STRIN",
+          "ds_type": "@I",
+          "from_pos": "d @defa",
+          "to_length": "ult(uui",
+          "decimal": "d",
+          "data_type": "()",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "ENTIAL_NAME STR",
+          "ds_type": "G",
+          "from_pos": "@unique",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "ENTIAL_VALUES J",
+          "ds_type": "N",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "ENTIAL_INFO JSO",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 44,
+          "name": "ELS ON PROXY",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "EL INFO FOR TEA",
+          "ds_type": ",",
+          "from_pos": "just ha",
+          "to_length": "s model",
+          "decimal": "",
+          "data_type": "AL",
+          "keywords": "ases for now.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 95,
+          "name": "MINS STRING[]",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 310,
+          "name": "([USER_ID, TEAM",
+          "ds_type": "D]",
+          "from_pos": ")",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 330,
+          "name": "([USER_ID, ORGA",
+          "ds_type": "ZA",
+          "from_pos": "tion_id",
+          "to_length": "])",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 9
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SWAGGER-UI-BUNDLE": {
+      "member": "SWAGGER-UI-BUNDLE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROXY_SETTING_ENDPOINTS": {
+      "member": "PROXY_SETTING_ENDPOINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 4,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "CEPTIO",
+          "keyed": false,
+          "keywords": "n"
+        },
+        {
+          "line": 76,
+          "file_name": "PRISMA_CL",
+          "file_type": "I",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 80,
+          "file_name": "IP_ADDRES",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 86,
+          "file_name": "STORE_MOD",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 97,
+          "file_name": "\"GENERAL_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 100,
+          "file_name": "\"ALLOWED_",
+          "file_type": "I",
+          "designation": "P",
+          "mode": "IP",
+          "format": "N",
+          "device": "TTINGS",
+          "keyed": false,
+          "keywords": "\"]:"
+        },
+        {
+          "line": 103,
+          "file_name": "IP_ADDRES",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "N",
+          "device": "TTINGS",
+          "keyed": false,
+          "keywords": "\"][\"allowed_ips\"]:"
+        },
+        {
+          "line": 123,
+          "file_name": "IP_ADDRES",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 132,
+          "file_name": "\"GENERAL_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 135,
+          "file_name": "\"ALLOWED_",
+          "file_type": "I",
+          "designation": "P",
+          "mode": "IP",
+          "format": "N",
+          "device": "TTINGS",
+          "keyed": false,
+          "keywords": "\"]:"
+        },
+        {
+          "line": 138,
+          "file_name": "IP_ADDRES",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "I",
+          "device": "GS\"][\"",
+          "keyed": false,
+          "keywords": "allowed_ips\"]:"
+        },
+        {
+          "line": 287,
+          "file_name": "STORE_MOD",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 302,
+          "file_name": "\"LITELLM_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 330,
+          "file_name": "SETTINGS.",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 466,
+          "file_name": "\"ENVIRONM",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 470,
+          "file_name": "\"GENERAL_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 491,
+          "file_name": "LEN(CONFI",
+          "file_type": "G",
+          "designation": "[",
+          "mode": "",
+          "format": "V",
+          "device": "0:",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 150,
+          "name": "ICT:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
