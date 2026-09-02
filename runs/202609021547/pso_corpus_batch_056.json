@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 56,
+  "total_batches": 477,
+  "members_in_batch": [
+    "BOUNDSPEN",
+    "COCOAPEN",
+    "EXPLICITCLOSINGLINEPEN",
+    "MOMENTSPEN",
+    "QTPEN",
+    "QUARTZPEN",
+    "REPORTLABPEN",
+    "REVERSECONTOURPEN",
+    "ROUNDINGPEN",
+    "TRANSFORMPEN"
+  ],
+  "pso_corpus": {
+    "BOUNDSPEN": {
+      "member": "BOUNDSPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "R",
+          "device": "UNDS,",
+          "keyed": false,
+          "keywords": "pointInRect, unionRect"
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "ICBOUN",
+          "keyed": false,
+          "keywords": "ds, calcQuadraticBounds"
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 20,
+          "file_name": "``IGNORES",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "P",
+          "device": "POINTS",
+          "keyed": false,
+          "keywords": "are ignored."
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COCOAPEN": {
+      "member": "COCOAPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXPLICITCLOSINGLINEPEN": {
+      "member": "EXPLICITCLOSINGLINEPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": "LTERPE",
+          "keyed": false,
+          "keywords": "n"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MOMENTSPEN": {
+      "member": "MOMENTSPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "ENCONT",
+          "keyed": false,
+          "keywords": "ourError"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 209
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "QTPEN": {
+      "member": "QTPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "QUARTZPEN": {
+      "member": "QUARTZPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REPORTLABPEN": {
+      "member": "REPORTLABPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 38,
+          "file_name": "LEN(SYS.A",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "<",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 56,
+          "file_name": "LEN(SYS.A",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": ">",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REVERSECONTOURPEN": {
+      "member": "REVERSECONTOURPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": "LTERPE",
+          "keyed": false,
+          "keywords": "n"
+        },
+        {
+          "line": 29,
+          "file_name": "NOT CONTO",
+          "file_type": "U",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "FIRSTTYPE",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "Q",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 52,
+          "file_name": "NOT CONTO",
+          "file_type": "U",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ROUNDINGPEN": {
+      "member": "ROUNDINGPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "O",
+          "device": "OTROU",
+          "keyed": false,
+          "keywords": "nd"
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": ", FILT",
+          "keyed": false,
+          "keywords": "erPointPen"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRANSFORMPEN": {
+      "member": "TRANSFORMPEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": ", FILT",
+          "keyed": false,
+          "keywords": "erPointPen"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
