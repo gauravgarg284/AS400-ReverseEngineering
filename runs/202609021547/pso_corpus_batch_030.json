@@ -1,0 +1,675 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 30,
+  "total_batches": 477,
+  "members_in_batch": [
+    "FLOW_CONFIG",
+    "FLOW_CONTEXT",
+    "FLOW_SERIALIZER",
+    "FLOW_TRACKABLE",
+    "INPUT_PROVIDER",
+    "TYPES",
+    "__INIT__",
+    "BUILDER",
+    "__INIT__",
+    "TYPES"
+  ],
+  "pso_corpus": {
+    "FLOW_CONFIG": {
+      "member": "FLOW_CONFIG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FLOW_CONTEXT": {
+      "member": "FLOW_CONTEXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 11,
+          "file_name": "LOW_REQUES",
+          "file_type": "T",
+          "designation": "_",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 15,
+          "file_name": "LOW_ID\", D",
+          "file_type": "E",
+          "designation": "F",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 19,
+          "file_name": "LOW_METHOD",
+          "file_type": "_",
+          "designation": "N",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FLOW_SERIALIZER": {
+      "member": "FLOW_SERIALIZER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 152,
+          "file_name": "IS_START",
+          "file_type": "A",
+          "designation": "N",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 154,
+          "file_name": "IS_START:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 156,
+          "file_name": "IS_ROUTER",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 235,
+          "file_name": "HASATTR(M",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": ",",
+          "device": "AND ME",
+          "keyed": false,
+          "keywords": "thod.__trigger_methods__:"
+        },
+        {
+          "line": 239,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 247,
+          "file_name": "HASATTR(M",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": ",",
+          "device": "ND MET",
+          "keyed": false,
+          "keywords": "hod.__condition_type__:"
+        },
+        {
+          "line": 268,
+          "file_name": "HASATTR(M",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": ",",
+          "device": "METHO",
+          "keyed": false,
+          "keywords": "d.__router_paths__:"
+        },
+        {
+          "line": 272,
+          "file_name": "METHOD_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 289,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 291,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "NDITIO",
+          "keyed": false,
+          "keywords": "n) == 2:"
+        },
+        {
+          "line": 300,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 306,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 397,
+          "file_name": "HASATTR(F",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "L",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 401,
+          "file_name": "STATE_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "SS, \"I",
+          "keyed": false,
+          "keywords": "nitial_state\"):"
+        },
+        {
+          "line": 409,
+          "file_name": "STATE_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "SS, \"_",
+          "keyed": false,
+          "keywords": "_orig_bases__\"):"
+        },
+        {
+          "line": 420,
+          "file_name": "STATE_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "ATE_TY",
+          "keyed": false,
+          "keywords": "pe, BaseModel):"
+        },
+        {
+          "line": 530,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 610,
+          "file_name": "FLOW_CLAS",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 82,
+          "name": "GE_TYPE: STR",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 125,
+          "name": "GES: LIST[EDGEI",
+          "ds_type": "O]",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 173,
+          "name": "ETECT_CREW_REFE",
+          "ds_type": "NC",
+          "from_pos": "e(metho",
+          "to_length": "d: Any)",
+          "decimal": "",
+          "data_type": "->",
+          "keywords": "bool:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 331,
+          "name": "GES: LIST[EDGEI",
+          "ds_type": "O]",
+          "from_pos": "= []",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 464,
+          "name": "ETECT_FLOW_INPU",
+          "ds_type": "(F",
+          "from_pos": "low_cla",
+          "to_length": "ss: typ",
+          "decimal": "e",
+          "data_type": ")",
+          "keywords": "> list[str]:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 600,
+          "name": "GES = _GENERATE",
+          "ds_type": "DG",
+          "from_pos": "es(list",
+          "to_length": "eners,",
+          "decimal": "r",
+          "data_type": "OU",
+          "keywords": "ers, router_paths_registry, all_metho",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FLOW_TRACKABLE": {
+      "member": "FLOW_TRACKABLE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INPUT_PROVIDER": {
+      "member": "INPUT_PROVIDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 51,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, fiel",
+          "decimal": "d",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TYPES": {
+      "member": "TYPES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 40,
+          "name": "GES: LIST[STRUC",
+          "ds_type": "RE",
+          "from_pos": "Edge]",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BUILDER": {
+      "member": "BUILDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 48,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 60,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 65,
+          "file_name": "CALLABLE(",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "ON, \"_",
+          "keyed": false,
+          "keywords": "_name__\"):"
+        },
+        {
+          "line": 90,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 92,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 98,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 103,
+          "file_name": "CALLABLE(",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "ON, \"_",
+          "keyed": false,
+          "keywords": "_name__\"):"
+        },
+        {
+          "line": 131,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 383,
+          "file_name": "ORPHANED_",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 465,
+          "file_name": "NOT STRUC",
+          "file_type": "T",
+          "designation": "U",
+          "mode": "",
+          "format": "\"",
+          "device": "ERMINA",
+          "keyed": false,
+          "keywords": "l_nodes:"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 129,
+          "name": "GES: LIST[STRUC",
+          "ds_type": "RE",
+          "from_pos": "Edge] =",
+          "to_length": "[]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 188,
+          "name": "GES: LIST[STRUC",
+          "ds_type": "RE",
+          "from_pos": "Edge] =",
+          "to_length": "[]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
