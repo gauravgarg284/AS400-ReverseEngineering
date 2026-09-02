@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 51,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CONCURRENCY",
+    "EXCEPTION_HANDLERS",
+    "ASYNCEXITSTACK",
+    "CONSTANTS",
+    "BASE",
+    "ENTRY_POINTS",
+    "PKCE",
+    "APPLE",
+    "BASE",
+    "FACEBOOK"
+  ],
+  "pso_corpus": {
+    "CONCURRENCY": {
+      "member": "CONCURRENCY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXCEPTION_HANDLERS": {
+      "member": "EXCEPTION_HANDLERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ASTAPI.ENC",
+          "file_type": "O",
+          "designation": "D",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "ASTAPI.EXC",
+          "file_type": "E",
+          "designation": "P",
+          "mode": "",
+          "format": "N",
+          "device": "ONERRO",
+          "keyed": false,
+          "keywords": "r, WebSocketRequestValidatio"
+        },
+        {
+          "line": 3,
+          "file_name": "ASTAPI.UTI",
+          "file_type": "L",
+          "designation": "S",
+          "mode": "",
+          "format": "P",
+          "device": "STATUS",
+          "keyed": false,
+          "keywords": "_code"
+        },
+        {
+          "line": 4,
+          "file_name": "ASTAPI.WEB",
+          "file_type": "S",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 13,
+          "file_name": "NOT IS_BO",
+          "file_type": "D",
+          "designation": "Y",
+          "mode": "",
+          "format": "L",
+          "device": ".STATU",
+          "keyed": false,
+          "keywords": "s_code):"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ASYNCEXITSTACK": {
+      "member": "ASYNCEXITSTACK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 6,
+          "name": "MAINLY TO CLOS",
+          "ds_type": "FI",
+          "from_pos": "les aft",
+          "to_length": "er the",
+          "decimal": "r",
+          "data_type": "EQ",
+          "keywords": "est is done, dependencies are closed",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSTANTS": {
+      "member": "CONSTANTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "S_WITH_BODY = {",
+          "ds_type": "ET",
+          "from_pos": "\", \"HEA",
+          "to_length": "D\", \"PO",
+          "decimal": "S",
+          "data_type": "T\"",
+          "keywords": "\"PUT\", \"DELETE\", \"PATCH\"}",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BASE": {
+      "member": "BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "ASTAPI_SSO",
+          "file_type": ".",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "E_PAIR",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 22,
+          "file_name": "ASTAPI_SSO",
+          "file_type": ".",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "STATE",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "ECODE_ID_TOKEN(",
+          "ds_type": "_T",
+          "from_pos": "oken: s",
+          "to_length": "tr, ver",
+          "decimal": "i",
+          "data_type": "FY",
+          "keywords": "bool = False) -> dict:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": ": STR | NONE =",
+          "ds_type": "NE",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 97,
+          "name": "DITIONAL_HEADER",
+          "ds_type": "C",
+          "from_pos": "lassVar",
+          "to_length": "[dict[s",
+          "decimal": "t",
+          "data_type": "R,",
+          "keywords": "Any] | None] = None",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PKCE": {
+      "member": "PKCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "APPLE": {
+      "member": "APPLE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "ASTAPI_SSO",
+          "file_type": ".",
+          "designation": "S",
+          "mode": "",
+          "format": "B",
+          "device": "MENT,",
+          "keyed": false,
+          "keywords": "OpenID, SSOBase"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FACEBOOK": {
+      "member": "FACEBOOK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ASTAPI_SSO",
+          "file_type": ".",
+          "designation": "S",
+          "mode": "",
+          "format": "B",
+          "device": "MENT,",
+          "keyed": false,
+          "keywords": "OpenID, SSOBase"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
