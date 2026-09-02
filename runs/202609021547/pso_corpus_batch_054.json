@@ -1,0 +1,1048 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 54,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CFF2TOCFF",
+    "CFFTOCFF2",
+    "__INIT__",
+    "TRANSFORMS",
+    "UNBUILDER",
+    "CU2QU",
+    "__INIT__",
+    "__MAIN__",
+    "LEXER",
+    "PARSER"
+  ],
+  "pso_corpus": {
+    "CFF2TOCFF": {
+      "member": "CFF2TOCFF",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "2 TO CFF C",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.T",
+          "file_type": "T",
+          "designation": "L",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "L",
+          "device": "FILENA",
+          "keyed": false,
+          "keywords": "me"
+        },
+        {
+          "line": 5,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "CKUSEE",
+          "keyed": false,
+          "keywords": "xtractor"
+        },
+        {
+          "line": 6,
+          "file_name": "ONTTOOLS.C",
+          "file_type": "F",
+          "designation": "F",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 37,
+          "file_name": "F.MAJOR =",
+          "file_type": "1",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 44,
+          "file_name": "F.TOPDICTI",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "HASATTR(T",
+          "file_type": "O",
+          "designation": "P",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 61,
+          "file_name": "NOT HASAT",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 131,
+          "file_name": "F.REMOVE_U",
+          "file_type": "N",
+          "designation": "U",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 148,
+          "file_name": "\"CFF2\" NO",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 150,
+          "file_name": "F = FONT[\"",
+          "file_type": "C",
+          "designation": "F",
+          "mode": "",
+          "format": "]",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 156,
+          "file_name": "UPDATEPOS",
+          "file_type": "T",
+          "designation": "T",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 165,
+          "file_name": "ARGS IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 220,
+          "file_name": "NOT OS.PA",
+          "file_type": "T",
+          "designation": "H",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 233,
+          "file_name": "OPTIONS.R",
+          "file_type": "E",
+          "designation": "M",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 12,
+          "name": "SELECT,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "ARRAY = TOPDICT",
+          "ds_type": "DA",
+          "from_pos": "rray",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CFFTOCFF2": {
+      "member": "CFFTOCFF2",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "TO CFF2 C",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.T",
+          "file_type": "T",
+          "designation": "L",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "L",
+          "device": "FILENA",
+          "keyed": false,
+          "keywords": "me"
+        },
+        {
+          "line": 5,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "THEXTR",
+          "keyed": false,
+          "keywords": "actor"
+        },
+        {
+          "line": 6,
+          "file_name": "ONTTOOLS.C",
+          "file_type": "F",
+          "designation": "F",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 124,
+          "file_name": "REMOVEUNU",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 129,
+          "file_name": "F.MAJOR =",
+          "file_type": "2",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 130,
+          "file_name": "F2GETGLYPH",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "ER",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 135,
+          "file_name": "F.TOPDICTI",
+          "file_type": "N",
+          "designation": "D",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 137,
+          "file_name": "HASATTR(T",
+          "file_type": "O",
+          "designation": "P",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 145,
+          "file_name": "NOT HASAT",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 222,
+          "file_name": "F.COMPILE(",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 224,
+          "file_name": "F.DECOMPIL",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 228,
+          "file_name": "F = FONT[\"",
+          "file_type": "C",
+          "designation": "F",
+          "mode": "",
+          "format": "]",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 237,
+          "file_name": "ARGS IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 282,
+          "file_name": "NOT OS.PA",
+          "file_type": "T",
+          "designation": "H",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "ARRAYINDEX,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 43,
+          "name": "ARRAY = TOPDICT",
+          "ds_type": "DA",
+          "from_pos": "rray if",
+          "to_length": "hasatt",
+          "decimal": "r",
+          "data_type": "(T",
+          "keywords": "pDict, \"FDArray\") else None",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRANSFORMS": {
+      "member": "TRANSFORMS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 128,
+          "file_name": "F.GLOBALSU",
+          "file_type": "B",
+          "designation": "R",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 313,
+          "file_name": "HINTS.DEL",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 318,
+          "file_name": "HINTS.HAS",
+          "file_type": "_",
+          "designation": "H",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 335,
+          "file_name": "HINTS.HAS",
+          "file_type": "_",
+          "designation": "H",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 412,
+          "file_name": "REMOVEUNU",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 417,
+          "file_name": "HASATTR(P",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "PRIVAT",
+          "keyed": false,
+          "keywords": "e_dict.Subrs:"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UNBUILDER": {
+      "member": "UNBUILDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.T",
+          "file_type": "T",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "OT",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 7,
+          "file_name": "LAYERLIST",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 16,
+          "file_name": "LATTEN_LAY",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 73,
+          "file_name": "COLR.VERS",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CU2QU": {
+      "member": "CU2QU",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 58,
+          "file_name": "ABS(RESUL",
+          "file_type": "T",
+          "designation": ")",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 130,
+          "file_name": "N == 2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 132,
+          "file_name": "N == 3:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 134,
+          "file_name": "N == 4:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 140,
+          "file_name": "N == 6:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 341,
+          "file_name": "ABS(P2) <",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "ERANCE",
+          "keyed": false,
+          "keywords": ":"
+        },
+        {
+          "line": 346,
+          "file_name": "ABS(MID)",
+          "file_type": ">",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 379,
+          "file_name": "MATH.ISNA",
+          "file_type": "N",
+          "designation": "(",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 385,
+          "file_name": "NOT CUBIC",
+          "file_type": "_",
+          "designation": "F",
+          "mode": "",
+          "format": "H",
+          "device": "UBIC[1",
+          "keyed": false,
+          "keywords": "], c2 - cubic[2], 0, toleran"
+        },
+        {
+          "line": 419,
+          "file_name": "N == 1:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 421,
+          "file_name": "N == 2 AN",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 546,
+          "file_name": "LEN(MAX_E",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 548,
+          "file_name": "NOT CURVE",
+          "file_type": "S",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 297,
+          "name": "= D - C",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__MAIN__": {
+      "member": "__MAIN__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.T",
+          "file_type": "T",
+          "designation": "L",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "PEFEAT",
+          "keyed": false,
+          "keywords": "ures, Builder"
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "RROR",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4,
+          "file_name": "ONTTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 5,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "L",
+          "device": "FILENA",
+          "keyed": false,
+          "keywords": "me"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LEXER": {
+      "member": "LEXER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "RROR,",
+          "keyed": false,
+          "keywords": "IncludedFeaNotFound"
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "IBLOCA",
+          "keyed": false,
+          "keywords": "tion"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARSER": {
+      "member": "PARSER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "RROR",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "UDINGL",
+          "keyed": false,
+          "keywords": "exer, NonIncludingLexer"
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": ".",
+          "device": "RIABLE",
+          "keyed": false,
+          "keywords": "Scalar"
+        },
+        {
+          "line": 4,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "CODING",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 5,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "TOBYTE",
+          "keyed": false,
+          "keywords": "s, tostr"
+        },
+        {
+          "line": 29,
+          "file_name": "THE ITERA",
+          "file_type": "B",
+          "designation": "L",
+          "mode": "",
+          "format": "S",
+          "device": "ME IN",
+          "keyed": false,
+          "keywords": "glyph set checking takes"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
