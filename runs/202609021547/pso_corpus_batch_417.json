@@ -1,0 +1,1571 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 417,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_DECOMP_CHOLESKY",
+    "_DECOMP_COSSIN",
+    "_DECOMP_SCHUR",
+    "_DECOMP_SVD",
+    "MESON",
+    "_CTEST.CPYTHON-312-X86_64-LINUX-GNU",
+    "_ND_IMAGE.CPYTHON-312-X86_64-LINUX-GNU",
+    "_NI_DOCSTRINGS",
+    "_RANK_FILTER_1D.CPYTHON-312-X86_64-LINUX-GNU",
+    "TEST_FILTERS"
+  ],
+  "pso_corpus": {
+    "_DECOMP_CHOLESKY": {
+      "member": "_DECOMP_CHOLESKY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 23,
+          "file_name": "A1.NDIM !",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 26,
+          "file_name": "A1.SHAPE[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 31,
+          "file_name": "A1.SIZE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 38,
+          "file_name": "INFO > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 42,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 235,
+          "file_name": "CHECK_FIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 242,
+          "file_name": "C.NDIM !=",
+          "file_type": "",
+          "designation": "2",
+          "mode": "",
+          "format": "",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 244,
+          "file_name": "C.SHAPE[1",
+          "file_type": "]",
+          "designation": "",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 248,
+          "file_name": "B1.SIZE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 257,
+          "file_name": "INFO != 0",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 323,
+          "file_name": "CHECK_FIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 329,
+          "file_name": "AB.SIZE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 335,
+          "file_name": "INFO > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 337,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 400,
+          "file_name": "CHECK_FIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 408,
+          "file_name": "CB.SHAPE[",
+          "file_type": "-",
+          "designation": "1",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 412,
+          "file_name": "B.SIZE ==",
+          "file_type": "",
+          "designation": "0",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 419,
+          "file_name": "INFO > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 421,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_DECOMP_COSSIN": {
+      "member": "_DECOMP_COSSIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 115,
+          "file_name": "P OR Q:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 153,
+          "file_name": "X12.SHAPE",
+          "file_type": "",
+          "designation": "!",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 157,
+          "file_name": "X21.SHAPE",
+          "file_type": "",
+          "designation": "!",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 161,
+          "file_name": "P + MMP !",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 185,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 188,
+          "file_name": "INFO > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 191,
+          "file_name": "SEPARATE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 195,
+          "name": "H = BLOCK_DIAG(",
+          "ds_type": "H,",
+          "from_pos": "v2h)",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 205,
+          "name": "= NP.EYE(NP.MA",
+          "ds_type": "[N",
+          "from_pos": "11, n12",
+          "to_length": ", n21,",
+          "decimal": "n",
+          "data_type": "22",
+          "keywords": "r]), dtype=theta.dtype)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_DECOMP_SCHUR": {
+      "member": "_DECOMP_SCHUR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 140,
+          "file_name": "OUTPUT NO",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "[",
+          "device": "'C']:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 142,
+          "file_name": "CHECK_FIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 146,
+          "file_name": "NP.ISSUBD",
+          "file_type": "T",
+          "designation": "Y",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 148,
+          "file_name": "LEN(A1.SH",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "!",
+          "device": "1.SHAP",
+          "keyed": false,
+          "keywords": "e[1]):"
+        },
+        {
+          "line": 152,
+          "file_name": "OUTPUT IN",
+          "file_type": "",
+          "designation": "[",
+          "mode": "",
+          "format": "M",
+          "device": "IN ['F",
+          "keyed": false,
+          "keywords": "', 'D']:"
+        },
+        {
+          "line": 159,
+          "file_name": "A1.SIZE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 170,
+          "file_name": "LWORK IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 175,
+          "file_name": "SORT IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 205,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 214,
+          "file_name": "SORT IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 246,
+          "file_name": "LEN(CAST_",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 307,
+          "file_name": "CHECK_FIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 316,
+          "file_name": "T.SHAPE[0",
+          "file_type": "]",
+          "designation": "",
+          "mode": "",
+          "format": "Z",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 75,
+          "name": "IM : INT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_DECOMP_SVD": {
+      "member": "_DECOMP_SVD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 111,
+          "file_name": "LEN(A1.SH",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "!",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 116,
+          "file_name": "A1.SIZE =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 135,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 137,
+          "file_name": "LAPACK_DR",
+          "file_type": "I",
+          "designation": "V",
+          "mode": "",
+          "format": "N",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 141,
+          "file_name": "COMPUTE_U",
+          "file_type": "V",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 169,
+          "file_name": "INFO > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 171,
+          "file_name": "INFO < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 176,
+          "file_name": "COMPUTE_U",
+          "file_type": "V",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 229,
+          "file_name": "LINEARITY",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "O",
+          "device": "S WITH",
+          "keyed": false,
+          "keywords": "angles in [0, pi]."
+        },
+        {
+          "line": 302,
+          "file_name": "MORN == M",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 353,
+          "file_name": "RCOND IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 432,
+          "file_name": "RCOND IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 509,
+          "file_name": "LEN(A.SHA",
+          "file_type": "P",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 515,
+          "file_name": "LEN(B.SHA",
+          "file_type": "P",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 517,
+          "file_name": "LEN(B) !=",
+          "file_type": "",
+          "designation": "L",
+          "mode": "",
+          "format": "Q",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 528,
+          "file_name": "QA.SHAPE[",
+          "file_type": "1",
+          "designation": "]",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 536,
+          "file_name": "MASK.ANY(",
+          "file_type": ")",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "DECOMPOSITION",
+          "ds_type": "NC",
+          "from_pos": "tions.\"",
+          "to_length": "\"\"",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MESON": {
+      "member": "MESON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 26,
+          "name": "ING_CPP = FS.CO",
+          "ds_type": "FI",
+          "from_pos": "le('ext",
+          "to_length": "ending.",
+          "decimal": "p",
+          "data_type": "YX",
+          "keywords": ", 'extending_cpp.pyx')",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_CTEST.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_CTEST.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "_ND_IMAGE.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_ND_IMAGE.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "H\ufffdL$0\ufffdT$",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 84,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffdF\u000f,D\ufffd\u0000F\u000f\ufffd",
+          "from_pos": "H\ufffd\ufffd\u0001",
+          "to_pos": "\u0001\ufffd\ufffd\u000f",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 387,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "WAVE\ufffd\ufffdAUM\ufffd",
+          "from_pos": "ATI\ufffd",
+          "to_pos": "UH\ufffd\ufffd",
+          "decimal_pos": "H",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 476,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0013",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 549,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000fN\ufffdF\u000fO\ufffd\ufffd\u000f\ufffd",
+          "from_pos": "f\u000f(\ufffd",
+          "to_pos": "\u000fb\ufffdf",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 723,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0007\ufffd1\ufffd\ufffd\ufffdF\u000f\ufffd",
+          "from_pos": "\ufffd\u000f\\\u0005",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 872,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd}\u0000H\ufffdD$\u0018H\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 985,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0011\u0004\u0013H\ufffd\ufffd\u0010I9",
+          "from_pos": "u\ufffd\ufffd\ufffd",
+          "to_pos": "\ufffd@\ufffd\ufffd",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1097,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000fY\u001f\ufffdA\u000f\u0011\u001f\ufffd\ufffd",
+          "from_pos": "\ufffd\ufffdf.",
+          "to_pos": "\ufffd\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1311,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "_\ufffdFF.\u000f\u001f\ufffd\u0000\u0000",
+          "from_pos": "\u0000\u0000\u000f",
+          "to_pos": "\ufffd\ufffd\u000f\ufffd",
+          "decimal_pos": "\u0001",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1353,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "\u0005\u0000\u0000\ufffdN\u000f,D\ufffd\u0000",
+          "line": 340
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "\ufffd\ufffd\ufffdH\ufffd\ufffd\ufffd\u0013\ufffd\ufffd",
+          "line": 148,
+          "keyword": "D\u0000\u0000H\ufffd\ufffd\u883e\ufffd\ufffd\ufffdf\u000f\u001fD\u0000\u0000H\ufffdT$\u0010H\ufffd|$\bL\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd>\ufffd\ufffd\ufffd\ufffdH\ufffdD$\bH\ufffd|$ \ufffd\u0000\ufffdD$\u0010\ufffd\ufffd\u0001\u000f\ufffd\ufffd\u0000\u0000\u0000H\ufffdL$\b\ufffd\u0001H\ufffd\ufffdt\u0014H\ufffd\u0007\ufffd\ufffdx"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 725,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$0\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$@\u0003\u0000\u0000H\ufffd\ufffd\u0002\u000f\ufffd\u001a\u000f\u0000\u0000H\ufffd4\u0018f\u000fn\u0018H\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 727,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$P\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$`\u0003\u0000\u0000H\ufffd\ufffd\u0003\u000f\ufffd\ufffd\u000e\u0000\u0000H\ufffd4\u0018f\u000fn\u0018H\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 729,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$p\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0004\u000f\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 732,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0005\u000f\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 735,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0006\u000f\ufffd\""
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 738,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0007\u000f\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 741,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\u0000\u0004\u0000\u0000H\ufffd\ufffd\b\u000f\ufffd&"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdF\u000f(\ufffdF",
+          "line": 744,
+          "keyword": "\ufffd\ufffdf\u000f\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\u0010\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$ \u0004\u0000\u0000H\ufffd\ufffd\t\u000f\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 747,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$0\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$@\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 751,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$P\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$`\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 755,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$p\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 759,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 762,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd\u000e\u000f\ufffd.\t\u0000\u0000H\ufffd4\u0018f\u000fn\u0018H\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffd\ufffd\u000f\ufffd\ufffdD\ufffdL$\u0010",
+          "line": 764,
+          "keyword": "\ufffd\ufffd\u0001f\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffdf\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000f\u000f(\ufffdf\u000f\ufffd\ufffd\u0001f\u000fT\ufffdf\u000fX\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd\u0010\u000f\ufffd\ufffd\b\u0000\u0000H\ufffd\u0014\u0018f\u000fn\u0018H\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 771,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$@\u0003\u0000\u0000H\ufffd\ufffd\u0002\u000f\ufffd\ufffd\u0007\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 773,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$`\u0003\u0000\u0000H\ufffd\ufffd\u0003\u000f\ufffd\ufffd\u0007\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 775,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0004\u000f\ufffd)\u0007\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 777,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0005\u000f\ufffd\ufffd\u0006\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 779,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0006\u000f\ufffdq\u0006\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 781,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0003\u0000\u0000H\ufffd\ufffd\u0007\u000f\ufffd\u0015\u0006\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 783,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\u0000\u0004\u0000\u0000H\ufffd\ufffd\b\u000f\ufffd\ufffd\u0005\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 785,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$ \u0004\u0000\u0000H\ufffd\ufffd\t\u000f\ufffd]\u0005\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 787,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$@\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 790,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$`\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 793,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 796,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdD\ufffdL$\u0010\ufffd\u000f\ufffd\ufffd",
+          "line": 799,
+          "keyword": "l\ufffdf\u000fp\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u000f)\ufffd$\ufffd\u0004\u0000\u0000H\ufffd\ufffd\u000e\u000f\ufffd\ufffd\u0003\u0000\u0000H\ufffd4\u0018f\u000fn\bH\u0001\ufffdH\ufffd<"
+        },
+        {
+          "type": "SELECT",
+          "field": "\ufffd F\u000fO\ufffdF\u000f\ufffd\ufffd",
+          "line": 1324,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 10,
+      "key_field_names": [
+        "\u0005\u0000\u0000\ufffdN\u000f,D\ufffd\u0000"
+      ]
+    },
+    "_NI_DOCSTRINGS": {
+      "member": "_NI_DOCSTRINGS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 30,
+          "file_name": "OOTPRINT`",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "B",
+          "device": "IES (I",
+          "keyed": false,
+          "keywords": "mplicitly) a"
+        },
+        {
+          "line": 34,
+          "file_name": "DIMENSION",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "T",
+          "device": "IF TH",
+          "keyed": false,
+          "keywords": "e input array is"
+        },
+        {
+          "line": 194,
+          "file_name": "CALLING `",
+          "file_type": "S",
+          "designation": "P",
+          "mode": "",
+          "format": "E",
+          "device": "INPUT",
+          "keyed": false,
+          "keywords": ".\"\"\")"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 20,
+          "name": "OC = (",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "E : {'REFLECT',",
+          "ds_type": "CO",
+          "from_pos": "nstant'",
+          "to_length": ", 'near",
+          "decimal": "e",
+          "data_type": "ST",
+          "keywords": ", 'mirror', 'wrap'}, optional",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 76,
+          "name": "E : {'REFLECT',",
+          "ds_type": "GR",
+          "from_pos": "id-mirr",
+          "to_length": "or', 'c",
+          "decimal": "o",
+          "data_type": "NS",
+          "keywords": "ant', 'grid-constant', 'nearest', \\",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 122,
+          "name": "EFAULT NOT REPL",
+          "ds_type": "ED",
+          "from_pos": "'",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 125,
+          "name": "E : STR OR SEQU",
+          "ds_type": "CE",
+          "from_pos": ", optio",
+          "to_length": "nal",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_RANK_FILTER_1D.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_RANK_FILTER_1D.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "\u000ePT\u000eHB\u000e`\u0000\u0000",
+          "line": 152
+        }
+      ],
+      "fields": [
+        {
+          "name": "\ufffd\ufffd\u0001E\ufffd\ufffd~GMC",
+          "from_pos": "Mc\ufffdH",
+          "to_pos": "T$,H",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 59,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "\u0002\u0000\u0000\u0010\u0000\u0000\u0000P\u0000\u0000",
+          "line": 8,
+          "keyword": "\u0000\u0000x\u046f"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 1,
+      "key_field_names": []
+    },
+    "TEST_FILTERS": {
+      "member": "TEST_FILTERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 61,
+          "file_name": "ARRAY.NDI",
+          "file_type": "M",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 65,
+          "file_name": "NOT CONVO",
+          "file_type": "L",
+          "designation": "V",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 67,
+          "file_name": "COMPLEX_A",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2287,
+          "file_name": "ILTER_FUNC",
+          "file_type": "\"",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2336,
+          "file_name": "ILTER_FUNC",
+          "file_type": ",",
+          "designation": "A",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2228,
+          "name": "IMAGE._NI_SUPPO",
+          "ds_type": "._",
+          "from_pos": "normali",
+          "to_length": "ze_sequ",
+          "decimal": "e",
+          "data_type": "NC",
+          "keywords": "(x, 0)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2266,
+          "name": "IMAGE.GENERIC_F",
+          "ds_type": "TE",
+          "from_pos": "r,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2267,
+          "name": "IMAGE.GENERIC_F",
+          "ds_type": "TE",
+          "from_pos": "r1d,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2268,
+          "name": "IMAGE.PERCENTIL",
+          "ds_type": "FI",
+          "from_pos": "lter,",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2311,
+          "name": "IMAGE.CORRELATE",
+          "ds_type": ",",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2312,
+          "name": "IMAGE.CORRELATE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2313,
+          "name": "IMAGE.CONVOLVE1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2314,
+          "name": "IMAGE.CONVOLVE,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2364,
+          "name": "IMAGE.GAUSSIAN_",
+          "ds_type": "LT",
+          "from_pos": "er1d, n",
+          "to_length": "dimage.",
+          "decimal": "g",
+          "data_type": "AU",
+          "keywords": "sian_filter,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2365,
+          "name": "IMAGE.UNIFORM_F",
+          "ds_type": "TE",
+          "from_pos": "r1d, nd",
+          "to_length": "image.u",
+          "decimal": "n",
+          "data_type": "IF",
+          "keywords": "rm_filter,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2366,
+          "name": "IMAGE.MAXIMUM_F",
+          "ds_type": "TE",
+          "from_pos": "r1d, nd",
+          "to_length": "image.m",
+          "decimal": "a",
+          "data_type": "XI",
+          "keywords": "um_filter,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2367,
+          "name": "IMAGE.MINIMUM_F",
+          "ds_type": "TE",
+          "from_pos": "r1d, nd",
+          "to_length": "image.m",
+          "decimal": "i",
+          "data_type": "NI",
+          "keywords": "um_filter,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2516,
+          "name": "IMAGE.GAUSSIAN_",
+          "ds_type": "LT",
+          "from_pos": "er, ndi",
+          "to_length": "mage.ga",
+          "decimal": "u",
+          "data_type": "SS",
+          "keywords": "an_filter1d,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2517,
+          "name": "IMAGE.GAUSSIAN_",
+          "ds_type": "PL",
+          "from_pos": "ace, nd",
+          "to_length": "image.g",
+          "decimal": "a",
+          "data_type": "US",
+          "keywords": "ian_gradient_magnitude,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3091,
+          "name": "IMAGE.MEDIAN_FI",
+          "ds_type": "ER",
+          "from_pos": "(x, siz",
+          "to_length": "e=size,",
+          "decimal": "",
+          "data_type": "MO",
+          "keywords": "e=mode)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
