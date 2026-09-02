@@ -1,0 +1,757 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 469,
+  "total_batches": 477,
+  "members_in_batch": [
+    "EVENTS",
+    "__INIT__",
+    "FSEVENTS",
+    "FSEVENTS2",
+    "INOTIFY",
+    "INOTIFY_BUFFER",
+    "KQUEUE",
+    "POLLING",
+    "WINAPI",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "EVENTS": {
+      "member": "EVENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 87,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, fiel",
+          "decimal": "d",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FSEVENTS": {
+      "member": "FSEVENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ORMS: MACO",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FSEVENTS2": {
+      "member": "FSEVENTS2",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ORMS: MACO",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 20,
+          "file_name": "SEVENTS IM",
+          "file_type": "P",
+          "designation": "O",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 21,
+          "file_name": "RUNLOOPGET",
+          "file_type": "C",
+          "designation": "U",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 22,
+          "file_name": "RUNLOOPRUN",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 23,
+          "file_name": "RUNLOOPSTO",
+          "file_type": "P",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 32,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 33,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 37,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 38,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 39,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 40,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 41,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 42,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 43,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 44,
+          "file_name": "SEVENTSTRE",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INOTIFY": {
+      "member": "INOTIFY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 8,
+          "file_name": "ORMS: LINU",
+          "file_type": "X",
+          "designation": "",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INOTIFY_BUFFER": {
+      "member": "INOTIFY_BUFFER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ORMS: LINU",
+          "file_type": "X",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KQUEUE": {
+      "member": "KQUEUE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ORMS: MACO",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 129,
+          "file_name": "LAGS = KEV",
+          "file_type": ".",
+          "designation": "F",
+          "mode": "",
+          "format": "G",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 101,
+          "name": "OG_OS_OPEN_FLAG",
+          "ds_type": "=",
+          "from_pos": "O_EVTON",
+          "to_length": "LY if p",
+          "decimal": "l",
+          "data_type": "AT",
+          "keywords": "orm.is_darwin() else os.O_RDONLY | os",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 102,
+          "name": "OG_KQ_FILTER =",
+          "ds_type": "LE",
+          "from_pos": "ct.KQ_F",
+          "to_length": "ILTER_V",
+          "decimal": "N",
+          "data_type": "OD",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 103,
+          "name": "OG_KQ_EV_FLAGS",
+          "ds_type": "SE",
+          "from_pos": "lect.KQ",
+          "to_length": "_EV_ADD",
+          "decimal": "",
+          "data_type": "|",
+          "keywords": "elect.KQ_EV_ENABLE | select.KQ_EV_CLE",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 104,
+          "name": "OG_KQ_FFLAGS =",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "POLLING": {
+      "member": "POLLING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 22,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WINAPI": {
+      "member": "WINAPI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 9,
+          "file_name": "ORMS: WIND",
+          "file_type": "O",
+          "designation": "W",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 18,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 37,
+          "file_name": "LAG_BACKUP",
+          "file_type": "_",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 38,
+          "file_name": "LAG_OVERLA",
+          "file_type": "P",
+          "designation": "P",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 74,
+          "file_name": "IELDS_ = (",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 85,
+          "file_name": "NOT VALUE",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 91,
+          "file_name": "NOT VALUE",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 93,
+          "file_name": "VALUE ==",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 99,
+          "file_name": "VALUE ==",
+          "file_type": "0",
+          "designation": "X",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 213,
+          "file_name": "IELDS_ = (",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 257,
+          "file_name": "ER LENGTH",
+          "file_type": "F",
+          "designation": "O",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 17,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 61,
+          "name": "_TERMINATE = 0X",
+          "ds_type": "01",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 224,
+          "name": "ON'T NEED TO RE",
+          "ds_type": "LC",
+          "from_pos": "ulate t",
+          "to_length": "hese fl",
+          "decimal": "a",
+          "data_type": "GS",
+          "keywords": "every time a call is made to",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 226,
+          "name": "OG_FILE_FLAGS =",
+          "ds_type": "IL",
+          "from_pos": "E_FLAG_",
+          "to_length": "BACKUP_",
+          "decimal": "S",
+          "data_type": "EM",
+          "keywords": "NTICS",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 227,
+          "name": "OG_FILE_SHARE_F",
+          "ds_type": "GS",
+          "from_pos": "= redu",
+          "to_length": "ce(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 235,
+          "name": "OG_FILE_NOTIFY_",
+          "ds_type": "AG",
+          "from_pos": "S = red",
+          "to_length": "uce(",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 249,
+          "name": "DIRECTORYCHANGE",
+          "ds_type": "B",
+          "from_pos": "uffer l",
+          "to_length": "ength.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
