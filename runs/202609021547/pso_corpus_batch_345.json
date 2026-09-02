@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 345,
+  "total_batches": 477,
+  "members_in_batch": [
+    "METADATA",
+    "PKGCONFIG",
+    "METADATA",
+    "CONSUMER",
+    "WEBSOCKET",
+    "HTTP",
+    "LIVE",
+    "WEBSOCKET",
+    "UTILS",
+    "METADATA"
+  ],
+  "pso_corpus": {
+    "METADATA": {
+      "member": "METADATA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PKGCONFIG": {
+      "member": "PKGCONFIG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONSUMER": {
+      "member": "CONSUMER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "JANGO.CONTRIB.S",
+          "ds_type": "SI",
+          "from_pos": "ons.bac",
+          "to_length": "kends.b",
+          "decimal": "a",
+          "data_type": "SE",
+          "keywords": "import SessionBase",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "JANGO.UTILS.FUN",
+          "ds_type": "IO",
+          "from_pos": "nal imp",
+          "to_length": "ort Laz",
+          "decimal": "y",
+          "data_type": "OB",
+          "keywords": "ect",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 73,
+          "name": "ATABASE_SYNC_TO",
+          "ds_type": "SY",
+          "from_pos": "nc",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WEBSOCKET": {
+      "member": "WEBSOCKET",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HTTP": {
+      "member": "HTTP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LIVE": {
+      "member": "LIVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "JANGO.CONTRIB.S",
+          "ds_type": "TI",
+          "from_pos": "cfiles.",
+          "to_length": "handler",
+          "decimal": "s",
+          "data_type": "I",
+          "keywords": "port ASGIStaticFilesHandler",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "JANGO.TEST.TEST",
+          "ds_type": "SE",
+          "from_pos": "s impor",
+          "to_length": "t Trans",
+          "decimal": "a",
+          "data_type": "CT",
+          "keywords": "onTestCase",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
