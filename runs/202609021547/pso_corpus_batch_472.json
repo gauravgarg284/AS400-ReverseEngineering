@@ -1,0 +1,700 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 472,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_ERRORS",
+    "_TRANSCRIPTS",
+    "YOUTUBE.HTML",
+    "ENTRY_POINTS",
+    "RECORD",
+    "TOP_LEVEL",
+    "CLOUD_PROVIDERS",
+    "CODING_AGENT",
+    "STORAGE",
+    "ADMIN_PIPELINE_RESPONSE"
+  ],
+  "pso_corpus": {
+    "_ERRORS": {
+      "member": "_ERRORS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_TRANSCRIPTS": {
+      "member": "_TRANSCRIPTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 458,
+          "file_name": "ORMATTING_",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, asdi",
+          "decimal": "c",
+          "data_type": "T",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "EFUSEDXML IMPOR",
+          "ds_type": "EL",
+          "from_pos": "ementTr",
+          "to_length": "ee",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "YOUTUBE.HTML": {
+      "member": "YOUTUBE.HTML",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "IDENT\")<0&",
+          "line": 16
+        },
+        {
+          "name": "B=TYPEOF",
+          "line": 33
+        },
+        {
+          "name": "(VAR B,C=[",
+          "line": 34
+        },
+        {
+          "name": "ETURN OBJE",
+          "line": 36
+        },
+        {
+          "name": "K=TYPEOF",
+          "line": 40
+        },
+        {
+          "name": "K=OBJECT[",
+          "line": 42
+        },
+        {
+          "name": "]=FUNCTION",
+          "line": 50
+        },
+        {
+          "name": "=FUNCTION(",
+          "line": 63
+        }
+      ],
+      "fields": [
+        {
+          "name": "DATA-ID=\"_",
+          "from_pos": "d\" n",
+          "to_pos": "nce=",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 2,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NDCOLUMN=E",
+          "from_pos": "r.li",
+          "to_pos": "eNum",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 5,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LUE)PARTS.",
+          "from_pos": "ush(",
+          "to_pos": "ey+\"",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 7,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 12,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IDENT\")<0&",
+          "line": 18,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IDENT\")<0&",
+          "line": 21,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INSTANCEO",
+          "from_pos": "Str",
+          "to_pos": "ng&&",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "K=OBJECT[",
+          "line": 49,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "P;FUNCTION",
+          "from_pos": "J(a,",
+          "to_pos": "){a=",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 65,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ",B){FUNCTI",
+          "from_pos": "n c(",
+          "to_pos": "){f=",
+          "decimal_pos": "(",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 68,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ");B.STYLE.",
+          "from_pos": "ssTe",
+          "to_pos": "t=\"o",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 70,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "=R()[A];RE",
+          "from_pos": "urn",
+          "to_pos": "===v",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 72,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 78,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 80,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SRC=\"HTTPS",
+          "from_pos": "//ww",
+          "to_pos": ".you",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 81,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONCE=\"MWV",
+          "from_pos": "BNEs",
+          "to_pos": "c3nG",
+          "decimal_pos": "w",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "=FUNCTION(",
+          "line": 83,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "RIGDESCRIP",
+          "line": 10,
+          "keyword": "OwnPropertyDescriptor(window,\"Polymer\");Object.defineProperty(window,\"Polymer\",{set:function(p){if(origDescriptor&&origDescriptor.set&&origDescriptor.get){origDescriptor.set(p);origPolymer=origDescriptor.get()}else origPolymer=p;if(typeof origPolymer===\"function\")Object.defineProperty(window,\"Polymer\",{value:origPolymer,configurable:true,enumerable:true,writable:true})},get:function(){return typeof origPolymer===\"function\"?newPolymer:origPolymer},configurable:true,"
+        },
+        {
+          "type": "OMIT",
+          "field": "()){VAR IS",
+          "line": 17,
+          "keyword": "bilityState||d.webkitVisibilityState)==\"hidden\";if(isHidden)ytcsi.tick(\"vc\")}var slt=function(el,t){setTimeout(function(){var n=ytcsi.now();el.loadTime=n;if(el.slt)el.slt()},t)};w.__ytRIL=function(el){if(!el.getAttribute(\"data-thumb\"))if(w.requestAnimationFrame)w.requestAnimationFrame(function(){slt(el,0)});else slt(el,16)}})(window,document);"
+        },
+        {
+          "type": "OMIT",
+          "field": "R\",FUNCTIO",
+          "line": 30,
+          "keyword": "rn a;a=Symbol(\"Symbol.iterator\");for(var b=\"Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array\".split(\" \"),c=0;c<b.length;c++){var d=r[b[c]];typeof d===\"function\"&&typeof d.prototype[a]!=\"function\"&&n(d.prototype,a,{configurable:!0,writable:!0,value:function(){return u(m(this))}})}return a});"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 15,
+      "key_field_names": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/INSTA",
+          "to_length": "LLER,sh",
+          "decimal": "a",
+          "data_type": "25",
+          "keywords": "=5hhM4Q4mYTT9z6QB6PGpUAW81PGNFrYrdXMj",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/LICEN",
+          "to_length": "SE,sha2",
+          "decimal": "5",
+          "data_type": "6=",
+          "keywords": "I_oXlNySkCymQUcSryc901Csn55aDJbgIkcJf",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/METAD",
+          "to_length": "ATA,sha",
+          "decimal": "2",
+          "data_type": "56",
+          "keywords": "xzBbxliabSZGQNE1tdyXBCR8-AY6QdZT81KFt",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/RECOR",
+          "to_length": "D,,",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/REQUE",
+          "to_length": "STED,sh",
+          "decimal": "a",
+          "data_type": "25",
+          "keywords": "=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZ",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/WHEEL",
+          "to_length": ",sha256",
+          "decimal": "=",
+          "data_type": "OV",
+          "keywords": "vnbpcaxHa5TgXgfC48E6JA7zLr7svMspPP7Vk",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "ARD-0.23.0.DIST",
+          "ds_type": "NF",
+          "from_pos": "o/top_l",
+          "to_length": "evel.tx",
+          "decimal": "t",
+          "data_type": ",S",
+          "keywords": "a256=J-wj94pPadY4ipFaanrYBlrMblOSegEY",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "ARD/__INIT__.PY",
+          "ds_type": "HA",
+          "from_pos": "256=x96",
+          "to_length": "865ybxv",
+          "decimal": "7",
+          "data_type": "2J",
+          "keywords": "4ZWFAehBzkbbXcaWhYsq63ZANrgWQ,7102",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "ARD/__INIT__.PY",
+          "ds_type": "SH",
+          "from_pos": "a256=kv",
+          "to_length": "P6Us9IP",
+          "decimal": "X",
+          "data_type": "4S",
+          "keywords": "fg5BwaE3_E7uuE1YzVUo9hTzYUcNHA,13938",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "ARD/_CFFI.CPYTH",
+          "ds_type": "-3",
+          "from_pos": "12-x86_",
+          "to_length": "64-linu",
+          "decimal": "x",
+          "data_type": "-G",
+          "keywords": "u.so,sha256=FsuQXBjjd6ViWAyUEl2-DMwKV",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "ARD/BACKEND_C.C",
+          "ds_type": "TH",
+          "from_pos": "on-312-",
+          "to_length": "x86_64-",
+          "decimal": "l",
+          "data_type": "IN",
+          "keywords": "x-gnu.so,sha256=35xWAezhqIXyjOgrR-Lxr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "ARD/BACKEND_CFF",
+          "ds_type": "PY",
+          "from_pos": ",sha256",
+          "to_length": "=22dR_N",
+          "decimal": "T",
+          "data_type": "8X",
+          "keywords": "0oOiuU5BS7YlDBEmlmnUfEK5Rxl0TNTik,152",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "ARD/PY.TYPED,SH",
+          "ds_type": "56",
+          "from_pos": "=47DEQp",
+          "to_length": "j8HBSa-",
+          "decimal": "_",
+          "data_type": "TI",
+          "keywords": "W-5JCeuQeRkm5NMpJWZG3hSuFU,0",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ARD",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLOUD_PROVIDERS": {
+      "member": "CLOUD_PROVIDERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 12
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CODING_AGENT": {
+      "member": "CODING_AGENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ING AGENT RUNTI",
+          "ds_type": "S",
+          "from_pos": "ettings",
+          "to_length": "\u2014 tool",
+          "decimal": "",
+          "data_type": "CA",
+          "keywords": "l limits, timeouts, and bash command",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "STORAGE": {
+      "member": "STORAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ADMIN_PIPELINE_RESPONSE": {
+      "member": "ADMIN_PIPELINE_RESPONSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
