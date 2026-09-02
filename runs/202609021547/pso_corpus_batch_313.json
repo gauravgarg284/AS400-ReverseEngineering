@@ -1,0 +1,507 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 313,
+  "total_batches": 477,
+  "members_in_batch": [
+    "ENTRY_POINTS",
+    "PYBASE64.CDX",
+    "_IMPORT_UTILS",
+    "_REPR",
+    "_SCHEMA_GENERATION_SHARED",
+    "_UTILS",
+    "ALIASES",
+    "ANNOTATED_HANDLERS",
+    "DATACLASSES",
+    "CLASS_VALIDATORS"
+  ],
+  "pso_corpus": {
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PYBASE64.CDX": {
+      "member": "PYBASE64.CDX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_IMPORT_UTILS": {
+      "member": "_IMPORT_UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_REPR": {
+      "member": "_REPR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 98,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "PES.BU",
+          "keyed": false,
+          "keywords": "iltinFunctionType)):"
+        },
+        {
+          "line": 107,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "NG_BAS",
+          "keyed": false,
+          "keywords": "e, _typing_extra.WithArgsTyp"
+        },
+        {
+          "line": 110,
+          "file_name": "IS_UNION_",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "N",
+          "device": "RIGIN(",
+          "keyed": false,
+          "keywords": "obj)):"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_SCHEMA_GENERATION_SHARED": {
+      "member": "_SCHEMA_GENERATION_SHARED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_UTILS": {
+      "member": "_UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 340,
+          "file_name": "OBJ_TYPE",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "M",
+          "device": "YPES:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 391,
+          "file_name": "TYPING.TY",
+          "file_type": "P",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 416,
+          "name": "EPRECATED(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ALIASES": {
+      "member": "ALIASES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ANNOTATED_HANDLERS": {
+      "member": "ANNOTATED_HANDLERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DATACLASSES": {
+      "member": "DATACLASSES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 147,
+          "file_name": "SYS.VERSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 336,
+          "file_name": "NOT FORCE",
+          "file_type": "",
+          "designation": "A",
+          "mode": "",
+          "format": "C",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 347,
+          "file_name": "_TYPES_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "ATACLASS_TRANSF",
+          "ds_type": "M(",
+          "from_pos": "field_s",
+          "to_length": "pecifie",
+          "decimal": "r",
+          "data_type": "S=",
+          "keywords": "dataclasses.field, Field, PrivateAttr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 47,
+          "name": "ATACLASS_TRANSF",
+          "ds_type": "M(",
+          "from_pos": "field_s",
+          "to_length": "pecifie",
+          "decimal": "r",
+          "data_type": "S=",
+          "keywords": "dataclasses.field, Field, PrivateAttr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 66,
+          "name": "ATACLASS_TRANSF",
+          "ds_type": "M(",
+          "from_pos": "field_s",
+          "to_length": "pecifie",
+          "decimal": "r",
+          "data_type": "S=",
+          "keywords": "dataclasses.field, Field, PrivateAttr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 81,
+          "name": "ATACLASS_TRANSF",
+          "ds_type": "M(",
+          "from_pos": "field_s",
+          "to_length": "pecifie",
+          "decimal": "r",
+          "data_type": "S=",
+          "keywords": "dataclasses.field, Field, PrivateAttr",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLASS_VALIDATORS": {
+      "member": "CLASS_VALIDATORS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 84,
+          "file_name": "IELDS: STR",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 120,
+          "file_name": "ALLOW_REU",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "R",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 123,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 232,
+          "file_name": "__ARGS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 236,
+          "file_name": "ALLOW_REU",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "R",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 239,
+          "file_name": "PRE IS FA",
+          "file_type": "L",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "TRUE:",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "`@VALIDATOR` A",
+          "ds_type": "`",
+          "from_pos": "@root_v",
+          "to_length": "alidato",
+          "decimal": "r",
+          "data_type": "`",
+          "keywords": "unction validators from V1.\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
