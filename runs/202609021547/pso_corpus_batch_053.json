@@ -1,0 +1,728 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 53,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "SPARSE_EMBEDDING_BASE",
+    "__INIT__",
+    "_ASYNC",
+    "__INIT__",
+    "_SYNC",
+    "RECORD",
+    "AFMLIB"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SPARSE_EMBEDDING_BASE": {
+      "member": "SPARSE_EMBEDDING_BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "ASTEMBED.C",
+          "file_type": "O",
+          "designation": "M",
+          "mode": "",
+          "format": ".",
+          "device": "SPARS",
+          "keyed": false,
+          "keywords": "eModelDescription"
+        },
+        {
+          "line": 8,
+          "file_name": "ASTEMBED.C",
+          "file_type": "O",
+          "designation": "M",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 9,
+          "file_name": "ASTEMBED.C",
+          "file_type": "O",
+          "designation": "M",
+          "mode": "",
+          "format": ".",
+          "device": "MODELM",
+          "keyed": false,
+          "keywords": "anagement"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ASYNC": {
+      "member": "_ASYNC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 121,
+          "file_name": "NOT FUTUR",
+          "file_type": "E",
+          "designation": ".",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 125,
+          "file_name": "UTURE_RESU",
+          "file_type": "L",
+          "designation": "T",
+          "mode": "",
+          "format": "T",
+          "device": "KENDOU",
+          "keyed": false,
+          "keywords": "tcome[_T]]) -> _T:"
+        },
+        {
+          "line": 127,
+          "file_name": "(ERROR :=",
+          "file_type": "",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 148,
+          "file_name": "(CONTEXT",
+          "file_type": ":",
+          "designation": "=",
+          "mode": "",
+          "format": "R",
+          "device": "ONE AN",
+          "keyed": false,
+          "keywords": "d context is not cancellatio"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 9,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_SYNC": {
+      "member": "_SYNC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 22,
+          "file_name": "ILELOCK._A",
+          "file_type": "P",
+          "designation": "I",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 25,
+          "file_name": "ORK_TRANSI",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 32,
+          "file_name": "ILELOCK._E",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 33,
+          "file_name": "ILELOCK._S",
+          "file_type": "O",
+          "designation": "F",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "ILELOCK._U",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "M",
+          "device": "ISTS,",
+          "keyed": false,
+          "keywords": "touch, write_all"
+        },
+        {
+          "line": 43,
+          "file_name": "OLLOW: FIN",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "LOW\",",
+          "keyed": false,
+          "keywords": "0)"
+        },
+        {
+          "line": 45,
+          "file_name": "D-RELATIVE",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "I",
+          "device": "ON; WI",
+          "keyed": false,
+          "keywords": "ndows cannot ``os.open()`` a"
+        },
+        {
+          "line": 774,
+          "file_name": "FD IS NON",
+          "file_type": "E",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 815,
+          "file_name": "NOT DATA",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "N",
+          "device": "E:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 833,
+          "file_name": "MATCH IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 836,
+          "file_name": "PID > 2**",
+          "file_type": "3",
+          "designation": "1",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 861,
+          "file_name": "(READ_RES",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "=",
+          "device": "FD=DIR",
+          "keyed": false,
+          "keywords": "_fd)) is None:"
+        },
+        {
+          "line": 864,
+          "file_name": "NOW - MTI",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 866,
+          "file_name": "INFO_BEFO",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 880,
+          "file_name": "READ_AFTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "- RAC",
+          "keyed": false,
+          "keywords": "e where a peer unlinks the b"
+        },
+        {
+          "line": 883,
+          "file_name": "INFO_AFTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "- CON",
+          "keyed": false,
+          "keywords": "tent replaced post-rename by"
+        },
+        {
+          "line": 886,
+          "file_name": "NOT HMAC.",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": "R",
+          "device": "EN, IN",
+          "keyed": false,
+          "keywords": "fo_after.token):  # pragma:"
+        },
+        {
+          "line": 888,
+          "file_name": "MTIME_AFT",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "NO COV",
+          "keyed": false,
+          "keywords": "er - heartbeat raced our ren"
+        },
+        {
+          "line": 898,
+          "file_name": "_SUPPORTS",
+          "file_type": "_",
+          "designation": "D",
+          "mode": "",
+          "format": "F",
+          "device": ":  # P",
+          "keyed": false,
+          "keywords": "ragma: needs dir-fd"
+        },
+        {
+          "line": 926,
+          "file_name": "ILE_EXISTS",
+          "file_type": "(",
+          "designation": "P",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 17,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 773,
+          "name": "= _OPEN_MARKER",
+          "ds_type": "AM",
+          "from_pos": "e, dir_",
+          "to_length": "fd=dir_",
+          "decimal": "f",
+          "data_type": "D)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 904,
+          "name": "ENTITY: TUPLE[I",
+          "ds_type": ",",
+          "from_pos": "int] |",
+          "to_length": "None =",
+          "decimal": "N",
+          "data_type": "ON",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 12
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AFMLIB": {
+      "member": "AFMLIB",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 10,
+          "file_name": "ROM FONTTO",
+          "file_type": "O",
+          "designation": "L",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 11,
+          "file_name": "= AFM(\"TE",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 14,
+          "file_name": "[(\"V\",\"A\")",
+          "file_type": "]",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 18,
+          "file_name": "[\"A\"]",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 23,
+          "file_name": ".FONTNAME",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 25,
+          "file_name": ".FAMILYNAM",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 27,
+          "file_name": ".WEIGHT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 29,
+          "file_name": ".XHEIGHT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 31,
+          "file_name": ".ASCENDER",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "[(\"A\",\"V\")",
+          "file_type": "]",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": ".FONTNAME",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 43,
+          "file_name": "1] `ADOBE",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "BE.COM",
+          "keyed": false,
+          "keywords": "/content/dam/acom/en/devnet/"
+        },
+        {
+          "line": 100,
+          "file_name": "ONTNAME\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 101,
+          "file_name": "ULLNAME\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 102,
+          "file_name": "AMILYNAME\"",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 106,
+          "file_name": "ONTBBOX\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 424,
+          "file_name": "PATH:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE FOR READING",
+          "ds_type": "ND",
+          "from_pos": "writin",
+          "to_length": "g AFM (",
+          "decimal": "A",
+          "data_type": "DO",
+          "keywords": "e Font Metrics) files.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 115,
+          "name": "ESCENDER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
