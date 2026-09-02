@@ -1,0 +1,1410 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 10,
+  "total_batches": 477,
+  "members_in_batch": [
+    "EVENTS",
+    "EXTENSIONS",
+    "GUARDED_EVAL",
+    "HOOKS",
+    "INPUTTRANSFORMER2",
+    "MACRO",
+    "MAGIC_ARGUMENTS",
+    "__INIT__",
+    "AUTO",
+    "BASIC"
+  ],
+  "pso_corpus": {
+    "EVENTS": {
+      "member": "EVENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "RASTRUCTUR",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "ALLBAC",
+          "keyed": false,
+          "keywords": "ks on application events."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 116,
+          "name": "EFINE_EVENT(CAL",
+          "ds_type": "AC",
+          "from_pos": "k_funct",
+          "to_length": "ion: _C",
+          "decimal": "a",
+          "data_type": "LL",
+          "keywords": "ackT) -> _CallbackT:",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXTENSIONS": {
+      "member": "EXTENSIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 41,
+          "file_name": "THE EXTEN",
+          "file_type": "S",
+          "designation": "I",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GUARDED_EVAL": {
+      "member": "GUARDED_EVAL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 25,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 76,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 155,
+          "file_name": "MODULE_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 207,
+          "file_name": "VALUE_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 212,
+          "file_name": "METHOD IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 215,
+          "file_name": "METHOD IN",
+          "file_type": "",
+          "designation": "A",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 435,
+          "file_name": "EVALUATIO",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "I",
+          "device": "ET TO",
+          "keyed": false,
+          "keywords": "``forbidden``"
+        },
+        {
+          "line": 442,
+          "file_name": "CONTEXT.E",
+          "file_type": "V",
+          "designation": "A",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 448,
+          "file_name": "CONTEXT.I",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 460,
+          "file_name": "CONTEXT.E",
+          "file_type": "V",
+          "designation": "A",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 538,
+          "file_name": "IND_DUNDER",
+          "file_type": "(",
+          "designation": "N",
+          "mode": "",
+          "format": "_",
+          "device": "R, ...",
+          "keyed": false,
+          "keywords": "] | None:"
+        },
+        {
+          "line": 574,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 576,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 578,
+          "file_name": "HASATTR(T",
+          "file_type": "Y",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "NCE(OB",
+          "keyed": false,
+          "keywords": "j, types.UnionType):"
+        },
+        {
+          "line": 580,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "YPING.",
+          "keyed": false,
+          "keywords": "_BaseGenericAlias)):"
+        },
+        {
+          "line": 582,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 585,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "\"__CLA",
+          "keyed": false,
+          "keywords": "ss_getitem__\"):"
+        },
+        {
+          "line": 588,
+          "file_name": "HASATTR(T",
+          "file_type": "Y",
+          "designation": "P",
+          "mode": "",
+          "format": ",",
+          "device": "RIGIN(",
+          "keyed": false,
+          "keywords": "obj) is not None:"
+        },
+        {
+          "line": 694,
+          "file_name": "_IS_TYPE_",
+          "file_type": "A",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 705,
+          "file_name": "GETATTR(N",
+          "file_type": "O",
+          "designation": "D",
+          "mode": "",
+          "format": "\"",
+          "device": "STANCE",
+          "keyed": false,
+          "keywords": "(node.target, ast.Name):"
+        },
+        {
+          "line": 715,
+          "file_name": "_IS_INSTA",
+          "file_type": "N",
+          "designation": "C",
+          "mode": "",
+          "format": "T",
+          "device": "TARGET",
+          "keyed": false,
+          "keywords": ", context):"
+        },
+        {
+          "line": 793,
+          "file_name": "NODE IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 795,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "MODULE",
+          "keyed": false,
+          "keywords": ")):"
+        },
+        {
+          "line": 800,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "ASYNCF",
+          "keyed": false,
+          "keywords": "unctionDef)):"
+        },
+        {
+          "line": 864,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 871,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 886,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 891,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 906,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 943,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 971,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 973,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 975,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 977,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 979,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 981,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 984,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "LETE))",
+          "keyed": false,
+          "keywords": ":"
+        },
+        {
+          "line": 986,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "CAL)):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 988,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1024,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1063,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1065,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1067,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1069,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1071,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1078,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1084,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1101,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1111,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1113,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1139,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1145,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1178,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1189,
+          "file_name": "LEN(DICTS",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1207,
+          "file_name": "LEN(VALUE",
+          "file_type": "S",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1233,
+          "file_name": "KEY_VALUE",
+          "file_type": "S",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1239,
+          "file_name": "LEN(TYPES",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1259,
+          "file_name": "NOT RETUR",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1261,
+          "file_name": "LEN(RETUR",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1312,
+          "file_name": "NOT_EMPTY",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1335,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1362,
+          "file_name": "ANNOTATIO",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1366,
+          "file_name": "ANNOTATIO",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "(FUNC,",
+          "keyed": false,
+          "keywords": "\"__self__\"):"
+        },
+        {
+          "line": 1453,
+          "file_name": "NODE_ID I",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1455,
+          "file_name": "POLICY.AL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "IN CON",
+          "keyed": false,
+          "keywords": "text.locals:"
+        },
+        {
+          "line": 1457,
+          "file_name": "POLICY.AL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "L",
+          "device": "IN CO",
+          "keyed": false,
+          "keywords": "ntext.globals:"
+        },
+        {
+          "line": 1459,
+          "file_name": "POLICY.AL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "U",
+          "device": "R(BUIL",
+          "keyed": false,
+          "keywords": "tins, node_id):"
+        },
+        {
+          "line": 1462,
+          "file_name": "POLICY.AL",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "U",
+          "device": "TO_IMP",
+          "keyed": false,
+          "keywords": "ort:"
+        },
+        {
+          "line": 1464,
+          "file_name": "NOT POLIC",
+          "file_type": "Y",
+          "designation": ".",
+          "mode": "",
+          "format": "O",
+          "device": "POLIC",
+          "keyed": false,
+          "keywords": "y.allow_locals_access:"
+        },
+        {
+          "line": 1475,
+          "file_name": "POLICY.CA",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 26,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, fiel",
+          "decimal": "d",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 63,
+          "name": "EFAULT `__GETAT",
+          "ds_type": "__",
+          "from_pos": "` is no",
+          "to_length": "t expli",
+          "decimal": "c",
+          "data_type": "IT",
+          "keywords": "y implemented on most objects",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1513,
+          "name": "UCK,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1521,
+          "name": "UMMYNAMEDTUPLE,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1599,
+          "name": "UCK.__DIR__,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 19
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HOOKS": {
+      "member": "HOOKS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": ", SO HOOKS",
+          "file_type": "",
+          "designation": "H",
+          "mode": "",
+          "format": "",
+          "device": "E IPYT",
+          "keyed": false,
+          "keywords": "hon object."
+        },
+        {
+          "line": 15,
+          "file_name": "IG/EXTENSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "SCRIP",
+          "keyed": false,
+          "keywords": "t <startup_files>`. For"
+        },
+        {
+          "line": 71,
+          "file_name": "LINENUM I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 77,
+          "file_name": "' ' IN ED",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "A",
+          "device": ") AND",
+          "keyed": false,
+          "keywords": "editor[0] != '\"':"
+        },
+        {
+          "line": 83,
+          "file_name": "WAIT AND",
+          "file_type": "P",
+          "designation": "R",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 153,
+          "file_name": "SYS.PLATF",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 59,
+          "name": "ITOR(SELF, FILE",
+          "ds_type": "ME",
+          "from_pos": ", linen",
+          "to_length": "um=None",
+          "decimal": ",",
+          "data_type": "W",
+          "keywords": "it=True):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "ITOR = SELF.EDI",
+          "ds_type": "R",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [
+        {
+          "line": 31,
+          "content": "************************************************************************"
+        },
+        {
+          "line": 36,
+          "content": "************************************************************************"
+        }
+      ],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INPUTTRANSFORMER2": {
+      "member": "INPUTTRANSFORMER2",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 30,
+          "file_name": "THE LEADI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "N",
+          "device": "ONLY W",
+          "keyed": false,
+          "keywords": "hitespace, they will be"
+        },
+        {
+          "line": 33,
+          "file_name": "NOT LINES",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "NOT LINES",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 68,
+          "file_name": "INITIAL_R",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 70,
+          "file_name": "ANY PROMP",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "NES,",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 224,
+          "file_name": "NOT LINES",
+          "file_type": "",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "%\"):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 226,
+          "file_name": "RE.MATCH(",
+          "file_type": "R",
+          "designation": "\"",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 236,
+          "file_name": "IND_ASSIGN",
+          "file_type": "_",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 481,
+          "file_name": "NOT CONTE",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 492,
+          "file_name": "NOT CONTE",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 519,
+          "file_name": "NAME == \"",
+          "file_type": "\"",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 653,
+          "file_name": "LEN(LINES",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "H((\"\\N",
+          "keyed": false,
+          "keywords": "\", \"\\r\", \"\\r\\n\", \"\\x0b\", \"\\x"
+        },
+        {
+          "line": 675,
+          "file_name": "NOT TOKEN",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 695,
+          "file_name": "ORM_LOOP_L",
+          "file_type": "I",
+          "designation": "M",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 926,
+          "file_name": "NOT M:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 9
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MACRO": {
+      "member": "MACRO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [
+        {
+          "line": 4,
+          "content": "************************************************************************"
+        },
+        {
+          "line": 9,
+          "content": "************************************************************************"
+        }
+      ],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MAGIC_ARGUMENTS": {
+      "member": "MAGIC_ARGUMENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 177,
+          "file_name": "'DESCRIPT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ECORATOR-BASED",
+          "ds_type": "TH",
+          "from_pos": "od of c",
+          "to_length": "onstruc",
+          "decimal": "t",
+          "data_type": "IN",
+          "keywords": "IPython magics with `argparse`",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AUTO": {
+      "member": "AUTO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BASIC": {
+      "member": "BASIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
