@@ -1,0 +1,583 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 49,
+  "total_batches": 477,
+  "members_in_batch": [
+    "EXCEPTIONS",
+    "SECTION",
+    "DOCUMENT",
+    "STYLES",
+    "HYPERLINK",
+    "PAGEBREAK",
+    "__MAIN__",
+    "ENTRY_POINTS",
+    "README",
+    "README"
+  ],
+  "pso_corpus": {
+    "EXCEPTIONS": {
+      "member": "EXCEPTIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SECTION": {
+      "member": "SECTION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 209,
+          "file_name": "OOTER.SETT",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 11,
+          "name": "OCX.ENUM.SECTIO",
+          "ds_type": "IM",
+          "from_pos": "port WD",
+          "to_length": "_HEADER",
+          "decimal": "_",
+          "data_type": "FO",
+          "keywords": "TER, WD_ORIENTATION, WD_SECTION_START",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "OCX.OXML.NS IMP",
+          "ds_type": "T",
+          "from_pos": "nsmap",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "OCX.OXML.SHARED",
+          "ds_type": "MP",
+          "from_pos": "ort CT_",
+          "to_length": "OnOff",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "OCX.OXML.SIMPLE",
+          "ds_type": "PE",
+          "from_pos": "s impor",
+          "to_length": "t ST_Si",
+          "decimal": "g",
+          "data_type": "NE",
+          "keywords": "TwipsMeasure, ST_TwipsMeasure, XsdStr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "OCX.OXML.TABLE",
+          "ds_type": "PO",
+          "from_pos": "rt CT_T",
+          "to_length": "bl",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 16,
+          "name": "OCX.OXML.TEXT.P",
+          "ds_type": "AG",
+          "from_pos": "raph im",
+          "to_length": "port CT",
+          "decimal": "_",
+          "data_type": "P",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 17,
+          "name": "OCX.OXML.XMLCHE",
+          "ds_type": "I",
+          "from_pos": "mport (",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "OCX.SHARED IMPO",
+          "ds_type": "L",
+          "from_pos": "ength,",
+          "to_length": "lazypro",
+          "decimal": "p",
+          "data_type": "ER",
+          "keywords": "y",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "D_P: CALLABLE[[",
+          "ds_type": "C",
+          "from_pos": "T_P]",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOCUMENT": {
+      "member": "DOCUMENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "OCX.DOCUMENT IM",
+          "ds_type": "RT",
+          "from_pos": "Docume",
+          "to_length": "nt",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "OCX.OPC.CONSTAN",
+          "ds_type": "I",
+          "from_pos": "mport R",
+          "to_length": "ELATION",
+          "decimal": "S",
+          "data_type": "HI",
+          "keywords": "_TYPE as RT",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "OCX.PARTS.COMME",
+          "ds_type": "S",
+          "from_pos": "import",
+          "to_length": "Comment",
+          "decimal": "s",
+          "data_type": "PA",
+          "keywords": "t",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "OCX.PARTS.HDRFT",
+          "ds_type": "IM",
+          "from_pos": "port Fo",
+          "to_length": "oterPar",
+          "decimal": "t",
+          "data_type": ",",
+          "keywords": "eaderPart",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "OCX.PARTS.NUMBE",
+          "ds_type": "NG",
+          "from_pos": "import",
+          "to_length": "Number",
+          "decimal": "i",
+          "data_type": "NG",
+          "keywords": "art",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "OCX.PARTS.SETTI",
+          "ds_type": "S",
+          "from_pos": "import",
+          "to_length": "Setting",
+          "decimal": "s",
+          "data_type": "PA",
+          "keywords": "t",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "OCX.PARTS.STORY",
+          "ds_type": "MP",
+          "from_pos": "ort Sto",
+          "to_length": "ryPart",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "OCX.PARTS.STYLE",
+          "ds_type": "IM",
+          "from_pos": "port St",
+          "to_length": "ylesPar",
+          "decimal": "t",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "OCX.SHAPE IMPOR",
+          "ds_type": "IN",
+          "from_pos": "lineSha",
+          "to_length": "pes",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 16,
+          "name": "OCX.SHARED IMPO",
+          "ds_type": "L",
+          "from_pos": "azyprop",
+          "to_length": "erty",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "STYLES": {
+      "member": "STYLES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "OCX.OPC.CONSTAN",
+          "ds_type": "I",
+          "from_pos": "mport C",
+          "to_length": "ONTENT_",
+          "decimal": "T",
+          "data_type": "YP",
+          "keywords": "as CT",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "OCX.OPC.PACKURI",
+          "ds_type": "MP",
+          "from_pos": "ort Pac",
+          "to_length": "kURI",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "OCX.OPC.PART IM",
+          "ds_type": "RT",
+          "from_pos": "XmlPar",
+          "to_length": "t",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "OCX.OXML.PARSER",
+          "ds_type": "MP",
+          "from_pos": "ort par",
+          "to_length": "se_xml",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "OCX.STYLES.STYL",
+          "ds_type": "I",
+          "from_pos": "mport S",
+          "to_length": "tyles",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HYPERLINK": {
+      "member": "HYPERLINK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 12,
+          "name": "OCX.SHARED IMPO",
+          "ds_type": "P",
+          "from_pos": "arented",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "OCX.TEXT.RUN IM",
+          "ds_type": "RT",
+          "from_pos": "Run",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PAGEBREAK": {
+      "member": "PAGEBREAK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "OCX.OXML.TEXT.P",
+          "ds_type": "EB",
+          "from_pos": "reak im",
+          "to_length": "port CT",
+          "decimal": "_",
+          "data_type": "LA",
+          "keywords": "tRenderedPageBreak",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "OCX.SHARED IMPO",
+          "ds_type": "P",
+          "from_pos": "arented",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__MAIN__": {
+      "member": "__MAIN__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 41,
+          "file_name": "LEN(SYS.A",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "README": {
+      "member": "README",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
