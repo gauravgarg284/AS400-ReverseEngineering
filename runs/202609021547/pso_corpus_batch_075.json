@@ -1,0 +1,789 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 75,
+  "total_batches": 477,
+  "members_in_batch": [
+    "JSON",
+    "PROTOCOLS",
+    "PROVIDERS",
+    "REGISTRY",
+    "CITATION",
+    "MAYBE",
+    "PARTIAL",
+    "HANDLERS",
+    "CLIENT",
+    "HANDLERS"
+  ],
+  "pso_corpus": {
+    "JSON": {
+      "member": "JSON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 130,
+          "file_name": "JSON_STAR",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 220,
+          "file_name": "JSON_STAR",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROTOCOLS": {
+      "member": "PROTOCOLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROVIDERS": {
+      "member": "PROVIDERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 78,
+          "file_name": "MODE IN D",
+          "file_type": "E",
+          "designation": "P",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REGISTRY": {
+      "member": "REGISTRY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 40,
+          "file_name": "NORMALIZE",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "E HANDLER REGIS",
+          "ds_type": "Y",
+          "from_pos": "for v2.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 9,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CITATION": {
+      "member": "CITATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MAYBE": {
+      "member": "MAYBE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARTIAL": {
+      "member": "PARTIAL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HANDLERS": {
+      "member": "HANDLERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "VERSION:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "\"MESSAGES",
+          "file_type": "\"",
+          "designation": "",
+          "mode": "",
+          "format": "K",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": "\"CHAT_HIS",
+          "file_type": "T",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "N KWAR",
+          "keyed": false,
+          "keywords": "gs:"
+        },
+        {
+          "line": 57,
+          "file_name": "MESSAGES:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 62,
+          "file_name": "\"MODEL_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "NOT IN",
+          "keyed": false,
+          "keywords": "new_kwargs:"
+        },
+        {
+          "line": 75,
+          "file_name": "\"MODEL_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "NOT IN",
+          "keyed": false,
+          "keywords": "new_kwargs:"
+        },
+        {
+          "line": 85,
+          "file_name": "VERSION =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 93,
+          "file_name": "HASATTR(R",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 97,
+          "file_name": "HASATTR(R",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "R(RESP",
+          "keyed": false,
+          "keywords": "onse.message, \"content\"):"
+        },
+        {
+          "line": 118,
+          "file_name": "CHUNK_TYP",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 128,
+          "file_name": "TEXT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 28,
+          "name": "ETECT_CLIENT_VE",
+          "ds_type": "IO",
+          "from_pos": "n(kwarg",
+          "to_length": "s: dict",
+          "decimal": "[",
+          "data_type": "ST",
+          "keywords": ", Any]) -> str:",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT": {
+      "member": "CLIENT",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T TYPE_CHE",
+          "line": 11
+        },
+        {
+          "name": "E.CLIENT,",
+          "line": 32
+        },
+        {
+          "name": "E.CLIENTV2",
+          "line": 40
+        },
+        {
+          "name": "E.ASYNCCLI",
+          "line": 48
+        },
+        {
+          "name": "E.ASYNCCLI",
+          "line": 56
+        },
+        {
+          "name": "E.CLIENT |",
+          "line": 63
+        },
+        {
+          "name": ": IF MODE",
+          "line": 78
+        },
+        {
+          "name": "OR: IF CLI",
+          "line": 79
+        },
+        {
+          "name": "T COHERE",
+          "line": 82
+        },
+        {
+          "name": "UCTOR_CLIE",
+          "line": 88
+        },
+        {
+          "name": "UCTOR_CLIE",
+          "line": 92
+        },
+        {
+          "name": "EGISTRY.IS",
+          "line": 108
+        },
+        {
+          "name": "ETURN CLIE",
+          "line": 152
+        },
+        {
+          "name": "ETURN AWAI",
+          "line": 155
+        },
+        {
+          "name": "N RESULT",
+          "line": 156
+        },
+        {
+          "name": "ETURN CLIE",
+          "line": 175
+        },
+        {
+          "name": "N CLIENT.C",
+          "line": 176
+        }
+      ],
+      "fields": [
+        {
+          "name": "NONE  # TY",
+          "from_pos": "e: i",
+          "to_pos": "nore",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T TYPE_CHE",
+          "line": 27,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MODE.TOOLS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENT,",
+          "line": 33,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "...",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENT,",
+          "line": 35,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MODE.TOOLS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENTV2",
+          "line": 41,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "...",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENTV2",
+          "line": 43,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MODE.TOOLS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.ASYNCCLI",
+          "line": 49,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MODE.TOOLS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.ASYNCCLI",
+          "line": 57,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MODE.TOOLS",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENT |",
+          "line": 64,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INSTRUCTOR",
+          "from_pos": "inst",
+          "to_pos": "nce",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENT |",
+          "line": 67,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "COHERE CL",
+          "from_pos": "ent",
+          "to_pos": "nsta",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "E.CLIENT |",
+          "line": 70,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INSTRUCTOR",
+          "from_pos": "impo",
+          "to_pos": "t Mo",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T COHERE",
+          "line": 83,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INSTRUCTOR",
+          "from_pos": "v2.p",
+          "to_pos": "ovid",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T COHERE",
+          "line": 84,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CLIENT (RE",
+          "from_pos": "omme",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T COHERE",
+          "line": 86,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CLIENT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UCTOR_CLIE",
+          "line": 90,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NONE:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UCTOR_CLIE",
+          "line": 96,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL_KWARGS.",
+          "from_pos": "op(\"",
+          "to_pos": "trea",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EGISTRY.IS",
+          "line": 151,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N RESULT",
+          "line": 169,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL_KWARGS.",
+          "from_pos": "op(\"",
+          "to_pos": "trea",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N RESULT",
+          "line": 174,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N CLIENT.C",
+          "line": 189,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "R INSTANCE",
+          "line": 3,
+          "keyword": "rarchical registry system."
+        },
+        {
+          "type": "SELECT",
+          "field": "ARE REGIS",
+          "line": 18,
+          "keyword": "ors auto-register on import)"
+        },
+        {
+          "type": "OMIT",
+          "field": "HERE",
+          "line": 25,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "DE = NORMA",
+          "line": 105,
+          "keyword": "ider.COHERE, mode)"
+        },
+        {
+          "type": "OMIT",
+          "field": "DE IS REGI",
+          "line": 107,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "YNCCLIENT,",
+          "line": 124,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "YNCCLIENTV",
+          "line": 126,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "INSTANCE(C",
+          "line": 146,
+          "keyword": ".AsyncClient, cohere.AsyncClientV2))"
+        },
+        {
+          "type": "SELECT",
+          "field": "YNCINSTRUC",
+          "line": 164,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 19,
+      "key_field_names": []
+    }
+  }
+}
