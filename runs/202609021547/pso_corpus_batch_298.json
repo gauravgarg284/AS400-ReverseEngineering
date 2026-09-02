@@ -1,0 +1,1509 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 298,
+  "total_batches": 477,
+  "members_in_batch": [
+    "WINDOWS_COMPATIBILITY",
+    "WINDOWS_FIXUP",
+    "VISIBILITY",
+    "DATETIME",
+    "BIGNUM-DTOA",
+    "BIGNUM",
+    "CACHED-POWERS",
+    "DIY-FP",
+    "DOUBLE-CONVERSION",
+    "DOUBLE-TO-STRING"
+  ],
+  "pso_corpus": {
+    "WINDOWS_COMPATIBILITY": {
+      "member": "WINDOWS_COMPATIBILITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 18,
+          "file_name": "_WIN32",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 25,
+          "file_name": "INE WIN32_",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 39,
+          "file_name": "// _WIN3",
+          "file_type": "2",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "EFINE NOMINMAX",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 30,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "EFINE _WIN32_WI",
+          "ds_type": "T",
+          "from_pos": "0x601",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WINDOWS_FIXUP": {
+      "member": "WINDOWS_FIXUP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 20,
+          "file_name": "_WIN32",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 52,
+          "file_name": "// _WIN3",
+          "file_type": "2",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "EF MAX",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "EF MIN",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 27,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 31,
+          "name": "EF COPYFILE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "EF CREATEFILE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "EF DELETEFILE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 42,
+          "name": "EF IN",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 44,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 45,
+          "name": "EF OUT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 47,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "VISIBILITY": {
+      "member": "VISIBILITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 21,
+          "file_name": "INE USE_OS",
+          "file_type": "_",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 22,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 27,
+          "file_name": "INE DATE_B",
+          "file_type": "U",
+          "designation": "I",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 29,
+          "file_name": "INE DATE_U",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 30,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DATETIME": {
+      "member": "DATETIME",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 25,
+          "file_name": "NOEXCEPT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 27,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 26,
+          "name": "EF NOEXCEPT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BIGNUM-DTOA": {
+      "member": "BIGNUM-DTOA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 38,
+          "file_name": "OR EXAMPLE",
+          "file_type": "",
+          "designation": "T",
+          "mode": "",
+          "format": "O",
+          "device": "999888",
+          "keyed": false,
+          "keywords": "97 is (the less accurate but"
+        },
+        {
+          "line": 44,
+          "file_name": "OR INSTANC",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 86,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 79,
+          "name": "A TERMINATING",
+          "ds_type": "LL",
+          "from_pos": "-charac",
+          "to_length": "ter.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BIGNUM": {
+      "member": "BIGNUM",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 116,
+          "file_name": "(SIZE > K",
+          "file_type": "B",
+          "designation": "I",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 154,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 45,
+          "name": "ASSIGNUINT16(C",
+          "ds_type": "ST",
+          "from_pos": "uint16",
+          "to_length": "_t valu",
+          "decimal": "e",
+          "data_type": ");",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 46,
+          "name": "ASSIGNUINT64(U",
+          "ds_type": "T6",
+          "from_pos": "4_t val",
+          "to_length": "ue);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 47,
+          "name": "ASSIGNBIGNUM(C",
+          "ds_type": "ST",
+          "from_pos": "Bignum",
+          "to_length": "& other",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 49,
+          "name": "ASSIGNDECIMALS",
+          "ds_type": "IN",
+          "from_pos": "g(const",
+          "to_length": "Vector",
+          "decimal": "<",
+          "data_type": "CO",
+          "keywords": "st char> value);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "ASSIGNHEXSTRIN",
+          "ds_type": "CO",
+          "from_pos": "nst Vec",
+          "to_length": "tor<con",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "har> value);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 52,
+          "name": "ASSIGNPOWERUIN",
+          "ds_type": "6(",
+          "from_pos": "uint16_",
+          "to_length": "t base,",
+          "decimal": "",
+          "data_type": "CO",
+          "keywords": "st int exponent);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "ADDUINT64(CONS",
+          "ds_type": "UI",
+          "from_pos": "nt64_t",
+          "to_length": "operand",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 55,
+          "name": "ADDBIGNUM(CONS",
+          "ds_type": "BI",
+          "from_pos": "gnum& o",
+          "to_length": "ther);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 57,
+          "name": "SUBTRACTBIGNUM",
+          "ds_type": "ON",
+          "from_pos": "st Bign",
+          "to_length": "um& oth",
+          "decimal": "e",
+          "data_type": "R)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 59,
+          "name": "SQUARE();",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "SHIFTLEFT(CONS",
+          "ds_type": "IN",
+          "from_pos": "t shift",
+          "to_length": "_amount",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 61,
+          "name": "MULTIPLYBYUINT",
+          "ds_type": "(C",
+          "from_pos": "onst ui",
+          "to_length": "nt32_t",
+          "decimal": "f",
+          "data_type": "AC",
+          "keywords": "or);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 62,
+          "name": "MULTIPLYBYUINT",
+          "ds_type": "(C",
+          "from_pos": "onst ui",
+          "to_length": "nt64_t",
+          "decimal": "f",
+          "data_type": "AC",
+          "keywords": "or);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 63,
+          "name": "MULTIPLYBYPOWE",
+          "ds_type": "FT",
+          "from_pos": "en(cons",
+          "to_length": "t int e",
+          "decimal": "x",
+          "data_type": "PO",
+          "keywords": "ent);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 64,
+          "name": "TIMES10() { RE",
+          "ds_type": "RN",
+          "from_pos": "Multip",
+          "to_length": "lyByUIn",
+          "decimal": "t",
+          "data_type": "32",
+          "keywords": "10); }",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "ALIGN(CONST BI",
+          "ds_type": "UM",
+          "from_pos": "& other",
+          "to_length": ");",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 121,
+          "name": "CLAMP();",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 125,
+          "name": "ZERO() {",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 132,
+          "name": "BIGITSSHIFTLEF",
+          "ds_type": "CO",
+          "from_pos": "nst int",
+          "to_length": "shift_",
+          "decimal": "a",
+          "data_type": "MO",
+          "keywords": "nt);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 138,
+          "name": "SUBTRACTTIMES(",
+          "ds_type": "NS",
+          "from_pos": "t Bignu",
+          "to_length": "m& othe",
+          "decimal": "r",
+          "data_type": ",",
+          "keywords": "onst int factor);",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CACHED-POWERS": {
+      "member": "CACHED-POWERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 66,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 47,
+          "name": "GETCACHEDPOWER",
+          "ds_type": "RB",
+          "from_pos": "inaryEx",
+          "to_length": "ponentR",
+          "decimal": "a",
+          "data_type": "NG",
+          "keywords": "(int min_exponent,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 57,
+          "name": "GETCACHEDPOWER",
+          "ds_type": "RD",
+          "from_pos": "ecimalE",
+          "to_length": "xponent",
+          "decimal": "(",
+          "data_type": "IN",
+          "keywords": "requested_exponent,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DIY-FP": {
+      "member": "DIY-FP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 46,
+          "file_name": "P() : F_(0",
+          "file_type": ")",
+          "designation": ",",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "P(CONST UI",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "T",
+          "device": "2_T EX",
+          "keyed": false,
+          "keywords": "ponent) : f_(significand), e"
+        },
+        {
+          "line": 139,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 53,
+          "name": "SUBTRACT(CONST",
+          "ds_type": "IY",
+          "from_pos": "Fp& oth",
+          "to_length": "er) {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 69,
+          "name": "MULTIPLY(CONST",
+          "ds_type": "IY",
+          "from_pos": "Fp& oth",
+          "to_length": "er) {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 97,
+          "name": "NORMALIZE() {",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 126,
+          "name": "SET_F(UINT64_T",
+          "ds_type": "EW",
+          "from_pos": "_value)",
+          "to_length": "{ f_ =",
+          "decimal": "",
+          "data_type": "NE",
+          "keywords": "_value; }",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 127,
+          "name": "SET_E(INT32_T",
+          "ds_type": "W_",
+          "from_pos": "value)",
+          "to_length": "{ e_ =",
+          "decimal": "n",
+          "data_type": "EW",
+          "keywords": "value; }",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOUBLE-CONVERSION": {
+      "member": "DOUBLE-CONVERSION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 34,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "_H_",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOUBLE-TO-STRING": {
+      "member": "DOUBLE-TO-STRING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 40,
+          "file_name": "UNCTION RE",
+          "file_type": "T",
+          "designation": "U",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 87,
+          "file_name": "LAGS SHOUL",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "A",
+          "device": "HE POS",
+          "keyed": false,
+          "keywords": "sible Flags-enum."
+        },
+        {
+          "line": 132,
+          "file_name": "ORMAT.",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 146,
+          "file_name": "ORM IN SHO",
+          "file_type": "R",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "E WITH",
+          "keyed": false,
+          "keywords": "one requested digit, the"
+        },
+        {
+          "line": 194,
+          "file_name": "LAGS: UNIQ",
+          "file_type": "U",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "NENT_S",
+          "keyed": false,
+          "keywords": "IGN."
+        },
+        {
+          "line": 219,
+          "file_name": "OR EXAMPLE",
+          "file_type": "",
+          "designation": "T",
+          "mode": "",
+          "format": "M",
+          "device": "ON OF",
+          "keyed": false,
+          "keywords": "the double 9e59 equals"
+        },
+        {
+          "line": 228,
+          "file_name": "OLLOWING S",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "TH POS",
+          "keyed": false,
+          "keywords": "sible examples):"
+        },
+        {
+          "line": 441,
+          "file_name": "UNCTION RE",
+          "file_type": "T",
+          "designation": "U",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 472,
+          "file_name": "// DOUBL",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "H_",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ISTRIBUTION AND",
+          "ds_type": "SE",
+          "from_pos": "in sou",
+          "to_length": "rce and",
+          "decimal": "",
+          "data_type": "BI",
+          "keywords": "ary forms, with or without",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "IFICATION, ARE",
+          "ds_type": "RM",
+          "from_pos": "itted p",
+          "to_length": "rovided",
+          "decimal": "",
+          "data_type": "TH",
+          "keywords": "t the following conditions are",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 197,
+          "name": "ECIMAL_IN_SHORT",
+          "ds_type": "T_",
+          "from_pos": "low: -6",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 198,
+          "name": "ECIMAL_IN_SHORT",
+          "ds_type": "T_",
+          "from_pos": "high: 2",
+          "to_length": "1",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 252,
+          "name": "ECIMAL POINT. T",
+          "ds_type": "L",
+          "from_pos": "ast emi",
+          "to_length": "tted di",
+          "decimal": "g",
+          "data_type": "IT",
+          "keywords": "is rounded.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 317,
+          "name": "ECIMAL POINT, T",
+          "ds_type": "D",
+          "from_pos": "ecimal",
+          "to_length": "point,",
+          "decimal": "t",
+          "data_type": "HE",
+          "keywords": "exponent character, the",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 415,
+          "name": "OUBLETOASCII EX",
+          "ds_type": "CT",
+          "from_pos": "s the g",
+          "to_length": "iven bu",
+          "decimal": "f",
+          "data_type": "FE",
+          "keywords": "to be big enough to hold all",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 416,
+          "name": "IGITS AND A TER",
+          "ds_type": "NA",
+          "from_pos": "ting nu",
+          "to_length": "ll-char",
+          "decimal": "a",
+          "data_type": "CT",
+          "keywords": "r. In SHORTEST-mode it expects a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 445,
+          "name": "CREATEEXPONENT",
+          "ds_type": "LR",
+          "from_pos": "epresen",
+          "to_length": "tation(",
+          "decimal": "c",
+          "data_type": "ON",
+          "keywords": "t char* decimal_digits,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 450,
+          "name": "CREATEDECIMALR",
+          "ds_type": "RE",
+          "from_pos": "sentati",
+          "to_length": "on(cons",
+          "decimal": "t",
+          "data_type": "C",
+          "keywords": "ar* decimal_digits,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 11
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
