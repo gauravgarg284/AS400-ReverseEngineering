@@ -1,0 +1,610 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 262,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_IPADDRESS",
+    "_JSON",
+    "_RANGE",
+    "LICENSE",
+    "RECORD",
+    "TOP_LEVEL",
+    "LICENSE",
+    "RECORD",
+    "UTILS",
+    "ACCUMULATION_QUEUE"
+  ],
+  "pso_corpus": {
+    "_IPADDRESS": {
+      "member": "_IPADDRESS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 44,
+          "file_name": "TER THE FU",
+          "file_type": "N",
+          "designation": "C",
+          "mode": "",
+          "format": "N",
+          "device": "SQL:`I",
+          "keyed": false,
+          "keywords": "net` values will be"
+        },
+        {
+          "line": 55,
+          "file_name": "_CASTERS",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 77,
+          "file_name": "S IS NONE",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 84,
+          "file_name": "S IS NONE",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 89,
+          "name": "APT_IPADDRESS(O",
+          "ds_type": "):",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_JSON": {
+      "member": "_JSON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 114,
+          "file_name": "OID IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "JSONARRAY",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 156,
+          "file_name": "LOADS IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 165,
+          "file_name": "ARRAY_OID",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 193,
+          "file_name": "CONN_STAT",
+          "file_type": "U",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "D NOT",
+          "keyed": false,
+          "keywords": "conn.autocommit:"
+        },
+        {
+          "line": 196,
+          "file_name": "NOT R:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_RANGE": {
+      "member": "_RANGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 221,
+          "file_name": "A STRING",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "S",
+          "device": "`RANGE",
+          "keyed": false,
+          "keywords": "` subclass is created"
+        },
+        {
+          "line": 223,
+          "file_name": "THE RETUR",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LICENSE": {
+      "member": "LICENSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 15,
+          "file_name": "OR IN CON",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "MANCE",
+          "keyed": false,
+          "keywords": "OF THIS SOFTWARE."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 11,
+          "name": "ING ALL IMPLIED",
+          "ds_type": "AR",
+          "from_pos": "RANTIES",
+          "to_length": "OF MER",
+          "decimal": "C",
+          "data_type": "HA",
+          "keywords": "TABILITY AND FITNESS. IN NO EVENT",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 4,
+          "file_name": "RACTIONS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 24,
+          "file_name": "_TYPE(X, *",
+          "file_type": "T",
+          "designation": "Y",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 25,
+          "file_name": "IS_ANY(TY",
+          "file_type": "P",
+          "designation": "E",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 31,
+          "file_name": "_STANDARD_",
+          "file_type": "T",
+          "designation": "Y",
+          "mode": "",
+          "format": "(",
+          "device": "BOOL,",
+          "keyed": false,
+          "keywords": "deep: bool):"
+        },
+        {
+          "line": 32,
+          "file_name": "IS_STANDA",
+          "file_type": "R",
+          "designation": "D",
+          "mode": "",
+          "format": "P",
+          "device": "CHECK_",
+          "keyed": false,
+          "keywords": "dict_values, deep=deep):"
+        },
+        {
+          "line": 47,
+          "file_name": "IS_ANY(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 65,
+          "file_name": "IS_ANY(TY",
+          "file_type": "P",
+          "designation": ",",
+          "mode": "",
+          "format": "P",
+          "device": ", DICT",
+          "keyed": false,
+          "keywords": ", OrderedDict, deque, slice)"
+        },
+        {
+          "line": 116,
+          "file_name": "ROMKEYS\":",
+          "file_type": "D",
+          "designation": "I",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 119,
+          "file_name": "OO\": _C().",
+          "file_type": "F",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 150,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 160,
+          "file_name": "IS_ANY(TY",
+          "file_type": "P",
+          "designation": ",",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 174,
+          "file_name": "TYPE(VALU",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 180,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": ", time,",
+          "to_length": "dateti",
+          "decimal": "m",
+          "data_type": "E",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "ECIMAL IMPORT D",
+          "ds_type": "IM",
+          "from_pos": "al",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ACCUMULATION_QUEUE": {
+      "member": "ACCUMULATION_QUEUE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 121,
+          "file_name": "A BATCH A",
+          "file_type": "R",
+          "designation": "R",
+          "mode": "",
+          "format": "S",
+          "device": "URRENT",
+          "keyed": false,
+          "keywords": "ly processing then the batch"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 49,
+          "name": "CONCATENATE(AC",
+          "ds_type": "MU",
+          "from_pos": "lationQ",
+          "to_length": "ueue&&",
+          "decimal": "t",
+          "data_type": "HA",
+          "keywords": ");",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "INSERTBATCH(EX",
+          "ds_type": "BA",
+          "from_pos": "tch bat",
+          "to_length": "ch);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "CLEAR();",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
