@@ -1,0 +1,2008 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 476,
+  "total_batches": 477,
+  "members_in_batch": [
+    "E2E_TEST_REPORT",
+    "FRONTEND_INTEGRATION_GUIDE",
+    "TESTING_GUIDE",
+    "KAFKA_TRANSPORT",
+    "PACK_LOADER",
+    "__INIT__",
+    "__INIT__",
+    "EXECUTOR",
+    "TYPOGRAPHY",
+    "CHROMA"
+  ],
+  "pso_corpus": {
+    "E2E_TEST_REPORT": {
+      "member": "E2E_TEST_REPORT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 22,
+          "name": "BACK LOOP VALID",
+          "ds_type": "IO",
+          "from_pos": "n | 3 |",
+          "to_length": "PASS |",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 70,
+          "name": "E_START` / `NOD",
+          "ds_type": "CO",
+          "from_pos": "mplete`",
+          "to_length": "(sub-a",
+          "decimal": "g",
+          "data_type": "EN",
+          "keywords": "lifecycle)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 97,
+          "name": "E_START",
+          "ds_type": "SU",
+          "from_pos": "b-agent",
+          "to_length": "invoke",
+          "decimal": "d",
+          "data_type": "F",
+          "keywords": "r step tool)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 100,
+          "name": "E_COMPLETE",
+          "ds_type": "SU",
+          "from_pos": "b-agent",
+          "to_length": "finish",
+          "decimal": "e",
+          "data_type": "D,",
+          "keywords": "token usage)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FRONTEND_INTEGRATION_GUIDE": {
+      "member": "FRONTEND_INTEGRATION_GUIDE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 237,
+          "file_name": "EEDBACK\":",
+          "file_type": "\"",
+          "designation": "L",
+          "mode": "",
+          "format": "S",
+          "device": "TEP\"",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 250,
+          "file_name": "EEDBACK\":",
+          "file_type": "\"",
+          "designation": "A",
+          "mode": "",
+          "format": "A",
+          "device": "ICAL S",
+          "keyed": false,
+          "keywords": "takeholder like a product ma"
+        },
+        {
+          "line": 263,
+          "file_name": "EEDBACK\":",
+          "file_type": "\"",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ACH\",",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 478,
+          "file_name": "ER += DECO",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "UE });",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 480,
+          "file_name": "ER = EVENT",
+          "file_type": "S",
+          "designation": ".",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 508,
+          "file_name": "ACE SSEENV",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 556,
+          "file_name": "ACE PROCES",
+          "file_type": "S",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 663,
+          "file_name": "ACE LLMDEL",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 691,
+          "file_name": "ACE LLMCOM",
+          "file_type": "P",
+          "designation": "L",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 731,
+          "file_name": "ACE TOOLCA",
+          "file_type": "L",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 765,
+          "file_name": "ACE TOOLRE",
+          "file_type": "S",
+          "designation": "U",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 805,
+          "file_name": "ACE PROCES",
+          "file_type": "S",
+          "designation": "A",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 857,
+          "file_name": "ACE APPROV",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 891,
+          "file_name": "ACE EXECUT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 931,
+          "file_name": "ACE EXECUT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1083,
+          "file_name": "ACE PROCES",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1099,
+          "file_name": "ACE PROCES",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1105,
+          "file_name": "ACE APPROV",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1114,
+          "file_name": "ACE APPROV",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1122,
+          "file_name": "ACE SSEEVE",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1143,
+          "file_name": "ACE STATEU",
+          "file_type": "P",
+          "designation": "D",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1148,
+          "file_name": "ACE PROCES",
+          "file_type": "S",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1162,
+          "file_name": "ACE STEPST",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1176,
+          "file_name": "ACE PHASE",
+          "file_type": "{",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1182,
+          "file_name": "ACE LLMDEL",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1186,
+          "file_name": "ACE LLMCOM",
+          "file_type": "P",
+          "designation": "L",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1190,
+          "file_name": "ACE TOOLCA",
+          "file_type": "L",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1197,
+          "file_name": "ACE TOOLRE",
+          "file_type": "S",
+          "designation": "U",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1203,
+          "file_name": "ACE ARTIFA",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1211,
+          "file_name": "ACE APPROV",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1218,
+          "file_name": "ACE EXECUT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1229,
+          "file_name": "ACE EXECUT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 27,
+          "name": "UCTION | YOUR D",
+          "ds_type": "LO",
+          "from_pos": "yed ser",
+          "to_length": "vice UR",
+          "decimal": "L",
+          "data_type": "+",
+          "keywords": "`/workflow/v1` |",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 56,
+          "name": "EL` | `STRING \\",
+          "ds_type": "NU",
+          "from_pos": "ll` | N",
+          "to_length": "o | `nu",
+          "decimal": "l",
+          "data_type": "L`",
+          "keywords": "| \u2014 | Model identifier (e.g., `\"bedro",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 209,
+          "name": "IFIEDARGUMENTS`",
+          "ds_type": "`",
+          "from_pos": "object",
+          "to_length": "\\| null",
+          "decimal": "`",
+          "data_type": "|",
+          "keywords": "No | `null` | Replacement tool argume",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 447,
+          "name": "LEEVENT(EVENT);",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 452,
+          "name": "LETERMINALEVENT",
+          "ds_type": "VE",
+          "from_pos": "nt);",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 501,
+          "name": "ATA`** \u2014 JSON E",
+          "ds_type": "EL",
+          "from_pos": "ope wit",
+          "to_length": "h the e",
+          "decimal": "v",
+          "data_type": "EN",
+          "keywords": "payload.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 583,
+          "name": ": STRING;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 791,
+          "name": "URATIONMS\": 438",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 825,
+          "name": "ATA\": {",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1078,
+          "name": "E COMPLETE TYPE",
+          "ds_type": "RI",
+          "from_pos": "pt type",
+          "to_length": "s for f",
+          "decimal": "r",
+          "data_type": "ON",
+          "keywords": "end developers:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1109,
+          "name": "BACK?: STRING;",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1265,
+          "name": "LE**: NO PROCES",
+          "ds_type": "RU",
+          "from_pos": "nning.",
+          "to_length": "Show \"S",
+          "decimal": "t",
+          "data_type": "AR",
+          "keywords": "\" button.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1269,
+          "name": "VANCING**: USER",
+          "ds_type": "PP",
+          "from_pos": "roved,",
+          "to_length": "waiting",
+          "decimal": "",
+          "data_type": "FO",
+          "keywords": "next step to start.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1394,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-s",
+          "to_length": "onnet-4",
+          "decimal": "-",
+          "data_type": "5-",
+          "keywords": "0250929-v1:0` | Sonnet 4.5 | Balanced",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1395,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-h",
+          "to_length": "aiku-4-",
+          "decimal": "5",
+          "data_type": "-2",
+          "keywords": "251001-v1:0` | Haiku 4.5 | Fast, chea",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1396,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-s",
+          "to_length": "onnet-4",
+          "decimal": "-",
+          "data_type": "6`",
+          "keywords": "| Sonnet 4.6 | 64K output | $$ |",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 37
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TESTING_GUIDE": {
+      "member": "TESTING_GUIDE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 430,
+          "file_name": "KA DNS LOO",
+          "file_type": "K",
+          "designation": "U",
+          "mode": "",
+          "format": "A",
+          "device": "LOCALL",
+          "keyed": false,
+          "keywords": "y | Harmless \u2014 falls back to"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 13,
+          "name": "EL SELECTION",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-o",
+          "to_length": "pus-4-6",
+          "decimal": "-",
+          "data_type": "V1",
+          "keywords": "| Opus 4.6 | Most capable, complex r",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-s",
+          "to_length": "onnet-4",
+          "decimal": "-",
+          "data_type": "6`",
+          "keywords": "| Sonnet 4.6 | 64K output, large code",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-s",
+          "to_length": "onnet-4",
+          "decimal": "-",
+          "data_type": "5-",
+          "keywords": "0250929-v1:0` | Sonnet 4.5 | Default",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "ROCK/US.ANTHROP",
+          "ds_type": ".C",
+          "from_pos": "laude-h",
+          "to_length": "aiku-4-",
+          "decimal": "5",
+          "data_type": "-2",
+          "keywords": "251001-v1:0` | Haiku 4.5 | Fast/cheap",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 30,
+          "name": "EL\": \"BEDROCK/U",
+          "ds_type": "AN",
+          "from_pos": "thropic",
+          "to_length": ".claude",
+          "decimal": "-",
+          "data_type": "OP",
+          "keywords": "s-4-6-v1\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 217,
+          "name": "IFIEDARGUMENTS\"",
+          "ds_type": "{",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 417,
+          "name": "EL_OPUS` | `BED",
+          "ds_type": "CK",
+          "from_pos": "/us.ant",
+          "to_length": "hropic.",
+          "decimal": "c",
+          "data_type": "LA",
+          "keywords": "de-opus-4-6-v1` |",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 418,
+          "name": "EL_SONNET` | `B",
+          "ds_type": "RO",
+          "from_pos": "ck/us.a",
+          "to_length": "nthropi",
+          "decimal": "c",
+          "data_type": ".C",
+          "keywords": "aude-sonnet-4-5-20250929-v1:0` |",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 419,
+          "name": "EL_HAIKU` | `BE",
+          "ds_type": "OC",
+          "from_pos": "k/us.an",
+          "to_length": "thropic",
+          "decimal": ".",
+          "data_type": "CL",
+          "keywords": "ude-haiku-4-5-20251001-v1:0` |",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 427,
+          "name": "EL=GPT-4O` IN L",
+          "ds_type": "S",
+          "from_pos": "| Tool",
+          "to_length": "frontma",
+          "decimal": "t",
+          "data_type": "TE",
+          "keywords": "has `model: gpt-4o` | Set `model: nu",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KAFKA_TRANSPORT": {
+      "member": "KAFKA_TRANSPORT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "KA-BACKED",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "VENTS.",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PACK_LOADER": {
+      "member": "PACK_LOADER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 28,
+          "file_name": "NOT PACK_",
+          "file_type": "D",
+          "designation": "I",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 41,
+          "file_name": "\"PROCESS.",
+          "file_type": "M",
+          "designation": "D",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 55,
+          "file_name": "NOT _PACK",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "RAME ASSIS",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "W",
+          "device": "NERATI",
+          "keyed": false,
+          "keywords": "on from user queries.\""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXECUTOR": {
+      "member": "EXECUTOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TYPOGRAPHY": {
+      "member": "TYPOGRAPHY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 16,
+          "file_name": "NOT DESIG",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 107,
+          "file_name": "GOOGLE_FO",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 116,
+          "file_name": "GOOGLE_FO",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 118,
+          "file_name": "FONT_FACE",
+          "file_type": "_",
+          "designation": "B",
+          "mode": "",
+          "format": "K",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 131,
+          "file_name": "NOT EXPEC",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 159,
+          "file_name": "NOT BODY_",
+          "file_type": "R",
+          "designation": "U",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHROMA": {
+      "member": "CHROMA",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "EAL,",
+          "line": 19
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 24
+        },
+        {
+          "name": "EAL, BOOL_",
+          "line": 67
+        },
+        {
+          "name": "EAL, BOOL_",
+          "line": 74
+        },
+        {
+          "name": "EAL,",
+          "line": 161
+        },
+        {
+          "name": "EAL,",
+          "line": 176
+        },
+        {
+          "name": "EAL,",
+          "line": 247
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 252
+        },
+        {
+          "name": "EAL, BOOL_",
+          "line": 295
+        },
+        {
+          "name": "EAL, BOOL_",
+          "line": 302
+        },
+        {
+          "name": "EAL, BOOL_",
+          "line": 338
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 354
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 359
+        },
+        {
+          "name": "EAL,",
+          "line": 456
+        },
+        {
+          "name": "EAL,",
+          "line": 471
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 479
+        },
+        {
+          "name": "IMARY KEY,",
+          "line": 535
+        },
+        {
+          "name": "EAL,",
+          "line": 548
+        }
+      ],
+      "fields": [
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 16,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 17,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT NOT N",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 26,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 34,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 39,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOT NULL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 41,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 43,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 49,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 55,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 64,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 71,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 90,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 102,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOT NULL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 104,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 119,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 124,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 131,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ME, TOPIC,",
+          "from_pos": "dime",
+          "to_pos": "sion",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 144,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 149,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 158,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 165,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 173,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 244,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 245,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT NOT N",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 254,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 262,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 267,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOT NULL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 269,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 271,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 277,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 283,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 292,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 299,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 335,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL, BOOL_",
+          "line": 336,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT NOT N",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 361,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 369,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 374,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOT NULL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 376,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 385,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 397,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOT NULL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 399,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 414,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 419,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY, --",
+          "from_pos": "uniq",
+          "to_pos": "e gl",
+          "decimal_pos": "b",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 426,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ME, TOPIC,",
+          "from_pos": "dime",
+          "to_pos": "sion",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 439,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 444,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 453,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RY KEY,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 460,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 468,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT NOT N",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 537,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NULL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 545,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXT,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IMARY KEY,",
+          "line": 546,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE EMBEDD",
+          "from_pos": "ng_f",
+          "to_pos": "llte",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAL,",
+          "line": 557,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "EQ_IDMAX_S",
+          "line": 10,
+          "keyword": "ABLE max_seq_id ("
+        },
+        {
+          "type": "SELECT",
+          "field": "EGMENTS\u0007CR",
+          "line": 33,
+          "keyword": "gments\" ("
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 36,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "QL TEXT NO",
+          "line": 84,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 92,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 133,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 151,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 167,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "YSDB",
+          "line": 197,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "EQ_IDMAX_S",
+          "line": 238,
+          "keyword": "ABLE max_seq_id ("
+        },
+        {
+          "type": "SELECT",
+          "field": "EGMENTS\u0007CR",
+          "line": 261,
+          "keyword": "gments\" ("
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 264,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "QL TEXT NO",
+          "line": 312,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 327,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "EQ_IDMAX_S",
+          "line": 343,
+          "keyword": "ABLE max_seq_id ("
+        },
+        {
+          "type": "SELECT",
+          "field": "TR TEXT",
+          "line": 355,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "EGMENTS\u0007CR",
+          "line": 368,
+          "keyword": "gments\" ("
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 371,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 387,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 428,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 446,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 462,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TR TEXT",
+          "line": 480,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T NULL,",
+          "line": 486,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "EQ_ID DROP",
+          "line": 517,
+          "keyword": ";"
+        },
+        {
+          "type": "SELECT",
+          "field": "EQ_ID RENA",
+          "line": 518,
+          "keyword": "seq_id TO seq_id;"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 54,
+      "key_field_names": []
+    }
+  }
+}
