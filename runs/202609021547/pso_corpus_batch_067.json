@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 67,
+  "total_batches": 477,
+  "members_in_batch": [
+    "MONITORED_RESOURCE",
+    "MONITORING",
+    "POLICY",
+    "QUOTA",
+    "RESOURCE",
+    "ROUTING",
+    "SERVICE",
+    "SOURCE_INFO",
+    "SYSTEM_PARAMETER",
+    "USAGE"
+  ],
+  "pso_corpus": {
+    "MONITORED_RESOURCE": {
+      "member": "MONITORED_RESOURCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 36,
+          "file_name": "FERENT API",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "RED RE",
+          "keyed": false,
+          "keywords": "source types. APIs generally"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 31,
+          "name": "A SET OF LABEL",
+          "ds_type": "",
+          "from_pos": "For exa",
+          "to_length": "mple, t",
+          "decimal": "h",
+          "data_type": "E",
+          "keywords": "onitored resource descriptor for",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 58,
+          "name": "ISPLAYED IN USE",
+          "ds_type": "IN",
+          "from_pos": "terface",
+          "to_length": "s. It s",
+          "decimal": "h",
+          "data_type": "OU",
+          "keywords": "d be a Title Cased Noun Phrase,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MONITORING": {
+      "member": "MONITORING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 29,
+          "file_name": "INED. THE",
+          "file_type": "`",
+          "designation": "L",
+          "mode": "",
+          "format": "A",
+          "device": "ETURNE",
+          "keyed": false,
+          "keywords": "d_count` metric is sent"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "POLICY": {
+      "member": "POLICY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 42,
+          "file_name": "ORE A REQU",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "ICY AN",
+          "keyed": false,
+          "keywords": "notation is used to"
+        },
+        {
+          "line": 59,
+          "file_name": "IELD. IT R",
+          "file_type": "E",
+          "designation": "Q",
+          "mode": "",
+          "format": "E",
+          "device": "ALID R",
+          "keyed": false,
+          "keywords": "esource reference, and"
+        },
+        {
+          "line": 68,
+          "file_name": "INES POLIC",
+          "file_type": "I",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 27,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "FI",
+          "from_pos": "eldOpti",
+          "to_length": "ons {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "ME",
+          "from_pos": "thodOpt",
+          "to_length": "ions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 74,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "QUOTA": {
+      "member": "QUOTA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 30,
+          "file_name": "OR API CAL",
+          "file_type": "L",
+          "designation": "S",
+          "mode": "",
+          "format": "H",
+          "device": "S METH",
+          "keyed": false,
+          "keywords": "ods to metrics with"
+        },
+        {
+          "line": 143,
+          "file_name": "REE TIER V",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": "D",
+          "device": "RS CON",
+          "keyed": false,
+          "keywords": "sole for this limit."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 91,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "EFAULT NUMBER O",
+          "ds_type": "TO",
+          "from_pos": "kens th",
+          "to_length": "at can",
+          "decimal": "b",
+          "data_type": "E",
+          "keywords": "onsumed during the specified",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 121,
+          "name": "URATION. THIS I",
+          "ds_type": "TH",
+          "from_pos": "e numbe",
+          "to_length": "r of to",
+          "decimal": "k",
+          "data_type": "EN",
+          "keywords": "assigned when a client",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 133,
+          "name": "URATION. CLIENT",
+          "ds_type": "PP",
+          "from_pos": "licatio",
+          "to_length": "n devel",
+          "decimal": "o",
+          "data_type": "PE",
+          "keywords": "s can override the default limit up",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 148,
+          "name": "EFAULTS TO 0, I",
+          "ds_type": "IC",
+          "from_pos": "ating t",
+          "to_length": "hat the",
+          "decimal": "r",
+          "data_type": "E",
+          "keywords": "s no free tier for this service.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 153,
+          "name": "URATION OF THIS",
+          "ds_type": "IM",
+          "from_pos": "it in t",
+          "to_length": "extual",
+          "decimal": "n",
+          "data_type": "OT",
+          "keywords": "tion. Must be \"100s\" or \"1d\".",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 160,
+          "name": "EFINED WITHIN T",
+          "ds_type": "S",
+          "from_pos": "ervice",
+          "to_length": "config.",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 182,
+          "name": "ISPLAY NAME GEN",
+          "ds_type": "AT",
+          "from_pos": "ed from",
+          "to_length": "the co",
+          "decimal": "n",
+          "data_type": "FI",
+          "keywords": "uration.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RESOURCE": {
+      "member": "RESOURCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 159,
+          "file_name": "IELD. IF O",
+          "file_type": "M",
+          "designation": "I",
+          "mode": "",
+          "format": "D",
+          "device": "\"NAME\"",
+          "keyed": false,
+          "keywords": "."
+        },
+        {
+          "line": 205,
+          "file_name": "INES A PRO",
+          "file_type": "T",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "STRIN",
+          "keyed": false,
+          "keywords": "g field that refers to"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 27,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "FI",
+          "from_pos": "eldOpti",
+          "to_length": "ons {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "FI",
+          "from_pos": "leOptio",
+          "to_length": "ns {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "ME",
+          "from_pos": "ssageOp",
+          "to_length": "tions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 232,
+          "name": "OESN'T HAVE A F",
+          "ds_type": "ED",
+          "from_pos": "resour",
+          "to_length": "ce type",
+          "decimal": ".",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ROUTING": {
+      "member": "ROUTING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 283,
+          "file_name": "ORMATION):",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 27,
+          "name": "GOOGLE.PROTOBU",
+          "ds_type": "ME",
+          "from_pos": "thodOpt",
+          "to_length": "ions {",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "JOINED TOGETHE",
+          "ds_type": "IN",
+          "from_pos": "the fo",
+          "to_length": "llowing",
+          "decimal": "",
+          "data_type": "FO",
+          "keywords": "mat: `key1=value1&key2=value2`.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 400,
+          "name": "ETERMINES WHICH",
+          "ds_type": "AR",
+          "from_pos": "ameter",
+          "to_length": "gets us",
+          "decimal": "e",
+          "data_type": "D.",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SERVICE": {
+      "member": "SERVICE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 118,
+          "name": "IRECTLY OR INDI",
+          "ds_type": "CT",
+          "from_pos": "ly by t",
+          "to_length": "he `api",
+          "decimal": "s",
+          "data_type": "`",
+          "keywords": "re automatically included.  Enums",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 149,
+          "name": "EFINED APIS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 155,
+          "name": "EFINES THE LOGS",
+          "ds_type": "SE",
+          "from_pos": "d by th",
+          "to_length": "is serv",
+          "decimal": "i",
+          "data_type": "CE",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 158,
+          "name": "EFINES THE METR",
+          "ds_type": "S",
+          "from_pos": "used by",
+          "to_length": "this s",
+          "decimal": "e",
+          "data_type": "RV",
+          "keywords": "ce.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 161,
+          "name": "EFINES THE MONI",
+          "ds_type": "RE",
+          "from_pos": "d resou",
+          "to_length": "rces us",
+          "decimal": "e",
+          "data_type": "D",
+          "keywords": "y this service. This is required",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SOURCE_INFO": {
+      "member": "SOURCE_INFO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SYSTEM_PARAMETER": {
+      "member": "SYSTEM_PARAMETER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 64,
+          "file_name": "INE A SYST",
+          "file_type": "E",
+          "designation": "M",
+          "mode": "",
+          "format": "R",
+          "device": "EM PAR",
+          "keyed": false,
+          "keywords": "ameter definitions to"
+        },
+        {
+          "line": 75,
+          "file_name": "OR A GIVEN",
+          "file_type": "",
+          "designation": "M",
+          "mode": "",
+          "format": "O",
+          "device": "SHOUL",
+          "keyed": false,
+          "keywords": "d be used. If multiple"
+        },
+        {
+          "line": 82,
+          "file_name": "INE A PARA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "'",
+          "device": "PARAM",
+          "keyed": false,
+          "keywords": "eter may be passed as either"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 29,
+          "name": "/OR A URL QUERY",
+          "ds_type": "AR",
+          "from_pos": "ameter.",
+          "to_length": "This c",
+          "decimal": "o",
+          "data_type": "NF",
+          "keywords": "guration specifies which methods",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "EFINE SYSTEM PA",
+          "ds_type": "ME",
+          "from_pos": "ters.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 71,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 74,
+          "name": "EFINE PARAMETER",
+          "ds_type": "M",
+          "from_pos": "ultiple",
+          "to_length": "names",
+          "decimal": "m",
+          "data_type": "AY",
+          "keywords": "be defined for a parameter.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 86,
+          "name": "EFINE THE NAME",
+          "ds_type": "T",
+          "from_pos": "he para",
+          "to_length": "meter,",
+          "decimal": "s",
+          "data_type": "UC",
+          "keywords": "as \"api_key\" . It is case sensitive.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 89,
+          "name": "EFINE THE HTTP",
+          "ds_type": "AD",
+          "from_pos": "er name",
+          "to_length": "to use",
+          "decimal": "",
+          "data_type": "FO",
+          "keywords": "the parameter. It is case",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 93,
+          "name": "EFINE THE URL Q",
+          "ds_type": "RY",
+          "from_pos": "parame",
+          "to_length": "ter nam",
+          "decimal": "e",
+          "data_type": "T",
+          "keywords": "use for the parameter. It is case",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "USAGE": {
+      "member": "USAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 29,
+          "file_name": "OR EXAMPLE",
+          "file_type": "",
+          "designation": "'",
+          "mode": "",
+          "format": "V",
+          "device": "BILLIN",
+          "keyed": false,
+          "keywords": "g-enabled'."
+        },
+        {
+          "line": 31,
+          "file_name": "OR GOOGLE",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "REMENT",
+          "keyed": false,
+          "keywords": "must be included here."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 50,
+          "name": "OCUMENTED IN HT",
+          "ds_type": "S:",
+          "from_pos": "//cloud",
+          "to_length": ".google",
+          "decimal": ".",
+          "data_type": "CO",
+          "keywords": "/pubsub/docs/overview.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "ETAILS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
