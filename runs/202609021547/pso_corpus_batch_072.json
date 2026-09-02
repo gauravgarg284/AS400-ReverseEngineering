@@ -1,0 +1,765 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 72,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_TEST_EXTENSION.CPYTHON-312-X86_64-LINUX-GNU",
+    "_TEST_EXTENSION_CPP.CPYTHON-312-X86_64-LINUX-GNU",
+    "FAIL_ISSUE_515_FREETHREAD_GC",
+    "LICENSE",
+    "ENTRY_POINTS",
+    "TOP_LEVEL",
+    "_EVENTS",
+    "RECORD",
+    "PARSER",
+    "URL_PARSER"
+  ],
+  "pso_corpus": {
+    "_TEST_EXTENSION.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_TEST_EXTENSION.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "_TEST_EXTENSION_CPP.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_TEST_EXTENSION_CPP.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "EENLET.H\u0000",
+          "line": 1860
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u000e\u0010\ufffd\u0002\u0002A",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 62,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0005C\t\u0003\ufffd\u0002\u0000\u0000\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 246,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "_$\u0000\u0000\tR\u0007Q\u0010\u0000",
+          "from_pos": "\u0001\ufffd\u0014\u0000",
+          "to_pos": "\ufffd\u0014\u0000\u0000",
+          "decimal_pos": ")",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 339,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u001a.\u0000\u0000\u0000\u0003\u0012#\u0000\u0000",
+          "from_pos": "\ufffd\u0013&2",
+          "to_pos": "\u0000\b\u0000\u0005",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1065,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0003\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1098,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0010\u0010\u0000J\ufffd\u0003\u0000\u0000",
+          "from_pos": "\ufffd\u0001\u0003\ufffd",
+          "to_pos": "\u0000\u0000\u0010k",
+          "decimal_pos": "\u0014",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1230,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\b\ufffd\u001b\u0000\u0000Y\u0003=\u0006\u0000",
+          "from_pos": "7c\b\ufffd",
+          "to_pos": "\u0000\u0000Z\u0003",
+          "decimal_pos": "\u0012",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1416,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LE.H\u0000\b\u0000\u0000ST",
+          "from_pos": "io.h",
+          "to_pos": "\u0000\u0000m",
+          "decimal_pos": "d",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EENLET.H\u0000",
+          "line": 1861,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "\u0000\u0000:S\u0000\u0000B\bS\u0000",
+          "line": 1514,
+          "keyword": "\u0003\u0014\u0003US\u0000\u0000Dop\u0000\u0002\u001b\u0003)\ufffd1\u0000\u0000\u0000C\u0006\u0007\u0000\u0000\u0002\ufffd\u0002%\u0003pS\u0000\u0000Dop\u0000\u0002\ufffd\u00029\ufffd1\u0000\u0000\u00006{\u0010\u0000\u0000\u0002\ufffd$b\u001b\u0000\u0000\u0003\ufffdS\u0000\u0000\ufffd\u0001op\u0000\u0002\ufffd=\ufffd1\u0000\u0000\u0000\ufffd\u0001#N\u0000\u0000@\u0015\u0000\u0000\u0000\u0000\u0000\u0000<\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffdBT\u0000\u0000\u00104N\u0000\u0000\ufffd\t\u0000\u0000\ufffd\t\u0000\u0000\u0010@N\u0000\u0000\ufffd\t\u0000\u0000\ufffd\t\u0000\u00007#N\u0000\u0000Y\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0000Y\u0015\u0000\u0000\u0000\u0000\u0000\u0000"
+        },
+        {
+          "type": "SELECT",
+          "field": "TD.H\u0000\b\u0000\u0000WI",
+          "line": 1855,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "DEE\u0000PY_XDE",
+          "line": 1887,
+          "keyword": "\u0000_ZSt3abse\u0000_ZSt3absf\u0000_ZSt10nexttowardee\u000015PyNumberMethods\u0000tmpfile64\u0000_ZSt3absl\u0000_ZSt6scalbnfi\u0000_ZSt3absn\u0000_ZSt6lgammae\u0000_ZSt7signbitd\u0000_ZSt7signbitf\u0000fgets\u0000tm_hour\u0000__value\u0000_ZSt4fminff\u0000_ZSt5log10e\u0000src/greenlet/tests/_test_extension_cpp.cpp\u0000objobjproc\u0000nb_inplace_remainder\u0000getiterfunc\u000013PyBufferProcs\u0000PyMethodDef\u0000__ssize_t\u0000_IO_codecvt\u0000tp_richcompare\u0000nb_int\u0000tp_dealloc\u0000__uint_least8_t\u0000releasebufferproc\u0000_IO_save_end\u0000sqrt\u0000am_send\u0000_ZSt3expf\u0000lldiv\u0000_ZSt9nextafteree\u0000PyExc_AssertionError\u0000wcscspn\u0000fmin\u0000localeconv\u0000_M_addref\u0000_M_get\u0000tp_as_sequence\u0000tp_repr\u0000ssizeobjargproc\u0000PTHREAD_MUTEX_STALLED\u0000strides\u0000Py_ssize_t\u0000atof\u0000_IO_write_base\u0000tmpnam\u0000_ZSt10nexttowardfe\u0000tp_vectorcall\u0000PYGEN_NEXT\u0000_lock\u0000at_quick_exit\u0000isunordered\u0000getbufferproc\u0000int_curr_symbol\u0000_ZSt3fmaeee\u0000tp_itemsize\u0000_ZSt9nextafterff\u0000string_view_literals\u0000wcschr\u0000_ZSt6scalbnei\u0000nb_xor\u0000_ZSt4tanhe\u0000_ZSt4tanhf\u0000__int16_t\u0000_ZSt5asinhe\u0000ob_base\u0000fopen64\u0000tp_init\u0000_ZSt5lrinte\u0000_ZSt5lrintf\u000011max_align_t\u0000PyObject_Call\u0000PYGEN_RETURN\u0000depth\u0000wcsxfrm\u0000atoll\u0000int_frac_digits\u0000_ZNSt15__exception_ptr13exception_ptrC4EPv\u0000string_literals\u0000__builtin_unwind_resume\u0000fgetpos\u0000__pos\u0000_chain\u0000wcscoll\u0000clearerr\u0000_ZSt11isunordereddd\u0000_cur_column\u0000_ZSt4coshe\u0000ldexp\u0000positive_sign\u0000__wch\u0000tp_weaklistoffset\u0000tp_is_gc\u0000nb_absolute\u0000__uint8_t\u0000tp_name\u0000type_info\u0000nexttoward\u0000_ZNSt13runtime_errorD4Ev\u0000result\u0000atoi\u0000atol\u0000getter\u0000tp_mro\u0000nb_floor_divide\u0000wcsrchr\u0000mp_ass_subscript\u0000mon_decimal_point\u0000ob_refcnt\u0000Py_hash_t\u0000_ZSt5hypotee\u0000_ZNSt15__exception_ptr13exception_ptraSERKS0_\u0000PTHREAD_MUTEX_NORMAL\u0000PTHREAD_MUTEX_ROBUST_NP\u0000vwprintf\u0000wctomb\u0000_ZSt9nearbyinte\u0000_ZSt9nearbyintf\u0000_IO_marker\u0000fpos_t\u0000int_n_cs_precedes\u0000UNUSED_self\u0000tp_iter\u0000nb_inplace_or\u0000m_copy\u0000py_test_exception_throw_std\u0000_ZSt4fdimee\u0000_ZSt5hypotff\u0000format\u0000hashfunc\u0000_PyGreenlet_API\u0000allocfunc\u0000nullptr_t\u0000nb_divmod\u0000tp_setattro\u0000nb_true_divide\u0000Py_DECREF\u0000_ZSt11islessequaldd\u0000_ZSt4fabsf\u0000tm_yday\u0000nearbyint\u0000_ZSt4atane\u0000_ZSt4atanf\u0000_IO_FILE\u0000modf\u0000_ZSt10fpclassifyd\u0000_ZSt10fpclassifye\u0000_ZSt10fpclassifyf\u0000_IO_wide_data\u0000_ZSt4fdimff\u0000_ZSt4log2e\u0000_ZSt4log2f\u0000operator=\u0000__off64_t\u0000fgetwc\u0000tp_doc\u0000fpclassify\u0000getwchar\u0000_ZSt4erfce\u0000_ZSt4erfcf\u0000fgetws\u0000isinf\u0000__uint_least16_t\u0000unsigned char\u0000test_exception_switch_and_do_in_g2\u0000__int128 unsigned\u0000_ZSt4modfePe\u0000fclose\u0000wmemchr\u0000copysign\u0000_ZSt3tanf\u0000islessequal\u0000_ZSt8isnormald\u0000_ZSt8isnormale\u0000_ZSt8isnormalf\u0000nb_invert\u0000PyCapsule_Import\u0000fmod\u0000nb_inplace_true_divide\u0000/tmp/build/greenlet\u0000nb_float\u0000tp_free\u0000srand\u0000freopen64\u0000sq_repeat\u0000mp_length\u0000strtoll\u0000_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv\u0000_PyTime_ROUND_FLOOR\u0000wcspbrk\u0000rethrow_exception\u0000mblen\u0000tp_base\u0000nb_inplace_power\u0000tp_vectorcall_offset\u0000nb_remainder\u0000_ZSt6remquoeePi\u0000PyMemberDef\u0000initproc\u0000module\u0000sendfunc\u0000nb_matrix_multiply\u0000overflow_arg_area\u0000_ZN9__gnu_cxx3divExx\u0000p_test_exception_switch_recurse\u0000ndim\u0000gp_offset\u0000wmemcmp\u0000wcsncmp\u0000PTHREAD_MUTEX_STALLED_NP\u0000_IO_lock_t\u0000__uint16_t\u0000_ZSt5isinfd\u0000wmemmove\u0000tp_hash\u0000log10\u0000ml_flags\u00005div_t\u0000nb_inplace_matrix_multiply\u0000PTHREAD_RWLOCK_PREFER_WRITER_NP\u0000tm_min\u0000_ZSt8copysignee\u0000_IO_read_ptr\u0000_ZSt8copysignff\u0000_ZSt5isinff\u0000mon_thousands_sep\u0000islessgreater\u0000ungetwc\u0000fp_offset\u0000ftell\u0000_G_fpos64_t\u0000_ZSt4asine\u0000_ZSt4asinf\u0000_ZSt3fmafff\u0000mbrlen\u0000PyTypeObject\u0000atan2\u0000negative_sign\u0000mbsrtowcs\u0000log1p\u0000~runtime_error\u0000getattrofunc\u0000int_p_cs_precedes\u0000nb_multiply\u0000_ZN11exception_tC4Ei\u0000weakreflist\u0000tp_getattro\u0000_ZSt13islessgreaterdd\u0000_markers\u0000wcstoull\u0000inquiry\u0000_ZSt5expm1e\u0000_ZSt5expm1f\u0000tm_mday\u0000_ZSt3sine\u0000_ZSt3sinf\u0000isgreater\u0000atanh\u0000__uint_least64_t\u0000PyTuple_New\u0000wcscpy\u0000moduledef\u0000wint_t\u0000tp_descr_set\u0000PTHREAD_RWLOCK_PREFER_READER_NP\u0000strtoul\u0000unaryfunc\u0000PyLong_FromLong\u0000_ZSt3expe\u0000py_test_exception_throw_nonstd\u0000wmemset\u0000PTHREAD_MUTEX_RECURSIVE_NP\u0000tp_dict\u0000_ZNSt15__exception_ptr13exception_ptr4swapERS0_\u0000nb_negative\u0000_ZSt4fmaxee\u0000_ZSt13islessgreateree\u0000m_size\u0000nb_lshift\u0000tgamma\u0000PTHREAD_MUTEX_ERRORCHECK\u0000_ZSt6lgammaf\u0000_ZSt7llrounde\u0000_ZSt7llroundf\u0000tp_traverse\u0000_PyTime_ROUND_CEILING\u0000tm_sec\u0000newfunc\u0000__cxa_exception_type\u0000_ZSt7scalblnfl\u0000tp_as_mapping\u0000nb_inplace_subtract\u0000_ZNSt15__exception_ptr13exception_ptrD4Ev\u0000tp_setattr\u0000floor\u0000log2\u0000~exception_ptr\u0000putwchar\u0000nb_inplace_add\u0000_ZSt5log10f\u0000_ZNSt15__exception_ptr13exception_ptraSEOS0_\u0000traverseproc\u0000isnan\u0000nb_inplace_xor\u0000tp_getset\u0000_ZSt13islessgreaterff\u0000_ZSt5frexpePi\u0000fabs\u0000PyModule_Create2\u0000closure\u0000__uint64_t\u0000nb_and\u0000getenv\u0000_ZSt3absg\u0000_ZSt5log1pf\u0000_ZNSt15__exception_ptr13exception_ptrC4Ev\u0000_Py_IsImmortal\u0000_ZSt9isgreateree\u0000_M_release\u0000_flags2\u0000_IO_save_base\u0000__gnu_debug\u0000__uint_least32_t\u0000_ZSt4cbrte\u0000_ZSt4cbrtf\u00006ldiv_t\u0000_IO_read_base\u0000sq_concat\u0000_ZNSt15__exception_ptr4swapERNS_13exception_ptrES1_\u0000_ZSt4modffPf\u0000isgreaterequal\u0000vfwprintf\u0000_ZSt5rounde\u0000_ZSt5roundf\u0000this\u0000char32_t\u0000_unused2\u0000wcstombs\u0000tm_gmtoff\u0000sq_inplace_repeat\u0000erfc\u0000uintptr_t\u0000_typeobject\u0000asinh\u0000_ZSt6tgammae\u0000_ZSt6tgammaf\u0000_ZNKSt15__exception_ptr13exception_ptr6_M_getEv\u0000__float128\u0000g2func\u0000_ZSt5ldexpfi\u0000tp_flags\u0000__cxa_allocate_exception\u0000exception_t\u0000_old_offset\u0000fsetpos\u0000int_n_sep_by_space\u0000_PyTime_ROUND_HALF_EVEN\u0000m_clear\u0000_ZSt5isnand\u0000_ZSt5isnane\u0000_ZSt5isnanf\u000016PyMappingMethods\u0000readonly\u0000ssizeargfunc\u0000m_index\u0000PTHREAD_MUTEX_TIMED_NP\u0000PYGEN_ERROR\u0000__uint32_t\u0000PyModuleDef\u0000_ZSt5trunce\u0000_ZSt5truncf\u0000long long int\u0000wcscmp\u0000_ZSt4fmodff\u0000wmemcpy\u0000nb_inplace_lshift\u0000tm_mon\u0000_PyTime_ROUND_TIMEOUT\u0000__int_least64_t\u0000vectorcallfunc\u0000_freeres_list\u0000m_doc\u0000wcstol\u0000internal\u0000mbtowc\u0000ml_meth\u0000_IO_write_end\u0000PyModuleDef_Slot\u0000ob_size\u0000_ZNSt13runtime_errorD1Ev\u0000PyObject\u0000_ZSt4sqrte\u0000_ZSt4sqrtf\u0000nb_add\u0000wctob\u0000tp_iternext\u0000tp_bases\u0000tp_clear\u0000tp_call\u0000_ZSt17rethrow_exceptionNSt15__exception_ptr13exception_ptrE\u0000__compar_fn_t\u0000decltype(nullptr)\u0000uint_fast64_t\u000012PySendResult\u0000__intmax_t\u0000nb_subtract\u0000_IO_buf_base\u0000double_t\u0000llround\u0000suboffsets\u0000perror\u0000wcsspn\u0000operator bool\u0000short int\u0000fseek\u0000__pad5\u0000descrsetfunc\u0000setvbuf\u000017PySequenceMethods\u0000nb_positive\u0000GNU C++17 14.2.1 20250110 (Red Hat 14.2.1-11) -mtune=generic -march=x86-64 -g -O3 -fno-strict-overflow -fPIC\u0000mbrtowc\u0000nb_inplace_multiply\u0000remquo\u0000_ZSt5atan2ee\u0000tp_members\u0000PyExc_RuntimeError\u0000system\u0000setattrfunc\u0000uint_fast32_t\u0000am_aiter\u0000_ZSt9isgreaterdd\u0000rename\u0000reprfunc\u000014PyAsyncMethods\u0000_ZSt5frexpfPi\u0000_ZSt5atanhe\u0000_ZSt5hypoteee\u0000_ZSt4acose\u0000_ZSt4acosf\u0000__max_align_ld\u0000_mode\u0000was_sq_ass_slice\u0000__max_align_ll\u0000char16_t\u0000sq_item\u0000vfwscanf\u0000wcslen\u0000cbrt\u0000_ZSt7signbite\u0000getchar\u0000_ZSt6lroundf\u0000_ZSt4sinhe\u0000_ZSt5atan2ff\u0000__count\u0000__gnu_cxx\u0000scalbln\u0000sq_inplace_concat\u0000feof\u0000_ZSt3cose\u0000_ZSt3cosf\u0000__unknown__\u0000m_slots\u0000strtoull\u0000qsort\u0000_greenlet\u00009Py_buffer\u0000iternextfunc\u0000long double\u0000float_t\u0000PyArg_ParseTuple\u0000bf_getbuffer\u0000ilogb\u0000m_traverse\u0000PyGreenlet\u0000descrgetfunc\u0000visitproc\u0000_ZSt4exp2e\u0000_ZSt4exp2f\u0000__fpos64_t\u0000PTHREAD_RWLOCK_DEFAULT_NP\u0000fsetpos64\u0000wcsncpy\u0000__wchb\u0000hypot\u0000atan\u0000bsearch\u0000_ZSt4ceile\u0000tp_methods\u0000__int8_t\u0000mp_subscript\u0000_ZSt11islessequalee\u0000left\u0000long long unsigned int\u0000tm_isdst\u0000swap\u0000reg_save_area\u0000wcstold\u0000int_p_sep_by_space\u0000_ZSt8isfinited\u0000_ZSt8isfinitee\u0000_ZSt8isfinitef\u0000_ZSt11isunorderedee\u000011PyVarObject\u0000wcstoll\u0000frexp\u0000__off_t\u0000wcsstr\u00007lldiv_t\u0000_ZSt5log1pe\u0000tp_as_async\u0000_ZNSt15__exception_ptr13exception_ptrC4EDn\u0000nb_index\u0000fgetpos64\u0000tp_alloc\u0000nextafter\u0000expm1\u0000setbuf\u0000nb_rshift\u0000wcscat\u000015_PyTime_round_t\u0000wcsrtombs\u0000__int_least16_t\u0000PTHREAD_MUTEX_ROBUST\u0000_freeres_buf\u0000tm_wday\u0000_ZSt11islessequalff\u0000nb_inplace_and\u0000_ZSt5hypotfff\u0000_ZSt3absx\u0000am_anext\u0000freefunc\u0000mbsinit\u0000acos\u0000_ZSt9isgreaterff\u0000wcstod\u0000wcstof\u0000asin\u0000wcstok\u0000__cxx11\u0000nb_bool\u0000_Unwind_Resume\u0000_ZSt3divll\u0000trunc\u0000quot\u0000PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP\u0000__FILE\u0000acosh\u0000tp_weaklist\u0000_IO_backup_base\u0000setlocale\u0000_shortbuf\u0000tp_as_buffer\u0000PyCFunction\u0000objobjargproc\u0000sq_ass_item\u0000fdim\u0000__int128\u0000_ZSt11isunorderedff\u0000vswprintf\u0000lenfunc\u0000richcmpfunc\u0000PyGetSetDef\u0000m_init\u0000_ZNKSt15__exception_ptr13exception_ptr20__cxa_exception_typeEv\u0000fopen\u0000_ZSt5isinfe\u0000strtold\u0000PyInit__test_extension_cpp\u0000__swappable_details\u0000_ZSt3loge\u0000_ZSt3logf\u0000tp_version_tag\u0000tp_getattr\u0000rewind\u0000_IO_buf_end\u0000_ZSt4logbe\u0000_ZSt4logbf\u0000fmax\u0000nb_reserved\u0000PTHREAD_MUTEX_ERRORCHECK_NP\u0000lgamma\u0000_ZSt6islessdd\u0000tp_cache\u0000tp_basicsize\u0000_ZSt5asinhf\u0000wcsftime\u0000__cxa_free_exception\u0000_ZSt4coshf\u0000m_name\u0000strtod\u0000binaryfunc\u0000strtof\u0000uint_fast8_t\u0000strtol\u0000__debug\u0000PTHREAD_MUTEX_ADAPTIVE_NP\u0000ferror\u0000currency_symbol\u0000_ZSt14isgreaterequaldd\u0000scalbn\u0000_M_exception_object\u0000setter\u0000_ZSt3erfe\u0000_ZSt3erff\u0000_Float32\u0000isfinite\u0000__state\u0000PTHREAD_MUTEX_FAST_NP\u0000atexit\u0000_ZSt6islessee\u0000remove\u0000_ZSt4rinte\u0000_ZNSt13runtime_errorC4EPKc\u0000_ZNKSt15__exception_ptr13exception_ptrcvbEv\u0000p_test_exception_throw_std\u0000__cxa_begin_catch\u0000_vtable_offset\u0000mon_grouping\u0000PyModuleDef_Base\u0000nb_inplace_rshift\u0000__intptr_t\u0000__uintmax_t\u0000tp_as_number\u0000test_exception_switch\u0000_ZSt4rintf\u0000_ZSt14isgreaterequalee\u0000_ZSt5floore\u0000_ZSt5floorf\u0000PTHREAD_MUTEX_DEFAULT\u0000nb_inplace_floor_divide\u0000tmpfile\u000011__mbstate_t\u0000_ZSt9remainderff\u0000setattrofunc\u0000int_p_sign_posn\u0000_ZSt6islessff\u0000__swappable_with_details\u0000_ZSt4ceilf\u0000tm_zone\u0000__int64_t\u0000nb_or\u0000ungetc\u0000_ZNSt13runtime_errorC1EPKc\u0000__cxa_end_catch\u0000tp_finalize\u0000_ZSt5ilogbf\u0000_ZSt3powee\u0000shape\u0000vwscanf\u0000ml_doc\u0000wcrtomb\u0000lconv\u0000_ZSt5ilogbe\u0000_ZSt14isgreaterequalff\u0000_ZSt5atanhf\u0000_IO_read_end\u0000mbstowcs\u0000wcsncat\u0000tp_str\u0000tp_watched\u0000tp_del\u0000_ZNSt15__exception_ptr13exception_ptrC4ERKS0_\u0000_ZSt9remainderee\u0000sq_contains\u0000destructor\u0000int_n_sign_posn\u0000_fileno\u0000_Float128\u0000test_methods\u0000uint_fast16_t\u0000_ZSt3powff\u0000vswscanf\u0000_ZSt7scalblnel\u0000tp_new\u0000isless\u0000_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv\u0000sq_length\u0000_ZSt3tane\u0000__int_least32_t\u0000_ZSt5ldexpei\u0000ceil\u0000_Float64\u0000py_test_call\u0000ob_type\u0000m_free\u0000fputwc\u0000tm_year\u0000_ZN11exception_tC2Ei\u0000_ZNSt15__exception_ptr13exception_ptrC4EOS0_\u0000short unsigned int\u0000noargs\u0000ternaryfunc\u0000tp_descr_get\u0000__int_least8_t\u0000fread\u0000slot\u0000m_base\u0000__ops\u0000__detail\u0000_IO_write_ptr\u0000fputws\u0000__integer_to_chars_is_unsigned\u0000bf_releasebuffer\u0000fgetc\u0000ob_refcnt_split\u0000_ZSt6lrounde\u0000_ZSt6llrinte\u0000_ZSt6llrintf\u0000pimpl\u0000__exception_ptr\u0000__int32_t\u0000signbit\u0000nb_power\u0000_ZSt4fabse\u0000_PyTime_ROUND_UP\u0000_ZSt5hypotddd\u0000_ZSt4sinhf\u0000exp2\u0000_Py_NoneStruct\u0000was_sq_slice\u0000m_methods\u0000_ZSt6remquoffPi\u0000am_await\u0000p_test_exception_throw_nonstd\u0000tp_subclasses\u0000__cxa_throw\u0000PyErr_SetString\u0000fflush\u0000llrint\u0000_ZSt4fminee\u0000ml_name\u0000wchar_t\u0000typedef __va_list_tag __va_list_tag\u0000__cxa_rethrow\u0000_Py_Dealloc\u0000tp_dictoffset\u0000PTHREAD_MUTEX_RECURSIVE\u0000getattrfunc\u0000_ZSt4fmaxff\u0000wcstoul\u0000isnormal\u0000freopen\u0000_ZSt5acoshe\u0000_ZSt5acoshf\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\"\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\"\u0016\u0000\u0000\u0000\u0000\u0000\u0000#\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u00005\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd+\u0012\u0000\u0000\u0000\u0000\u0000\u0000P\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000T\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u00005\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd+\u0012\u0000\u0000\u0000\u0000\u0000\u0000P\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u001a\u0015\u0000\u0000\u0000\u0000\u0000\u0000'\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\b\u0015\u0000\u0000\u0000\u0000\u0000\u00005\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S+\u0012\u0000\u0000\u0000\u0000\u0000\u0000C\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u001a\u0015\u0000\u0000\u0000\u0000\u0000\u0000'\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u001a\u0015\u0000\u0000\u0000\u0000\u0000\u0000'\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\b\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u001a\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u00009\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000T\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0016\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0016\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0017\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\u0017\u0014\u0000\u0000\u0000\u0000\u0000\u00008\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V8\u0014\u0000\u0000\u0000\u0000\u0000\u00009\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0017\u0014\u0000\u0000\u0000\u0000\u0000\u00007\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000,\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P,\u0014\u0000\u0000\u0000\u0000\u0000\u00009\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\ufffdX\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0017\u0014\u0000\u0000\u0000\u0000\u0000\u00002\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0014\u0000\u0000\u0000\u0000\u0000\u0000G\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000UG\u0014\u0000\u0000\u0000\u0000\u0000\u0000w\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0014\u0000\u0000\u0000\u0000\u0000\u0000N\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000TN\u0014\u0000\u0000\u0000\u0000\u0000\u0000Y\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000UY\u0014\u0000\u0000\u0000\u0000\u0000\u0000w\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0013\u0000\u0000\u0000\u0000\u0000\u0000&\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U&\u0013\u0000\u0000\u0000\u0000\u0000\u0000'\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd'\u0013\u0000\u0000\u0000\u0000\u0000\u00009\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U9\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V@\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0013\u0000\u0000\u0000\u0000\u0000\u0000"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 8,
+      "key_field_names": []
+    },
+    "FAIL_ISSUE_515_FREETHREAD_GC": {
+      "member": "FAIL_ISSUE_515_FREETHREAD_GC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 22,
+          "name": ". WITH-GIL BUIL",
+          "ds_type": "A",
+          "from_pos": "re unaf",
+          "to_length": "fected",
+          "decimal": "-",
+          "data_type": "-",
+          "keywords": "rdinary refcounting keeps the nodes",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LICENSE": {
+      "member": "LICENSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 29,
+          "file_name": "OR IN CON",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "HE USE",
+          "keyed": false,
+          "keywords": "OR OTHER DEALINGS IN"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_EVENTS": {
+      "member": "_EVENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 310,
+          "file_name": "IXME: \"A R",
+          "file_type": "E",
+          "designation": "C",
+          "mode": "",
+          "format": "E",
+          "device": "DER AS",
+          "keyed": false,
+          "keywords": "an error) any fields that"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 10,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "ATA\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 28,
+          "name": "_RE = RE.COMPIL",
+          "ds_type": "ME",
+          "from_pos": "thod.en",
+          "to_length": "code(\"a",
+          "decimal": "s",
+          "data_type": "CI",
+          "keywords": "\"))",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARSER": {
+      "member": "PARSER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 416,
+          "file_name": "ERRNO IN",
+          "file_type": "(",
+          "designation": "C",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 61,
+          "name": "EF _INIT(SELF,",
+          "ds_type": "OT",
+          "from_pos": "ocol, c",
+          "to_length": "parser.",
+          "decimal": "l",
+          "data_type": "LH",
+          "keywords": "tp_type_t mode):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 102,
+          "name": "EF _MAYBE_CALL_",
+          "ds_type": "_H",
+          "from_pos": "eader(s",
+          "to_length": "elf):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 113,
+          "name": "EF _ON_HEADER_F",
+          "ds_type": "LD",
+          "from_pos": "(self,",
+          "to_length": "bytes f",
+          "decimal": "i",
+          "data_type": "EL",
+          "keywords": "):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "EF _ON_HEADER_V",
+          "ds_type": "UE",
+          "from_pos": "(self,",
+          "to_length": "bytes v",
+          "decimal": "a",
+          "data_type": "L)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 127,
+          "name": "EF _ON_HEADERS_",
+          "ds_type": "MP",
+          "from_pos": "lete(se",
+          "to_length": "lf):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 133,
+          "name": "EF _ON_CHUNK_HE",
+          "ds_type": "ER",
+          "from_pos": "(self):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 141,
+          "name": "EF _ON_CHUNK_CO",
+          "ds_type": "LE",
+          "from_pos": "te(self",
+          "to_length": "):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 291,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 303,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 316,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 329,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 342,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 354,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 369,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 381,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 392,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 403,
+          "name": "EF HTTPPARSER P",
+          "ds_type": "AR",
+          "from_pos": "ser = <",
+          "to_length": "HttpPar",
+          "decimal": "s",
+          "data_type": "ER",
+          "keywords": "parser.data",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 414,
+          "name": "EF BYTES REASON",
+          "ds_type": "C",
+          "from_pos": "parser.",
+          "to_length": "llhttp_",
+          "decimal": "g",
+          "data_type": "ET",
+          "keywords": "error_reason(parser)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "URL_PARSER": {
+      "member": "URL_PARSER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "EF READONLY BYT",
+          "ds_type": "S",
+          "from_pos": "chema",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "EF READONLY BYT",
+          "ds_type": "H",
+          "from_pos": "ost",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 21,
+          "name": "EF READONLY OBJ",
+          "ds_type": "T",
+          "from_pos": "port",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "EF READONLY BYT",
+          "ds_type": "P",
+          "from_pos": "ath",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 23,
+          "name": "EF READONLY BYT",
+          "ds_type": "Q",
+          "from_pos": "uery",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 24,
+          "name": "EF READONLY BYT",
+          "ds_type": "F",
+          "from_pos": "ragment",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "EF READONLY BYT",
+          "ds_type": "U",
+          "from_pos": "serinfo",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 46,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
