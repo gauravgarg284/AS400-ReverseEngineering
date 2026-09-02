@@ -1,0 +1,951 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 448,
+  "total_batches": 477,
+  "members_in_batch": [
+    "LRA_THEORY",
+    "INFERENCE",
+    "HADAMARD",
+    "KRONECKER",
+    "MATADD",
+    "KIND",
+    "REPMATRIX",
+    "SPARSE",
+    "UTILITIES",
+    "UTILS"
+  ],
+  "pso_corpus": {
+    "LRA_THEORY": {
+      "member": "LRA_THEORY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "IABILITY O",
+          "file_type": "F",
+          "designation": "",
+          "mode": "",
+          "format": "M",
+          "device": "IES.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 81,
+          "file_name": "` TO PREVE",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "E",
+          "device": "UP WIT",
+          "keyed": false,
+          "keywords": "h an"
+        },
+        {
+          "line": 712,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 715,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 731,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 747,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 765,
+          "file_name": "NOT (LEN(",
+          "file_type": "B",
+          "designation": "I",
+          "mode": "",
+          "format": "L",
+          "device": "AND LE",
+          "keyed": false,
+          "keywords": "n(binrel.rhs.free_symbols) ="
+        },
+        {
+          "line": 767,
+          "file_name": "BINREL.FU",
+          "file_type": "N",
+          "designation": "C",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 780,
+          "file_name": "RES == TR",
+          "file_type": "U",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 856,
+          "file_name": "ARBITRARY",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 136,
+          "name": "ICATES THAT LRA",
+          "ds_type": "LV",
+          "from_pos": "er unde",
+          "to_length": "rstands",
+          "decimal": "",
+          "data_type": "AN",
+          "keywords": "makes use of",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INFERENCE": {
+      "member": "INFERENCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ERENCE IN",
+          "file_type": "P",
+          "designation": "R",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 25,
+          "file_name": "LITERAL I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 77,
+          "file_name": "USE_LRA_T",
+          "file_type": "H",
+          "designation": "E",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 82,
+          "file_name": "ALGORITHM",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "SAT\":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 93,
+          "file_name": "ALGORITHM",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 98,
+          "file_name": "ALGORITHM",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 103,
+          "file_name": "ALGORITHM",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 150,
+          "file_name": "THE ASSIG",
+          "file_type": "N",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "UE FOR",
+          "keyed": false,
+          "keywords": "every proposition,"
+        },
+        {
+          "line": 197,
+          "file_name": "EXPR IN B",
+          "file_type": "O",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 200,
+          "file_name": "NOT _VALI",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 202,
+          "file_name": "NOT MODEL",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 206,
+          "file_name": "RESULT IN",
+          "file_type": "",
+          "designation": "B",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 208,
+          "file_name": "DEEP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 222,
+          "file_name": "FORMULA_S",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "E VALI",
+          "keyed": false,
+          "keywords": "dity of expr."
+        },
+        {
+          "line": 244,
+          "file_name": "FORMULA_S",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HADAMARD": {
+      "member": "HADAMARD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 34,
+          "file_name": "NOT MATRI",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": "LEN(MATRI",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 277,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 304,
+          "file_name": "EXP == 1:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 306,
+          "file_name": "NOT BASE.",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 308,
+          "file_name": "EXP.IS_MA",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KRONECKER": {
+      "member": "KRONECKER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 2,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 78,
+          "file_name": "NOT MATRI",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 80,
+          "file_name": "LEN(MATRI",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 92,
+          "file_name": "DIMENSION",
+          "file_type": "",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 236,
+          "file_name": "NOT ALL(A",
+          "file_type": "R",
+          "designation": "G",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 251,
+          "file_name": "C_PART !=",
+          "file_type": "",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 301,
+          "file_name": "NOT ALL(I",
+          "file_type": "S",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "IN MA",
+          "keyed": false,
+          "keywords": "trices):"
+        },
+        {
+          "line": 330,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "S):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 338,
+          "file_name": "NOT ALL(I",
+          "file_type": "S",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "IN KR",
+          "keyed": false,
+          "keywords": "on.args):"
+        },
+        {
+          "line": 354,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": true,
+          "keywords": ""
+        },
+        {
+          "line": 363,
+          "file_name": "NOT ARGS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 369,
+          "file_name": "NOT NONKR",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 392,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "R",
+          "device": "AND A",
+          "keyed": false,
+          "keywords": "ll(a.is_square for a in expr"
+        },
+        {
+          "line": 401,
+          "file_name": "POSSIBLE",
+          "file_type": "W",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "RODUCT",
+          "keyed": false,
+          "keywords": "s of compatible shapes"
+        },
+        {
+          "line": 431,
+          "file_name": "DOIT IS N",
+          "file_type": "O",
+          "designation": "T",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MATADD": {
+      "member": "MATADD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 113,
+          "file_name": "CNT == 1:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 141,
+          "file_name": "LEN(GROUP",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 36,
+          "name": "ENTITY = GENERI",
+          "ds_type": "ER",
+          "from_pos": "oMatrix",
+          "to_length": "()",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KIND": {
+      "member": "KIND",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 85,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REPMATRIX": {
+      "member": "REPMATRIX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 961,
+          "file_name": "THE KEY I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "U",
+          "device": "E A SL",
+          "keyed": false,
+          "keywords": "ice then that element"
+        },
+        {
+          "line": 975,
+          "file_name": "THE SLICE",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "S FROM",
+          "keyed": false,
+          "keywords": "the underlying"
+        },
+        {
+          "line": 984,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 10
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SPARSE": {
+      "member": "SPARSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 48,
+          "file_name": "OR A FLAT",
+          "file_type": "L",
+          "designation": "I",
+          "mode": "",
+          "format": "",
+          "device": "LEMENT",
+          "keyed": false,
+          "keywords": "s does not match"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 457,
+          "name": "LDECOMPOSITION.",
+          "ds_type": "DO",
+          "from_pos": "c__",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "= _LDLdecomposition_sparse.__doc__",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILITIES": {
+      "member": "UTILITIES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 43,
+          "file_name": "DOTPRODSI",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "ATE.ST",
+          "keyed": false,
+          "keywords": "ate is False:"
+        },
+        {
+          "line": 45,
+          "file_name": "DOTPRODSI",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "TE.STA",
+          "keyed": false,
+          "keywords": "te is True:"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 24,
+          "name": "OTPRODSIMP(EXPR",
+          "ds_type": "WI",
+          "from_pos": "thsimp=",
+          "to_length": "False):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 13,
+          "file_name": "NOT L:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 56,
+          "file_name": "ANY(INCOM",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "D",
+          "device": "N EDGE",
+          "keyed": false,
+          "keywords": "s):"
+        },
+        {
+          "line": 93,
+          "file_name": "ALSE: [1,",
+          "file_type": "3",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
