@@ -1,0 +1,1355 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 255,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_LOGICAL_OPS",
+    "TEST_MISSING",
+    "TEST_UFUNC",
+    "TEST_CASE_JUSTIFY",
+    "TEST_EXTRACT",
+    "TEST_FIND_REPLACE",
+    "TEST_SPLIT_PARTITION",
+    "TEST_STRINGS",
+    "TEST_ALGOS",
+    "TEST_NANOPS"
+  ],
+  "pso_corpus": {
+    "TEST_LOGICAL_OPS": {
+      "member": "TEST_LOGICAL_OPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 15,
+          "name": "ATE_RANGE,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_MISSING": {
+      "member": "TEST_MISSING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 98,
+          "name": "X = INDEX([0, 1",
+          "ds_type": "D",
+          "from_pos": "type=\"f",
+          "to_length": "loat64\"",
+          "decimal": ")",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_UFUNC": {
+      "member": "TEST_UFUNC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 16,
+          "file_name": "UNC(REQUES",
+          "file_type": "T",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 62,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 73,
+          "file_name": "FLIP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 100,
+          "file_name": "FLIP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 118,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 128,
+          "file_name": "SHUFFLE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 140,
+          "file_name": "FLIP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 155,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 163,
+          "file_name": "FLIP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 186,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 193,
+          "file_name": "SHUFFLE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 211,
+          "file_name": "SPARSE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 425,
+          "file_name": "1 = PD.DAT",
+          "file_type": "A",
+          "designation": "F",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 426,
+          "file_name": "2 = PD.DAT",
+          "file_type": "A",
+          "designation": "F",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 438,
+          "file_name": "UNC = NP.F",
+          "file_type": "R",
+          "designation": "O",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 445,
+          "file_name": "= PD.DATA",
+          "file_type": "F",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 23,
+          "name": "S=[\"SPARSE\", \"D",
+          "ds_type": "SE",
+          "from_pos": "\"],",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 126,
+          "name": "X = NP.RANDOM.D",
+          "ds_type": "AU",
+          "from_pos": "lt_rng(",
+          "to_length": "2).perm",
+          "decimal": "u",
+          "data_type": "TA",
+          "keywords": "ion(len(a1))",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 261,
+          "name": "S=LAMBDA X: STR",
+          "ds_type": ".D",
+          "from_pos": "type),",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_CASE_JUSTIFY": {
+      "member": "TEST_CASE_JUSTIFY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 58,
+          "name": "ATA, EXPECTED\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_EXTRACT": {
+      "member": "TEST_EXTRACT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 93,
+          "file_name": "INDEX_OR_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 187,
+          "file_name": "LEN(INDEX",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "0",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 367,
+          "file_name": "LEN(INDEX",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 557,
+          "file_name": "LEN(NAMES",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 609,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "X = INDEX([\"A1\"",
+          "ds_type": "\"A",
+          "from_pos": "2\", \"A3",
+          "to_length": "\", \"A4\"",
+          "decimal": ",",
+          "data_type": "\"",
+          "keywords": "5\"])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 542,
+          "name": "ATA, NAMES\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_FIND_REPLACE": {
+      "member": "TEST_FIND_REPLACE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 32,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 90,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 183,
+          "file_name": "NOT PD.IS",
+          "file_type": "N",
+          "designation": "A",
+          "mode": "",
+          "format": ")",
+          "device": "BOOL):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 199,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 262,
+          "file_name": "NOT (",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 282,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 307,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "RING_D",
+          "keyed": false,
+          "keywords": "type.storage == \"pyarrow\":"
+        },
+        {
+          "line": 359,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 393,
+          "file_name": "DTYPE ==",
+          "file_type": "\"",
+          "designation": "O",
+          "mode": "",
+          "format": "C",
+          "device": "NA:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 429,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 465,
+          "file_name": "DTYPE ==",
+          "file_type": "\"",
+          "designation": "O",
+          "mode": "",
+          "format": "C",
+          "device": "NA:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 500,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 631,
+          "file_name": "USE_COMPI",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 651,
+          "file_name": "USE_COMPI",
+          "file_type": "L",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 840,
+          "file_name": "REGEX:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 853,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 923,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 960,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "RING_D",
+          "keyed": false,
+          "keywords": "type.storage == \"pyarrow\":"
+        },
+        {
+          "line": 1015,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1030,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1086,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "RING_D",
+          "keyed": false,
+          "keywords": "type.storage == \"pyarrow\":"
+        },
+        {
+          "line": 1131,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 617,
+          "name": "S=[",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_SPLIT_PARTITION": {
+      "member": "TEST_SPLIT_PARTITION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 387,
+          "file_name": "IS_OBJECT",
+          "file_type": "_",
+          "designation": "O",
+          "mode": "",
+          "format": "A",
+          "device": "G_DTYP",
+          "keyed": false,
+          "keywords": "e):"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 175,
+          "name": "ATA, PAT\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 193,
+          "name": "ATA, PAT, EXPEC",
+          "ds_type": "D\"",
+          "from_pos": ",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 268,
+          "name": "X = INDEX([\"NOS",
+          "ds_type": "IT",
+          "from_pos": "\", \"als",
+          "to_length": "onospli",
+          "decimal": "t",
+          "data_type": "\",",
+          "keywords": "np.nan])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 276,
+          "name": "X = INDEX([\"SOM",
+          "ds_type": "EQ",
+          "from_pos": "ual_spl",
+          "to_length": "its\", \"",
+          "decimal": "w",
+          "data_type": "IT",
+          "keywords": "_no_nans\", np.nan, None])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 291,
+          "name": "X = INDEX([\"SOM",
+          "ds_type": "UN",
+          "from_pos": "equal_s",
+          "to_length": "plits\",",
+          "decimal": "",
+          "data_type": "\"O",
+          "keywords": "e_of_these_things_is_not\", np.nan, No",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 352,
+          "name": "X = INDEX([\"NOS",
+          "ds_type": "IT",
+          "from_pos": "\", \"als",
+          "to_length": "onospli",
+          "decimal": "t",
+          "data_type": "\"]",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 360,
+          "name": "X = INDEX([\"SOM",
+          "ds_type": "EQ",
+          "from_pos": "ual_spl",
+          "to_length": "its\", \"",
+          "decimal": "w",
+          "data_type": "IT",
+          "keywords": "_no_nans\"])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 368,
+          "name": "X = INDEX([\"SOM",
+          "ds_type": "EQ",
+          "from_pos": "ual_spl",
+          "to_length": "its\", \"",
+          "decimal": "w",
+          "data_type": "IT",
+          "keywords": "_no_nans\"])",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 409,
+          "name": "X = INDEX([\"A,B",
+          "ds_type": "\"",
+          "from_pos": "c,d\"],",
+          "to_length": "name=\"x",
+          "decimal": "x",
+          "data_type": "X\"",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 655,
+          "name": "X = INDEX([\"A,B",
+          "ds_type": "\"",
+          "from_pos": "c,d\"],",
+          "to_length": "name=\"x",
+          "decimal": "x",
+          "data_type": "X\"",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 663,
+          "name": "X = INDEX([\"A,B",
+          "ds_type": "\"",
+          "from_pos": "c,d\"],",
+          "to_length": "name=\"x",
+          "decimal": "x",
+          "data_type": "X\"",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_STRINGS": {
+      "member": "TEST_STRINGS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 104,
+          "file_name": "IS_OBJECT",
+          "file_type": "_",
+          "designation": "O",
+          "mode": "",
+          "format": "A",
+          "device": "G_DTYP",
+          "keyed": false,
+          "keywords": "e):"
+        },
+        {
+          "line": 232,
+          "file_name": "SER.DTYPE",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 264,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 280,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 299,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 374,
+          "file_name": "INDEX_OR_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 650,
+          "file_name": "ORM, EXPEC",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 696,
+          "file_name": "INDEX_OR_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 714,
+          "file_name": "INDEX_OR_",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 749,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 830,
+          "file_name": "ANY_STRIN",
+          "file_type": "G",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 678,
+          "name": "X = INDEX([\"\uff21\uff22\uff23",
+          "ds_type": "\"",
+          "from_pos": "\uff11\uff12\uff13\", \"",
+          "to_length": "\uff71\uff72\uff74\"])",
+          "decimal": "",
+          "data_type": "#",
+          "keywords": "oqa: RUF001",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 724,
+          "name": "X = MULTIINDEX.",
+          "ds_type": "OM",
+          "from_pos": "_tuples",
+          "to_length": "([(\"a\",",
+          "decimal": "",
+          "data_type": "\"B",
+          "keywords": "), (\"a\", \"b\")])",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_ALGOS": {
+      "member": "TEST_ALGOS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 2054,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_NANOPS": {
+      "member": "TEST_NANOPS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 791,
+          "file_name": "ASTYPE IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 808,
+          "file_name": "IXTURE\", [",
+          "file_type": "\"",
+          "designation": "A",
+          "mode": "",
+          "format": "F",
+          "device": "RR_INT",
+          "keyed": false,
+          "keywords": "\", \"arr_bool\", \"arr_str\", \"a"
+        },
+        {
+          "line": 816,
+          "file_name": "IXTURE\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1146,
+          "file_name": "NANOPS._B",
+          "file_type": "O",
+          "designation": "T",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1266,
+          "file_name": "DTYPE IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1271,
+          "file_name": "IS_INTEGE",
+          "file_type": "R",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": "IN [\"M",
+          "keyed": false,
+          "keywords": "in\", \"max\"]:"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1254,
+          "name": "TYPE\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
