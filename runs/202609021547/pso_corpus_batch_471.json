@@ -1,0 +1,1007 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 471,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TOP_LEVEL",
+    "SPEEDUPS.CPYTHON-312-X86_64-LINUX-GNU",
+    "ENTRY_POINTS",
+    "TOP_LEVEL",
+    "_WRAPPERS.CPYTHON-312-X86_64-LINUX-GNU",
+    "_QUOTERS",
+    "_QUOTING_C",
+    "PY",
+    "NOTICE",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SPEEDUPS.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "SPEEDUPS.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "\u0004\u0000\u0000\u0002\ufffd",
+          "line": 546
+        }
+      ],
+      "fields": [],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "H\ufffd\ufffd\u0018L\ufffdL$\bI",
+          "line": 14,
+          "keyword": "H\ufffd"
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0000\u0000\ufffd\u0012\u0000\u0000\u0000\u0000\u0000",
+          "line": 505,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [
+        {
+          "line": 219,
+          "keyword": "\u0002L\u0001\u000fY\b\u0000\u0000\u0016\ufffd\u0003\u0000\u0000\u0002M\u0001\u000fY\b\u0000\u0000\u0016\ufffd"
+        }
+      ],
+      "total_fields": 0,
+      "key_field_names": []
+    },
+    "ENTRY_POINTS": {
+      "member": "ENTRY_POINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_WRAPPERS.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_WRAPPERS.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 262
+        },
+        {
+          "name": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1073
+        }
+      ],
+      "fields": [
+        {
+          "name": "\\\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000H",
+          "from_pos": "\ufffdH\ufffdD",
+          "to_pos": "\b\ufffds\ufffd",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 32,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0018\ufffd\u0003D\u000e \u0002\\",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 213,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0018\ufffd\u0003D\u000e W",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 267,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0018\ufffd\u0003G\u000e0\u0002\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 301,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0018\ufffd\u0003D\u000e \ufffd\u0004\u0002",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 309,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0010\ufffd\u0002\u0002A",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 324,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0010\ufffd\u0002\u0003\u0001\u0001",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 339,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000e\u0010\ufffd\u0002\u0002Q",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 346,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0004E\u000e(\ufffd\u0005A\u000e0",
+          "from_pos": "\u0006D\u000e8",
+          "to_pos": "\u0007G\u000e@",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 349,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+          "from_pos": "\u0000\u0000\u0000\u0000",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 368,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0018\ufffd\u0002\u0018\ufffd\u0006\u0000\u0000",
+          "from_pos": "\u0018\u0000\u0000\u0010",
+          "to_pos": "\u0006\u0000\u0000\u0010",
+          "decimal_pos": "\u0006",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 644,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0003\u0000\u0000\u0018\ufffd\u0018\ufffd\u0006\u0000",
+          "from_pos": ",\u001b\u0000\u0000",
+          "to_pos": "\ufffd\u0006\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u000e\u0010A\u000e\b\u0000\u0014\u0000\u0000\u0000",
+          "line": 653,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000",
+          "from_pos": "\u0001T\t\u0003",
+          "to_pos": "\ufffd\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1105,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000",
+          "from_pos": "\u0001T\t\u0003",
+          "to_pos": "\ufffd\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1108,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0005\u0005\u0003\ufffdP<J\u0000\u0002\u0004",
+          "from_pos": "\u0006X\u0000\u0002",
+          "to_pos": "\u0001\u0006<\u0000",
+          "decimal_pos": "\u0004",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1564,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0005\u0005\u0003\ufffdN<J\u0000\u0002\u0004",
+          "from_pos": "\u0006X\u0000\u0002",
+          "to_pos": "\u0001\u0006<\u0000",
+          "decimal_pos": "\u0004",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1573,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0005\u0005\u0003\ufffdP<\u0006J\u0000\u0002",
+          "from_pos": "\u0001X\u0004\u0002",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1682,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0005\u0005\u0003\ufffdN<\u0006J\u0000\u0002",
+          "from_pos": "\u0001X\u0004\u0002",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000*\u0003\ufffd\u0000\u0000\ufffd\ufffd",
+          "line": 1744,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "\u0005\u0019\u0006\u0001\u0005",
+          "line": 1657
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "\u000f\ufffd\u0000\u0000\u0000\u0000\t)",
+          "line": 564,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "MN\u0000\u0000\u0000\u0000\u0000\u0000T\u0018",
+          "line": 1006,
+          "keyword": "\u0000.\u0001T\t\u0003\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000024\u0004\u0000\u0000\u0001\ufffd\u0003\u0012\ufffd\u0006\u0000\u0000pN\u0000\u0000\u0000\u0000\u0000\u0000m\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd\ufffdq\u0000\u0000=o1\u0000\u0001\ufffd\u0003:\ufffd\u0006\u0000\u0000\ufffd|\u0000\u0000\ufffd|\u0000\u0000=o2\u0000\u0001\ufffd\u0003H\ufffd\u0006\u0000\u0000A}\u0000\u00005}\u0000\u0000-\ufffdN\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0018\u0000\u0000\ufffdq\u0000\u0000.\u0001U\u0002s\u0000.\u0001T\u0002|\u0000\u0000-\ufffdN\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0018\u0000\u0000\ufffdq\u0000\u0000.\u0001U\u0002v\u0000.\u0001T\u0002|\u0000\u0000S\ufffdN\u0000\u0000\u0000\u0000\u0000\u00008\u0018\u0000\u0000/\ufffdN\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000.\u0001T\t\u0003\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00002\ufffd \u0000\u0000\u0001\ufffd\u0003\u0012\ufffd\u0006\u0000\u0000\ufffdN\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffdRs\u0000\u00003\ufffd\u0016\u0000\u0000\u0001\ufffd\u0003F\ufffd[\u0000\u0000\ufffd}\u0000\u0000\ufffd}\u0000\u00003i"
+        },
+        {
+          "type": "OMIT",
+          "field": "\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000",
+          "line": 1013,
+          "keyword": "\u00002\ufffd\u001b\u0000\u0000\u0001\ufffd\u0003\u0012\ufffd\u0006\u0000\u0000\ufffdO\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd\ufffdt\u0000\u00003\ufffd\u0016\u0000\u0000\u0001\ufffd\u0003G\ufffd[\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u00003i"
+        },
+        {
+          "type": "OMIT",
+          "field": "J\u0005\b\u00031<\u0005-\u0000\u0002",
+          "line": 1776,
+          "keyword": "\u0004\u0001t\u0005"
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0007\u000e\u0000\u0000\u0000\u0000\u0000\u0000!\u000e",
+          "line": 2250,
+          "keyword": "\u0000\u0000\u0000*\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd"
+        }
+      ],
+      "join_specs": [
+        {
+          "line": 501,
+          "keyword": ""
+        },
+        {
+          "line": 1122,
+          "keyword": "\u0000\u0000S.c\u0000\u0000\u0000\u0000\u0000\u0000A\u001a\u0000\u0000\u0000_\u07c8\u0000\u0000`c\u0000\u0000\u0000\u0000\u0000\u00001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd\ufffd\ufffd\u0000\u0000,\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u00005Q`\u0000\u0000pc\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd"
+        },
+        {
+          "line": 1128,
+          "keyword": "\u0000\u0000S.d\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0016\u0000\u0000\u0000_\u0004\ufffd\u0000\u0000`d\u0000\u0000\u0000\u0000\u0000\u00001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd\ufffd\ufffd\u0000\u0000,\u0016\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u00005Q`\u0000\u0000pd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd"
+        },
+        {
+          "line": 1138,
+          "keyword": "\u0000\u0000\u0001\ufffd\u0005\u0012\ufffd\u0000\u00006c`\u0000\u0000/Zg\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000.\u0001T\t\u0003\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000b>g\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0019\u0000\u0000.\u0001T\u0003\ufffd\u0001T\u0000\u0000_,c\u0000\u0000pg\u0000\u0000\u0000\u0000\u0000\u0000A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd\ufffd\ufffd\u0000\u0000,>c\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000,Kc\u0000\u0000:\ufffd\u0000\u00006\ufffd\u0000\u00005Q`\u0000\u0000\ufffdg\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u000f\u0000\u0000\u0001\ufffd\u0005\u0012q\ufffd\u0000\u00006c`\u0000\u0000/\ufffdg\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000.\u0001T\t\u0003\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000b\ufffdg\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u001b\u0000\u0000.\u0001Q\u00010\u0000\u0000_\ufffdf\u0000\u0000\ufffdg\u0000\u0000\u0000\u0000\u0000\u0000A\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\ufffd"
+        },
+        {
+          "line": 1442,
+          "keyword": "\u0005\u000e\u0006\u0001\u0005\u0001\u0006\u0003\ufffd\u007f\ufffd\u0005\u0005\u0013\u0005\u0001\u0006\u0011\u0005\t/\u0005\u0001s\u0005\tY\u0005\u0001;\u0005\t=\u0005\b\u0000\u0002\u0004\u0001X\u0005\t\u0006K\u0005,\u0006\u0001\u0005"
+        }
+      ],
+      "total_fields": 18,
+      "key_field_names": [
+        "\u0005\u0019\u0006\u0001\u0005"
+      ]
+    },
+    "_QUOTERS": {
+      "member": "_QUOTERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 25,
+          "file_name": "NOT S:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 30,
+          "file_name": "S.ISPRINT",
+          "file_type": "A",
+          "designation": "B",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_QUOTING_C": {
+      "member": "_QUOTING_C",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 28,
+          "file_name": "V < 10:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "'0' <= V",
+          "file_type": "<",
+          "designation": "=",
+          "mode": "",
+          "format": "'",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 65,
+          "file_name": "DIGIT1 <",
+          "file_type": "0",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 68,
+          "file_name": "DIGIT2 <",
+          "file_type": "0",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 89,
+          "file_name": "CHR(I) IN",
+          "file_type": "",
+          "designation": "A",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 92,
+          "file_name": "CHR(I) IN",
+          "file_type": "",
+          "designation": "Q",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 114,
+          "file_name": "WRITER.HE",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "WRITER.PO",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "W",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 146,
+          "file_name": "_WRITE_CH",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 148,
+          "file_name": "_WRITE_CH",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "I",
+          "device": ">> 4)",
+          "keyed": false,
+          "keywords": ", changed) < 0:"
+        },
+        {
+          "line": 156,
+          "file_name": "UTF < 0X8",
+          "file_type": "0",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 64,
+          "name": "EF INT DIGIT1 =",
+          "ds_type": "FR",
+          "from_pos": "om_hex(",
+          "to_length": "d1)",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 67,
+          "name": "EF INT DIGIT2 =",
+          "ds_type": "FR",
+          "from_pos": "om_hex(",
+          "to_length": "d2)",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 119,
+          "name": "EF CHAR * BUF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 120,
+          "name": "EF PY_SSIZE_T S",
+          "ds_type": "E",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 154,
+          "name": "EF UINT64_T UTF",
+          "ds_type": "<",
+          "from_pos": "uint64_",
+          "to_length": "t> symb",
+          "decimal": "o",
+          "data_type": "L",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 195,
+          "name": "EF BINT _QS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 196,
+          "name": "EF BINT _REQUOT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 198,
+          "name": "EF UINT8_T _SAF",
+          "ds_type": "TA",
+          "from_pos": "ble[16]",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 199,
+          "name": "EF UINT8_T _PRO",
+          "ds_type": "CT",
+          "from_pos": "ed_tabl",
+          "to_length": "e[16]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 240,
+          "name": "EF STR _DO_QUOT",
+          "ds_type": "OR",
+          "from_pos": "_skip(s",
+          "to_length": "elf, st",
+          "decimal": "r",
+          "data_type": "V",
+          "keywords": "l):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 268,
+          "name": "EF STR _DO_QUOT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 333,
+          "name": "EF INLINE INT _",
+          "ds_type": "IT",
+          "from_pos": "e(self,",
+          "to_length": "Writer",
+          "decimal": "",
+          "data_type": "*W",
+          "keywords": "iter, Py_UCS4 ch):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 345,
+          "name": "EF STR _IGNORE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 346,
+          "name": "EF BINT _HAS_IG",
+          "ds_type": "RE",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 347,
+          "name": "EF STR _UNSAFE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 348,
+          "name": "EF BYTES _UNSAF",
+          "ds_type": "BY",
+          "from_pos": "tes",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 349,
+          "name": "EF PY_SSIZE_T _",
+          "ds_type": "SA",
+          "from_pos": "fe_byte",
+          "to_length": "s_len",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 350,
+          "name": "EF CONST UNSIGN",
+          "ds_type": "C",
+          "from_pos": "har * _",
+          "to_length": "unsafe_",
+          "decimal": "b",
+          "data_type": "YT",
+          "keywords": "s_char",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 351,
+          "name": "EF BINT _QS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 352,
+          "name": "EF BINT _PLUS",
+          "ds_type": "TO",
+          "from_pos": "match",
+          "to_length": "urllib.",
+          "decimal": "p",
+          "data_type": "AR",
+          "keywords": "e.unquote_plus",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 353,
+          "name": "EF _QUOTER _QUO",
+          "ds_type": "R",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 354,
+          "name": "EF _QUOTER _QS_",
+          "ds_type": "OT",
+          "from_pos": "er",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 380,
+          "name": "EF STR _DO_UNQU",
+          "ds_type": "E(",
+          "from_pos": "self, s",
+          "to_length": "tr val)",
+          "decimal": ":",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 479,
+          "name": "EF INLINE BINT",
+          "ds_type": "S_",
+          "from_pos": "char_un",
+          "to_length": "safe(se",
+          "decimal": "l",
+          "data_type": "F,",
+          "keywords": "Py_UCS4 ch):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PY": {
+      "member": "PY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NOTICE": {
+      "member": "NOTICE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": ": NOQA: F4",
+          "file_type": "0",
+          "designation": "1",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 35,
+          "file_name": "ETCHEDTRAN",
+          "file_type": "S",
+          "designation": "C",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 36,
+          "file_name": "ETCHEDTRAN",
+          "file_type": "S",
+          "designation": "C",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "AILEDTOCRE",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
