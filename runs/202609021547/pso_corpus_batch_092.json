@@ -1,0 +1,2341 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 92,
+  "total_batches": 477,
+  "members_in_batch": [
+    "LINECACHE",
+    "MAILCAP",
+    "POOL",
+    "SPAWN",
+    "__INIT__",
+    "DBAPI2",
+    "TEMPLATELIB",
+    "TEXTWRAP",
+    "COMMONDIALOG",
+    "DIALOG"
+  ],
+  "pso_corpus": {
+    "LINECACHE": {
+      "member": "LINECACHE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MAILCAP": {
+      "member": "MAILCAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "POOL": {
+      "member": "POOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 99,
+          "file_name": "INAL = \"RU",
+          "file_type": "N",
+          "designation": "\"",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SPAWN": {
+      "member": "SPAWN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "REEZE_SUPP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T ANY, LIT",
+          "line": 65
+        },
+        {
+          "name": "ANSACTION_",
+          "line": 73
+        },
+        {
+          "name": "ROR AS SQL",
+          "line": 126
+        },
+        {
+          "name": "ROR_MISSIN",
+          "line": 127
+        },
+        {
+          "name": "ROR_RETRY",
+          "line": 128
+        },
+        {
+          "name": "ROR_SNAPSH",
+          "line": 129
+        },
+        {
+          "name": "OTOCOL AS",
+          "line": 195
+        },
+        {
+          "name": "EGATECLASS",
+          "line": 235
+        },
+        {
+          "name": "RORCODE: I",
+          "line": 259
+        },
+        {
+          "name": "RORNAME: S",
+          "line": 260
+        },
+        {
+          "name": "OR(ERROR):",
+          "line": 262
+        },
+        {
+          "name": "ROR(DATABA",
+          "line": 264
+        },
+        {
+          "name": "ROR(ERROR)",
+          "line": 265
+        },
+        {
+          "name": "OR(DATABAS",
+          "line": 266
+        },
+        {
+          "name": "(SELF) ->",
+          "line": 275
+        },
+        {
+          "name": "TEDERROR(S",
+          "line": 287
+        },
+        {
+          "name": "AMS DETERM",
+          "line": 339
+        },
+        {
+          "name": "NUM_PARAM",
+          "line": 345
+        },
+        {
+          "name": "ESS_HANDLE",
+          "line": 376
+        },
+        {
+          "name": "= \"MAIN\",",
+          "line": 392
+        },
+        {
+          "name": "IALIZE(SEL",
+          "line": 399
+        },
+        {
+          "name": "N NOTIMPLE",
+          "line": 453
+        }
+      ],
+      "fields": [
+        {
+          "name": "S SQLITE_D",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 20,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "S SQLITE_D",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 22,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SQLITE_OK,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 35,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AS SQLITE",
+          "from_pos": "PRAG",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 36,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "S SQLITE_R",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 37,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTION AS S",
+          "from_pos": "LITE",
+          "to_pos": "TRAN",
+          "decimal_pos": "A",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 42,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DAPTERS,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 51,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "PILEVEL,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 52,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CK_TRACEBA",
+          "from_pos": "ks a",
+          "to_pos": "ena",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 56,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AS THREADS",
+          "from_pos": "fety",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 62,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN AS",
+          "from_pos": "QLIT",
+          "to_pos": "_CAN",
+          "decimal_pos": "O",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 102,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_CON",
+          "from_pos": "PATH",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 103,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_DIR",
+          "from_pos": "YWAL",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 104,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_FUL",
+          "from_pos": "PATH",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 105,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_ISD",
+          "from_pos": "R as",
+          "to_pos": "SQLI",
+          "decimal_pos": "E",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 106,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_NOT",
+          "from_pos": "MPDI",
+          "to_pos": "as",
+          "decimal_pos": "Q",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 107,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_SYM",
+          "from_pos": "INK",
+          "to_pos": "s SQ",
+          "decimal_pos": "I",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 108,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGE AS SQL",
+          "from_pos": "TE_R",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 196,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RNING AS S",
+          "from_pos": "LITE",
+          "to_pos": "WARN",
+          "decimal_pos": "N",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 207,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RNING_AUTO",
+          "from_pos": "NDEX",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 208,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "R(\"_CURSOR",
+          "from_pos": "\", b",
+          "to_pos": "und=",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 217,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SSED THROU",
+          "from_pos": "h ad",
+          "to_pos": "pter",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 219,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ": TYPEALIA",
+          "from_pos": "= _",
+          "to_pos": "qlit",
+          "decimal_pos": "D",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 220,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TYPEALIAS",
+          "from_pos": "Lit",
+          "to_pos": "ral[",
+          "decimal_pos": "D",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 224,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MWINDOWAGG",
+          "from_pos": "egat",
+          "to_pos": "Clas",
+          "decimal_pos": "(",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EGATECLASS",
+          "line": 247,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RE IMPLEME",
+          "from_pos": "ted",
+          "to_pos": "n th",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EGATECLASS",
+          "line": 253,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTION(SELF",
+          "from_pos": "->",
+          "to_pos": "ool:",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 295,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGES(SELF)",
+          "from_pos": "-> i",
+          "to_pos": "t: .",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 298,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "_ROWFACTOR",
+          "from_pos": "Opti",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 304,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION_LEVEL",
+          "from_pos": "_Is",
+          "to_pos": "lati",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 312,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BOOL = FAL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 316,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION_LEVEL",
+          "from_pos": "_Is",
+          "to_pos": "lati",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 325,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BOOL = FAL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TEDERROR(S",
+          "line": 329,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NY(SELF, S",
+          "from_pos": "l: s",
+          "to_pos": "r, p",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "NUM_PARAM",
+          "line": 364,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LIZE(SELF,",
+          "from_pos": "*, n",
+          "to_pos": "me:",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "= \"MAIN\",",
+          "line": 398,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "_ROWFACTOR",
+          "from_pos": "Opti",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IALIZE(SEL",
+          "line": 420,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NY(SELF, S",
+          "from_pos": "l: s",
+          "to_pos": "r, s",
+          "decimal_pos": "q",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IALIZE(SEL",
+          "line": 426,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOTE: REAL",
+          "from_pos": "y ne",
+          "to_pos": "ds i",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IALIZE(SEL",
+          "line": 446,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NOTE: SUPP",
+          "from_pos": "rtsI",
+          "to_pos": "dex",
+          "decimal_pos": "o",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IALIZE(SEL",
+          "line": 448,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "MUST BE ON",
+          "from_pos": "of",
+          "to_pos": "s.SE",
+          "decimal_pos": "K",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "N NOTIMPLE",
+          "line": 473,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "_LOAD_PERM",
+          "line": 192
+        },
+        {
+          "field": "_SYMLINK A",
+          "line": 193
+        },
+        {
+          "field": "_SAME_THRE",
+          "line": 313
+        },
+        {
+          "field": "_SAME_THRE",
+          "line": 326
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "IVE AS SQL",
+          "line": 38,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "INT AS SQL",
+          "line": 40,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "AS DATEFR",
+          "line": 46,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "AS TIMEFR",
+          "line": 48,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NNECT,",
+          "line": 54,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "CONVERTER",
+          "line": 55,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "PARAMSTYL",
+          "line": 57,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N AS SQLIT",
+          "line": 60,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO AS",
+          "line": 61,
+          "keyword": "_info,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT A",
+          "line": 109,
+          "keyword": "RAINT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_C",
+          "line": 110,
+          "keyword": "_CONSTRAINT_CHECK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_C",
+          "line": 111,
+          "keyword": "QLITE_CONSTRAINT_COMMITHOOK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_F",
+          "line": 112,
+          "keyword": "QLITE_CONSTRAINT_FOREIGNKEY,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_F",
+          "line": 113,
+          "keyword": "ITE_CONSTRAINT_FUNCTION,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_N",
+          "line": 114,
+          "keyword": "TE_CONSTRAINT_NOTNULL,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_P",
+          "line": 115,
+          "keyword": "E_CONSTRAINT_PINNED,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_P",
+          "line": 116,
+          "keyword": "QLITE_CONSTRAINT_PRIMARYKEY,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_R",
+          "line": 117,
+          "keyword": "_CONSTRAINT_ROWID,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_T",
+          "line": 118,
+          "keyword": "TE_CONSTRAINT_TRIGGER,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_U",
+          "line": 119,
+          "keyword": "E_CONSTRAINT_UNIQUE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_V",
+          "line": 120,
+          "keyword": "CONSTRAINT_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT AS S",
+          "line": 121,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_INDE",
+          "line": 122,
+          "keyword": "RRUPT_INDEX,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_SEQU",
+          "line": 123,
+          "keyword": "_CORRUPT_SEQUENCE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_VTAB",
+          "line": 124,
+          "keyword": "RUPT_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RMAT AS SQ",
+          "line": 130,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR AS SQL",
+          "line": 134,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_ACCESS",
+          "line": 135,
+          "keyword": "RR_ACCESS,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_AUTH A",
+          "line": 136,
+          "keyword": "_AUTH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_BEGIN_",
+          "line": 137,
+          "keyword": "TE_IOERR_BEGIN_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_BLOCKE",
+          "line": 138,
+          "keyword": "ERR_BLOCKED,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CHECKR",
+          "line": 139,
+          "keyword": "SQLITE_IOERR_CHECKRESERVEDLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CLOSE",
+          "line": 140,
+          "keyword": "R_CLOSE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_COMMIT",
+          "line": 141,
+          "keyword": "ITE_IOERR_COMMIT_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CONVPA",
+          "line": 142,
+          "keyword": "OERR_CONVPATH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CORRUP",
+          "line": 143,
+          "keyword": "IOERR_CORRUPTFS,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DATA A",
+          "line": 144,
+          "keyword": "_DATA,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DELETE",
+          "line": 145,
+          "keyword": "RR_DELETE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DELETE",
+          "line": 146,
+          "keyword": "TE_IOERR_DELETE_NOENT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DIR_CL",
+          "line": 147,
+          "keyword": "IOERR_DIR_CLOSE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DIR_FS",
+          "line": 148,
+          "keyword": "IOERR_DIR_FSYNC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_FSTAT",
+          "line": 149,
+          "keyword": "R_FSTAT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_FSYNC",
+          "line": 150,
+          "keyword": "R_FSYNC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_GETTEM",
+          "line": 151,
+          "keyword": "E_IOERR_GETTEMPPATH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_LOCK A",
+          "line": 152,
+          "keyword": "_LOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_MMAP A",
+          "line": 153,
+          "keyword": "_MMAP,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_NOMEM",
+          "line": 154,
+          "keyword": "R_NOMEM,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_RDLOCK",
+          "line": 155,
+          "keyword": "RR_RDLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_READ A",
+          "line": 156,
+          "keyword": "_READ,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_ROLLBA",
+          "line": 157,
+          "keyword": "QLITE_IOERR_ROLLBACK_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SEEK A",
+          "line": 158,
+          "keyword": "_SEEK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMLOC",
+          "line": 159,
+          "keyword": "ERR_SHMLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMMAP",
+          "line": 160,
+          "keyword": "RR_SHMMAP,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMOPE",
+          "line": 161,
+          "keyword": "ERR_SHMOPEN,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMSIZ",
+          "line": 162,
+          "keyword": "ERR_SHMSIZE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHORT_",
+          "line": 163,
+          "keyword": "_IOERR_SHORT_READ,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_TRUNCA",
+          "line": 164,
+          "keyword": "OERR_TRUNCATE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_UNLOCK",
+          "line": 165,
+          "keyword": "RR_UNLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_VNODE",
+          "line": 166,
+          "keyword": "R_VNODE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_WRITE",
+          "line": 167,
+          "keyword": "R_WRITE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED AS SQ",
+          "line": 180,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED_SHARE",
+          "line": 181,
+          "keyword": "TE_LOCKED_SHAREDCACHE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED_VTAB",
+          "line": 182,
+          "keyword": "ED_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "LFS AS SQL",
+          "line": 185,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MEM AS SQL",
+          "line": 186,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TADB AS SQ",
+          "line": 187,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TFOUND AS",
+          "line": 188,
+          "keyword": "D,"
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE AS SQ",
+          "line": 189,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE_RECOV",
+          "line": 190,
+          "keyword": "SQLITE_NOTICE_RECOVER_ROLLBACK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE_RECOV",
+          "line": 191,
+          "keyword": "TE_NOTICE_RECOVER_WAL,"
+        },
+        {
+          "type": "OMIT",
+          "field": "W AS SQLIT",
+          "line": 204,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "OBIG AS SQ",
+          "line": 206,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "T REALLY B",
+          "line": 221,
+          "keyword": "making it invariant is too annoying."
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF, *ARGS",
+          "line": 230,
+          "keyword": "ct: ..."
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF, PARAM",
+          "line": 249,
+          "keyword": "bject: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "SQLITE3.D",
+          "line": 254,
+          "keyword": "that module to here. However, they"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 258,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF) -> TY",
+          "line": 293,
+          "keyword": ".."
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 299,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 306,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "UT: FLOAT",
+          "line": 310,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RY: TYPE[C",
+          "line": 314,
+          "keyword": "one = ...,"
+        },
+        {
+          "type": "OMIT",
+          "field": "UT: FLOAT",
+          "line": 323,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RY: TYPE[C",
+          "line": 327,
+          "keyword": "one = ...,"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 333,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PEN(SELF,",
+          "line": 334,
+          "keyword": "lumn: str, row: int, /, *, readonly: bool = False, name: str = \"main\") -> Blob: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 338,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "LLATION(SE",
+          "line": 355,
+          "keyword": "callback: Callable[[str, str], SupportsIndex] | None, /) -> None: ..."
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF, SQL:",
+          "line": 363,
+          "keyword": "s: _Parameters = ..., /) -> Cursor: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 367,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RIZER(",
+          "line": 373,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "AD_EXTENSI",
+          "line": 380,
+          "keyword": "e: bool, /) -> None: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 381,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 395,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 400,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NFIG(SELF,",
+          "line": 401,
+          "keyword": "> bool: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "NFIG(SELF,",
+          "line": 402,
+          "keyword": "le: bool = True, /) -> bool: ..."
+        },
+        {
+          "type": "OMIT",
+          "field": "N(SELF) ->",
+          "line": 414,
+          "keyword": ".."
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF, SQL:",
+          "line": 425,
+          "keyword": "s: _Parameters = (), /) -> Self: ..."
+        },
+        {
+          "type": "SELECT",
+          "field": "IZES(SELF,",
+          "line": 433,
+          "keyword": ", /) -> None: ...  # does nothing"
+        },
+        {
+          "type": "SELECT",
+          "field": "ELF) -> IN",
+          "line": 452,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 40,
+      "key_field_names": [
+        "_LOAD_PERM",
+        "_SYMLINK A",
+        "_SAME_THRE",
+        "_SAME_THRE"
+      ]
+    },
+    "DBAPI2": {
+      "member": "DBAPI2",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "SOR,",
+          "line": 55
+        },
+        {
+          "name": "AS DATABA",
+          "line": 56
+        },
+        {
+          "name": "AS INTERN",
+          "line": 61
+        },
+        {
+          "name": "ROR AS OPE",
+          "line": 63
+        },
+        {
+          "name": "ROR AS PRO",
+          "line": 65
+        },
+        {
+          "name": "T FINAL, L",
+          "line": 69
+        },
+        {
+          "name": "ANSACTION_",
+          "line": 74
+        },
+        {
+          "name": "ROR AS SQL",
+          "line": 127
+        },
+        {
+          "name": "ROR_MISSIN",
+          "line": 128
+        },
+        {
+          "name": "ROR_RETRY",
+          "line": 129
+        },
+        {
+          "name": "ROR_SNAPSH",
+          "line": 130
+        },
+        {
+          "name": "OTOCOL AS",
+          "line": 196
+        },
+        {
+          "name": "ECATED SIN",
+          "line": 221
+        }
+      ],
+      "fields": [
+        {
+          "name": "S SQLITE_D",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 18,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "S SQLITE_D",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 20,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SQLITE_OK,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 33,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AS SQLITE",
+          "from_pos": "PRAG",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 34,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "S SQLITE_R",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 35,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CTION AS S",
+          "from_pos": "LITE",
+          "to_pos": "TRAN",
+          "decimal_pos": "A",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 40,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DAPTERS,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 43,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CK_TRACEBA",
+          "from_pos": "ks a",
+          "to_pos": "ena",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 47,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DATAERROR,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AS DATABA",
+          "line": 57,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RNING,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR AS PRO",
+          "line": 67,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN AS",
+          "from_pos": "QLIT",
+          "to_pos": "_CAN",
+          "decimal_pos": "O",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 103,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_CON",
+          "from_pos": "PATH",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 104,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_DIR",
+          "from_pos": "YWAL",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 105,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_FUL",
+          "from_pos": "PATH",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 106,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_ISD",
+          "from_pos": "R as",
+          "to_pos": "SQLI",
+          "decimal_pos": "E",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 107,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_NOT",
+          "from_pos": "MPDI",
+          "to_pos": "as",
+          "decimal_pos": "Q",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 108,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NTOPEN_SYM",
+          "from_pos": "INK",
+          "to_pos": "s SQ",
+          "decimal_pos": "I",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION_",
+          "line": 109,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGE AS SQL",
+          "from_pos": "TE_R",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 197,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RNING AS S",
+          "from_pos": "LITE",
+          "to_pos": "WARN",
+          "decimal_pos": "N",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 208,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RNING_AUTO",
+          "from_pos": "NDEX",
+          "to_pos": "as S",
+          "decimal_pos": "L",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 209,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IMPORT BLO",
+          "from_pos": "as",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 211,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AND REMOVE",
+          "from_pos": "fro",
+          "to_pos": "_sq",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 214,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L[STR]",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 215,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION WRAPP",
+          "from_pos": "r th",
+          "to_pos": "t ha",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OTOCOL AS",
+          "line": 219,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN 3.12, R",
+          "from_pos": "move",
+          "to_pos": "in",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ECATED SIN",
+          "line": 243,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "_LOAD_PERM",
+          "line": 193
+        },
+        {
+          "field": "_SYMLINK A",
+          "line": 194
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "IVE AS SQL",
+          "line": 36,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "INT AS SQL",
+          "line": 38,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NNECT,",
+          "line": 45,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "CONVERTER",
+          "line": 46,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N AS SQLIT",
+          "line": 50,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RT (",
+          "line": 53,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "CONNECTIO",
+          "line": 54,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R,",
+          "line": 58,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R AS INTEG",
+          "line": 59,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R AS INTER",
+          "line": 60,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT A",
+          "line": 110,
+          "keyword": "RAINT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_C",
+          "line": 111,
+          "keyword": "_CONSTRAINT_CHECK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_C",
+          "line": 112,
+          "keyword": "QLITE_CONSTRAINT_COMMITHOOK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_F",
+          "line": 113,
+          "keyword": "QLITE_CONSTRAINT_FOREIGNKEY,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_F",
+          "line": 114,
+          "keyword": "ITE_CONSTRAINT_FUNCTION,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_N",
+          "line": 115,
+          "keyword": "TE_CONSTRAINT_NOTNULL,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_P",
+          "line": 116,
+          "keyword": "E_CONSTRAINT_PINNED,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_P",
+          "line": 117,
+          "keyword": "QLITE_CONSTRAINT_PRIMARYKEY,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_R",
+          "line": 118,
+          "keyword": "_CONSTRAINT_ROWID,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_T",
+          "line": 119,
+          "keyword": "TE_CONSTRAINT_TRIGGER,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_U",
+          "line": 120,
+          "keyword": "E_CONSTRAINT_UNIQUE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "NSTRAINT_V",
+          "line": 121,
+          "keyword": "CONSTRAINT_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT AS S",
+          "line": 122,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_INDE",
+          "line": 123,
+          "keyword": "RRUPT_INDEX,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_SEQU",
+          "line": 124,
+          "keyword": "_CORRUPT_SEQUENCE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPT_VTAB",
+          "line": 125,
+          "keyword": "RUPT_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RMAT AS SQ",
+          "line": 131,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR AS SQL",
+          "line": 135,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_ACCESS",
+          "line": 136,
+          "keyword": "RR_ACCESS,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_AUTH A",
+          "line": 137,
+          "keyword": "_AUTH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_BEGIN_",
+          "line": 138,
+          "keyword": "TE_IOERR_BEGIN_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_BLOCKE",
+          "line": 139,
+          "keyword": "ERR_BLOCKED,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CHECKR",
+          "line": 140,
+          "keyword": "SQLITE_IOERR_CHECKRESERVEDLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CLOSE",
+          "line": 141,
+          "keyword": "R_CLOSE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_COMMIT",
+          "line": 142,
+          "keyword": "ITE_IOERR_COMMIT_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CONVPA",
+          "line": 143,
+          "keyword": "OERR_CONVPATH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_CORRUP",
+          "line": 144,
+          "keyword": "IOERR_CORRUPTFS,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DATA A",
+          "line": 145,
+          "keyword": "_DATA,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DELETE",
+          "line": 146,
+          "keyword": "RR_DELETE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DELETE",
+          "line": 147,
+          "keyword": "TE_IOERR_DELETE_NOENT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DIR_CL",
+          "line": 148,
+          "keyword": "IOERR_DIR_CLOSE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_DIR_FS",
+          "line": 149,
+          "keyword": "IOERR_DIR_FSYNC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_FSTAT",
+          "line": 150,
+          "keyword": "R_FSTAT,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_FSYNC",
+          "line": 151,
+          "keyword": "R_FSYNC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_GETTEM",
+          "line": 152,
+          "keyword": "E_IOERR_GETTEMPPATH,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_LOCK A",
+          "line": 153,
+          "keyword": "_LOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_MMAP A",
+          "line": 154,
+          "keyword": "_MMAP,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_NOMEM",
+          "line": 155,
+          "keyword": "R_NOMEM,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_RDLOCK",
+          "line": 156,
+          "keyword": "RR_RDLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_READ A",
+          "line": 157,
+          "keyword": "_READ,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_ROLLBA",
+          "line": 158,
+          "keyword": "QLITE_IOERR_ROLLBACK_ATOMIC,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SEEK A",
+          "line": 159,
+          "keyword": "_SEEK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMLOC",
+          "line": 160,
+          "keyword": "ERR_SHMLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMMAP",
+          "line": 161,
+          "keyword": "RR_SHMMAP,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMOPE",
+          "line": 162,
+          "keyword": "ERR_SHMOPEN,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHMSIZ",
+          "line": 163,
+          "keyword": "ERR_SHMSIZE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_SHORT_",
+          "line": 164,
+          "keyword": "_IOERR_SHORT_READ,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_TRUNCA",
+          "line": 165,
+          "keyword": "OERR_TRUNCATE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_UNLOCK",
+          "line": 166,
+          "keyword": "RR_UNLOCK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_VNODE",
+          "line": 167,
+          "keyword": "R_VNODE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "ERR_WRITE",
+          "line": 168,
+          "keyword": "R_WRITE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED AS SQ",
+          "line": 181,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED_SHARE",
+          "line": 182,
+          "keyword": "TE_LOCKED_SHAREDCACHE,"
+        },
+        {
+          "type": "OMIT",
+          "field": "CKED_VTAB",
+          "line": 183,
+          "keyword": "ED_VTAB,"
+        },
+        {
+          "type": "OMIT",
+          "field": "LFS AS SQL",
+          "line": 186,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MEM AS SQL",
+          "line": 187,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TADB AS SQ",
+          "line": 188,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TFOUND AS",
+          "line": 189,
+          "keyword": "D,"
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE AS SQ",
+          "line": 190,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE_RECOV",
+          "line": 191,
+          "keyword": "SQLITE_NOTICE_RECOVER_ROLLBACK,"
+        },
+        {
+          "type": "OMIT",
+          "field": "TICE_RECOV",
+          "line": 192,
+          "keyword": "TE_NOTICE_RECOVER_WAL,"
+        },
+        {
+          "type": "OMIT",
+          "field": "W AS SQLIT",
+          "line": 205,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "OBIG AS SQ",
+          "line": 207,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_INFO >=",
+          "line": 218,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TR]",
+          "line": 233,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "(TICKS: FL",
+          "line": 238,
+          "keyword": "..."
+        },
+        {
+          "type": "SELECT",
+          "field": "(TICKS: FL",
+          "line": 239,
+          "keyword": "..."
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 25,
+      "key_field_names": [
+        "_LOAD_PERM",
+        "_SYMLINK A"
+      ]
+    },
+    "TEMPLATELIB": {
+      "member": "TEMPLATELIB",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEXTWRAP": {
+      "member": "TEXTWRAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COMMONDIALOG": {
+      "member": "COMMONDIALOG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DIALOG": {
+      "member": "DIALOG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
