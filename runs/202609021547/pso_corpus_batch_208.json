@@ -1,0 +1,559 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 208,
+  "total_batches": 477,
+  "members_in_batch": [
+    "RECORD",
+    "RECORD",
+    "CLI",
+    "ERRORS",
+    "METADATA",
+    "REVOKE",
+    "PROVIDER",
+    "ROUTES",
+    "SETTINGS",
+    "MANAGER"
+  ],
+  "pso_corpus": {
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLI": {
+      "member": "CLI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 44,
+          "file_name": "SYS.PLATF",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 58,
+          "file_name": "\"=\" NOT I",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 75,
+          "file_name": "WITH_EDIT",
+          "file_type": "A",
+          "designation": "B",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 78,
+          "file_name": "WITH_PACK",
+          "file_type": "A",
+          "designation": "G",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 102,
+          "file_name": "\":\" IN (F",
+          "file_type": "I",
+          "designation": "L",
+          "mode": "",
+          "format": "P",
+          "device": "IVE EL",
+          "keyed": false,
+          "keywords": "se file_spec):"
+        },
+        {
+          "line": 109,
+          "file_name": "NOT FILE_",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 112,
+          "file_name": "NOT FILE_",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 131,
+          "file_name": "FILE_DIR",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 136,
+          "file_name": "NOT SPEC",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 162,
+          "file_name": "NOT SERVE",
+          "file_type": "R",
+          "designation": "_",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 183,
+          "file_name": "\":\" IN SE",
+          "file_type": "R",
+          "designation": "V",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 198,
+          "file_name": "SERVER IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 205,
+          "file_name": "NOT _CHEC",
+          "file_type": "K",
+          "designation": "_",
+          "mode": "",
+          "format": "V",
+          "device": "_OBJEC",
+          "keyed": false,
+          "keywords": "t):"
+        },
+        {
+          "line": 433,
+          "file_name": "NOT CLAUD",
+          "file_type": "E",
+          "designation": ".",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 441,
+          "file_name": "NOT NAME:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 454,
+          "file_name": "SERVER_DE",
+          "file_type": "P",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 459,
+          "file_name": "ENV_FILE",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "V",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 478,
+          "file_name": "CLAUDE.UP",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 37,
+          "name": "D_COMPLETION=FA",
+          "ds_type": "E,",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ERRORS": {
+      "member": "ERRORS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "METADATA": {
+      "member": "METADATA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REVOKE": {
+      "member": "REVOKE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 2,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROVIDER": {
+      "member": "PROVIDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ROUTES": {
+      "member": "ROUTES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 36,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 44,
+          "file_name": "URL.FRAGM",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "URL.QUERY",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 118,
+          "file_name": "CLIENT_RE",
+          "file_type": "G",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "PRAGM",
+          "keyed": false,
+          "keywords": "a: no branch"
+        },
+        {
+          "line": 134,
+          "file_name": "REVOCATIO",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "I",
+          "device": "NO BRA",
+          "keyed": false,
+          "keywords": "nch"
+        },
+        {
+          "line": 179,
+          "file_name": "CLIENT_RE",
+          "file_type": "G",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "PRAGM",
+          "keyed": false,
+          "keywords": "a: no branch"
+        },
+        {
+          "line": 183,
+          "file_name": "REVOCATIO",
+          "file_type": "N",
+          "designation": "_",
+          "mode": "",
+          "format": "I",
+          "device": "NO BRA",
+          "keyed": false,
+          "keywords": "nch"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SETTINGS": {
+      "member": "SETTINGS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MANAGER": {
+      "member": "MANAGER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
