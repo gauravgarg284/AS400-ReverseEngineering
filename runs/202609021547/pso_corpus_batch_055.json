@@ -1,0 +1,623 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 55,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "CLASSIFYTOOLS",
+    "LAZYTOOLS",
+    "MACCREATORTYPE",
+    "PSCHARSTRINGS",
+    "PSLIB",
+    "SYMFONT",
+    "TRANSFORM",
+    "XMLREADER",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLASSIFYTOOLS": {
+      "member": "CLASSIFYTOOLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 120,
+          "file_name": "SORT=TRUE",
+          "file_type": ",",
+          "designation": "",
+          "mode": "",
+          "format": "U",
+          "device": "BY DE",
+          "keyed": false,
+          "keywords": "creasing size and"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LAZYTOOLS": {
+      "member": "LAZYTOOLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MACCREATORTYPE": {
+      "member": "MACCREATORTYPE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "SJOIN,",
+          "keyed": false,
+          "keywords": "strjoin"
+        },
+        {
+          "line": 26,
+          "file_name": "XATTR IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "XATTR IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PSCHARSTRINGS": {
+      "member": "PSCHARSTRINGS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 5,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 11,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "BYTEOR",
+          "keyed": false,
+          "keywords": "d, bytesjoin, strjoin"
+        },
+        {
+          "line": 12,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 21,
+          "file_name": "B0 == 12:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 199,
+          "file_name": "FORMAT ==",
+          "file_type": "",
+          "designation": "\"",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 258,
+          "file_name": "VALUE & 0",
+          "file_type": "X",
+          "designation": "F",
+          "mode": "",
+          "format": "",
+          "device": "ACTION",
+          "keyed": false,
+          "keywords": "al part is zero"
+        },
+        {
+          "line": 269,
+          "file_name": "F == 0.0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 274,
+          "file_name": "S[:2] ==",
+          "file_type": "\"",
+          "designation": "0",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 293,
+          "file_name": "S.STARTSW",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 311,
+          "file_name": "LEN(NIBBL",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1505,
+          "file_name": "NSUBRS <",
+          "file_type": "1",
+          "designation": "2",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PSLIB": {
+      "member": "PSLIB",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "BYTEOR",
+          "keyed": false,
+          "keywords": "d, bytesjoin, tobytes, tostr"
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 360,
+          "file_name": "TP == DIC",
+          "file_type": "T",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 377,
+          "file_name": "M:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 388,
+          "file_name": "FONTNAME",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SYMFONT": {
+      "member": "SYMFONT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS.P",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 117,
+          "file_name": "DOCSTRING",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 145,
+          "file_name": "._STARTPOI",
+          "file_type": "N",
+          "designation": "T",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 239,
+          "file_name": "SYS.ARGV[",
+          "file_type": "1",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRANSFORM": {
+      "member": "TRANSFORM",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "INE 2D TRA",
+          "file_type": "N",
+          "designation": "S",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 6,
+          "file_name": "ORM INSTAN",
+          "file_type": "C",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "ALL M",
+          "keyed": false,
+          "keywords": "ethods that operate on the"
+        },
+        {
+          "line": 7,
+          "file_name": "ORMATION I",
+          "file_type": "T",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "ANCE.",
+          "keyed": false,
+          "keywords": "This has as the"
+        },
+        {
+          "line": 13,
+          "file_name": "ORM",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 71,
+          "file_name": "ABS(V) <",
+          "file_type": "_",
+          "designation": "E",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 382,
+          "file_name": "FSET(X: FL",
+          "file_type": "O",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "SFORM:",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 402,
+          "file_name": "Y IS NONE",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 59,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "XMLREADER": {
+      "member": "XMLREADER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ONTTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2,
+          "file_name": "ONTTOOLS.M",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3,
+          "file_name": "ONTTOOLS.T",
+          "file_type": "T",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "T DEFA",
+          "keyed": false,
+          "keywords": "ultTable"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
