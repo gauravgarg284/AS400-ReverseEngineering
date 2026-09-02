@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 477,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CONFTEST",
+    "LLM_CACHE",
+    "01_PACKAGE_METADATA_AND_VERSION_MANAGEMENT_",
+    "02_SSL_CERTIFICATE_MANAGEMENT_",
+    "03_DEPENDENCY_INTEGRATION_AND_BACKWARDS_COMPATIBILITY_",
+    "INDEX",
+    "OVERRIDES",
+    "PROJECT_COMPARISON_REPORT_OUTPUT",
+    "TEST_PROCESS_E2E"
+  ],
+  "pso_corpus": {
+    "CONFTEST": {
+      "member": "CONFTEST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 54,
+          "file_name": "FULL_NAME",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "Y",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LLM_CACHE": {
+      "member": "LLM_CACHE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "01_PACKAGE_METADATA_AND_VERSION_MANAGEMENT_": {
+      "member": "01_PACKAGE_METADATA_AND_VERSION_MANAGEMENT_",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 61,
+          "name": "OUT WHO MADE I",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "02_SSL_CERTIFICATE_MANAGEMENT_": {
+      "member": "02_SSL_CERTIFICATE_MANAGEMENT_",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 35,
+          "file_name": "ICATE AUTH",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "EBSITE",
+          "keyed": true,
+          "keywords": "s - they're trusted organiza"
+        },
+        {
+          "line": 93,
+          "file_name": "ICATES ARE",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "HON3.9",
+          "keyed": false,
+          "keywords": "/site-packages/certifi/cacer"
+        },
+        {
+          "line": 96,
+          "file_name": "ILE CONTAI",
+          "file_type": "N",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "CATES",
+          "keyed": false,
+          "keywords": "that `requests` uses to veri"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 86,
+          "name": "WHERE THE CERT",
+          "ds_type": "IC",
+          "from_pos": "ate bun",
+          "to_length": "dle is",
+          "decimal": "s",
+          "data_type": "TO",
+          "keywords": "ed",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 114,
+          "name": "THE FIRST FEW",
+          "ds_type": "NE",
+          "from_pos": "s of th",
+          "to_length": "e certi",
+          "decimal": "f",
+          "data_type": "IC",
+          "keywords": "te bundle",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "03_DEPENDENCY_INTEGRATION_AND_BACKWARDS_COMPATIBILITY_": {
+      "member": "03_DEPENDENCY_INTEGRATION_AND_BACKWARDS_COMPATIBILITY_",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 117,
+          "file_name": "MOD == PA",
+          "file_type": "C",
+          "designation": "K",
+          "mode": "",
+          "format": "",
+          "device": "KAGE}.",
+          "keyed": false,
+          "keywords": "\"):"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "INDEX": {
+      "member": "INDEX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "EPENDENCY_INTEG",
+          "ds_type": "TI",
+          "from_pos": "on_and_",
+          "to_length": "backwar",
+          "decimal": "d",
+          "data_type": "S_",
+          "keywords": "ompatibility_.md)",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "OVERRIDES": {
+      "member": "OVERRIDES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "EPENDENCY OVERR",
+          "ds_type": "ES",
+          "from_pos": "\u2014 forc",
+          "to_length": "e-resol",
+          "decimal": "v",
+          "data_type": "E",
+          "keywords": "onflicts between crewai and crewai-to",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROJECT_COMPARISON_REPORT_OUTPUT": {
+      "member": "PROJECT_COMPARISON_REPORT_OUTPUT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_PROCESS_E2E": {
+      "member": "TEST_PROCESS_E2E",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 36,
+          "file_name": "IXTURES \u2500\u2500",
+          "file_type": "\u2500",
+          "designation": "\u2500",
+          "mode": "",
+          "format": "\u2500",
+          "device": "\u2500\u2500\u2500\u2500\u2500\u2500",
+          "keyed": false,
+          "keywords": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+        },
+        {
+          "line": 163,
+          "file_name": "ILTER_EVEN",
+          "file_type": "T",
+          "designation": "S",
+          "mode": "",
+          "format": "E",
+          "device": "YPE: S",
+          "keyed": false,
+          "keywords": "tr) -> List[Dict]:"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "-TO-END INTEGRA",
+          "ds_type": "ON",
+          "from_pos": "tests",
+          "to_length": "for the",
+          "decimal": "",
+          "data_type": "PR",
+          "keywords": "cess Orchestration Engine.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 107,
+          "name": "RAIN_QUEUE(QUEU",
+          "ds_type": "A",
+          "from_pos": "syncio.",
+          "to_length": "Queue)",
+          "decimal": "-",
+          "data_type": ">",
+          "keywords": "ist[Dict]:",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
