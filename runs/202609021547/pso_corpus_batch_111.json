@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 111,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CODE_ANALYZER",
+    "LATEX2MATHML",
+    "TEX2UNICHAR",
+    "SMARTQUOTES",
+    "DOCUTILS_XML",
+    "__INIT__",
+    "__INIT__",
+    "ENTRYPOINTS",
+    "__INIT__",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "CODE_ANALYZER": {
+      "member": "CODE_ANALYZER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 9,
+          "file_name": "ORMAT__: F",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 5,
+          "name": "OCUTILS IMPORT",
+          "ds_type": "PL",
+          "from_pos": "ication",
+          "to_length": "Error",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LATEX2MATHML": {
+      "member": "LATEX2MATHML",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "OCUTILS.UTILS.M",
+          "ds_type": "H.",
+          "from_pos": "mathml_",
+          "to_length": "element",
+          "decimal": "s",
+          "data_type": "I",
+          "keywords": "port MathElement, mover, msub, msubsu",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEX2UNICHAR": {
+      "member": "TEX2UNICHAR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SMARTQUOTES": {
+      "member": "SMARTQUOTES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "JACENT_1: CLASS",
+          "ds_type": "R[",
+          "from_pos": "Pattern",
+          "to_length": "[str]]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 20,
+          "name": "JACENT_2: CLASS",
+          "ds_type": "R[",
+          "from_pos": "Pattern",
+          "to_length": "[str]]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "UCATE_TOKENS(TE",
+          "ds_type": "_T",
+          "from_pos": "okens:",
+          "to_length": "Iterabl",
+          "decimal": "e",
+          "data_type": "[T",
+          "keywords": "ple[str, str]], attr=\"1\", language: s",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "UCATEQUOTES(TEX",
+          "ds_type": "S",
+          "from_pos": "tr, lan",
+          "to_length": "guage:",
+          "decimal": "s",
+          "data_type": "TR",
+          "keywords": "= \"en\") -> str: ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "UCATEBACKTICKS(",
+          "ds_type": "XT",
+          "from_pos": ": str,",
+          "to_length": "languag",
+          "decimal": "e",
+          "data_type": ":",
+          "keywords": "tr = \"en\") -> str: ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "UCATESINGLEBACK",
+          "ds_type": "CK",
+          "from_pos": "s(text:",
+          "to_length": "str, l",
+          "decimal": "a",
+          "data_type": "NG",
+          "keywords": "age: str = \"en\") -> str: ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "UCATEDASHES(TEX",
+          "ds_type": "S",
+          "from_pos": "tr) ->",
+          "to_length": "str: ..",
+          "decimal": ".",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "UCATEDASHESOLDS",
+          "ds_type": "OO",
+          "from_pos": "l(text:",
+          "to_length": "str) -",
+          "decimal": ">",
+          "data_type": "S",
+          "keywords": "r: ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 40,
+          "name": "UCATEDASHESOLDS",
+          "ds_type": "OO",
+          "from_pos": "lInvert",
+          "to_length": "ed(text",
+          "decimal": ":",
+          "data_type": "S",
+          "keywords": "r) -> str: ...",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 41,
+          "name": "UCATEELLIPSES(T",
+          "ds_type": "T:",
+          "from_pos": "str) -",
+          "to_length": "> str:",
+          "decimal": ".",
+          "data_type": "..",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOCUTILS_XML": {
+      "member": "DOCUTILS_XML",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 10,
+          "file_name": "ORMAT__: F",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "OCUTILS IMPORT",
+          "ds_type": "DE",
+          "from_pos": "s, writ",
+          "to_length": "ers",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 8,
+          "name": "OCUTILS.FRONTEN",
+          "ds_type": "IM",
+          "from_pos": "port Va",
+          "to_length": "lues",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ANSTATIC.C",
+          "file_type": "O",
+          "designation": "M",
+          "mode": "",
+          "format": "E",
+          "device": "PILER,",
+          "keyed": false,
+          "keywords": "Minifier as Minifier, sdist"
+        },
+        {
+          "line": 2,
+          "file_name": "ANSTATIC.C",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 29,
+          "file_name": "ANSTATIC.I",
+          "file_type": "N",
+          "designation": "C",
+          "mode": "",
+          "format": "I",
+          "device": "NCLUSI",
+          "keyed": false,
+          "keywords": "on, bundle_resources as bund"
+        },
+        {
+          "line": 30,
+          "file_name": "ANSTATIC.I",
+          "file_type": "N",
+          "designation": "J",
+          "mode": "",
+          "format": "O",
+          "device": "ECTOR,",
+          "keyed": false,
+          "keywords": "make_injector as make_injec"
+        },
+        {
+          "line": 31,
+          "file_name": "ANSTATIC.P",
+          "file_type": "U",
+          "designation": "B",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 37,
+          "file_name": "ANSTATIC.R",
+          "file_type": "E",
+          "designation": "G",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 43,
+          "file_name": "ANSTATIC.W",
+          "file_type": "S",
+          "designation": "G",
+          "mode": "",
+          "format": "M",
+          "device": "TIC, S",
+          "keyed": false,
+          "keywords": "erf as Serf, make_fanstatic"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ENTRYPOINTS": {
+      "member": "ENTRYPOINTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
