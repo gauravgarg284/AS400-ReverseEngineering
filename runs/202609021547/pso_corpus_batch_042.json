@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 42,
+  "total_batches": 477,
+  "members_in_batch": [
+    "README",
+    "COUCHBASE_TOOL",
+    "README",
+    "README",
+    "__INIT__",
+    "VECTOR_SEARCH",
+    "NL2SQL_TOOL",
+    "__INIT__",
+    "__INIT__",
+    "PDF_SEARCH_TOOL"
+  ],
+  "pso_corpus": {
+    "README": {
+      "member": "README",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 52,
+          "file_name": "ORMAT\": FI",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "E",
+          "device": "TION=\"",
+          "keyed": false,
+          "keywords": "Report format (summary, deta"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 42,
+          "name": "VANCED USAGE WI",
+          "ds_type": "C",
+          "from_pos": "ustom I",
+          "to_length": "nputs",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 126,
+          "name": "EFINING `CREW_I",
+          "ds_type": "UT",
+          "from_pos": "s`, use",
+          "to_length": "Pydant",
+          "decimal": "i",
+          "data_type": "C",
+          "keywords": "ield objects to specify the input par",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COUCHBASE_TOOL": {
+      "member": "COUCHBASE_TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "VECTOR_SEARCH": {
+      "member": "VECTOR_SEARCH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NL2SQL_TOOL": {
+      "member": "NL2SQL_TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 136,
+          "file_name": "IND_MATCHI",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "O",
+          "device": "T: INT",
+          "keyed": false,
+          "keywords": ") -> int:"
+        },
+        {
+          "line": 164,
+          "file_name": "LAST_CTE_",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 178,
+          "file_name": "NOT REST:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 184,
+          "file_name": "REST.STAR",
+          "file_type": "T",
+          "designation": "S",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 201,
+          "file_name": "ANALYZE_F",
+          "file_type": "O",
+          "designation": "U",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 36,
+          "name": "ELETE\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "ROP\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 69,
+          "name": "ELETE\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 70,
+          "name": "ROP\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 100,
+          "name": "ETECT_WRITABLE_",
+          "ds_type": "E(",
+          "from_pos": "stmt: s",
+          "to_length": "tr) ->",
+          "decimal": "s",
+          "data_type": "TR",
+          "keywords": "| None:",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PDF_SEARCH_TOOL": {
+      "member": "PDF_SEARCH_TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "F: STR = FIELD(",
+          "ds_type": ".,",
+          "from_pos": "descri",
+          "to_length": "ption=\"",
+          "decimal": "F",
+          "data_type": "IL",
+          "keywords": "path or URL of a PDF file to be sear",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 28,
+          "name": "F: STR | NONE =",
+          "ds_type": "ON",
+          "from_pos": "e",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
