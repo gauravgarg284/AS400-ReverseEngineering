@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 162,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "AIRTABLE",
+    "__INIT__",
+    "CACHE",
+    "TRAJECTORY_EVAL_CHAIN",
+    "TRAJECTORY_EVAL_PROMPT",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AIRTABLE": {
+      "member": "AIRTABLE",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T TYPE_CHE",
+          "line": 1
+        },
+        {
+          "name": "T_ATTRIBUT",
+          "line": 18
+        }
+      ],
+      "fields": [
+        {
+          "name": "PI IMPORT",
+          "from_pos": "reat",
+          "to_pos": "_imp",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T TYPE_CHE",
+          "line": 3,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "DYNAMICAL",
+          "line": 8,
+          "keyword": "recated imports."
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 1,
+      "key_field_names": []
+    },
+    "CACHE": {
+      "member": "CACHE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 57,
+          "file_name": "ALGORITHM",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 93,
+          "file_name": "NOT _WARN",
+          "file_type": "E",
+          "designation": "D",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 115,
+          "file_name": "NEED BE,",
+          "file_type": "T",
+          "designation": "H",
+          "mode": "",
+          "format": "N",
+          "device": "TO ACC",
+          "keyed": false,
+          "keywords": "ept other implementations"
+        },
+        {
+          "line": 116,
+          "file_name": "THE VALUE",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "AS WEL",
+          "keyed": false,
+          "keywords": "l as the key encoder."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE CONTAINS CO",
+          "ds_type": "F",
+          "from_pos": "or a ca",
+          "to_length": "che bac",
+          "decimal": "k",
+          "data_type": "ED",
+          "keywords": "embedder.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "INGS IN A KEY-V",
+          "ds_type": "UE",
+          "from_pos": "store.",
+          "to_length": "The ca",
+          "decimal": "c",
+          "data_type": "HE",
+          "keywords": "is used to avoid recomputing",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "INGS FOR THE SA",
+          "ds_type": "T",
+          "from_pos": "ext.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRAJECTORY_EVAL_CHAIN": {
+      "member": "TRAJECTORY_EVAL_CHAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TRAJECTORY_EVAL_PROMPT": {
+      "member": "TRAJECTORY_EVAL_PROMPT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 109,
+          "file_name": "REE_EVAL_T",
+          "file_type": "E",
+          "designation": "M",
+          "mode": "",
+          "format": "T",
+          "device": "DEL HA",
+          "keyed": false,
+          "keywords": "s been given access to a set"
+        },
+        {
+          "line": 137,
+          "file_name": "REE_EVAL_C",
+          "file_type": "H",
+          "designation": "A",
+          "mode": "",
+          "format": "R",
+          "device": "E.FROM",
+          "keyed": false,
+          "keywords": "_messages("
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 37,
+          "name": "OES THE AI LANG",
+          "ds_type": "GE",
+          "from_pos": "model",
+          "to_length": "use the",
+          "decimal": "",
+          "data_type": "TO",
+          "keywords": "ls in a helpful way?",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 82,
+          "name": "OES THE AI LANG",
+          "ds_type": "GE",
+          "from_pos": "model",
+          "to_length": "use the",
+          "decimal": "",
+          "data_type": "TO",
+          "keywords": "ls in a helpful way?",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 132,
+          "name": "OES THE AI LANG",
+          "ds_type": "GE",
+          "from_pos": "model",
+          "to_length": "use the",
+          "decimal": "",
+          "data_type": "TO",
+          "keywords": "ls in a helpful way?",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
