@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 50,
+  "total_batches": 477,
+  "members_in_batch": [
+    "README",
+    "RAILS",
+    "README",
+    "README",
+    "README",
+    "README",
+    "LLM-JUDGE",
+    "MAIN",
+    "__MAIN__",
+    "V1"
+  ],
+  "pso_corpus": {
+    "README": {
+      "member": "README",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 113,
+          "file_name": "OR TRACING",
+          "file_type": "",
+          "designation": "S",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 122,
+          "file_name": "OR RUNNING",
+          "file_type": "",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 129,
+          "file_name": "OR PRODUCT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 138,
+          "file_name": "OR JAEGER",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 140,
+          "file_name": "OR ZIPKIN",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 158,
+          "file_name": "IGURE OPEN",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "G NEMO",
+          "keyed": false,
+          "keywords": "Guardrails)"
+        },
+        {
+          "line": 205,
+          "file_name": "IGURE OPEN",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 214,
+          "file_name": "IGURE OTLP",
+          "file_type": "",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 318,
+          "file_name": "IGURE OPEN",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "E",
+          "device": "CODE",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 408,
+          "file_name": "IGURE THE",
+          "file_type": "`",
+          "designation": "R",
+          "mode": "",
+          "format": "U",
+          "device": "IN YO",
+          "keyed": false,
+          "keywords": "ur application code"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 228,
+          "name": "ITIONAL INTEGRA",
+          "ds_type": "ON",
+          "from_pos": "Exampl",
+          "to_length": "es",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RAILS": {
+      "member": "RAILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LLM-JUDGE": {
+      "member": "LLM-JUDGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "IGURE THE",
+          "file_type": "M",
+          "designation": "O",
+          "mode": "",
+          "format": "S",
+          "device": "GES",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MAIN": {
+      "member": "MAIN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__MAIN__": {
+      "member": "__MAIN__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "ASTAPI.CLI",
+          "file_type": "",
+          "designation": "I",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "V1": {
+      "member": "V1",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 16,
+          "file_name": "ASTAPI._CO",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 17,
+          "file_name": "ASTAPI.OPE",
+          "file_type": "N",
+          "designation": "A",
+          "mode": "",
+          "format": "C",
+          "device": "IX AS",
+          "keyed": false,
+          "keywords": "REF_PREFIX"
+        },
+        {
+          "line": 18,
+          "file_name": "ASTAPI.TYP",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 193,
+          "file_name": "NOT (",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 202,
+          "file_name": "FIELD.SUB",
+          "file_type": "_",
+          "designation": "F",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 209,
+          "file_name": "(FIELD.SH",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "N",
+          "device": "T LENI",
+          "keyed": false,
+          "keywords": "ent_issubclass("
+        },
+        {
+          "line": 217,
+          "file_name": "SHARED._A",
+          "file_type": "N",
+          "designation": "N",
+          "mode": "",
+          "format": "T",
+          "device": "PE_):",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s, is_d",
+          "decimal": "a",
+          "data_type": "TA",
+          "keywords": "lass",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "OWING TYPING.RE",
+          "ds_type": "IR",
+          "from_pos": "ed.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 174,
+          "name": "ICT[STR, ANY]:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 244,
+          "name": "ICT[STR, ANY]:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
