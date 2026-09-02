@@ -1,0 +1,512 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 473,
+  "total_batches": 477,
+  "members_in_batch": [
+    "AGENT",
+    "AGENT_EMBEDDING",
+    "CONFIG_RESPONSE",
+    "HEALTH_RESPONSE",
+    "MESSAGE",
+    "TEST_TOOL",
+    "__INIT__",
+    "CODE_ASSIST",
+    "__INIT__",
+    "BUDGET"
+  ],
+  "pso_corpus": {
+    "AGENT": {
+      "member": "AGENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AGENT_EMBEDDING": {
+      "member": "AGENT_EMBEDDING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CONFIG_RESPONSE": {
+      "member": "CONFIG_RESPONSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HEALTH_RESPONSE": {
+      "member": "HEALTH_RESPONSE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MESSAGE": {
+      "member": "MESSAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_TOOL": {
+      "member": "TEST_TOOL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ING FLOW DOMAIN",
+          "ds_type": "AC",
+          "from_pos": "kage.\"\"",
+          "to_length": "\"",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CODE_ASSIST": {
+      "member": "CODE_ASSIST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 11,
+          "file_name": "ASTAPI IMP",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 22,
+          "file_name": "ASTAPI.RES",
+          "file_type": "P",
+          "designation": "O",
+          "mode": "",
+          "format": "S",
+          "device": "REAMIN",
+          "keyed": false,
+          "keywords": "gResponse"
+        },
+        {
+          "line": 77,
+          "file_name": "NOT MODEL",
+          "file_type": "_",
+          "designation": "E",
+          "mode": "",
+          "format": "Y",
+          "device": "VIDER\"",
+          "keyed": false,
+          "keywords": ") == \"auto\":"
+        },
+        {
+          "line": 81,
+          "file_name": "PROVIDER",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 91,
+          "file_name": "PROVIDER",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "Z",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 115,
+          "file_name": "REQUEST.P",
+          "file_type": "R",
+          "designation": "O",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 117,
+          "file_name": "REQUEST.A",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 119,
+          "file_name": "REQUEST.P",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 125,
+          "file_name": "NOT LLM_C",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 204,
+          "file_name": "INTERACTI",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 208,
+          "file_name": "NOT SESSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 254,
+          "file_name": "INTERACTI",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 258,
+          "file_name": "NOT SESSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 266,
+          "file_name": "_ROUTER_T",
+          "file_type": "R",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 279,
+          "file_name": "NOT SESSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "B",
+          "device": "LCALLI",
+          "keyed": false,
+          "keywords": "d, body.result, body.error):"
+        },
+        {
+          "line": 296,
+          "file_name": "INTERACTI",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "F",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 300,
+          "file_name": "NOT SESSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 305,
+          "file_name": "NOT SESSI",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 430,
+          "file_name": "NOT EXECU",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 432,
+          "file_name": "NOT TASK.",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 553,
+          "file_name": "NOT QUERY",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 566,
+          "file_name": "NOT API_K",
+          "file_type": "E",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ICATED ROUTER F",
+          "ds_type": "C",
+          "from_pos": "ode-ass",
+          "to_length": "ist flo",
+          "decimal": "w",
+          "data_type": "A",
+          "keywords": "Is.\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BUDGET": {
+      "member": "BUDGET",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 69,
+          "file_name": "AGENT_NAM",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "GET TRACKING AN",
+          "ds_type": "SO",
+          "from_pos": "ft-warn",
+          "to_length": "ing log",
+          "decimal": "i",
+          "data_type": "C",
+          "keywords": "or agent runs.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
