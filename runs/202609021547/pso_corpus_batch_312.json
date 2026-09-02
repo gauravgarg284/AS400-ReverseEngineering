@@ -1,0 +1,667 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 312,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TYPE_TRAITS",
+    "UDF",
+    "UDF",
+    "UTIL",
+    "UTIL",
+    "VISIBILITY",
+    "DOCSCRAPE",
+    "VERSION",
+    "__INIT__",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "TYPE_TRAITS": {
+      "member": "TYPE_TRAITS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 81,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 85,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 249,
+          "name": "ATA STORES AS F",
+          "ds_type": "D",
+          "from_pos": "day uni",
+          "to_length": "t",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 262,
+          "name": "ATA STORES AS F",
+          "ds_type": "D",
+          "from_pos": "day uni",
+          "to_length": "t",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UDF": {
+      "member": "UDF",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "O: TODO(ARROW-1",
+          "ds_type": "41",
+          "from_pos": "): UDF",
+          "to_length": "Options",
+          "decimal": "",
+          "data_type": "AR",
+          "keywords": "not exposed to the Python",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTIL": {
+      "member": "UTIL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "VISIBILITY": {
+      "member": "VISIBILITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 39,
+          "file_name": "// NON-W",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 27,
+          "name": "EF ARROW_PYTHON",
+          "ds_type": "TA",
+          "from_pos": "TIC",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 28,
+          "name": "EFINE ARROW_PYT",
+          "ds_type": "N_",
+          "from_pos": "EXPORT",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 30,
+          "name": "EFINE ARROW_PYT",
+          "ds_type": "N_",
+          "from_pos": "EXPORT",
+          "to_length": "__decls",
+          "decimal": "p",
+          "data_type": "EC",
+          "keywords": "dllexport)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 32,
+          "name": "EFINE ARROW_PYT",
+          "ds_type": "N_",
+          "from_pos": "EXPORT",
+          "to_length": "__decls",
+          "decimal": "p",
+          "data_type": "EC",
+          "keywords": "dllimport)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "EFINE ARROW_PYT",
+          "ds_type": "N_",
+          "from_pos": "EXPORT",
+          "to_length": "__attri",
+          "decimal": "b",
+          "data_type": "UT",
+          "keywords": "__((visibility(\"default\")))",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "IF",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOCSCRAPE": {
+      "member": "DOCSCRAPE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 268,
+          "file_name": "UNCBACKTIC",
+          "file_type": "K",
+          "designation": "",
+          "mode": "",
+          "format": "\"",
+          "device": "ZA-Z0-",
+          "keyed": false,
+          "keywords": "9_\\.-]+)`\""
+        },
+        {
+          "line": 269,
+          "file_name": "UNCPLAIN =",
+          "file_type": "",
+          "designation": "R",
+          "mode": "",
+          "format": "P",
+          "device": "\"",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 270,
+          "file_name": "UNCNAME =",
+          "file_type": "R",
+          "designation": "\"",
+          "mode": "",
+          "format": "+",
+          "device": "R\"|\"",
+          "keyed": false,
+          "keywords": "+ _funcplain + r\")\""
+        },
+        {
+          "line": 271,
+          "file_name": "UNCNAMENEX",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "'ROLEN",
+          "keyed": false,
+          "keywords": "ext')"
+        },
+        {
+          "line": 272,
+          "file_name": "UNCNAMENEX",
+          "file_type": "T",
+          "designation": "",
+          "mode": "",
+          "format": "F",
+          "device": "E', 'N",
+          "keyed": false,
+          "keywords": "amenext')"
+        },
+        {
+          "line": 274,
+          "file_name": "UNC_RGX =",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "M",
+          "device": "+ R\"\\",
+          "keyed": false,
+          "keywords": "s*\")"
+        },
+        {
+          "line": 697,
+          "file_name": "WHAT IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 706,
+          "file_name": "CONFIG IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 709,
+          "file_name": "WHAT == '",
+          "file_type": "C",
+          "designation": "L",
+          "mode": "",
+          "format": "'",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ORED FROM HTTPS",
+          "ds_type": "/G",
+          "from_pos": "ithub.c",
+          "to_length": "om/nump",
+          "decimal": "y",
+          "data_type": "/N",
+          "keywords": "mpydoc/,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 273,
+          "name": "ESCRIPTION = R\"",
+          "ds_type": "P<",
+          "from_pos": "descrip",
+          "to_length": "tion>\\s",
+          "decimal": "*",
+          "data_type": ":(",
+          "keywords": "s+(?P<desc>\\S+.*))?)?\\s*$\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "VERSION": {
+      "member": "VERSION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 443,
+          "file_name": "LETTER:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 465,
+          "file_name": "NOT LETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 482,
+          "file_name": "LOCAL IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 506,
+          "file_name": "PRE IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "NOT N",
+          "keyed": false,
+          "keywords": "one:"
+        },
+        {
+          "line": 516,
+          "file_name": "POST IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 523,
+          "file_name": "DEV IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 529,
+          "file_name": "LOCAL IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ORED FROM HTTPS",
+          "ds_type": "/G",
+          "from_pos": "ithub.c",
+          "to_length": "om/pypa",
+          "decimal": "/",
+          "data_type": "PA",
+          "keywords": "kaging,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 219,
+          "name": "EV\": \"@\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
