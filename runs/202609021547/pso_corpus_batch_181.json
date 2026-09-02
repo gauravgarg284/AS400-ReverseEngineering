@@ -1,0 +1,1768 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 181,
+  "total_batches": 477,
+  "members_in_batch": [
+    "INFINISPANVS",
+    "RELYT",
+    "TIMESCALEVECTOR",
+    "AGENTS",
+    "CACHES",
+    "__INIT__",
+    "CHAT_HISTORY",
+    "CHAT_SESSIONS",
+    "__INIT__",
+    "BLOB_LOADERS"
+  ],
+  "pso_corpus": {
+    "INFINISPANVS": {
+      "member": "INFINISPANVS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE PROVIDING I",
+          "ds_type": "IN",
+          "from_pos": "ispan a",
+          "to_length": "s a Vec",
+          "decimal": "t",
+          "data_type": "OR",
+          "keywords": "tore\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 126,
+          "name": "EXED",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RELYT": {
+      "member": "RELYT",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T ANY, CAL",
+          "line": 5
+        },
+        {
+          "name": "GS: OPTION",
+          "line": 51
+        },
+        {
+          "name": "L: DATABAS",
+          "line": 58
+        },
+        {
+          "name": "UE, THE TA",
+          "line": 61
+        },
+        {
+          "name": "ECREATE=PR",
+          "line": 71
+        },
+        {
+          "name": "GS: OPTION",
+          "line": 89
+        },
+        {
+          "name": "ELEVANCE_S",
+          "line": 111
+        },
+        {
+          "name": "ESULT = CO",
+          "line": 143
+        },
+        {
+          "name": "ESULT = CO",
+          "line": 166
+        },
+        {
+          "name": "]:",
+          "line": 206
+        },
+        {
+          "name": "IS NOT NO",
+          "line": 327
+        },
+        {
+          "name": "BY EMBEDD",
+          "line": 340
+        },
+        {
+          "name": "ESULT.DIST",
+          "line": 359
+        },
+        {
+          "name": "ESULT IN R",
+          "line": 361
+        },
+        {
+          "name": "N FALSE",
+          "line": 417
+        },
+        {
+          "name": "GS: OPTION",
+          "line": 429
+        },
+        {
+          "name": "GS: OPTION",
+          "line": 479
+        },
+        {
+          "name": ",",
+          "line": 511
+        },
+        {
+          "name": ",",
+          "line": 514
+        }
+      ],
+      "fields": [
+        {
+          "name": "FOR TESTIN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T ANY, CAL",
+          "line": 39,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LIZE A PGV",
+          "from_pos": "cto_",
+          "to_pos": "s ve",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 53,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "PGVECTO_RS",
+          "from_pos": "sdk",
+          "to_pos": "mpor",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE, THE TA",
+          "line": 65,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS = ENGI",
+          "from_pos": "e_ar",
+          "to_pos": "s or",
+          "decimal_pos": "{",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 95,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TE_COLLECT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 105,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE_IF_NOT",
+          "from_pos": "exis",
+          "to_pos": "s(se",
+          "decimal_pos": "f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 114,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE DYNAMI",
+          "from_pos": "tab",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 115,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.BEGIN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 128,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "F\"\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 137,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SELECT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 138,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FROM PG",
+          "from_pos": "clas",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 139,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "WHERE R",
+          "from_pos": "lnam",
+          "to_pos": "= '",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ELEVANCE_S",
+          "line": 140,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TABLE_S",
+          "from_pos": "atem",
+          "to_pos": "nt =",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 145,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "F\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 146,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\"\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 153,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ")",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 154,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.EX",
+          "from_pos": "cute",
+          "to_pos": "tabl",
+          "decimal_pos": "_",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 155,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "F\"\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 160,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SELECT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 161,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FROM PG",
+          "from_pos": "inde",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 162,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "WHERE I",
+          "from_pos": "dexn",
+          "to_pos": "me =",
+          "decimal_pos": "'",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 163,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INDEX_S",
+          "from_pos": "atem",
+          "to_pos": "nt =",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 170,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "F\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 171,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CRE",
+          "from_pos": "TE I",
+          "to_pos": "DEX",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 172,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ON",
+          "from_pos": "self",
+          "to_pos": "coll",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 173,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "USI",
+          "from_pos": "G ve",
+          "to_pos": "tors",
+          "decimal_pos": "(",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 174,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "WIT",
+          "from_pos": "(op",
+          "to_pos": "ions",
+          "decimal_pos": "=",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 175,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OPT",
+          "from_pos": "mizi",
+          "to_pos": "g.op",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 176,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SEG",
+          "from_pos": "ent.",
+          "to_pos": "ax_g",
+          "decimal_pos": "o",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 177,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SEG",
+          "from_pos": "ent.",
+          "to_pos": "ax_s",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 178,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "[IN",
+          "from_pos": "exin",
+          "to_pos": ".hns",
+          "decimal_pos": "]",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 179,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "M=3",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 180,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "EF_",
+          "from_pos": "onst",
+          "to_pos": "ucti",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 181,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "$$)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 182,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\"\"\"",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 183,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ")",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 184,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.EX",
+          "from_pos": "cute",
+          "to_pos": "inde",
+          "decimal_pos": "_",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 185,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TE_TABLE_I",
+          "from_pos": "_not",
+          "to_pos": "exis",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 190,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.BEGIN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT = CO",
+          "line": 196,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OF IDS FRO",
+          "from_pos": "add",
+          "to_pos": "ng t",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 215,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE TABLE",
+          "from_pos": "chem",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 227,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE = TABL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 228,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE_DATA =",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 238,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.BEGIN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 240,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEXTS,",
+          "from_pos": "etad",
+          "to_pos": "tas,",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 242,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CHUNKS_",
+          "from_pos": "able",
+          "to_pos": "data",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 244,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "{",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 245,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "}",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 250,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ")",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 251,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "# EXECU",
+          "from_pos": "e th",
+          "to_pos": "bat",
+          "decimal_pos": "h",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 253,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF LEN(",
+          "from_pos": "hunk",
+          "to_pos": "_tab",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 254,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CON",
+          "from_pos": ".exe",
+          "to_pos": "ute(",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 255,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "# C",
+          "from_pos": "ear",
+          "to_pos": "he c",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 256,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CHU",
+          "from_pos": "ks_t",
+          "to_pos": "ble_",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 257,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.EX",
+          "from_pos": "cute",
+          "to_pos": "inse",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 261,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "4,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 268,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OF DOCUMEN",
+          "from_pos": "s mo",
+          "to_pos": "t si",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 280,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "4,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 292,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OF DOCUMEN",
+          "from_pos": "s mo",
+          "to_pos": "t si",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 303,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "4,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 314,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SQLALCHEMY",
+          "from_pos": "engi",
+          "to_pos": "e im",
+          "decimal_pos": "o",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "]:",
+          "line": 319,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE BASE Q",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IS NOT NO",
+          "line": 333,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "{SELF.COLL",
+          "from_pos": "ctio",
+          "to_pos": "_nam",
+          "decimal_pos": "}",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IS NOT NO",
+          "line": 338,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE QUERY",
+          "from_pos": "aram",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "BY EMBEDD",
+          "line": 344,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "{\"EMBEDDIN",
+          "from_pos": "\": e",
+          "to_pos": "bedd",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "BY EMBEDD",
+          "line": 347,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "PAGE_CO",
+          "from_pos": "tent",
+          "to_pos": "resu",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "BY EMBEDD",
+          "line": 356,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METADAT",
+          "from_pos": "=res",
+          "to_pos": "lt.m",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "BY EMBEDD",
+          "line": 357,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "4,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 368,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OF DOCUMEN",
+          "from_pos": "s mo",
+          "to_pos": "t si",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 380,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LIST OF ID",
+          "from_pos": "to",
+          "to_pos": "elet",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 391,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE TABLE",
+          "from_pos": "chem",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 398,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE = TABL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 399,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SELF.ENGIN",
+          "from_pos": ".con",
+          "to_pos": "ect(",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 410,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DELETE_",
+          "from_pos": "ondi",
+          "to_pos": "ion",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 412,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONN.EX",
+          "from_pos": "cute",
+          "to_pos": "chun",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 413,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RETURN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESULT IN R",
+          "line": 414,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONNECTION",
+          "from_pos": "stri",
+          "to_pos": "g is",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 434,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SS IT AS A",
+          "from_pos": "para",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 435,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONNECTION",
+          "from_pos": "stri",
+          "to_pos": "g is",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 484,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SS IT AS A",
+          "from_pos": "para",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 485,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGS,",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GS: OPTION",
+          "line": 504,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "EY=\"PG_CON",
+          "line": 458
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "R:",
+          "line": 12,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RE.DOCUMEN",
+          "line": 15,
+          "keyword": "ment"
+        },
+        {
+          "type": "OMIT",
+          "field": "RE.EMBEDDI",
+          "line": 16,
+          "keyword": "eddings"
+        },
+        {
+          "type": "OMIT",
+          "field": "RE.UTILS I",
+          "line": 17,
+          "keyword": "_dict_or_env"
+        },
+        {
+          "type": "OMIT",
+          "field": "RE.VECTORS",
+          "line": 18,
+          "keyword": "ectorStore"
+        },
+        {
+          "type": "OMIT",
+          "field": "RSTORE):",
+          "line": 26,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_STRING:",
+          "line": 45,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_NAME: ST",
+          "line": 48,
+          "keyword": "_DEFAULT_COLLECTION_NAME,"
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[LO",
+          "line": 50,
+          "keyword": "= None,"
+        },
+        {
+          "type": "OMIT",
+          "field": "M E",
+          "line": 77,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ST_INIT__(",
+          "line": 85,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "LLECTION(S",
+          "line": 187,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "LLECTION(S",
+          "line": 192,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "(",
+          "line": 199,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": OPTIONAL",
+          "line": 202,
+          "keyword": "None,"
+        },
+        {
+          "type": "OMIT",
+          "field": "RE TEXTS T",
+          "line": 207,
+          "keyword": "eddings and add to the vectorstore."
+        },
+        {
+          "type": "SELECT",
+          "field": ": ITERABLE",
+          "line": 210,
+          "keyword": "add to the vectorstore."
+        },
+        {
+          "type": "SELECT",
+          "field": "NONE:",
+          "line": 219,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[DI",
+          "line": 269,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[DI",
+          "line": 293,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "CS",
+          "line": 309,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[DI",
+          "line": 315,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NDITION =",
+          "line": 326,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "_WITH_SCOR",
+          "line": 353,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "CUMENTS_WI",
+          "line": 363,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[DI",
+          "line": 369,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "NONE:",
+          "line": 395,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": OPTIONAL",
+          "line": 424,
+          "keyword": "None,"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_NAME: ST",
+          "line": 426,
+          "keyword": "_DEFAULT_COLLECTION_NAME,"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_STRING =",
+          "line": 439,
+          "keyword": "ction_string(kwargs)"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_STRING:",
+          "line": 455,
+          "keyword": "_dict_or_env("
+        },
+        {
+          "type": "OMIT",
+          "field": "NNECTION_S",
+          "line": 461,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NNECTION_S",
+          "line": 468,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": LIST[DOC",
+          "line": 473,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_NAME: ST",
+          "line": 476,
+          "keyword": "_DEFAULT_COLLECTION_NAME,"
+        },
+        {
+          "type": "SELECT",
+          "field": "= [D.META",
+          "line": 490,
+          "keyword": "documents]"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_STRING =",
+          "line": 491,
+          "keyword": "ction_string(kwargs)"
+        },
+        {
+          "type": "SELECT",
+          "field": "=TEXTS,",
+          "line": 496,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_STRING_F",
+          "line": 508,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TR,",
+          "line": 510,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 81,
+      "key_field_names": [
+        "EY=\"PG_CON"
+      ]
+    },
+    "TIMESCALEVECTOR": {
+      "member": "TIMESCALEVECTOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 11
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "AGENTS": {
+      "member": "AGENTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 112,
+          "file_name": "(TOOL, TO",
+          "file_type": "O",
+          "designation": "L",
+          "mode": "",
+          "format": "P",
+          "device": "LLY RE",
+          "keyed": false,
+          "keywords": "create the LLM"
+        },
+        {
+          "line": 148,
+          "file_name": "INAL ANSWE",
+          "file_type": "R",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "URN `2",
+          "keyed": false,
+          "keywords": "` as a return value, but pas"
+        },
+        {
+          "line": 190,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "N",
+          "device": "SAGELO",
+          "keyed": false,
+          "keywords": "g):"
+        },
+        {
+          "line": 209,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "N",
+          "device": "SAGELO",
+          "keyed": false,
+          "keywords": "g):"
+        },
+        {
+          "line": 212,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 222,
+          "file_name": "UNCTIONMES",
+          "file_type": "S",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 232,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 10
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CACHES": {
+      "member": "CACHES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "E-BLOCK::",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHAT_HISTORY": {
+      "member": "CHAT_HISTORY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 5,
+          "name": "E-BLOCK::",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "E-BLOCK::",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "D_MESSAGES CONT",
+          "ds_type": "NS",
+          "from_pos": "a defa",
+          "to_length": "ult imp",
+          "decimal": "l",
+          "data_type": "EM",
+          "keywords": "ntation that calls add_message",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHAT_SESSIONS": {
+      "member": "CHAT_SESSIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BLOB_LOADERS": {
+      "member": "BLOB_LOADERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 5,
+          "name": "ITION, CONTENT",
+          "ds_type": "AD",
+          "from_pos": "ing cod",
+          "to_length": "e shoul",
+          "decimal": "d",
+          "data_type": "P",
+          "keywords": "ovide a lazy loading interface by def",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
