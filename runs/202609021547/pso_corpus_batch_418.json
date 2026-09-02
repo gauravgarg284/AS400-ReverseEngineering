@@ -1,0 +1,1887 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 418,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_MODELS",
+    "_DIFFERENTIABLE_FUNCTIONS",
+    "_LSAP.CPYTHON-312-X86_64-LINUX-GNU",
+    "_MINPACK.CPYTHON-312-X86_64-LINUX-GNU",
+    "_OPTIMIZE",
+    "REPORT",
+    "_ZEROS.CPYTHON-312-X86_64-LINUX-GNU",
+    "MESON",
+    "TEST_LINEAR_ASSIGNMENT",
+    "_MAX_LEN_SEQ"
+  ],
+  "pso_corpus": {
+    "_MODELS": {
+      "member": "_MODELS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 34,
+          "file_name": "LEN(DATA.",
+          "file_type": "X",
+          "designation": ".",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 169,
+          "file_name": "POWERS.SH",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_DIFFERENTIABLE_FUNCTIONS": {
+      "member": "_DIFFERENTIABLE_FUNCTIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 834,
+          "name": "ENTICALLY ZERO",
+          "ds_type": "D",
+          "from_pos": "it is r",
+          "to_length": "eturned",
+          "decimal": "",
+          "data_type": "AS",
+          "keywords": "a csr matrix.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_LSAP.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_LSAP.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "AY",
+          "line": 96
+        },
+        {
+          "name": "IX OF THE",
+          "line": 97
+        },
+        {
+          "name": "OW INDICES",
+          "line": 105
+        },
+        {
+          "name": "APH.MIN_WE",
+          "line": 113
+        },
+        {
+          "name": "TITE GRAPH",
+          "line": 119
+        },
+        {
+          "name": "AY([[4, 1,",
+          "line": 155
+        }
+      ],
+      "fields": [
+        {
+          "name": "MAXIMUM WE",
+          "from_pos": "ght",
+          "to_pos": "atch",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IX OF THE",
+          "line": 100,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ": ARRAY",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "IX OF THE",
+          "line": 104,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SSIGNMENT.",
+          "from_pos": "The",
+          "to_pos": "ost",
+          "decimal_pos": "f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OW INDICES",
+          "line": 106,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AND VERTEX",
+          "from_pos": "j of",
+          "to_pos": "the",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TITE GRAPH",
+          "line": 121,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SSIGNMENT",
+          "from_pos": "f wo",
+          "to_pos": "kers",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TITE GRAPH",
+          "line": 122,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AS NP",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "TITE GRAPH",
+          "line": 154,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "H\ufffd\ufffdHL\ufffdL$,L",
+          "line": 27,
+          "keyword": "D$,\u0000\u0000\u0000\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000f\ufffd\ufffd\u0001\u0000\u0000H\ufffd\u0005\ufffd]\u0000\u0000\ufffd"
+        },
+        {
+          "type": "OMIT",
+          "field": "\ufffdF\u000fO\ufffdF\u000f\ufffd\ufffdH",
+          "line": 49,
+          "keyword": "\ufffdH9\ufffdu\ufffdL\ufffd\ufffdH\ufffd\ufffd\ufffdA\ufffd\ufffd\u0001t\u000eL\ufffd\ufffdH)\ufffdH\ufffd\ufffd\u0001H\ufffd\u0004\ufffdH\ufffd<$H9|$8\u000f\ufffd\ufffd\u0005\u0000\u0000H\ufffd\ufffd$\ufffd\u0000\u0000\u00001\ufffdL\ufffdD$PL\ufffd\\$(L\ufffdL$ \ufffd\u0017\ufffd\ufffd\ufffdH\ufffd|$h\u0000L\ufffdL$ L\ufffd\\$(L\ufffdD$Pt\u0013H\ufffd\ufffd$\ufffd\u0000\u0000\u0000H\ufffd|$8H\ufffd\ufffdH!7H\ufffd|$\bH9|$@\u000f\ufffd"
+        },
+        {
+          "type": "SELECT",
+          "field": "SIGNMENT P",
+          "line": 118,
+          "keyword": "also known as minimum weight"
+        },
+        {
+          "type": "SELECT",
+          "field": "E WHERE TH",
+          "line": 130,
+          "keyword": "square, each row is assigned to"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 6,
+      "key_field_names": []
+    },
+    "_MINPACK.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_MINPACK.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 44
+        },
+        {
+          "name": "\u0016H\ufffd\ufffd$\ufffd\u0001\u0000\u0000I",
+          "line": 495
+        },
+        {
+          "name": "\u0000\u0001X\u0010\u0001\u001b",
+          "line": 628
+        }
+      ],
+      "fields": [
+        {
+          "name": "UM\ufffd\ufffdATI\ufffd\ufffdU",
+          "from_pos": "\ufffd\ufffdSH",
+          "to_pos": "\ufffdH\ufffd=",
+          "decimal_pos": "A",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 67,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\\A]A^A_\ufffdH\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 145,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\ufffd\u0001T",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 189,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0011\u0004\ufffdH\ufffd\ufffd\u0001A9",
+          "from_pos": "\u007f\ufffd\ufffd\u0019",
+          "to_pos": "\ufffd\ufffdf\u000f",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 208,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "E1\ufffdE1\ufffd\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 324,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "UATUSH\ufffd\ufffd\b\u0001",
+          "from_pos": "\u0000\ufffd\ufffdH",
+          "to_pos": "\ufffd$`\u0001",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 344,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "]A^A_\ufffdF\u000f\u001f\ufffd",
+          "from_pos": "\u0000\u0000\u0000\u0000",
+          "to_pos": "\ufffd5Yz",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 419,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0011\u0004\ufffdH\ufffd\ufffd\u0001A9",
+          "from_pos": "\u007f\ufffd\ufffd\u000f",
+          "to_pos": "\ufffd\ufffd1\ufffd",
+          "decimal_pos": "A",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\ufffd\ufffdH\ufffd\ufffdX[]A",
+          "line": 459,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0011\u0004\ufffdH\ufffd\ufffd\u0001A9",
+          "from_pos": "\u007f\ufffd\ufffd\ufffd",
+          "to_pos": "\ufffd\ufffd\u000f\u0011",
+          "decimal_pos": "$",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0016H\ufffd\ufffd$\ufffd\u0001\u0000\u0000I",
+          "line": 618,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ARGUMENT T",
+          "from_pos": "fun",
+          "to_pos": "tion",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0016H\ufffd\ufffd$\ufffd\u0001\u0000\u0000I",
+          "line": 621,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0004A\u000e(\ufffd\u0005G\u000e0",
+          "from_pos": "\u0006P\u000eP",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0000\u0001X\u0010\u0001\u001b",
+          "line": 667,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "\u0003\u0000\u0000H\ufffd\ufffd$\ufffd\u0001\u0000",
+          "line": 454
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "\u0001\u0000H\u0019\u0000\u0000\u0000\ufffdP\ufffd",
+          "line": 24,
+          "keyword": "@\ufffd\ufffd\ufffd\ufffd%\ufffdN\u0001\u0000h\u001b\u0000\u0000\u0000\ufffd0\ufffd\ufffd\ufffd\ufffd%\ufffdN\u0001\u0000h"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 11,
+      "key_field_names": [
+        "\u0003\u0000\u0000H\ufffd\ufffd$\ufffd\u0001\u0000"
+      ]
+    },
+    "_OPTIMIZE": {
+      "member": "_OPTIMIZE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 26,
+          "file_name": "ORMAT__ =",
+          "file_type": "\"",
+          "designation": "R",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 90,
+          "file_name": "CALLBACK",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "COBYLA",
+          "keyed": false,
+          "keywords": "', 'cobyqa'}:"
+        },
+        {
+          "line": 95,
+          "file_name": "SET(SIG.P",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "T",
+          "device": "ESULT'",
+          "keyed": false,
+          "keywords": "}:"
+        },
+        {
+          "line": 137,
+          "file_name": "EV, NJEV,",
+          "file_type": "N",
+          "designation": "H",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 171,
+          "file_name": "HK IS NOT",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 177,
+          "file_name": "UNKNOWN_O",
+          "file_type": "P",
+          "designation": "T",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 196,
+          "file_name": "ORD == NP",
+          "file_type": ".",
+          "designation": "I",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 277,
+          "file_name": ": SCALARF",
+          "file_type": "U",
+          "designation": "N",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 279,
+          "file_name": "CALLABLE(",
+          "file_type": "J",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 294,
+          "file_name": "HESS IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 302,
+          "file_name": "BOUNDS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 310,
+          "file_name": "= SCALARF",
+          "file_type": "U",
+          "designation": "N",
+          "mode": "",
+          "format": "O",
+          "device": "ESS,",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 331,
+          "file_name": "(X < BOUN",
+          "file_type": "D",
+          "designation": "S",
+          "mode": "",
+          "format": ")",
+          "device": ").ANY(",
+          "keyed": false,
+          "keywords": "):"
+        },
+        {
+          "line": 524,
+          "file_name": "FUNCTION",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 552,
+          "file_name": "FUNCTION",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 688,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 762,
+          "file_name": "ADAPTIVE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 777,
+          "file_name": "BOUNDS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 787,
+          "file_name": "BOUNDS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 790,
+          "file_name": "INITIAL_S",
+          "file_type": "I",
+          "designation": "M",
+          "mode": "",
+          "format": "X",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 812,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 816,
+          "file_name": "MAXITER I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 832,
+          "file_name": "BOUNDS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 944,
+          "file_name": "FCALLS[0]",
+          "file_type": "",
+          "designation": ">",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 965,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 974,
+          "file_name": "A FUNCTIO",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "S",
+          "device": "TH:`R^",
+          "keyed": false,
+          "keywords": "m`, its derivatives form"
+        },
+        {
+          "line": 1055,
+          "file_name": "ORWARD) FI",
+          "file_type": "N",
+          "designation": "I",
+          "mode": "",
+          "format": "D",
+          "device": "OF THE",
+          "keyed": false,
+          "keywords": "gradient."
+        },
+        {
+          "line": 1120,
+          "file_name": "DIRECTION",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1176,
+          "file_name": "RET[0] IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "IS NOT",
+          "keyed": false,
+          "keywords": "None:"
+        },
+        {
+          "line": 1182,
+          "file_name": "RET[0] IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1195,
+          "file_name": "RET[0] IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1332,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1352,
+          "file_name": "GS ALGORIT",
+          "file_type": "H",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1398,
+          "file_name": "MINIMIZAT",
+          "file_type": "I",
+          "designation": "O",
+          "mode": "",
+          "format": "O",
+          "device": "LLY, W",
+          "keyed": false,
+          "keywords": "ith an error message of"
+        },
+        {
+          "line": 1411,
+          "file_name": "X0.NDIM =",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1413,
+          "file_name": "MAXITER I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1416,
+          "file_name": "= _PREPAR",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": ", ARGS",
+          "keyed": false,
+          "keywords": "=args, epsilon=eps,"
+        },
+        {
+          "line": 1424,
+          "file_name": "K = MYFPRI",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1435,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1502,
+          "file_name": "WARNFLAG",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1513,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1524,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1530,
+          "file_name": "NOT WARNF",
+          "file_type": "L",
+          "designation": "A",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1650,
+          "file_name": "THE PARAM",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "U, V)",
+          "keyed": false,
+          "keywords": "= (0, 0)``."
+        },
+        {
+          "line": 1707,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1772,
+          "file_name": "MAXITER I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1775,
+          "file_name": "= _PREPAR",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": "=JAC,",
+          "keyed": false,
+          "keywords": "args=args, epsilon=eps,"
+        },
+        {
+          "line": 1783,
+          "file_name": "K = MYFPRI",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1790,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1854,
+          "file_name": "WARNFLAG",
+          "file_type": "=",
+          "designation": "=",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1865,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1876,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1988,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2041,
+          "file_name": "JAC IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2051,
+          "file_name": "= _PREPAR",
+          "file_type": "E",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2065,
+          "file_name": "(HESS IN",
+          "file_type": "F",
+          "designation": "D",
+          "mode": "",
+          "format": "T",
+          "device": "INEARO",
+          "keyed": false,
+          "keywords": "perator)):"
+        },
+        {
+          "line": 2091,
+          "file_name": "MAXITER I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2099,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2102,
+          "file_name": "K = NONE",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2258,
+          "file_name": "MINBOUND`",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "",
+          "device": "CTION",
+          "keyed": false,
+          "keywords": "in the given range."
+        },
+        {
+          "line": 2283,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2315,
+          "file_name": "LEN(BOUND",
+          "file_type": "S",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2319,
+          "file_name": "NOT (IS_F",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "_",
+          "device": "_SCALA",
+          "keyed": false,
+          "keywords": "r(x2)):"
+        },
+        {
+          "line": 2322,
+          "file_name": "X1 > X2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2333,
+          "file_name": "C, XF = FU",
+          "file_type": "L",
+          "designation": "C",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2341,
+          "file_name": "ULC = FNFC",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2346,
+          "file_name": "DISP > 2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2422,
+          "file_name": "NP.ISNAN(",
+          "file_type": "X",
+          "designation": "F",
+          "mode": "",
+          "format": "R",
+          "device": "N(FU):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2426,
+          "file_name": "DISP > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2624,
+          "file_name": "TOL.",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2694,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2729,
+          "file_name": "TOL < 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2740,
+          "file_name": "SUCCESS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2750,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2828,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2857,
+          "file_name": "BRACK IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2887,
+          "file_name": "(NP.ABS(X",
+          "file_type": "C",
+          "designation": "",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2898,
+          "file_name": "DISP > 2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2928,
+          "file_name": "(F1 < F2)",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2937,
+          "file_name": "SUCCESS:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 2947,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3034,
+          "file_name": "(FA < FB)",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "H SO F",
+          "keyed": false,
+          "keywords": "a > fb"
+        },
+        {
+          "line": 3105,
+          "file_name": "NOT (COND",
+          "file_type": "1",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3239,
+          "file_name": "NOT NP.AN",
+          "file_type": "Y",
+          "designation": "(",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3400,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3510,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3514,
+          "file_name": "MAXITER I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3534,
+          "file_name": "DIREC IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3543,
+          "file_name": "BOUNDS IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3629,
+          "file_name": "BOUNDS AN",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": ".",
+          "device": "NP.ANY",
+          "keyed": false,
+          "keywords": "(x > upper_bound)):"
+        },
+        {
+          "line": 3642,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3650,
+          "file_name": "RETALL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3656,
+          "file_name": "FLAG == 0",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3663,
+          "file_name": "FLAG == 1",
+          "file_type": ":",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3761,
+          "file_name": "THE OBJEC",
+          "file_type": "T",
+          "designation": "I",
+          "mode": "",
+          "format": "F",
+          "device": "SH` IS",
+          "keyed": false,
+          "keywords": "None, that is the"
+        },
+        {
+          "line": 3783,
+          "file_name": "THE `FINI",
+          "file_type": "S",
+          "designation": "H",
+          "mode": "",
+          "format": "R",
+          "device": "NT ONE",
+          "keyed": false,
+          "keywords": "s. Consequently,"
+        },
+        {
+          "line": 3801,
+          "file_name": "TWO VARIA",
+          "file_type": "B",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "OF A P",
+          "keyed": false,
+          "keywords": "ositive-definite"
+        },
+        {
+          "line": 3829,
+          "file_name": "EACH OF T",
+          "file_type": "H",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "IS CO",
+          "keyed": false,
+          "keywords": "mposed. To"
+        },
+        {
+          "line": 3847,
+          "file_name": "N > 40:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3856,
+          "file_name": "(N == 1):",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3863,
+          "file_name": "(N > 1):",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3866,
+          "file_name": "NOT NP.IT",
+          "file_type": "E",
+          "designation": "R",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3894,
+          "file_name": "(N == 1):",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3898,
+          "file_name": "CALLABLE(",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 3928,
+          "file_name": "FULL_OUTP",
+          "file_type": "U",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4121,
+          "file_name": "SOLVER IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 4165,
+          "file_name": "DISP:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 11,
+          "name": "ED FMINBOUND (J",
+          "ds_type": "Y",
+          "from_pos": "2001)",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "ED BRUTE (AUG.",
+          "ds_type": "02",
+          "from_pos": ")",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 14,
+          "name": "ATED STRONG WOL",
+          "ds_type": "C",
+          "from_pos": "onditio",
+          "to_length": "ns line",
+          "decimal": "",
+          "data_type": "SE",
+          "keywords": "rch to use",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 733,
+          "name": "APTIVE : BOOL,",
+          "ds_type": "TI",
+          "from_pos": "onal",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 775,
+          "name": "ELT = 0.00025",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 26
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REPORT": {
+      "member": "REPORT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ZEROS.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "_ZEROS.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [],
+      "fields": [
+        {
+          "name": "\\A]A^\ufffdF\u000f\u001fD",
+          "from_pos": "\u0000I\ufffd\ufffd",
+          "to_pos": "J\ufffdD\ufffd",
+          "decimal_pos": "I",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 18,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\ufffd\u0001E9\ufffd\u000f\ufffd\ufffd\u0000",
+          "from_pos": "\u0000\ufffdC\u0004",
+          "to_pos": "\u000fY\u0015\u0006",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 28,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [],
+      "join_specs": [],
+      "total_fields": 2,
+      "key_field_names": []
+    },
+    "MESON": {
+      "member": "MESON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 25,
+          "name": "ING_CPP = FS.CO",
+          "ds_type": "FI",
+          "from_pos": "le('ext",
+          "to_length": "ending.",
+          "decimal": "p",
+          "data_type": "YX",
+          "keywords": ", 'extending_cpp.pyx')",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_LINEAR_ASSIGNMENT": {
+      "member": "TEST_LINEAR_ASSIGNMENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_MAX_LEN_SEQ": {
+      "member": "_MAX_LEN_SEQ",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 106,
+          "file_name": "TAPS IS N",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 119,
+          "file_name": "LENGTH IS",
+          "file_type": "",
+          "designation": "N",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 127,
+          "file_name": "STATE IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 132,
+          "file_name": "STATE.NDI",
+          "file_type": "M",
+          "designation": "",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 134,
+          "file_name": "NP.ALL(ST",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
