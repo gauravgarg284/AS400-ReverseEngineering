@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 160,
+  "total_batches": 477,
+  "members_in_batch": [
+    "BASE",
+    "PROMPT",
+    "BASE_LANGUAGE",
+    "__INIT__",
+    "MUTABLE_EXPANDER",
+    "__INIT__",
+    "NEWS_DOCS",
+    "TMDB_DOCS",
+    "__INIT__",
+    "MODELS"
+  ],
+  "pso_corpus": {
+    "BASE": {
+      "member": "BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 218,
+          "file_name": "MISSING_V",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 226,
+          "file_name": "STOP_SEQU",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PROMPT": {
+      "member": "PROMPT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "ER TO USE A TOO",
+          "ds_type": "Y",
+          "from_pos": "ou can",
+          "to_length": "use <to",
+          "decimal": "o",
+          "data_type": "L>",
+          "keywords": "/tool> and <tool_input></tool_input>",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BASE_LANGUAGE": {
+      "member": "BASE_LANGUAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "FERENT WAY",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MUTABLE_EXPANDER": {
+      "member": "MUTABLE_EXPANDER",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T TYPE_CHE",
+          "line": 1
+        },
+        {
+          "name": "T_ATTRIBUT",
+          "line": 26
+        }
+      ],
+      "fields": [
+        {
+          "name": "PI IMPORT",
+          "from_pos": "reat",
+          "to_pos": "_imp",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T TYPE_CHE",
+          "line": 3,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\"LANGCHAIN",
+          "from_pos": "comm",
+          "to_pos": "nity",
+          "decimal_pos": "c",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T TYPE_CHE",
+          "line": 16,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "RD,",
+          "line": 7,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "DYNAMICAL",
+          "line": 12,
+          "keyword": "recated imports."
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 2,
+      "key_field_names": []
+    },
+    "NEWS_DOCS": {
+      "member": "NEWS_DOCS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "OCS = \"\"\"API DO",
+          "ds_type": "ME",
+          "from_pos": "ntation",
+          "to_length": ":",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TMDB_DOCS": {
+      "member": "TMDB_DOCS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "OCS = \"\"\"API DO",
+          "ds_type": "ME",
+          "from_pos": "ntation",
+          "to_length": ":",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "E_ADULT | BOOLE",
+          "ds_type": "|",
+          "from_pos": "Choose",
+          "to_length": "whethe",
+          "decimal": "r",
+          "data_type": "T",
+          "keywords": "include adult (pornography) content",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MODELS": {
+      "member": "MODELS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ELS FOR THE CON",
+          "ds_type": "IT",
+          "from_pos": "utional",
+          "to_length": "AI cha",
+          "decimal": "i",
+          "data_type": "N.",
+          "keywords": "\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
