@@ -1,0 +1,620 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 172,
+  "total_batches": 477,
+  "members_in_batch": [
+    "DOCAI",
+    "GENERIC",
+    "PDF",
+    "REGISTRY",
+    "TXT",
+    "ROAM",
+    "SRT",
+    "TSV",
+    "__INIT__",
+    "LONG_CONTEXT_REORDER"
+  ],
+  "pso_corpus": {
+    "DOCAI": {
+      "member": "DOCAI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE CONTAINS A",
+          "ds_type": "F",
+          "from_pos": "parser",
+          "to_length": "based o",
+          "decimal": "n",
+          "data_type": "D",
+          "keywords": "cument AI from Google Cloud.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GENERIC": {
+      "member": "GENERIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "E FOR GENERIC /",
+          "ds_type": "UX",
+          "from_pos": "iliary",
+          "to_length": "parsers",
+          "decimal": ".",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PDF": {
+      "member": "PDF",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 46,
+          "file_name": "ILTER_WITH",
+          "file_type": "_",
+          "designation": "L",
+          "mode": "",
+          "format": "",
+          "device": "JPXDEC",
+          "keyed": false,
+          "keywords": "ode\"]"
+        },
+        {
+          "line": 47,
+          "file_name": "ILTER_WITH",
+          "file_type": "O",
+          "designation": "U",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 50,
+          "file_name": "LATEDECODE",
+          "file_type": "\"",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 51,
+          "file_name": "L\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 105,
+          "file_name": "ORMAT_INNE",
+          "file_type": "R",
+          "designation": "_",
+          "mode": "",
+          "format": "G",
+          "device": "TR, FO",
+          "keyed": false,
+          "keywords": "rmat: str) -> str:"
+        },
+        {
+          "line": 117,
+          "file_name": "CONTENT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 139,
+          "file_name": "NOT _STD_",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "A.KEYS",
+          "keyed": false,
+          "keywords": "()):"
+        },
+        {
+          "line": 141,
+          "file_name": "NOT ISINS",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "(",
+          "device": "INT):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 233,
+          "file_name": "NOT ALL_T",
+          "file_type": "E",
+          "designation": "X",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1641,
+          "file_name": "ORMERLY FO",
+          "file_type": "R",
+          "designation": "M",
+          "mode": "",
+          "format": "C",
+          "device": "HARACT",
+          "keyed": false,
+          "keywords": "er level.\"\"\""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE CONTAINS CO",
+          "ds_type": "ON",
+          "from_pos": "parser",
+          "to_length": "s for P",
+          "decimal": "D",
+          "data_type": "FS",
+          "keywords": "\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 10,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1507,
+          "name": "F FORMATS.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REGISTRY": {
+      "member": "REGISTRY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 34,
+          "file_name": "PARSER_NA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE INCLUDES A",
+          "ds_type": "GI",
+          "from_pos": "stry of",
+          "to_length": "defaul",
+          "decimal": "t",
+          "data_type": "P",
+          "keywords": "rser configurations.\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 26,
+          "name": "EFAULT\": _GET_D",
+          "ds_type": "AU",
+          "from_pos": "lt_pars",
+          "to_length": "er,",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TXT": {
+      "member": "TXT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ULE FOR PARSING",
+          "ds_type": "EX",
+          "from_pos": "t files",
+          "to_length": "..\"\"\"",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ROAM": {
+      "member": "ROAM",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SRT": {
+      "member": "SRT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TSV": {
+      "member": "TSV",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "YOU USE T",
+          "file_type": "H",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "AN HTM",
+          "keyed": false,
+          "keywords": "L representation"
+        },
+        {
+          "line": 18,
+          "file_name": "THE TABLE",
+          "file_type": "",
+          "designation": "W",
+          "mode": "",
+          "format": "",
+          "device": "T_AS_H",
+          "keyed": false,
+          "keywords": "tml\" key in the"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 92,
+          "file_name": "NAME IN _",
+          "file_type": "M",
+          "designation": "O",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "OCUMENT TRANSFO",
+          "ds_type": "ER",
+          "from_pos": "s** are",
+          "to_length": "classe",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "transform Documents.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "E-BLOCK::",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 13,
+          "name": "E-BLOCK::",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "OCTRANPROPERTYE",
+          "ds_type": "RA",
+          "from_pos": "ctor\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 61,
+          "name": "OCTRANQATRANSFO",
+          "ds_type": "ER",
+          "from_pos": "\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 62,
+          "name": "OCTRANTEXTTRANS",
+          "ds_type": "TO",
+          "from_pos": "r\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 76,
+          "name": "OCTRANPROPERTYE",
+          "ds_type": "RA",
+          "from_pos": "ctor\":",
+          "to_length": "\"langch",
+          "decimal": "a",
+          "data_type": "IN",
+          "keywords": "community.document_transformers.doctr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "OCTRANQATRANSFO",
+          "ds_type": "ER",
+          "from_pos": "\": \"lan",
+          "to_length": "gchain_",
+          "decimal": "c",
+          "data_type": "OM",
+          "keywords": "unity.document_transformers.doctran_t",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "OCTRANTEXTTRANS",
+          "ds_type": "TO",
+          "from_pos": "r\": \"la",
+          "to_length": "ngchain",
+          "decimal": "_",
+          "data_type": "CO",
+          "keywords": "munity.document_transformers.doctran_",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LONG_CONTEXT_REORDER": {
+      "member": "LONG_CONTEXT_REORDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
