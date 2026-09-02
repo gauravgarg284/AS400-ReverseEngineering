@@ -1,0 +1,1241 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 318,
+  "total_batches": 477,
+  "members_in_batch": [
+    "GEOMETRY",
+    "GETOPT",
+    "GLYPH-CACHE",
+    "GLYPH",
+    "HASH",
+    "HEAP-IMP",
+    "HEAP",
+    "IMAGE",
+    "JSON",
+    "LINK"
+  ],
+  "pso_corpus": {
+    "GEOMETRY": {
+      "member": "GEOMETRY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 33,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 212,
+          "file_name": "Z_IS_INFIN",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "E",
+          "device": "ECTANG",
+          "keyed": false,
+          "keywords": "les use"
+        },
+        {
+          "line": 346,
+          "file_name": "IT DOES,",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "P",
+          "device": "ON OF",
+          "keyed": true,
+          "keywords": "a severe"
+        },
+        {
+          "line": 365,
+          "file_name": "IT DOES,",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "P",
+          "device": "ON OF",
+          "keyed": true,
+          "keywords": "a severe"
+        },
+        {
+          "line": 385,
+          "file_name": "1 /",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 885,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 73,
+          "name": "SRC AND DST (I",
+          "ds_type": "TH",
+          "from_pos": "e same",
+          "to_length": "range)",
+          "decimal": "t",
+          "data_type": "OG",
+          "keywords": "ther according to",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 216,
+          "name": "IFFERENCE BETWE",
+          "ds_type": "I",
+          "from_pos": "ntersec",
+          "to_length": "ting 2",
+          "decimal": "v",
+          "data_type": "AL",
+          "keywords": "d rectangles and",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 384,
+          "name": "0 | NORMALLY R",
+          "ds_type": "RE",
+          "from_pos": "sented",
+          "to_length": "as [ a",
+          "decimal": "b",
+          "data_type": "C",
+          "keywords": "d e f ].",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 628,
+          "name": "INATES IN A BOU",
+          "ds_type": "IN",
+          "from_pos": "g box a",
+          "to_length": "re inte",
+          "decimal": "g",
+          "data_type": "ER",
+          "keywords": ", so rounding of the",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 636,
+          "name": "RECTANGLE COOR",
+          "ds_type": "NA",
+          "from_pos": "tes.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 638,
+          "name": "INATES IN A BOU",
+          "ds_type": "IN",
+          "from_pos": "g box a",
+          "to_length": "re inte",
+          "decimal": "g",
+          "data_type": "ER",
+          "keywords": ", so rounding of the",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 45
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GETOPT": {
+      "member": "GETOPT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 134,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GLYPH-CACHE": {
+      "member": "GLYPH-CACHE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 35,
+          "file_name": "Z_PURGE_GL",
+          "file_type": "Y",
+          "designation": "P",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 60,
+          "file_name": "Z_RENDER_T",
+          "file_type": "3",
+          "designation": "_",
+          "mode": "",
+          "format": "P",
+          "device": ", FZ_D",
+          "keyed": false,
+          "keywords": "evice *dev, fz_font *font, i"
+        },
+        {
+          "line": 70,
+          "file_name": "Z_PREPARE_",
+          "file_type": "T",
+          "designation": "3",
+          "mode": "",
+          "format": "Y",
+          "device": "ONT *F",
+          "keyed": false,
+          "keywords": "ont, int gid);"
+        },
+        {
+          "line": 75,
+          "file_name": "Z_DUMP_GLY",
+          "file_type": "P",
+          "designation": "H",
+          "mode": "",
+          "format": "C",
+          "device": ", FZ_O",
+          "keyed": false,
+          "keywords": "utput *out);"
+        },
+        {
+          "line": 96,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GLYPH": {
+      "member": "GLYPH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 70,
+          "file_name": "Z_DROP_GLY",
+          "file_type": "P",
+          "designation": "H",
+          "mode": "",
+          "format": "_",
+          "device": "PIX);",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 81,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HASH": {
+      "member": "HASH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 74,
+          "file_name": "Z_DROP_HAS",
+          "file_type": "H",
+          "designation": "_",
+          "mode": "",
+          "format": "L",
+          "device": "SH_TAB",
+          "keyed": false,
+          "keywords": "le *table);"
+        },
+        {
+          "line": 100,
+          "file_name": "Z_HASH_REM",
+          "file_type": "O",
+          "designation": "V",
+          "mode": "",
+          "format": "Z",
+          "device": "ABLE *",
+          "keyed": false,
+          "keywords": "table, const void *key);"
+        },
+        {
+          "line": 111,
+          "file_name": "Z_HASH_FOR",
+          "file_type": "_",
+          "designation": "E",
+          "mode": "",
+          "format": "(",
+          "device": "_TABLE",
+          "keyed": false,
+          "keywords": "*table, void *state, fz_has"
+        },
+        {
+          "line": 124,
+          "file_name": "Z_HASH_FIL",
+          "file_type": "T",
+          "designation": "E",
+          "mode": "",
+          "format": "Z",
+          "device": "ABLE *",
+          "keyed": false,
+          "keywords": "table, void *state, fz_hash_"
+        },
+        {
+          "line": 126,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 40,
+          "name": "ROP_VAL CALLBAC",
+          "ds_type": "FU",
+          "from_pos": "nction",
+          "to_length": "is only",
+          "decimal": "",
+          "data_type": "US",
+          "keywords": "d to release values",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HEAP-IMP": {
+      "member": "HEAP-IMP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 35,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 52,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 93,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 128,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 133,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 157,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 159,
+          "file_name": "HEAP_DUMP",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 173,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 182,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 183,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 185,
+          "file_name": "HEAP_CONT",
+          "file_type": "A",
+          "designation": "I",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 186,
+          "file_name": "HEAP_TYPE",
+          "file_type": "_",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 187,
+          "file_name": "HEAP_CMP",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 188,
+          "file_name": "HEAP_XCAT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 189,
+          "file_name": "HEAP_CAT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 190,
+          "file_name": "HEAP_DUMP",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HEAP": {
+      "member": "HEAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 122,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 136,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 143,
+          "file_name": "/* MUPDF_",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 54,
+          "name": "SOME FUNCTIONS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "IMAGE": {
+      "member": "IMAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 59,
+          "file_name": "NON-NULL,",
+          "file_type": "",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "ATED O",
+          "keyed": false,
+          "keywords": "n exit to the"
+        },
+        {
+          "line": 62,
+          "file_name": "NON-NULL,",
+          "file_type": "",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "ATED O",
+          "keyed": false,
+          "keywords": "n exit to the"
+        },
+        {
+          "line": 89,
+          "file_name": "Z_DROP_IMA",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "_",
+          "device": "IMAGE)",
+          "keyed": false,
+          "keywords": ";"
+        },
+        {
+          "line": 107,
+          "file_name": "Z_DROP_IMA",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "FZ_IMA",
+          "keyed": false,
+          "keywords": "ge *image);"
+        },
+        {
+          "line": 278,
+          "file_name": "Z_DROP_IMA",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "P",
+          "device": "RABLE",
+          "keyed": false,
+          "keywords": "*image);"
+        },
+        {
+          "line": 285,
+          "file_name": "Z_DROP_IMA",
+          "file_type": "G",
+          "designation": "E",
+          "mode": "",
+          "format": "S",
+          "device": "AGE *I",
+          "keyed": false,
+          "keywords": "mage);"
+        },
+        {
+          "line": 364,
+          "file_name": "Z_IMAGE_RE",
+          "file_type": "S",
+          "designation": "O",
+          "mode": "",
+          "format": "I",
+          "device": "*XRES,",
+          "keyed": false,
+          "keywords": "int *yres);"
+        },
+        {
+          "line": 410,
+          "file_name": "Z_SET_COMP",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "*CTX,",
+          "keyed": false,
+          "keywords": "fz_compressed_image *cimg,"
+        },
+        {
+          "line": 420,
+          "file_name": "ERENCE TO",
+          "file_type": "K",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 423,
+          "file_name": "Z_SET_PIXM",
+          "file_type": "A",
+          "designation": "P",
+          "mode": "",
+          "format": "A",
+          "device": "FZ_PI",
+          "keyed": false,
+          "keywords": "xmap_image *cimg, fz_pixmap"
+        },
+        {
+          "line": 451,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 167,
+          "name": "E: NULL, OR A P",
+          "ds_type": "NT",
+          "from_pos": "er to t",
+          "to_length": "o a dec",
+          "decimal": "o",
+          "data_type": "DE",
+          "keywords": "array. The default",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 168,
+          "name": "E ARRAY IS [0 1",
+          "ds_type": "(R",
+          "from_pos": "epeated",
+          "to_length": "n time",
+          "decimal": "s",
+          "data_type": ",",
+          "keywords": "or n color components).",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 179,
+          "name": "ERIVED STRUCTUR",
+          "ds_type": ".",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 208,
+          "name": "ROP_IMAGE_FN *D",
+          "ds_type": "P)",
+          "from_pos": ";",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 215,
+          "name": "ATA IN THE SUPP",
+          "ds_type": "ED",
+          "from_pos": "compre",
+          "to_length": "ssed bu",
+          "decimal": "f",
+          "data_type": "FE",
+          "keywords": ".",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 232,
+          "name": "E: NULL, OR A P",
+          "ds_type": "NT",
+          "from_pos": "er to t",
+          "to_length": "o a dec",
+          "decimal": "o",
+          "data_type": "DE",
+          "keywords": "array. The default",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 233,
+          "name": "E ARRAY IS [0 1",
+          "ds_type": "(R",
+          "from_pos": "epeated",
+          "to_length": "n time",
+          "decimal": "s",
+          "data_type": ",",
+          "keywords": "or n color components).",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 288,
+          "name": "E A SUBAREA OF",
+          "ds_type": "CO",
+          "from_pos": "mpresse",
+          "to_length": "d image",
+          "decimal": ".",
+          "data_type": "L",
+          "keywords": "factor is the amount",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 290,
+          "name": "ER). IF NON NUL",
+          "ds_type": "L",
+          "from_pos": "2extra",
+          "to_length": "is the",
+          "decimal": "e",
+          "data_type": "XT",
+          "keywords": "a amount of",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "JSON": {
+      "member": "JSON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 73,
+          "file_name": "Z_APPEND_J",
+          "file_type": "S",
+          "designation": "O",
+          "mode": "",
+          "format": "Z",
+          "device": "*BUF,",
+          "keyed": false,
+          "keywords": "fz_json *value);"
+        },
+        {
+          "line": 74,
+          "file_name": "Z_WRITE_JS",
+          "file_type": "O",
+          "designation": "N",
+          "mode": "",
+          "format": "_",
+          "device": "*OUT,",
+          "keyed": false,
+          "keywords": "fz_json *value);"
+        },
+        {
+          "line": 82,
+          "file_name": "Z_JSON_ARR",
+          "file_type": "A",
+          "designation": "Y",
+          "mode": "",
+          "format": "S",
+          "device": "OL *PO",
+          "keyed": false,
+          "keywords": "ol, fz_json *array, fz_json"
+        },
+        {
+          "line": 83,
+          "file_name": "Z_JSON_OBJ",
+          "file_type": "E",
+          "designation": "C",
+          "mode": "",
+          "format": "E",
+          "device": "OL *PO",
+          "keyed": false,
+          "keywords": "ol, fz_json *object, const c"
+        },
+        {
+          "line": 98,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "LINK": {
+      "member": "LINK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "TWARE FOUN",
+          "file_type": "D",
+          "designation": "A",
+          "mode": "",
+          "format": "N",
+          "device": "E LICE",
+          "keyed": false,
+          "keywords": "nse, or (at your option)"
+        },
+        {
+          "line": 118,
+          "file_name": "Z_DROP_LIN",
+          "file_type": "K",
+          "designation": "(",
+          "mode": "",
+          "format": "C",
+          "device": "NK);",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 127,
+          "file_name": "Z_SET_LINK",
+          "file_type": "_",
+          "designation": "R",
+          "mode": "",
+          "format": "(",
+          "device": "*LINK",
+          "keyed": false,
+          "keywords": ", fz_rect rect);"
+        },
+        {
+          "line": 128,
+          "file_name": "Z_SET_LINK",
+          "file_type": "_",
+          "designation": "U",
+          "mode": "",
+          "format": "F",
+          "device": "*LINK,",
+          "keyed": false,
+          "keywords": "const char *uri);"
+        },
+        {
+          "line": 130,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 116,
+          "name": "BY JUST DROPPI",
+          "ds_type": "T",
+          "from_pos": "he head",
+          "to_length": ".",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
