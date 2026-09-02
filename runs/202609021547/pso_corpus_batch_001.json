@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 1,
+  "total_batches": 477,
+  "members_in_batch": [
+    "ACTIVATE",
+    "CFFI-GEN-SRC",
+    "CHROMA",
+    "CREWAI",
+    "CSV2RDF",
+    "DEACTIVATE",
+    "DEBUGPY",
+    "DEBUGPY-ADAPTER",
+    "DISTRO",
+    "DOTENV"
+  ],
+  "pso_corpus": {
+    "ACTIVATE": {
+      "member": "ACTIVATE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 33,
+          "file_name": "OR %%D IN",
+          "file_type": "(",
+          "designation": "\"",
+          "mode": "",
+          "format": "R",
+          "device": "TUAL_E",
+          "keyed": false,
+          "keywords": "NV_PROMPT=%%~nxd\""
+        },
+        {
+          "line": 53,
+          "file_name": "VHOME",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 60,
+          "file_name": "VPATH1",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 64,
+          "file_name": "VPATH2",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "ISTRIBUTE, SUBL",
+          "ds_type": "EN",
+          "from_pos": "se, and",
+          "to_length": "/or sel",
+          "decimal": "l",
+          "data_type": "C",
+          "keywords": "pies of the Software, and to",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 50,
+          "name": "ON'T USE () TO",
+          "ds_type": "OI",
+          "from_pos": "d probl",
+          "to_length": "ems wit",
+          "decimal": "h",
+          "data_type": "T",
+          "keywords": "em in %PATH%",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CFFI-GEN-SRC": {
+      "member": "CFFI-GEN-SRC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CHROMA": {
+      "member": "CHROMA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CREWAI": {
+      "member": "CREWAI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CSV2RDF": {
+      "member": "CSV2RDF",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DEACTIVATE": {
+      "member": "DEACTIVATE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 29,
+          "file_name": "VPROMPT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "VHOME",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 39,
+          "file_name": "VPATH",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 7,
+          "name": "ISTRIBUTE, SUBL",
+          "ds_type": "EN",
+          "from_pos": "se, and",
+          "to_length": "/or sel",
+          "decimal": "l",
+          "data_type": "C",
+          "keywords": "pies of the Software, and to",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 25,
+          "name": "ON'T USE () TO",
+          "ds_type": "OI",
+          "from_pos": "d probl",
+          "to_length": "ems wit",
+          "decimal": "h",
+          "data_type": "T",
+          "keywords": "em in %PATH%",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DEBUGPY": {
+      "member": "DEBUGPY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "EBUGPY.SERVER.C",
+          "ds_type": "I",
+          "from_pos": "mport m",
+          "to_length": "ain",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DEBUGPY-ADAPTER": {
+      "member": "DEBUGPY-ADAPTER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "EBUGPY.ADAPTER.",
+          "ds_type": "MA",
+          "from_pos": "in__ im",
+          "to_length": "port ma",
+          "decimal": "i",
+          "data_type": "N",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DISTRO": {
+      "member": "DISTRO",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "ISTRO.DISTRO IM",
+          "ds_type": "RT",
+          "from_pos": "main",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DOTENV": {
+      "member": "DOTENV",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "SYS.ARGV[",
+          "file_type": "0",
+          "designation": "]",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "OTENV.__MAIN__",
+          "ds_type": "PO",
+          "from_pos": "rt cli",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
