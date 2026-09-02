@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 167,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "__INIT__",
+    "PYTHON",
+    "BASE",
+    "__INIT__",
+    "__INIT__",
+    "__INIT__"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PYTHON": {
+      "member": "PYTHON",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T ANY",
+          "line": 3
+        },
+        {
+          "name": "EMOVED FRO",
+          "line": 7
+        },
+        {
+          "name": "TER(NAME)",
+          "line": 19
+        }
+      ],
+      "fields": [
+        {
+          "name": "COMPATIBIL",
+          "from_pos": "ty.\"",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 1,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "PI IMPORT",
+          "from_pos": "reat",
+          "to_pos": "_imp",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T ANY",
+          "line": 5,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "COMMUNITY",
+          "from_pos": "acka",
+          "to_pos": "e, w",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EMOVED FRO",
+          "line": 8,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "OKUPS={\"PY",
+          "line": 13,
+          "keyword": "ngchain_community.utilities.python\"},"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 3,
+      "key_field_names": []
+    },
+    "BASE": {
+      "member": "BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
