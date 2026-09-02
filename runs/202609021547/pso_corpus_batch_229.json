@@ -1,0 +1,885 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 229,
+  "total_batches": 477,
+  "members_in_batch": [
+    "KERNELTYPESTRARGSENTRY",
+    "KERNELTYPESTRRESOLVER",
+    "MAPTYPE",
+    "MODEL",
+    "MODULESTATE",
+    "NODE",
+    "NODEEDGE",
+    "NODETYPE",
+    "NODESTOOPTIMIZEINDICES",
+    "OPIDKERNELTYPESTRARGSENTRY"
+  ],
+  "pso_corpus": {
+    "KERNELTYPESTRARGSENTRY": {
+      "member": "KERNELTYPESTRARGSENTRY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 72,
+          "name": "DKERNELTYPESTR(",
+          "ds_type": "IL",
+          "from_pos": "der, ke",
+          "to_length": "rnelTyp",
+          "decimal": "e",
+          "data_type": "ST",
+          "keywords": "):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "DARGS(BUILDER,",
+          "ds_type": "GS",
+          "from_pos": "):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KERNELTYPESTRRESOLVER": {
+      "member": "KERNELTYPESTRRESOLVER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 65,
+          "name": "DOPKERNELTYPEST",
+          "ds_type": "RG",
+          "from_pos": "s(build",
+          "to_length": "er, opK",
+          "decimal": "e",
+          "data_type": "RN",
+          "keywords": "lTypeStrArgs):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MAPTYPE": {
+      "member": "MAPTYPE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 58,
+          "name": "DKEYTYPE(BUILDE",
+          "ds_type": "K",
+          "from_pos": "eyType)",
+          "to_length": ":",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 64,
+          "name": "DVALUETYPE(BUIL",
+          "ds_type": "R,",
+          "from_pos": "valueT",
+          "to_length": "ype):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MODEL": {
+      "member": "MODEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 150,
+          "name": "DIRVERSION(BUIL",
+          "ds_type": "R,",
+          "from_pos": "irVers",
+          "to_length": "ion):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 156,
+          "name": "DOPSETIMPORT(BU",
+          "ds_type": "DE",
+          "from_pos": "r, opse",
+          "to_length": "tImport",
+          "decimal": ")",
+          "data_type": ":",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 168,
+          "name": "DPRODUCERNAME(B",
+          "ds_type": "LD",
+          "from_pos": "er, pro",
+          "to_length": "ducerNa",
+          "decimal": "m",
+          "data_type": "E)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 174,
+          "name": "DPRODUCERVERSIO",
+          "ds_type": "BU",
+          "from_pos": "ilder,",
+          "to_length": "produce",
+          "decimal": "r",
+          "data_type": "VE",
+          "keywords": "sion):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 180,
+          "name": "DDOMAIN(BUILDER",
+          "ds_type": "DO",
+          "from_pos": "main):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 186,
+          "name": "DMODELVERSION(B",
+          "ds_type": "LD",
+          "from_pos": "er, mod",
+          "to_length": "elVersi",
+          "decimal": "o",
+          "data_type": "N)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 192,
+          "name": "DDOCSTRING(BUIL",
+          "ds_type": "R,",
+          "from_pos": "docStr",
+          "to_length": "ing):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 198,
+          "name": "DGRAPH(BUILDER,",
+          "ds_type": "RA",
+          "from_pos": "ph):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 204,
+          "name": "DGRAPHDOCSTRING",
+          "ds_type": "UI",
+          "from_pos": "lder, g",
+          "to_length": "raphDoc",
+          "decimal": "S",
+          "data_type": "TR",
+          "keywords": "ng):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 210,
+          "name": "DMETADATAPROPS(",
+          "ds_type": "IL",
+          "from_pos": "der, me",
+          "to_length": "tadataP",
+          "decimal": "r",
+          "data_type": "OP",
+          "keywords": "):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MODULESTATE": {
+      "member": "MODULESTATE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 104,
+          "name": "DREQUIRESGRADPA",
+          "ds_type": "MS",
+          "from_pos": "(builde",
+          "to_length": "r, requ",
+          "decimal": "i",
+          "data_type": "RE",
+          "keywords": "GradParams):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 116,
+          "name": "DFROZENPARAMS(B",
+          "ds_type": "LD",
+          "from_pos": "er, fro",
+          "to_length": "zenPara",
+          "decimal": "m",
+          "data_type": "S)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 128,
+          "name": "DISNOMINALSTATE",
+          "ds_type": "UI",
+          "from_pos": "lder, i",
+          "to_length": "sNomina",
+          "decimal": "l",
+          "data_type": "ST",
+          "keywords": "te):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 134,
+          "name": "DHASEXTERNALDAT",
+          "ds_type": "BU",
+          "from_pos": "ilder,",
+          "to_length": "hasExte",
+          "decimal": "r",
+          "data_type": "NA",
+          "keywords": "Data):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NODE": {
+      "member": "NODE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 208,
+          "name": "DNAME(BUILDER,",
+          "ds_type": "ME",
+          "from_pos": "):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 214,
+          "name": "DDOCSTRING(BUIL",
+          "ds_type": "R,",
+          "from_pos": "docStr",
+          "to_length": "ing):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 220,
+          "name": "DDOMAIN(BUILDER",
+          "ds_type": "DO",
+          "from_pos": "main):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 226,
+          "name": "DSINCEVERSION(B",
+          "ds_type": "LD",
+          "from_pos": "er, sin",
+          "to_length": "ceVersi",
+          "decimal": "o",
+          "data_type": "N)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 232,
+          "name": "DINDEX(BUILDER,",
+          "ds_type": "ND",
+          "from_pos": "ex):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 238,
+          "name": "DOPTYPE(BUILDER",
+          "ds_type": "OP",
+          "from_pos": "Type):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 244,
+          "name": "DTYPE(BUILDER,",
+          "ds_type": "PE",
+          "from_pos": "):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 250,
+          "name": "DEXECUTIONPROVI",
+          "ds_type": "RT",
+          "from_pos": "ype(bui",
+          "to_length": "lder, e",
+          "decimal": "x",
+          "data_type": "EC",
+          "keywords": "tionProviderType):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 256,
+          "name": "DINPUTS(BUILDER",
+          "ds_type": "IN",
+          "from_pos": "puts):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 268,
+          "name": "DOUTPUTS(BUILDE",
+          "ds_type": "O",
+          "from_pos": "utputs)",
+          "to_length": ":",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 280,
+          "name": "DATTRIBUTES(BUI",
+          "ds_type": "ER",
+          "from_pos": ", attri",
+          "to_length": "butes):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 292,
+          "name": "DINPUTARGCOUNTS",
+          "ds_type": "UI",
+          "from_pos": "lder, i",
+          "to_length": "nputArg",
+          "decimal": "C",
+          "data_type": "OU",
+          "keywords": "ts):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 304,
+          "name": "DIMPLICITINPUTS",
+          "ds_type": "UI",
+          "from_pos": "lder, i",
+          "to_length": "mplicit",
+          "decimal": "I",
+          "data_type": "NP",
+          "keywords": "ts):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NODEEDGE": {
+      "member": "NODEEDGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 95,
+          "name": "DNODEINDEX(BUIL",
+          "ds_type": "R,",
+          "from_pos": "nodeIn",
+          "to_length": "dex):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 101,
+          "name": "DINPUTEDGES(BUI",
+          "ds_type": "ER",
+          "from_pos": ", input",
+          "to_length": "Edges):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 113,
+          "name": "DOUTPUTEDGES(BU",
+          "ds_type": "DE",
+          "from_pos": "r, outp",
+          "to_length": "utEdges",
+          "decimal": ")",
+          "data_type": ":",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NODETYPE": {
+      "member": "NODETYPE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NODESTOOPTIMIZEINDICES": {
+      "member": "NODESTOOPTIMIZEINDICES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 111,
+          "name": "DNODEINDICES(BU",
+          "ds_type": "DE",
+          "from_pos": "r, node",
+          "to_length": "Indices",
+          "decimal": ")",
+          "data_type": ":",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 123,
+          "name": "DNUMINPUTS(BUIL",
+          "ds_type": "R,",
+          "from_pos": "numInp",
+          "to_length": "uts):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 129,
+          "name": "DNUMOUTPUTS(BUI",
+          "ds_type": "ER",
+          "from_pos": ", numOu",
+          "to_length": "tputs):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 135,
+          "name": "DHASVARIADICINP",
+          "ds_type": "(B",
+          "from_pos": "uilder,",
+          "to_length": "hasVar",
+          "decimal": "i",
+          "data_type": "AD",
+          "keywords": "cInput):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 141,
+          "name": "DHASVARIADICOUT",
+          "ds_type": "T(",
+          "from_pos": "builder",
+          "to_length": ", hasVa",
+          "decimal": "r",
+          "data_type": "IA",
+          "keywords": "icOutput):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 147,
+          "name": "DNUMVARIADICINP",
+          "ds_type": "S(",
+          "from_pos": "builder",
+          "to_length": ", numVa",
+          "decimal": "r",
+          "data_type": "IA",
+          "keywords": "icInputs):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 153,
+          "name": "DNUMVARIADICOUT",
+          "ds_type": "TS",
+          "from_pos": "(builde",
+          "to_length": "r, numV",
+          "decimal": "a",
+          "data_type": "RI",
+          "keywords": "dicOutputs):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "OPIDKERNELTYPESTRARGSENTRY": {
+      "member": "OPIDKERNELTYPESTRARGSENTRY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 6,
+          "file_name": "LATBUFFERS",
+          "file_type": ".",
+          "designation": "C",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 72,
+          "name": "DOPID(BUILDER,",
+          "ds_type": "ID",
+          "from_pos": "):",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 78,
+          "name": "DKERNELTYPESTRA",
+          "ds_type": "S(",
+          "from_pos": "builder",
+          "to_length": ", kerne",
+          "decimal": "l",
+          "data_type": "TY",
+          "keywords": "eStrArgs):",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
