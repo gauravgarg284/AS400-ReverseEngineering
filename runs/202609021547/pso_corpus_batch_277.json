@@ -1,0 +1,1308 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 277,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_UTIL",
+    "TYPE_FWD",
+    "API",
+    "CLIENT",
+    "CLIENT_AUTH",
+    "CLIENT_COOKIE_MIDDLEWARE",
+    "CLIENT_MIDDLEWARE",
+    "CLIENT_TRACING_MIDDLEWARE",
+    "MIDDLEWARE",
+    "OTEL_LOGGING"
+  ],
+  "pso_corpus": {
+    "TEST_UTIL": {
+      "member": "TEST_UTIL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 165,
+          "file_name": "ILESYSTEM",
+          "file_type": "S",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 132,
+          "name": "TESTEMPTY();",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 133,
+          "name": "TESTNORMALIZEP",
+          "ds_type": "H(",
+          "from_pos": ");",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 134,
+          "name": "TESTCREATEDIR(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 135,
+          "name": "TESTDELETEDIR(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 136,
+          "name": "TESTDELETEDIRC",
+          "ds_type": "TE",
+          "from_pos": "nts();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 137,
+          "name": "TESTDELETEROOT",
+          "ds_type": "RC",
+          "from_pos": "ontents",
+          "to_length": "();",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 138,
+          "name": "TESTDELETEFILE",
+          "ds_type": ";",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 139,
+          "name": "TESTDELETEFILE",
+          "ds_type": ");",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 140,
+          "name": "TESTMOVEFILE()",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 141,
+          "name": "TESTMOVEDIR();",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 142,
+          "name": "TESTCOPYFILE()",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 143,
+          "name": "TESTCOPYFILES(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 144,
+          "name": "TESTGETFILEINF",
+          "ds_type": ");",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 145,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EC",
+          "from_pos": "tor();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 146,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EL",
+          "from_pos": "ector()",
+          "to_length": ";",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 147,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EL",
+          "from_pos": "ectorWi",
+          "to_length": "thRecur",
+          "decimal": "s",
+          "data_type": "IO",
+          "keywords": "();",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 148,
+          "name": "TESTGETFILEINF",
+          "ds_type": "SY",
+          "from_pos": "nc();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 149,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EN",
+          "from_pos": "erator(",
+          "to_length": ");",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 150,
+          "name": "TESTOPENOUTPUT",
+          "ds_type": "RE",
+          "from_pos": "am();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 151,
+          "name": "TESTOPENAPPEND",
+          "ds_type": "RE",
+          "from_pos": "am();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 152,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "m();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 153,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "mWithFi",
+          "to_length": "leInfo(",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 154,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "mAsync(",
+          "to_length": ");",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 155,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "E(",
+          "from_pos": ");",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 156,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "EW",
+          "from_pos": "ithFile",
+          "to_length": "Info();",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 157,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "EA",
+          "from_pos": "sync();",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 158,
+          "name": "TESTSPECIALCHA",
+          "ds_type": "()",
+          "from_pos": ";",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 196,
+          "name": "TESTEMPTY(FILE",
+          "ds_type": "ST",
+          "from_pos": "em* fs)",
+          "to_length": ";",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 197,
+          "name": "TESTNORMALIZEP",
+          "ds_type": "H(",
+          "from_pos": "FileSys",
+          "to_length": "tem* fs",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 198,
+          "name": "TESTCREATEDIR(",
+          "ds_type": "LE",
+          "from_pos": "System*",
+          "to_length": "fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 199,
+          "name": "TESTDELETEDIR(",
+          "ds_type": "LE",
+          "from_pos": "System*",
+          "to_length": "fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 200,
+          "name": "TESTDELETEDIRC",
+          "ds_type": "TE",
+          "from_pos": "nts(Fil",
+          "to_length": "eSystem",
+          "decimal": "*",
+          "data_type": "F",
+          "keywords": ");",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 201,
+          "name": "TESTDELETEROOT",
+          "ds_type": "RC",
+          "from_pos": "ontents",
+          "to_length": "(FileSy",
+          "decimal": "s",
+          "data_type": "TE",
+          "keywords": "* fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 202,
+          "name": "TESTDELETEFILE",
+          "ds_type": "IL",
+          "from_pos": "eSystem",
+          "to_length": "* fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 203,
+          "name": "TESTDELETEFILE",
+          "ds_type": "FI",
+          "from_pos": "leSyste",
+          "to_length": "m* fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 204,
+          "name": "TESTMOVEFILE(F",
+          "ds_type": "ES",
+          "from_pos": "ystem*",
+          "to_length": "fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 205,
+          "name": "TESTMOVEDIR(FI",
+          "ds_type": "SY",
+          "from_pos": "stem* f",
+          "to_length": "s);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 206,
+          "name": "TESTCOPYFILE(F",
+          "ds_type": "ES",
+          "from_pos": "ystem*",
+          "to_length": "fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 207,
+          "name": "TESTCOPYFILES(",
+          "ds_type": "LE",
+          "from_pos": "System*",
+          "to_length": "fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 208,
+          "name": "TESTGETFILEINF",
+          "ds_type": "FI",
+          "from_pos": "leSyste",
+          "to_length": "m* fs);",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 209,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EC",
+          "from_pos": "tor(Fil",
+          "to_length": "eSystem",
+          "decimal": "*",
+          "data_type": "F",
+          "keywords": ");",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 210,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EL",
+          "from_pos": "ector(F",
+          "to_length": "ileSyst",
+          "decimal": "e",
+          "data_type": "M*",
+          "keywords": "fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 211,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EL",
+          "from_pos": "ectorWi",
+          "to_length": "thRecur",
+          "decimal": "s",
+          "data_type": "IO",
+          "keywords": "(FileSystem* fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 212,
+          "name": "TESTGETFILEINF",
+          "ds_type": "SY",
+          "from_pos": "nc(File",
+          "to_length": "System*",
+          "decimal": "",
+          "data_type": "FS",
+          "keywords": ";",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 213,
+          "name": "TESTGETFILEINF",
+          "ds_type": "EN",
+          "from_pos": "erator(",
+          "to_length": "FileSys",
+          "decimal": "t",
+          "data_type": "EM",
+          "keywords": "fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 214,
+          "name": "TESTOPENOUTPUT",
+          "ds_type": "RE",
+          "from_pos": "am(File",
+          "to_length": "System*",
+          "decimal": "",
+          "data_type": "FS",
+          "keywords": ";",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 215,
+          "name": "TESTOPENAPPEND",
+          "ds_type": "RE",
+          "from_pos": "am(File",
+          "to_length": "System*",
+          "decimal": "",
+          "data_type": "FS",
+          "keywords": ";",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 216,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "m(FileS",
+          "to_length": "ystem*",
+          "decimal": "f",
+          "data_type": "S)",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 217,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "mWithFi",
+          "to_length": "leInfo(",
+          "decimal": "F",
+          "data_type": "IL",
+          "keywords": "System* fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 218,
+          "name": "TESTOPENINPUTS",
+          "ds_type": "EA",
+          "from_pos": "mAsync(",
+          "to_length": "FileSys",
+          "decimal": "t",
+          "data_type": "EM",
+          "keywords": "fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 219,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "E(",
+          "from_pos": "FileSys",
+          "to_length": "tem* fs",
+          "decimal": ")",
+          "data_type": ";",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 220,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "EW",
+          "from_pos": "ithFile",
+          "to_length": "Info(Fi",
+          "decimal": "l",
+          "data_type": "ES",
+          "keywords": "stem* fs);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 221,
+          "name": "TESTOPENINPUTF",
+          "ds_type": "EA",
+          "from_pos": "sync(Fi",
+          "to_length": "leSyste",
+          "decimal": "m",
+          "data_type": "*",
+          "keywords": "s);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 222,
+          "name": "TESTSPECIALCHA",
+          "ds_type": "(F",
+          "from_pos": "ileSyst",
+          "to_length": "em* fs)",
+          "decimal": ";",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TYPE_FWD": {
+      "member": "TYPE_FWD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 28,
+          "file_name": "OUND,",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "API": {
+      "member": "API",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT": {
+      "member": "CLIENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 152,
+          "file_name": "_MSC_VER",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 155,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 169,
+          "file_name": "_MSC_VER",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 171,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 280,
+          "name": "GETFLIGHTINFOA",
+          "ds_type": "NC",
+          "from_pos": "(const",
+          "to_length": "FlightC",
+          "decimal": "a",
+          "data_type": "LL",
+          "keywords": "ptions& options,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 283,
+          "name": "GETFLIGHTINFOA",
+          "ds_type": "NC",
+          "from_pos": "(const",
+          "to_length": "FlightD",
+          "decimal": "e",
+          "data_type": "SC",
+          "keywords": "iptor& descriptor,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT_AUTH": {
+      "member": "CLIENT_AUTH",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT_COOKIE_MIDDLEWARE": {
+      "member": "CLIENT_COOKIE_MIDDLEWARE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "DLEWARE IMPLEME",
+          "ds_type": "AT",
+          "from_pos": "ion for",
+          "to_length": "sendin",
+          "decimal": "g",
+          "data_type": "A",
+          "keywords": "d receiving HTTP cookies.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT_MIDDLEWARE": {
+      "member": "CLIENT_MIDDLEWARE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 58,
+          "file_name": "ADDED TO",
+          "file_type": "A",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "FOR EA",
+          "keyed": false,
+          "keywords": "ch RPC (including"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT_TRACING_MIDDLEWARE": {
+      "member": "CLIENT_TRACING_MIDDLEWARE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "DLEWARE IMPLEME",
+          "ds_type": "AT",
+          "from_pos": "ion for",
+          "to_length": "propag",
+          "decimal": "a",
+          "data_type": "TI",
+          "keywords": "g OpenTelemetry spans.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MIDDLEWARE": {
+      "member": "MIDDLEWARE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 53,
+          "file_name": "LIGHTINFO",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 51,
+          "name": "SHAKE = 1,",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "OTEL_LOGGING": {
+      "member": "OTEL_LOGGING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 22,
+          "file_name": "ARROW_WIT",
+          "file_type": "H",
+          "designation": "_",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 33,
+          "file_name": "",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 4
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
