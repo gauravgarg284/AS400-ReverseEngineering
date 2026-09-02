@@ -1,0 +1,1038 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 301,
+  "total_batches": 477,
+  "members_in_batch": [
+    "WRITER",
+    "READER",
+    "SCHEMA",
+    "TEST_UTIL",
+    "WRITER",
+    "BENCHMARK_UTIL",
+    "BLOOM_FILTER",
+    "BLOOM_FILTER_READER",
+    "COLUMN_PAGE",
+    "COLUMN_READER"
+  ],
+  "pso_corpus": {
+    "WRITER": {
+      "member": "WRITER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 51,
+          "file_name": "PARQUET:F",
+          "file_type": "I",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "TA KEY",
+          "keyed": false,
+          "keywords": "on a field, and the corresp"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "READER": {
+      "member": "READER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 67,
+          "file_name": "ILEREADER:",
+          "file_type": ":",
+          "designation": "R",
+          "mode": "",
+          "format": "R",
+          "device": "AND R",
+          "keyed": false,
+          "keywords": "eceive an `arrow::Column`"
+        },
+        {
+          "line": 71,
+          "file_name": "ILEREADER:",
+          "file_type": ":",
+          "designation": "G",
+          "mode": "",
+          "format": "E",
+          "device": "CAN I",
+          "keyed": false,
+          "keywords": "nternally decode columns"
+        },
+        {
+          "line": 109,
+          "file_name": "INITION LE",
+          "file_type": "V",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "OF THE",
+          "keyed": false,
+          "keywords": "intermediate nodes in"
+        },
+        {
+          "line": 146,
+          "file_name": "ULLY-MATER",
+          "file_type": "I",
+          "designation": "A",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 77,
+          "name": "O(WESM): NESTED",
+          "ds_type": "AT",
+          "from_pos": "a does",
+          "to_length": "not alw",
+          "decimal": "a",
+          "data_type": "YS",
+          "keywords": "make sense with this user",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 92,
+          "name": "ATA.RECORD.VAL1",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 93,
+          "name": "ATA.RECORD.VAL2",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 94,
+          "name": "ATA.RECORD.VAL3",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 95,
+          "name": "ATA.VAL4",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 145,
+          "name": "ETAILS OF PAGIN",
+          "ds_type": "TH",
+          "from_pos": "rough t",
+          "to_length": "he file",
+          "decimal": "'",
+          "data_type": "S",
+          "keywords": "ow groups and yielding",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 373,
+          "name": "EFGROUP PARQUET",
+          "ds_type": "RR",
+          "from_pos": "ow-read",
+          "to_length": "er-fact",
+          "decimal": "o",
+          "data_type": "RI",
+          "keywords": "s Factory functions for Parquet Arrow",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 379,
+          "name": "VANCED SETTINGS",
+          "ds_type": "RE",
+          "from_pos": "suppor",
+          "to_length": "ted thr",
+          "decimal": "o",
+          "data_type": "UG",
+          "keywords": "the FileReaderBuilder class.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SCHEMA": {
+      "member": "SCHEMA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 122,
+          "file_name": "(IT == CO",
+          "file_type": "L",
+          "designation": "U",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 133,
+          "file_name": "(IT == CH",
+          "file_type": "I",
+          "designation": "L",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 43,
+          "name": "EFGROUP ARROW-T",
+          "ds_type": "PA",
+          "from_pos": "rquet-s",
+          "to_length": "chema-c",
+          "decimal": "o",
+          "data_type": "NV",
+          "keywords": "rsion Functions to convert an Arrow",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 67,
+          "name": "EFGROUP PARQUET",
+          "ds_type": "O-",
+          "from_pos": "arrow-s",
+          "to_length": "chema-c",
+          "decimal": "o",
+          "data_type": "NV",
+          "keywords": "rsion Functions to convert a Parquet",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_UTIL": {
+      "member": "TEST_UTIL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 284,
+          "file_name": "(!VALID_B",
+          "file_type": "Y",
+          "designation": "T",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 318,
+          "file_name": "(!VALID_B",
+          "file_type": "Y",
+          "designation": "T",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 401,
+          "file_name": "FSETS_PTR[",
+          "file_type": "I",
+          "designation": "]",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 402,
+          "file_name": "(!(((I %",
+          "file_type": "2",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "UNT)))",
+          "keyed": false,
+          "keywords": "{"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 174,
+          "name": "OM_DECIMALS<ARR",
+          "ds_type": "TY",
+          "from_pos": "pe::typ",
+          "to_length": "e::kByt",
+          "decimal": "e",
+          "data_type": "WI",
+          "keywords": "th>(size, seed, kDecimalPrecision,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 348,
+          "name": "OM_DECIMALS<ARR",
+          "ds_type": "TY",
+          "from_pos": "pe::typ",
+          "to_length": "e::kByt",
+          "decimal": "e",
+          "data_type": "WI",
+          "keywords": "th>(size, seed, precision,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BENCHMARK_UTIL": {
+      "member": "BENCHMARK_UTIL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 45,
+          "file_name": "_GENERATE",
+          "file_type": "_",
+          "designation": "B",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "GENERATEBENCHM",
+          "ds_type": "KD",
+          "from_pos": "ata(uin",
+          "to_length": "t32_t s",
+          "decimal": "i",
+          "data_type": "ZE",
+          "keywords": "uint32_t seed, KLASS* data, \\",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BLOOM_FILTER": {
+      "member": "BLOOM_FILTER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 241,
+          "file_name": "(M < 0 ||",
+          "file_type": "",
+          "designation": "M",
+          "mode": "",
+          "format": "K",
+          "device": "<< 3)",
+          "keyed": false,
+          "keywords": "{"
+        },
+        {
+          "line": 248,
+          "file_name": "(NUM_BITS",
+          "file_type": "",
+          "designation": "<",
+          "mode": "",
+          "format": "I",
+          "device": "3) {",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 253,
+          "file_name": "((NUM_BIT",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 258,
+          "file_name": "(NUM_BITS",
+          "file_type": "",
+          "designation": ">",
+          "mode": "",
+          "format": "A",
+          "device": "3) {",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 200,
+          "name": "INIT(UINT32_T",
+          "ds_type": "M_",
+          "from_pos": "bytes);",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 210,
+          "name": "INIT(CONST UIN",
+          "ds_type": "_T",
+          "from_pos": "* bitse",
+          "to_length": "t, uint",
+          "decimal": "3",
+          "data_type": "2_",
+          "keywords": "num_bytes);",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 266,
+          "name": "INSERTHASH(UIN",
+          "ds_type": "4_",
+          "from_pos": "t hash)",
+          "to_length": "overri",
+          "decimal": "d",
+          "data_type": "E;",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 267,
+          "name": "INSERTHASHES(C",
+          "ds_type": "ST",
+          "from_pos": "uint64",
+          "to_length": "_t* has",
+          "decimal": "h",
+          "data_type": "ES",
+          "keywords": "int num_values) override;",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 268,
+          "name": "WRITETO(ARROWO",
+          "ds_type": "PU",
+          "from_pos": "tStream",
+          "to_length": "* sink)",
+          "decimal": "",
+          "data_type": "CO",
+          "keywords": "st override;",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 281,
+          "name": "HASHES(CONST I",
+          "ds_type": "32",
+          "from_pos": "_t* val",
+          "to_length": "ues, in",
+          "decimal": "t",
+          "data_type": "N",
+          "keywords": "m_values, uint64_t* hashes) const ove",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 284,
+          "name": "HASHES(CONST I",
+          "ds_type": "64",
+          "from_pos": "_t* val",
+          "to_length": "ues, in",
+          "decimal": "t",
+          "data_type": "N",
+          "keywords": "m_values, uint64_t* hashes) const ove",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 287,
+          "name": "HASHES(CONST F",
+          "ds_type": "AT",
+          "from_pos": "* value",
+          "to_length": "s, int",
+          "decimal": "n",
+          "data_type": "UM",
+          "keywords": "values, uint64_t* hashes) const overr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 290,
+          "name": "HASHES(CONST D",
+          "ds_type": "BL",
+          "from_pos": "e* valu",
+          "to_length": "es, int",
+          "decimal": "",
+          "data_type": "NU",
+          "keywords": "_values, uint64_t* hashes) const over",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 293,
+          "name": "HASHES(CONST I",
+          "ds_type": "96",
+          "from_pos": "* value",
+          "to_length": "s, int",
+          "decimal": "n",
+          "data_type": "UM",
+          "keywords": "values, uint64_t* hashes) const overr",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 296,
+          "name": "HASHES(CONST B",
+          "ds_type": "EA",
+          "from_pos": "rray* v",
+          "to_length": "alues,",
+          "decimal": "i",
+          "data_type": "NT",
+          "keywords": "num_values, uint64_t* hashes) const o",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 299,
+          "name": "HASHES(CONST F",
+          "ds_type": "A*",
+          "from_pos": "values",
+          "to_length": ", uint3",
+          "decimal": "2",
+          "data_type": "_T",
+          "keywords": "type_len, int num_values,",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BLOOM_FILTER_READER": {
+      "member": "BLOOM_FILTER_READER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COLUMN_PAGE": {
+      "member": "COLUMN_PAGE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "O: PARALLEL PRO",
+          "ds_type": "SS",
+          "from_pos": "ing is",
+          "to_length": "not yet",
+          "decimal": "",
+          "data_type": "SA",
+          "keywords": "e because of memory-ownership",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "O(WESM): IN THE",
+          "ds_type": "UT",
+          "from_pos": "ure Par",
+          "to_length": "quet im",
+          "decimal": "p",
+          "data_type": "LE",
+          "keywords": "entations may store the crc code",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "COLUMN_READER": {
+      "member": "COLUMN_READER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 12,
+          "file_name": "TWARE DIST",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": "E",
+          "device": "ISTRIB",
+          "keyed": false,
+          "keywords": "uted on an"
+        },
+        {
+          "line": 72,
+          "file_name": "OR REPEATE",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "L",
+          "device": "THAN N",
+          "keyed": false,
+          "keywords": "umber of rows. For"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 16,
+          "name": "ER THE LICENSE.",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 89,
+          "name": "SETDATAV2(INT3",
+          "ds_type": "T",
+          "from_pos": "num_byt",
+          "to_length": "es, int",
+          "decimal": "1",
+          "data_type": "6_",
+          "keywords": "max_level, int num_buffered_values,",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 92,
+          "name": "ECODES A BATCH",
+          "ds_type": "L",
+          "from_pos": "evels i",
+          "to_length": "nto an",
+          "decimal": "a",
+          "data_type": "RR",
+          "keywords": "y and returns the number of levels de",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 136,
+          "name": "ATA_PAGE_V2. DI",
+          "ds_type": "IO",
+          "from_pos": "nary pa",
+          "to_length": "ges wil",
+          "decimal": "l",
+          "data_type": "N",
+          "keywords": "t be skipped.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 140,
+          "name": "SET_DATA_PAGE_",
+          "ds_type": "LT",
+          "from_pos": "er(Data",
+          "to_length": "PageFil",
+          "decimal": "t",
+          "data_type": "ER",
+          "keywords": "data_page_filter) {",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 174,
+          "name": "ICTIONARY ENCOD",
+          "ds_type": "G,",
+          "from_pos": "then R",
+          "to_length": "eadBatc",
+          "decimal": "h",
+          "data_type": "WI",
+          "keywords": "hDictionary can be used to read data.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 226,
+          "name": "ICTIONARY AND I",
+          "ds_type": "IC",
+          "from_pos": "es. It",
+          "to_length": "is only",
+          "decimal": "",
+          "data_type": "VA",
+          "keywords": "id to call this method  when the read",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 228,
+          "name": "ICTIONARY).",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 10
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
