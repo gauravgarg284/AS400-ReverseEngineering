@@ -1,0 +1,1342 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 216,
+  "total_batches": 477,
+  "members_in_batch": [
+    "CORRELATION",
+    "__INIT__",
+    "EXTENDABILITY",
+    "REDUNDANCY",
+    "FLOW_MATRIX",
+    "GROUP",
+    "SECOND_ORDER",
+    "TROPHIC",
+    "KCLIQUE",
+    "BICONNECTED"
+  ],
+  "pso_corpus": {
+    "CORRELATION": {
+      "member": "CORRELATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 77,
+          "file_name": "NODES IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 82,
+          "file_name": "G.IS_DIRE",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 198,
+          "file_name": "THE SPECI",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 251,
+          "file_name": "NODES IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 271,
+          "file_name": "THE SPECI",
+          "file_type": "F",
+          "designation": "I",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 278,
+          "file_name": "M.SUM() !",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 291,
+          "file_name": "M.SUM() !",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "E ASSORTATIVITY",
+          "ds_type": "OE",
+          "from_pos": "fficien",
+          "to_length": "ts and",
+          "decimal": "c",
+          "data_type": "OR",
+          "keywords": "elation measures.\"\"\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "EGREE_PEARSON_C",
+          "ds_type": "RE",
+          "from_pos": "lation_",
+          "to_length": "coeffic",
+          "decimal": "i",
+          "data_type": "EN",
+          "keywords": "\",",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 12,
+          "name": "EGREE_ASSORTATI",
+          "ds_type": "TY",
+          "from_pos": "_coeffi",
+          "to_length": "cient\",",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 18,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 103,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 162,
+          "name": "ISPATCHABLE(NOD",
+          "ds_type": "AT",
+          "from_pos": "trs=\"at",
+          "to_length": "tribute",
+          "decimal": "\"",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 209,
+          "name": "ISPATCHABLE(NOD",
+          "ds_type": "AT",
+          "from_pos": "trs=\"at",
+          "to_length": "tribute",
+          "decimal": "\"",
+          "data_type": ")",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 295,
+          "name": "X = LIST(MAPPIN",
+          "ds_type": "VA",
+          "from_pos": "lues())",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "EXTENDABILITY": {
+      "member": "EXTENDABILITY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 68,
+          "file_name": "NOT NX.IS",
+          "file_type": "_",
+          "designation": "C",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 71,
+          "file_name": "NOT NX.BI",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 78,
+          "file_name": "NOT NX.IS",
+          "file_type": "_",
+          "designation": "P",
+          "mode": "",
+          "format": "E",
+          "device": "ATCHIN",
+          "keyed": false,
+          "keywords": "g):"
+        },
+        {
+          "line": 95,
+          "file_name": "NOT NX.IS",
+          "file_type": "_",
+          "designation": "S",
+          "mode": "",
+          "format": "N",
+          "device": "):",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 12,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 44,
+          "name": "GES THAT DO NOT",
+          "ds_type": "EL",
+          "from_pos": "ong to",
+          "to_length": "M from",
+          "decimal": "U",
+          "data_type": "T",
+          "keywords": "V.",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "REDUNDANCY": {
+      "member": "REDUNDANCY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 86,
+          "file_name": "NODES IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 88,
+          "file_name": "ANY(LEN(G",
+          "file_type": "[",
+          "designation": "V",
+          "mode": "",
+          "format": "<",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 100,
+          "file_name": "`G` IS A",
+          "file_type": "G",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "NDANCY",
+          "keyed": false,
+          "keywords": "of a node is the ratio"
+        },
+        {
+          "line": 101,
+          "file_name": "THE \"OVER",
+          "file_type": "L",
+          "designation": "A",
+          "mode": "",
+          "format": "O",
+          "device": "SIBLE",
+          "keyed": false,
+          "keywords": "overlap of `v`"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "E REDUNDANCY FO",
+          "ds_type": "BI",
+          "from_pos": "partite",
+          "to_length": "graphs",
+          "decimal": ".",
+          "data_type": "\"\"",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 11,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FLOW_MATRIX": {
+      "member": "FLOW_MATRIX",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 6,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "GROUP": {
+      "member": "GROUP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 120,
+          "file_name": "ANY(EL IN",
+          "file_type": "",
+          "designation": "G",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 124,
+          "file_name": "SET_V - G",
+          "file_type": ".",
+          "designation": "N",
+          "mode": "",
+          "format": "S",
+          "device": "IN G",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 196,
+          "file_name": "LIST_OF_G",
+          "file_type": "R",
+          "designation": "O",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 346,
+          "file_name": "C IS NOT",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 353,
+          "file_name": "_TREE = NX",
+          "file_type": ".",
+          "designation": "G",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 354,
+          "file_name": "_TREE.__NE",
+          "file_type": "T",
+          "designation": "W",
+          "mode": "",
+          "format": "X",
+          "device": "LE CAC",
+          "keyed": false,
+          "keywords": "hing"
+        },
+        {
+          "line": 357,
+          "file_name": "C IS NOT",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 365,
+          "file_name": "_TREE.ADD_",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 376,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 384,
+          "file_name": "NOT ENDPO",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 405,
+          "file_name": "NORMALIZE",
+          "file_type": "D",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 418,
+          "file_name": "LEN(DF_TR",
+          "file_type": "E",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "DF_TR",
+          "keyed": false,
+          "keywords": "ee.nodes[root][\"GBC\"] > max_"
+        },
+        {
+          "line": 423,
+          "file_name": "(",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 435,
+          "file_name": "GREEDY:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 470,
+          "file_name": "_TREE.ADD_",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "_",
+          "device": "DF_TRE",
+          "keyed": false,
+          "keywords": "e.nodes[root]))])"
+        },
+        {
+          "line": 471,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "ODE)",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 472,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "DES[NO",
+          "keyed": false,
+          "keywords": "de_p][\"cont\"][added_node]"
+        },
+        {
+          "line": 515,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 522,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 525,
+          "file_name": "_TREE.NODE",
+          "file_type": "S",
+          "designation": "[",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 533,
+          "file_name": "NOT GREED",
+          "file_type": "Y",
+          "designation": ":",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 553,
+          "file_name": "HOW CLOSE",
+          "file_type": "",
+          "designation": "T",
+          "mode": "",
+          "format": "G",
+          "device": "ES IN",
+          "keyed": false,
+          "keywords": "the graph."
+        },
+        {
+          "line": 625,
+          "file_name": "G.IS_DIRE",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 650,
+          "file_name": "NON-GROUP",
+          "file_type": "",
+          "designation": "M",
+          "mode": "",
+          "format": "E",
+          "device": "MBERS.",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 702,
+          "file_name": "NON-GROUP",
+          "file_type": "",
+          "designation": "M",
+          "mode": "",
+          "format": "E",
+          "device": "MBERS",
+          "keyed": false,
+          "keywords": "by incoming edges."
+        },
+        {
+          "line": 749,
+          "file_name": "NON-GROUP",
+          "file_type": "",
+          "designation": "M",
+          "mode": "",
+          "format": "E",
+          "device": "MBERS",
+          "keyed": false,
+          "keywords": "by outgoing edges."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 23,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 240,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 416,
+          "name": "FBNB(G, K, DF_T",
+          "ds_type": "E,",
+          "from_pos": "max_GB",
+          "to_length": "C, root",
+          "decimal": ",",
+          "data_type": "D",
+          "keywords": "max_group, nodes, greedy):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 467,
+          "name": "DED_NODE = DF_T",
+          "ds_type": "E.",
+          "from_pos": "nodes[r",
+          "to_length": "oot][\"C",
+          "decimal": "L",
+          "data_type": "\"]",
+          "keywords": "0]",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 548,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 645,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 697,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 744,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SECOND_ORDER": {
+      "member": "SECOND_ORDER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 106,
+          "file_name": "N == 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 108,
+          "file_name": "NOT NX.IS",
+          "file_type": "_",
+          "designation": "C",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 110,
+          "file_name": "ANY(D.GET",
+          "file_type": "(",
+          "designation": "W",
+          "mode": "",
+          "format": "H",
+          "device": "G.EDG",
+          "keyed": false,
+          "keywords": "es(data=True)):"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 42,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TROPHIC": {
+      "member": "TROPHIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 46,
+          "file_name": "NOT BASAL",
+          "file_type": "_",
+          "designation": "N",
+          "mode": "",
+          "format": "S",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 56,
+          "file_name": "LEN(REACH",
+          "file_type": "A",
+          "designation": "B",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 168,
+          "file_name": "CANNIBALI",
+          "file_type": "S",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 10,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 104,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 139,
+          "name": "ISPATCHABLE(EDG",
+          "ds_type": "AT",
+          "from_pos": "trs=\"we",
+          "to_length": "ight\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "KCLIQUE": {
+      "member": "KCLIQUE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 47,
+          "file_name": "K < 2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 49,
+          "file_name": "CLIQUES I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 8,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 74,
+          "name": "JACENT_CLIQUES",
+          "ds_type": "SE",
+          "from_pos": "t()",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BICONNECTED": {
+      "member": "BICONNECTED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 67,
+          "file_name": ", THERE EX",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "UCH TH",
+          "keyed": false,
+          "keywords": "at there is no"
+        },
+        {
+          "line": 153,
+          "file_name": ", THERE EX",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "UCH TH",
+          "keyed": false,
+          "keywords": "at there is no"
+        },
+        {
+          "line": 222,
+          "file_name": "YOU ONLY",
+          "file_type": "W",
+          "designation": "A",
+          "mode": "",
+          "format": "T",
+          "device": "PONENT",
+          "keyed": false,
+          "keywords": ", it's more"
+        },
+        {
+          "line": 223,
+          "file_name": "FICIENT TO",
+          "file_type": "",
+          "designation": "U",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 245,
+          "file_name": ", THERE EX",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "UCH TH",
+          "keyed": false,
+          "keywords": "at there is no"
+        },
+        {
+          "line": 317,
+          "file_name": ", THERE EX",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "A",
+          "device": "UCH TH",
+          "keyed": false,
+          "keywords": "at there is no"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 17,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 65,
+          "name": "FS) THAT KEEPS",
+          "ds_type": "AC",
+          "from_pos": "k of th",
+          "to_length": "e highe",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "evel that back edges reach",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 71,
+          "name": "GES OF A BICOMP",
+          "ds_type": "EN",
+          "from_pos": "t will",
+          "to_length": "be trav",
+          "decimal": "e",
+          "data_type": "RS",
+          "keywords": "d consecutively between",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 98,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 118,
+          "name": "GES : GENERATOR",
+          "ds_type": "F",
+          "from_pos": "lists",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 151,
+          "name": "FS) THAT KEEPS",
+          "ds_type": "AC",
+          "from_pos": "k of th",
+          "to_length": "e highe",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "evel that back edges reach",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 157,
+          "name": "GES OF A BICOMP",
+          "ds_type": "EN",
+          "from_pos": "t will",
+          "to_length": "be trav",
+          "decimal": "e",
+          "data_type": "RS",
+          "keywords": "d consecutively between",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 171,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 243,
+          "name": "FS) THAT KEEPS",
+          "ds_type": "AC",
+          "from_pos": "k of th",
+          "to_length": "e highe",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "evel that back edges reach",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 249,
+          "name": "GES OF A BICOMP",
+          "ds_type": "EN",
+          "from_pos": "t will",
+          "to_length": "be trav",
+          "decimal": "e",
+          "data_type": "RS",
+          "keywords": "d consecutively between",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 264,
+          "name": "ISPATCHABLE",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 315,
+          "name": "FS) THAT KEEPS",
+          "ds_type": "AC",
+          "from_pos": "k of th",
+          "to_length": "e highe",
+          "decimal": "s",
+          "data_type": "T",
+          "keywords": "evel that back edges reach",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 321,
+          "name": "GES OF A BICOMP",
+          "ds_type": "EN",
+          "from_pos": "t will",
+          "to_length": "be trav",
+          "decimal": "e",
+          "data_type": "RS",
+          "keywords": "d consecutively between",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
