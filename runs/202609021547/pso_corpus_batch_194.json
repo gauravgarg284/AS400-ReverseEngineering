@@ -1,0 +1,775 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 194,
+  "total_batches": 477,
+  "members_in_batch": [
+    "SCHEMATRON",
+    "USEDOCTEST",
+    "XINCLUDE",
+    "XMLID",
+    "XMLSCHEMA",
+    "__INIT__",
+    "PARSER_BLOCK",
+    "BLOCKQUOTE",
+    "CODE",
+    "FENCE"
+  ],
+  "pso_corpus": {
+    "SCHEMATRON": {
+      "member": "SCHEMATRON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 30,
+          "name": "EA IS TO USE TH",
+          "ds_type": "CA",
+          "from_pos": "pabilit",
+          "to_length": "ies of",
+          "decimal": "X",
+          "data_type": "PA",
+          "keywords": "h to put restrictions on the structur",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 70,
+          "name": "EF SCHEMATRON.X",
+          "ds_type": "SC",
+          "from_pos": "hematro",
+          "to_length": "n* _c_s",
+          "decimal": "c",
+          "data_type": "HE",
+          "keywords": "a",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 71,
+          "name": "EF XMLDOC* _C_S",
+          "ds_type": "EM",
+          "from_pos": "a_doc",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "USEDOCTEST": {
+      "member": "USEDOCTEST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "XINCLUDE": {
+      "member": "XINCLUDE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 18,
+          "name": "EF _ERRORLOG _E",
+          "ds_type": "OR",
+          "from_pos": "_log",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "XMLID": {
+      "member": "XMLID",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 14,
+          "file_name": "_FIND_ID_",
+          "file_type": "A",
+          "designation": "T",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 39,
+          "file_name": "ROOT._DOC",
+          "file_type": ".",
+          "designation": "_",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 169,
+          "file_name": "C_ID IS N",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "R",
+          "device": "ID.ATT",
+          "keyed": false,
+          "keywords": "r.parent is NULL:"
+        },
+        {
+          "line": 177,
+          "file_name": "C_ID IS N",
+          "file_type": "U",
+          "designation": "L",
+          "mode": "",
+          "format": "R",
+          "device": "ID.ATT",
+          "keyed": false,
+          "keywords": "r.parent is NULL:"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 12,
+          "name": "EF DICT DIC",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "EF _ELEMENT ROO",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 48,
+          "name": "DICTIONARY.  I",
+          "ds_type": "NO",
+          "from_pos": "parser",
+          "to_length": "is pro",
+          "decimal": "v",
+          "data_type": "ID",
+          "keywords": "d as second argument, the default",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 54,
+          "name": "EF _DOCUMENT DO",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 66,
+          "name": "EF _DOCUMENT _D",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 67,
+          "name": "EF OBJECT _KEYS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 68,
+          "name": "EF OBJECT _ITEM",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 152,
+          "name": "EF OBJECT _BUIL",
+          "ds_type": "KE",
+          "from_pos": "ys(self",
+          "to_length": "):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 158,
+          "name": "EF OBJECT _BUIL",
+          "ds_type": "IT",
+          "from_pos": "ems(sel",
+          "to_length": "f):",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 167,
+          "name": "EF LIST LST",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "XMLSCHEMA": {
+      "member": "XMLSCHEMA",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 36,
+          "name": "EF XMLSCHEMA.XM",
+          "ds_type": "CH",
+          "from_pos": "ema* _c",
+          "to_length": "_schema",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "EF _DOCUMENT _D",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "EF BINT _HAS_DE",
+          "ds_type": "UL",
+          "from_pos": "t_attri",
+          "to_length": "butes",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 39,
+          "name": "EF BINT _ADD_AT",
+          "ds_type": "IB",
+          "from_pos": "ute_def",
+          "to_length": "aults",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 149,
+          "name": "EF _PARSERSCHEM",
+          "ds_type": "AL",
+          "from_pos": "idation",
+          "to_length": "Context",
+          "decimal": "",
+          "data_type": "_N",
+          "keywords": "wSaxValidator(",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 161,
+          "name": "EF XMLSCHEMA _S",
+          "ds_type": "EM",
+          "from_pos": "a",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 162,
+          "name": "EF XMLSCHEMA.XM",
+          "ds_type": "CH",
+          "from_pos": "emaVali",
+          "to_length": "dCtxt*",
+          "decimal": "_",
+          "data_type": "VA",
+          "keywords": "id_ctxt",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 163,
+          "name": "EF XMLSCHEMA.XM",
+          "ds_type": "CH",
+          "from_pos": "emaSAXP",
+          "to_length": "lugStru",
+          "decimal": "c",
+          "data_type": "T*",
+          "keywords": "_sax_plug",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 164,
+          "name": "EF BINT _ADD_DE",
+          "ds_type": "UL",
+          "from_pos": "t_attri",
+          "to_length": "butes",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 175,
+          "name": "EF _PARSERSCHEM",
+          "ds_type": "AL",
+          "from_pos": "idation",
+          "to_length": "Context",
+          "decimal": "",
+          "data_type": "CO",
+          "keywords": "y(self):",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 180,
+          "name": "EF VOID INJECT_",
+          "ds_type": "FA",
+          "from_pos": "ult_att",
+          "to_length": "ributes",
+          "decimal": "(",
+          "data_type": "SE",
+          "keywords": "f, xmlDoc* c_doc) noexcept:",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 188,
+          "name": "EF INT CONNECT(",
+          "ds_type": "LF",
+          "from_pos": ", xmlpa",
+          "to_length": "rser.xm",
+          "decimal": "l",
+          "data_type": "PA",
+          "keywords": "serCtxt* c_ctxt, _BaseErrorLog error_",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 204,
+          "name": "EF VOID DISCONN",
+          "ds_type": "T(",
+          "from_pos": "self) n",
+          "to_length": "oexcept",
+          "decimal": ":",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 212,
+          "name": "EF BINT ISVALID",
+          "ds_type": "EL",
+          "from_pos": "f) noex",
+          "to_length": "cept:",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 6
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARSER_BLOCK": {
+      "member": "PARSER_BLOCK",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "BLOCKQUOTE": {
+      "member": "BLOCKQUOTE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 21,
+          "file_name": "STATE.IS_",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": "B",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "SILENT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 46,
+          "file_name": "SECOND_CH",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 281,
+          "file_name": "STATE.MD.",
+          "file_type": "O",
+          "designation": "P",
+          "mode": "",
+          "format": "N",
+          "device": "ND NEX",
+          "keyed": false,
+          "keywords": "tLine > startLine:"
+        },
+        {
+          "line": 286,
+          "file_name": "ALERT_KIN",
+          "file_type": "D",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 359,
+          "file_name": "MAXIMUM -",
+          "file_type": "",
+          "designation": "P",
+          "mode": "",
+          "format": "<",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 361,
+          "file_name": "SRC[POS]",
+          "file_type": "!",
+          "designation": "=",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 363,
+          "file_name": "SRC[MAXIM",
+          "file_type": "U",
+          "designation": "M",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 366,
+          "file_name": "TYPE_STR",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "N",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 346,
+          "name": "ETECT_ALERT(STA",
+          "ds_type": ":",
+          "from_pos": "StateBl",
+          "to_length": "ock, st",
+          "decimal": "a",
+          "data_type": "RT",
+          "keywords": "ine: int) -> str | None:",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CODE": {
+      "member": "CODE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 13,
+          "file_name": "NOT STATE",
+          "file_type": ".",
+          "designation": "I",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "E BLOCK (4 SPAC",
+          "ds_type": "P",
+          "from_pos": "added).",
+          "to_length": "\"\"\"",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FENCE": {
+      "member": "FENCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 38,
+          "file_name": "EXACT_MAT",
+          "file_type": "C",
+          "designation": "H",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
