@@ -1,0 +1,784 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 423,
+  "total_batches": 477,
+  "members_in_batch": [
+    "PREPARED",
+    "TEST_DECIMAL",
+    "TEST_PREDICATES",
+    "__INIT__",
+    "__INIT__",
+    "_CHECK_BUILD",
+    "_CONFIG",
+    "_ISOTONIC",
+    "__INIT__",
+    "_AFFINITY_PROPAGATION"
+  ],
+  "pso_corpus": {
+    "PREPARED": {
+      "member": "PREPARED",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_DECIMAL": {
+      "member": "TEST_DECIMAL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ECIMAL IMPORT D",
+          "ds_type": "IM",
+          "from_pos": "al",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_PREDICATES": {
+      "member": "TEST_PREDICATES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 90,
+          "file_name": "FUNC IN (",
+          "file_type": "S",
+          "designation": "H",
+          "mode": "",
+          "format": "L",
+          "device": "Y.IS_M",
+          "keyed": false,
+          "keywords": "issing):"
+        },
+        {
+          "line": 257,
+          "file_name": "SHAPELY.G",
+          "file_type": "E",
+          "designation": "O",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 267,
+          "file_name": "SHAPELY.I",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 270,
+          "file_name": "SHAPELY.G",
+          "file_type": "E",
+          "designation": "O",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 280,
+          "file_name": "SHAPELY.I",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 292,
+          "file_name": "SHAPELY.I",
+          "file_type": "S",
+          "designation": "_",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 15
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "FINITYPROP",
+          "file_type": "A",
+          "designation": "G",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 8,
+          "file_name": "FINITY_PRO",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 44,
+          "file_name": "EATUREAGGL",
+          "file_type": "O",
+          "designation": "M",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 37,
+          "name": "BSCAN\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 55,
+          "name": "BSCAN\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 3
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_CHECK_BUILD": {
+      "member": "_CHECK_BUILD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_CONFIG": {
+      "member": "_CONFIG",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 30,
+          "file_name": "NOT HASAT",
+          "file_type": "T",
+          "designation": "R",
+          "mode": "",
+          "format": "H",
+          "device": "G\"):",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 208,
+          "file_name": "ASSUME_FI",
+          "file_type": "N",
+          "designation": "I",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 210,
+          "file_name": "WORKING_M",
+          "file_type": "E",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 212,
+          "file_name": "PRINT_CHA",
+          "file_type": "N",
+          "designation": "G",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 214,
+          "file_name": "DISPLAY I",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 216,
+          "file_name": "PAIRWISE_",
+          "file_type": "D",
+          "designation": "I",
+          "mode": "",
+          "format": "C",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 218,
+          "file_name": "ENABLE_CY",
+          "file_type": "T",
+          "designation": "H",
+          "mode": "",
+          "format": "P",
+          "device": ":",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 220,
+          "file_name": "ARRAY_API",
+          "file_type": "_",
+          "designation": "D",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 225,
+          "file_name": "TRANSFORM",
+          "file_type": "_",
+          "designation": "O",
+          "mode": "",
+          "format": "U",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 227,
+          "file_name": "ENABLE_ME",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 229,
+          "file_name": "SKIP_PARA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "_",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "ISPLAY\": \"DIAGR",
+          "ds_type": "\",",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ISOTONIC": {
+      "member": "_ISOTONIC",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 76,
+          "file_name": "FLOATING",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 13,
+          "name": "EF:",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 81,
+          "name": "EF FLOATING[::1",
+          "ds_type": "Y_",
+          "from_pos": "out = n",
+          "to_length": "p.empty",
+          "decimal": "(",
+          "data_type": "UN",
+          "keywords": "que_values, dtype=dtype)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 82,
+          "name": "EF FLOATING[::1",
+          "ds_type": "X_",
+          "from_pos": "out = n",
+          "to_length": "p.empty",
+          "decimal": "_",
+          "data_type": "LI",
+          "keywords": "e(y_out)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 83,
+          "name": "EF FLOATING[::1",
+          "ds_type": "WE",
+          "from_pos": "ights_o",
+          "to_length": "ut = np",
+          "decimal": ".",
+          "data_type": "EM",
+          "keywords": "ty_like(y_out)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 85,
+          "name": "EF FLOATING CUR",
+          "ds_type": "NT",
+          "from_pos": "_x = X[",
+          "to_length": "0]",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 86,
+          "name": "EF FLOATING CUR",
+          "ds_type": "NT",
+          "from_pos": "_y = 0",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 87,
+          "name": "EF FLOATING CUR",
+          "ds_type": "NT",
+          "from_pos": "_weight",
+          "to_length": "= 0",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 88,
+          "name": "EF INT I = 0",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 89,
+          "name": "EF INT J",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 90,
+          "name": "EF FLOATING X",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 91,
+          "name": "EF INT N_SAMPLE",
+          "ds_type": "=",
+          "from_pos": "len(X)",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 92,
+          "name": "EF FLOATING EPS",
+          "ds_type": "N",
+          "from_pos": "p.finfo",
+          "to_length": "(dtype)",
+          "decimal": ".",
+          "data_type": "RE",
+          "keywords": "olution",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_AFFINITY_PROPAGATION": {
+      "member": "_AFFINITY_PROPAGATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "INITY PROP",
+          "file_type": "A",
+          "designation": "G",
+          "mode": "",
+          "format": "O",
+          "device": "\"\"",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 47,
+          "file_name": "N_SAMPLES",
+          "file_type": "",
+          "designation": "=",
+          "mode": "",
+          "format": "",
+          "device": "ND_PRE",
+          "keyed": false,
+          "keywords": "ferences(S, preference):"
+        },
+        {
+          "line": 138,
+          "file_name": "K > 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 172,
+          "file_name": "RETURN_N_",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 189,
+          "file_name": "FINITY_PRO",
+          "file_type": "P",
+          "designation": "A",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 272,
+          "file_name": "THE PREFE",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "LARITI",
+          "keyed": false,
+          "keywords": "es, a single cluster center"
+        },
+        {
+          "line": 307,
+          "file_name": "RETURN_N_",
+          "file_type": "I",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 343,
+          "file_name": "FINITY : {",
+          "file_type": "'",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "EFAULT",
+          "keyed": false,
+          "keywords": "='euclidean'"
+        },
+        {
+          "line": 370,
+          "file_name": "FINITY_MAT",
+          "file_type": "R",
+          "designation": "I",
+          "mode": "",
+          "format": ":",
+          "device": "PLES,",
+          "keyed": false,
+          "keywords": "n_samples)"
+        },
+        {
+          "line": 410,
+          "file_name": "``FIT`` D",
+          "file_type": "O",
+          "designation": "E",
+          "mode": "",
+          "format": "O",
+          "device": "PRODUC",
+          "keyed": false,
+          "keywords": "e any ``cluster_centers_``"
+        },
+        {
+          "line": 415,
+          "file_name": "THE PREFE",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "LARITI",
+          "keyed": false,
+          "keywords": "es, ``fit`` will result in"
+        },
+        {
+          "line": 434,
+          "file_name": "FINITYPROP",
+          "file_type": "A",
+          "designation": "G",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 182,
+          "name": "ATE_PARAMS(",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
