@@ -1,0 +1,1157 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 239,
+  "total_batches": 477,
+  "members_in_batch": [
+    "TEST_SETITEM",
+    "TEST_WHERE",
+    "TEST_ALIGN",
+    "TEST_ASFREQ",
+    "TEST_AT_TIME",
+    "TEST_BETWEEN_TIME",
+    "TEST_COMBINE_FIRST",
+    "TEST_COUNT",
+    "TEST_DROP_DUPLICATES",
+    "TEST_DTYPES"
+  ],
+  "pso_corpus": {
+    "TEST_SETITEM": {
+      "member": "TEST_SETITEM",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1495,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1501,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1507,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1508,
+          "file_name": ".LOC[:, \"A",
+          "file_type": "\"",
+          "designation": "]",
+          "mode": "",
+          "format": "{",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1515,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "5, 6]",
+          "keyed": false,
+          "keywords": "})"
+        },
+        {
+          "line": 1517,
+          "file_name": ".LOC[DF.IN",
+          "file_type": "D",
+          "designation": "E",
+          "mode": "",
+          "format": "=",
+          "device": "BC\")",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_WHERE": {
+      "member": "TEST_WHERE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 26,
+          "file_name": "REQUEST.P",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 30,
+          "file_name": "REQUEST.P",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 32,
+          "file_name": "REQUEST.P",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "REQUEST.P",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "=",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 817,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "R",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 872,
+          "file_name": "_MASK = DA",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "M",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 916,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "NP.NAN",
+          "keyed": false,
+          "keywords": "]})"
+        },
+        {
+          "line": 927,
+          "file_name": "AS_CAT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 936,
+          "file_name": "AS_CAT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 944,
+          "file_name": "AS_CAT:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 993,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 994,
+          "file_name": "_COPY = DF",
+          "file_type": ".",
+          "designation": "W",
+          "mode": "",
+          "format": "E",
+          "device": "OPY()",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 995,
+          "file_name": ".WHERE(PD.",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "L",
+          "device": "E)",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1031,
+          "file_name": "= DF.COPY",
+          "file_type": "(",
+          "designation": ")",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1032,
+          "file_name": ".MASK(~MAS",
+          "file_type": "K",
+          "designation": ",",
+          "mode": "",
+          "format": "H",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1033,
+          "file_name": "NOT MASK.",
+          "file_type": "A",
+          "designation": "L",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1045,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1078,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "DTYPE",
+          "keyed": false,
+          "keywords": "=\"Int64\"), \"b\": [1, 2, 3]})"
+        },
+        {
+          "line": 1091,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "1",
+          "device": "AN, 0.",
+          "keyed": false,
+          "keywords": "1, None]])"
+        },
+        {
+          "line": 1100,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": ", \"Y\"]",
+          "keyed": false,
+          "keywords": "})"
+        },
+        {
+          "line": 1102,
+          "file_name": ".WHERE(CON",
+          "file_type": "D",
+          "designation": ",",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 926,
+          "name": "X = PD.PERIOD_R",
+          "ds_type": "GE",
+          "from_pos": "(\"2016-",
+          "to_length": "01-01\",",
+          "decimal": "",
+          "data_type": "PE",
+          "keywords": "iods=3, freq=\"D\")",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 932,
+          "name": "NAT = PD.NAT.TO",
+          "ds_type": "UM",
+          "from_pos": "py(\"m8[",
+          "to_length": "ns]\")",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1004,
+          "name": "= PD.TIMEDELTA",
+          "ds_type": "AY",
+          "from_pos": "s=1)",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_ALIGN": {
+      "member": "TEST_ALIGN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "zone",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_ASFREQ": {
+      "member": "TEST_ASFREQ",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_AT_TIME": {
+      "member": "TEST_AT_TIME",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_BETWEEN_TIME": {
+      "member": "TEST_BETWEEN_TIME",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_COMBINE_FIRST": {
+      "member": "TEST_COMBINE_FIRST",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 423,
+          "file_name": "IS_DTYPE_",
+          "file_type": "E",
+          "designation": "Q",
+          "mode": "",
+          "format": "(",
+          "device": "OR FRA",
+          "keyed": false,
+          "keywords": "me.dtypes[\"b\"] == other.dtyp"
+        },
+        {
+          "line": 458,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "C",
+          "device": "INDEX=",
+          "keyed": false,
+          "keywords": "mi1)"
+        },
+        {
+          "line": 485,
+          "file_name": "1 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "\"",
+          "device": "UMN})",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 489,
+          "file_name": "2 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "\"",
+          "device": "UMN})",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 505,
+          "file_name": "1 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 510,
+          "file_name": "2 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 530,
+          "file_name": "_1 = DATAF",
+          "file_type": "R",
+          "designation": "A",
+          "mode": "",
+          "format": "{",
+          "device": "5, 6]",
+          "keyed": false,
+          "keywords": "})"
+        },
+        {
+          "line": 531,
+          "file_name": "_2 = DATAF",
+          "file_type": "R",
+          "designation": "A",
+          "mode": "",
+          "format": "{",
+          "device": "40, 50",
+          "keyed": false,
+          "keywords": ", 60], \"C\": [12, 34, 65]})"
+        },
+        {
+          "line": 541,
+          "file_name": "1 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "\"",
+          "device": "DX)",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 542,
+          "file_name": "2 = DATAFR",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "\"",
+          "device": ")",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_COUNT": {
+      "member": "TEST_COUNT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_DROP_DUPLICATES": {
+      "member": "TEST_DROP_DUPLICATES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 18,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": ", 1],",
+          "keyed": false,
+          "keywords": "\"C\": [0, 0, 1]})"
+        },
+        {
+          "line": 26,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 64,
+          "file_name": "2 = DF.LOC",
+          "file_type": "[",
+          "designation": ":",
+          "mode": "",
+          "format": "\"",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 87,
+          "file_name": "[\"E\"] = DF",
+          "file_type": "[",
+          "designation": "\"",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 96,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "X",
+          "device": ", \"Y\":",
+          "keyed": false,
+          "keywords": "[0, 6, 5, 5, 9, 1, 2]})"
+        },
+        {
+          "line": 100,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 103,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "-",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 107,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "-",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 110,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "-",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 114,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "]",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 115,
+          "file_name": "= CONCAT(",
+          "file_type": "[",
+          "designation": "D",
+          "mode": "",
+          "format": "D",
+          "device": ")], IG",
+          "keyed": false,
+          "keywords": "nore_index=True)"
+        },
+        {
+          "line": 123,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "1",
+          "device": "4, 7]]",
+          "keyed": false,
+          "keywords": ", columns=[\"a\", \"a\", \"b\"])"
+        },
+        {
+          "line": 134,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 170,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 220,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 256,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 294,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 340,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 347,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 354,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 363,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 370,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 377,
+          "file_name": "= ORIG.CO",
+          "file_type": "P",
+          "designation": "Y",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 387,
+          "file_name": "2 = ORIG2.",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 395,
+          "file_name": "2 = ORIG2.",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 402,
+          "file_name": "2 = ORIG2.",
+          "file_type": "C",
+          "designation": "O",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 424,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 427,
+          "file_name": "INPLACE:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 439,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "1",
+          "device": "\"]], D",
+          "keyed": false,
+          "keywords": "type=object)"
+        },
+        {
+          "line": 446,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 470,
+          "file_name": "= DATAFRA",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 199,
+          "name": "F\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_DTYPES": {
+      "member": "TEST_DTYPES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
