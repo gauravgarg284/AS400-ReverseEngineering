@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 430,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_FROZEN",
+    "TEST_FROZEN",
+    "_BASE",
+    "_ITERATIVE",
+    "_KNN",
+    "__INIT__",
+    "_PD_UTILS",
+    "__INIT__",
+    "DECISION_BOUNDARY",
+    "PARTIAL_DEPENDENCE"
+  ],
+  "pso_corpus": {
+    "_FROZEN": {
+      "member": "_FROZEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 31,
+          "file_name": "IT` ON IT",
+          "file_type": "H",
+          "designation": "A",
+          "mode": "",
+          "format": "O",
+          "device": "ND `FI",
+          "keyed": false,
+          "keywords": "t_transform` are also disabl"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_FROZEN": {
+      "member": "TEST_FROZEN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 80,
+          "file_name": "HASATTR(E",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_BASE": {
+      "member": "_BASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 7,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 30,
+          "file_name": "IS_PANDAS",
+          "file_type": "_",
+          "designation": "N",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 33,
+          "file_name": "X.DTYPE.K",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "N",
+          "device": "ISINS",
+          "keyed": false,
+          "keywords": "tance(missing_values, number"
+        },
+        {
+          "line": 44,
+          "file_name": "VALUES CA",
+          "file_type": "N",
+          "designation": "N",
+          "mode": "",
+          "format": "B",
+          "device": "TO TYP",
+          "keyed": false,
+          "keywords": "e incompatibility, the objec"
+        },
+        {
+          "line": 58,
+          "file_name": "THE ARRAY",
+          "file_type": ".",
+          "designation": "\"",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 60,
+          "file_name": "ARRAY.SIZ",
+          "file_type": "E",
+          "designation": "",
+          "mode": "",
+          "format": ":",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 83,
+          "file_name": "MOST_FREQ",
+          "file_type": "U",
+          "designation": "E",
+          "mode": "",
+          "format": "C",
+          "device": "= 0:",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 228,
+          "name": "D_INDICATOR : B",
+          "ds_type": "L,",
+          "from_pos": "defaul",
+          "to_length": "t=False",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_ITERATIVE": {
+      "member": "_ITERATIVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 54,
+          "file_name": "HASATTR(X",
+          "file_type": "1",
+          "designation": ",",
+          "mode": "",
+          "format": "A",
+          "device": "ES",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 180,
+          "name": "D_INDICATOR : B",
+          "ds_type": "L,",
+          "from_pos": "defaul",
+          "to_length": "t=False",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_KNN": {
+      "member": "_KNN",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 71,
+          "name": "D_INDICATOR : B",
+          "ds_type": "L,",
+          "from_pos": "defaul",
+          "to_length": "t=False",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_PD_UTILS": {
+      "member": "_PD_UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 24,
+          "file_name": "FEATURE_N",
+          "file_type": "A",
+          "designation": "M",
+          "mode": "",
+          "format": "I",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 34,
+          "file_name": "LEN(SET(F",
+          "file_type": "E",
+          "designation": "A",
+          "mode": "",
+          "format": "E",
+          "device": "NAMES)",
+          "keyed": false,
+          "keywords": ":"
+        },
+        {
+          "line": 56,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 53,
+          "name": "X : INT",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DECISION_BOUNDARY": {
+      "member": "DECISION_BOUNDARY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 47,
+          "file_name": "HAS_CLASS",
+          "file_type": "E",
+          "designation": "S",
+          "mode": "",
+          "format": "D",
+          "device": "R(ESTI",
+          "keyed": false,
+          "keywords": "mator.classes_[0]):"
+        },
+        {
+          "line": 51,
+          "file_name": "RESPONSE_",
+          "file_type": "M",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 66,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "N",
+          "device": "YDISPL",
+          "keyed": false,
+          "keywords": "ay.from_estimator`"
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARTIAL_DEPENDENCE": {
+      "member": "PARTIAL_DEPENDENCE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 26,
+          "file_name": "UNC:`~SKLE",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": "N",
+          "device": "CEDISP",
+          "keyed": false,
+          "keywords": "lay.from_estimator` to creat"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 42,
+          "name": "_RESULTS : LIST",
+          "ds_type": "F",
+          "from_pos": "Bunch",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
