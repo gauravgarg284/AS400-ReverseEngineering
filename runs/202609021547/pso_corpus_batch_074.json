@@ -1,0 +1,909 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 74,
+  "total_batches": 477,
+  "members_in_batch": [
+    "_ADAPTERS",
+    "__INIT__",
+    "JOBS",
+    "EXCEPTIONS",
+    "FUNCTION_CALLS",
+    "HOOKS",
+    "__INIT__",
+    "README",
+    "DECORATORS",
+    "EXCEPTIONS"
+  ],
+  "pso_corpus": {
+    "_ADAPTERS": {
+      "member": "_ADAPTERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 33,
+          "file_name": "MODE == '",
+          "file_type": "R",
+          "designation": "'",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 9,
+          "name": "APT A PACKAGE S",
+          "ds_type": "C",
+          "from_pos": "to adap",
+          "to_length": "t the u",
+          "decimal": "n",
+          "data_type": "DE",
+          "keywords": "lying loader.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 22,
+          "name": "APT A LOADER TO",
+          "ds_type": "RO",
+          "from_pos": "vide Tr",
+          "to_length": "aversab",
+          "decimal": "l",
+          "data_type": "ER",
+          "keywords": "sources.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 42,
+          "name": "APTER FOR AN EX",
+          "ds_type": "TI",
+          "from_pos": "ng or n",
+          "to_length": "on-exis",
+          "decimal": "t",
+          "data_type": "EN",
+          "keywords": "resource reader",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "JOBS": {
+      "member": "JOBS",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "T OPTIONAL",
+          "line": 1
+        },
+        {
+          "name": "T OPENAI",
+          "line": 2
+        },
+        {
+          "name": "()",
+          "line": 14
+        },
+        {
+          "name": "THE STATU",
+          "line": 85
+        },
+        {
+          "name": "ATE_MULTIP",
+          "line": 127
+        },
+        {
+          "name": "PARAMETERS",
+          "line": 136
+        },
+        {
+          "name": "ATE_MULTIP",
+          "line": 171
+        },
+        {
+          "name": "ESPONSE =",
+          "line": 182
+        }
+      ],
+      "fields": [
+        {
+          "name": "TYPER.OPTI",
+          "from_pos": "n(5,",
+          "to_pos": "help",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 88,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= TYPER.OP",
+          "from_pos": "ion(",
+          "to_pos": "alse",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 90,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= GET_JOBS",
+          "from_pos": "limi",
+          "to_pos": "=lim",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 98,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "A FINE-TUN",
+          "from_pos": "ng j",
+          "to_pos": "b fr",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 104,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TYPER.OPTI",
+          "from_pos": "n(\"g",
+          "to_pos": "t-5.",
+          "decimal_pos": "-",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 108,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"n_",
+          "to_pos": "poch",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 124,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"ba",
+          "to_pos": "ch_s",
+          "decimal_pos": "z",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "THE STATU",
+          "line": 126,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"le",
+          "to_pos": "rnin",
+          "decimal_pos": "_",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ATE_MULTIP",
+          "line": 128,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "A FINE-TUN",
+          "from_pos": "ng j",
+          "to_pos": "b fr",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "PARAMETERS",
+          "line": 144,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TYPER.OPTI",
+          "from_pos": "n(\"g",
+          "to_pos": "t-5.",
+          "decimal_pos": "-",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "PARAMETERS",
+          "line": 148,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"n_",
+          "to_pos": "poch",
+          "decimal_pos": "\"",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "PARAMETERS",
+          "line": 168,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"ba",
+          "to_pos": "ch_s",
+          "decimal_pos": "z",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "PARAMETERS",
+          "line": 170,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "METERS_DIC",
+          "from_pos": "[\"le",
+          "to_pos": "rnin",
+          "decimal_pos": "_",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ATE_MULTIP",
+          "line": 172,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "= CLIENT.F",
+          "from_pos": "les.",
+          "to_pos": "reat",
+          "decimal_pos": "(",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ATE_MULTIP",
+          "line": 175,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "CONSOLE",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 198,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "F\"[",
+          "from_pos": "old",
+          "to_pos": "reen",
+          "decimal_pos": "V",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 199,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ")",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 200,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RAMS: FUNE",
+          "from_pos": "unin",
+          "to_pos": "Para",
+          "decimal_pos": "s",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 205,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L_PARAMS[\"",
+          "from_pos": "yper",
+          "to_pos": "aram",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 207,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L_PARAMS[\"",
+          "from_pos": "alid",
+          "to_pos": "tion",
+          "decimal_pos": "f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 209,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L_PARAMS[\"",
+          "from_pos": "uffi",
+          "to_pos": "\"] =",
+          "decimal_pos": "m",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 211,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "A FINE-TUN",
+          "from_pos": "ng j",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ESPONSE =",
+          "line": 230,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": ".FINE_TUNI",
+          "line": 4,
+          "keyword": "params import Hyperparameters"
+        },
+        {
+          "type": "SELECT",
+          "field": ".FINE_TUNI",
+          "line": 11,
+          "keyword": "TuningJob"
+        },
+        {
+          "type": "OMIT",
+          "field": "NAL[STR]",
+          "line": 21,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "BS:",
+          "line": 42,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "HED_AT,",
+          "line": 58,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TATUS OF T",
+          "line": 93,
+          "keyword": "fine-tuning jobs."
+        },
+        {
+          "type": "OMIT",
+          "field": "BS(LIMIT=L",
+          "line": 95,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[IN",
+          "line": 112,
+          "keyword": "ion("
+        },
+        {
+          "type": "OMIT",
+          "field": "PTIONAL[IN",
+          "line": 153,
+          "keyword": "ion("
+        },
+        {
+          "type": "SELECT",
+          "field": "PONSE.ID",
+          "line": 177,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_FILE_ID",
+          "line": 183,
+          "keyword": ".id"
+        },
+        {
+          "type": "OMIT",
+          "field": "NAL_PARAMS",
+          "line": 216,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "LD GREEN]F",
+          "line": 220,
+          "keyword": "created with ID: {job.id} from file ID: {file_id} and validation_file ID: {validation_file_id}\""
+        },
+        {
+          "type": "OMIT",
+          "field": "LD GREEN]F",
+          "line": 224,
+          "keyword": "created with ID: {job.id} from file ID: {file_id}\""
+        },
+        {
+          "type": "OMIT",
+          "field": "LE.LOG(F\"[",
+          "line": 238,
+          "keyword": "id} cancelled successfully!\")"
+        },
+        {
+          "type": "OMIT",
+          "field": "LE.LOG(F\"[",
+          "line": 240,
+          "keyword": "cancelling job {id}: {e}\")"
+        }
+      ],
+      "join_specs": [
+        {
+          "line": 61,
+          "keyword": "chs),"
+        }
+      ],
+      "total_fields": 22,
+      "key_field_names": []
+    },
+    "EXCEPTIONS": {
+      "member": "EXCEPTIONS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ES CENTRALIZED",
+          "ds_type": "CE",
+          "from_pos": "ption h",
+          "to_length": "andling",
+          "decimal": ",",
+          "data_type": "V",
+          "keywords": "lidation, and error context",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FUNCTION_CALLS": {
+      "member": "FUNCTION_CALLS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "HOOKS": {
+      "member": "HOOKS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 22,
+          "file_name": "HASATTR(C",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "README": {
+      "member": "README",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 585,
+          "file_name": "NOT MODE_",
+          "file_type": "R",
+          "designation": "E",
+          "mode": "",
+          "format": "T",
+          "device": "R.COHE",
+          "keyed": false,
+          "keywords": "RE, mode):"
+        },
+        {
+          "line": 608,
+          "file_name": "IS_ASYNC:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 655,
+          "file_name": "ROM_COHERE",
+          "file_type": "\"",
+          "designation": ",",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 705,
+          "file_name": "FROM_OPEN",
+          "file_type": "A",
+          "designation": "I",
+          "mode": "",
+          "format": ".",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 775,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": "E",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "OCUMENT COVERS",
+          "ds_type": "E",
+          "from_pos": "v2 core",
+          "to_length": "infras",
+          "decimal": "t",
+          "data_type": "RU",
+          "keywords": "ture, including the registry-based de",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 60,
+          "name": "LER REGISTRATIO",
+          "ds_type": "AN",
+          "from_pos": "d retri",
+          "to_length": "eval",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 197,
+          "name": "BY ALL V2 PROV",
+          "ds_type": "ER",
+          "from_pos": "s (see",
+          "to_length": "`instru",
+          "decimal": "c",
+          "data_type": "TO",
+          "keywords": "/v2/providers/anthropic/handlers.py`)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 262,
+          "name": "ING A NEW PROVI",
+          "ds_type": "R",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 417,
+          "name": "E.TOOLS` - FUNC",
+          "ds_type": "ON",
+          "from_pos": "callin",
+          "to_length": "g / too",
+          "decimal": "l",
+          "data_type": "U",
+          "keywords": "e",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 418,
+          "name": "E.JSON` - JSON",
+          "ds_type": "DE",
+          "from_pos": "with s",
+          "to_length": "chema i",
+          "decimal": "n",
+          "data_type": "ST",
+          "keywords": "uctions",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 419,
+          "name": "E.JSON_SCHEMA`",
+          "ds_type": "NA",
+          "from_pos": "tive st",
+          "to_length": "ructure",
+          "decimal": "d",
+          "data_type": "O",
+          "keywords": "tputs (if supported)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 420,
+          "name": "E.PARALLEL_TOOL",
+          "ds_type": "-",
+          "from_pos": "Parall",
+          "to_length": "el tool",
+          "decimal": "",
+          "data_type": "CA",
+          "keywords": "ling (if supported)",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 421,
+          "name": "ER-SPECIFIC LEG",
+          "ds_type": "Y",
+          "from_pos": "modes a",
+          "to_length": "re depr",
+          "decimal": "e",
+          "data_type": "CA",
+          "keywords": "ed in v2. They emit warnings and norm",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 914,
+          "name": "E CONTINUES TO",
+          "ds_type": "RK",
+          "from_pos": "during",
+          "to_length": "transi",
+          "decimal": "t",
+          "data_type": "IO",
+          "keywords": "period, but new code should use v2.",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 983,
+          "name": "E REGISTRATION",
+          "ds_type": "T",
+          "from_pos": "he regi",
+          "to_length": "stry",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 985,
+          "name": "-TO-END EXTRACT",
+          "ds_type": "N",
+          "from_pos": "with re",
+          "to_length": "al API",
+          "decimal": "c",
+          "data_type": "AL",
+          "keywords": "s",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1269,
+          "name": "ULE ORGANIZATIO",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 1292,
+          "name": "ULE EXPORTS",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 14
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "DECORATORS": {
+      "member": "DECORATORS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
