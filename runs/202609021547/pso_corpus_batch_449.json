@@ -1,0 +1,757 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 449,
+  "total_batches": 477,
+  "members_in_batch": [
+    "DIGITS",
+    "TEST_HYPOTHESIS",
+    "TEST_RESIDUE",
+    "__INIT__",
+    "ACTIVATION",
+    "CURVE",
+    "MUSCULOTENDON",
+    "MATRICES",
+    "ACTUATOR",
+    "PATHWAY"
+  ],
+  "pso_corpus": {
+    "DIGITS": {
+      "member": "DIGITS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 19,
+          "file_name": "THE NUMBE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "GN WIL",
+          "keyed": false,
+          "keywords": "l be placed on the"
+        },
+        {
+          "line": 55,
+          "file_name": "B < 2:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_HYPOTHESIS": {
+      "member": "TEST_HYPOTHESIS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_RESIDUE": {
+      "member": "TEST_RESIDUE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 14,
+          "name": "ISCRETE_LOG_POL",
+          "ds_type": "RD",
+          "from_pos": "_rho, _",
+          "to_length": "discret",
+          "decimal": "e",
+          "data_type": "_L",
+          "keywords": "g_index_calculus, _discrete_log_pohli",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ES BIOMECHANICS",
+          "ds_type": "EL",
+          "from_pos": "ated co",
+          "to_length": "nstruct",
+          "decimal": "s",
+          "data_type": "W",
+          "keywords": "ich allows users to extend multibody",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ACTIVATION": {
+      "member": "ACTIVATION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 15,
+          "file_name": "UNCTOOLS I",
+          "file_type": "M",
+          "designation": "P",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 27,
+          "file_name": "IRSTORDERA",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 505,
+          "file_name": "ACTIVATIO",
+          "file_type": "N",
+          "designation": "",
+          "mode": "",
+          "format": "H",
+          "device": "NCTION",
+          "keyed": false,
+          "keywords": "of excitation and"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 638,
+          "name": "EACTIVATION_TIM",
+          "ds_type": "CO",
+          "from_pos": "nstant.",
+          "to_length": "setter",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 7
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CURVE": {
+      "member": "CURVE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 17,
+          "file_name": "IBERFORCEL",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "A",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 18,
+          "file_name": "IBERFORCEL",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "P",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 19,
+          "file_name": "IBERFORCEL",
+          "file_type": "E",
+          "designation": "N",
+          "mode": "",
+          "format": "P",
+          "device": "6',",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 20,
+          "file_name": "IBERFORCEV",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 21,
+          "file_name": "IBERFORCEV",
+          "file_type": "E",
+          "designation": "L",
+          "mode": "",
+          "format": "T",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 65,
+          "file_name": "CODE = _PR",
+          "file_type": "I",
+          "designation": "N",
+          "mode": "",
+          "format": "O",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 86,
+          "file_name": "L^T = C_0",
+          "file_type": "\\",
+          "designation": "E",
+          "mode": "",
+          "format": "C",
+          "device": "C_1 \\R",
+          "keyed": false,
+          "keywords": "ight)} - c_2$"
+        },
+        {
+          "line": 95,
+          "file_name": "1 NORMALI",
+          "file_type": "Z",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "DER A",
+          "keyed": false,
+          "keywords": "5% strain."
+        },
+        {
+          "line": 320,
+          "file_name": "THE RELAT",
+          "file_type": "E",
+          "designation": "D",
+          "mode": "",
+          "format": "N",
+          "device": "`TENDO",
+          "keyed": false,
+          "keywords": "nForceLengthDeGroote2016``."
+        },
+        {
+          "line": 326,
+          "file_name": "1 NORMALI",
+          "file_type": "Z",
+          "designation": "E",
+          "mode": "",
+          "format": "N",
+          "device": "DER A",
+          "keyed": false,
+          "keywords": "5% strain."
+        },
+        {
+          "line": 533,
+          "file_name": "L^M_{PAS}",
+          "file_type": "=",
+          "designation": "",
+          "mode": "",
+          "format": "A",
+          "device": "TILDE{",
+          "keyed": false,
+          "keywords": "l^M} - 1\\right)}}{c_0} - 1}{"
+        },
+        {
+          "line": 962,
+          "file_name": "L_{\\TEXT{A",
+          "file_type": "C",
+          "designation": "T",
+          "mode": "",
+          "format": "M",
+          "device": "1}{2}\\",
+          "keyed": false,
+          "keywords": "left(\\frac{\\tilde{l}^M - c_1"
+        },
+        {
+          "line": 1302,
+          "file_name": "V^M = C_0",
+          "file_type": "\\",
+          "designation": "L",
+          "mode": "",
+          "format": "\\",
+          "device": "_2\\RIG",
+          "keyed": false,
+          "keywords": "ht) + \\sqrt{\\left(c_1 \\tilde"
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 30
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MUSCULOTENDON": {
+      "member": "MUSCULOTENDON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1105,
+          "file_name": "THE MUSCU",
+          "file_type": "L",
+          "designation": "O",
+          "mode": "",
+          "format": "D",
+          "device": "N INST",
+          "keyed": false,
+          "keywords": "ance of"
+        },
+        {
+          "line": 1163,
+          "file_name": "_M_MAX*(BE",
+          "file_type": "T",
+          "designation": "A",
+          "mode": "",
+          "format": "L",
+          "device": "GN(Q(T",
+          "keyed": false,
+          "keywords": "))*Derivative(q(t), t)..."
+        },
+        {
+          "line": 1265,
+          "file_name": "_M_MAX*TEN",
+          "file_type": "D",
+          "designation": "O",
+          "mode": "",
+          "format": "R",
+          "device": "QRT(L_",
+          "keyed": false,
+          "keywords": "M_opt**2*..."
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 1237,
+          "name": "DITION TO RIGID",
+          "ds_type": "EN",
+          "from_pos": "don one",
+          "to_length": "s. You",
+          "decimal": "c",
+          "data_type": "AN",
+          "keywords": "choose to either use the fiber length",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 8
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "MATRICES": {
+      "member": "MATRICES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 25,
+          "file_name": "I == 1:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 82,
+          "file_name": "YOU WANT",
+          "file_type": "`",
+          "designation": "\\",
+          "mode": "",
+          "format": "M",
+          "device": "TRUE)`",
+          "keyed": false,
+          "keywords": "`."
+        },
+        {
+          "line": 106,
+          "file_name": "MU NOT IN",
+          "file_type": "",
+          "designation": "(",
+          "mode": "",
+          "format": "1",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 108,
+          "file_name": "MU == 0:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 144,
+          "file_name": "LOWER:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 77,
+          "name": "IRAC) REPRESENT",
+          "ds_type": "IO",
+          "from_pos": "n.",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 167,
+          "name": "FT(N):",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ACTUATOR": {
+      "member": "ACTUATOR",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 15,
+          "file_name": "ORCEACTUAT",
+          "file_type": "O",
+          "designation": "R",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 97,
+          "file_name": "ACTION. L",
+          "file_type": "E",
+          "designation": "T",
+          "mode": "",
+          "format": "A",
+          "device": "RENCE",
+          "keyed": false,
+          "keywords": "frame and spatially fix one"
+        },
+        {
+          "line": 98,
+          "file_name": "THE POINT",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "I",
+          "device": "R TO B",
+          "keyed": false,
+          "keywords": "e positioned such that it"
+        },
+        {
+          "line": 153,
+          "file_name": "ORCE.SETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 285,
+          "file_name": "THE FORCE",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "T",
+          "device": "IN OR",
+          "keyed": false,
+          "keywords": "der to flip the sign of the"
+        },
+        {
+          "line": 394,
+          "file_name": "ORCE.SETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 461,
+          "file_name": "THE FORCE",
+          "file_type": "S",
+          "designation": "",
+          "mode": "",
+          "format": "T",
+          "device": "ED INT",
+          "keyed": false,
+          "keywords": "o vector quantities. When"
+        },
+        {
+          "line": 554,
+          "file_name": "ORCE.SETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 980,
+          "file_name": "ORCE.SETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 1140,
+          "file_name": "ORCE.SETTE",
+          "file_type": "R",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 19,
+          "name": "UFFINGSPRING',",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 563,
+          "name": "AMPING.SETTER",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PATHWAY": {
+      "member": "PATHWAY",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
