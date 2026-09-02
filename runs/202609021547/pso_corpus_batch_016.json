@@ -1,0 +1,2442 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 16,
+  "total_batches": 477,
+  "members_in_batch": [
+    "THROTTLING",
+    "NOTICE",
+    "RECORD",
+    "TOP_LEVEL",
+    "NONREDUCE.CPYTHON-312-X86_64-LINUX-GNU",
+    "NONREDUCE_AXIS.CPYTHON-312-X86_64-LINUX-GNU",
+    "REDUCE.CPYTHON-312-X86_64-LINUX-GNU",
+    "COMMON",
+    "TEST_TEMPLATE",
+    "_WARNINGS"
+  ],
+  "pso_corpus": {
+    "THROTTLING": {
+      "member": "THROTTLING",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NOTICE": {
+      "member": "NOTICE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 45,
+          "name": "ING BUT NOT LIM",
+          "ds_type": "ED",
+          "from_pos": "TO THE",
+          "to_length": "WARRAN",
+          "decimal": "T",
+          "data_type": "IE",
+          "keywords": "OF MERCHANTABILITY, FITNESS FOR A PA",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "RECORD": {
+      "member": "RECORD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TOP_LEVEL": {
+      "member": "TOP_LEVEL",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NONREDUCE.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "NONREDUCE.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "AY, WHICH",
+          "line": 111
+        }
+      ],
+      "fields": [
+        {
+          "name": "\\\ufffd\u000f\u001fD\u0000\u0000H\ufffd\ufffd",
+          "from_pos": "\b\ufffd\ufffd\ufffd",
+          "to_pos": "\ufffd\ufffd\ufffd\ufffd",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 59,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0004B\u000e(\ufffd\u0005D\u000e0",
+          "from_pos": "\u0006A\u000e8",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 81,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN `A` WIT",
+          "from_pos": "thi",
+          "to_pos": "val",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 114,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IN `A` WIT",
+          "from_pos": "a v",
+          "to_pos": "lue",
+          "decimal_pos": "f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 116,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "0.])",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 137,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000S)",
+          "from_pos": "\u0000\u0000d\u001a",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1183,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RR\u0000\u0004\u001f\u0006#\u001aA\u0000",
+          "from_pos": "\u0000c\ufffd",
+          "to_pos": "\u0000\u0004\u0018\u0006",
+          "decimal_pos": "N",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1279,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RR\u0000\u0004\ufffd\u0005#\u001aA\u0000",
+          "from_pos": "\u0000E;\u0017",
+          "to_pos": "\u0000\u0007\u0016\u001a",
+          "decimal_pos": "\u0003",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1281,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "I\u0005\u0012@\u0005 F\u0005\u0011\u0006",
+          "from_pos": "\u0005!\u0006\u0001",
+          "to_pos": "\u0011\u0006\ufffd\u0005",
+          "decimal_pos": "\u0006",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1682,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "I\u0005\u0012@\u0005 F\u0005\u0011\u0006",
+          "from_pos": "\u0005!\u0006\u0001",
+          "to_pos": "\u0011\u0006\ufffd\u0005",
+          "decimal_pos": "\u0006",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1720,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "I\u0005\u0012@\u0005 8\u0005\u0011\u0006",
+          "from_pos": "\u0005!\u0006\u0001",
+          "to_pos": "\u0011\u0006\ufffd\u0005",
+          "decimal_pos": "\u0006",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY, WHICH",
+          "line": 1752,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "X\bY\u0006\u0001\u0002\u0005\u0000\u0001\u0001",
+          "line": 1853,
+          "keyword": "unused1\u0000_unused2\u0000_unused3\u0000py_recursion_remaining\u0000_fileno\u0000lenfunc\u0000complex double\u0000PyArray_DIM\u0000PyExc_ModuleNotFoundError\u0000tp_getattr\u0000alignment\u0000sq_item\u0000setitem\u0000nb_add\u0000ob_refcnt\u0000getitem\u0000sq_ass_item\u0000replace_float32\u0000tracing\u0000sq_inplace_repeat\u0000tp_as_async\u0000nb_matrix_multiply\u0000m_methods\u0000replace_doc\u0000sq_inplace_concat\u0000tp_is_gc\u0000byteorder\u0000_shortbuf\u0000nb_power\u0000am_anext\u0000newf\u0000NPY_LONG\u0000sq_repeat\u0000PyArray_DESCR\u0000sq_concat\u0000PyImport_ImportModule\u0000tp_itemsize\u0000initproc\u0000PyDict_Size\u0000PyGetSetDef\u0000tp_bases\u0000__off_t\u0000_PyStackChunk\u0000replace_float64\u0000cancastscalarkindto\u0000_lock\u0000nr_int32\u0000PyModule_Create2\u0000NPY_SHORT\u0000context_ver\u0000setattrofunc\u0000tp_dealloc\u0000exc_value\u0000nkwds\u0000_typeobject\u0000nb_floor_divide\u0000nb_inplace_lshift\u0000internal\u0000ndim_m2\u0000complex float\u0000type_num\u0000_Py_Dealloc\u0000PyArray_CopySwapNFunc\u0000unbound\u0000replace\u0000PyErr_Print\u0000nb_index\u0000npy_float32\u0000tp_richcompare\u0000PyArray_DIMS\u0000m_free\u0000nr_int64\u0000_IO_write_end\u0000PyThreadState\u0000nb_remainder\u0000visitproc\u0000numpy\u0000nb_inplace_multiply\u0000PyTupleObject\u0000was_sq_slice\u0000NPY_USERDEF\u0000PyMemberDef\u0000interp\u0000cur_refcnt\u0000ob_type\u0000tp_free\u0000getter\u0000reserved_null\u0000datastack_top\u0000PyModuleDef\u0000PyVarObject\u0000bound_gilstate\u0000npy_float64\u0000NPY_TIMEDELTA\u0000PyErr_Format\u0000nb_and\u0000PyArray_NonzeroFunc\u0000_err_stackitem\u0000elsize\u0000tp_call\u0000async_exc\u0000NPY_NTYPES_LEGACY\u0000npy_int32\u0000gilstate_counter\u0000cleared\u0000ob_item\u0000tp_str\u0000PyArray_BYTES\u0000was_sq_ass_slice\u0000PyExc_RuntimeError\u0000nonzero\u0000PyArray_SetItemFunc\u0000ternaryfunc\u0000ob_base\u0000PyTypeObject\u0000delete_later\u0000nonreduce_methods\u0000NPY_CORDER\u0000tagPyArrayObject\u0000scalarkind\u0000_PyInterpreterFrame\u0000weakreflist\u0000sq_contains\u0000replace_int64\u0000parse_args\u0000_chain\u0000NPY_HEAPSORT\u0000tp_setattr\u0000subarray\u0000py_recursion_limit\u0000PyObject_GetAttrString\u0000richcmpfunc\u0000unsigned char\u0000intern_strings\u0000mp_ass_subscript\u0000new_refcnt\u0000initialized\u0000_IO_lock_t\u0000PyArray_ScalarKindFunc\u0000astrides\u0000tp_dictoffset\u0000PyObject_TypeCheck\u0000PyNumberMethods\u0000PyMethodDef\u0000tp_finalize\u0000tp_watched\u0000m_init\u0000replace_int32\u0000mp_subscript\u0000tp_clear\u0000Py_INCREF\u0000nonreduce_def\u0000_status\u0000PyModuleDef_Base\u0000finalizing\u0000nb_bool\u0000PyArray_ArgSortFunc\u0000previous\u0000NPY_USHORT\u0000PyCapsule_Type\u0000cast\u0000NPY_BYTE\u0000tp_init\u0000objobjargproc\u0000ob_size\u0000slow_module\u0000tp_dict\u0000Py_XDECREF\u0000_IO_write_ptr\u0000tp_as_mapping\u0000setattrfunc\u0000_py_trashcan\u0000idim\u0000binaryfunc\u0000names\u0000PyArray_FillFunc\u0000nonreducer\u0000m_doc\u0000PyArray_ITEMSIZE\u0000bf_getbuffer\u0000vectorcallfunc\u0000PyArray_CHKFLAGS\u0000getiterfunc\u0000ssizeargfunc\u0000exc_state\u0000dotfunc\u0000descrsetfunc\u0000Py_TYPE\u0000anyorder\u0000descrgetfunc\u0000PyEval_RestoreThread\u0000nb_inplace_add\u0000item_size\u0000nb_reserved\u0000NPY_STRING\u0000on_delete\u0000NPY_ULONGLONG\u0000NPY_LONGDOUBLE\u0000_IO_save_base\u0000npy_bool\u0000m_index\u0000newint\u0000datastack_chunk\u0000PyArray_FLAGS\u0000reprfunc\u0000nits\u0000axis\u0000cancastto\u0000NpyAuxData_tag\u0000/project\u0000fill\u0000NPY_CPU_UNKNOWN_ENDIAN\u0000npy_hash_t\u0000PyArray_NDIM\u0000castdict\u0000pystr_a\u0000copyswapn\u0000_save\u0000NPY_CDOUBLE\u0000Py_hash_t\u0000NPY_UNICODE\u0000__uint64_t\u0000a_obj\u0000NpyAuxData_CloneFunc\u0000nkwds_found\u0000PyObject\u0000PyArray_ArgFunc\u0000nb_xor\u0000nb_negative\u0000NPY_STABLESORT\u0000PyUnicode_InternFromString\u0000nonreduce_doc\u0000NPY_MERGESORT\u0000PyCallable_Check\u0000PyArray_TYPE\u0000slot\u0000slow\u0000__ssize_t\u0000am_send\u0000argmax\u0000NpyAuxData\u0000PyInit_nonreduce\u0000PyDataType_ELSIZE\u0000m_traverse\u0000PyExc_TypeError\u0000PyBufferProcs\u0000NpyAuxData_FreeFunc\u0000ml_flags\u0000tp_new\u0000m_name\u0000NPY_TYPES\u0000PyModuleDef_Slot\u0000nb_inplace_true_divide\u0000_PyErr_StackItem\u0000destructor\u0000PyCFunction\u0000PyEval_SaveThread\u0000_IO_save_end\u0000NPY_FLOAT\u0000_PyArray_Descr\u0000tp_del\u0000NPY_CFLOAT\u0000tp_name\u0000closure\u0000nr_float32\u0000clone\u0000c_profilefunc\u0000tp_as_sequence\u0000tp_as_buffer\u0000nb_inplace_and\u0000recursion_headroom\u0000short unsigned int\u0000npy_uint64\u0000async_gen_firstiter\u0000what_event\u0000new_obj\u0000_PyArray_LegacyDescr\u0000tp_alloc\u0000PyArray_FillWithScalarFunc\u0000complex long double\u0000NPY_LONGLONG\u0000suboffsets\u0000PYGEN_ERROR\u0000c_recursion_remaining\u0000astride\u0000__off64_t\u0000PyArray_ArrFuncs\u0000_Py_IsImmortal\u0000_IO_read_base\u0000m_clear\u0000PyErr_Clear\u0000_arr_descr\u0000finalized\u0000NPY_NTYPES_ABI_COMPATIBLE\u0000_IO_buf_end\u0000delete_nesting\u0000NPY_DOUBLE\u0000NPY_DATETIME\u0000tp_getattro\u0000NPY_ULONG\u0000allocfunc\u0000argmin\u0000c_traceobj\u0000pystr_new\u0000mem_handler\u0000PyType_IsSubtype\u0000m_copy\u0000_buffer_info\u0000_mode\u0000tp_methods\u0000PyArray_DescrProto\u0000_IO_write_base\u0000init_iter_all\u0000tp_mro\u0000native_thread_id\u0000PyExc_ImportError\u0000PyArray_GetItemFunc\u0000PyArray_VectorUnaryFunc\u0000nb_or\u0000format\u0000unaryfunc\u0000_IO_marker\u0000nb_float\u0000PyDict_GetItem\u0000PyExc_ValueError\u0000PYGEN_RETURN\u0000traverseproc\u0000context\u0000NPY_ANYORDER\u0000tp_vectorcall_offset\u0000inquiry\u0000NPY_NOTYPE\u0000nb_invert\u0000PyFloat_AsDouble\u0000ml_doc\u0000_IO_codecvt\u0000ml_name\u0000_import_array\u0000NPY_CPU_BIG\u0000Py_DECREF\u0000tp_as_number\u0000PySendResult\u0000PyArray_STRIDES\u0000PyAsyncMethods\u0000tp_weaklistoffset\u0000current_frame\u0000PyFrameObject\u0000ml_meth\u0000readonly\u0000npy_int64\u0000tp_doc\u0000getattrofunc\u0000_PyCFrame\u0000PyArray_SHAPE\u0000a_ravel\u0000PySequenceMethods\u0000dimensions\u0000on_delete_data\u0000NPY_INT\u0000tp_weaklist\u0000_IO_buf_base\u0000dtype\u0000newfunc\u0000hashfunc\u0000getattrfunc\u0000istride\u0000_IO_read_end\u0000PyArray_SortFunc\u0000NPY_VSTRING\u0000_IO_FILE\u0000nr_float64\u0000tagPyArrayObject_fields\u0000_IO_wide_data\u0000NPY_FORTRANORDER\u0000PyArray_CopySwapFunc\u0000shape\u0000self\u0000tp_hash\u0000GNU C17 14.2.1 20250110 (Red Hat 14.2.1-7) -mtune=generic -march=x86-64 -g -O3 -O2 -fno-strict-overflow -fPIC\u0000ndim\u0000ssizeobjargproc\u0000tp_vectorcall\u0000tp_version_tag\u0000c_tracefunc\u0000tuple\u0000npy_intp\u0000__pad5\u0000getbufferproc\u0000root_cframe\u0000PyArray_DotFunc\u0000copyswap\u0000_markers\u0000setter\u0000previous_item\u0000am_await\u0000sendfunc\u0000scanfunc\u0000tp_members\u0000tp_traverse\u0000mp_length\u0000PyObject_Call\u0000am_aiter\u0000nb_inplace_xor\u0000tp_subclasses\u0000nb_inplace_power\u0000NPY_KEEPORDER\u0000tp_setattro\u0000__int32_t\u0000freefunc\u0000pystr_old\u0000__uint32_t\u0000nb_multiply\u0000NPY_BOOL\u0000m_base\u0000nb_true_divide\u0000NPY_VOID\u0000fillwithscalar\u0000tp_getset\u0000argsort\u0000PyArray_FromStrFunc\u0000Py_SIZE\u0000tp_iternext\u0000PyArray_RUNTIME_VERSION\u0000sq_length\u0000nb_lshift\u0000ob_refcnt_split\u0000tp_descr_get\u0000tp_iter\u0000nb_inplace_floor_divide\u0000NPY_UINT\u0000PyArray_ScanFunc\u0000NPY_UBYTE\u0000tp_base\u0000NPY_CHAR\u0000nb_rshift\u0000old_obj\u0000datastack_limit\u0000_freeres_buf\u0000NPY_QUICKSORT\u0000exc_info\u0000bf_releasebuffer\u0000async_gen_finalizer\u0000PyArray_API\u0000long long unsigned int\u0000_cur_column\u0000releasebufferproc\u0000Py_IS_TYPE\u0000nb_inplace_remainder\u0000m_slots\u0000_object\u0000typeobj\u0000error\u0000PyErr_ExceptionMatches\u0000PyCapsule_GetPointer\u0000nb_absolute\u0000_IO_backup_base\u0000_IO_read_ptr\u0000coroutine_origin_tracking_depth\u0000current_exception\u0000_freeres_list\u0000nb_inplace_or\u0000tp_repr\u0000tp_cache\u0000nargs\u0000Py_ssize_t\u0000_old_offset\u0000nb_inplace_rshift\u0000fromstr\u0000c_profileobj\u0000oldf\u0000nb_positive\u0000bottleneck/src/nonreduce.c\u0000long long int\u0000trash\u0000_flags2\u0000PyTuple_GET_SIZE\u0000PyMappingMethods\u0000NPY_CPU_LITTLE\u0000nr_t\u0000tp_flags\u0000PyArray_STRIDE\u0000c_api\u0000NPY_OBJECT\u0000oldint\u0000PyArray_CompareFunc\u0000nb_subtract\u0000NPY_CLONGDOUBLE\u0000_NPY_SORT_UNDEFINED\u0000PyErr_SetString\u0000c_metadata\u0000inplace\u0000iternextfunc\u0000_stack_chunk\u0000_former_flags\u0000nb_int\u0000tp_descr_set\u0000Py_buffer\u0000active\u0000NPY_HALF\u0000short int\u0000prev\u0000_vtable_offset\u0000PyErr_Occurred\u0000nb_inplace_matrix_multiply\u0000indices\u0000tp_basicsize\u0000nb_inplace_subtract\u0000nb_divmod\u0000PYGEN_NEXT\u0000objobjproc\u0000PyInterpreterState\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u001b\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u001b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 11,
+      "key_field_names": []
+    },
+    "NONREDUCE_AXIS.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "NONREDUCE_AXIS.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "RAY:",
+          "line": 434
+        },
+        {
+          "name": "GPARTITION",
+          "line": 441
+        },
+        {
+          "name": "TITION: IN",
+          "line": 487
+        },
+        {
+          "name": "RAY:",
+          "line": 495
+        },
+        {
+          "name": "AY SO THAT",
+          "line": 506
+        },
+        {
+          "name": "\ufffd\u0000\u0000\ufffdH\u0000\u0000\ufffdH\u0000",
+          "line": 1675
+        },
+        {
+          "name": "\u0000\u0000@\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000",
+          "line": 1785
+        },
+        {
+          "name": "\u0000\u0000@\u0018\ufffd\u0000\u0000\ufffd\ufffd\u0000",
+          "line": 1786
+        },
+        {
+          "name": "\u0000\u0000@X\ufffd\u0000\u0000\u001b\ufffd\u0000",
+          "line": 1789
+        },
+        {
+          "name": "R\u0000\u0004\u001f\u0006#I\ufffd\u0000\u0000",
+          "line": 1855
+        }
+      ],
+      "fields": [
+        {
+          "name": "\u000f\u0011\t\ufffdA\u000f\u0010",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 25,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0001\u0000\u0000\u00001\ufffdA\ufffd\u0001",
+          "from_pos": "\u0000\u00001\ufffd",
+          "to_pos": ",Lc\ufffd",
+          "decimal_pos": "\u000f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 28,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L\ufffdL$(L\ufffd\\$\b",
+          "from_pos": "9f.\u000f",
+          "to_pos": "\ufffd\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 43,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L\ufffdL$(L\ufffd\\$\b",
+          "from_pos": "5f\u000f",
+          "to_pos": "\u0000\u0000H\u000f",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 166,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0001\u0000\u0000\u00001\ufffdA\ufffd\u0001",
+          "from_pos": "\u0000\u00001\ufffd",
+          "to_pos": ",Lc\ufffd",
+          "decimal_pos": "\u000f",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 182,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "P\u000e\b\u0000\u0000\u0000",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 229,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ALONG THE",
+          "from_pos": "peci",
+          "to_pos": "ied",
+          "decimal_pos": "x",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 277,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 283,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OPTIONAL",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 284,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TO PUSH AL",
+          "from_pos": "ng t",
+          "to_pos": "e la",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 291,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "5.,  5.,",
+          "from_pos": ".,",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 306,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "5.,  NAN",
+          "from_pos": "6",
+          "to_pos": ",",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 308,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "5.,  5.,",
+          "from_pos": ".,",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 310,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ASSIGNED A",
+          "from_pos": "rank",
+          "to_pos": "that",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 316,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 325,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TA: RANKS",
+          "from_pos": "he d",
+          "to_pos": "ta,",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 337,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TA(A, AXIS",
+          "from_pos": "None",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 352,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ASSIGNED A",
+          "from_pos": "rank",
+          "to_pos": "that",
+          "decimal_pos": "i",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 356,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 363,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 409,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE ELEMEN",
+          "from_pos": "at",
+          "to_pos": "ndex",
+          "decimal_pos": "`",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 411,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LLER (LARG",
+          "from_pos": "r) o",
+          "to_pos": "equ",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 412,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SAME SHAPE",
+          "from_pos": "as t",
+          "to_pos": "e in",
+          "decimal_pos": "u",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 421,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THAT PARTI",
+          "from_pos": "ion",
+          "to_pos": "he a",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "RAY:",
+          "line": 438,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SMALLEST 3",
+          "from_pos": "elem",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "RAY:",
+          "line": 439,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GPARTITION",
+          "line": 470,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "THE ELEMEN",
+          "from_pos": "at",
+          "to_pos": "ndex",
+          "decimal_pos": "`",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GPARTITION",
+          "line": 472,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LLER (LARG",
+          "from_pos": "r) o",
+          "to_pos": "equ",
+          "decimal_pos": "l",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GPARTITION",
+          "line": 473,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TO PARTITI",
+          "from_pos": "n al",
+          "to_pos": "ng t",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GPARTITION",
+          "line": 477,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BE SORTED)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "RAY:",
+          "line": 501,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000V \u0000\u0000>\ufffd",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY SO THAT",
+          "line": 1576,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0006\ufffd\u0000\u0000#G\u0000\u0000\u0000\u0000",
+          "from_pos": "\u0000\u0002\u0000#",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0000\u0000\ufffdH\u0000\u0000\ufffdH\u0000",
+          "line": 1723,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0006\u0000\u0000\u0006\ufffd\u0002\u0011(\u0003\u0000",
+          "from_pos": "\u0000R\ufffd\u0006",
+          "to_pos": "\u0000\u0006|\u0001",
+          "decimal_pos": "G",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "R\u0000\u0004\u001f\u0006#I\ufffd\u0000\u0000",
+          "line": 1860,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "\u0000\u0000\u0016K\u0000\u0000\u0000=\u0006\ufffd",
+          "line": 1677
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "SELECT",
+          "field": "TO PUSH T",
+          "line": 287,
+          "keyword": "th of the slice. If `n` is an integer"
+        },
+        {
+          "type": "OMIT",
+          "field": "NNEGATIVE.",
+          "line": 288,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NAL",
+          "line": 289,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "THERWISE A",
+          "line": 317,
+          "keyword": "of the values within that set."
+        },
+        {
+          "type": "OMIT",
+          "field": "THERWISE A",
+          "line": 357,
+          "keyword": "of the values within that set."
+        },
+        {
+          "type": "SELECT",
+          "field": "NOT PROTE",
+          "line": 403,
+          "keyword": "aN. Therefore, you may get"
+        },
+        {
+          "type": "OMIT",
+          "field": "N `A`. THE",
+          "line": 422,
+          "keyword": "indices is numpy.intp."
+        },
+        {
+          "type": "SELECT",
+          "field": "NOT PROTE",
+          "line": 464,
+          "keyword": "aN. Therefore, you may get"
+        },
+        {
+          "type": "SELECT",
+          "field": "O THAT THE",
+          "line": 499,
+          "keyword": "nts (indices 0, 1, 2) are the"
+        },
+        {
+          "type": "OMIT",
+          "field": "N-REDUCING",
+          "line": 512,
+          "keyword": "t operate along an axis.\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdt\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000<t\u0000\u0000\u0000\u0000\u0000\u0000\ufffd,\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0000\u0000\u0000\u0000\u0000\u00009t\u0000\u0000\u0000\u0000\u0000\u0000\ufffd,\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u00000t\u0000\u0000\u0000\u0000\u0000\u0000p,\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000-t\u0000\u0000\u0000\u0000\u0000\u00000,\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\ufffd\u0000\u0000\u0000\u0000\u0000\u0000(t\u0000\u0000\u0000\u0000\u0000\u0000\ufffd+\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GCC: (GNU) 14.2.1 20250110 (Red Hat 14.2.1-7)\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0016\u0010\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000y\u0012\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\u0016\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u001b\u0010\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0001\u0000\u0000GA$\u00013a1\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000\ufffdi\u0000\u0000\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0000\u0000\u0000\ufffd\u0012\u0000\u0000\u0000\u0000\u0000\u00002W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C\ufffd\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\b\u0001~\u0012\u0000\u0000"
+        },
+        {
+          "type": "OMIT",
+          "field": "P\u0000\u0000MP\u0000\u0000K\ufffd\u0017",
+          "line": 1651,
+          "keyword": "\ufffdP\u0000\u0000<z\u0000\u0002"
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0000\u0000@\u0480\u0000\u0000\ufffd\ufffd\u0000\u0000",
+          "line": 1783,
+          "keyword": "\u0000\u0000@\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000@\ufffd\u0000\u0000\"\ufffd\u0000\u0000 \ufffd\u0000\u0000>\ufffd\u0004\u0000\u0000?\ufffd\ufffd\u0000\u0000S\ufffd\u0000\u0000G\ufffd\u0000\u0000?\u0007\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000?\u0011\ufffd\u0000\u0000I\ufffd\u0000\u0000A\ufffd\u0000\u0000?"
+        },
+        {
+          "type": "OMIT",
+          "field": "X\bY\u0006\u0001\u0002\u0005\u0000\u0001\u0001",
+          "line": 2818,
+          "keyword": "acefunc\u0000push_doc\u0000_unused1\u0000_unused2\u0000_unused3\u0000py_recursion_remaining\u0000_fileno\u0000lenfunc\u0000complex double\u0000PyExc_ModuleNotFoundError\u0000tp_getattr\u0000alignment\u0000sq_item\u0000setitem\u0000nb_add\u0000ob_refcnt\u0000getitem\u0000sq_ass_item\u0000tracing\u0000sq_inplace_repeat\u0000tp_as_async\u0000nb_matrix_multiply\u0000m_methods\u0000sq_inplace_concat\u0000tp_is_gc\u0000byteorder\u0000_shortbuf\u0000nb_power\u0000am_anext\u0000NPY_LONG\u0000sq_repeat\u0000PyArray_DESCR\u0000sq_concat\u0000PyImport_ImportModule\u0000tp_itemsize\u0000initproc\u0000PyDict_Size\u0000atmp\u0000PyGetSetDef\u0000tp_bases\u0000__off_t\u0000_PyStackChunk\u0000ytmp\u0000cancastscalarkindto\u0000_lock\u0000PyModule_Create2\u0000NPY_SHORT\u0000context_ver\u0000setattrofunc\u0000tp_dealloc\u0000exc_value\u0000nkwds\u0000_typeobject\u0000nb_floor_divide\u0000nb_inplace_lshift\u0000internal\u0000ndim_m2\u0000complex float\u0000nra_int32\u0000nanrankdata_doc\u0000type_num\u0000_Py_Dealloc\u0000init_iter2\u0000PyArray_CopySwapNFunc\u0000unbound\u0000PyErr_Print\u0000nb_index\u0000npy_float32\u0000tp_richcompare\u0000PyArray_DIMS\u0000m_free\u0000_IO_write_end\u0000PyThreadState\u0000nb_remainder\u0000visitproc\u0000numpy\u0000nb_inplace_multiply\u0000PyTupleObject\u0000was_sq_slice\u0000NPY_USERDEF\u0000PyMemberDef\u0000interp\u0000cur_refcnt\u0000ob_type\u0000tp_free\u0000getter\u0000reserved_null\u0000datastack_top\u0000PyModuleDef\u0000PyVarObject\u0000bound_gilstate\u0000npy_float64\u0000NPY_TIMEDELTA\u0000PyErr_Format\u0000nb_and\u0000PyArray_NonzeroFunc\u0000_err_stackitem\u0000elsize\u0000tp_call\u0000async_exc\u0000NPY_NTYPES_LEGACY\u0000npy_int32\u0000_Py_NoneStruct\u0000gilstate_counter\u0000cleared\u0000ob_item\u0000tp_str\u0000PyArray_BYTES\u0000was_sq_ass_slice\u0000PyExc_RuntimeError\u0000nonzero\u0000PyArray_SetItemFunc\u0000ternaryfunc\u0000parse_type\u0000ob_base\u0000PyTypeObject\u0000delete_later\u0000NPY_CORDER\u0000tagPyArrayObject\u0000scalarkind\u0000_PyInterpreterFrame\u0000weakreflist\u0000sq_contains\u0000_chain\u0000NPY_HEAPSORT\u0000tp_setattr\u0000subarray\u0000py_recursion_limit\u0000__bn_inff\u0000PyObject_GetAttrString\u0000malloc\u0000richcmpfunc\u0000unsigned char\u0000intern_strings\u0000mp_ass_subscript\u0000new_refcnt\u0000initialized\u0000_IO_lock_t\u0000PyArray_ScalarKindFunc\u0000astrides\u0000tp_dictoffset\u0000PyObject_TypeCheck\u0000PyNumberMethods\u0000PyMethodDef\u0000tp_finalize\u0000tp_watched\u0000nra_t\u0000m_init\u0000mp_subscript\u0000tp_clear\u0000Py_INCREF\u0000_status\u0000PARSE_PUSH\u0000PyModuleDef_Base\u0000finalizing\u0000nb_bool\u0000PyArray_ArgSortFunc\u0000previous\u0000NPY_USHORT\u0000PyCapsule_Type\u0000cast\u0000NPY_BYTE\u0000tp_init\u0000objobjargproc\u0000ob_size\u0000slow_module\u0000tp_dict\u0000Py_XDECREF\u0000_IO_write_ptr\u0000tp_as_mapping\u0000setattrfunc\u0000_py_trashcan\u0000binaryfunc\u0000names\u0000PyArray_FillFunc\u0000m_doc\u0000PyArray_ITEMSIZE\u0000bf_getbuffer\u0000parse\u0000vectorcallfunc\u0000getiterfunc\u0000ssizeargfunc\u0000exc_state\u0000dotfunc\u0000descrsetfunc\u0000Py_TYPE\u0000nra_doc\u0000descrgetfunc\u0000PyEval_RestoreThread\u0000nb_inplace_add\u0000item_size\u0000nb_reserved\u0000NPY_STRING\u0000on_delete\u0000NPY_ULONGLONG\u0000NPY_LONGDOUBLE\u0000_IO_save_base\u0000npy_bool\u0000m_index\u0000n_float\u0000datastack_chunk\u0000reprfunc\u0000nanrankdata_float64\u0000nits\u0000ai_last\u0000cancastto\u0000NpyAuxData_tag\u0000/project\u0000fill\u0000NPY_CPU_UNKNOWN_ENDIAN\u0000npy_hash_t\u0000PyArray_NDIM\u0000castdict\u0000pystr_a\u0000copyswapn\u0000pystr_n\u0000NPY_CDOUBLE\u0000nra_methods\u0000Py_hash_t\u0000NPY_UNICODE\u0000__uint64_t\u0000init_iter3\u0000a_obj\u0000NpyAuxData_CloneFunc\u0000nra_float32\u0000nkwds_found\u0000PyObject\u0000PyArray_ArgFunc\u0000nb_xor\u0000nb_negative\u0000ystrides\u0000NPY_STABLESORT\u0000PyUnicode_InternFromString\u0000NPY_MERGESORT\u0000PyCallable_Check\u0000PyArray_TYPE\u0000slot\u0000slow\u0000__ssize_t\u0000am_send\u0000argmax\u0000NpyAuxData\u0000PyDataType_ELSIZE\u0000zstrides\u0000m_traverse\u0000PyExc_TypeError\u0000PyBufferProcs\u0000NpyAuxData_FreeFunc\u0000ml_flags\u0000tp_new\u0000nra_float64\u0000m_name\u0000NPY_TYPES\u0000npy_uint32\u0000PyModuleDef_Slot\u0000nb_inplace_true_divide\u0000_PyErr_StackItem\u0000destructor\u0000PyCFunction\u0000argpartition\u0000n_obj\u0000PyEval_SaveThread\u0000_IO_save_end\u0000NPY_FLOAT\u0000_PyArray_Descr\u0000tp_del\u0000NPY_CFLOAT\u0000tp_name\u0000closure\u0000clone\u0000c_profilefunc\u0000tp_as_sequence\u0000__bn_nanf\u0000tp_as_buffer\u0000nanrankdata_float32\u0000nb_inplace_and\u0000pystr_kth\u0000recursion_headroom\u0000short unsigned int\u0000npy_uint64\u0000async_gen_firstiter\u0000what_event\u0000ystride\u0000_PyArray_LegacyDescr\u0000tp_alloc\u0000PyArray_FillWithScalarFunc\u0000complex long double\u0000NPY_LONGLONG\u0000suboffsets\u0000PYGEN_ERROR\u0000c_recursion_remaining\u0000astride\u0000__off64_t\u0000PyArray_ArrFuncs\u0000_Py_IsImmortal\u0000_IO_read_base\u0000m_clear\u0000PyErr_Clear\u0000_arr_descr\u0000finalized\u0000NPY_NTYPES_ABI_COMPATIBLE\u0000_IO_buf_end\u0000delete_nesting\u0000NPY_DOUBLE\u0000NPY_DATETIME\u0000tp_getattro\u0000NPY_ULONG\u0000allocfunc\u0000argmin\u0000c_traceobj\u0000_save\u0000mem_handler\u0000PyType_IsSubtype\u0000m_copy\u0000_buffer_info\u0000_mode\u0000tp_methods\u0000PyArray_DescrProto\u0000_IO_write_base\u0000tp_mro\u0000native_thread_id\u0000PyExc_ImportError\u0000PyArray_GetItemFunc\u0000PyArray_VectorUnaryFunc\u0000nb_or\u0000format\u0000unaryfunc\u0000_IO_marker\u0000bottleneck/src/nonreduce_axis.c\u0000nb_float\u0000PyDict_GetItem\u0000PyExc_ValueError\u0000PYGEN_RETURN\u0000traverseproc\u0000context\u0000NPY_ANYORDER\u0000tp_vectorcall_offset\u0000inquiry\u0000NPY_NOTYPE\u0000nb_invert\u0000ml_doc\u0000_IO_codecvt\u0000averank\u0000ml_name\u0000_import_array\u0000NPY_CPU_BIG\u0000Py_DECREF\u0000tp_as_number\u0000PySendResult\u0000PyArray_STRIDES\u0000PyAsyncMethods\u0000tp_weaklistoffset\u0000current_frame\u0000PyFrameObject\u0000ml_meth\u0000readonly\u0000npy_int64\u0000tp_doc\u0000getattrofunc\u0000_PyCFrame\u0000PyArray_SHAPE\u0000a_ravel\u0000PySequenceMethods\u0000dimensions\u0000on_delete_data\u0000NPY_INT\u0000tp_weaklist\u0000dupcount\u0000_IO_buf_base\u0000dtype\u0000newfunc\u0000hashfunc\u0000PyArray_DATA\u0000getattrfunc\u0000parse_partition\u0000_IO_read_end\u0000pystr_axis\u0000PyArray_SortFunc\u0000NPY_VSTRING\u0000PARSE_RANKDATA\u0000_IO_FILE\u0000tagPyArrayObject_fields\u0000_IO_wide_data\u0000NPY_FORTRANORDER\u0000PyArray_CopySwapFunc\u0000shape\u0000self\u0000tp_hash\u0000GNU C17 14.2.1 20250110 (Red Hat 14.2.1-7) -mtune=generic -march=x86-64 -g -O3 -O2 -fno-strict-overflow -fPIC\u0000ndim\u0000ssizeobjargproc\u0000tp_vectorcall\u0000tp_version_tag\u0000c_tracefunc\u0000tuple\u0000npy_intp\u0000__pad5\u0000getbufferproc\u0000root_cframe\u0000PyArray_DotFunc\u0000copyswap\u0000_markers\u0000setter\u0000previous_item\u0000am_await\u0000zstride\u0000sendfunc\u0000scanfunc\u0000tp_members\u0000tp_traverse\u0000mp_length\u0000argpartition_doc\u0000PyObject_Call\u0000am_aiter\u0000nb_inplace_xor\u0000tp_subclasses\u0000nb_inplace_power\u0000NPY_KEEPORDER\u0000tp_setattro\u0000__int32_t\u0000freefunc\u0000__uint32_t\u0000nb_multiply\u0000nra_int64\u0000NPY_BOOL\u0000m_base\u0000nb_true_divide\u0000NPY_VOID\u0000fillwithscalar\u0000tp_getset\u0000argsort\u0000PyArray_FromStrFunc\u0000Py_SIZE\u0000tp_iternext\u0000PyArray_RUNTIME_VERSION\u0000sq_length\u0000nb_lshift\u0000ob_refcnt_split\u0000tp_descr_get\u0000argpartition_int32\u0000tp_iter\u0000nb_inplace_floor_divide\u0000NPY_UINT\u0000PyArray_ScanFunc\u0000NPY_UBYTE\u0000push_float32\u0000tp_base\u0000NPY_CHAR\u0000nb_rshift\u0000datastack_limit\u0000_freeres_buf\u0000NPY_QUICKSORT\u0000exc_info\u0000bf_releasebuffer\u0000async_gen_finalizer\u0000PyArray_API\u0000long long unsigned int\u0000_cur_column\u0000releasebufferproc\u0000Py_IS_TYPE\u0000nb_inplace_remainder\u0000m_slots\u0000_object\u0000typeobj\u0000error\u0000PyErr_ExceptionMatches\u0000PyCapsule_GetPointer\u0000argpartition_int64\u0000nb_absolute\u0000_IO_backup_base\u0000_IO_read_ptr\u0000nra_def\u0000coroutine_origin_tracking_depth\u0000push_float64\u0000current_exception\u0000rankdata_int32\u0000PyInit_nonreduce_axis\u0000_freeres_list\u0000nb_inplace_or\u0000PARSE_PARTITION\u0000tp_repr\u0000tp_cache\u0000nargs\u0000sumranks\u0000Py_ssize_t\u0000_old_offset\u0000nb_inplace_rshift\u0000fromstr\u0000c_profileobj\u0000nb_positive\u0000push_int32\u0000long long int\u0000trash\u0000_flags2\u0000PyTuple_GET_SIZE\u0000PyMappingMethods\u0000NPY_CPU_LITTLE\u0000nanrankdata\u0000rankdata_int64\u0000parse_rankdata\u0000tp_flags\u0000nonreducer_axis\u0000c_api\u0000argpartition_float32\u0000NPY_OBJECT\u0000argpartition_float64\u0000PyArray_CompareFunc\u0000nb_subtract\u0000NPY_CLONGDOUBLE\u0000__bint\u0000parse_push\u0000_NPY_SORT_UNDEFINED\u0000push_int64\u0000PyErr_SetString\u0000c_metadata\u0000iternextfunc\u0000_stack_chunk\u0000_former_flags\u0000nb_int\u0000tp_descr_set\u0000npy_double\u0000Py_buffer\u0000active\u0000init_iter_one\u0000NPY_HALF\u0000short int\u0000prev\u0000_vtable_offset\u0000PyErr_Occurred\u0000nb_inplace_matrix_multiply\u0000indices\u0000tp_basicsize\u0000nb_inplace_subtract\u0000nb_divmod\u0000PYGEN_NEXT\u0000objobjproc\u0000PyInterpreterState\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\\\ufffdU\u0000\u0000\u0000\u0000\u0000\u00002W\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\\\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000RU\u0000\u0000\u0000\u0000\u0000\u0000cU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0003W\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\u0003V\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V4V\u0000\u0000\u0000\u0000\u0000\u0000LV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000VLV\u0000\u0000\u0000\u0000\u0000\u0000WV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0001\u0000\u0001\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000cU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S V\u0000\u0000\u0000\u0000\u0000\u00004V\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000SWV\u0000\u0000\u0000\u0000\u0000\u0000\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0012W\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0017W\u0000\u0000\u0000\u0000\u0000\u0000-W\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\ufffdU\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0005\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0005\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0010U\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S V\u0000\u0000\u0000\u0000\u0000\u00004V\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0005\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\ufffdT\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000vV\u0000\u0000\u0000\u0000\u0000\u0000\ufffdV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000vV\u0000\u0000\u0000\u0000\u0000\u0000yV\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000U\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\u0007\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000T\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000;\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S;\u0014\u0000\u0000\u0000\u0000\u0000\u0000E\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffdE\u0014\u0000\u0000\u0000\u0000\u0000\u0000$\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S$\u0015\u0000\u0000\u0000\u0000\u0000\u00001\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000T1\u0015\u0000\u0000\u0000\u0000\u0000\u00002\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd2\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0015\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0015\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001T\ufffd\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000h\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Qh\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001Q\ufffd\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000<\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V<\u0014\u0000\u0000\u0000\u0000\u0000\u0000E\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001Q\ufffdE\u0014\u0000\u0000\u0000\u0000\u0000\u0000%\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V%\u0015\u0000\u0000\u0000\u0000\u0000\u00001\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Q1\u0015\u0000\u0000\u0000\u0000\u0000\u00002\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001Q\ufffd2\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0016\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0016\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001Q\ufffd\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000V\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000R\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000R\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000R\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000X\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000X\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000X\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Y\ufffd\u0010\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Y\ufffd\u0011\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Y\ufffd\u0014\u0000\u0000\u0000\u0000\u0000\u0000h\u0019\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\ufffd\ufffd\u007f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0019\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Qu\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Q\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P=\u0016\u0000\u0000\u0000\u0000\u0000\u0000L\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Qw\u0016\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Q\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000Q\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000t\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000^I\u0015\u0000\u0000\u0000\u0000\u0000\u0000L\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000t\u007f\ufffdL\u0015\u0000\u0000\u0000\u0000\u0000\u0000U\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000T\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000^\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0015\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\u001f\u0016\u0000\u0000\u0000\u0000\u0000\u0000$\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P$\u0016\u0000\u0000\u0000\u0000\u0000\u0000.\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000^.\u0016\u0000\u0000\u0000\u0000\u0000\u00002\u0016\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000~\u0000}\u0018\ufffd\u0004\"\ufffd2\u0016\u0000\u0000\u0000\u0000\u0000\u0000=\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000^a\u0016\u0000\u0000\u0000\u0000\u0000\u0000w\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0016\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\ufffd\u0017\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0017\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000^\ufffd\u0017\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0017\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u00000\ufffd\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0012\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\u0012\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0019\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000r"
+        },
+        {
+          "type": "SELECT",
+          "field": "\ufffd\b\ufffd\ufffd\u0010!",
+          "line": 3230,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\ufffd\b\ufffd\ufffd\u0010\ufffd",
+          "line": 3238,
+          "keyword": ""
+        }
+      ],
+      "join_specs": [
+        {
+          "line": 1739,
+          "keyword": "\\\ufffd\u0000\u0000gak\u0000\u0002\ufffd\t\ufffd\u0016\u0000\u0000\ufffd\ufffd\u0000\u0000\ufffd\ufffd\u0000\u0000gar\u0000\u0002\ufffd\t\ufffd\u0016\u0000\u0000\ufffd\ufffd\u0000\u0000}\ufffd\u0000\u0000h\ufffd\u0001\u0000\u0000\u0002\ufffd\t.\u0016\u0000\u0000\u04a4\u0000\u0000\u0324\u0000\u0000k\u00101\u0000\u0000\u0000\u0000\u0000\u0000&\u0000\u0000\u0000\u0000\u0000\u0000\u0000h\ufffd\u0001\u0000\u0000\u0002\ufffd\t\ufffd\u0016\u0000\u0000\u001f\ufffd\u0000\u0000"
+        },
+        {
+          "line": 2502,
+          "keyword": "J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0013\u0013\u0013\u0014\u0013\u0013\u0013\u0013\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdvX\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0004\u0003\u0003\ufffdv\u0001\u0005\u0013\u0000\u0002\u0004\u0001\u0001\u0005\u0011\u0006\u0003v\ufffd-;\u0005"
+        },
+        {
+          "line": 2539,
+          "keyword": "J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0013\u0013\u0013\u0014\u0013\u0013\u0013\u0013\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdvX\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0004\u0003\u0003\ufffdv\u0001\u0005\u0013\u0000\u0002\u0004\u0001\u0001\u0005\u0011\u0006\u0003v\ufffd-;\u0005"
+        },
+        {
+          "line": 2576,
+          "keyword": "J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0013\u0013\u0013\u0014\u0013\u0013\u0013\u0013\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdvX\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0004\u0003\u0003\ufffdv\u0001\u0005\u0013\u0000\u0002\u0004\u0001\u0001\u0005\u0011\u0006\u0003v\ufffd-;\u0005"
+        },
+        {
+          "line": 2613,
+          "keyword": "J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0006\u0001\u0004\u0003\u0006\u0003\ufffdv\u0001\u0013\u0013\u0013\u0014\u0013\u0013\u0013\u0013\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdv\u0001\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0005)\u0006\u0001J\u0004\u0003\u0005\u0005\u0006\u0003\ufffdvX\u0004\u0004\u0005\u0001\u0003\ufffd\t\u0001\u0005\u0005\u0014\u0004\u0003\u0003\ufffdv\u0001\u0005\u0013\u0000\u0002\u0004\u0001\u0001\u0005\u0011\u0006\u0003v\ufffd-;\u0005"
+        }
+      ],
+      "total_fields": 33,
+      "key_field_names": [
+        "\u0000\u0000\u0016K\u0000\u0000\u0000=\u0006\ufffd"
+      ]
+    },
+    "REDUCE.CPYTHON-312-X86_64-LINUX-GNU": {
+      "member": "REDUCE.CPYTHON-312-X86_64-LINUX-GNU",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "AY",
+          "line": 902
+        },
+        {
+          "name": "UE], DTYPE",
+          "line": 921
+        },
+        {
+          "name": "AY",
+          "line": 951
+        },
+        {
+          "name": "UE], DTYPE",
+          "line": 970
+        },
+        {
+          "name": ": VARIANCE",
+          "line": 1340
+        },
+        {
+          "name": "\u0003",
+          "line": 2687
+        },
+        {
+          "name": "\u0003",
+          "line": 2688
+        },
+        {
+          "name": "\u0003",
+          "line": 2726
+        },
+        {
+          "name": "\u0003",
+          "line": 2727
+        },
+        {
+          "name": "\u0003",
+          "line": 2728
+        },
+        {
+          "name": "R\u0000\u0005\ufffd'\ufffdH\u0001\u0000\u0000",
+          "line": 3808
+        },
+        {
+          "name": "ARR\u0000\u0003\ufffd\u0005#\ufffdH",
+          "line": 3821
+        },
+        {
+          "name": "\ufffd\u0005\u0005\u0003X\u0001\u0005",
+          "line": 4437
+        },
+        {
+          "name": "\ufffd\u0005\u0005\u0003X\u0001\u0005",
+          "line": 4460
+        },
+        {
+          "name": "\ufffd\u0005\u0005\u0003X\u0001\u0005",
+          "line": 4642
+        },
+        {
+          "name": "\ufffd\u0005\u0005\u0003X\u0001\u0005",
+          "line": 4669
+        }
+      ],
+      "fields": [
+        {
+          "name": "H\ufffd\u0015\ufffd4\u0001\u0000L\ufffd\ufffd",
+          "from_pos": "\ufffd\u0006\u0000\u0000",
+          "to_pos": "\ufffd\u0014\ufffdH",
+          "decimal_pos": "t",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 41,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "W\ufffd\u0001\u0000\u0000\u00001\ufffdAV",
+          "from_pos": "c\ufffdH\ufffd",
+          "to_pos": "AUAT",
+          "decimal_pos": "S",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 132,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "W\ufffd\u0001\u0000\u0000\u00001\ufffdLC",
+          "from_pos": "AVH\ufffd",
+          "to_pos": "AUAT",
+          "decimal_pos": "S",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 138,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "]A^A_\ufffd\u000f\u001f@\u0000",
+          "from_pos": "\ufffd\u0004$\ufffd",
+          "to_pos": "\u0018H\ufffdx",
+          "decimal_pos": "H",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 322,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u000f\u0011\t\ufffdA\u000f\u0010",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 424,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L\ufffd\ufffd$\ufffd\u0006\u0000\u0000B\ufffd",
+          "from_pos": "\ufffd\u0000\u0000\ufffd",
+          "to_pos": "H\ufffdt$",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 426,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\\\ufffd\u000f\u001fD\u0000\u0000H\ufffd\ufffd",
+          "from_pos": "\ufffd\ufffd\ufffd\ufffd",
+          "to_pos": "\ufffd\ufffd\ufffd\u000f",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 462,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "O\u000e(H\u000e0H\u000e8H",
+          "from_pos": "@I\u000e\b",
+          "to_pos": "\u0000\u0000(\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 656,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ARRAY ELEM",
+          "from_pos": "nts",
+          "to_pos": "long",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 886,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OUTPUT AS",
+          "from_pos": "p.is",
+          "to_pos": "an(a",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 888,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 895,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FOR NANS O",
+          "from_pos": "er a",
+          "to_pos": "flat",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 898,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NEW `NDARR",
+          "from_pos": "y` i",
+          "to_pos": "ret",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY",
+          "line": 903,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY",
+          "line": 920,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TO:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 928,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "XIS=NONE)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 935,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ARRAY ELEM",
+          "from_pos": "nt a",
+          "to_pos": "ong",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 937,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "OUTPUT AS",
+          "from_pos": "p.is",
+          "to_pos": "an(a",
+          "decimal_pos": ".",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 939,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 944,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "FOR NANS O",
+          "from_pos": "er a",
+          "to_pos": "flat",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 947,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NEW `NDARR",
+          "from_pos": "y` i",
+          "to_pos": "ret",
+          "decimal_pos": "r",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY",
+          "line": 952,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "AY",
+          "line": 969,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 979,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "`FLOAT64`",
+          "from_pos": "etur",
+          "to_pos": "val",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 989,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ", AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1003,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ", AXIS=1)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1005,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "])",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1006,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1015,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "`FLOAT64`",
+          "from_pos": "etur",
+          "to_pos": "val",
+          "decimal_pos": "e",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1025,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1037,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "4.5,  2.5",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1038,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=1)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1039,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "2.])",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1040,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LONG AN AX",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1066,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "XIMUM VALU",
+          "from_pos": "s al",
+          "to_pos": "ng a",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1074,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1082,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RRAY",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1094,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "XIS=NONE)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1109,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1119,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RRAY",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1131,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1155,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1183,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1195,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1223,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "N() - A.ME",
+          "from_pos": "n()*",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1237,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION (SECO",
+          "from_pos": "d pa",
+          "to_pos": "s) c",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1244,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1249,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "SLICE CONT",
+          "from_pos": "ins",
+          "to_pos": "nly",
+          "decimal_pos": "a",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1265,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1288,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": ", AXIS=NON",
+          "from_pos": ", dd",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1296,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION (SECO",
+          "from_pos": "d pa",
+          "to_pos": "s) c",
+          "decimal_pos": "n",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1314,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "IF `A` IS",
+          "from_pos": "ot a",
+          "to_pos": "arr",
+          "decimal_pos": "y",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UE], DTYPE",
+          "line": 1319,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 1358,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "AXIS=0)",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 1466,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0003N\u0002\u0010E\u001b\u0000\u0000(+",
+          "from_pos": "\u0000\u0000\u0003o",
+          "to_pos": "7\u0005\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 2244,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001U\u0002\u007f\u0000A\u0001T\u0002}",
+          "from_pos": "\u0000NM{",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0004",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 2520,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u00062\u0004\u0017\ufffd\u0012\u0000\u0000Q",
+          "from_pos": "\u0017\u0000\u0000\u0006",
+          "to_pos": "\u0004\u0017\ufffd\u0012",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 2523,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "N\u0000\u0000_N\u0000\u0000]\ufffdJ",
+          "from_pos": "\u0000\ufffd\ufffd\u0000",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": VARIANCE",
+          "line": 2665,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000IR",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 2697,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0000\u0000>5J\u0001\u0000A\ufffd",
+          "from_pos": "\u0000?\ufffd\u0000",
+          "to_pos": "\u0000^cj",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 2865,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001T\u0002|\u0000\u0000M\ufffdV\u0001",
+          "from_pos": "\u0000\u0000\u0000\u0000",
+          "to_pos": "\ufffd\u0000\u0000A",
+          "decimal_pos": "U",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 2925,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001U\u00017\u0000_(\ufffd\u0000\u0000",
+          "from_pos": "\u0000\u0000\u0000\u0002",
+          "to_pos": "\u0000A\u0001T",
+          "decimal_pos": "\ufffd",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 2995,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\ufffd\u0000\u0000>\ufffdK\u0001\u0000\ufffd\ufffd",
+          "from_pos": "\u0000\ufffd\ufffd\u0001",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 3139,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001\u0000\u0000\u0000\u0000\u0000\u0007'\u0000\u0000",
+          "from_pos": "\ufffd \u0001\u0000",
+          "to_pos": "\u0000\u0000\u0000\ufffd",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 3253,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001Q\u00010A\u0001R\u00011\u0000",
+          "from_pos": "\ufffdP\u0000\u0000",
+          "to_pos": "\u0000\u0000\u0000\ufffd",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\u0003",
+          "line": 3691,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RR\u0000\u0003%\u0006'\ufffdH\u0001",
+          "from_pos": "Q\ufffd\u000f\u0000",
+          "to_pos": "\u0003%\u00060",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "R\u0000\u0005\ufffd'\ufffdH\u0001\u0000\u0000",
+          "line": 3818,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RR\u0000\u0003\u0018\u0006$\ufffdH\u0001",
+          "from_pos": "\u0000P\ufffd\u0001",
+          "to_pos": "\u0000\u0003\u0012\u0006",
+          "decimal_pos": "M",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "R\u0000\u0005\ufffd'\ufffdH\u0001\u0000\u0000",
+          "line": 3819,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RR\u0000\u0003\ufffd\u0005#\ufffdH\u0001",
+          "from_pos": "\u0000v\u0011",
+          "to_pos": "\u0000\t\u0016\u001a",
+          "decimal_pos": "\u0003",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ARR\u0000\u0003\ufffd\u0005#\ufffdH",
+          "line": 3822,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0001T\u0002}\u0000\u0000M?$\u0000",
+          "from_pos": "\u0000\u0000\u0000\u0000",
+          "to_pos": "o\u0001\u0000A",
+          "decimal_pos": "U",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ARR\u0000\u0003\ufffd\u0005#\ufffdH",
+          "line": 3882,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "\u0000\u0000\u0000\u0000\u0000\u0000\ufffdA\u0000\u0000",
+          "from_pos": "\u0000\u0000\u0000\u0000",
+          "to_pos": "\u0000\u0000\u0000\u0000",
+          "decimal_pos": "\u0000",
+          "data_type": "P",
+          "colhdg": "",
+          "text": "",
+          "record_format": "\ufffd\u0005\u0005\u0003X\u0001\u0005",
+          "line": 8121,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "\ufffdH\u0001\u0000\ufffd-\u0001\u0000\u0000\u0000",
+          "line": 2780
+        },
+        {
+          "field": "\ufffd\u0006=\u0001\u0006\ufffd\u0005",
+          "line": 6107
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "VED. IF `A",
+          "line": 988,
+          "keyword": "y, or if axis is None, a scalar"
+        },
+        {
+          "type": "OMIT",
+          "field": "VED. IF `A",
+          "line": 1024,
+          "keyword": "y, or if axis is None, a scalar"
+        },
+        {
+          "type": "SELECT",
+          "field": "UM OF SQUA",
+          "line": 1049,
+          "keyword": ". If `a` is not an array, a"
+        },
+        {
+          "type": "SELECT",
+          "field": "ATTEMPTED",
+          "line": 1050,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "=1)",
+          "line": 1069,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "=NONE)",
+          "line": 1146,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "`A` IS RE",
+          "line": 1165,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "`A` IS RE",
+          "line": 1205,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NE-PASS AL",
+          "line": 1235,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NAL",
+          "line": 1253,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N ALONG TH",
+          "line": 1298,
+          "keyword": "is, ignoring NaNs."
+        },
+        {
+          "type": "OMIT",
+          "field": "NE-PASS AL",
+          "line": 1305,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NAL",
+          "line": 1324,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ", 32-BIT I",
+          "line": 1429,
+          "keyword": "cast to 64-bit accumulator and"
+        },
+        {
+          "type": "SELECT",
+          "field": "UM OF THE",
+          "line": 1439,
+          "keyword": "y."
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4261,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4730,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4749,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4768,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4789,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4810,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4831,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4854,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4881,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4907,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4934,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4960,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 4987,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5015,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5042,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5068,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5095,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5121,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5148,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5175,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5200,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5225,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5250,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5275,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5304,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5333,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5362,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5389,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5416,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5443,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5468,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5497,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5528,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5557,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5587,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5615,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5645,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5673,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5712,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5749,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5777,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5805,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 5840,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 6089,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 6119,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 6151,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 6190,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0001\u0004\u0003\u0005\u0001\u0003\ufffd",
+          "line": 6231,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "X\bY\u0006\u0001\u0002\u0005\u0000\u0001\u0001",
+          "line": 6484,
+          "keyword": "xis_obj\u0000Py_tracefunc\u0000_unused1\u0000_unused2\u0000_unused3\u0000py_recursion_remaining\u0000_fileno\u0000lenfunc\u0000complex double\u0000PyArray_DIM\u0000PyExc_ModuleNotFoundError\u0000tp_getattr\u0000alignment\u0000__bn_nanf\u0000sq_item\u0000nansum_one_int64\u0000setitem\u0000nb_add\u0000ob_refcnt\u0000getitem\u0000fone_t\u0000sq_ass_item\u0000tracing\u0000sq_inplace_repeat\u0000tp_as_async\u0000nb_matrix_multiply\u0000m_methods\u0000nanargmin_one_float64\u0000sq_inplace_concat\u0000tp_is_gc\u0000byteorder\u0000_shortbuf\u0000nb_power\u0000am_anext\u0000done\u0000NPY_LONG\u0000sq_repeat\u0000PyArray_DESCR\u0000sq_concat\u0000PyImport_ImportModule\u0000tp_itemsize\u0000nanmax\u0000initproc\u0000PyDict_Size\u0000atmp\u0000PyGetSetDef\u0000tp_bases\u0000__off_t\u0000allnan\u0000_PyStackChunk\u0000nanvar_all_int32\u0000cancastscalarkindto\u0000_lock\u0000allnan_all_int32\u0000PyModule_Create2\u0000NPY_SHORT\u0000context_ver\u0000setattrofunc\u0000tp_dealloc\u0000exc_value\u0000nkwds\u0000_typeobject\u0000nb_floor_divide\u0000nb_inplace_lshift\u0000internal\u0000ndim_m2\u0000lv_tag\u0000complex float\u0000type_num\u0000_Py_Dealloc\u0000anynan_all_int64\u0000PyLongObject\u0000PyArray_CopySwapNFunc\u0000unbound\u0000PyErr_Print\u0000nanvar_all_int64\u0000nb_index\u0000npy_float32\u0000tp_richcompare\u0000PyArray_DIMS\u0000m_free\u0000__builtin_memset\u0000nanvar_one_float64\u0000_IO_write_end\u0000PyThreadState\u0000nb_remainder\u0000visitproc\u0000nanargmax_one_int64\u0000nansum_all_int64\u0000_Py_TrueStruct\u0000numpy\u0000nb_inplace_multiply\u0000bottleneck/src/reduce.c\u0000anynan_all_float32\u0000PyTupleObject\u0000nanmax_all_float32\u0000init_iter_one\u0000was_sq_slice\u0000NPY_USERDEF\u0000nanargmin_all_int32\u0000PyMemberDef\u0000interp\u0000cur_refcnt\u0000PyLong_FromLongLong\u0000ob_type\u0000tp_free\u0000getter\u0000reserved_null\u0000datastack_top\u0000PyModuleDef\u0000PyVarObject\u0000bound_gilstate\u0000npy_float64\u0000NPY_TIMEDELTA\u0000nanmedian_all_float64\u0000allnan_all_int64\u0000PyErr_Format\u0000nb_and\u0000PyArray_NonzeroFunc\u0000_err_stackitem\u0000allnan_one_float32\u0000elsize\u0000tp_call\u0000async_exc\u0000NPY_NTYPES_LEGACY\u0000npy_int32\u0000_Py_NoneStruct\u0000amean\u0000gilstate_counter\u0000cleared\u0000ob_item\u0000anynan_all_float64\u0000nanmax_all_int32\u0000nanmax_all_float64\u0000tp_str\u0000PyArray_BYTES\u0000was_sq_ass_slice\u0000PyExc_RuntimeError\u0000nonzero\u0000fall_t\u0000PyArray_SetItemFunc\u0000ternaryfunc\u0000nanargmin_all_int64\u0000ob_base\u0000PyTypeObject\u0000reduce_all\u0000delete_later\u0000NPY_CORDER\u0000tagPyArrayObject\u0000scalarkind\u0000_PyInterpreterFrame\u0000weakreflist\u0000sq_contains\u0000parse_args\u0000_chain\u0000allnan_one_int32\u0000NPY_HEAPSORT\u0000tp_setattr\u0000subarray\u0000nanmedian\u0000py_recursion_limit\u0000__bn_inff\u0000nanargmax_all_int64\u0000PyObject_GetAttrString\u0000malloc\u0000richcmpfunc\u0000unsigned char\u0000intern_strings\u0000mp_ass_subscript\u0000new_refcnt\u0000initialized\u0000_IO_lock_t\u0000PyArray_ScalarKindFunc\u0000astrides\u0000nanmax_all_int64\u0000tp_dictoffset\u0000err_code\u0000PyObject_TypeCheck\u0000PyNumberMethods\u0000PyMethodDef\u0000tp_finalize\u0000tp_watched\u0000m_init\u0000nansum_all_float32\u0000mp_subscript\u0000tp_clear\u0000Py_INCREF\u0000nanmean_all_int32\u0000_status\u0000allnan_one_int64\u0000has_ddof\u0000nanargmin_doc\u0000PyModuleDef_Base\u0000finalizing\u0000nb_bool\u0000PyArray_ArgSortFunc\u0000previous\u0000NPY_USHORT\u0000PyCapsule_Type\u0000cast\u0000NPY_BYTE\u0000tp_init\u0000ss_all_float32\u0000objobjargproc\u0000ob_size\u0000slow_module\u0000tp_dict\u0000Py_XDECREF\u0000_IO_write_ptr\u0000tp_as_mapping\u0000setattrfunc\u0000pystr_ddof\u0000_py_trashcan\u0000idim\u0000nansum_all_float64\u0000nanstd_all_int32\u0000binaryfunc\u0000nanmax_doc\u0000nanmean_all_int64\u0000names\u0000nanmean_one_float64\u0000PyArray_FillFunc\u0000fone_int32\u0000PyArray_ITEMSIZE\u0000nanmedian_all_float32\u0000bf_getbuffer\u0000nanmin_one_int32\u0000vectorcallfunc\u0000PyArray_CHKFLAGS\u0000getiterfunc\u0000ssizeargfunc\u0000ss_all_float64\u0000exc_state\u0000ss_all_int32\u0000dotfunc\u0000descrsetfunc\u0000median_one_int32\u0000Py_TYPE\u0000anyorder\u0000descrgetfunc\u0000__builtin_sqrtf\u0000PyEval_RestoreThread\u0000nb_inplace_add\u0000item_size\u0000nb_reserved\u0000nanstd_all_int64\u0000NPY_STRING\u0000on_delete\u0000NPY_ULONGLONG\u0000NPY_LONGDOUBLE\u0000_IO_save_base\u0000npy_bool\u0000m_index\u0000datastack_chunk\u0000nansum_all_int32\u0000fone_int64\u0000PyArray_FLAGS\u0000reprfunc\u0000nanmin_doc\u0000reduce_def\u0000nits\u0000cancastto\u0000NpyAuxData_tag\u0000/project\u0000fill\u0000NPY_CPU_UNKNOWN_ENDIAN\u0000nanargmax_all_float32\u0000ss_all_int64\u0000npy_hash_t\u0000PyArray_NDIM\u0000castdict\u0000nanmedian_one_float32\u0000pystr_a\u0000copyswapn\u0000_save\u0000NPY_CDOUBLE\u0000Py_hash_t\u0000NPY_UNICODE\u0000anynan_one_float32\u0000__uint64_t\u0000a_obj\u0000NpyAuxData_CloneFunc\u0000nkwds_found\u0000PyObject\u0000PyArray_ArgFunc\u0000nb_xor\u0000nb_negative\u0000NPY_STABLESORT\u0000PyUnicode_InternFromString\u0000nanmin_one_int64\u0000NPY_MERGESORT\u0000PyCallable_Check\u0000PyArray_TYPE\u0000median_one_int64\u0000slot\u0000slow\u0000__ssize_t\u0000npy_uint8\u0000_longobject\u0000am_send\u0000NpyAuxData\u0000PyDataType_ELSIZE\u0000nanmedian_one_float64\u0000m_traverse\u0000reduce_methods\u0000nanmin_all_float32\u0000PyExc_TypeError\u0000PyBufferProcs\u0000NpyAuxData_FreeFunc\u0000anynan_one_float64\u0000ml_flags\u0000tp_new\u0000m_name\u0000allnan_doc\u0000NPY_TYPES\u0000npy_uint32\u0000PyModuleDef_Slot\u0000nb_inplace_true_divide\u0000_PyErr_StackItem\u0000destructor\u0000PyCFunction\u0000nanmean_all_float32\u0000PyEval_SaveThread\u0000_IO_save_end\u0000length_inv\u0000NPY_FLOAT\u0000_PyArray_Descr\u0000tp_del\u0000NPY_CFLOAT\u0000tp_name\u0000closure\u0000nanmin_all_float64\u0000clone\u0000c_profilefunc\u0000tp_as_sequence\u0000long_value\u0000tp_as_buffer\u0000nb_inplace_and\u0000nanstd_one_float32\u0000recursion_headroom\u0000short unsigned int\u0000npy_uint64\u0000async_gen_firstiter\u0000what_event\u0000_PyArray_LegacyDescr\u0000tp_alloc\u0000PyArray_FillWithScalarFunc\u0000complex long double\u0000NPY_LONGLONG\u0000suboffsets\u0000count\u0000nanmean_all_float64\u0000reduce_doc\u0000PYGEN_ERROR\u0000ss_one_int64\u0000c_recursion_remaining\u0000astride\u0000__off64_t\u0000PyArray_ArrFuncs\u0000_Py_IsImmortal\u0000nanstd_all_float32\u0000_IO_read_base\u0000m_clear\u0000PyErr_Clear\u0000_arr_descr\u0000nanargmax_all_int32\u0000finalized\u0000nanargmax\u0000NPY_NTYPES_ABI_COMPATIBLE\u0000_IO_buf_end\u0000delete_nesting\u0000NPY_DOUBLE\u0000ss_one_float32\u0000NPY_DATETIME\u0000tp_getattro\u0000NPY_ULONG\u0000allocfunc\u0000c_traceobj\u0000mem_handler\u0000PyType_IsSubtype\u0000m_copy\u0000_buffer_info\u0000_mode\u0000tp_methods\u0000PyArray_DescrProto\u0000_IO_write_base\u0000nansum_one_float64\u0000init_iter_all\u0000tp_mro\u0000native_thread_id\u0000PyExc_ImportError\u0000PyArray_GetItemFunc\u0000PyArray_VectorUnaryFunc\u0000nanstd_all_float64\u0000nb_or\u0000format\u0000unaryfunc\u0000_IO_marker\u0000ss_doc\u0000ss_one_float64\u0000nb_float\u0000PyDict_GetItem\u0000PyExc_ValueError\u0000PYGEN_RETURN\u0000traverseproc\u0000context\u0000NPY_ANYORDER\u0000tp_vectorcall_offset\u0000asum\u0000inquiry\u0000NPY_NOTYPE\u0000nb_invert\u0000ml_doc\u0000_IO_codecvt\u0000ml_name\u0000allnan_one_float64\u0000_import_array\u0000uintptr_t\u0000NPY_CPU_BIG\u0000ddof_obj\u0000Py_DECREF\u0000tp_as_number\u0000PySendResult\u0000anynan_doc\u0000PyArray_STRIDES\u0000PyAsyncMethods\u0000nanargmax_doc\u0000tp_weaklistoffset\u0000current_frame\u0000nanmin_one_float32\u0000PyFrameObject\u0000ml_meth\u0000readonly\u0000npy_int64\u0000tp_doc\u0000getattrofunc\u0000_PyCFrame\u0000PyArray_SHAPE\u0000a_ravel\u0000median_all_int64\u0000nanargmax_one_float32\u0000nanvar_one_int32\u0000nanmean\u0000fall_float32\u0000ss_one_int32\u0000PySequenceMethods\u0000nanstd_doc\u0000dimensions\u0000on_delete_data\u0000NPY_INT\u0000tp_weaklist\u0000_IO_buf_base\u0000dtype\u0000newfunc\u0000hashfunc\u0000PyArray_DATA\u0000getattrfunc\u0000nanargmin\u0000istride\u0000_IO_read_end\u0000nanargmax_all_float64\u0000pystr_axis\u0000PyArray_SortFunc\u0000NPY_VSTRING\u0000_IO_FILE\u0000tagPyArrayObject_fields\u0000_IO_wide_data\u0000nanvar_one_float32\u0000NPY_FORTRANORDER\u0000nanargmin_all_float32\u0000PyArray_CopySwapFunc\u0000shape\u0000self\u0000tp_hash\u0000nanargmax_one_int32\u0000GNU C17 14.2.1 20250110 (Red Hat 14.2.1-7) -mtune=generic -march=x86-64 -g -O3 -O2 -fno-strict-overflow -fPIC\u0000nanargmax_one_float64\u0000nanvar_one_int64\u0000ndim\u0000ssizeobjargproc\u0000fall_float64\u0000tp_vectorcall\u0000tp_version_tag\u0000c_tracefunc\u0000tuple\u0000npy_intp\u0000__pad5\u0000fall_int32\u0000getbufferproc\u0000anynan_all_int32\u0000root_cframe\u0000PyArray_DotFunc\u0000copyswap\u0000total_length\u0000PyFloat_FromDouble\u0000_markers\u0000setter\u0000previous_item\u0000am_await\u0000nanargmin_one_int32\u0000nansum_one_float32\u0000sendfunc\u0000scanfunc\u0000tp_members\u0000tp_traverse\u0000nanargmin_all_float64\u0000mp_length\u0000PyObject_Call\u0000am_aiter\u0000nanmean_one_float32\u0000nb_inplace_xor\u0000tp_subclasses\u0000nb_inplace_power\u0000NPY_KEEPORDER\u0000tp_setattro\u0000__int32_t\u0000freefunc\u0000__uint32_t\u0000nb_multiply\u0000NPY_BOOL\u0000fall_int64\u0000m_base\u0000nb_true_divide\u0000nanmin_one_float64\u0000NPY_VOID\u0000fillwithscalar\u0000nanmax_one_int32\u0000tp_getset\u0000argsort\u0000PyArray_FromStrFunc\u0000nanvar_doc\u0000nanmin_all_int32\u0000Py_SIZE\u0000tp_iternext\u0000PyArray_RUNTIME_VERSION\u0000nanargmin_one_int64\u0000sq_length\u0000median_all_int32\u0000nb_lshift\u0000ob_refcnt_split\u0000tp_descr_get\u0000length_ddof_inv\u0000tp_iter\u0000nanvar_all_float32\u0000nb_inplace_floor_divide\u0000NPY_UINT\u0000PyArray_ScanFunc\u0000NPY_UBYTE\u0000amax\u0000tp_base\u0000NPY_CHAR\u0000nb_rshift\u0000datastack_limit\u0000_freeres_buf\u0000NPY_QUICKSORT\u0000nanmean_doc\u0000exc_info\u0000bf_releasebuffer\u0000async_gen_finalizer\u0000PyArray_API\u0000long long unsigned int\u0000_cur_column\u0000releasebufferproc\u0000Py_IS_TYPE\u0000nanmax_one_int64\u0000nb_inplace_remainder\u0000nanmin_all_int64\u0000m_slots\u0000_object\u0000typeobj\u0000error\u0000PyErr_ExceptionMatches\u0000nanmedian_doc\u0000PyCapsule_GetPointer\u0000nb_absolute\u0000_IO_backup_base\u0000nanmean_one_int32\u0000nanvar_all_float64\u0000_IO_read_ptr\u0000nanmax_one_float32\u0000coroutine_origin_tracking_depth\u0000current_exception\u0000_freeres_list\u0000_PyLongValue\u0000nb_inplace_or\u0000tp_repr\u0000allnan_all_float32\u0000tp_cache\u0000nargs\u0000nanstd_one_float64\u0000Py_ssize_t\u0000_old_offset\u0000nb_inplace_rshift\u0000fromstr\u0000c_profileobj\u0000nb_positive\u0000long long int\u0000trash\u0000_flags2\u0000PyTuple_GET_SIZE\u0000PyMappingMethods\u0000nanstd_one_int32\u0000NPY_CPU_LITTLE\u0000nanmean_one_int64\u0000nanmax_one_float64\u0000tp_flags\u0000nansum_doc\u0000PyArray_STRIDE\u0000c_api\u0000ob_digit\u0000NPY_OBJECT\u0000nanvar\u0000PyArray_CompareFunc\u0000allnan_all_float64\u0000nb_subtract\u0000anynan_one_int32\u0000NPY_CLONGDOUBLE\u0000PyInit_reduce\u0000__bint\u0000reducer\u0000anynan_one_int64\u0000nanstd\u0000_NPY_SORT_UNDEFINED\u0000fone_float32\u0000PyErr_SetString\u0000c_metadata\u0000iternextfunc\u0000nanstd_one_int64\u0000_stack_chunk\u0000_former_flags\u0000nb_int\u0000nansum\u0000tp_descr_set\u0000extreme\u0000npy_double\u0000anynan\u0000Py_buffer\u0000nansum_one_int32\u0000active\u0000NPY_HALF\u0000short int\u0000nanmin\u0000sqrt\u0000prev\u0000_vtable_offset\u0000PyErr_Occurred\u0000nb_inplace_matrix_multiply\u0000indices\u0000tp_basicsize\u0000nb_inplace_subtract\u0000_Py_FalseStruct\u0000nanargmin_one_float32\u0000nb_divmod\u0000PYGEN_NEXT\u0000objobjproc\u0000PyInterpreterState\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffd4\u0001\u0000\u0000\u0000\u0000\u0000\ufffd4\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000P\ufffd4\u0001\u0000\u0000\u0000\u0000\u0000\ufffd5\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000\\"
+        },
+        {
+          "type": "SELECT",
+          "field": "O\u001f\u0001\u0000\u0000\u0000\u0000\u0000\ufffd",
+          "line": 6533,
+          "keyword": "\u0001\u0000\u0000\u0000\u0000\u0000\ufffd\u001f\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffd\u001f\u0001\u0000\u0000\u0000\u0000\u0000H \u0001\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffdH \u0001\u0000\u0000\u0000\u0000\u0000] \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S] \u0001\u0000\u0000\u0000\u0000\u0000\ufffd \u0001\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffd\ufffd \u0001\u0000\u0000\u0000\u0000\u0000\ufffd \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffd \u0001\u0000\u0000\u0000\u0000\u0000S!\u0001\u0000\u0000\u0000\u0000\u0000\u0004\u0000\ufffd\u0001U\ufffdS!\u0001\u0000\u0000\u0000\u0000\u0000[!\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000"
+        },
+        {
+          "type": "SELECT",
+          "field": "\ufffd\u001f\u0001\u0000\u0000\u0000\u0000\u0000\ufffd",
+          "line": 6629,
+          "keyword": "\u0000\u0000\u0000] \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S] \u0001\u0000\u0000\u0000\u0000\u0000a \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000Pa \u0001\u0000\u0000\u0000\u0000\u0000s \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\ufffd \u0001\u0000\u0000\u0000\u0000\u0000\ufffd \u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000SS!\u0001\u0000\u0000\u0000\u0000\u0000[!\u0001\u0000\u0000\u0000\u0000\u0000\u0001\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000"
+        },
+        {
+          "type": "SELECT",
+          "field": "\u0000\u0000\u0000\u0000\u0000\u0000\ufffdS\u0000\u0000",
+          "line": 8126,
+          "keyword": "\u0000\u0000\u0000\u0000\u0000\u0000%r\u0000\u0000\u0000\u0000\u0000\u0000)r\u0000\u0000\u0000\u0000\u0000\u0000,r\u0000\u0000\u0000\u0000\u0000\u0000,r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00002r\u0000\u0000\u0000\u0000\u0000\u0000Xr\u0000\u0000\u0000\u0000\u0000\u0000`r\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\ufffdt\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0004t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0004t\u0000\u0000\u0000\u0000\u0000\u0000\u0012t\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffds\u0000\u0000\u0000\u0000\u0000\u0000\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\bt\u0000\u0000\u0000\u0000\u0000\u0000\u0012t\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000%u\u0000\u0000\u0000\u0000\u0000\u0000)u\u0000\u0000\u0000\u0000\u0000\u0000,u\u0000\u0000\u0000\u0000\u0000\u0000,u\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00002u\u0000\u0000\u0000\u0000\u0000\u0000Nu\u0000\u0000\u0000\u0000\u0000\u0000`u\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdw\u0000\u0000\u0000\u0000\u0000\u0000\ufffdy\u0000\u0000\u0000\u0000\u0000\u0000\ufffdy\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0002w\u0000\u0000\u0000\u0000\u0000\u0000\u0006w\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0002w\u0000\u0000\u0000\u0000\u0000\u0000\u0006w\u0000\u0000\u0000\u0000\u0000\u0000\u0014w\u0000\u0000\u0000\u0000\u0000\u0000\ufffdy\u0000\u0000\u0000\u0000\u0000\u0000\ufffdy\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\ufffdv\u0000\u0000\u0000\u0000\u0000\u0000\u0002w\u0000\u0000\u0000\u0000\u0000\u0000"
+        }
+      ],
+      "join_specs": [
+        {
+          "line": 25,
+          "keyword": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdH\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdf\u000f\u001fD\u0000\u0000H\ufffd\ufffd1\ufffd\ufffd\ufffd\ufffd\u0004\u0000\u0000H\ufffd\ufffd\ufffdw\ufffd\ufffd\ufffd\u000f\u001fD\u0000\u0000H\ufffd\ufffd\bH9\ufffd\u000f\ufffd\ufffd\ufffd\ufffd\ufffd1\ufffd\ufffdP\ufffd\ufffd\ufffd\u000f\u001f@\u0000I\ufffd\u0010H\ufffdS\bH\ufffdI\ufffd\ufffd\ufffd;\ufffd\ufffd\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000H\ufffd\u0005\ufffdy\u0001\u0000\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000H\ufffd\ufffd\bH\ufffd\u0005\ufffd\ufffd\u0001\u0000\ufffdw\u0018H\ufffd\u007f \ufffd\ufffd\ufffd\u0004\u0000\u0000H\ufffd\ufffdt\u0013H\ufffd\u0005ly\u0001\u0000H\ufffd\ufffd\b\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000H\ufffd\u0005yy\u0001\u0000H\ufffd\ufffd\b\ufffd\u000f\u001f@\u0000AVH\ufffd\ufffd\ufffd\u0001\u0000\u0000\u00001\ufffdAUATUSH\ufffd\ufffdP\u0006\u0000\u0000H\ufffd\ufffd\ufffdO\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdL\ufffdL$0H\ufffd\ufffdH\ufffdD$(I9\ufffd\u000f\ufffd"
+        },
+        {
+          "line": 339,
+          "keyword": "\u0000H\ufffd\ufffd$h\u0006\u0000\u00001\ufffdf\u000f\ufffd\ufffd1\ufffdH\ufffdL$@H\ufffd\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000f\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\ufffd\u000f\u0010\u0002f\u000f.\ufffdz\b\ufffd\u000fX\ufffdH\ufffd\ufffd\u0001H\ufffd\ufffd\u0001H\u0001\ufffdH9\ufffdu\ufffdf\u000f(\ufffdL9\ufffd\u000f\ufffd\ufffd\u0001\u0000\u0000\ufffdC\u000f\u0011\u0014\ufffdL\ufffdt$PM\ufffd\ufffd\u000f\ufffd\ufffd\u0000\u0000\u0000L\ufffd\ufffd$h\u0006\u0000\u0000H\ufffd\ufffdL\ufffd\ufffdE1\ufffdL\ufffd\ufffd\ufffd9ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000H\u000f\ufffd\ufffd8\u0002\u0000\u0000H\ufffd\ufffd\u0001H\ufffd@8\u0000\u0000\u0000\u0000A\ufffd\u0001\u0000\u0000\u0000H\ufffd\ufffd\bH)\ufffdH\ufffd\ufffd\ufffd\u000f\ufffd\u0005\u0001\u0000\u0000I\ufffd\ufffdH\ufffd\ufffd8\u0004\u0000\u0000H\ufffdP8H\ufffd\ufffd\u0001H9\ufffd}\ufffdE\ufffd\ufffd\u000f\ufffd\ufffd\u0001\u0000\u0000L\ufffdd$PH\u0003\ufffd\ufffdh\u0002\u0000\u0000H\ufffd\ufffd\u0001H\ufffd\ufffd$h\u0006\u0000\u0000H\ufffdT\ufffdhI\ufffd\ufffd\u0001L\ufffdl$XM9\ufffd\u000f\ufffd\ufffd\ufffd\ufffd\ufffdH\ufffdL$\u0010H\ufffd\\$\u0018H\ufffd\ufffd\ufffdC\u0015\ufffd\ufffdH\ufffd\u0108\u0006\u0000\u0000H\ufffd\ufffd[]A\\A]A^A_\ufffdf\u000f\u001fD\u0000\u0000\ufffds\u0018H\ufffd{ H\ufffdD$\bH\ufffd\u0005\ufffd\ufffd\u0000\u0000\ufffd\ufffd\ufffd\u0004\u0000\u0000H\ufffdL$\bH\ufffd\ufffd~\ufffd\ufffd\u000f\u0010\u0005\ufffd[\u0000\u0000\ufffd\u0001t)\ufffdA\u000f\u0011\u0007\ufffd\u0001\u0000\u0000\u0000H\ufffd\ufffd\u0001t\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\u000f\u001f\u0000\ufffdA\u000f\u0011\u0004\ufffd\ufffdA\u000f\u0011D\ufffd\bH\ufffd\ufffd\u0002H9\ufffdu\ufffd\ufffdj\ufffd\ufffd\ufffd\u000f\u001fD\u0000\u0000HcJ \ufffd\ufffd\ufffd\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000H\ufffdD$P\ufffd\ufffd\ufffd\ufffdH\ufffd\ufffd$h\u0006\u0000\u0000\ufffd#\ufffd\ufffd\ufffdf.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000f\u000f\ufffd\ufffd1\ufffdf\u000f\ufffd\ufffd\ufffdH\u000f*\ufffd\ufffd\u000f^\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\ufffd\u000f\u0010\u0007f\u000f.\ufffdz"
+        },
+        {
+          "line": 346,
+          "keyword": "\u0000H\ufffd\ufffd$h\u0006\u0000\u00001\ufffdf\u000f\ufffd\ufffd1\ufffdH\ufffdL$@H\ufffd\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000f\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\ufffd\u000f\u0010\u0002\u000f.\ufffdz\b\ufffd\u000fX\ufffdH\ufffd\ufffd\u0001H\ufffd\ufffd\u0001H\u0001\ufffdH9\ufffdu\ufffd\u000f(\ufffdL9\ufffd\u000f\ufffd\ufffd\u0001\u0000\u0000\ufffdC\u000f\u0011\u0014\ufffdL\ufffdt$PM\ufffd\ufffd\u000f\ufffd\ufffd\u0000\u0000\u0000L\ufffd\ufffd$h\u0006\u0000\u0000H\ufffd\ufffdL\ufffd\ufffdE1\ufffdL\ufffd\ufffd\ufffd;ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000f\ufffdH\u000f\ufffd\ufffd8\u0002\u0000\u0000H\ufffd\ufffd\u0001H\ufffd@8\u0000\u0000\u0000\u0000A\ufffd\u0001\u0000\u0000\u0000H\ufffd\ufffd\bH)\ufffdH\ufffd\ufffd\ufffd\u000f\ufffd\u0005\u0001\u0000\u0000I\ufffd\ufffdH\ufffd\ufffd8\u0004\u0000\u0000H\ufffdP8H\ufffd\ufffd\u0001H9\ufffd}\ufffdE\ufffd\ufffd\u000f\ufffd}\u0001\u0000\u0000L\ufffdd$PH\u0003\ufffd\ufffdh\u0002\u0000\u0000H\ufffd\ufffd\u0001H\ufffd\ufffd$h\u0006\u0000\u0000H\ufffdT\ufffdhI\ufffd\ufffd\u0001L\ufffdl$XM9\ufffd\u000f\ufffd\ufffd\ufffd\ufffd\ufffdH\ufffdL$\u0010H\ufffd\\$\u0018H\ufffd\ufffd\ufffd\u0010\ufffd\ufffdH\ufffd\u0108\u0006\u0000\u0000H\ufffd\ufffd[]A\\A]A^A_\ufffdf\u000f\u001fD\u0000\u0000\ufffds\u0018H\ufffd{ H\ufffdD$\bH\ufffd\u0005\ufffd\ufffd\u0000\u0000\ufffd\ufffd\ufffd\u0004\u0000\u0000H\ufffdL$\bH\ufffd\ufffd~\ufffd\ufffd\u000f\u0010\u0005\ufffdV\u0000\u0000\ufffd\u0001t)\ufffdA\u000f\u0011\u0007\ufffd\u0001\u0000\u0000\u0000H\ufffd\ufffd\u0001t\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\u000f\u001f\u0000\ufffdA\u000f\u0011\u0004\ufffd\ufffdA\u000f\u0011D\ufffd\u0004H\ufffd\ufffd\u0002H9\ufffdu\ufffd\ufffdj\ufffd\ufffd\ufffd\u000f\u001fD\u0000\u0000HcJ \ufffd\ufffd\ufffd\ufffd\u000f\u001f\ufffd\u0000\u0000\u0000\u0000H\ufffdD$P\ufffd\ufffd\ufffd\ufffdH\ufffd\ufffd$h\u0006\u0000\u0000\ufffd#\ufffd\ufffd\ufffdf.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000f\u000f\ufffd\ufffd1\ufffdf\u000f\ufffd\ufffd\ufffdH\u000f*\ufffd\ufffd\u000f^\ufffdff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000ff.\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\u0000\u000f\u001f\ufffd\u0000\u0000\u0000\u0000\ufffd\u000f\u0010\u0007\u000f.\ufffdz"
+        },
+        {
+          "line": 2631,
+          "keyword": "\u0000z<\u0000\u0000="
+        },
+        {
+          "line": 2848,
+          "keyword": ""
+        },
+        {
+          "line": 4571,
+          "keyword": ""
+        },
+        {
+          "line": 4597,
+          "keyword": ""
+        },
+        {
+          "line": 4710,
+          "keyword": "}\u0001\u0005"
+        },
+        {
+          "line": 6104,
+          "keyword": ""
+        },
+        {
+          "line": 6134,
+          "keyword": ""
+        }
+      ],
+      "total_fields": 70,
+      "key_field_names": [
+        "\ufffdH\u0001\u0000\ufffd-\u0001\u0000\u0000\u0000",
+        "\ufffd\u0006=\u0001\u0006\ufffd\u0005"
+      ]
+    },
+    "COMMON": {
+      "member": "COMMON",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEST_TEMPLATE": {
+      "member": "TEST_TEMPLATE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 16,
+          "file_name": "(BAR COMP",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 26,
+          "file_name": "(BAR COMP",
+          "file_type": "A",
+          "designation": "R",
+          "mode": "",
+          "format": ")",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "_WARNINGS": {
+      "member": "_WARNINGS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": "INE SOME C",
+          "file_type": "U",
+          "designation": "S",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
