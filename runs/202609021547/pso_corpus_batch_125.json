@@ -1,0 +1,1709 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 125,
+  "total_batches": 477,
+  "members_in_batch": [
+    "__INIT__",
+    "PARSER",
+    "VERSION_MATCHING_RULES",
+    "CLIENT",
+    "ER",
+    "RELEASE",
+    "METHOD",
+    "NON_SECURE_GENERATE",
+    "NMAP",
+    "SETS"
+  ],
+  "pso_corpus": {
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 11,
+          "file_name": "RAMEPLAYLI",
+          "file_type": "S",
+          "designation": "T",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 52,
+          "name": "ATERANGE\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 53,
+          "name": "ATERANGELIST\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 2
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "PARSER": {
+      "member": "PARSER",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": ", datet",
+          "to_length": "ime, ti",
+          "decimal": "m",
+          "data_type": "E",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "VERSION_MATCHING_RULES": {
+      "member": "VERSION_MATCHING_RULES",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATACLASSES IMPO",
+          "ds_type": "D",
+          "from_pos": "ataclas",
+          "to_length": "s",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIENT": {
+      "member": "CLIENT",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 3,
+          "file_name": "LAG: INT",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "ER": {
+      "member": "ER",
+      "type": "DDS_PF",
+      "record_formats": [
+        {
+          "name": "OR: INT",
+          "line": 37
+        },
+        {
+          "name": ": INT",
+          "line": 39
+        },
+        {
+          "name": ": INT",
+          "line": 76
+        },
+        {
+          "name": ": INT",
+          "line": 85
+        },
+        {
+          "name": "_SET: INT",
+          "line": 105
+        },
+        {
+          "name": "Y: INT",
+          "line": 117
+        },
+        {
+          "name": "_TABLE: IN",
+          "line": 134
+        },
+        {
+          "name": "OM_PIPE: I",
+          "line": 142
+        },
+        {
+          "name": "ROR: INT",
+          "line": 145
+        },
+        {
+          "name": "ANSACTION:",
+          "line": 174
+        },
+        {
+          "name": ": INT",
+          "line": 177
+        },
+        {
+          "name": ": INT",
+          "line": 196
+        },
+        {
+          "name": ": INT",
+          "line": 233
+        },
+        {
+          "name": "MSG: INT",
+          "line": 268
+        },
+        {
+          "name": "_STRING: I",
+          "line": 271
+        },
+        {
+          "name": "GS: INT",
+          "line": 289
+        },
+        {
+          "name": ": INT",
+          "line": 298
+        },
+        {
+          "name": "OW: INT",
+          "line": 330
+        },
+        {
+          "name": "_TYPE: INT",
+          "line": 335
+        },
+        {
+          "name": "CE_DOESNT_",
+          "line": 389
+        },
+        {
+          "name": "TITION_FUN",
+          "line": 439
+        },
+        {
+          "name": ": INT",
+          "line": 448
+        },
+        {
+          "name": "T_FUNC_ERR",
+          "line": 453
+        },
+        {
+          "name": "ROR: INT",
+          "line": 462
+        },
+        {
+          "name": ": INT",
+          "line": 481
+        },
+        {
+          "name": "OR: INT",
+          "line": 482
+        },
+        {
+          "name": "OR: INT",
+          "line": 505
+        },
+        {
+          "name": "OR: INT",
+          "line": 507
+        },
+        {
+          "name": "ED: INT",
+          "line": 539
+        },
+        {
+          "name": "UNCATED: I",
+          "line": 567
+        },
+        {
+          "name": "EPOSITORY_",
+          "line": 662
+        },
+        {
+          "name": "EAD_ONLY_T",
+          "line": 699
+        },
+        {
+          "name": "_CANT_RUN_",
+          "line": 709
+        },
+        {
+          "name": "Y_TRANSACT",
+          "line": 713
+        },
+        {
+          "name": "DED: INT",
+          "line": 721
+        },
+        {
+          "name": "OR: INT",
+          "line": 723
+        },
+        {
+          "name": "UPT: INT",
+          "line": 724
+        },
+        {
+          "name": "D: INT",
+          "line": 726
+        },
+        {
+          "name": "GED_WHEN_G",
+          "line": 745
+        },
+        {
+          "name": "GED_WHEN_O",
+          "line": 746
+        },
+        {
+          "name": "EAD_TIMEOU",
+          "line": 779
+        }
+      ],
+      "fields": [
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 19,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 32,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": null,
+          "line": 35,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 43,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 45,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 46,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 59,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: INT",
+          "line": 106,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: INT",
+          "line": 107,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_SET: INT",
+          "line": 108,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "Y: INT",
+          "line": 119,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "D: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "Y: INT",
+          "line": 125,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ND: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TABLE: IN",
+          "line": 138,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RGE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TABLE: IN",
+          "line": 141,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OM_PIPE: I",
+          "line": 143,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 150,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 155,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 171,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RIABLE: IN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ANSACTION:",
+          "line": 175,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 187,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 189,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 206,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "R: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 209,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TCH_TABLE_",
+          "from_pos": "EF:",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 217,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 218,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 221,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TALOG: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 254,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RATIONS: I",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: I",
+          "line": 273,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: I",
+          "line": 278,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_STRING: I",
+          "line": 285,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 316,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 320,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 321,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 322,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": ": INT",
+          "line": 323,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "L_ERR: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: INT",
+          "line": 344,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: INT",
+          "line": 349,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: INT",
+          "line": 367,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: INT",
+          "line": 382,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "_TYPE: INT",
+          "line": 385,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 400,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 401,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 404,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 406,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 411,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 414,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 415,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "BLE: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "CE_DOESNT_",
+          "line": 426,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL_FIELDS_",
+          "from_pos": "N_PF",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T_FUNC_ERR",
+          "line": 454,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RTITIONED:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "T_FUNC_ERR",
+          "line": 457,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 469,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "DED: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 474,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ILED: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "ROR: INT",
+          "line": 479,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OR: INT",
+          "line": 490,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TE_IN_THE_",
+          "from_pos": "AST:",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OR: INT",
+          "line": 519,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TEMENT: IN",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OR: INT",
+          "line": 522,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "TION_CTX:",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "OR: INT",
+          "line": 526,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "ND_STMT_EN",
+          "from_pos": "INE:",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UNCATED: I",
+          "line": 581,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UNCATED: I",
+          "line": 621,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "LL: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "UNCATED: I",
+          "line": 636,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EPOSITORY_",
+          "line": 676,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RTITION_CO",
+          "from_pos": "MENT",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAD_ONLY_T",
+          "line": 700,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "EAD_ONLY_T",
+          "line": 702,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "RENT: INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "D: INT",
+          "line": 731,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "INT",
+          "from_pos": "",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "D: INT",
+          "line": 734,
+          "phi_tagged": false,
+          "phi_category": null
+        },
+        {
+          "name": "NGE_USER_E",
+          "from_pos": "ROR:",
+          "to_pos": "",
+          "decimal_pos": "",
+          "data_type": "A",
+          "colhdg": "",
+          "text": "",
+          "record_format": "GED_WHEN_O",
+          "line": 776,
+          "phi_tagged": false,
+          "phi_category": null
+        }
+      ],
+      "key_fields": [
+        {
+          "field": "ET_OVERFLO",
+          "line": 272
+        },
+        {
+          "field": ": INT",
+          "line": 336
+        },
+        {
+          "field": ": INT",
+          "line": 641
+        }
+      ],
+      "unique": false,
+      "pfile": null,
+      "format_source": null,
+      "select_omit": [
+        {
+          "type": "OMIT",
+          "field": "R: INT",
+          "line": 42,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R_KEY: INT",
+          "line": 81,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "WED: INT",
+          "line": 122,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "F_ORDER: I",
+          "line": 144,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "H_LOGS: IN",
+          "line": 168,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R_READING_",
+          "line": 213,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "RDS: INT",
+          "line": 235,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TRUCT: INT",
+          "line": 245,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "YNTAX: INT",
+          "line": 259,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TATEMENT:",
+          "line": 262,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": INT",
+          "line": 275,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MMENT: INT",
+          "line": 313,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "E: INT",
+          "line": 319,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "T: INT",
+          "line": 328,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "IZE_ROWS_T",
+          "line": 369,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TEM_TABLE:",
+          "line": 386,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "ESNT_EXIST",
+          "line": 432,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T_ALLOWED_",
+          "line": 442,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ING_ERROR:",
+          "line": 444,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "T_IN_LIST_",
+          "line": 446,
+          "keyword": "t"
+        },
+        {
+          "type": "OMIT",
+          "field": "NS_ERROR:",
+          "line": 450,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R: INT",
+          "line": 451,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_EXISTENT",
+          "line": 458,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_SAME_NO:",
+          "line": 461,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "T_PARTITIO",
+          "line": 463,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_NO_PARTI",
+          "line": 466,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_FAILURE:",
+          "line": 472,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T_POSITIVE",
+          "line": 487,
+          "keyword": "nt"
+        },
+        {
+          "type": "SELECT",
+          "field": "YNTAX_WITH",
+          "line": 492,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_IS_NOT_A",
+          "line": 500,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "R: INT",
+          "line": 523,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NLY: INT",
+          "line": 542,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ACTION_ROL",
+          "line": 543,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "CHEMA_ERRO",
+          "line": 545,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MMENT: INT",
+          "line": 548,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "MMENT: INT",
+          "line": 549,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_FUNC_FIE",
+          "line": 574,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TEM_TABLE:",
+          "line": 588,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TEM_VARIAB",
+          "line": 591,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "TEM_FUNCTI",
+          "line": 592,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_PREVENTS",
+          "line": 596,
+          "keyword": "_FORMAT: int"
+        },
+        {
+          "type": "SELECT",
+          "field": "YNTAX_NO_R",
+          "line": 598,
+          "keyword": "t"
+        },
+        {
+          "type": "OMIT",
+          "field": "N_PREVENTS",
+          "line": 602,
+          "keyword": "_DIRECT: int"
+        },
+        {
+          "type": "OMIT",
+          "field": "MMENT: INT",
+          "line": 605,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "N_PREVENTS",
+          "line": 611,
+          "keyword": "G_BIN: int"
+        },
+        {
+          "type": "SELECT",
+          "field": "ERT_IGNORE",
+          "line": 630,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ERT_SELECT",
+          "line": 631,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "ERT_TWO_KE",
+          "line": 640,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "_LONG: INT",
+          "line": 657,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "T_SUPPORTE",
+          "line": 665,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "SITION: IN",
+          "line": 685,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": INT",
+          "line": 711,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "_RUNNING:",
+          "line": 714,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": ": INT",
+          "line": 720,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "_CHANGED:",
+          "line": 748,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "UNTER_NOT_",
+          "line": 762,
+          "keyword": "ID_MODE: int"
+        },
+        {
+          "type": "OMIT",
+          "field": "RRUPTION:",
+          "line": 769,
+          "keyword": ""
+        },
+        {
+          "type": "SELECT",
+          "field": "_ACTIVE: I",
+          "line": 771,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "NFLICT: IN",
+          "line": 772,
+          "keyword": ""
+        },
+        {
+          "type": "OMIT",
+          "field": "G_SPLITTAB",
+          "line": 787,
+          "keyword": "ND_ASSIGNED_GTID: int"
+        }
+      ],
+      "join_specs": [],
+      "total_fields": 66,
+      "key_field_names": [
+        "ET_OVERFLO",
+        ": INT",
+        ": INT"
+      ]
+    },
+    "RELEASE": {
+      "member": "RELEASE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "METHOD": {
+      "member": "METHOD",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NON_SECURE_GENERATE": {
+      "member": "NON_SECURE_GENERATE",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "NMAP": {
+      "member": "NMAP",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "SETS": {
+      "member": "SETS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
