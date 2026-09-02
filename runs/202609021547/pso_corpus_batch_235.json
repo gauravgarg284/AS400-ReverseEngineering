@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 235,
+  "total_batches": 477,
+  "members_in_batch": [
+    "API",
+    "__INIT__",
+    "__INIT__",
+    "OBJECTS",
+    "__INIT__",
+    "API",
+    "API",
+    "__INIT__",
+    "__INIT__",
+    "CLIPBOARDS"
+  ],
+  "pso_corpus": {
+    "API": {
+      "member": "API",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "__INIT__": {
+      "member": "__INIT__",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 1,
+          "file_name": ": NOQA: TC",
+          "file_type": "H",
+          "designation": "0",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "OBJECTS": {
+      "member": "OBJECTS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "EXER OBJECTS FO",
+          "ds_type": "CO",
+          "from_pos": "mputing",
+          "to_length": "start/",
+          "decimal": "e",
+          "data_type": "ND",
+          "keywords": "window bounds for rolling operations\"",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "ATETIME IMPORT",
+          "ds_type": "ME",
+          "from_pos": "delta",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 31,
+          "name": ": STR, DEFAULT",
+          "ds_type": "ON",
+          "from_pos": "e",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLIPBOARDS": {
+      "member": "CLIPBOARDS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 78,
+          "file_name": "ENCODING",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "T",
+          "device": "().REP",
+          "keyed": false,
+          "keywords": "lace(\"-\", \"\") != \"utf8\":"
+        },
+        {
+          "line": 107,
+          "file_name": "LEN(LINES",
+          "file_type": ")",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "COUNT",
+          "keyed": false,
+          "keywords": "s.pop() != 0:"
+        },
+        {
+          "line": 116,
+          "file_name": "SEP IS NO",
+          "file_type": "N",
+          "designation": "E",
+          "mode": "",
+          "format": "D",
+          "device": "SPACE\"",
+          "keyed": false,
+          "keywords": ") is None:"
+        },
+        {
+          "line": 121,
+          "file_name": "LEN(SEP)",
+          "file_type": ">",
+          "designation": "",
+          "mode": "",
+          "format": "N",
+          "device": "S NONE",
+          "keyed": false,
+          "keywords": ":"
+        },
+        {
+          "line": 160,
+          "file_name": "ENCODING",
+          "file_type": "I",
+          "designation": "S",
+          "mode": "",
+          "format": "T",
+          "device": "().REP",
+          "keyed": false,
+          "keywords": "lace(\"-\", \"\") != \"utf8\":"
+        },
+        {
+          "line": 165,
+          "file_name": "EXCEL IS",
+          "file_type": "N",
+          "designation": "O",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 168,
+          "file_name": "EXCEL:",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        },
+        {
+          "line": 191,
+          "file_name": "ISINSTANC",
+          "file_type": "E",
+          "designation": "(",
+          "mode": "",
+          "format": ",",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
