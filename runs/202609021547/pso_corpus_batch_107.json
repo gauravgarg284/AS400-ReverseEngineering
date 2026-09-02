@@ -1,0 +1,574 @@
+{
+  "schema_version": "1.0",
+  "run_id": "202609021547",
+  "batch": 107,
+  "total_batches": 477,
+  "members_in_batch": [
+    "DETECTION",
+    "TEXT_DETECTION",
+    "CLI",
+    "FILTERS",
+    "FILTERSET",
+    "FILTERSET",
+    "UTILS",
+    "WIDGETS",
+    "FIELDS",
+    "FORMS"
+  ],
+  "pso_corpus": {
+    "DETECTION": {
+      "member": "DETECTION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 3,
+          "name": "ATEPARSER.CONF",
+          "ds_type": "PO",
+          "from_pos": "rt Sett",
+          "to_length": "ings",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 4,
+          "name": "ATEPARSER.LANGU",
+          "ds_type": "ES",
+          "from_pos": ".locale",
+          "to_length": "import",
+          "decimal": "",
+          "data_type": "LO",
+          "keywords": "ale",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "TEXT_DETECTION": {
+      "member": "TEXT_DETECTION",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 1,
+          "name": "ATEPARSER.CONF",
+          "ds_type": "PO",
+          "from_pos": "rt Sett",
+          "to_length": "ings",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 2,
+          "name": "ATEPARSER.LANGU",
+          "ds_type": "ES",
+          "from_pos": ".locale",
+          "to_length": "import",
+          "decimal": "",
+          "data_type": "LO",
+          "keywords": "ale",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 3,
+          "name": "ATEPARSER.SEARC",
+          "ds_type": "DE",
+          "from_pos": "tection",
+          "to_length": "import",
+          "decimal": "",
+          "data_type": "BA",
+          "keywords": "eLanguageDetector",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 0
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "CLI": {
+      "member": "CLI",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FILTERS": {
+      "member": "FILTERS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [
+        {
+          "line": 39,
+          "file_name": "ILTER\",",
+          "file_type": "",
+          "designation": "",
+          "mode": "",
+          "format": "",
+          "device": "",
+          "keyed": false,
+          "keywords": ""
+        }
+      ],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO IMPORT FO",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "MP",
+          "from_pos": "ort Que",
+          "to_length": "rySet",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.FORMS IMP",
+          "ds_type": "T",
+          "from_pos": "Field",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO_STUBS_EXT",
+          "ds_type": "MP",
+          "from_pos": "ort Str",
+          "to_length": "OrPromi",
+          "decimal": "s",
+          "data_type": "E",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 33,
+          "name": "ATEFILTER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 34,
+          "name": "ATEFROMTORANGEF",
+          "ds_type": "TE",
+          "from_pos": "r\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 35,
+          "name": "ATERANGEFILTER\"",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 36,
+          "name": "ATETIMEFILTER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 37,
+          "name": "ATETIMEFROMTORA",
+          "ds_type": "EF",
+          "from_pos": "ilter\",",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 38,
+          "name": "URATIONFILTER\",",
+          "ds_type": "",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 5
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FILTERSET": {
+      "member": "FILTERSET",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB IMPORT",
+          "ds_type": "OD",
+          "from_pos": "els",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.FORMS IMP",
+          "ds_type": "T",
+          "from_pos": "Form",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO_FILTERS I",
+          "ds_type": "OR",
+          "from_pos": "t filte",
+          "to_length": "rset",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 7,
+          "name": "JANGO_FILTERS.F",
+          "ds_type": "TE",
+          "from_pos": "rs impo",
+          "to_length": "rt Filt",
+          "decimal": "e",
+          "data_type": "R",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "UTILS": {
+      "member": "UTILS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 2,
+          "name": "ATETIME IMPORT",
+          "ds_type": "TE",
+          "from_pos": "time",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB IMPORT",
+          "ds_type": "OD",
+          "from_pos": "els",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "MP",
+          "from_pos": "ort Mod",
+          "to_length": "el",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "WIDGETS": {
+      "member": "WIDGETS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO IMPORT FO",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.HTTP IMPO",
+          "ds_type": "Q",
+          "from_pos": "ueryDic",
+          "to_length": "t",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 6,
+          "name": "JANGO.UTILS.SAF",
+          "ds_type": "TR",
+          "from_pos": "ing imp",
+          "to_length": "ort Saf",
+          "decimal": "e",
+          "data_type": "ST",
+          "keywords": "ing",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FIELDS": {
+      "member": "FIELDS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "MP",
+          "from_pos": "ort Mod",
+          "to_length": "el",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        },
+        {
+          "line": 5,
+          "name": "JANGO.DB.MODELS",
+          "ds_type": "IE",
+          "from_pos": "lds imp",
+          "to_length": "ort NOT",
+          "decimal": "_",
+          "data_type": "PR",
+          "keywords": "VIDED",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    },
+    "FORMS": {
+      "member": "FORMS",
+      "type": "RPGLE",
+      "h_specs": {},
+      "f_specs": [],
+      "d_specs": [
+        {
+          "line": 4,
+          "name": "JANGO IMPORT FO",
+          "ds_type": "S",
+          "from_pos": "",
+          "to_length": "",
+          "decimal": "",
+          "data_type": "",
+          "keywords": "",
+          "dtaara_ref": null,
+          "inz_value": null
+        }
+      ],
+      "c_specs": {
+        "subroutines": [],
+        "cabeq_branches": [],
+        "goto_tags": [],
+        "callp_calls": [],
+        "exsr_calls": [],
+        "klists": [],
+        "total_cspecs": 1
+      },
+      "copy_deps": [],
+      "dtaara_refs": [],
+      "dead_comments": [],
+      "sql_tables": [],
+      "cyclomatic": 1,
+      "parse_warnings": []
+    }
+  }
+}
